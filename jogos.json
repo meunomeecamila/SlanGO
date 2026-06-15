@@ -1,0 +1,668 @@
+{
+  "jogos": [
+    {
+      "nome": "troll",
+      "variacoes": ["trollagem"],
+      "classe_gramatical": "substantivo",
+      "significado": "Ação de provocar, enganar ou atrapalhar outros jogadores por diversão.",
+      "tags": ["jogos", "online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "tilt",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Estado de irritação ou perda de controle emocional durante o jogo.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "rush",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Avançar rapidamente para atacar ou alcançar um objetivo.",
+      "tags": ["fps", "estrategia"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "farm",
+      "variacoes": ["farmar"],
+      "classe_gramatical": "verbo",
+      "significado": "Coletar recursos, itens ou experiência repetidamente.",
+      "tags": ["rpg", "minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "nerf",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Redução da força ou eficiência de algo em uma atualização.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "buff",
+      "variacoes": ["buffer"],
+      "classe_gramatical": "substantivo",
+      "significado": "Melhoria aplicada a personagem, item ou habilidade.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "noob",
+      "variacoes": ["nooba"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador iniciante ou inexperiente.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "camp",
+      "variacoes": ["camper"],
+      "classe_gramatical": "verbo",
+      "significado": "Permanecer parado em um local esperando adversários.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "rage",
+      "variacoes": ["ragequit"],
+      "classe_gramatical": "substantivo",
+      "significado": "Raiva intensa causada pelo jogo; sair da partida por raiva.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "smurf",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Conta secundária usada por jogador experiente.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "clutch",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogada decisiva em situação difícil.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "poção",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Item consumível que concede efeitos temporários.",
+      "tags": ["rpg", "minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "craft",
+      "variacoes": ["crafting"],
+      "classe_gramatical": "verbo",
+      "significado": "Criar itens utilizando materiais e receitas.",
+      "tags": ["minecraft", "survival"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "level",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Nível de progressão do personagem.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "upar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Ganhar níveis ou melhorar atributos.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "charge",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Carga ou energia acumulada para uma habilidade.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "tunado",
+      "variacoes": ["tunar"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Algo melhorado ou personalizado.",
+      "tags": ["corrida", "sandbox"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "dummy",
+      "variacoes": ["dumm"],
+      "classe_gramatical": "substantivo",
+      "significado": "Boneco de treinamento ou alvo de testes.",
+      "tags": ["treino"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "bugado",
+      "variacoes": ["bugar", "bug"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Algo com erro ou comportamento inesperado.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pokao",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Grande quantidade de poções.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "minerar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Coletar minérios e recursos subterrâneos.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "tankar",
+      "variacoes": ["tank"],
+      "classe_gramatical": "verbo",
+      "significado": "Absorver dano ou resistir a ataques.",
+      "tags": ["rpg", "moba"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "random",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Aleatório ou desconhecido.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "drop",
+      "variacoes": ["dropar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Item obtido ou deixado por inimigos.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "call",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Informação ou comunicação estratégica.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "tryhard",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que se esforça excessivamente para vencer.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "bot",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador controlado por computador ou jogador muito ruim.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "spawn",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Local de surgimento de jogadores ou entidades.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "griefar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Prejudicar intencionalmente a experiência de outros jogadores.",
+      "tags": ["minecraft", "online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "skin",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Aparência visual de personagem ou item.",
+      "tags": ["minecraft", "fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "buildar",
+      "variacoes": ["build"],
+      "classe_gramatical": "verbo",
+      "significado": "Construir estruturas ou montar configurações.",
+      "tags": ["minecraft", "rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "server",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Servidor onde ocorre o jogo.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "admin",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Administrador com permissões especiais.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "mod",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Moderador ou modificação de jogo.",
+      "tags": ["minecraft", "online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "banir",
+      "variacoes": ["ban"],
+      "classe_gramatical": "verbo",
+      "significado": "Remover acesso de um jogador.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "grindar",
+      "variacoes": ["grinding"],
+      "classe_gramatical": "verbo",
+      "significado": "Executar tarefas repetitivas para progredir.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "obby",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Mapa de obstáculos.",
+      "tags": ["roblox"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "lobby",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Área de espera antes de uma partida.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "robux",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Moeda virtual do Roblox.",
+      "tags": ["roblox"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "vbucks",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Moeda virtual do Fortnite.",
+      "tags": ["fortnite"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "w",
+      "variacoes": ["win"],
+      "classe_gramatical": "substantivo",
+      "significado": "Vitória.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "l",
+      "variacoes": ["lose"],
+      "classe_gramatical": "substantivo",
+      "significado": "Derrota.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "givar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Dar ou transferir itens para outro jogador.",
+      "tags": ["minecraft", "online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "lag",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Atraso na resposta do jogo.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "meta",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Estratégia ou escolha considerada mais eficiente.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "stompar",
+      "variacoes": ["stomp"],
+      "classe_gramatical": "verbo",
+      "significado": "Vencer facilmente um adversário.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "headshot",
+      "variacoes": ["hs"],
+      "classe_gramatical": "substantivo",
+      "significado": "Tiro na cabeça.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "loot",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Itens coletados durante o jogo.",
+      "tags": ["rpg", "battle-royale"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "squad",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Equipe ou grupo de jogadores.",
+      "tags": ["battle-royale"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "healer",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Personagem responsável por curar aliados.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "raid",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Missão ou ataque realizado em grupo.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "macro",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Automação de comandos ou estratégia ampla.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "micro",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Controle detalhado e preciso de ações.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "frag",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Eliminação de um adversário.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "spray",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Atirar continuamente sem pausas.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "wallbang",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Acertar um inimigo através de uma parede.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "bang",
+      "variacoes": ["bangar"],
+      "classe_gramatical": "verbo",
+      "significado": "Acertar ou eliminar com facilidade.",
+      "tags": ["fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "hack",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Programa ou trapaça utilizada para obter vantagem.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "ult",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Habilidade suprema de um personagem.",
+      "tags": ["moba", "hero-shooter"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "carry",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Carregar o time para a vitória.",
+      "tags": ["moba", "fps"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "jungle",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Área neutra do mapa ou função específica.",
+      "tags": ["moba"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "creeper",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura explosiva do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "enderman",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura teleportadora do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "villager",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Habitante das vilas no Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "gg",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Abreviação de Good Game.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "wp",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Abreviação de Well Played.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "easy",
+      "variacoes": ["ez"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Muito fácil.",
+      "tags": ["competitivo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "lol",
+      "variacoes": [],
+      "classe_gramatical": "interjeicao",
+      "significado": "Expressão de risada.",
+      "tags": ["chat"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "block",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Bloco utilizado para construção.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "bridge",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Ponte construída para atravessar áreas.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "cheater",
+      "variacoes": ["cheatar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que utiliza trapaças.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "res",
+      "variacoes": ["resistance"],
+      "classe_gramatical": "substantivo",
+      "significado": "Efeito ou atributo de resistência.",
+      "tags": ["minecraft", "rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "xp",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pontos de experiência.",
+      "tags": ["rpg", "minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "gapple",
+      "variacoes": ["gap"],
+      "classe_gramatical": "substantivo",
+      "significado": "Maçã dourada utilizada para regeneração e buffs.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "golem",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura protetora do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pigman",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura do Nether no Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pillager",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Inimigo saqueador do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pro",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Jogador muito habilidoso.",
+      "tags": ["jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "log",
+      "variacoes": ["logar"],
+      "classe_gramatical": "verbo",
+      "significado": "Entrar em uma conta ou servidor.",
+      "tags": ["online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "shift",
+      "variacoes": ["shiftar"],
+      "classe_gramatical": "verbo",
+      "significado": "Agachar-se ou mover-se discretamente.",
+      "tags": ["minecraft"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "splash",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Poção ou efeito de área.",
+      "tags": ["minecraft", "rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "spam",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Repetir mensagens ou ações excessivamente.",
+      "tags": ["chat", "online"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "speedrun",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Tentativa de completar um jogo no menor tempo possível.",
+      "tags": ["desafio"],
+      "permissao": "todos"
+    }
+  ]
+}
