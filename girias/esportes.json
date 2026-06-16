@@ -55,6 +55,14 @@
       "significado": "Estilo de finalização ou cobrança de pênalti em que o jogador toca a bola levemente por baixo para encobrir o goleiro.",
       "tags": ["esportes", "futebol"],
       "permissao": "todos"
+    },
+    {
+      "nome": "corneteiro",
+      "variacoes": ["corneta"],
+      "classe_gramatical": "substantivo",
+      "significado": "Torcedor, jornalista ou crítico que reclama constantemente e foca apenas nos defeitos do time ou de jogadores específicos.",
+      "tags": ["futebol", "torcida"],
+      "permissao": "todos"
     }
   ]
 }

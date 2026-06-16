@@ -1,1 +1,108 @@
-a
+{
+  "relacionamentos": [
+    {
+      "nome": "crush",
+      "variacoes": ["paquera", "queda"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa por quem se tem uma forte atração romântica, interesse ou uma paixão platônica.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "contatinho",
+      "variacoes": ["esquema", "peguete", "rolinho"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa com quem se mantém conversas frequentes ou encontros casuais voltados para o flerte, sem compromisso formal.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "dr",
+      "variacoes": ["discutir a relação"],
+      "classe_gramatical": "substantivo",
+      "significado": "Sigla para 'Discussão de Relação'. Momento em que o casal conversa seriamente para resolver conflitos, alinhar expectativas ou avaliar o status do relacionamento.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "talarico",
+      "variacoes": ["talaricar", "fura-olho"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que demonstra interesse amoroso ou se envolve intencionalmente com o parceiro ou parceira de um amigo.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+        "nome":"olhante",
+        "variacoes": ["admirador", "olhar de longe", "respirante"],
+        "classe_gramatical": "substantivo",
+        "significado": "Pessoa que observa ou admira alguém à distância, sem ou se envolver diretamente, ou declarar abertamente.",
+        "tags": ["relacionamento"],
+        "permissao": "todos"
+    },
+    {
+      "nome": "ficante",
+      "variacoes": ["ficada", "ficar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa com quem se mantém um envolvimento afetivo e físico recorrente, mas que ainda não evoluiu para um namoro oficial.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "vela",
+      "variacoes": ["segurar vela"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa solteira que acompanha um casal em um passeio ou evento social, sentindo-se deslocada ou sobrando.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "shippar",
+      "variacoes": ["ship", "shippador"],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de torcer ou apoiar um casal, seja na vida real ou em ficção, desejando que fiquem juntos.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "ghosting",
+      "variacoes": ["deixar para trás", "desaparecer"],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de interromper uma relação romântica ou social sem aviso prévio ou explicação.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "love bombing",
+      "variacoes": ["dar migalhas", "alimentar a esperança"],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de manter alguém cada vez mais interessado ou esperançoso em um relacionamento, mas sem intenção de compromisso sério.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "boyzinho",
+      "variacoes": ["garoto bonito"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa do sexo masculino que é considerada atraente ou interessante em termos românticos.",
+      "tags": ["relacionamento"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pombinhos",
+      "variacoes": ["casal apaixonado"],
+      "classe_gramatical": "substantivo",
+      "significado": "Termo carinhoso usado para descrever um casal que demonstra afeto e intimidade de maneira pública ou exagerada.",
+      "tags": ["relacionamento", "cotidiano", "antigo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "mucilon",
+      "variacoes": ["boy mucilon", "maria mucilon"],
+      "classe_gramatical": "substantivo",
+      "significado": "Gíria usada para descrever uma pessoa significativamente mais jovem que o seu parceiro em um relacionamento ou apenas mais jovem, servindo como uma metáfora para a pouca idade.",
+      "tags": ["cotidiano", "relacionamento"],
+      "permissao": "todos"
+    }
+  ]
+}
