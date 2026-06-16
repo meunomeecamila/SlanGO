@@ -1,1 +1,60 @@
-a
+{
+  "esportes": [
+    {
+      "nome": "bagre",
+      "variacoes": ["perna de pau"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador de futebol de baixa qualidade técnica ou que apresenta um péssimo desempenho em campo.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "frango",
+      "variacoes": ["frangar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Falha grave ou erro grotesco do goleiro que resulta em um gol defensável para o adversário.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pipoqueiro",
+      "variacoes": ["pipocar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que não rende o esperado, foge da responsabilidade ou amarela em momentos decisivos e sob pressão.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "fominha",
+      "variacoes": ["fome"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que retém a bola excessivamente e evita passá-la para os companheiros de equipe.",
+      "tags": ["esportes", "futebol", "jogos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "caneta",
+      "variacoes": ["rolinho", "túnel"],
+      "classe_gramatical": "substantivo",
+      "significado": "Drible habilidoso em que o jogador passa a bola entre as pernas do adversário.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "chapéu",
+      "variacoes": ["lençol", "balão"],
+      "classe_gramatical": "substantivo",
+      "significado": "Drible que consiste em chutar a bola por cima da cabeça do adversário e recuperá-la logo em seguida.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "cavadinha",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Estilo de finalização ou cobrança de pênalti em que o jogador toca a bola levemente por baixo para encobrir o goleiro.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    }
+  ]
+}
