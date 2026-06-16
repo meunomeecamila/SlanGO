@@ -17,6 +17,22 @@
       "permissao": "todos"
     },
     {
+        "nome": "date",
+        "variacoes": ["encontro"],
+        "classe_gramatical": "substantivo",
+        "significado": "Encontro romântico ou social entre duas pessoas, geralmente com o objetivo de conhecer melhor um ao outro ou desenvolver um relacionamento amoroso.",
+        "tags": ["relacionamento", "cotidiano"],
+        "permissao": "todos"
+    },
+    {
+        "nome": "levar bolo",
+        "variacoes": ["dar bolo", "bolo", "deixar na mão"],
+        "classe_gramatical": "verbo",
+        "significado": "Ato de deixar alguém esperando pela sua presença em um encontro ou resposta na sua rede social.",
+        "tags": ["relacionamento", "cotidiano"],
+        "permissao": "todos"
+    },
+    {
       "nome": "dr",
       "variacoes": ["discutir a relação"],
       "classe_gramatical": "substantivo",

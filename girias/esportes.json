@@ -63,6 +63,15 @@
       "significado": "Torcedor, jornalista ou crítico que reclama constantemente e foca apenas nos defeitos do time ou de jogadores específicos.",
       "tags": ["futebol", "torcida"],
       "permissao": "todos"
+    },
+    {
+      "nome": "ace",
+      "variacoes": ["saque ace"],
+      "classe_gramatical": "substantivo",
+      "significado": "Um saque que entra diretamente na quadra adversária ou bate em um oponente e vai para fora, resultando em um ponto imediato.",
+      "tags": ["volei", "esportes"],
+      "permissao": "todos"
     }
+    
   ]
 }
