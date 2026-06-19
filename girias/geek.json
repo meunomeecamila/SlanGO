@@ -1,1 +1,164 @@
-a
+{
+  "geek": [
+    {
+      "nome": "otaku",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "É como são conhecidos os fãs de anime ou mangás, animações e gibis japoneses com traços bastante característicos.",
+      "tags": ["anime", "manga"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "waifu",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Personagem feminina favorita por quem um fã tem grande admiração.",
+      "tags": ["anime"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "canon",
+      "variacoes": ["canônico"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Algo que faz parte oficialmente da história de uma obra.",
+      "tags": ["series", "filmes", "quadrinhos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "filler",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Episódio ou arco criado para preencher espaço sem avançar a história principal.",
+      "tags": ["anime"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "spoiler",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Revelação de acontecimentos importantes de uma obra.",
+      "tags": ["filmes", "series", "anime"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "shippar",
+      "variacoes": ["ship"],
+      "classe_gramatical": "verbo",
+      "significado": "Torcer para que dois personagens tenham um relacionamento.",
+      "tags": ["anime", "series"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "cosplay",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "É a arte de se fantasiar de um personagem famoso, seja ele real ou fictício.",
+      "tags": ["eventos", "anime"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "multiverso",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Conjunto de universos paralelos existentes em uma mesma franquia.",
+      "tags": ["quadrinhos", "filmes"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "easter egg",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Referência escondida em filmes, séries ou outras mídias.",
+      "tags": ["filmes", "series"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "plot twist",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Reviravolta inesperada na história.",
+      "tags": ["filmes", "series"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "crossover",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Encontro entre personagens ou universos diferentes.",
+      "tags": ["quadrinhos", "filmes"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "HQ",
+      "variacoes": ["quadrinho"],
+      "classe_gramatical": "substantivo",
+      "significado": "História em quadrinhos.",
+      "tags": ["quadrinhos"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "padawan",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Aprendiz Jedi no universo Star Wars.",
+      "tags": ["ficcao-cientifica"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "sabre de luz",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Arma característica dos Jedi e Sith.",
+      "tags": ["star-wars"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "trekkie",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Fã da franquia Star Trek.",
+      "tags": ["ficcao-cientifica"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "miniatura",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Item colecionável representando personagens ou objetos.",
+      "tags": ["colecionismo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "action figure",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Boneco articulado de personagem.",
+      "tags": ["colecionismo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "Funko",
+      "variacoes": ["Funko Pop"],
+      "classe_gramatical": "substantivo",
+      "significado": "Linha de bonecos colecionáveis estilizados.",
+      "tags": ["colecionismo"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "homebrew",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Conteúdo criado por fãs para RPG de mesa.",
+      "tags": ["rpg"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "lore",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Conjunto de histórias e informações que compõem o universo de uma obra.",
+      "tags": ["geral"],
+      "permissao": "todos"
+    }
+  ]
+}
