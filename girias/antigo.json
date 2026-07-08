@@ -1,1 +1,322 @@
-a
+[
+  {
+    "nome": "bafafá",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Confusão ou grande alvoroço.",
+    "tags": ["cotidiano", "informal"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "barbeiro",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Motorista ruim ou desastrado.",
+    "tags": ["trânsito", "cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "chá de cadeira",
+    "variacoes": [],
+    "classe_gramatical": "locução substantiva",
+    "significado": "Ficar esperando por muito tempo.",
+    "tags": ["cotidiano", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lascar o cano",
+    "variacoes": [],
+    "classe_gramatical": "locução verbal",
+    "significado": "Algo dar errado ou ser muito ruim.",
+    "tags": ["cotidiano", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "marcar touca",
+    "variacoes": [],
+    "classe_gramatical": "locução verbal",
+    "significado": "Perder uma oportunidade por distração.",
+    "tags": ["cotidiano", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "boa pinta",
+    "variacoes": [],
+    "classe_gramatical": "locução substantiva",
+    "significado": "Pessoa bonita ou de boa aparência.",
+    "tags": ["aparência", "informal"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "borogodó",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Charme ou atração especial de uma pessoa.",
+    "tags": ["aparência", "comportamento"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "broto",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Garota bonita ou atraente.",
+    "tags": ["aparência", "informal"],
+    "permissao": "adolescentes"
+  },
+  {
+    "nome": "bulhufas",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Nada ou coisa nenhuma.",
+    "tags": ["cotidiano", "informal"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "cafona",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Fora de moda ou considerado brega.",
+    "tags": ["aparência", "moda"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lelé da cuca",
+    "variacoes": [],
+    "classe_gramatical": "locução adjetiva",
+    "significado": "Pessoa considerada doida ou muito distraída.",
+    "tags": ["comportamento", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "sebo nas canelas",
+    "variacoes": [],
+    "classe_gramatical": "locução interjetiva",
+    "significado": "Expressão usada para incentivar alguém a correr ou se apressar.",
+    "tags": ["ação", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "papo furado",
+    "variacoes": [],
+    "classe_gramatical": "locução substantiva",
+    "significado": "Conversa sem fundamento ou que não leva a nada.",
+    "tags": ["conversa", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "barra pesada",
+    "variacoes": [],
+    "classe_gramatical": "locução adjetiva",
+    "significado": "Situação difícil ou complicada.",
+    "tags": ["cotidiano", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "bidu",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa esperta ou inteligente.",
+    "tags": ["comportamento", "elogio"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "careta",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa conservadora ou que evita novidades.",
+    "tags": ["comportamento", "informal"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "chuchu beleza",
+    "variacoes": [],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para indicar que está tudo certo.",
+    "tags": ["cumprimento", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "grilado",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Desconfiado, preocupado ou inquieto.",
+    "tags": ["emoção", "comportamento"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "patota",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Grupo de amigos ou turma.",
+    "tags": ["amizade", "social"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "tutu",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Dinheiro.",
+    "tags": ["dinheiro", "cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "ficar de bode",
+    "variacoes": [],
+    "classe_gramatical": "locução verbal",
+    "significado": "Ficar de mau humor ou irritado.",
+    "tags": ["emoção", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "viajar na maionese",
+    "variacoes": [],
+    "classe_gramatical": "locução verbal",
+    "significado": "Imaginar coisas absurdas ou perder o foco da realidade.",
+    "tags": ["imaginação", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "pentelho",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa muito chata ou inconveniente.",
+    "tags": ["comportamento", "insulto"],
+    "permissao": "adolescentes"
+  },
+  {
+    "nome": "rachar o bico",
+    "variacoes": [],
+    "classe_gramatical": "locução verbal",
+    "significado": "Rir muito.",
+    "tags": ["humor", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "antenado",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Bem informado ou que entende das coisas.",
+    "tags": ["conhecimento", "comportamento"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "azarar",
+    "variacoes": [],
+    "classe_gramatical": "verbo",
+    "significado": "Flertar ou paquerar alguém.",
+    "tags": ["relacionamentos", "social"],
+    "permissao": "adolescentes"
+  },
+  {
+    "nome": "baranga",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Pessoa considerada feia ou brega.",
+    "tags": ["aparência", "insulto"],
+    "permissao": "adolescentes"
+  },
+  {
+    "nome": "bolado",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Chateado, bravo ou incomodado.",
+    "tags": ["emoção", "comportamento"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "chavecar",
+    "variacoes": [],
+    "classe_gramatical": "verbo",
+    "significado": "Paquerar ou tentar conquistar alguém.",
+    "tags": ["relacionamentos", "social"],
+    "permissao": "adolescentes"
+  },
+  {
+    "nome": "de lei",
+    "variacoes": [],
+    "classe_gramatical": "locução adjetiva",
+    "significado": "Algo que sempre acontece ou é garantido.",
+    "tags": ["cotidiano", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "descolar",
+    "variacoes": [],
+    "classe_gramatical": "verbo",
+    "significado": "Conseguir ou arranjar alguma coisa.",
+    "tags": ["cotidiano", "ação"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "mauricinho",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Rapaz bem arrumado, certinho ou associado a uma condição financeira privilegiada.",
+    "tags": ["comportamento", "estereótipo"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "patricinha",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Menina considerada muito vaidosa, rica ou mimada.",
+    "tags": ["comportamento", "estereótipo"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "queimar o filme",
+    "variacoes": [],
+    "classe_gramatical": "locução verbal",
+    "significado": "Prejudicar a própria imagem ou reputação.",
+    "tags": ["comportamento", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "xilindró",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Prisão ou cadeia.",
+    "tags": ["segurança", "cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "zoar",
+    "variacoes": ["zoeira"],
+    "classe_gramatical": "verbo",
+    "significado": "Brincar, fazer bagunça ou tirar sarro de alguém.",
+    "tags": ["humor", "social"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "abalar",
+    "variacoes": [],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar ou causar boa impressão.",
+    "tags": ["elogio", "social"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "busão",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Ônibus.",
+    "tags": ["transporte", "cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "tá ligado?",
+    "variacoes": ["tá ligado", "ta ligado", "ta ligado?"],
+    "classe_gramatical": "expressão",
+    "significado": "Expressão usada para perguntar se alguém entendeu ou concorda.",
+    "tags": ["conversa", "expressão"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "x9",
+    "variacoes": ["xis nove"],
+    "classe_gramatical": "substantivo",
+    "significado": "Pessoa que delata ou informa algo para outras pessoas ou autoridades.",
+    "tags": ["comportamento", "crime"],
+    "permissao": "adolescentes"
+  }
+]
