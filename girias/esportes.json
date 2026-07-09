@@ -5,12 +5,12 @@
       "variacoes": ["dar migué", "migué"],
       "classe_gramatical": "adjetivo / substantivo",
       "significado": "Jogador que inventa desculpas, finge lesão ou simula uma situação para escapar de treinos, marcação pesada ou responsabilidades.",
-      "tags": ["esportes", "futebol", "gírias"],
+      "tags": ["esportes", "futebol"],
       "permissao": "todos"
     },
     {
-      "nome": "quer fazer firula",
-      "variacoes": ["firula", "firulento"],
+      "nome": "firula",
+      "variacoes": ["firula", "firulento", "fazer firula"],
       "classe_gramatical": "expressão verbal",
       "significado": "Expressão usada quando um jogador faz dribles ou jogadas de efeito desnecessárias, geralmente para se exibir, sem objetividade para o gol.",
       "tags": ["esportes", "futebol"],
@@ -37,7 +37,7 @@
       "variacoes": [],
       "classe_gramatical": "expressão adverbial",
       "significado": "Ganhar ou perder um jogo por uma diferença de pontos ou gols muito grande; goleada.",
-      "tags": ["esportes", "gírias"],
+      "tags": ["esportes", "futebol"],
       "permissao": "todos"
     },
     {
