@@ -1,6 +1,54 @@
 {
   "esportes": [
     {
+      "nome": "miguezento",
+      "variacoes": ["dar migué", "migué"],
+      "classe_gramatical": "adjetivo / substantivo",
+      "significado": "Jogador que inventa desculpas, finge lesão ou simula uma situação para escapar de treinos, marcação pesada ou responsabilidades.",
+      "tags": ["esportes", "futebol", "gírias"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "quer fazer firula",
+      "variacoes": ["firula", "firulento"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Expressão usada quando um jogador faz dribles ou jogadas de efeito desnecessárias, geralmente para se exibir, sem objetividade para o gol.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "mão de alface",
+      "variacoes": ["braço de jacaré"],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Goleiro que tem pouca firmeza nas mãos, deixando a bola escapar facilmente, ou que falha em defesas teoricamente simples.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "matar no peito",
+      "variacoes": [],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Amortecer a bola com o tórax; por extensão, assumir a responsabilidade de uma situação difícil.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "de lavada",
+      "variacoes": [],
+      "classe_gramatical": "expressão adverbial",
+      "significado": "Ganhar ou perder um jogo por uma diferença de pontos ou gols muito grande; goleada.",
+      "tags": ["esportes", "gírias"],
+      "permissao": "todos"
+    },
+    {
+      "nome": "pendurar a chuteira",
+      "variacoes": ["pendurar as chuteiras"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Aposentar-se do futebol ou, por extensão, deixar de praticar uma atividade ou profissão regular.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos"
+    },
+    {
       "nome": "bagre",
       "variacoes": ["perna de pau"],
       "classe_gramatical": "substantivo",
@@ -72,6 +120,5 @@
       "tags": ["volei", "esportes"],
       "permissao": "todos"
     }
-    
   ]
 }
