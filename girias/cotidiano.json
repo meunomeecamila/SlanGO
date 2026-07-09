@@ -1,2 +1,370 @@
-a 
-Eduh colocou : embuste, 
+[
+  {
+    "nome": "cringe",
+    "variacoes": ["cringou", "cringenta"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo considerado vergonhoso, cafona ou constrangedor.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "rizz",
+    "variacoes": ["silent rizz"],
+    "classe_gramatical": "substantivo",
+    "significado": "Carisma ou facilidade e poder de atração no flerte.",
+    "tags": ["Relacionamentos", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "sigma",
+    "variacoes": ["homem sigma"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa independente, focada em si mesma e que não segue convenções de grupos; frequentemente usado de forma irônica ou meme.",
+    "tags": ["Geek", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "biscoitar",
+    "variacoes": ["biscoito", "biscoiteiro"],
+    "classe_gramatical": "verbo",
+    "significado": "Buscar atenção, elogios ou curtidas nas redes sociais por meio de postagens que ressaltam a própria aparência ou conquistas.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lacrar",
+    "variacoes": ["lacre", "lacradora", "lacrou"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, dar uma excelente resposta ou se sobressair de maneira vitoriosa e irrefutável em uma conversa.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "hablar",
+    "variacoes": ["hablou"],
+    "classe_gramatical": "verbo",
+    "significado": "Dizer verdades de maneira firme, direta e sem rodeios sobre algum assunto.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "slay",
+    "variacoes": ["slayou"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para elogiar ou aprovar quando alguém arrasa no visual, no estilo ou na performance.",
+    "tags": ["Pop", "Redes sociais", "Maquiagem"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "divar",
+    "variacoes": ["divou", "diva"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, sobressair-se de forma glamorosa ou agir com grande autoconfiança e brilho.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "de cria",
+    "variacoes": ["cria"],
+    "classe_gramatical": "locução adjetiva",
+    "significado": "Algo estiloso, autêntico, de alta qualidade ou característico da vivência urbana e das periferias.",
+    "tags": ["Cotidiano", "Esportes"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "miar",
+    "variacoes": ["miou", "miei"],
+    "classe_gramatical": "verbo",
+    "significado": "Dar errado, ser cancelado ou não acontecer (referindo-se a um plano ou compromisso).",
+    "tags": ["Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "gatilho",
+    "variacoes": ["gatilhos"],
+    "classe_gramatical": "substantivo",
+    "significado": "Algo que provoca uma forte reação emocional, lembrança marcante ou identificação pessoal.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "hypado",
+    "variacoes": ["hype", "hypar", "hipado"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo que está na moda, muito valorizado ou cercado de grande expectativa.",
+    "tags": ["Cotidiano", "Geek", "Jogos"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "mitar",
+    "variacoes": ["mitou", "mito"],
+    "classe_gramatical": "verbo",
+    "significado": "Fazer algo genial, surpreendente ou de grande impacto que gera admiração e elogios.",
+    "tags": ["Cotidiano", "Esportes"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "foi de base",
+    "variacoes": ["ir de base", "foi de arrasta", "foi de arrasta pra cima", "foi de americanas"],
+    "classe_gramatical": "locução verbal",
+    "significado": "Expressão bem-humorada para indicar que algo ou alguém quebrou, estragou, acabou ou faleceu.",
+    "tags": ["Jogos", "Geek", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "delulu",
+    "variacoes": ["delulice"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa extremamente iludida ou que cria fantasias românticas irrealistas na própria mente.",
+    "tags": ["Relacionamentos", "Kpop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "gag",
+    "variacoes": ["gag de la gag", "gagged"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Ficar em choque, extremamente chocado ou sem palavras diante de um visual impecável ou notícia surpreendente.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lacre",
+    "variacoes": ["lacrei", "lacração"],
+    "classe_gramatical": "substantivo",
+    "significado": "Resposta perfeita ou atitude brilhante que encerra uma discussão de forma memorável.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "F",
+    "variacoes": ["F no chat"],
+    "classe_gramatical": "interjeição",
+    "significado": "Sinal de luto, respeito ou lamento por algo que deu errado, inspirado no comando de um jogo eletrônico.",
+    "tags": ["Jogos", "Geek", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "aesthetic",
+    "variacoes": ["estética"],
+    "classe_gramatical": "substantivo",
+    "significado": "Visual ou estilo estético harmonioso, padronizado e visualmente agradável nas redes sociais.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "baddie",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Estilo ou pessoa que exala autoconfiança, beleza marcante e muita atitude nas roupas e maquiagem.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "bed rot",
+    "variacoes": ["bed rotting"],
+    "classe_gramatical": "substantivo",
+    "significado": "Hábito de passar o dia inteiro deitado na cama procrastinando, assistindo a vídeos ou descansando.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "coringar",
+    "variacoes": ["coringou", "coringando"],
+    "classe_gramatical": "verbo",
+    "significado": "Surtar, perder o controle das próprias emoções ou rir de puro nervosismo diante de dificuldades.",
+    "tags": ["Geek", "Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "CPA",
+    "variacoes": ["se pá"],
+    "classe_gramatical": "locução adverbial",
+    "significado": "Expressão abreviada de 'se pá', que indica possibilidade, incerteza ou 'talvez'.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "crash out",
+    "variacoes": ["crashou out"],
+    "classe_gramatical": "verbo",
+    "significado": "Surtar de raiva, explodir emocionalmente ou perder totalmente a cabeça diante de uma situação estressante.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "deixa ele cozinhar",
+    "variacoes": ["let him cook", "deixa ela cozinhar"],
+    "classe_gramatical": "locução verbal",
+    "significado": "Expressão usada para sugerir que deixem alguém desenvolver sua própria ideia, mesmo que pareça estranha no começo.",
+    "tags": ["Cotidiano", "Redes sociais", "Jogos"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "dump",
+    "variacoes": ["photo dump"],
+    "classe_gramatical": "substantivo",
+    "significado": "Sequência ou carrossel de fotos variadas, aleatórias e despretensiosas postadas de uma vez nas redes sociais.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "fanfic",
+    "variacoes": ["fic", "fanfiqueira"],
+    "classe_gramatical": "substantivo",
+    "significado": "História inventada, boato, exagero dramático ou fantasia amorosa criada mentalmente.",
+    "tags": ["Relacionamentos", "Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "fomo",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Ansiedade provocada pelo medo de perder eventos, tendências ou momentos de diversão dos quais outros estão participando.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "jantou",
+    "variacoes": ["jantar", "jantou muito"],
+    "classe_gramatical": "verbo",
+    "significado": "Diz-se quando alguém rebate críticas ou argumentos alheios com maestria absoluta em uma discussão.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lowkey",
+    "variacoes": [],
+    "classe_gramatical": "advérbio",
+    "significado": "De modo discreto, contido, em segredo ou com moderação.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "moggar",
+    "variacoes": ["mogged", "mogging"],
+    "classe_gramatical": "verbo",
+    "significado": "Superar amplamente outra pessoa em estilo, aparência física ou presença marcante em um ambiente.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "POV",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Sigla para 'Point of View' (ponto de vista); formato de postagem de vídeo gravado sob a perspectiva do espectador.",
+    "tags": ["Redes sociais", "Geek"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "red flag",
+    "variacoes": ["red flags"],
+    "classe_gramatical": "substantivo",
+    "significado": "Sinal ou traço comportamental de alerta que indica problemas de compatibilidade ou potencial toxicidade.",
+    "tags": ["Relacionamentos", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "skibidi",
+    "variacoes": ["skibidi toilet"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Termo irônico com significados diversos como bizarro, legal ou sem sentido, de imensa popularidade na internet infantil.",
+    "tags": ["Geek", "Redes sociais", "Jogos"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "tamo junto",
+    "variacoes": ["tmj"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão que indica parceria, solidariedade, concordância ou forte amizade.",
+    "tags": ["Cotidiano", "Relacionamentos"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lá ele",
+    "variacoes": [],
+    "classe_gramatical": "interjeição",
+    "significado": "Interjeição baiana usada de forma cômica para se defender de piadas de duplo sentido ou insinuações indesejadas.",
+    "tags": ["Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "massa",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo considerado muito legal, excelente, divertido ou surpreendente.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "0800",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Diz-se de algo que é totalmente gratuito ou de graça.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "embrazar",
+    "variacoes": ["embrazou", "embrazado"],
+    "classe_gramatical": "verbo",
+    "significado": "Ficar muito animado, divertir-se intensamente ou entrar no clima de uma festa com energia alta.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "brotar",
+    "variacoes": ["brota", "brotou"],
+    "classe_gramatical": "verbo",
+    "significado": "Comparecer ou aparecer de repente em algum local, festa ou encontro com amigos.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "mec",
+    "variacoes": ["tá mec"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Situação que está favorável, tranquila, confortável ou totalmente sossegada.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "chave",
+    "variacoes": ["chavoso", "chaveoso"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Alguém ou algo extremamente bem arrumado, estiloso ou bonito, comum nas gírias urbanas de periferia.",
+    "tags": ["Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "emocionado",
+    "variacoes": ["emocionada"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa que se precipita ou demonstra sentimentos de forma exagerada e veloz logo no início de um relacionamento.",
+    "tags": ["Relacionamentos", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "talarico",
+    "variacoes": ["talaricar", "talaricagem"],
+    "classe_gramatical": "substantivo",
+    "significado": "Pessoa que tenta se envolver amorosamente com o parceiro, ex-parceiro ou pretendente de algum conhecido ou amigo.",
+    "tags": ["Relacionamentos", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "gado",
+    "variacoes": ["gado demais", "gadice"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa extremamente submissa a outra por interesse romântico, aceitando ser tratada de forma secundária para tentar agradar.",
+    "tags": ["Relacionamentos", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "amostradinho",
+    "variacoes": ["amostrado", "amostradinha"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa que gosta de se exibir, aparecer de forma exagerada ou realizar palhaçadas e imprudências para ganhar atenção.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos"
+  }
+]
