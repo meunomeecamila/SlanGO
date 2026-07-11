@@ -1,322 +1,804 @@
-[
-  {
-    "nome": "bafafá",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Confusão ou grande alvoroço.",
-    "tags": ["cotidiano", "informal"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "barbeiro",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Motorista ruim ou desastrado.",
-    "tags": ["trânsito", "cotidiano"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "chá de cadeira",
-    "variacoes": [],
-    "classe_gramatical": "locução substantiva",
-    "significado": "Ficar esperando por muito tempo.",
-    "tags": ["cotidiano", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "lascar o cano",
-    "variacoes": [],
-    "classe_gramatical": "locução verbal",
-    "significado": "Algo dar errado ou ser muito ruim.",
-    "tags": ["cotidiano", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "marcar touca",
-    "variacoes": [],
-    "classe_gramatical": "locução verbal",
-    "significado": "Perder uma oportunidade por distração.",
-    "tags": ["cotidiano", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "boa pinta",
-    "variacoes": [],
-    "classe_gramatical": "locução substantiva",
-    "significado": "Pessoa bonita ou de boa aparência.",
-    "tags": ["aparência", "informal"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "borogodó",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Charme ou atração especial de uma pessoa.",
-    "tags": ["aparência", "comportamento"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "broto",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Garota bonita ou atraente.",
-    "tags": ["aparência", "informal"],
-    "permissao": "adolescentes"
-  },
-  {
-    "nome": "bulhufas",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Nada ou coisa nenhuma.",
-    "tags": ["cotidiano", "informal"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "cafona",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Fora de moda ou considerado brega.",
-    "tags": ["aparência", "moda"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "lelé da cuca",
-    "variacoes": [],
-    "classe_gramatical": "locução adjetiva",
-    "significado": "Pessoa considerada doida ou muito distraída.",
-    "tags": ["comportamento", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "sebo nas canelas",
-    "variacoes": [],
-    "classe_gramatical": "locução interjetiva",
-    "significado": "Expressão usada para incentivar alguém a correr ou se apressar.",
-    "tags": ["ação", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "papo furado",
-    "variacoes": [],
-    "classe_gramatical": "locução substantiva",
-    "significado": "Conversa sem fundamento ou que não leva a nada.",
-    "tags": ["conversa", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "barra pesada",
-    "variacoes": [],
-    "classe_gramatical": "locução adjetiva",
-    "significado": "Situação difícil ou complicada.",
-    "tags": ["cotidiano", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "bidu",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Pessoa esperta ou inteligente.",
-    "tags": ["comportamento", "elogio"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "careta",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Pessoa conservadora ou que evita novidades.",
-    "tags": ["comportamento", "informal"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "chuchu beleza",
-    "variacoes": [],
-    "classe_gramatical": "interjeição",
-    "significado": "Expressão usada para indicar que está tudo certo.",
-    "tags": ["cumprimento", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "grilado",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Desconfiado, preocupado ou inquieto.",
-    "tags": ["emoção", "comportamento"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "patota",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Grupo de amigos ou turma.",
-    "tags": ["amizade", "social"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "tutu",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Dinheiro.",
-    "tags": ["dinheiro", "cotidiano"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "ficar de bode",
-    "variacoes": [],
-    "classe_gramatical": "locução verbal",
-    "significado": "Ficar de mau humor ou irritado.",
-    "tags": ["emoção", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "viajar na maionese",
-    "variacoes": [],
-    "classe_gramatical": "locução verbal",
-    "significado": "Imaginar coisas absurdas ou perder o foco da realidade.",
-    "tags": ["imaginação", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "pentelho",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Pessoa muito chata ou inconveniente.",
-    "tags": ["comportamento", "insulto"],
-    "permissao": "adolescentes"
-  },
-  {
-    "nome": "rachar o bico",
-    "variacoes": [],
-    "classe_gramatical": "locução verbal",
-    "significado": "Rir muito.",
-    "tags": ["humor", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "antenado",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Bem informado ou que entende das coisas.",
-    "tags": ["conhecimento", "comportamento"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "azarar",
-    "variacoes": [],
-    "classe_gramatical": "verbo",
-    "significado": "Flertar ou paquerar alguém.",
-    "tags": ["relacionamentos", "social"],
-    "permissao": "adolescentes"
-  },
-  {
-    "nome": "baranga",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Pessoa considerada feia ou brega.",
-    "tags": ["aparência", "insulto"],
-    "permissao": "adolescentes"
-  },
-  {
-    "nome": "bolado",
-    "variacoes": [],
-    "classe_gramatical": "adjetivo",
-    "significado": "Chateado, bravo ou incomodado.",
-    "tags": ["emoção", "comportamento"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "chavecar",
-    "variacoes": [],
-    "classe_gramatical": "verbo",
-    "significado": "Paquerar ou tentar conquistar alguém.",
-    "tags": ["relacionamentos", "social"],
-    "permissao": "adolescentes"
-  },
-  {
-    "nome": "de lei",
-    "variacoes": [],
-    "classe_gramatical": "locução adjetiva",
-    "significado": "Algo que sempre acontece ou é garantido.",
-    "tags": ["cotidiano", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "descolar",
-    "variacoes": [],
-    "classe_gramatical": "verbo",
-    "significado": "Conseguir ou arranjar alguma coisa.",
-    "tags": ["cotidiano", "ação"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "mauricinho",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Rapaz bem arrumado, certinho ou associado a uma condição financeira privilegiada.",
-    "tags": ["comportamento", "estereótipo"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "patricinha",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Menina considerada muito vaidosa, rica ou mimada.",
-    "tags": ["comportamento", "estereótipo"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "queimar o filme",
-    "variacoes": [],
-    "classe_gramatical": "locução verbal",
-    "significado": "Prejudicar a própria imagem ou reputação.",
-    "tags": ["comportamento", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "xilindró",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Prisão ou cadeia.",
-    "tags": ["segurança", "cotidiano"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "zoar",
-    "variacoes": ["zoeira"],
-    "classe_gramatical": "verbo",
-    "significado": "Brincar, fazer bagunça ou tirar sarro de alguém.",
-    "tags": ["humor", "social"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "abalar",
-    "variacoes": [],
-    "classe_gramatical": "verbo",
-    "significado": "Arrasar ou causar boa impressão.",
-    "tags": ["elogio", "social"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "busão",
-    "variacoes": [],
-    "classe_gramatical": "substantivo",
-    "significado": "Ônibus.",
-    "tags": ["transporte", "cotidiano"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "tá ligado?",
-    "variacoes": ["tá ligado", "ta ligado", "ta ligado?"],
-    "classe_gramatical": "expressão",
-    "significado": "Expressão usada para perguntar se alguém entendeu ou concorda.",
-    "tags": ["conversa", "expressão"],
-    "permissao": "todos"
-  },
-  {
-    "nome": "x9",
-    "variacoes": ["xis nove"],
-    "classe_gramatical": "substantivo",
-    "significado": "Pessoa que delata ou informa algo para outras pessoas ou autoridades.",
-    "tags": ["comportamento", "crime"],
-    "permissao": "adolescentes"
-  }
-]
+{
+  "girias_antigas": [
+    {
+      "nome": "bafafá",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Confusão ou grande alvoroço.",
+      "tags": ["cotidiano", "informal"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Deu o maior bafafá na reunião de condomínio ontem à noite.",
+      "exemplos_incorretos": [
+        "Comprei um bafafá de chocolate delicioso na padaria.",
+        "Preciso abastecer o carro com dez litros de bafafá.",
+        "Vou vestir meu bafafá azul para ir ao casamento."
+      ],
+      "significados_incorretos": [
+        "Tipo de doce tradicional feito à base de amendoim.",
+        "Combustível fóssil muito utilizado em motores antigos.",
+        "Peça de roupa formal usada em festas de gala."
+      ]
+    },
+    {
+      "nome": "barbeiro",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Motorista ruim ou desastrado.",
+      "tags": ["trânsito", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele barbeiro quase bateu no meu carro ao mudar de faixa sem dar seta.",
+      "exemplos_incorretos": [
+        "Escrevi o relatório usando um barbeiro preto muito macio.",
+        "Vou usar o barbeiro para cortar os papéis do meu trabalho.",
+        "O barbeiro voou pela janela assim que a tempestade começou."
+      ],
+      "significados_incorretos": [
+        "Objeto de escrita semelhante a uma caneta esferográfica.",
+        "Ferramenta de corte utilizada exclusivamente em escritórios.",
+        "Pequeno inseto voador que se alimenta de folhas secas."
+      ]
+    },
+    {
+      "nome": "chá de cadeira",
+      "variacoes": [],
+      "classe_gramatical": "locução substantiva",
+      "significado": "Ficar esperando por muito tempo.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O médico atrasou duas horas e eu tomei o maior chá de cadeira na recepção.",
+      "exemplos_incorretos": [
+        "Coloquei um chá de cadeira na sala para decorar o ambiente.",
+        "Bebi um chá de cadeira quente antes de ir dormir para relaxar.",
+        "Minha calça rasgou porque sentei em cima de um chá de cadeira afiado."
+      ],
+      "significados_incorretos": [
+        "Móvel de madeira estofada usado em salas de jantar.",
+        "Infusão de ervas medicinais que ajuda a combater a insônia.",
+        "Ferramenta pontiaguda utilizada por marceneiros."
+      ]
+    },
+    {
+      "nome": "lascar o cano",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Algo dar errado ou ser muito ruim.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Se chover no dia do nosso evento ao ar livre, vai lascar o cano.",
+      "exemplos_incorretos": [
+        "Vou lascar o cano para conseguir pregar esse quadro na parede.",
+        "Gosto de lascar o cano todas as manhãs no parque para fazer exercícios.",
+        "Esqueci de lascar o cano e acabei perdendo o prazo de inscrição."
+      ],
+      "significados_incorretos": [
+        "Ação de fixar objetos pesados utilizando parafusos.",
+        "Prática esportiva focada em caminhadas de longa distância.",
+        "Preencher um formulário oficial com dados pessoais."
+      ]
+    },
+    {
+      "nome": "marcar touca",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Perder uma oportunidade por distração.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele ficou marcando touca e o ingresso para o show esgotou bem na vez dele.",
+      "exemplos_incorretos": [
+        "Vou marcar touca na agenda para não esquecer o dia da prova.",
+        "Preciso marcar touca no fogão para a comida não queimar.",
+        "Ele adora marcar touca na piscina para treinar natação profissional."
+      ],
+      "significados_incorretos": [
+        "Anotar um compromisso importante em um calendário.",
+        "Ajustar a temperatura interna de eletrodomésticos.",
+        "Utilizar equipamentos de proteção individual na água."
+      ]
+    },
+    {
+      "nome": "boa pinta",
+      "variacoes": [],
+      "classe_gramatical": "locução substantiva",
+      "significado": "Pessoa bonita ou de boa aparência.",
+      "tags": ["aparência", "informal"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O novo ator da novela é um rapaz muito boa pinta.",
+      "exemplos_incorretos": [
+        "Comprei um boa pinta para pintar as paredes do meu quarto.",
+        "Estou com uma dor de cabeça horrível, preciso tomar um boa pinta.",
+        "O boa pinta quebrou quando tentei abrir a porta com força."
+      ],
+      "significados_incorretos": [
+        "Pincel de cerdas macias usado na construção civil.",
+        "Remédio analgésico vendido sem receita em farmácias.",
+        "Mecanismo de metal que compõe as fechaduras modernas."
+      ]
+    },
+    {
+      "nome": "borogodó",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Charme ou atração especial de uma pessoa.",
+      "tags": ["aparência", "comportamento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Aquela cantora tem um borogodó que conquista todo mundo no palco.",
+      "exemplos_incorretos": [
+        "Vou adicionar um pouco de borogodó no feijão para dar mais sabor.",
+        "O pneu do meu carro furou porque passei por cima de um borogodó.",
+        "Escrevi o texto inteiro usando a fonte borogodó no computador."
+      ],
+      "significados_incorretos": [
+        "Tempero nordestino feito à base de ervas secas e pimenta.",
+        "Pedaço de ferro pontiagudo encontrado em estradas de terra.",
+        "Estilo de formatação de texto utilizado em jornais antigos."
+      ]
+    },
+    {
+      "nome": "broto",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Garota bonita ou atraente.",
+      "tags": ["aparência", "informal"],
+      "permissao": "adolescentes",
+      "impacto": "positiva",
+      "exemplo_correto": "Aquele rapaz da turma do lado está namorando um broto de menina.",
+      "exemplos_incorretos": [
+        "O encanamento da cozinha estourou e causou um broto enorme.",
+        "Vou calçar meu broto novo para ir caminhar no parque.",
+        "Comprei um broto de três andares para comemorar meu aniversário."
+      ],
+      "significados_incorretos": [
+        "Vazamento severo de água em tubulações residenciais.",
+        "Calçado esportivo com amortecedores nas solas.",
+        "Bolo festivo confeitado com pasta americana."
+      ]
+    },
+    {
+      "nome": "bulhufas",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Nada ou coisa nenhuma.",
+      "tags": ["cotidiano", "informal"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ele explicou a matéria de física três vezes, mas eu não entendi bulhufas.",
+      "exemplos_incorretos": [
+        "Guardei minhas roupas dentro de duas bulhufas de plástico.",
+        "O passarinho fez uma bulhufas bem bonita no galho da árvore.",
+        "Vou ligar as bulhufas da TV para conseguir assistir ao filme."
+      ],
+      "significados_incorretos": [
+        "Sacola ou recipiente maleável usado para transporte.",
+        "Ninho construído por aves pequenas usando galhos secos.",
+        "Componente eletrônico responsável por sintonizar canais."
+      ]
+    },
+    {
+      "nome": "cafona",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Fora de moda ou considerado brega.",
+      "tags": ["aparência", "moda"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Achei aquela combinação de terno verde com camisa amarela muito cafona.",
+      "exemplos_incorretos": [
+        "Comi uma cafona deliciosa no almoço de domingo.",
+        "O motor do carro está fazendo um barulho cafona muito alto.",
+        "Vou usar a cafona para limpar o vidro da janela que está sujo."
+      ],
+      "significados_incorretos": [
+        "Prato típico feito com massa folhada e recheio de carne.",
+        "Peça mecânica instalada próxima ao escapamento do motor.",
+        "Flanela de microfibra usada na limpeza de superfícies delicadas."
+      ]
+    },
+    {
+      "nome": "lelé da cuca",
+      "variacoes": [],
+      "classe_gramatical": "locução adjetiva",
+      "significado": "Pessoa considerada doida ou muito distraída.",
+      "tags": ["comportamento", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele cara é meio lelé da cuca, saiu na chuva sem guarda-chuva e de bermuda.",
+      "exemplos_incorretos": [
+        "Comprei um sapato lelé da cuca que brilha no escuro.",
+        "O jantar estava lelé da cuca, todo mundo repetiu o prato.",
+        "Preciso consertar o lelé da cuca do meu computador para ele voltar a ligar."
+      ],
+      "significados_incorretos": [
+        "Modelo de calçado infantil com luzes embutidas.",
+        "Alimento bem temperado que agrada a paladares exigentes.",
+        "Botão de inicialização de sistemas operacionais desktop."
+      ]
+    },
+    {
+      "nome": "sebo nas canelas",
+      "variacoes": [],
+      "classe_gramatical": "locução interjetiva",
+      "significado": "Expressão usada para incentivar alguém a correr ou se apressar.",
+      "tags": ["action", "expressão"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O ônibus já está passando na esquina, bota sebo nas canelas!",
+      "exemplos_incorretos": [
+        "Passei sebo nas canelas no pão para comer no café da manhã.",
+        "Comprei um sebo nas canelas novo para iluminar meu quarto.",
+        "O médico me receitou sebo nas canelas para curar a gripe."
+      ],
+      "significados_incorretos": [
+        "Doce cremoso derivado da gordura do leite de vaca.",
+        "Luminária de mesa antiga que funciona à base de querosene.",
+        "Composto vitamínico em gotas usado para aumentar a imunidade."
+      ]
+    },
+    {
+      "nome": "papo furado",
+      "variacoes": [],
+      "classe_gramatical": "locução substantiva",
+      "significado": "Conversa sem fundamento ou que não leva a nada.",
+      "tags": ["conversa", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Esse negócio de que vão dar brindes para todo mundo é puro papo furado.",
+      "exemplos_incorretos": [
+        "Usei um papo furado para costurar o botão da minha camisa.",
+        "O encanador trocou o papo furado que estava vazando no banheiro.",
+        "Coloquei o papo furado na parede para pendurar o casaco."
+      ],
+      "significados_incorretos": [
+        "Agulha fina usada em trabalhos manuais de alfaiataria.",
+        "Conexão de PVC utilizada em sistemas de esgoto residencial.",
+        "Suporte metálico fixado em superfícies verticais."
+      ]
+    },
+    {
+      "nome": "barra pesada",
+      "variacoes": [],
+      "classe_gramatical": "locução adjetiva",
+      "significado": "Situação difícil ou complicada.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele bairro de madrugada fica meio barra pesada, é melhor evitar.",
+      "exemplos_incorretos": [
+        "Comi uma barra pesada de chocolate no lanche da tarde.",
+        "Comprei uma barra pesada para prender meu cabelo no treino.",
+        "O técnico usou uma barra pesada para medir o tamanho da mesa."
+      ],
+      "significados_incorretos": [
+        "Doce industrializado rico em calorias e açúcares.",
+        "Acessório elástico usado em penteados esportivos.",
+        "Instrumento de metal usado para aferir comprimentos exatos."
+      ]
+    },
+    {
+      "nome": "bidu",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa esperta ou inteligente.",
+      "tags": ["comportamento", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Aquele menino é bidu, resolveu o enigma do jogo em dois minutos.",
+      "exemplos_incorretos": [
+        "Vou calçar meu bidu para ir jogar futebol com os amigos.",
+        "Cortei o pão usando um bidu bem afiado na cozinha.",
+        "O céu está cheio de bidu hoje, acho que vai chover logo."
+      ],
+      "significados_incorretos": [
+        "Tipo de chuteira society com cravos de borracha.",
+        "Utensílio doméstico serrilhado usado para fatiar alimentos.",
+        "Formações gasosas escuras que antecedem tempestades."
+      ]
+    },
+    {
+      "nome": "careta",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa conservadora ou que evita novidades.",
+      "tags": ["comportamento", "informal"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Meus tios são muito caretas, não deixam os filhos usarem redes sociais.",
+      "exemplos_incorretos": [
+        "Vou acender a careta para iluminar o caminho escuro.",
+        "Comprei uma careta de couro para guardar meus documentos.",
+        "Bebi uma careta gelada depois de correr na praia."
+      ],
+      "significados_incorretos": [
+        "Objeto cilíndrico feito de cera que produz chama estável.",
+        "Acessório de bolso usado para organizar cartões de crédito.",
+        "Bebida gasosa refrescante feita à base de frutas cítricas."
+      ]
+    },
+    {
+      "nome": "chuchu beleza",
+      "variacoes": [],
+      "classe_gramatical": "interjeição",
+      "significado": "Expressão usada para indicar que está tudo certo.",
+      "tags": ["cumprimento", "expressão"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Pode deixar que eu já fiz as compras e está tudo chuchu beleza por aqui.",
+      "exemplos_incorretos": [
+        "Gastei muito dinheiro comprando um chuchu beleza de corrida.",
+        "O chuchu beleza quebrou no meio da estrada e tive que chamar o guincho.",
+        "Vou passar chuchu beleza no rosto para hidratar a pele antes de dormir."
+      ],
+      "significados_incorretos": [
+        "Tênis de alta performance usado por maratonistas.",
+        "Veículo utilitário de tração integral usado em fazendas.",
+        "Creme cosmético importado com propriedades rejuvenescedoras."
+      ]
+    },
+    {
+      "nome": "grilado",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Desconfiado, preocupado ou inquieto.",
+      "tags": ["emoção", "comportamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fiquei meio grilado com aquela história que ele me contou sobre o sumiço do dinheiro.",
+      "exemplos_incorretos": [
+        "O casaco ficou grilado depois que lavei na máquina quente.",
+        "Comi um pastel grilado na feira que estava uma delícia.",
+        "O pneu do carro está grilado, preciso trocar urgente."
+      ],
+      "significados_incorretos": [
+        "Tecido que sofreu encolhimento devido ao calor excessivo.",
+        "Alimento frito em óleo fervente com recheio salgado.",
+        "Objeto inflável que apresenta perda de pressão interna."
+      ]
+    },
+    {
+      "nome": "patota",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Grupo de amigos ou turma.",
+      "tags": ["amizade", "social"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "A minha patota costumava se reunir na pracinha todo sábado à tarde.",
+      "exemplos_incorretos": [
+        "Descasquei a patota para fazer uma sopa de legumes.",
+        "Escrevi o bilhete usando uma patota de tinta azul.",
+        "O passarinho quebrou a patota quando tentou voar contra o vidro."
+      ],
+      "significados_incorretos": [
+        "Tubérculo comestível rico em amido cozido em refeições.",
+        "Caneta esferográfica recarregável usada em escritórios.",
+        "Membro superior das aves usado para sustentação do voo."
+      ]
+    },
+    {
+      "nome": "tutu",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Dinheiro.",
+      "tags": ["dinheiro", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Gostei muito daquela jaqueta, mas estou sem tutu para comprar agora.",
+      "exemplos_incorretos": [
+        "Preciso amarrar o tutu do meu sapato que soltou na rua.",
+        "O tutu cantou bem alto na árvore logo no início da manhã.",
+        "Vou usar o tutu para apagar o erro que fiz no caderno."
+      ],
+      "significados_incorretos": [
+        "Cadarço feito de algodão ou nylon usado em calçados.",
+        "Pássaro silvestre conhecido por seu canto matinal estridente.",
+        "Borracha sintética maleável usada para corrigir escrita a lápis."
+      ]
+    },
+    {
+      "nome": "ficar de bode",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Ficar de mau humor ou irritado.",
+      "tags": ["emoção", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele ficou de bode porque não pôde ir ao jogo de futebol com o pessoal.",
+      "exemplos_incorretos": [
+        "Vou ficar de bode no sofá esperando o almoço ficar pronto.",
+        "Ele adora ficar de bode para economizar o salário do mês.",
+        "Tivemos que ficar de bode para conseguir atravessar o rio caudaloso."
+      ],
+      "significados_incorretos": [
+        "Ato de descansar em superfícies estofadas durante a tarde.",
+        "Prática de guardar economias em contas bancárias poupança.",
+        "Navegar em embarcações de pequeno porte utilizando remos."
+      ]
+    },
+    {
+      "nome": "viajar na maionese",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Imaginar coisas absurdas ou perder o foco da realidade.",
+      "tags": ["imaginação", "expressão"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Você está viajando na maionese achando que vai tirar nota dez sem estudar nada.",
+      "exemplos_incorretos": [
+        "Coloquei as malas no carro para viajar na maionese com a família.",
+        "Vou viajar na maionese para temperar a salada de batatas.",
+        "Ele precisou viajar na maionese para renovar o passaporte na polícia."
+      ],
+      "significados_incorretos": [
+        "Deslocar-se para outras cidades utilizando rodovias estaduais.",
+        "Adicionar molhos condimentados em pratos da culinária fria.",
+        "Comparecer a repartições públicas para emissão de vistos."
+      ]
+    },
+    {
+      "nome": "pentelho",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa muito chata ou inconveniente.",
+      "tags": ["comportamento", "insulto"],
+      "permissao": "adolescentes",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele menino é um pentelho, fica puxando o cabelo da irmã o dia todo.",
+      "exemplos_incorretos": [
+        "Comprei um pentelho de dentes novos na farmácia.",
+        "Usei o pentelho para pentear meus cabelos de manhã.",
+        "O chaveiro tem um pentelho de metal para prender na calça."
+      ],
+      "significados_incorretos": [
+        "Escova plástica usada na higiene bucal diária.",
+        "Objeto com dentes finos usado para alinhar fios capilares.",
+        "Argola flexível usada para agrupar chaves residenciais."
+      ]
+    },
+    {
+      "nome": "rachar o bico",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Rir muito.",
+      "tags": ["humor", "expressão"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nós fomos assistir àquela comédia no cinema e rachamos o bico do início ao fim.",
+      "exemplos_incorretos": [
+        "O passarinho bateu na parede e acabou por rachar o bico de verdade.",
+        "Vou rachar o bico do sorvete para dividir com o meu irmão.",
+        "Preciso rachar o bico da caneta para ela voltar a soltar tinta."
+      ],
+      "significados_incorretos": [
+        "Causar fratura na estrutura queratinosa de aves silvestres.",
+        "Fracionar porções de alimentos congelados usando facas.",
+        "Pressionar a ponta esferográfica de instrumentos de escrita."
+      ]
+    },
+    {
+      "nome": "antenado",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Bem informado ou que entende das coisas.",
+      "tags": ["conhecimento", "comportamento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela é super antenada em tecnologia, sabe tudo sobre os novos lançamentos.",
+      "exemplos_incorretos": [
+        "O rádio está antenado na parede da sala com fita adesiva.",
+        "Fiquei antenado no trânsito por causa de um acidente na pista.",
+        "O casaco está antenado, precisa costurar o zíper que quebrou."
+      ],
+      "significados_incorretos": [
+        "Objeto fixado em superfícies verticais por meio de colagem.",
+        "Ficar retido em congestionamentos de veículos automotores.",
+        "Peça de vestuário que apresenta avarias em seus fechos."
+      ]
+    },
+    {
+      "nome": "azarar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Flertar ou paquerar alguém.",
+      "tags": ["relacionamentos", "social"],
+      "permissao": "adolescentes",
+      "impacto": "positiva",
+      "exemplo_correto": "Os jovens iam para o baile da cidade antigamente só para azarar.",
+      "exemplos_incorretos": [
+        "Ele foi azarar o jogo jogando os dados na mesa redonda.",
+        "Vou azarar a casa inteira usando vassoura e espanador.",
+        "O mecânico tentou azarar o motor para descobrir o defeito elétrico."
+      ],
+      "significados_incorretos": [
+        "Participar de atividades lúdicas envolvendo apostas financeiras.",
+        "Realizar a limpeza pesada de ambientes residenciais internos.",
+        "Fazer manutenção preventiva em componentes eletromecânicos."
+      ]
+    },
+    {
+      "nome": "baranga",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa considerada feia ou brega.",
+      "tags": ["aparência", "insulto"],
+      "permissao": "adolescentes",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquelas roupas antigas da foto faziam ela parecer uma baranga completa.",
+      "exemplos_incorretos": [
+        "Comi uma baranga assada com batatas no restaurante da esquina.",
+        "O barco afundou porque colidiu contra uma baranga de gelo.",
+        "Vou pendurar a baranga na parede para decorar o meu quarto."
+      ],
+      "significados_incorretos": [
+        "Espécie de peixe de águas profundas muito consumido no litoral.",
+        "Bloco sólido de água congelada flutuante em regiões polares.",
+        "Objeto artístico emoldurado que serve como adorno residencial."
+      ]
+    },
+    {
+      "nome": "bolado",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Chateado, bravo ou incomodado.",
+      "tags": ["emoção", "comportamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fiquei bolado porque meu melhor amigo não me convidou para a festa dele.",
+      "exemplos_incorretos": [
+        "Comi um doce bolado feito com leite condensado e coco.",
+        "O pneu bolado do caminhão estourou no meio da rodovia principal.",
+        "Escrevi o bilhete em um papel bolado que achei na gaveta."
+      ],
+      "significados_incorretos": [
+        "Alimento esférico confeitado muito servido em festas infantis.",
+        "Objeto pneumático que possui deformações estruturais na borracha.",
+        "Folha de papel com texturas circulares usada para desenho."
+      ]
+    },
+    {
+      "nome": "chavecar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Paquerar ou tentar conquistar alguém.",
+      "tags": ["relacionamentos", "social"],
+      "permissao": "adolescentes",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele tentou chavecar a menina da padaria, mas acabou levando um fora.",
+      "exemplos_incorretos": [
+        "Vou chavecar a fechadura da entrada porque perdi o controle remoto.",
+        "O carpinteiro precisou chavecar a madeira para dar um acabamento liso.",
+        "Ele começou a chavecar alto no microfone durante a transmissão."
+      ],
+      "significados_incorretos": [
+        "Ação de abrir trincos ou travas utilizando chaves físicas.",
+        "Desgastar superfícies rústicas por meio de lixamento mecânico.",
+        "Emitir sons vocais agudos que causam distorção em aparelhos de áudio."
+      ]
+    },
+    {
+      "nome": "de lei",
+      "variacoes": [],
+      "classe_gramatical": "locução adjetiva",
+      "significado": "Algo que sempre acontece ou é garantido.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Aquele futebol de quarta-feira à noite com o pessoal do trabalho é de lei.",
+      "exemplos_incorretos": [
+        "O juiz leu o livro de lei para prender o criminoso em flagrante.",
+        "Comprei uma mesa feita de lei que vai durar muitos anos na sala.",
+        "Escrevi uma de lei no papel para enviar para o meu primo."
+      ],
+      "significados_incorretos": [
+        "Vade mecum ou compilação de artigos constitucionais impressos.",
+        "Material de alta densidade extraído de árvores nativas nobres.",
+        "Correspondência formal redigida à mão para parentes distantes."
+      ]
+    },
+    {
+      "nome": "descolar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Conseguir ou arranjar alguma coisa.",
+      "tags": ["cotidiano", "ação"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Vou ver se consigo descolar dois ingressos VIP para o festival deste fim de semana.",
+      "exemplos_incorretos": [
+        "Vou descolar o adesivo da parede para colar em outro caderno.",
+        "A pipa começou a descolar no céu assim que o vento forte parou.",
+        "Preciso descolar o osso do braço para engessar no hospital."
+      ],
+      "significados_incorretos": [
+        "Remover películas colantes de superfícies por tração manual.",
+        "Perder altitude de forma abrupta devido à falta de correntes aéreas.",
+        "Procedimento ortopédico de realinhamento de articulações fraturadas."
+      ]
+    },
+    {
+      "nome": "mauricinho",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Rapaz bem arrumado, certinho ou associado a uma condição financeira privilegiada.",
+      "tags": ["comportamento", "estereótipo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Aquele menino é um mauricinho, só anda com camisa de marca e cabelo perfeitamente penteado.",
+      "exemplos_incorretos": [
+        "Comi um mauricinho de frango delicioso na lanchonete.",
+        "O mecânico trocou o mauricinho do motor que estava quebrado.",
+        "Vou usar o mauricinho para limpar a sujeira acumulada no tapete."
+      ],
+      "significados_incorretos": [
+        "Salgado frito feito com massa de batata e recheio proteico.",
+        "Componente hidráulico fixado próximo ao radiador de carros.",
+        "Aparelho eletrodoméstico que faz a aspiração de resíduos sólidos."
+      ]
+    },
+    {
+      "nome": "patricinha",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Menina considerada muito vaidosa, rica ou mimada.",
+      "tags": ["comportamento", "estereótipo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ela faz o estilo patricinha, adora ir ao shopping e só usa roupas cor-de-rosa.",
+      "exemplos_incorretos": [
+        "Plantei uma patricinha no jardim que dá flores amarelas.",
+        "Comprei uma patricinha de ferramentas para consertar a pia.",
+        "A patricinha do navio quebrou ao colidir contra a doca de cimento."
+      ],
+      "significados_incorretos": [
+        "Espécie de arbusto ornamental originário de regiões subtropicais.",
+        "Estojo de plástico rígido usado para armazenar chaves inglesas.",
+        "Estrutura de madeira usada na ancoragem de grandes embarcações."
+      ]
+    },
+    {
+      "nome": "queimar o filme",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Prejudicar a própria imagem ou reputação.",
+      "tags": ["comportamento", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não chegue atrasado na entrevista para não queimar o filme com o chefe.",
+      "exemplos_incorretos": [
+        "Vou queimar o filme antigo no fogão para esquentar a casa.",
+        "Esqueci o filme no sol e ele acabou por queimar o filme da máquina.",
+        "Ele usou um fósforo para queimar o filme que estava no DVD de plástico."
+      ],
+      "significados_incorretos": [
+        "Incinerar rolos de celulose para produção de energia térmica.",
+        "Causar superexposição à luz em películas fotográficas analógicas.",
+        "Derreter mídias digitais de armazenamento usando calor direto."
+      ]
+    },
+    {
+      "nome": "xilindró",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Prisão ou cadeia.",
+      "tags": ["segurança", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O ladrão foi pego roubando a loja e acabou direto no xilindró.",
+      "exemplos_incorretos": [
+        "Bebi um copo de xilindró bem gelado com sabor de morango.",
+        "Toquei o xilindró de metal na aula de música da escola.",
+        "Vou usar o xilindró para medir a febre do meu irmão mais novo."
+      ],
+      "significados_incorretos": [
+        "Xarope doce misturado com água gasosa e essências artificiais.",
+        "Instrumento de percussão composto por pequenas barras de ferro.",
+        "Dispositivo clínico de vidro usado para aferição de temperatura corporal."
+      ]
+    },
+    {
+      "nome": "zoar",
+      "variacoes": ["zoeira"],
+      "classe_gramatical": "verbo",
+      "significado": "Brincar, fazer bagunça ou tirar sarro de alguém.",
+      "tags": ["humor", "social"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "A gente adora zoar o nosso amigo quando o time dele perde o clássico.",
+      "exemplos_incorretos": [
+        "Vou zoar o bolo de aniversário usando velas coloridas.",
+        "O avião começou a zoar alto no céu antes de pousar na pista.",
+        "Preciso zoar as plantas do jardim para elas não secarem no verão."
+      ],
+      "significados_incorretos": [
+        "Adornar doces festivos utilizando coberturas comestíveis.",
+        "Produzir ondas sonoras graves causadas pelo deslocamento de ar.",
+        "Umedecer a terra cultivável utilizando mangueiras de irrigação."
+      ]
+    },
+    {
+      "nome": "abalar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Arrasar ou causar boa impressão.",
+      "tags": ["elogio", "social"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela comprou um vestido maravilhoso para abalar na festa de formatura.",
+      "exemplos_incorretos": [
+        "O vento forte conseguiu abalar os copos de vidro da mesa.",
+        "O terremoto fez a terra abalar na região central do país.",
+        "Vou abalar o casaco no armário para tirar a poeira antiga."
+      ],
+      "significados_incorretos": [
+        "Derrubar objetos leves devido à ação de correntes de ar.",
+        "Provocar tremores na crosta terrestre por causas tectônicas.",
+        "Sacudir peças de tecido para eliminação de resíduos secos."
+      ]
+    },
+    {
+      "nome": "busão",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Ônibus.",
+      "tags": ["transporte", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Preciso correr para o ponto antes que o busão das sete horas passe.",
+      "exemplos_incorretos": [
+        "Comi um busão recheado de presunto e queijo na padaria.",
+        "Escrevi os dados na folha usando um busão preto muito bom.",
+        "O busão do meu casaco quebrou quando tentei fechar no frio."
+      ],
+      "significados_incorretos": [
+        "Panificado salgado feito com farinha de trigo refinada.",
+        "Grafite cilíndrico envolto em madeira usado para desenho.",
+        "Fecho circular de plástico costurado em roupas de inverno."
+      ]
+    },
+    {
+      "nome": "tá ligado?",
+      "variacoes": ["tá ligado", "ta ligado", "ta ligado?"],
+      "classe_gramatical": "expressão",
+      "significado": "Expressão usada para perguntar se alguém entendeu ou concorda.",
+      "tags": ["conversa", "expressão"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou passar na sua casa às oito horas, tá ligado? Não se atrase.",
+      "exemplos_incorretos": [
+        "O liquidificador está quebrado, mas agora tá ligado na tomada.",
+        "O fio elétrico tá ligado direto no poste de alta tensão da rua.",
+        "Meu computador tá ligado desde ontem fazendo download de arquivos."
+      ],
+      "significados_incorretos": [
+        "Eletrodoméstico que recebeu fluxo de corrente elétrica em seus circuitos.",
+        "Condutor de cobre conectado fisicamente a redes de distribuição.",
+        "Equipamento de processamento de dados em estado operacional ativo."
+      ]
+    },
+    {
+      "nome": "x9",
+      "variacoes": ["xis nove"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que delata ou informa algo para outras pessoas ou autoridades.",
+      "tags": ["comportamento", "crime"],
+      "permissao": "adolescentes",
+      "impacto": "negativa",
+      "exemplo_correto": "Ninguém na escola gosta daquele garoto porque ele é o x9 que conta tudo para a diretora.",
+      "exemplos_incorretos": [
+        "Comprei um carro x9 super rápido de seis marchas.",
+        "O médico mandou eu tomar o remédio x9 vezes ao dia.",
+        "Resolvi a equação matemática e o resultado final deu x9."
+      ],
+      "significados_incorretos": [
+        "Modelo de veículo automotivo equipado com motores turbo.",
+        "Frequência de dosagem terapêutica indicada em receitas clínicas.",
+        "Incógnita algébrica multiplicada por fatores numéricos inteiros."
+      ]
+    }
+  ]
+}
