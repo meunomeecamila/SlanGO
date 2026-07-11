@@ -1,1 +1,346 @@
-a
+[
+  {
+    "nome": "lacrar",
+    "variacoes": ["lacre", "lacradora", "lacrou"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, dar uma excelente resposta ou se sobressair de maneira vitoriosa e irrefutável em uma conversa.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "slay",
+    "variacoes": ["slayou", "slayado"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para elogiar ou aprovar quando alguém arrasa no visual, no estilo ou na performance.",
+    "tags": ["Pop", "Redes sociais", "Maquiagem"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "cringe",
+    "variacoes": ["cringou", "cringenta", "cringence"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo considerado vergonhoso, cafona, ultrapassado ou constrangedor.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "flopar",
+    "variacoes": ["flopou", "flop", "flopado"],
+    "classe_gramatical": "verbo",
+    "significado": "Fracassar, não ter o sucesso esperado ou obter baixo engajamento nas redes sociais.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "hablar",
+    "variacoes": ["hablou", "habla"],
+    "classe_gramatical": "verbo",
+    "significado": "Dizer verdades de maneira firme, direta, sem rodeios ou expressar uma opinião incontestável.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "delulu",
+    "variacoes": ["delulice", "delulas"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa extremamente iludida ou que cria fantasias românticas ou de fã irrealistas na própria mente.",
+    "tags": ["Relacionamentos", "Kpop", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "shippar",
+    "variacoes": ["shippo", "ship", "shippado"],
+    "classe_gramatical": "verbo",
+    "significado": "Torcer pela união romântica de duas pessoas, sejam elas reais, celebridades ou personagens de ficção.",
+    "tags": ["Relacionamentos", "Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "gag",
+    "variacoes": ["gag de la gag", "gagged"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Ficar em choque, extremamente chocado ou sem palavras diante de um visual impecável ou notícia surpreendente.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lacre",
+    "variacoes": ["lacrei", "lacração"],
+    "classe_gramatical": "substantivo",
+    "significado": "Resposta perfeita ou atitude brilhante que encerra uma discussão de forma memorável.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "aesthetic",
+    "variacoes": ["estética"],
+    "classe_gramatical": "substantivo",
+    "significado": "Visual ou estilo estético harmonioso, padronizado e visualmente agradável nas redes sociais.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "baddie",
+    "variacoes": ["baddies"],
+    "classe_gramatical": "substantivo",
+    "significado": "Estilo ou pessoa que exala autoconfiança, beleza marcante e muita atitude nas roupas e maquiagem.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "dropar",
+    "variacoes": ["dropou", "drop", "dropando"],
+    "classe_gramatical": "verbo",
+    "significado": "Abandonar ou desistir de algo como séries e músicas, ou lançar um novo produto no mercado.",
+    "tags": ["Pop", "Geek", "Redes sociais", "Jogos"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "fanfic",
+    "variacoes": ["fic", "fanfiqueira"],
+    "classe_gramatical": "substantivo",
+    "significado": "História inventada, boato, exagero dramático ou fantasia romântica criada mentalmente.",
+    "tags": ["Relacionamentos", "Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "lowkey",
+    "variacoes": ["low-key"],
+    "classe_gramatical": "advérbio",
+    "significado": "De modo discreto, contido, em segredo ou com moderação.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "highkey",
+    "variacoes": ["high-key"],
+    "classe_gramatical": "advérbio",
+    "significado": "De modo aberto, claro, sem esconder nada ou com muita intensidade.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "hitar",
+    "variacoes": ["hitou", "hit"],
+    "classe_gramatical": "verbo",
+    "significado": "Fazer muito sucesso, viralizar ou alcançar grande popularidade rapidamente.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "biscoitar",
+    "variacoes": ["biscoito", "biscoiteiro"],
+    "classe_gramatical": "verbo",
+    "significado": "Buscar atenção, elogios ou curtidas nas redes sociais por meio de postagens que ressaltam a própria aparência.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "jantou",
+    "variacoes": ["jantar", "jantou muito"],
+    "classe_gramatical": "verbo",
+    "significado": "Diz-se quando alguém rebate críticas ou argumentos alheios com maestria absoluta em uma discussão.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "serviu",
+    "variacoes": ["servindo", "serviu tudo"],
+    "classe_gramatical": "verbo",
+    "significado": "Entregar uma performance excelente, visual impecável ou atitude digna de aplausos.",
+    "tags": ["Pop", "Redes sociais", "Maquiagem"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "divar",
+    "variacoes": ["divou", "diva"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, sobressair-se de forma glamorosa ou agir com grande autoconfiança e brilho.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "iconic",
+    "variacoes": ["icônico", "icônica"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo extremamente memorável, marcante, histórico ou emblemático no mundo do entretenimento.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "stan",
+    "variacoes": ["stannar", "stanneio"],
+    "classe_gramatical": "substantivo",
+    "significado": "Fã obsessivo, extremamente dedicado ou fervoroso de um artista, celebridade ou grupo.",
+    "tags": ["Pop", "Kpop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "fandom",
+    "variacoes": ["fandoms"],
+    "classe_gramatical": "substantivo",
+    "significado": "Comunidade ou grupo de fãs extremamente dedicados a um artista, série, filme ou personagem.",
+    "tags": ["Pop", "Kpop", "Geek"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "comeback",
+    "variacoes": ["comebacks"],
+    "classe_gramatical": "substantivo",
+    "significado": "Retorno ou volta triunfal de um artista ou grupo musical após um período de inatividade ou hiato.",
+    "tags": ["Pop", "Kpop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "trend",
+    "variacoes": ["trends", "trendar"],
+    "classe_gramatical": "substantivo",
+    "significado": "Tendência do momento, formato de vídeo, áudio ou comportamento amplamente reproduzido nas redes sociais.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "exposed",
+    "variacoes": ["exposeds", "exposar"],
+    "classe_gramatical": "substantivo",
+    "significado": "Ato de revelar publicamente segredos, mentiras ou boas atitudes de alguém, geralmente apoiado por prints ou provas virtuais.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "main character",
+    "variacoes": ["protagonista"],
+    "classe_gramatical": "substantivo",
+    "significado": "Pessoa que se comporta ou se sente como a protagonista de um filme, esbanjando estilo e autoconfiança.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "glow up",
+    "variacoes": ["glow-up"],
+    "classe_gramatical": "substantivo",
+    "significado": "Processo notório de transformação positiva e melhoria drástica na aparência física, estilo ou saúde mental.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano", "Maquiagem"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "bapho",
+    "variacoes": ["bafafá", "baphon"],
+    "classe_gramatical": "substantivo",
+    "significado": "Situação chocante, fofoca quente ou acontecimento que gera grande repercussão social.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "cancelar",
+    "variacoes": ["cancelado", "cancelamento"],
+    "classe_gramatical": "verbo",
+    "significado": "Boicotar ou rejeitar socialmente e publicamente uma pessoa, geralmente online, devido a comportamentos reprováveis.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "situationship",
+    "variacoes": ["situationships"],
+    "classe_gramatical": "substantivo",
+    "significado": "Relacionamento amoroso ou afetivo sem rótulos formais, onde as pessoas agem como casal mas não oficializam o namoro.",
+    "tags": ["Relacionamentos", "Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "chavoso",
+    "variacoes": ["chave", "chaveoso"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa ou estilo extremamente bem arrumado, estiloso, bonito e marcante, comum na cultura urbana.",
+    "tags": ["Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "embrazar",
+    "variacoes": ["embrazou", "embrazado"],
+    "classe_gramatical": "verbo",
+    "significado": "Ficar muito animado, divertir-se intensamente ou entrar no clima de uma festa com energia alta.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "hype",
+    "variacoes": ["hypado", "hypar"],
+    "classe_gramatical": "substantivo",
+    "significado": "Grande expectativa, entusiasmo geral ou alta popularidade em torno de um lançamento ou tendência.",
+    "tags": ["Cotidiano", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "gatilho",
+    "variacoes": ["gatilhos", "gatilhada"],
+    "classe_gramatical": "substantivo",
+    "significado": "Algo que provoca uma forte reação emocional, lembrança marcante ou identificação profunda.",
+    "tags": ["Cotidiano", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "mood",
+    "variacoes": ["moods"],
+    "classe_gramatical": "substantivo",
+    "significado": "Estado de espírito do momento ou algo com o qual a pessoa se identifica emocionalmente na hora.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "tea",
+    "variacoes": ["chá", "spill the tea"],
+    "classe_gramatical": "substantivo",
+    "significado": "Fofoca, informação quente ou revelação de segredos de bastidores sobre celebridades ou conhecidos.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "cunty",
+    "variacoes": ["cuntiness"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Característica de alguém ou de um visual extremamente estiloso, ousado, confiante e com muita atitude.",
+    "tags": ["Pop", "Maquiagem", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "wig",
+    "variacoes": ["wig snatched"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para indicar extremo choque ou admiração quando algo é tão bom que parece arrancar a peruca.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "ijbol",
+    "variacoes": ["ijbols"],
+    "classe_gramatical": "interjeição",
+    "significado": "Sigla em inglês para indicar gargalhada ou riso incontrolável diante de algo muito cômico.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "soft launch",
+    "variacoes": ["soft-launched"],
+    "classe_gramatical": "substantivo",
+    "significado": "Ato de sugerir de forma discreta e indireta um relacionamento amoroso nas redes sociais, sem revelar o rosto do parceiro.",
+    "tags": ["Relacionamentos", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "clean girl",
+    "variacoes": ["clean girls"],
+    "classe_gramatical": "substantivo",
+    "significado": "Estética minimalista caracterizada por um visual limpo, maquiagem leve, pele hidratada, cabelo alinhado e rotina saudável.",
+    "tags": ["Maquiagem", "Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos"
+  },
+  {
+    "nome": "mãe rica indo pro brunch",
+    "variacoes": ["mãe rica"],
+    "classe_gramatical": "substantivo",
+    "significado": "Visual sofisticado, minimalista, luxuoso e chique sem esforço, comumente associado a cores beges e óculos escuros.",
+    "tags": ["Cotidiano", "Redes sociais", "Pop"],
+    "permissao": "todos"
+  }
+]
