@@ -1,1 +1,262 @@
-a
+[
+  {
+    "nome": "esfumado",
+    "variacoes": ["esfumar", "efeito esfumado"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Técnica de difuminar as sombras nos olhos para criar transição suave de cores, sem linhas marcadas.",
+    "tags": ["maquiagem", "olhos", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um esfumado marrom bem suave pra ir no trabalho hoje.",
+    "exemplos_incorretos": [
+      "Comprei um esfumado de morango na feira ontem.",
+      "Meu carro ficou todo esfumado depois da chuva de poeira.",
+      "Vou esfumar a carne no forno por duas horas."
+    ],
+    "significados_incorretos": [
+      "Prato típico feito com carne defumada lentamente.",
+      "Efeito visual causado por sujeira acumulada em vidros.",
+      "Nome de uma sobremesa cremosa com chocolate derretido."
+    ]
+  },
+  {
+    "nome": "boca de boneca",
+    "variacoes": ["efeito boca de boneca"],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de contorno labial que aumenta visualmente o volume dos lábios, deixando-os mais cheios.",
+    "tags": ["maquiagem", "boca", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Usei o lápis um pouco fora da linha natural pra fazer boca de boneca.",
+    "exemplos_incorretos": [
+      "Comprei uma boca de boneca nova pra minha filha brincar.",
+      "A loja de brinquedos vende boca de boneca articulada.",
+      "Guardei a boca de boneca na caixa de plástico."
+    ],
+    "significados_incorretos": [
+      "Peça de brinquedo infantil vendida separadamente.",
+      "Componente de bonecas usado para dar expressões.",
+      "Acessório colecionável de bonecas antigas."
+    ]
+  },
+  {
+    "nome": "pele de vidro",
+    "variacoes": ["glass skin"],
+    "classe_gramatical": "expressão",
+    "significado": "Efeito de pele extremamente hidratada, lisa e com brilho natural, como se fosse translúcida.",
+    "tags": ["maquiagem", "pele", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela tem uma rotina de skincare incrível, sempre com aquela pele de vidro.",
+    "exemplos_incorretos": [
+      "Cuidado pra não quebrar essa pele de vidro na estante.",
+      "A janela tem uma pele de vidro reforçado contra impacto.",
+      "Troquei a pele de vidro do meu celular quebrado."
+    ],
+    "significados_incorretos": [
+      "Tipo de revestimento usado em janelas modernas.",
+      "Película protetora aplicada em telas de celular.",
+      "Material transparente usado em construção civil."
+    ]
+  },
+  {
+    "nome": "postiço",
+    "variacoes": ["cílios postiços"],
+    "classe_gramatical": "substantivo/adjetivo",
+    "significado": "Cílios artificiais aplicados para dar mais volume e comprimento ao olhar.",
+    "tags": ["maquiagem", "olhos", "produto"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Coloquei um postiço fininho só nas pontas pra ficar mais natural.",
+    "exemplos_incorretos": [
+      "Meu dente postiço caiu no meio do jantar.",
+      "Ele usa uma perna postiça desde o acidente.",
+      "Comprei um bigode postiço pra festa a fantasia."
+    ],
+    "significados_incorretos": [
+      "Prótese dentária usada para substituir dentes naturais.",
+      "Membro artificial usado para reabilitação física.",
+      "Acessório de fantasia usado em festas temáticas."
+    ]
+  },
+  {
+    "nome": "glow up",
+    "variacoes": ["deu um glow up", "glow up de make"],
+    "classe_gramatical": "expressão",
+    "significado": "Transformação visual impressionante, geralmente mostrando o antes e depois de uma make ou cuidado com a pele.",
+    "tags": ["maquiagem", "transformacao", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Depois que ela aprendeu a fazer contorno, foi um glow up total no rosto.",
+    "exemplos_incorretos": [
+      "A lâmpada deu um glow up na sala toda.",
+      "O vagalume fez um glow up no jardim à noite.",
+      "Troquei a bateria e o celular fez um glow up na tela."
+    ],
+    "significados_incorretos": [
+      "Emissão de luz artificial em ambientes fechados.",
+      "Bioluminescência natural de certos insetos.",
+      "Aumento de brilho em telas eletrônicas."
+    ]
+  },
+  {
+    "nome": "clean girl",
+    "variacoes": ["clean girl makeup", "cara de clean girl"],
+    "classe_gramatical": "expressão",
+    "significado": "Estética de maquiagem minimalista, com pele hidratada, sobrancelha escovada e make leve que parece 'sem make', bem popular entre influencers de beleza.",
+    "tags": ["maquiagem", "tendencia", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Hoje eu quis um visual clean girl: só hidratante com cor, blush e gloss.",
+    "exemplos_incorretos": [
+      "Comprei um clean girl novo pra limpar a cozinha.",
+      "Levei meu carro no clean girl do bairro pra lavar.",
+      "O clean girl da escola varreu o pátio inteiro."
+    ],
+    "significados_incorretos": [
+      "Produto de limpeza doméstica multiuso.",
+      "Profissional responsável pela limpeza de um ambiente.",
+      "Serviço de lavagem automotiva rápida."
+    ]
+  },
+  {
+    "nome": "soft glam",
+    "variacoes": ["soft glam make"],
+    "classe_gramatical": "expressão",
+    "significado": "Estilo de maquiagem sofisticado mas suave, com tons neutros, acabamento glow e menos contraste que uma make 'glam' tradicional.",
+    "tags": ["maquiagem", "tecnica", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz uma soft glam pra festa: sombra dourada, cílios naturais e batom nude.",
+    "exemplos_incorretos": [
+      "Comprei um travesseiro soft glam pra cama nova.",
+      "A luz do quarto ficou soft glam depois da reforma.",
+      "O sofá da sala tem um tecido soft glam macio."
+    ],
+    "significados_incorretos": [
+      "Tipo de tecido macio usado em estofados.",
+      "Iluminação suave usada em decoração de interiores.",
+      "Material de enchimento usado em travesseiros."
+    ]
+  },
+  {
+    "nome": "borrada",
+    "variacoes": ["make borrada", "borrou toda"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Quando a maquiagem sai do lugar, escorre ou se desfaz, geralmente por suor, choro ou chuva — virou meme quando acontece em público.",
+    "tags": ["maquiagem", "meme", "tiktok"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Chorei tanto no filme que minha make ficou toda borrada.",
+    "exemplos_incorretos": [
+      "A tinta da parede ficou borrada depois da chuva.",
+      "O texto do caderno ficou borrado com a caneta molhada.",
+      "A foto saiu borrada porque a câmera tremeu."
+    ],
+    "significados_incorretos": [
+      "Efeito de desfoque em fotografias mal tiradas.",
+      "Mancha de tinta em superfícies pintadas.",
+      "Escrita ilegível por tinta espalhada no papel."
+    ]
+  },
+  {
+    "nome": "cara lavada",
+    "variacoes": ["ficar de cara lavada"],
+    "classe_gramatical": "expressão",
+    "significado": "Estar sem nenhuma maquiagem no rosto, com a pele natural à mostra.",
+    "tags": ["maquiagem", "cotidiano", "pele"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Hoje resolvi ficar de cara lavada, só um protetor solar.",
+    "exemplos_incorretos": [
+      "Deixei a louça de cara lavada na pia.",
+      "O carro ficou de cara lavada depois do lava-rápido.",
+      "A calçada ficou de cara lavada depois da chuva forte."
+    ],
+    "significados_incorretos": [
+      "Estado de limpeza de objetos ou superfícies.",
+      "Resultado de lavagem intensa de veículos.",
+      "Condição de uma rua após chuva forte."
+    ]
+  },
+  {
+    "nome": "full face",
+    "variacoes": ["fazer a full face", "look full face"],
+    "classe_gramatical": "expressão",
+    "significado": "Maquiagem completa, com todas as etapas: base, corretivo, pó, sobrancelha, olhos, blush, contorno e boca.",
+    "tags": ["maquiagem", "tutorial", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Gravei um vídeo fazendo minha full face do zero pro casamento.",
+    "exemplos_incorretos": [
+      "A academia tem um treino full face pros braços.",
+      "Comprei um prato full face de comida japonesa.",
+      "O carro veio com pintura full face de fábrica."
+    ],
+    "significados_incorretos": [
+      "Tipo de treino físico voltado para grupos musculares.",
+      "Porção completa de um prato em restaurante.",
+      "Acabamento de pintura automotiva de fábrica."
+    ]
+  },
+  {
+    "nome": "no makeup makeup",
+    "variacoes": ["make de cara lavada", "make natural"],
+    "classe_gramatical": "expressão",
+    "significado": "Maquiagem feita com técnica e produtos, mas com resultado que parece pele natural, sem make aparente.",
+    "tags": ["maquiagem", "tecnica", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Passei quase meia hora numa make no makeup makeup bem trabalhada.",
+    "exemplos_incorretos": [
+      "A loja não vende no makeup makeup nenhum.",
+      "Ele comprou um no makeup makeup pro carro.",
+      "O restaurante serve no makeup makeup no almoço."
+    ],
+    "significados_incorretos": [
+      "Item disponível apenas em lojas específicas.",
+      "Acessório automotivo vendido em concessionárias.",
+      "Prato do cardápio de um restaurante."
+    ]
+  },
+  {
+    "nome": "delineado gatinho",
+    "variacoes": ["winged liner", "gatinho"],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de delineado que puxa uma linha fina até a ponta externa do olho, criando um efeito alongado tipo 'olho de gato'.",
+    "tags": ["maquiagem", "olhos", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Levei uns bons minutos, mas consegui fazer o delineado gatinho simétrico dos dois lados.",
+    "exemplos_incorretos": [
+      "O delineado gatinho fugiu de casa ontem à noite.",
+      "Comprei ração pro delineado gatinho da vizinha.",
+      "O veterinário examinou o delineado gatinho na consulta."
+    ],
+    "significados_incorretos": [
+      "Animal de estimação felino de pequeno porte.",
+      "Nome carinhoso dado a um gato doméstico.",
+      "Espécie de felino cuidada em clínicas veterinárias."
+    ]
+  },
+  {
+    "nome": "nose highlight",
+    "variacoes": ["iluminar o nariz", "coração no nariz"],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de aplicar um toque de iluminador em formato de coraçãozinho na ponta do nariz, deixando o visual mais fofo e brilhante.",
+    "tags": ["maquiagem", "tecnica", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Terminei a make com um nose highlight bem discretinho pra dar um brilho fofo.",
+    "exemplos_incorretos": [
+      "O nose highlight do carro parou de funcionar de noite.",
+      "Troquei o nose highlight queimado da sala.",
+      "O eletricista instalou um nose highlight novo na varanda."
+    ],
+    "significados_incorretos": [
+      "Peça de iluminação usada em ambientes residenciais.",
+      "Farol dianteiro de um veículo automotor.",
+      "Lâmpada decorativa usada em áreas externas."
+    ]
+  }
+]
