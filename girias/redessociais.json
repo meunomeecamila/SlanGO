@@ -2,163 +2,603 @@
   "redesociais": [
     {
       "nome": "ranço",
-      "variacoes": [],
+      "variacoes": ["pegar ranço"],
       "classe_gramatical": "substantivo",
-      "significado": "Gíria usada para descrever o sentimento de desprezo ou raiva que uma pessoa pode desenvolver por algo ou alguém.",
-      "tags": ["sentimento", "internet"],
-      "permissao": "todos"
+      "significado": "É aquele sentimento de desprezo, irritação ou cansaço extremo que a gente sente por alguma pessoa, atitude ou situação.",
+      "tags": ["sentimento", "internet", "relacionamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Peguei um ranço daquela série depois que mataram meu personagem favorito.",
+      "exemplos_incorretos": [
+        "Vou comprar um ranço na padaria para o lanche.",
+        "Meu computador está muito ranço hoje, preciso reiniciar.",
+        "A comida estava uma delícia, puro ranço!"
+      ],
+      "significados_incorretos": [
+        "Um tipo de prato típico brasileiro.",
+        "Ato de correr muito rápido em uma competição.",
+        "Expressão usada para demonstrar extrema alegria e gratidão."
+      ]
     },
     {
       "nome": "biscoiteiro",
-      "variacoes": ["biscoiteira", "dar biscoito"],
+      "variacoes": ["biscoiteira", "dar biscoito", "quer biscoito"],
       "classe_gramatical": "substantivo",
-      "significado": "Pessoa que faz de tudo para chamar a atenção na internet, postando fotos ou textões só para receber elogios.",
-      "tags": ["comportamento", "redes-sociais"],
-      "permissao": "todos"
+      "significado": "Pessoa que faz de tudo para chamar a atenção na internet, postando fotos ou textos com o único objetivo de receber elogios.",
+      "tags": ["comportamento", "redes-sociais", "fotos"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ele postou dez selfies seguidas na academia, é muito biscoiteiro.",
+      "exemplos_incorretos": [
+        "Vou no mercado comprar um biscoiteiro de chocolate.",
+        "O cachorro está biscoiteiro hoje porque dormiu bastante.",
+        "Minha internet está caindo, acho que o roteador está biscoiteiro."
+      ],
+      "significados_incorretos": [
+        "Aquele que fabrica biscoitos artesanais.",
+        "Uma pessoa que odeia redes sociais e deleta suas contas.",
+        "Um programa de computador usado para baixar músicas."
+      ]
     },
     {
       "nome": "10/10",
-      "variacoes": [],
+      "variacoes": ["dez de dez"],
       "classe_gramatical": "adjetivo",
-      "significado": "Gíria usada para dizer que uma pessoa é muito bonita, indicando que ela é nota 10 de 10.",
-      "tags": ["aparencia", "internet"],
-      "permissao": "todos"
+      "significado": "Gíria usada para dizer que algo ou alguém é perfeito, excelente ou muito bonito, atingindo a nota máxima.",
+      "tags": ["aparencia", "internet", "gamers", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A nova temporada daquela série é 10/10, recomendo muito!",
+      "exemplos_incorretos": [
+        "Hoje eu acordei meio 10/10, com dor de cabeça e cansado.",
+        "O carro bateu no poste e deu um 10/10 no motor.",
+        "Vou colocar 10/10 de açúcar no café para ficar doce."
+      ],
+      "significados_incorretos": [
+        "Uma data comemorativa no mês de outubro.",
+        "Gíria para quem não sabe fazer contas de matemática.",
+        "Ato de dividir uma conta de restaurante em dez pessoas."
+      ]
     },
     {
       "nome": "tá na Disney",
-      "variacoes": [],
+      "variacoes": ["viajando na Disney", "tá na disney"],
       "classe_gramatical": "expressão",
-      "significado": "Significa que a pessoa está no mundo da lua, viajando ou que está sendo enganada.",
-      "tags": ["comportamento"],
-      "permissao": "todos"
+      "significado": "Significa que a pessoa está no mundo da lua, iludida, viajando nos pensamentos ou acreditando em algo que não faz sentido.",
+      "tags": ["comportamento", "conversa", "humor"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ele acha que o chefe vai dobrar o salário dele do nada? Tá na Disney!",
+      "exemplos_incorretos": [
+        "Eu comprei as passagens de avião porque a gente tá na Disney amanhã.",
+        "O bolo tá na Disney, pode tirar do forno.",
+        "Meu celular quebrou a tela, ele tá na Disney total."
+      ],
+      "significados_incorretos": [
+        "Expressão para quem acabou de chegar de viagem internacional.",
+        "Alguém que adora assistir filmes de animação infantil.",
+        "Comando de videogame para desbloquear uma fase secreta."
+      ]
     },
     {
       "nome": "LOL",
-      "variacoes": [],
+      "variacoes": ["lol"],
       "classe_gramatical": "sigla",
-      "significado": "Sigla para 'Laughing Out Loud' que significa 'rindo alto', usada para dizer que está morrendo de rir.",
-      "tags": ["humor", "risada"],
-      "permissao": "todos"
-    },
-    {
-      "nome": "Maria Mucilon",
-      "variacoes": [],
-      "classe_gramatical": "substantivo",
-      "significado": "Forma de chamar mulheres que gostam de rapazes ou meninas mais novos.",
-      "tags": ["relacionamento"],
-      "permissao": "todos"
-    },
-    {
-      "nome": "partiu",
-      "variacoes": ["#partiu"],
-      "classe_gramatical": "expressão",
-      "significado": "Usada como sinônimo de 'vamos lá', para transmitir a ideia de animação sobre algo que deve ser feito imediatamente.",
-      "tags": ["animacao", "eventos"],
-      "permissao": "todos"
-    },
-    {
-      "nome": "Deus me livre, mas quem me dera",
-      "variacoes": ["Deus me free"],
-      "classe_gramatical": "expressão",
-      "significado": "Expressão usada para demonstrar desejo por algo ao mesmo tempo em que brinca com a ideia de rejeição.",
-      "tags": ["humor", "relacionamento"],
-      "permissao": "todos"
+      "significado": "Sigla para 'Laughing Out Loud', que significa 'rindo alto'. É usada para demonstrar que você achou algo muito engraçado.",
+      "tags": ["humor", "risada", "ingles", "jogos"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O meme que você mandou no grupo foi muito bom, LOL!",
+      "exemplos_incorretos": [
+        "Vou colocar um LOL na pizza para dar mais sabor.",
+        "Estou muito triste hoje, perdi meu LOL.",
+        "O clima lá fora está um LOL de tanto chover."
+      ],
+      "significados_incorretos": [
+        "Marca registrada de roupas esportivas.",
+        "Gíria para se referir a uma pessoa com preguiça.",
+        "Sigla para um erro grave no sistema do computador."
+      ]
     },
     {
       "nome": "stalkear",
-      "variacoes": ["stalker"],
+      "variacoes": ["stalk", "stalker", "estalkear"],
       "classe_gramatical": "verbo",
-      "significado": "Gíria usada para dizer que está 'espionando' ou acompanhando a rotina de outra pessoa de forma obsessiva nas redes sociais.",
-      "tags": ["redes-sociais", "comportamento"],
-      "permissao": "todos"
+      "significado": "Investigar a fundo ou acompanhar a rotina de alguém nas redes sociais, olhando fotos, curtidas e comentários antigos.",
+      "tags": ["redes-sociais", "comportamento", "investigacao"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Fui stalkear o Instagram do meu crush e sem querer curti uma foto de 2018.",
+      "exemplos_incorretos": [
+        "Hoje vou stalkear meu quarto inteiro para tirar o pó.",
+        "Você precisa stalkear mais água durante o dia para a saúde.",
+        "O cachorro começou a stalkear o próprio rabo na sala."
+      ],
+      "significados_incorretos": [
+        "Ato de cozinhar refeições rápidas no micro-ondas.",
+        "Tirar várias selfies no mesmo lugar de ângulos diferentes.",
+        "Escrever mensagens com letras maiúsculas para demonstrar raiva."
+      ]
     },
     {
       "nome": "deu ruim",
-      "variacoes": ["dar ruim"],
+      "variacoes": ["dar ruim", "vai dar ruim"],
       "classe_gramatical": "expressão",
-      "significado": "Usada quando alguma coisa sai do planejado, dá errado ou não funciona.",
-      "tags": ["situacao"],
-      "permissao": "todos"
+      "significado": "Expressão usada quando alguma coisa não sai como o planejado, dá errado, falha ou causa um problema.",
+      "tags": ["situacao", "problema", "dia a dia"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fui tentar fazer a receita da internet e queimou tudo, deu ruim.",
+      "exemplos_incorretos": [
+        "Parabéns pelo seu casamento, deu ruim demais!",
+        "Ganhei na loteria ontem, deu muito ruim!",
+        "Vou deu ruim a porta porque está fazendo barulho."
+      ],
+      "significados_incorretos": [
+        "Quando uma pessoa acorda de bom humor.",
+        "Uma festa surpresa que foi muito bem organizada.",
+        "Um aplicativo de celular que organiza a rotina."
+      ]
     },
     {
       "nome": "crush",
-      "variacoes": [],
+      "variacoes": ["meu crush"],
       "classe_gramatical": "substantivo",
-      "significado": "Pessoa que desperta atração em outra, um tipo de paixão platônica.",
-      "tags": ["relacionamento"],
-      "permissao": "todos"
+      "significado": "Pessoa por quem você tem uma atração amorosa ou platônica, aquele famoso 'paquera' ou 'queda' por alguém.",
+      "tags": ["relacionamento", "amor", "internet"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ontem eu finalmente criei coragem e puxei assunto com o meu crush.",
+      "exemplos_incorretos": [
+        "Meu crush de ouvido está doendo muito.",
+        "Esqueci de pagar o crush de luz desse mês.",
+        "Preciso trocar o crush do meu carro porque o pneu furou."
+      ],
+      "significados_incorretos": [
+        "Uma bebida gasosa servida nas festas de fim de ano.",
+        "O ato de destruir arquivos de um pen-drive.",
+        "Uma espécie de cachorro de pequeno porte."
+      ]
     },
     {
       "nome": "MDS",
-      "variacoes": [],
+      "variacoes": ["mds"],
       "classe_gramatical": "sigla",
-      "significado": "Abreviação de 'Meu Deus', usada para expressar alegria, surpresa, espanto, reprovação ou desejo.",
-      "tags": ["reacao"],
-      "permissao": "todos"
+      "significado": "Abreviação rápida para 'Meu Deus', muito usada nas mensagens para expressar susto, alegria, espanto ou choque com alguma fofoca.",
+      "tags": ["reacao", "fofoca", "emocao"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "MDS, você não sabe o que aconteceu na festa ontem!",
+      "exemplos_incorretos": [
+        "Eu comprei um MDS novo para a minha sala de estar.",
+        "Você quer beber água ou MDS?",
+        "O cachorro latiu tão alto que quase me mordeu o MDS."
+      ],
+      "significados_incorretos": [
+        "Sigla para 'Movimento dos Dançarinos Solitários'.",
+        "Uma marca de cosméticos voltada para cabelos cacheados.",
+        "Tipo de arquivo de vídeo usado em edições de cinema."
+      ]
     },
     {
       "nome": "auge",
-      "variacoes": [],
+      "variacoes": ["o auge"],
       "classe_gramatical": "substantivo",
-      "significado": "Usada como deboche para falar de algum fracasso ou, de forma positiva, para elogiar que algo atingiu o ápice.",
-      "tags": ["reacao", "twitter"],
-      "permissao": "todos"
+      "significado": "Usada frequentemente como deboche para falar que algo é o limite do ridículo, ou, de forma positiva, para dizer que a pessoa está no seu melhor momento.",
+      "tags": ["reacao", "twitter", "deboche"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ele brigou comigo porque eu curti uma foto antiga. Nossa, foi o auge da imaturidade.",
+      "exemplos_incorretos": [
+        "Vou temperar o frango com bastante auge e sal.",
+        "Comprei um sapato novo número auge.",
+        "Preciso de uma tesoura para cortar esse auge."
+      ],
+      "significados_incorretos": [
+        "Um tipo de pássaro encontrado na região norte do Brasil.",
+        "Ato de bocejar quando se está com muito sono.",
+        "Gíria para se referir a uma pessoa que fala muito baixo."
+      ]
     },
     {
       "nome": "SLC",
-      "variacoes": ["sê é loco"],
+      "variacoes": ["slc", "seloco", "cê é loco"],
       "classe_gramatical": "sigla",
-      "significado": "Forma reduzida de 'Você é louco', utilizada para expressar surpresa, indignação ou discordância.",
-      "tags": ["reacao"],
-      "permissao": "todos"
-    },
-    {
-      "nome": "dar PT",
-      "variacoes": [],
-      "classe_gramatical": "expressão",
-      "significado": "O mesmo que 'dar perda total', usada quando alguém bebe muito até passar mal ou ficar inconsciente de suas ações.",
-      "tags": ["festas", "comportamento"],
-      "permissao": "todos"
+      "significado": "Forma reduzida e digitada da expressão 'Você é louco', usada para demonstrar indignação, espanto ou surpresa com algo muito intenso.",
+      "tags": ["reacao", "surpresa", "conversa"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "SLC, o calor que está fazendo hoje é desumano!",
+      "exemplos_incorretos": [
+        "O professor pediu para ler o capítulo SLC do livro.",
+        "Vou passar no mercado para comprar um pouco de SLC.",
+        "A cor da sua camisa é muito SLC, combina com tudo."
+      ],
+      "significados_incorretos": [
+        "Sigla para 'Sociedade dos Leitores Compulsivos'.",
+        "Uma doença que ataca as unhas dos pés.",
+        "O modelo de uma televisão inteligente de última geração."
+      ]
     },
     {
       "nome": "shippar",
-      "variacoes": ["ship"],
+      "variacoes": ["ship", "shippo", "shippando"],
       "classe_gramatical": "verbo",
-      "significado": "Desejar a união de duas ou mais pessoas, formando um casal.",
-      "tags": ["relacionamento"],
-      "permissao": "todos"
+      "significado": "O ato de torcer para que duas pessoas (reais ou personagens de ficção) fiquem juntas e formem um casal romântico.",
+      "tags": ["relacionamento", "fandom", "series"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eu não consigo parar de shippar aqueles dois atores, a química deles é perfeita.",
+      "exemplos_incorretos": [
+        "Eu vou shippar o lixo lá fora antes que comece a cheirar mal.",
+        "O pneu do carro shippou no meio da rodovia.",
+        "Preciso shippar essa blusa com sabão em pó."
+      ],
+      "significados_incorretos": [
+        "Enviar mercadorias ilegalmente por navio.",
+        "Forma de xingamento usada em jogos online competitivos.",
+        "Ato de comer um pacote de salgadinhos muito rápido."
+      ]
     },
     {
       "nome": "basculho",
-      "variacoes": [],
+      "variacoes": ["basculhos"],
       "classe_gramatical": "substantivo",
-      "significado": "Significa algo como resto, sobra, item que se vai jogar fora.",
-      "tags": ["ofensa", "meme"],
-      "permissao": "todos"
+      "significado": "Gíria popularizada em reality shows que significa resto, sobra, sujeira ou algo/alguém sem importância que deve ser jogado fora.",
+      "tags": ["ofensa", "meme", "tv"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não vou ficar discutindo com você, eu não vim do lixo para perder pra basculho!",
+      "exemplos_incorretos": [
+        "Meu cachorro é um basculho lindo, da raça Poodle.",
+        "Comprei um basculho novinho para dirigir na cidade.",
+        "Que basculho de lugar chique e luxuoso para passar as férias!"
+      ],
+      "significados_incorretos": [
+        "Uma joia muito rara e cara feita de ouro.",
+        "Uma técnica de pintura usada por artistas renascentistas.",
+        "Um abraço forte e demorado entre duas pessoas apaixonadas."
+      ]
     },
     {
       "nome": "trollar",
-      "variacoes": ["troll", "trollagem"],
+      "variacoes": ["troll", "trollagem", "trollou"],
       "classe_gramatical": "verbo",
-      "significado": "O mesmo que enganar, zoar ou tirar sarro de alguém na internet.",
-      "tags": ["brincadeira", "comportamento"],
-      "permissao": "todos"
+      "significado": "O ato de enganar, pregar uma peça, fazer uma brincadeira ou tirar sarro de alguém na internet ou na vida real.",
+      "tags": ["brincadeira", "humor", "pegadinha"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Coloquei sal no açucareiro só para trollar meu irmão no café da manhã.",
+      "exemplos_incorretos": [
+        "Estou com dor de cabeça, preciso trollar um remédio.",
+        "Vou me trollar na cama porque estou muito cansado.",
+        "O céu está cheio de trollar, acho que vai chover."
+      ],
+      "significados_incorretos": [
+        "Ato de caminhar lentamente em um parque.",
+        "Tipo de massagem facial para relaxamento profundo.",
+        "Assinar um documento oficial em um cartório."
+      ]
     },
     {
       "nome": "mec",
-      "variacoes": [],
+      "variacoes": ["tá mec", "ficar mec"],
       "classe_gramatical": "adjetivo",
-      "significado": "Gíria carioca que significa ficar tranquilo, suave.",
-      "tags": ["estado", "giria-regional"],
-      "permissao": "todos"
+      "significado": "Gíria muito comum no Rio de Janeiro que significa estar tranquilo, suave, de boa ou que uma situação está sob controle.",
+      "tags": ["estado", "giria-regional", "tranquilidade"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Pode ir para a festa, o trabalho de amanhã tá mec, já terminei tudo.",
+      "exemplos_incorretos": [
+        "Eu bati o dedo mindinho na quina do móvel, foi muito mec!",
+        "Esse restaurante vende um mec maravilhoso de queijo.",
+        "O cachorro mec me mordeu na rua."
+      ],
+      "significados_incorretos": [
+        "Sigla exclusiva para profissionais mecânicos de automóveis.",
+        "Uma pessoa que está muito irritada e brava.",
+        "Gíria para um tipo específico de tênis de corrida."
+      ]
     },
     {
       "nome": "flopar",
-      "variacoes": ["flop", "flopou"],
+      "variacoes": ["flop", "flopou", "flopada"],
       "classe_gramatical": "verbo",
-      "significado": "Significa falhar, fracassar ou não ter sucesso.",
-      "tags": ["situacao", "redes-sociais"],
-      "permissao": "todos"
+      "significado": "Significa falhar, fracassar, não ter o sucesso esperado ou gerar baixo engajamento (como um post sem curtidas).",
+      "tags": ["situacao", "redes-sociais", "decepcao"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O clipe novo daquele cantor não agradou os fãs e acabou flopando nas visualizações.",
+      "exemplos_incorretos": [
+        "Fui na academia hoje e consegui flopar 50 quilos no supino.",
+        "Essa comida está muito flopar, coloca mais pimenta.",
+        "Meu aniversário flopou tão bem que foi a melhor festa do ano!"
+      ],
+      "significados_incorretos": [
+        "Bater palmas de forma ritmada em um show.",
+        "Pular de paraquedas de um avião em movimento.",
+        "Ato de conseguir muitos seguidores do dia para a noite."
+      ]
+    },
+    {
+      "nome": "fada sensata",
+      "variacoes": ["fado sensato"],
+      "classe_gramatical": "expressão",
+      "significado": "Gíria usada para elogiar uma pessoa que sempre tem opiniões corretas, justas, equilibradas e diz as coisas certas nos momentos certos.",
+      "tags": ["elogio", "comportamento", "internet"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A Maria deu uma resposta perfeita para aquele comentário preconceituoso. Uma verdadeira fada sensata!",
+      "exemplos_incorretos": [
+        "Vou construir uma fada sensata de madeira para o jardim.",
+        "Fui picado por uma fada sensata enquanto andava no mato.",
+        "Minha calça fada sensata rasgou no joelho."
+      ],
+      "significados_incorretos": [
+        "Um personagem de contos infantis que perdeu os poderes.",
+        "Alguém que não sabe tomar decisões e sempre erra.",
+        "Um objeto mágico usado para prever o futuro amoroso."
+      ]
+    },
+    {
+      "nome": "poser",
+      "variacoes": ["posers"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que finge ser fã de algo (uma banda, jogo, cultura) apenas para estar na moda ou se enturmar, sem conhecer o assunto de verdade.",
+      "tags": ["comportamento", "fandom", "julgamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele usa camisa daquela banda de rock, mas não sabe o nome de nenhuma música. Maior poser.",
+      "exemplos_incorretos": [
+        "Vou poser a panela no fogão para esquentar a água.",
+        "Meu gato poser muito no sofá durante a tarde.",
+        "Preciso de uma colher para poser o açúcar no chá."
+      ],
+      "significados_incorretos": [
+        "Ato de tirar fotografias profissionais em um estúdio.",
+        "Uma pessoa que adora estudar e ler livros didáticos.",
+        "Instrumento musical semelhante a um violão pequeno."
+      ]
+    },
+    {
+      "nome": "hype",
+      "variacoes": ["no hype", "hypado", "hypar"],
+      "classe_gramatical": "substantivo",
+      "significado": "É o grau extremo de expectativa, empolgação e atenção que algo (um lançamento de jogo, filme ou tendência) recebe na internet.",
+      "tags": ["tendencia", "moda", "ansiedade"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O hype para a estreia do novo filme do Homem-Aranha está absurdo, os ingressos já esgotaram.",
+      "exemplos_incorretos": [
+        "Vou colocar a blusa hype no varal para secar.",
+        "Comi um hype de chocolate muito gostoso ontem.",
+        "O mecânico disse que preciso trocar o hype do pneu."
+      ],
+      "significados_incorretos": [
+        "Um tipo de remédio para curar resfriado.",
+        "Estado de depressão profunda e desânimo.",
+        "Animal aquático parente do cavalo-marinho."
+      ]
+    },
+    {
+      "nome": "mitou",
+      "variacoes": ["mitar", "mitada", "mito"],
+      "classe_gramatical": "verbo",
+      "significado": "Significa fazer ou dizer algo tão sensacional, genial ou épico que a pessoa se transforma em uma lenda (um 'mito') naquele momento.",
+      "tags": ["sucesso", "reacao", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Você mitou com aquela resposta inteligente que deu para o professor durante o debate.",
+      "exemplos_incorretos": [
+        "Eu acabei de mitou meu quarto com vassoura e pá.",
+        "Ele estava correndo e mitou no chão ralando o joelho.",
+        "O cachorro mitou na sala e sujou o tapete."
+      ],
+      "significados_incorretos": [
+        "O ato de contar muitas mentiras seguidas.",
+        "Tornar algo menos importante do que realmente é.",
+        "Dormir por mais de 12 horas seguidas."
+      ]
+    },
+    {
+      "nome": "divar",
+      "variacoes": ["divou", "divando"],
+      "classe_gramatical": "verbo",
+      "significado": "O mesmo que agir como uma verdadeira diva, esbanjando beleza, glamour, autoconfiança e chamando a atenção de forma positiva.",
+      "tags": ["beleza", "atitude", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A aniversariante chegou na festa com um vestido impecável, divando horrores!",
+      "exemplos_incorretos": [
+        "Eu preciso divar a conta de luz antes do vencimento.",
+        "Se divar chover, a gente não vai mais na praia.",
+        "Vou divar essa maçã ao meio para dividir com você."
+      ],
+      "significados_incorretos": [
+        "Ato de sentar confortavelmente em um divã no psicólogo.",
+        "Cantar de forma desafinada em público.",
+        "Organizar documentos em ordem alfabética."
+      ]
+    },
+    {
+      "nome": "chavoso",
+      "variacoes": ["chavosa", "chave"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Estilo de se vestir de forma estilosa e autêntica, comum nas periferias, usando cordões, óculos espelhados e cortes de cabelo desenhados.",
+      "tags": ["estilo", "moda", "cultura-urbana"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ele foi para o baile funk com um tênis novo e o cabelo na régua, tava muito chavoso.",
+      "exemplos_incorretos": [
+        "Esqueci de trazer meu chavoso para abrir a porta de casa.",
+        "Tomei um chá chavoso de hortelã antes de dormir.",
+        "O computador está muito chavoso, a internet não carrega nada."
+      ],
+      "significados_incorretos": [
+        "Uma pessoa que está sempre chorando sem motivo.",
+        "Gíria para motoristas que perdem as chaves do carro frequentemente.",
+        "Sabor de sorvete exótico feito no nordeste."
+      ]
+    },
+    {
+      "nome": "jantar",
+      "variacoes": ["jantou", "jantada", "serviu o jantar"],
+      "classe_gramatical": "verbo",
+      "significado": "Gíria usada quando alguém arrasa nos argumentos e destrói o oponente verbalmente em uma discussão, deixando-o sem resposta.",
+      "tags": ["debate", "internet", "briga"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Meu Deus, ela apresentou todos os prints e jantou o ex-namorado na discussão do Twitter.",
+      "exemplos_incorretos": [
+        "Amanhã de manhã, vou acordar cedo para jantar o café.",
+        "Eu gosto de jantar livros de ficção científica.",
+        "A chuva começou a jantar forte no telhado de casa."
+      ],
+      "significados_incorretos": [
+        "Literalmente comer o prato principal da noite sem contexto metafórico.",
+        "Ato de convidar alguém educadamente para entrar em sua casa.",
+        "Perder uma aposta financeira alta."
+      ]
+    },
+    {
+      "nome": "old",
+      "variacoes": ["old que sim", "oldíssimo"],
+      "classe_gramatical": "adjetivo",
+      "significado": "A tradução do inglês é 'velho', mas na internet significa que uma informação ou situação é óbvia, esperada ou que não é novidade para ninguém.",
+      "tags": ["reacao", "conversa", "obvio"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Eles voltaram a namorar de novo? Nossa, old que isso ia acontecer mais cedo ou mais tarde.",
+      "exemplos_incorretos": [
+        "Preciso trocar a lâmpada do quarto porque ela está muito old.",
+        "A comida old estava na geladeira há meses.",
+        "Hoje eu acordei sentindo muita dor old nas costas."
+      ],
+      "significados_incorretos": [
+        "Gíria para pessoas que têm mais de 60 anos.",
+        "Ato de escutar músicas sertanejas antigas.",
+        "Um tipo de cumprimento secreto entre amigos."
+      ]
+    },
+    {
+      "nome": "gatilho",
+      "variacoes": ["dar gatilho", "gatilhos"],
+      "classe_gramatical": "substantivo",
+      "significado": "Referência a uma palavra, imagem ou situação que desperta uma lembrança ruim, desconforto, tristeza ou trauma psicológico na pessoa.",
+      "tags": ["saude-mental", "sentimento", "aviso"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não consigo ver esse documentário sobre acidentes de carro, as imagens me dão um gatilho imenso.",
+      "exemplos_incorretos": [
+        "O gato do vizinho teve um filhote muito fofo, um lindo gatilho.",
+        "Vou pintar a parede do meu quarto de gatilho claro.",
+        "Para acessar a internet, você precisa ligar o gatilho na tomada."
+      ],
+      "significados_incorretos": [
+        "Parte metálica de uma arma de fogo.",
+        "Ato de piscar o olho para flertar com alguém.",
+        "Pequeno gato de estimação que mia muito alto."
+      ]
+    },
+    {
+      "nome": "cancelar",
+      "variacoes": ["cancelado", "cancelamento", "cultura do cancelamento"],
+      "classe_gramatical": "verbo",
+      "significado": "Promover um boicote severo nas redes sociais contra uma pessoa ou empresa que disse ou fez algo considerado inaceitável pelo público.",
+      "tags": ["internet", "julgamento", "famosos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele influenciador fez uma piada muito ofensiva e o pessoal do Twitter decidiu cancelar ele na mesma hora.",
+      "exemplos_incorretos": [
+        "Eu gosto muito de cancelar maçãs com canela de sobremesa.",
+        "Meu time de futebol vai cancelar hoje contra o rival no estádio.",
+        "O céu estava tão cancelar que não vi nem uma nuvem."
+      ],
+      "significados_incorretos": [
+        "Ato de deletar um documento de texto acidentalmente.",
+        "Remarcar uma consulta médica para o dia seguinte.",
+        "Forma de pedir desculpas publicamente e chorar em vídeo."
+      ]
+    },
+    {
+      "nome": "cringe",
+      "variacoes": ["muito cringe", "momento cringe"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Gíria para descrever uma situação, atitude ou pessoa tão vergonhosa e embaraçosa que causa desconforto e 'vergonha alheia' em quem assiste.",
+      "tags": ["vergonha", "comportamento", "geracao"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Meu pai tentando usar gírias de adolescente na frente dos meus amigos foi a coisa mais cringe que eu já vi.",
+      "exemplos_incorretos": [
+        "O dia está tão cringe hoje, acho que vou pegar uma praia.",
+        "Essa pizza de calabresa está super cringe, uma delícia!",
+        "Preciso apertar o parafuso com uma chave cringe."
+      ],
+      "significados_incorretos": [
+        "Algo assustador, relacionado a filmes de terror ou suspense.",
+        "Uma pessoa muito rica que gosta de exibir seus carros.",
+        "Um elogio para quem está vestido de forma muito elegante."
+      ]
+    },
+    {
+      "nome": "based",
+      "variacoes": ["baseado"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Oposta de cringe. Refere-se a alguém ou algo descolado, autêntico, que expressa opiniões firmes sem se importar com o julgamento alheio.",
+      "tags": ["atitude", "opiniao", "internet"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele falou a verdade que ninguém tinha coragem de dizer na reunião, atitude totalmente based.",
+      "exemplos_incorretos": [
+        "O pedreiro usou bastante based para construir o muro de tijolos.",
+        "Vou based o feijão com arroz no micro-ondas para esquentar.",
+        "A bateria do meu celular está based, preciso carregar."
+      ],
+      "significados_incorretos": [
+        "Gíria para designar quem constrói edifícios modernos.",
+        "Algo que é completamente embaraçoso e ridículo.",
+        "Uma regra rigorosa aplicada em fóruns de discussão."
+      ]
+    },
+    {
+      "nome": "hitou",
+      "variacoes": ["hitar", "hit"],
+      "classe_gramatical": "verbo",
+      "significado": "Significa que uma música, vídeo, publicação ou pessoa fez um sucesso gigantesco e rápido na internet, viralizando e alcançando muitas pessoas.",
+      "tags": ["sucesso", "musica", "viral"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O vídeo que ela postou dançando no TikTok hitou e já tem dois milhões de visualizações.",
+      "exemplos_incorretos": [
+        "Aquele bandido hitou o carro do policial e fugiu.",
+        "Eu tentei jogar basquete, mas hitou a bola na parede sem querer.",
+        "Não coma esse bolo, ele já hitou e está estragado há dias."
+      ],
+      "significados_incorretos": [
+        "Bater em alguém fisicamente durante uma discussão acalorada.",
+        "Ouvir uma música muito ruim e pedir para desligar.",
+        "Esquecer a letra de uma canção no meio do show."
+      ]
+    },
+    {
+      "nome": "dar migué",
+      "variacoes": ["migué", "deu migué", "miguezeiro"],
+      "classe_gramatical": "expressão",
+      "significado": "Inventar uma desculpa esfarrapada, mentira ou enrolação para escapar de um compromisso, tarefa difícil ou para enganar alguém.",
+      "tags": ["desculpa", "comportamento", "preguica"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele combinou de ajudar na mudança, mas deu migué dizendo que estava com dor nas costas.",
+      "exemplos_incorretos": [
+        "Fui na floricultura e comprei um dar migué lindo para a minha mãe.",
+        "Coloque um pouco de sal e dar migué na carne antes de assar.",
+        "Eu gosto de assistir filmes de dar migué, tipo aqueles de explosões."
+      ],
+      "significados_incorretos": [
+        "O ato de presentear alguém com doces chamados 'Miguelitos'.",
+        "Trabalhar arduamente e sem descanso por muitas horas seguidas.",
+        "Forma carinhosa de chamar um amigo que se chama Miguel."
+      ]
     }
   ]
 }
