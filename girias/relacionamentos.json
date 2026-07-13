@@ -6,7 +6,19 @@
       "classe_gramatical": "substantivo",
       "significado": "Pessoa por quem se tem uma forte atração romântica, interesse ou uma paixão platônica.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Eu vi meu crush na escola hoje e fiquei com vergonha de falar com ele.",
+      "exemplos_incorretos": [
+        "Vou comprar um crush no mercado para beber.",
+        "Meu carro quebrou porque deu um crush no motor.",
+        "Preciso baixar um crush novo no meu celular."
+      ],
+      "significados_incorretos": [
+        "Uma bebida muito gelada e doce.",
+        "Uma falha no sistema do computador.",
+        "Um tipo de sapato esportivo."
+      ]
     },
     {
       "nome": "contatinho",
@@ -14,23 +26,59 @@
       "classe_gramatical": "substantivo",
       "significado": "Pessoa com quem se mantém conversas frequentes ou encontros casuais voltados para o flerte, sem compromisso formal.",
       "tags": ["relacionamento", "cotidiano"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Hoje não vou sair com a turma, marquei de ver um contatinho.",
+      "exemplos_incorretos": [
+        "Preciso comprar um contatinho novo para o meu caderno.",
+        "O contatinho de energia da sala queimou ontem.",
+        "Vou pedir um contatinho de pizza para o jantar."
+      ],
+      "significados_incorretos": [
+        "Um pequeno pedaço de papel com anotações.",
+        "Um interruptor elétrico de parede.",
+        "Um tipo de lanche rápido."
+      ]
     },
     {
-        "nome": "date",
-        "variacoes": ["encontro"],
-        "classe_gramatical": "substantivo",
-        "significado": "Encontro romântico ou social entre duas pessoas, geralmente com o objetivo de conhecer melhor um ao outro ou desenvolver um relacionamento amoroso.",
-        "tags": ["relacionamento", "cotidiano"],
-        "permissao": "todos"
+      "nome": "date",
+      "variacoes": ["encontro"],
+      "classe_gramatical": "substantivo",
+      "significado": "Encontro romântico ou social entre duas pessoas, geralmente com o objetivo de conhecer melhor um ao outro ou desenvolver um relacionamento amoroso.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Fui em um date ontem à noite e fomos a um restaurante ótimo.",
+      "exemplos_incorretos": [
+        "Vou fazer um date no meu computador para salvar os arquivos.",
+        "Comprei um date de banana no mercado.",
+        "O professor pediu para entregar o date do trabalho amanhã."
+      ],
+      "significados_incorretos": [
+        "Uma atualização de sistema de software.",
+        "Uma fruta tropical doce.",
+        "O prazo final para uma tarefa escolar."
+      ]
     },
     {
-        "nome": "levar bolo",
-        "variacoes": ["dar bolo", "bolo", "deixar na mão"],
-        "classe_gramatical": "verbo",
-        "significado": "Ato de deixar alguém esperando pela sua presença em um encontro ou resposta na sua rede social.",
-        "tags": ["relacionamento", "cotidiano"],
-        "permissao": "todos"
+      "nome": "levar bolo",
+      "variacoes": ["dar bolo", "bolo", "deixar na mão"],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de deixar alguém esperando pela sua presença em um encontro ou não responder na rede social.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fiquei esperando ela no cinema por duas horas, acabei levando bolo.",
+      "exemplos_incorretos": [
+        "Fui na padaria e decidi levar bolo de chocolate para casa.",
+        "Preciso levar bolo para a festa de aniversário do meu sobrinho.",
+        "Vou levar bolo de cenoura na minha mochila para o lanche."
+      ],
+      "significados_incorretos": [
+        "Transportar um doce assado feito de farinha e açúcar.",
+        "Dar um presente de aniversário em formato de comida.",
+        "Guardar uma sobremesa na geladeira."
+      ]
     },
     {
       "nome": "dr",
@@ -38,7 +86,19 @@
       "classe_gramatical": "substantivo",
       "significado": "Sigla para 'Discussão de Relação'. Momento em que o casal conversa seriamente para resolver conflitos, alinhar expectativas ou avaliar o status do relacionamento.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Tivemos uma DR pesada ontem, mas conseguimos nos entender.",
+      "exemplos_incorretos": [
+        "Vou ao hospital porque marquei uma consulta com o dr.",
+        "Baixei um dr no meu computador para ler arquivos em PDF.",
+        "Comprei um dr de videogame novo na loja."
+      ],
+      "significados_incorretos": [
+        "Abreviação para a profissão de médico ou doutor.",
+        "Um programa de computador usado para edição de texto.",
+        "Um console de jogos eletrônicos."
+      ]
     },
     {
       "nome": "talarico",
@@ -46,15 +106,39 @@
       "classe_gramatical": "substantivo",
       "significado": "Pessoa que demonstra interesse amoroso ou se envolve intencionalmente com o parceiro ou parceira de um amigo.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele deu em cima da namorada do melhor amigo, foi muito talarico.",
+      "exemplos_incorretos": [
+        "Comi um talarico no restaurante mexicano.",
+        "O passarinho que canta na minha janela é um talarico.",
+        "Comprei um talarico novo para limpar a piscina."
+      ],
+      "significados_incorretos": [
+        "Um prato típico da culinária estrangeira apimentada.",
+        "Uma espécie de pássaro silvestre de bico curvo.",
+        "Um equipamento de limpeza doméstica."
+      ]
     },
     {
-        "nome":"olhante",
-        "variacoes": ["admirador", "olhar de longe", "respirante"],
-        "classe_gramatical": "substantivo",
-        "significado": "Pessoa que observa ou admira alguém à distância, sem ou se envolver diretamente, ou declarar abertamente.",
-        "tags": ["relacionamento"],
-        "permissao": "todos"
+      "nome": "olhante",
+      "variacoes": ["admirador", "olhar de longe", "respirante"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que observa ou admira alguém à distância, sem se envolver diretamente ou se declarar abertamente.",
+      "tags": ["relacionamento"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Maria, o seu olhante, o Pedro, está ali.",
+      "exemplos_incorretos": [
+        "Vou usar meu olhante para enxergar melhor as estrelas.",
+        "Preciso trocar o olhante da porta porque está quebrado.",
+        "O olhante do carro iluminou a estrada escura."
+      ],
+      "significados_incorretos": [
+        "Um instrumento óptico como um telescópio.",
+        "O buraco na porta usado para ver quem está de fora (olho mágico).",
+        "O farol dianteiro de um veículo automotor."
+      ]
     },
     {
       "nome": "ficante",
@@ -62,7 +146,19 @@
       "classe_gramatical": "substantivo",
       "significado": "Pessoa com quem se mantém um envolvimento afetivo e físico recorrente, mas que ainda não evoluiu para um namoro oficial.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Não estamos namorando sério, ele é só meu ficante.",
+      "exemplos_incorretos": [
+        "Usei uma fita ficante para colar o pôster na parede.",
+        "Preciso de um ficante para segurar a porta aberta.",
+        "O ficante da televisão quebrou e a tela apagou."
+      ],
+      "significados_incorretos": [
+        "Um tipo de fita adesiva de alta fixação.",
+        "Um objeto pesado usado como peso de porta.",
+        "Um componente interno de aparelhos eletrônicos."
+      ]
     },
     {
       "nome": "vela",
@@ -70,7 +166,19 @@
       "classe_gramatical": "substantivo",
       "significado": "Pessoa solteira que acompanha um casal em um passeio ou evento social, sentindo-se deslocada ou sobrando.",
       "tags": ["relacionamento", "cotidiano"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fui ao cinema com meu amigo e a namorada dele e fiquei de vela o filme todo.",
+      "exemplos_incorretos": [
+        "Acendi uma vela porque acabou a energia elétrica em casa.",
+        "O barco a vela navegou rápido pelo oceano hoje.",
+        "Comprei uma vela com cheiro de lavanda para o banheiro."
+      ],
+      "significados_incorretos": [
+        "Um objeto de cera com pavio usado para iluminação.",
+        "Um pedaço de tecido usado para impulsionar barcos com o vento.",
+        "Uma peça do motor do carro que gera faísca."
+      ]
     },
     {
       "nome": "shippar",
@@ -78,47 +186,519 @@
       "classe_gramatical": "verbo",
       "significado": "Ato de torcer ou apoiar um casal, seja na vida real ou em ficção, desejando que fiquem juntos.",
       "tags": ["relacionamento", "cotidiano"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eu comecei a shippar muito aqueles dois personagens na série.",
+      "exemplos_incorretos": [
+        "Vou shippar essa encomenda pelo correio amanhã.",
+        "Preciso shippar meu celular no computador para transferir as fotos.",
+        "Vou shippar a carne no freezer para não estragar."
+      ],
+      "significados_incorretos": [
+        "Enviar uma mercadoria por transportadora ou correio.",
+        "Conectar um dispositivo eletrônico via cabo USB.",
+        "Congelar alimentos em baixas temperaturas."
+      ]
     },
     {
       "nome": "ghosting",
       "variacoes": ["deixar para trás", "desaparecer"],
       "classe_gramatical": "verbo",
-      "significado": "Ato de interromper uma relação romântica ou social sem aviso prévio ou explicação.",
+      "significado": "Ato de interromper uma relação romântica ou social cortando contato de repente, sem aviso prévio ou explicação.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Estávamos conversando todo dia e, do nada, ele me deu ghosting.",
+      "exemplos_incorretos": [
+        "Assisti um filme de ghosting muito assustador ontem.",
+        "Vou comprar uma fantasia de ghosting para o Halloween.",
+        "O computador travou porque deu ghosting na tela."
+      ],
+      "significados_incorretos": [
+        "Um fenômeno paranormal envolvendo fantasmas reais.",
+        "Uma roupa branca feita de lençol usada em festas.",
+        "Um erro gráfico onde a imagem fica manchada no monitor."
+      ]
     },
     {
       "nome": "love bombing",
-      "variacoes": ["dar migalhas", "alimentar a esperança"],
+      "variacoes": ["bombardeio de amor"],
       "classe_gramatical": "verbo",
-      "significado": "Ato de manter alguém cada vez mais interessado ou esperançoso em um relacionamento, mas sem intenção de compromisso sério.",
+      "significado": "Ato de demonstrar afeto e atenção de forma intensa e exagerada no início da relação para manipular ou manter a pessoa interessada, muitas vezes sem intenção de algo saudável.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele me mandava flores todo dia na primeira semana, mas depois vi que era só love bombing.",
+      "exemplos_incorretos": [
+        "Joguei uma love bombing no meu amigo no videogame e venci.",
+        "A confeitaria lançou um doce novo chamado love bombing.",
+        "Preciso desarmar a love bombing antes que ela exploda."
+      ],
+      "significados_incorretos": [
+        "Um explosivo usado em jogos de tiro online.",
+        "Uma sobremesa recheada com muito chocolate derretido.",
+        "Uma arma de destruição militar em formato de coração."
+      ]
     },
     {
       "nome": "boyzinho",
       "variacoes": ["garoto bonito"],
       "classe_gramatical": "substantivo",
-      "significado": "Pessoa do sexo masculino que é considerada atraente ou interessante em termos românticos.",
+      "significado": "Pessoa do sexo masculino que é considerada atraente, estilosa ou interessante em termos românticos.",
       "tags": ["relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Você viu aquele boyzinho novo que entrou na nossa sala?",
+      "exemplos_incorretos": [
+        "Fui na loja de animais comprar um boyzinho para criar no aquário.",
+        "Coloquei um boyzinho de enfeite no topo da árvore de natal.",
+        "O pneu furou e eu usei um boyzinho para consertar."
+      ],
+      "significados_incorretos": [
+        "Uma espécie de peixe pequeno de água doce.",
+        "Um brinquedo de plástico colecionável.",
+        "Uma ferramenta pequena de mecânica."
+      ]
     },
     {
       "nome": "pombinhos",
       "variacoes": ["casal apaixonado"],
       "classe_gramatical": "substantivo",
-      "significado": "Termo carinhoso usado para descrever um casal que demonstra afeto e intimidade de maneira pública ou exagerada.",
+      "significado": "Termo carinhoso usado para descrever um casal que demonstra muito afeto e intimidade de maneira pública ou exagerada.",
       "tags": ["relacionamento", "cotidiano", "antigo"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Lá vêm os pombinhos de mãos dadas de novo, que fofos.",
+      "exemplos_incorretos": [
+        "Fui na praça alimentar os pombinhos com milho.",
+        "Os pombinhos sujaram o telhado do meu carro.",
+        "Vi um bando de pombinhos voando perto da igreja."
+      ],
+      "significados_incorretos": [
+        "Aves urbanas cinzentas da família dos columbídeos.",
+        "Filhotes recém-nascidos de pássaros.",
+        "Pequenos pedaços de pão velho."
+      ]
     },
     {
       "nome": "mucilon",
       "variacoes": ["boy mucilon", "maria mucilon"],
       "classe_gramatical": "substantivo",
-      "significado": "Gíria usada para descrever uma pessoa significativamente mais jovem que o seu parceiro em um relacionamento ou apenas mais jovem, servindo como uma metáfora para a pouca idade.",
+      "significado": "Gíria usada para descrever uma pessoa significativamente mais jovem que o seu parceiro em um relacionamento, servindo como uma metáfora humorística para a pouca idade.",
       "tags": ["cotidiano", "relacionamento"],
-      "permissao": "todos"
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Não sabia que a Juliana gostava de mucilon, agora vive com aquele menino de 19 anos.",
+      "exemplos_incorretos": [
+        "Preparei uma tigela de mucilon com leite para o bebê dormir.",
+        "Fui na farmácia comprar uma lata de mucilon de arroz.",
+        "O médico recomendou dar mucilon para melhorar a nutrição."
+      ],
+      "significados_incorretos": [
+        "Um cereal infantil em pó misturado com leite.",
+        "Um tipo de remédio para fortalecer os ossos.",
+        "Um creme hidratante para a pele."
+      ]
+    },
+    {
+      "nome": "amizade colorida",
+      "variacoes": ["amigos com benefícios", "PA"],
+      "classe_gramatical": "substantivo",
+      "significado": "Relacionamento onde duas pessoas são amigas, mas também mantêm intimidade física ou sexual sem compromisso amoroso.",
+      "tags": ["relacionamento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eles não namoram, são apenas uma amizade colorida há anos.",
+      "exemplos_incorretos": [
+        "Comprei tintas novas para pintar uma amizade colorida na tela.",
+        "Fizemos uma amizade colorida imprimindo a foto em alta qualidade.",
+        "A amizade colorida do meu arco-íris de papel ficou linda."
+      ],
+      "significados_incorretos": [
+        "Uma pintura em tela cheia de cores vivas.",
+        "Um documento impresso que não é em preto e branco.",
+        "Uma pulseira feita de fios de várias cores."
+      ]
+    },
+    {
+      "nome": "namorido",
+      "variacoes": ["namorida"],
+      "classe_gramatical": "substantivo",
+      "significado": "Junção das palavras 'namorado' e 'marido'. Usado para descrever casais que namoram, mas vivem juntos e têm rotina de casados, mesmo sem oficializar no papel.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nós moramos juntos há cinco anos, ele já é meu namorido.",
+      "exemplos_incorretos": [
+        "Fui na loja comprar um namorido para o jantar.",
+        "Meu cachorro ganhou um brinquedo chamado namorido.",
+        "O encanador veio consertar o namorido da pia."
+      ],
+      "significados_incorretos": [
+        "Um tipo de prato pré-cozido vendido em mercados.",
+        "Um modelo de móvel para colocar na sala de estar.",
+        "Uma ferramenta usada na construção civil."
+      ]
+    },
+    {
+      "nome": "emocionado",
+      "variacoes": ["emocionada", "dar uma de emocionado"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa que se apega muito rápido, demonstra sentimentos intensos ou planeja o futuro no início de um flerte ou relacionamento.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Conheci ele ontem e ele já quer me apresentar para os pais, muito emocionado.",
+      "exemplos_incorretos": [
+        "Chorei muito vendo o final do filme, fiquei emocionado.",
+        "Fiquei emocionado quando recebi meu diploma da faculdade.",
+        "A surpresa de aniversário me deixou bastante emocionado."
+      ],
+      "significados_incorretos": [
+        "Estar comovido por uma situação triste ou feliz.",
+        "Estar nervoso e suando antes de uma prova.",
+        "Sentir dor física aguda e repentina."
+      ]
+    },
+    {
+      "nome": "chavecar",
+      "variacoes": ["dar um xaveco", "xavecar"],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de jogar conversa fora com a intenção de flertar, seduzir ou conquistar alguém usando lábia.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ele passou a festa inteira tentando me chavecar, mas eu não dei bola.",
+      "exemplos_incorretos": [
+        "Fui no chaveiro chavecar a porta do meu carro.",
+        "Vou precisar chavecar esse cadeado porque perdi a chave.",
+        "A gaveta emperrou, vou tentar chavecar para abrir."
+      ],
+      "significados_incorretos": [
+        "Destrancar uma fechadura usando chaves de fenda.",
+        "Fazer uma cópia de uma chave quebrada.",
+        "Amassar uma peça de metal com um martelo."
+      ]
+    },
+    {
+      "nome": "tomar um toco",
+      "variacoes": ["levar toco", "levar um fora"],
+      "classe_gramatical": "verbo",
+      "significado": "Ser rejeitado de forma direta por alguém em quem se tinha interesse romântico.",
+      "tags": ["relacionamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fui chamar a menina para sair e acabei tomando um toco.",
+      "exemplos_incorretos": [
+        "Estava andando no mato e acabei tomando um toco no pé.",
+        "Vou na madeireira tomar um toco de árvore para lenha.",
+        "O carpinteiro precisou tomar um toco para consertar a cadeira."
+      ],
+      "significados_incorretos": [
+        "Tropeçar e machucar o pé em um pedaço de madeira.",
+        "Comprar um pedaço de tronco cortado.",
+        "Beber uma bebida servida em um copo de madeira."
+      ]
+    },
+    {
+      "nome": "pular a cerca",
+      "variacoes": ["trair", "chifrar"],
+      "classe_gramatical": "verbo",
+      "significado": "Gíria para descrever o ato de trair o parceiro amoroso com outra pessoa.",
+      "tags": ["relacionamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Terminaram o casamento depois que descobriram que ele vivia pulando a cerca.",
+      "exemplos_incorretos": [
+        "O cachorro conseguiu pular a cerca e fugiu para a rua.",
+        "Fiz parkour ontem e aprendi a pular a cerca bem alto.",
+        "O ladrão tentou pular a cerca da casa, mas o alarme tocou."
+      ],
+      "significados_incorretos": [
+        "Ato físico de saltar sobre uma barreira de arame ou madeira.",
+        "Um exercício de ginástica olímpica com barreiras.",
+        "Fugir de uma prisão pulando muros."
+      ]
+    },
+    {
+      "nome": "red flag",
+      "variacoes": ["bandeira vermelha", "sinal de alerta"],
+      "classe_gramatical": "substantivo",
+      "significado": "Sinal de alerta no comportamento de alguém que indica que essa pessoa pode ser tóxica, manipuladora ou não confiável em um relacionamento.",
+      "tags": ["relacionamento", "internet"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ela fala mal de todos os ex-namorados, isso para mim é uma red flag enorme.",
+      "exemplos_incorretos": [
+        "O juiz levantou a red flag e interrompeu a corrida de Fórmula 1.",
+        "O salva-vidas colocou uma red flag na praia por causa das ondas.",
+        "Pendurei uma red flag na janela para decorar a festa."
+      ],
+      "significados_incorretos": [
+        "Uma bandeira literal de cor vermelha usada em competições esportivas.",
+        "Um sinal de perigo meteorológico na praia.",
+        "Um pano vermelho usado como decoração."
+      ]
+    },
+    {
+      "nome": "ter molho",
+      "variacoes": ["ter o molho", "sauce"],
+      "classe_gramatical": "verbo",
+      "significado": "Ter estilo, atitude, charme, ou muita confiança, tornando-se muito atraente ou 'cool' (legal).",
+      "tags": ["relacionamento", "estilo", "internet"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Não tem como, aquele cara sabe se vestir e sabe conversar, ele tem o molho.",
+      "exemplos_incorretos": [
+        "Gosto de comer macarrão que tem molho de tomate.",
+        "Fui fazer cachorro-quente e precisei ter molho na panela.",
+        "A salada estava seca porque esqueceram de ter molho."
+      ],
+      "significados_incorretos": [
+        "Possuir um caldo líquido condimentado usado em comidas.",
+        "Ficar de molho dentro da água para lavar roupas.",
+        "Uma doença que deixa as plantas úmidas."
+      ]
+    },
+    {
+      "nome": "ex-ficante",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa com quem você já teve um envolvimento casual no passado, mas com quem não se relaciona mais de forma amorosa ou física.",
+      "tags": ["relacionamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Encontrei meu ex-ficante na balada e fingi que nem conhecia.",
+      "exemplos_incorretos": [
+        "O ex-ficante do meu guarda-roupa quebrou e a porta caiu.",
+        "Preciso de um ex-ficante mais forte para prender o quadro.",
+        "Usei um ex-ficante químico no laboratório."
+      ],
+      "significados_incorretos": [
+        "Um objeto que perdeu a capacidade de fixação (como um prego antigo).",
+        "Uma substância química que não reage mais.",
+        "Um cargo antigo em uma empresa de grampeadores."
+      ]
+    },
+    {
+      "nome": "ficante premium",
+      "variacoes": ["ficante sério"],
+      "classe_gramatical": "substantivo",
+      "significado": "Ficante com quem você tem uma relação quase exclusiva e age como namorado (com passeios, carinho, conhecer amigos), mas ainda sem o rótulo oficial.",
+      "tags": ["relacionamento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A gente viaja junto e se fala todo dia, ele não é só ficante, é ficante premium.",
+      "exemplos_incorretos": [
+        "Assinei um plano de ficante premium no aplicativo de música.",
+        "Comprei a versão ficante premium daquele jogo de videogame.",
+        "O meu seguro de carro mudou para a categoria ficante premium."
+      ],
+      "significados_incorretos": [
+        "Uma assinatura paga de serviços de streaming livre de anúncios.",
+        "Uma marca de cola de alta qualidade.",
+        "Um assento de avião na primeira classe."
+      ]
+    },
+    {
+      "nome": "catfishing",
+      "variacoes": ["catfish", "perfil fake"],
+      "classe_gramatical": "substantivo",
+      "significado": "Ato de criar uma identidade falsa na internet, usando fotos e informações de outras pessoas, geralmente para enganar alguém romanticamente.",
+      "tags": ["internet", "relacionamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ela achou que estava namorando um modelo europeu, mas era tudo catfishing.",
+      "exemplos_incorretos": [
+        "Fui pescar no lago e acabei pegando um catfishing enorme.",
+        "Meu gato adorou o brinquedo de catfishing que comprei.",
+        "Comi um prato de catfishing frito com batatas."
+      ],
+      "significados_incorretos": [
+        "Pescar peixes do tipo bagre (catfish) em rios.",
+        "Alimentar gatos com petiscos de peixe.",
+        "Um estilo de natação que imita um gato na água."
+      ]
+    },
+    {
+      "nome": "orbiting",
+      "variacoes": ["orbitar", "curtidor fantasma"],
+      "classe_gramatical": "verbo",
+      "significado": "Quando a relação esfria ou rola ghosting, mas a pessoa continua orbitando sua vida virtual: visualiza stories, curte e reage, mas nunca manda mensagem.",
+      "tags": ["relacionamento", "internet"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele sumiu do WhatsApp, mas fica fazendo orbiting nos meus stories do Instagram todo dia.",
+      "exemplos_incorretos": [
+        "A Terra está fazendo orbiting ao redor do Sol no espaço.",
+        "O satélite saiu da sua rota de orbiting e caiu.",
+        "Comprei um chiclete de sabor orbiting no mercado."
+      ],
+      "significados_incorretos": [
+        "O movimento de um corpo celeste ao redor de outro no espaço.",
+        "Uma marca de bala ou goma de mascar refrescante.",
+        "Um aparelho de ginástica elíptico."
+      ]
+    },
+    {
+      "nome": "zombing",
+      "variacoes": ["zombieing", "haunting", "ressurgir das trevas"],
+      "classe_gramatical": "verbo",
+      "significado": "Quando a pessoa que te deu ghosting (sumiu) reaparece de forma aleatória agindo como se nada tivesse acontecido, com mensagens carentes ou reagindo a posts.",
+      "tags": ["relacionamento", "internet"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Três meses depois de sumir, ele me mandou um 'saudades'. Caiu no zombing e eu ignorei.",
+      "exemplos_incorretos": [
+        "Joguei um game de zombing muito assustador no celular.",
+        "A festa de Halloween teve muita maquiagem de zombing.",
+        "O cachorro ficou com um olhar de zombing quando viu a carne."
+      ],
+      "significados_incorretos": [
+        "Atacar pessoas agindo como um morto-vivo na vida real.",
+        "Um gênero de filmes de terror envolvendo vírus mortais.",
+        "Dormir de olhos abertos por cansaço excessivo."
+      ]
+    },
+    {
+      "nome": "jurandir",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Referência ao personagem da série Tapas & Beijos. Usado para descrever um homem que não possui qualidades de destaque, pouco esforçado e que não agrega valor no relacionamento.",
+      "tags": ["relacionamento", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não sei o que a Maria viu nele, o cara não trabalha nem estuda, é um verdadeiro jurandir.",
+      "exemplos_incorretos": [
+        "Fui na padaria e pedi um pão na chapa com jurandir.",
+        "Preciso ligar para o jurandir vir consertar o vazamento de água.",
+        "A nova lei municipal é conhecida como projeto jurandir."
+      ],
+      "significados_incorretos": [
+        "Uma marca de embutido ou tipo de queijo.",
+        "Uma gíria genérica para qualquer encanador.",
+        "Um documento legal emitido por cartórios."
+      ]
+    },
+    {
+      "nome": "gado",
+      "variacoes": ["gadear", "simp", "gado demais"],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que faz tudo para agradar alguém romanticamente de forma exagerada e submissa, perdendo a dignidade em troca da atenção da pessoa desejada.",
+      "tags": ["internet", "relacionamento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ela nem olha na cara dele, mas ele continua pagando lanche, é muito gado.",
+      "exemplos_incorretos": [
+        "O fazendeiro foi vacinar o gado de manhã bem cedo.",
+        "Vou preparar um churrasco e comprei carne de gado.",
+        "O trem parou porque tinha uma manada de gado na linha."
+      ],
+      "significados_incorretos": [
+        "Conjunto de animais criados em pasto, como bois e vacas.",
+        "Um tipo de doença infecciosa de rebanho.",
+        "Uma raça específica de cavalo."
+      ]
+    },
+    {
+      "nome": "delulu",
+      "variacoes": ["iludido", "delirante"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Abreviação de 'delusional' (delirante). Descreve alguém que cria fantasias irreais e românticas na cabeça, acreditando em uma relação que não tem chances de acontecer.",
+      "tags": ["internet", "relacionamento"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ele curtiu minha foto, com certeza a gente vai casar, tô muito delulu hoje.",
+      "exemplos_incorretos": [
+        "Fui ao médico porque peguei uma infecção delulu no estômago.",
+        "Vou temperar o frango com pimenta e delulu em pó.",
+        "A nova dança do TikTok se chama passo do delulu."
+      ],
+      "significados_incorretos": [
+        "Uma doença tropical contagiosa.",
+        "Uma especiaria indiana usada em curry.",
+        "Um estilo musical originário de ilhas caribenhas."
+      ]
+    },
+    {
+      "nome": "maria gasolina",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Gíria antiga (mas ainda em uso) para se referir a pessoas que demonstram interesse romântico em alguém apenas por causa do veículo (carro ou moto) ou dos bens materiais que a pessoa possui.",
+      "tags": ["relacionamento", "cotidiano", "antigo"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Foi só ele comprar um carrão que ela passou a dar bola, maior maria gasolina.",
+      "exemplos_incorretos": [
+        "Parei o carro no posto para encher o tanque de maria gasolina.",
+        "O cheiro de maria gasolina na oficina estava muito forte.",
+        "Fiz um coquetel inflamável usando maria gasolina."
+      ],
+      "significados_incorretos": [
+        "Um tipo de combustível premium vendido em postos.",
+        "Um produto químico usado para limpar motores.",
+        "Uma marca de roupas para mecânicos automotivos."
+      ]
+    },
+    {
+      "nome": "sugar daddy",
+      "variacoes": ["daddy", "patrocinador"],
+      "classe_gramatical": "substantivo",
+      "significado": "Homem maduro e com estabilidade financeira que oferece presentes, viagens ou dinheiro em troca de companhia ou relacionamento com uma pessoa mais jovem.",
+      "tags": ["relacionamento"],
+      "permissao": "pais",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ela não trabalha, vive viajando pela Europa, dizem que arrumou um sugar daddy.",
+      "exemplos_incorretos": [
+        "Fui na doceria e comprei um cupcake sabor sugar daddy.",
+        "Coloquei um sugar daddy no meu café porque estava amargo.",
+        "Vou preparar um bolo de chocolate com muito sugar daddy."
+      ],
+      "significados_incorretos": [
+        "Um tipo específico de adoçante artificial dietético.",
+        "Uma marca de doces de caramelo tradicionais.",
+        "Açúcar mascavo importado."
+      ]
+    },
+    {
+      "nome": "sugar mommy",
+      "variacoes": ["mommy"],
+      "classe_gramatical": "substantivo",
+      "significado": "Mulher madura e bem-sucedida financeiramente que sustenta luxos ou oferece presentes em troca do relacionamento ou companhia de alguém mais jovem.",
+      "tags": ["relacionamento"],
+      "permissao": "pais",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "O carro importado dele foi presente da namorada empresária, ela é a sugar mommy dele.",
+      "exemplos_incorretos": [
+        "Minha mãe fez um pudim muito doce, verdadeiro sugar mommy.",
+        "Vou na padaria pedir o pão especial chamado sugar mommy.",
+        "A receita pede duas colheres de sopa de sugar mommy."
+      ],
+      "significados_incorretos": [
+        "Uma gíria para confeiteiras de bolos.",
+        "Uma receita americana de bolo de açúcar.",
+        "Um tipo de açúcar granulado colorido."
+      ]
+    },
+    {
+      "nome": "milf",
+      "variacoes": ["milf"],
+      "classe_gramatical": "substantivo",
+      "significado": "Variação educada no Brasil para a sigla americana MILF. Refere-se a uma mulher mais velha, muitas vezes mãe, que é considerada extremamente atraente.",
+      "tags": ["relacionamento", "internet"],
+      "permissao": "pais",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "A mãe do amigo dele entrou na sala e os caras ficaram babando, uma verdadeira milf.",
+      "exemplos_incorretos": [
+        "Eu tenho mil reais na minha conta do banco.",
+        "Dirigi o carro por mais de mil quilômetros na viagem.",
+        "Tem mais de mil pessoas na fila do show."
+      ],
+      "significados_incorretos": [
+        "O número cardinal 1000 que expressa quantidade.",
+        "Uma milha, unidade de medida de distância.",
+        "Um grão de milho usado na agricultura."
+      ]
     }
   ]
 }
