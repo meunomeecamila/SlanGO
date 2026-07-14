@@ -1,10 +1,17 @@
 [
   {
     "nome": "esfumado",
-    "variacoes": ["esfumar", "efeito esfumado"],
+    "variacoes": [
+      "esfumar",
+      "efeito esfumado"
+    ],
     "classe_gramatical": "adjetivo",
     "significado": "Técnica de difuminar as sombras nos olhos para criar transição suave de cores, sem linhas marcadas.",
-    "tags": ["maquiagem", "olhos", "tecnica"],
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tecnica"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um esfumado marrom bem suave pra ir no trabalho hoje.",
@@ -21,10 +28,16 @@
   },
   {
     "nome": "boca de boneca",
-    "variacoes": ["efeito boca de boneca"],
+    "variacoes": [
+      "efeito boca de boneca"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Técnica de contorno labial que aumenta visualmente o volume dos lábios, deixando-os mais cheios.",
-    "tags": ["maquiagem", "boca", "tecnica"],
+    "tags": [
+      "maquiagem",
+      "boca",
+      "tecnica"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Usei o lápis um pouco fora da linha natural pra fazer boca de boneca.",
@@ -41,10 +54,16 @@
   },
   {
     "nome": "pele de vidro",
-    "variacoes": ["glass skin"],
+    "variacoes": [
+      "glass skin"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Efeito de pele extremamente hidratada, lisa e com brilho natural, como se fosse translúcida.",
-    "tags": ["maquiagem", "pele", "tendencia"],
+    "tags": [
+      "maquiagem",
+      "pele",
+      "tendencia"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Ela tem uma rotina de skincare incrível, sempre com aquela pele de vidro.",
@@ -61,10 +80,16 @@
   },
   {
     "nome": "postiço",
-    "variacoes": ["cílios postiços"],
+    "variacoes": [
+      "cílios postiços"
+    ],
     "classe_gramatical": "substantivo/adjetivo",
     "significado": "Cílios artificiais aplicados para dar mais volume e comprimento ao olhar.",
-    "tags": ["maquiagem", "olhos", "produto"],
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "produto"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Coloquei um postiço fininho só nas pontas pra ficar mais natural.",
@@ -81,10 +106,17 @@
   },
   {
     "nome": "glow up",
-    "variacoes": ["deu um glow up", "glow up de make"],
+    "variacoes": [
+      "deu um glow up",
+      "glow up de make"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Transformação visual impressionante, geralmente mostrando o antes e depois de uma make ou cuidado com a pele.",
-    "tags": ["maquiagem", "transformacao", "tiktok"],
+    "tags": [
+      "maquiagem",
+      "transformacao",
+      "tiktok"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Depois que ela aprendeu a fazer contorno, foi um glow up total no rosto.",
@@ -101,10 +133,17 @@
   },
   {
     "nome": "clean girl",
-    "variacoes": ["clean girl makeup", "cara de clean girl"],
+    "variacoes": [
+      "clean girl makeup",
+      "cara de clean girl"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Estética de maquiagem minimalista, com pele hidratada, sobrancelha escovada e make leve que parece 'sem make', bem popular entre influencers de beleza.",
-    "tags": ["maquiagem", "tendencia", "tiktok"],
+    "tags": [
+      "maquiagem",
+      "tendencia",
+      "tiktok"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Hoje eu quis um visual clean girl: só hidratante com cor, blush e gloss.",
@@ -121,10 +160,16 @@
   },
   {
     "nome": "soft glam",
-    "variacoes": ["soft glam make"],
+    "variacoes": [
+      "soft glam make"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Estilo de maquiagem sofisticado mas suave, com tons neutros, acabamento glow e menos contraste que uma make 'glam' tradicional.",
-    "tags": ["maquiagem", "tecnica", "tiktok"],
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "tiktok"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz uma soft glam pra festa: sombra dourada, cílios naturais e batom nude.",
@@ -141,10 +186,17 @@
   },
   {
     "nome": "borrada",
-    "variacoes": ["make borrada", "borrou toda"],
+    "variacoes": [
+      "make borrada",
+      "borrou toda"
+    ],
     "classe_gramatical": "adjetivo",
     "significado": "Quando a maquiagem sai do lugar, escorre ou se desfaz, geralmente por suor, choro ou chuva — virou meme quando acontece em público.",
-    "tags": ["maquiagem", "meme", "tiktok"],
+    "tags": [
+      "maquiagem",
+      "meme",
+      "tiktok"
+    ],
     "permissao": "todos",
     "impacto": "negativa",
     "exemplo_correto": "Chorei tanto no filme que minha make ficou toda borrada.",
@@ -161,10 +213,16 @@
   },
   {
     "nome": "cara lavada",
-    "variacoes": ["ficar de cara lavada"],
+    "variacoes": [
+      "ficar de cara lavada"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Estar sem nenhuma maquiagem no rosto, com a pele natural à mostra.",
-    "tags": ["maquiagem", "cotidiano", "pele"],
+    "tags": [
+      "maquiagem",
+      "cotidiano",
+      "pele"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Hoje resolvi ficar de cara lavada, só um protetor solar.",
@@ -181,10 +239,17 @@
   },
   {
     "nome": "full face",
-    "variacoes": ["fazer a full face", "look full face"],
+    "variacoes": [
+      "fazer a full face",
+      "look full face"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Maquiagem completa, com todas as etapas: base, corretivo, pó, sobrancelha, olhos, blush, contorno e boca.",
-    "tags": ["maquiagem", "tutorial", "tiktok"],
+    "tags": [
+      "maquiagem",
+      "tutorial",
+      "tiktok"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Gravei um vídeo fazendo minha full face do zero pro casamento.",
@@ -201,10 +266,17 @@
   },
   {
     "nome": "no makeup makeup",
-    "variacoes": ["make de cara lavada", "make natural"],
+    "variacoes": [
+      "make de cara lavada",
+      "make natural"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Maquiagem feita com técnica e produtos, mas com resultado que parece pele natural, sem make aparente.",
-    "tags": ["maquiagem", "tecnica", "tendencia"],
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "tendencia"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Passei quase meia hora numa make no makeup makeup bem trabalhada.",
@@ -221,10 +293,17 @@
   },
   {
     "nome": "delineado gatinho",
-    "variacoes": ["winged liner", "gatinho"],
+    "variacoes": [
+      "winged liner",
+      "gatinho"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Técnica de delineado que puxa uma linha fina até a ponta externa do olho, criando um efeito alongado tipo 'olho de gato'.",
-    "tags": ["maquiagem", "olhos", "tecnica"],
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tecnica"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Levei uns bons minutos, mas consegui fazer o delineado gatinho simétrico dos dois lados.",
@@ -241,10 +320,17 @@
   },
   {
     "nome": "nose highlight",
-    "variacoes": ["iluminar o nariz", "coração no nariz"],
+    "variacoes": [
+      "iluminar o nariz",
+      "coração no nariz"
+    ],
     "classe_gramatical": "expressão",
     "significado": "Técnica de aplicar um toque de iluminador em formato de coraçãozinho na ponta do nariz, deixando o visual mais fofo e brilhante.",
-    "tags": ["maquiagem", "tecnica", "tiktok"],
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "tiktok"
+    ],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Terminei a make com um nose highlight bem discretinho pra dar um brilho fofo.",
@@ -257,6 +343,461 @@
       "Peça de iluminação usada em ambientes residenciais.",
       "Farol dianteiro de um veículo automotor.",
       "Lâmpada decorativa usada em áreas externas."
+    ]
+  },
+  {
+    "nome": "baking",
+    "variacoes": [
+      "fazer baking",
+      "baking de pó"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica de deixar uma camada grossa de pó solto sobre áreas específicas do rosto por alguns minutos antes de remover o excesso, pra fixar a base e iluminar naturalmente.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "pele"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um baking embaixo dos olhos pra segurar o corretivo até de noite.",
+    "exemplos_incorretos": [
+      "O baking do bolo ficou pronto em quarenta minutos.",
+      "Aprendi a fazer baking de pão caseiro no fim de semana.",
+      "A receita de baking pede farinha e fermento."
+    ],
+    "significados_incorretos": [
+      "Processo de assar alimentos no forno.",
+      "Técnica culinária usada para preparar pães e bolos.",
+      "Etapa de uma receita de confeitaria."
+    ]
+  },
+  {
+    "nome": "strobing",
+    "variacoes": [
+      "fazer strobing",
+      "efeito strobing"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica de iluminação pontual do rosto com produtos com brilho, criando um efeito de pele radiante sem precisar do contorno tradicional.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "tendencia"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Prefiro fazer strobing no verão, deixa a pele com brilho natural sem pesar.",
+    "exemplos_incorretos": [
+      "A luz de strobing da balada deixou todo mundo tonto.",
+      "O DJ usou um efeito de strobing na pista de dança.",
+      "A boate instalou luzes de strobing novas no teto."
+    ],
+    "significados_incorretos": [
+      "Efeito de luz piscante usado em festas e boates.",
+      "Iluminação intermitente usada em eventos noturnos.",
+      "Recurso técnico de shows e apresentações musicais."
+    ]
+  },
+  {
+    "nome": "contorno",
+    "variacoes": [
+      "fazer contorno",
+      "contornar o rosto"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica de esculpir o rosto com produtos mais escuros nas áreas de sombra e mais claros nas áreas de luz, criando profundidade e definindo os traços.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "rosto"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um contorno bem leve só pra afinar o rosto na foto.",
+    "exemplos_incorretos": [
+      "O contorno do terreno dificultou a construção da casa.",
+      "O engenheiro desenhou o contorno do mapa da cidade.",
+      "A costureira marcou o contorno do tecido antes de cortar."
+    ],
+    "significados_incorretos": [
+      "Linha que delimita a forma de um terreno ou objeto.",
+      "Traçado usado em mapas e projetos de engenharia.",
+      "Marcação usada em costura para recortar tecidos."
+    ]
+  },
+  {
+    "nome": "blush draping",
+    "variacoes": [
+      "draping de blush",
+      "fazer draping"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de aplicar blush estendendo da maçã do rosto até a têmpora, criando um efeito de lifting e mais definição na estrutura facial.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "tiktok"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Testei o blush draping hoje e amei como ele levantou meu rosto.",
+    "exemplos_incorretos": [
+      "A cortina de draping ficou linda na sala nova.",
+      "Comprei um tecido de draping pro sofá da varanda.",
+      "O decorador usou draping nas paredes do salão de festa."
+    ],
+    "significados_incorretos": [
+      "Tecido drapeado usado em decoração de interiores.",
+      "Técnica de arranjo de cortinas e tecidos.",
+      "Estilo de ornamentação usado em eventos e festas."
+    ]
+  },
+  {
+    "nome": "underpainting",
+    "variacoes": [
+      "fazer underpainting"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica em que se desenha o contorno e a sombra do rosto direto na pele, antes da base, pra depois esfumar tudo junto e criar profundidade.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "tiktok"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Vi um tutorial de underpainting e o resultado ficou surpreendentemente natural.",
+    "exemplos_incorretos": [
+      "O artista fez um underpainting antes de pintar o quadro final.",
+      "A técnica de underpainting é comum em pinturas a óleo clássicas.",
+      "O restaurador identificou um underpainting escondido sob a tinta."
+    ],
+    "significados_incorretos": [
+      "Camada inicial de tinta usada em pinturas artísticas.",
+      "Técnica de pintura a óleo usada por artistas plásticos.",
+      "Etapa de restauração de obras de arte antigas."
+    ]
+  },
+  {
+    "nome": "siren eyes",
+    "variacoes": [
+      "olho de sereia",
+      "efeito siren eyes"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Tendência de maquiagem nos olhos que puxa a sombra e o delineado pra cima nas pontas externas, criando um olhar alongado e felino.",
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tendencia"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz siren eyes com sombra marrom bem esfumada nas pontas.",
+    "exemplos_incorretos": [
+      "O siren eyes do navio tocou forte na chegada ao porto.",
+      "A sirene da ambulância assustou todo mundo na rua.",
+      "O bombeiro ligou o siren eyes do caminhão de emergência."
+    ],
+    "significados_incorretos": [
+      "Som de alerta emitido por veículos de emergência.",
+      "Dispositivo sonoro usado em embarcações.",
+      "Equipamento de aviso usado em situações de risco."
+    ]
+  },
+  {
+    "nome": "lifting make",
+    "variacoes": [
+      "make de lifting",
+      "efeito lifting"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Conjunto de técnicas de maquiagem (como contorno e blush draping) que criam a ilusão visual de um rosto mais levantado, sem procedimento estético.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "rosto"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Com essa lifting make, meu rosto ficou com aparência bem mais afinada.",
+    "exemplos_incorretos": [
+      "O lifting da academia ajudou a fortalecer as pernas.",
+      "Fiz um lifting facial na clínica de estética mês passado.",
+      "O médico recomendou um lifting cirúrgico pra ela."
+    ],
+    "significados_incorretos": [
+      "Procedimento cirúrgico estético para rejuvenescimento facial.",
+      "Exercício físico de levantamento de peso.",
+      "Tratamento clínico realizado em consultórios de estética."
+    ]
+  },
+  {
+    "nome": "cut crease",
+    "variacoes": [
+      "fazer cut crease"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de sombra que marca bem o vinco do olho com uma linha definida, criando contraste forte entre a pálpebra móvel e a área acima.",
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tecnica"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Levei quase uma hora, mas o cut crease ficou super simétrico.",
+    "exemplos_incorretos": [
+      "O cut crease do tecido rasgou na costura.",
+      "A serra fez um cut crease reto na madeira.",
+      "O corte de cabelo tinha um cut crease bem marcado."
+    ],
+    "significados_incorretos": [
+      "Marca ou vinco deixado em um tecido cortado.",
+      "Corte reto realizado em materiais de construção.",
+      "Técnica de corte de cabelo com linhas definidas."
+    ]
+  },
+  {
+    "nome": "halo eye",
+    "variacoes": [
+      "olho halo",
+      "efeito halo eye"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de sombra que concentra a cor mais escura no centro da pálpebra móvel, deixando as bordas mais claras, criando um efeito de 'auréola' no olhar.",
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tecnica"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um halo eye dourado com marrom nas bordas pra festa.",
+    "exemplos_incorretos": [
+      "O halo eye da igreja brilhava sob a luz do sol.",
+      "A estátua tinha um halo eye dourado esculpido na cabeça.",
+      "O quadro retratava um anjo com halo eye brilhante."
+    ],
+    "significados_incorretos": [
+      "Círculo de luz representado em imagens religiosas.",
+      "Elemento decorativo esculpido em estátuas sacras.",
+      "Símbolo pintado em obras de arte religiosa."
+    ]
+  },
+  {
+    "nome": "draping de contorno",
+    "variacoes": [
+      "fazer o draping"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica que aplica contorno em formato de faixa lateral no rosto, unindo sombra facial e blush numa transição só, comum em looks de festa.",
+    "tags": [
+      "maquiagem",
+      "tecnica",
+      "rosto"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz o draping de contorno com blush pêssego pro casamento da minha prima.",
+    "exemplos_incorretos": [
+      "O draping da cortina caiu direitinho na sala.",
+      "A costureira fez um draping bonito no vestido de festa.",
+      "O estilista usou draping de tecido na coleção nova."
+    ],
+    "significados_incorretos": [
+      "Técnica de modelagem de tecidos em costura e moda.",
+      "Estilo de caimento usado em roupas e cortinas.",
+      "Recurso de decoração usado em ambientes internos."
+    ]
+  },
+  {
+    "nome": "skin tint",
+    "variacoes": [
+      "base skin tint",
+      "efeito skin tint"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Produto ou técnica de base bem leve, com cobertura mínima, que uniformiza o tom da pele mantendo a aparência natural, sem parecer maquiada.",
+    "tags": [
+      "maquiagem",
+      "pele",
+      "produto"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Troquei minha base pesada por um skin tint pro dia a dia.",
+    "exemplos_incorretos": [
+      "O skin tint da parede precisa de uma segunda demão.",
+      "A tinta do carro tem um skin tint metálico bonito.",
+      "Escolhi um skin tint mais claro pro quarto do bebê."
+    ],
+    "significados_incorretos": [
+      "Tonalidade de tinta usada em pintura de paredes.",
+      "Cor de acabamento aplicada em veículos.",
+      "Pigmento usado em decoração de ambientes."
+    ]
+  },
+  {
+    "nome": "morphing de sombra",
+    "variacoes": [
+      "fazer morphing"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de transição de cores de sombra no olho, misturando tons diferentes de forma gradual pra não deixar linhas duras.",
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tecnica"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um morphing de laranja pro marrom, ficou perfeito pro concept quente.",
+    "exemplos_incorretos": [
+      "O efeito de morphing no filme foi impressionante.",
+      "O programa de edição faz o morphing entre duas imagens.",
+      "A animação usou morphing pra transformar o personagem."
+    ],
+    "significados_incorretos": [
+      "Efeito visual de transformação usado em cinema e animação.",
+      "Recurso de edição digital que mistura imagens.",
+      "Técnica de computação gráfica usada em efeitos especiais."
+    ]
+  },
+  {
+    "nome": "lip oil",
+    "variacoes": [
+      "óleo labial",
+      "usar lip oil"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Produto de tratamento e cor leve para os lábios, com textura oleosa e brilhante, muito popular como alternativa ao gloss tradicional.",
+    "tags": [
+      "maquiagem",
+      "boca",
+      "produto"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Passei um lip oil rosado antes de sair, deixa a boca hidratada e com brilho.",
+    "exemplos_incorretos": [
+      "O lip oil do carro precisa ser trocado no próximo serviço.",
+      "Comprei um lip oil culinário pra temperar a salada.",
+      "O mecânico verificou o nível de lip oil do motor."
+    ],
+    "significados_incorretos": [
+      "Óleo lubrificante usado em motores de veículos.",
+      "Produto alimentício usado no preparo de receitas.",
+      "Substância técnica utilizada em manutenção automotiva."
+    ]
+  },
+  {
+    "nome": "blurring",
+    "variacoes": [
+      "efeito blurring",
+      "pó blurring"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Efeito de suavização da textura da pele e disfarce de poros, geralmente causado por produtos com partículas que refletem a luz de forma difusa.",
+    "tags": [
+      "maquiagem",
+      "pele",
+      "produto"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Esse primer tem um efeito de blurring incrível, disfarça os poros na hora.",
+    "exemplos_incorretos": [
+      "A foto saiu com blurring por causa do movimento da câmera.",
+      "O editor aplicou um blurring no fundo do vídeo.",
+      "O software de edição tem uma ferramenta de blurring pra imagens."
+    ],
+    "significados_incorretos": [
+      "Efeito de desfoque aplicado em fotografia e vídeo.",
+      "Recurso de edição digital usado para borrar imagens.",
+      "Ferramenta técnica de softwares de edição de imagem."
+    ]
+  },
+  {
+    "nome": "fox eye",
+    "variacoes": [
+      "olho de raposa",
+      "efeito fox eye"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de maquiagem e sobrancelha que puxa o canto externo dos olhos pra cima, criando um formato alongado e felino, inspirado em raposas.",
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tendencia"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Usei fita adesiva discreta pra conseguir o efeito fox eye na make de hoje.",
+    "exemplos_incorretos": [
+      "O fox eye fugiu da fazenda durante a noite.",
+      "Vimos um fox eye correndo perto da floresta.",
+      "O veterinário cuidou do fox eye ferido na pata."
+    ],
+    "significados_incorretos": [
+      "Animal silvestre da espécie canina encontrado em florestas.",
+      "Mamífero selvagem comum em áreas rurais.",
+      "Espécie de raposa tratada em clínicas veterinárias."
+    ]
+  },
+  {
+    "nome": "makeup hack",
+    "variacoes": [
+      "hack de make",
+      "truque de make"
+    ],
+    "classe_gramatical": "expressão",
+    "significado": "Truque ou atalho criativo pra facilitar, acelerar ou melhorar o resultado de uma técnica de maquiagem, geralmente viral nas redes sociais.",
+    "tags": [
+      "maquiagem",
+      "tiktok",
+      "tutorial"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Vi um makeup hack de usar colher pra facilitar o delineado e funcionou muito bem.",
+    "exemplos_incorretos": [
+      "O hacker fez um hack no sistema da empresa.",
+      "A polícia investigou um hack no banco de dados do governo.",
+      "O programador corrigiu a falha explorada pelo hack."
+    ],
+    "significados_incorretos": [
+      "Invasão criminosa de sistemas de computador.",
+      "Ataque cibernético a bancos de dados corporativos.",
+      "Vulnerabilidade de segurança explorada por invasores."
+    ]
+  },
+  {
+    "nome": "tightlining",
+    "variacoes": [
+      "fazer tightlining",
+      "delineado invisível"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica de aplicar delineado ou sombra bem rente à raiz dos cílios superiores, preenchendo o espaço entre os fios pra dar mais definição sem marcar uma linha visível.",
+    "tags": [
+      "maquiagem",
+      "olhos",
+      "tecnica"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um tightlining discreto hoje pra dar profundidade sem parecer que tô de make nos olhos.",
+    "exemplos_incorretos": [
+      "O eletricista fez o tightlining dos fios da instalação nova.",
+      "A empresa de internet passou o tightlining da rede no bairro.",
+      "O encanador ajustou o tightlining dos canos do banheiro."
+    ],
+    "significados_incorretos": [
+      "Processo de ajuste ou fixação de fiação elétrica.",
+      "Instalação de cabos de rede em uma residência.",
+      "Serviço técnico de encanamento ou tubulação."
     ]
   }
 ]

@@ -438,5 +438,165 @@
       "Material usado em reformas residenciais.",
       "Manobra específica praticada em simuladores de aviação."
     ]
+  },
+  {
+    "nome": "visual",
+    "variacoes": ["visual do grupo", "the visual"],
+    "classe_gramatical": "substantivo",
+    "significado": "O integrante reconhecido pela agência e fãs como o rosto mais marcante do grupo, escolhido geralmente pela aparência.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele é o visual do grupo, sempre destacado nos teasers e capas de álbum.",
+    "exemplos_incorretos": [
+      "O visual da loja foi todo reformado esse mês.",
+      "Gostei do visual novo do aplicativo depois da atualização.",
+      "A vitrine tem um visual bem chamativo."
+    ],
+    "significados_incorretos": [
+      "Aparência estética de um estabelecimento comercial.",
+      "Design ou interface de um aplicativo ou site.",
+      "Decoração visual de uma vitrine ou espaço."
+    ]
+  },
+  {
+    "nome": "leader",
+    "variacoes": ["leader-nim", "o leader"],
+    "classe_gramatical": "substantivo",
+    "significado": "O integrante designado pela agência para representar oficialmente o grupo, geralmente o mais experiente ou responsável.",
+    "tags": ["kpop", "industria", "idol"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Como leader, ele sempre fala primeiro nas entrevistas em nome do grupo.",
+    "exemplos_incorretos": [
+      "O leader da empresa assinou o contrato novo.",
+      "Fui eleito leader do time de futebol da escola.",
+      "O leader do projeto marcou uma reunião pra amanhã."
+    ],
+    "significados_incorretos": [
+      "Pessoa responsável por uma empresa ou negócio.",
+      "Capitão eleito de uma equipe esportiva.",
+      "Responsável por coordenar um projeto de trabalho."
+    ]
+  },
+  {
+    "nome": "rookie",
+    "variacoes": ["grupo rookie", "rookie do ano"],
+    "classe_gramatical": "substantivo",
+    "significado": "Grupo ou artista que debutou recentemente e ainda está construindo seu espaço na indústria musical.",
+    "tags": ["kpop", "industria", "carreira"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Esse grupo rookie já tá fazendo um sucesso enorme pro primeiro ano.",
+    "exemplos_incorretos": [
+      "O rookie do time de basquete jogou muito bem na estreia.",
+      "Contratamos um rookie pra vaga de estagiário.",
+      "O piloto rookie se classificou em terceiro na corrida."
+    ],
+    "significados_incorretos": [
+      "Jogador estreante em uma equipe esportiva.",
+      "Funcionário iniciante contratado recentemente.",
+      "Competidor novato em uma modalidade esportiva."
+    ]
+  },
+  {
+    "nome": "aegyo",
+    "variacoes": ["fazer aegyo"],
+    "classe_gramatical": "substantivo",
+    "significado": "Comportamento propositalmente fofo, com voz manhosa e gestos exagerados, usado por idols pra encantar os fãs.",
+    "tags": ["kpop", "fandom", "comportamento"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela fez um aegyo tão fofo no fansign que os fãs surtaram.",
+    "exemplos_incorretos": [
+      "O aegyo da criança durou a festa toda.",
+      "Comprei um aegyo novo pra decorar o quarto.",
+      "A loja vende produtos de aegyo importados."
+    ],
+    "significados_incorretos": [
+      "Comportamento genérico infantil sem relação com K-pop.",
+      "Item decorativo vendido em lojas.",
+      "Produto importado vendido comercialmente."
+    ]
+  },
+  {
+    "nome": "sunbae",
+    "variacoes": ["sunbaenim", "sunbae-hoobae"],
+    "classe_gramatical": "substantivo",
+    "significado": "Artista ou colega mais experiente na indústria, geralmente tratado com respeito pelos mais novos (hoobae).",
+    "tags": ["kpop", "industria", "hierarquia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O grupo agradeceu o sunbae que os ajudou logo depois do debut.",
+    "exemplos_incorretos": [
+      "O sunbae da faculdade me ajudou com o trabalho.",
+      "Meu sunbae no estágio me ensinou a usar o sistema.",
+      "O sunbae do time de vôlei treinou os calouros."
+    ],
+    "significados_incorretos": [
+      "Colega mais experiente em ambiente acadêmico genérico.",
+      "Funcionário mais antigo em um estágio ou emprego.",
+      "Atleta veterano treinando iniciantes num esporte qualquer."
+    ]
+  },
+  {
+    "nome": "photocard",
+    "variacoes": ["pc", "photocard raro"],
+    "classe_gramatical": "substantivo",
+    "significado": "Cartão colecionável com a foto de um idol específico, geralmente incluso aleatoriamente dentro dos álbuns físicos.",
+    "tags": ["kpop", "colecionismo", "album"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Finalmente consegui o photocard do meu bias depois de comprar três álbuns.",
+    "exemplos_incorretos": [
+      "O banco emitiu um photocard novo pro meu cartão de crédito.",
+      "Perdi meu photocard de identificação do trabalho.",
+      "A loja imprime photocard personalizado pra eventos."
+    ],
+    "significados_incorretos": [
+      "Cartão bancário com foto de identificação.",
+      "Crachá de identificação profissional.",
+      "Cartão personalizado impresso para eventos diversos."
+    ]
+  },
+  {
+    "nome": "fansign",
+    "variacoes": ["evento de fansign"],
+    "classe_gramatical": "substantivo",
+    "significado": "Evento de encontro entre idols e fãs selecionados, geralmente por sorteio na compra de álbuns, onde há autógrafos e conversas rápidas.",
+    "tags": ["kpop", "fandom", "evento"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ganhei o sorteio e vou participar do fansign do grupo semana que vem.",
+    "exemplos_incorretos": [
+      "A livraria organizou um fansign com o autor do livro.",
+      "O jogador de futebol fez um fansign depois da partida.",
+      "A editora marcou um fansign pro lançamento da revista."
+    ],
+    "significados_incorretos": [
+      "Evento de autógrafos com autores literários.",
+      "Sessão de autógrafos com atletas após jogos.",
+      "Evento promocional de lançamento editorial."
+    ]
+  },
+  {
+    "nome": "hallyu",
+    "variacoes": ["onda hallyu", "hallyu wave"],
+    "classe_gramatical": "substantivo",
+    "significado": "Fenômeno da expansão global da cultura pop sul-coreana, incluindo música, novelas, moda e gastronomia.",
+    "tags": ["kpop", "cultura", "industria"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O hallyu ajudou o K-pop a conquistar fãs no mundo inteiro nos últimos anos.",
+    "exemplos_incorretos": [
+      "O hallyu da praia estava bem forte hoje de manhã.",
+      "A empresa surfou o hallyu do mercado financeiro.",
+      "O hallyu do rio subiu depois da chuva forte."
+    ],
+    "significados_incorretos": [
+      "Onda do mar em contexto de praia.",
+      "Tendência ou movimento do mercado financeiro.",
+      "Elevação do nível de um rio após chuvas."
+    ]
   }
 ]
