@@ -1,6 +1,7 @@
 {
   "esportes": [
     {
+      "id": 1,
       "nome": "miguezento",
       "variacoes": ["dar migué", "migué"],
       "classe_gramatical": "adjetivo / substantivo",
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": 2,
       "nome": "firula",
       "variacoes": ["firulento", "fazer firula"],
       "classe_gramatical": "expressão verbal",
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "id": 3,
       "nome": "mão de alface",
       "variacoes": ["braço de jacaré"],
       "classe_gramatical": "expressão substantiva",
@@ -61,6 +64,7 @@
       ]
     },
     {
+      "id": 4,
       "nome": "matar no peito",
       "variacoes": [],
       "classe_gramatical": "expressão verbal",
@@ -81,6 +85,7 @@
       ]
     },
     {
+      "id": 5,
       "nome": "de lavada",
       "variacoes": [],
       "classe_gramatical": "expressão adverbial",
@@ -101,6 +106,7 @@
       ]
     },
     {
+      "id": 6,
       "nome": "pendurar a chuteira",
       "variacoes": ["pendurar as chuteiras"],
       "classe_gramatical": "expressão verbal",
@@ -121,6 +127,7 @@
       ]
     },
     {
+      "id": 7,
       "nome": "bagre",
       "variacoes": ["perna de pau"],
       "classe_gramatical": "substantivo",
@@ -141,6 +148,7 @@
       ]
     },
     {
+      "id": 8,
       "nome": "frango",
       "variacoes": ["frangar"],
       "classe_gramatical": "substantivo",
@@ -161,6 +169,7 @@
       ]
     },
     {
+      "id": 9,
       "nome": "pipoqueiro",
       "variacoes": ["pipocar"],
       "classe_gramatical": "substantivo",
@@ -181,6 +190,7 @@
       ]
     },
     {
+      "id": 10,
       "nome": "fominha",
       "variacoes": ["fome"],
       "classe_gramatical": "substantivo",
@@ -201,6 +211,7 @@
       ]
     },
     {
+      "id": 11,
       "nome": "caneta",
       "variacoes": ["rolinho", "túnel"],
       "classe_gramatical": "substantivo",
@@ -221,6 +232,7 @@
       ]
     },
     {
+      "id": 12,
       "nome": "chapéu",
       "variacoes": ["lençol", "balão"],
       "classe_gramatical": "substantivo",
@@ -241,6 +253,7 @@
       ]
     },
     {
+      "id": 13,
       "nome": "cavadinha",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -261,6 +274,7 @@
       ]
     },
     {
+      "id": 14,
       "nome": "corneteiro",
       "variacoes": ["corneta"],
       "classe_gramatical": "substantivo",
@@ -281,6 +295,7 @@
       ]
     },
     {
+      "id": 15,
       "nome": "ace",
       "variacoes": ["saque ace"],
       "classe_gramatical": "substantivo",
@@ -301,6 +316,7 @@
       ]
     },
     {
+      "id": 16,
       "nome": "marola",
       "variacoes": ["ficar de marola", "maroleiro"],
       "classe_gramatical": "substantivo",
@@ -321,6 +337,7 @@
       ]
     },
     {
+      "id": 17,
       "nome": "hail mary",
       "variacoes": ["passe hail mary"],
       "classe_gramatical": "substantivo",
@@ -341,6 +358,7 @@
       ]
     },
     {
+      "id": 18,
       "nome": "pé quente",
       "variacoes": ["ser pé quente"],
       "classe_gramatical": "adjetivo",
@@ -361,6 +379,7 @@
       ]
     },
     {
+      "id": 19,
       "nome": "vira folha",
       "variacoes": ["vira-folha", "vira casaca"],
       "classe_gramatical": "substantivo",
@@ -381,6 +400,7 @@
       ]
     },
     {
+      "id": 20,
       "nome": "passar a guarda",
       "variacoes": ["passagem de guarda"],
       "classe_gramatical": "expressão verbal",
@@ -401,6 +421,7 @@
       ]
     },
     {
+      "id": 21,
       "nome": "pé frio",
       "variacoes": ["ser pé frio", "mick jagger"],
       "classe_gramatical": "adjetivo",
@@ -421,6 +442,7 @@
       ]
     },
     {
+      "id": 22,
       "nome": "tryhard",
       "variacoes": ["tryhardar", "tryhardeiro"],
       "classe_gramatical": "substantivo / adjetivo",
@@ -441,6 +463,7 @@
       ]
     },
     {
+      "id": 23,
       "nome": "shape",
       "variacoes": ["meter o shape", "no shape"],
       "classe_gramatical": "substantivo",
@@ -461,6 +484,7 @@
       ]
     },
     {
+      "id": 24,
       "nome": "gambito",
       "variacoes": ["fazer um gambito", "gambito da rainha"],
       "classe_gramatical": "substantivo",
@@ -481,6 +505,7 @@
       ]
     },
     {
+      "id": 25,
       "nome": "beijar a lona",
       "variacoes": ["beijou a lona", "ir para a lona"],
       "classe_gramatical": "expressão verbal",
@@ -501,6 +526,7 @@
       ]
     },
     {
+      "id": 26,
       "nome": "suco",
       "variacoes": ["tá no suco", "tomar suco", "suco mágico"],
       "classe_gramatical": "substantivo",
@@ -521,6 +547,7 @@
       ]
     },
     {
+      "id": 27,
       "nome": "zica",
       "variacoes": ["dar zica", "zicado", "zicar"],
       "classe_gramatical": "substantivo / verbo",
@@ -541,6 +568,7 @@
       ]
     },
     {
+      "id": 28,
       "nome": "maria-chuteira",
       "variacoes": ["maria chuteira"],
       "classe_gramatical": "substantivo",
@@ -561,6 +589,7 @@
       ]
     },
     {
+      "id": 29,
       "nome": "clutch",
       "variacoes": ["clutch player", "ser clutch", "clutchar"],
       "classe_gramatical": "adjetivo / verbo",
@@ -581,6 +610,7 @@
       ]
     },
     {
+      "id": 30,
       "nome": "gymbro",
       "variacoes": ["gym bro", "parceiro de treino"],
       "classe_gramatical": "substantivo",
@@ -601,6 +631,7 @@
       ]
     },
     {
+      "id": 31,
       "nome": "treinar fofo",
       "variacoes": ["treino fofo", "malhar fofo"],
       "classe_gramatical": "expressão verbal",

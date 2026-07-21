@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "nome": "lacrar",
     "variacoes": ["lacre", "lacradora", "lacrou"],
     "classe_gramatical": "verbo",
@@ -20,6 +21,7 @@
     ]
   },
   {
+    "id": 2,
     "nome": "slay",
     "variacoes": ["slayou", "slayado"],
     "classe_gramatical": "interjeição",
@@ -40,6 +42,7 @@
     ]
   },
   {
+    "id": 3,
     "nome": "cringe",
     "variacoes": ["cringou", "cringenta", "cringence"],
     "classe_gramatical": "adjetivo",
@@ -60,6 +63,7 @@
     ]
   },
   {
+    "id": 4,
     "nome": "flopar",
     "variacoes": ["flopou", "flop", "flopado"],
     "classe_gramatical": "verbo",
@@ -80,6 +84,7 @@
     ]
   },
   {
+    "id": 5,
     "nome": "hablar",
     "variacoes": ["hablou", "habla"],
     "classe_gramatical": "verbo",
@@ -100,6 +105,7 @@
     ]
   },
   {
+    "id": 6,
     "nome": "delulu",
     "variacoes": ["delulice", "delulas"],
     "classe_gramatical": "adjetivo",
@@ -120,6 +126,7 @@
     ]
   },
   {
+    "id": 7,
     "nome": "shippar",
     "variacoes": ["shippo", "ship", "shippado"],
     "classe_gramatical": "verbo",
@@ -140,6 +147,7 @@
     ]
   },
   {
+    "id": 8,
     "nome": "gag",
     "variacoes": ["gag de la gag", "gagged"],
     "classe_gramatical": "adjetivo",
@@ -160,6 +168,7 @@
     ]
   },
   {
+    "id": 9,
     "nome": "lacre",
     "variacoes": ["lacrei", "lacração"],
     "classe_gramatical": "substantivo",
@@ -180,6 +189,7 @@
     ]
   },
   {
+    "id": 10,
     "nome": "aesthetic",
     "variacoes": ["estética"],
     "classe_gramatical": "substantivo",
@@ -200,6 +210,7 @@
     ]
   },
   {
+    "id": 11,
     "nome": "baddie",
     "variacoes": ["baddies"],
     "classe_gramatical": "substantivo",
@@ -220,6 +231,7 @@
     ]
   },
   {
+    "id": 12,
     "nome": "dropar",
     "variacoes": ["dropou", "drop", "dropando"],
     "classe_gramatical": "verbo",
@@ -240,6 +252,7 @@
     ]
   },
   {
+    "id": 13,
     "nome": "fanfic",
     "variacoes": ["fic", "fanfiqueira"],
     "classe_gramatical": "substantivo",
@@ -260,6 +273,7 @@
     ]
   },
   {
+    "id": 14,
     "nome": "lowkey",
     "variacoes": ["low-key"],
     "classe_gramatical": "advérbio",
@@ -280,6 +294,7 @@
     ]
   },
   {
+    "id": 15,
     "nome": "highkey",
     "variacoes": ["high-key"],
     "classe_gramatical": "advérbio",
@@ -300,6 +315,7 @@
     ]
   },
   {
+    "id": 16,
     "nome": "hitar",
     "variacoes": ["hitou", "hit"],
     "classe_gramatical": "verbo",
@@ -320,6 +336,7 @@
     ]
   },
   {
+    "id": 17,
     "nome": "biscoitar",
     "variacoes": ["biscoito", "biscoiteiro"],
     "classe_gramatical": "verbo",
@@ -340,6 +357,7 @@
     ]
   },
   {
+    "id": 18,
     "nome": "jantou",
     "variacoes": ["jantar", "jantou muito"],
     "classe_gramatical": "verbo",
@@ -360,6 +378,7 @@
     ]
   },
   {
+    "id": 19,
     "nome": "serviu",
     "variacoes": ["servindo", "serviu tudo"],
     "classe_gramatical": "verbo",
@@ -380,6 +399,7 @@
     ]
   },
   {
+    "id": 20,
     "nome": "divar",
     "variacoes": ["divou", "diva"],
     "classe_gramatical": "verbo",
@@ -400,6 +420,7 @@
     ]
   },
   {
+    "id": 21,
     "nome": "iconic",
     "variacoes": ["icônico", "icônica"],
     "classe_gramatical": "adjetivo",
@@ -420,6 +441,7 @@
     ]
   },
   {
+    "id": 22,
     "nome": "stan",
     "variacoes": ["stannar", "stanneio"],
     "classe_gramatical": "substantivo",
@@ -440,6 +462,7 @@
     ]
   },
   {
+    "id": 23,
     "nome": "fandom",
     "variacoes": ["fandoms"],
     "classe_gramatical": "substantivo",
@@ -460,6 +483,7 @@
     ]
   },
   {
+    "id": 24,
     "nome": "comeback",
     "variacoes": ["comebacks"],
     "classe_gramatical": "substantivo",
@@ -480,6 +504,7 @@
     ]
   },
   {
+    "id": 25,
     "nome": "trend",
     "variacoes": ["trends", "trendar"],
     "classe_gramatical": "substantivo",
@@ -500,6 +525,7 @@
     ]
   },
   {
+    "id": 26,
     "nome": "exposed",
     "variacoes": ["exposeds", "exposar"],
     "classe_gramatical": "substantivo",
@@ -520,6 +546,7 @@
     ]
   },
   {
+    "id": 27,
     "nome": "main character",
     "variacoes": ["protagonista"],
     "classe_gramatical": "substantivo",
@@ -540,6 +567,7 @@
     ]
   },
   {
+    "id": 28,
     "nome": "glow up",
     "variacoes": ["glow-up"],
     "classe_gramatical": "substantivo",
@@ -560,6 +588,7 @@
     ]
   },
   {
+    "id": 29,
     "nome": "bapho",
     "variacoes": ["bafafá", "baphon"],
     "classe_gramatical": "substantivo",
@@ -580,6 +609,7 @@
     ]
   },
   {
+    "id": 30,
     "nome": "cancelar",
     "variacoes": ["cancelado", "cancelamento"],
     "classe_gramatical": "verbo",
@@ -600,6 +630,7 @@
     ]
   },
   {
+    "id": 31,
     "nome": "situationship",
     "variacoes": ["situationships"],
     "classe_gramatical": "substantivo",
@@ -620,6 +651,7 @@
     ]
   },
   {
+    "id": 32,
     "nome": "chavoso",
     "variacoes": ["chave", "chaveoso"],
     "classe_gramatical": "adjetivo",
@@ -640,6 +672,7 @@
     ]
   },
   {
+    "id": 33,
     "nome": "embrazar",
     "variacoes": ["embrazou", "embrazado"],
     "classe_gramatical": "verbo",
@@ -660,6 +693,7 @@
     ]
   },
   {
+    "id": 34,
     "nome": "hype",
     "variacoes": ["hypado", "hypar"],
     "classe_gramatical": "substantivo",
@@ -680,6 +714,7 @@
     ]
   },
   {
+    "id": 35,
     "nome": "gatilho",
     "variacoes": ["gatilhos", "gatilhada"],
     "classe_gramatical": "substantivo",
@@ -700,6 +735,7 @@
     ]
   },
   {
+    "id": 36,
     "nome": "mood",
     "variacoes": ["moods"],
     "classe_gramatical": "substantivo",
@@ -720,6 +756,7 @@
     ]
   },
   {
+    "id": 37,
     "nome": "tea",
     "variacoes": ["chá", "spill the tea"],
     "classe_gramatical": "substantivo",
@@ -740,6 +777,7 @@
     ]
   },
   {
+    "id": 38,
     "nome": "cunty",
     "variacoes": ["cuntiness"],
     "classe_gramatical": "adjetivo",
@@ -760,6 +798,7 @@
     ]
   },
   {
+    "id": 39,
     "nome": "wig",
     "variacoes": ["wig snatched"],
     "classe_gramatical": "interjeição",
@@ -780,6 +819,7 @@
     ]
   },
   {
+    "id": 40,
     "nome": "ijbol",
     "variacoes": ["ijbols"],
     "classe_gramatical": "interjeição",
@@ -790,7 +830,7 @@
     "exemplo_correto": "Ele tropeçou de forma desajeitada no ar liso tropeçando nos próprios pés longos sapatos cadarços e caiu engraçado de repente do chão nada rindo alto na hora muito e mandei um ijbol enorme com risadas contínuas lágrimas chorando lágrimas molhadas fortes.",
     "exemplos_incorretos": [
       "Vou rápido beber gelado de sede um enorme copo vidro plástico de longo e forte ijbol amargo misturado grosso feito esmagado com limão suco sucos frutas tropicais manga gelo muito pouco bastante sem e água açucar doce e água quente filtrada morna limpa purificada potável boa gelada gostosa na hora quente dia cedo de calor no meio começo de amanhã da noite sol longo grande forte claro limpo na tarde dia ensolarado clara longo.",
-      "O gavião ave grande voador imponente majestoso fez ijbol batendo asas veloz mergulho forte para ar em e pegou veloz da caça rápido de garras e peixe rio vivo mar longo peixe prata claro água rio azul claro na verde na natureza selva viva bela mata fechada muito aberta ampla livre grande verde marinha voando longe de perto para caçando livre em bando longo mar pássaro de com o longo bico amarelo em forte curvo bicado em pontudo presa presa forte longa livre caindo voando vivo bom belo lindo e vivo para rápido devagar o ar em pelo ar em céu grande azul no voo livre mar longo livre no ar livre." ,
+      "O gavião ave grande voador imponente majestoso fez ijbol batendo asas veloz mergulho forte para ar em e pegou veloz da caça rápido de garras e peixe rio vivo mar longo peixe prata claro água rio azul claro na verde na natureza selva viva bela mata fechada muito aberta ampla livre grande verde marinha voando longe de perto para caçando livre em bando longo mar pássaro de com o longo bico amarelo em forte curvo bicado em pontudo presa presa forte longa livre caindo voando vivo bom belo lindo e vivo para rápido devagar o ar em pelo ar em céu grande azul no voo livre mar longo livre no ar livre.",
       "Comprei barato ijbol no um mercado de esquina na feira mercado longo pão com trigo quente ijbol na e para longo doce muito comer bom lanche pão com presunto salgado pão de comer lanche comer bem rápido tarde na amanhã longo gostoso belo e com café pingado gostoso bom no fim no café do manhã bom lanche começo feliz feliz começo com de início e bem rápido na tarde manhã pão belo no lanche de da manhã e no feliz cedo no comer pão comer em o no com amanhã tarde de manhã de lanche da muito pouco longo pão bem longo trigo fofinho com sal branco de trigo escuro pão com bom o tarde na com bom feliz lanche na e com a."
     ],
     "significados_incorretos": [
@@ -800,6 +840,7 @@
     ]
   },
   {
+    "id": 41,
     "nome": "soft launch",
     "variacoes": ["soft-launched"],
     "classe_gramatical": "substantivo",
@@ -820,6 +861,7 @@
     ]
   },
   {
+    "id": 42,
     "nome": "clean girl",
     "variacoes": ["clean girls"],
     "classe_gramatical": "substantivo",
@@ -840,6 +882,7 @@
     ]
   },
   {
+    "id": 43,
     "nome": "mãe rica indo pro brunch",
     "variacoes": ["mãe rica"],
     "classe_gramatical": "substantivo",

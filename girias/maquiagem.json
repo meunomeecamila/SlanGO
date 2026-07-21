@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "nome": "esfumado",
     "variacoes": [
       "esfumar",
@@ -27,6 +28,7 @@
     ]
   },
   {
+    "id": 2,
     "nome": "boca de boneca",
     "variacoes": [
       "efeito boca de boneca"
@@ -53,6 +55,7 @@
     ]
   },
   {
+    "id": 3,
     "nome": "pele de vidro",
     "variacoes": [
       "glass skin"
@@ -79,6 +82,7 @@
     ]
   },
   {
+    "id": 4,
     "nome": "postiço",
     "variacoes": [
       "cílios postiços"
@@ -105,6 +109,7 @@
     ]
   },
   {
+    "id": 5,
     "nome": "glow up",
     "variacoes": [
       "deu um glow up",
@@ -132,6 +137,7 @@
     ]
   },
   {
+    "id": 6,
     "nome": "clean girl",
     "variacoes": [
       "clean girl makeup",
@@ -159,6 +165,7 @@
     ]
   },
   {
+    "id": 7,
     "nome": "soft glam",
     "variacoes": [
       "soft glam make"
@@ -185,6 +192,7 @@
     ]
   },
   {
+    "id": 8,
     "nome": "borrada",
     "variacoes": [
       "make borrada",
@@ -212,6 +220,7 @@
     ]
   },
   {
+    "id": 9,
     "nome": "cara lavada",
     "variacoes": [
       "ficar de cara lavada"
@@ -238,6 +247,7 @@
     ]
   },
   {
+    "id": 10,
     "nome": "full face",
     "variacoes": [
       "fazer a full face",
@@ -265,6 +275,7 @@
     ]
   },
   {
+    "id": 11,
     "nome": "no makeup makeup",
     "variacoes": [
       "make de cara lavada",
@@ -292,6 +303,7 @@
     ]
   },
   {
+    "id": 12,
     "nome": "delineado gatinho",
     "variacoes": [
       "winged liner",
@@ -319,6 +331,7 @@
     ]
   },
   {
+    "id": 13,
     "nome": "nose highlight",
     "variacoes": [
       "iluminar o nariz",
@@ -346,6 +359,7 @@
     ]
   },
   {
+    "id": 14,
     "nome": "baking",
     "variacoes": [
       "fazer baking",
@@ -373,6 +387,7 @@
     ]
   },
   {
+    "id": 15,
     "nome": "strobing",
     "variacoes": [
       "fazer strobing",
@@ -400,6 +415,7 @@
     ]
   },
   {
+    "id": 16,
     "nome": "contorno",
     "variacoes": [
       "fazer contorno",
@@ -427,6 +443,7 @@
     ]
   },
   {
+    "id": 17,
     "nome": "blush draping",
     "variacoes": [
       "draping de blush",
@@ -454,6 +471,7 @@
     ]
   },
   {
+    "id": 18,
     "nome": "underpainting",
     "variacoes": [
       "fazer underpainting"
@@ -480,6 +498,7 @@
     ]
   },
   {
+    "id": 19,
     "nome": "siren eyes",
     "variacoes": [
       "olho de sereia",
@@ -507,6 +526,7 @@
     ]
   },
   {
+    "id": 20,
     "nome": "lifting make",
     "variacoes": [
       "make de lifting",
@@ -534,6 +554,7 @@
     ]
   },
   {
+    "id": 21,
     "nome": "cut crease",
     "variacoes": [
       "fazer cut crease"
@@ -560,6 +581,7 @@
     ]
   },
   {
+    "id": 22,
     "nome": "halo eye",
     "variacoes": [
       "olho halo",
@@ -587,6 +609,7 @@
     ]
   },
   {
+    "id": 23,
     "nome": "draping de contorno",
     "variacoes": [
       "fazer o draping"
@@ -613,6 +636,7 @@
     ]
   },
   {
+    "id": 24,
     "nome": "skin tint",
     "variacoes": [
       "base skin tint",
@@ -640,6 +664,7 @@
     ]
   },
   {
+    "id": 25,
     "nome": "morphing de sombra",
     "variacoes": [
       "fazer morphing"
@@ -666,6 +691,7 @@
     ]
   },
   {
+    "id": 26,
     "nome": "lip oil",
     "variacoes": [
       "óleo labial",
@@ -693,6 +719,7 @@
     ]
   },
   {
+    "id": 27,
     "nome": "blurring",
     "variacoes": [
       "efeito blurring",
@@ -720,6 +747,7 @@
     ]
   },
   {
+    "id": 28,
     "nome": "fox eye",
     "variacoes": [
       "olho de raposa",
@@ -747,6 +775,7 @@
     ]
   },
   {
+    "id": 29,
     "nome": "makeup hack",
     "variacoes": [
       "hack de make",
@@ -774,6 +803,7 @@
     ]
   },
   {
+    "id": 30,
     "nome": "tightlining",
     "variacoes": [
       "fazer tightlining",

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "nome": "bias",
     "variacoes": ["ult bias", "bias wrecker"],
     "classe_gramatical": "substantivo",
@@ -20,6 +21,7 @@
     ]
   },
   {
+    "id": 2,
     "nome": "maknae",
     "variacoes": ["maknae line", "golden maknae"],
     "classe_gramatical": "substantivo",
@@ -40,6 +42,7 @@
     ]
   },
   {
+    "id": 3,
     "nome": "comeback",
     "variacoes": ["comeback stage", "era do comeback"],
     "classe_gramatical": "substantivo",
@@ -60,6 +63,7 @@
     ]
   },
   {
+    "id": 4,
     "nome": "stan",
     "variacoes": ["stanear", "sou stan de"],
     "classe_gramatical": "verbo/substantivo",
@@ -80,6 +84,7 @@
     ]
   },
   {
+    "id": 5,
     "nome": "bias wrecker",
     "variacoes": ["wrecker"],
     "classe_gramatical": "expressão",
@@ -100,6 +105,7 @@
     ]
   },
   {
+    "id": 6,
     "nome": "sasaeng",
     "variacoes": ["fã sasaeng"],
     "classe_gramatical": "substantivo",
@@ -120,6 +126,7 @@
     ]
   },
   {
+    "id": 7,
     "nome": "ult",
     "variacoes": ["ultimate bias", "meu ult"],
     "classe_gramatical": "substantivo",
@@ -140,6 +147,7 @@
     ]
   },
   {
+    "id": 8,
     "nome": "daebak",
     "variacoes": ["daebak!"],
     "classe_gramatical": "interjeição",
@@ -160,6 +168,7 @@
     ]
   },
   {
+    "id": 9,
     "nome": "line",
     "variacoes": ["vocal line", "maknae line", "95-line"],
     "classe_gramatical": "substantivo",
@@ -180,6 +189,7 @@
     ]
   },
   {
+    "id": 10,
     "nome": "all-kill",
     "variacoes": ["deu all-kill", "perfect all-kill"],
     "classe_gramatical": "expressão",
@@ -200,6 +210,7 @@
     ]
   },
   {
+    "id": 11,
     "nome": "selca",
     "variacoes": ["tirar uma selca"],
     "classe_gramatical": "substantivo",
@@ -220,6 +231,7 @@
     ]
   },
   {
+    "id": 12,
     "nome": "akgae",
     "variacoes": ["fã akgae"],
     "classe_gramatical": "substantivo",
@@ -240,6 +252,7 @@
     ]
   },
   {
+    "id": 13,
     "nome": "era",
     "variacoes": ["nova era", "era do álbum"],
     "classe_gramatical": "substantivo",
@@ -260,6 +273,7 @@
     ]
   },
   {
+    "id": 14,
     "nome": "concept",
     "variacoes": ["dark concept", "cute concept"],
     "classe_gramatical": "substantivo",
@@ -280,6 +294,7 @@
     ]
   },
   {
+    "id": 15,
     "nome": "OTP",
     "variacoes": ["shippar", "meu OTP"],
     "classe_gramatical": "sigla/substantivo",
@@ -300,6 +315,7 @@
     ]
   },
   {
+    "id": 16,
     "nome": "netizen",
     "variacoes": ["comentário de netizen"],
     "classe_gramatical": "substantivo",
@@ -320,6 +336,7 @@
     ]
   },
   {
+    "id": 17,
     "nome": "trainee",
     "variacoes": ["fazer trainee", "período de trainee"],
     "classe_gramatical": "substantivo",
@@ -340,6 +357,7 @@
     ]
   },
   {
+    "id": 18,
     "nome": "debut",
     "variacoes": ["debutar", "grupo de debut"],
     "classe_gramatical": "substantivo/verbo",
@@ -360,6 +378,7 @@
     ]
   },
   {
+    "id": 19,
     "nome": "disband",
     "variacoes": ["deu disband", "o grupo teve disband"],
     "classe_gramatical": "substantivo",
@@ -380,6 +399,7 @@
     ]
   },
   {
+    "id": 20,
     "nome": "fancam",
     "variacoes": ["fancam individual"],
     "classe_gramatical": "substantivo",
@@ -400,6 +420,7 @@
     ]
   },
   {
+    "id": 21,
     "nome": "fanwar",
     "variacoes": ["deu fanwar"],
     "classe_gramatical": "substantivo",
@@ -420,6 +441,7 @@
     ]
   },
   {
+    "id": 22,
     "nome": "ace",
     "variacoes": ["o ace do grupo"],
     "classe_gramatical": "substantivo",
@@ -440,6 +462,7 @@
     ]
   },
   {
+    "id": 23,
     "nome": "visual",
     "variacoes": ["visual do grupo", "the visual"],
     "classe_gramatical": "substantivo",
@@ -460,6 +483,7 @@
     ]
   },
   {
+    "id": 24,
     "nome": "leader",
     "variacoes": ["leader-nim", "o leader"],
     "classe_gramatical": "substantivo",
@@ -480,6 +504,7 @@
     ]
   },
   {
+    "id": 25,
     "nome": "rookie",
     "variacoes": ["grupo rookie", "rookie do ano"],
     "classe_gramatical": "substantivo",
@@ -500,6 +525,7 @@
     ]
   },
   {
+    "id": 26,
     "nome": "aegyo",
     "variacoes": ["fazer aegyo"],
     "classe_gramatical": "substantivo",
@@ -520,6 +546,7 @@
     ]
   },
   {
+    "id": 27,
     "nome": "sunbae",
     "variacoes": ["sunbaenim", "sunbae-hoobae"],
     "classe_gramatical": "substantivo",
@@ -540,6 +567,7 @@
     ]
   },
   {
+    "id": 28,
     "nome": "photocard",
     "variacoes": ["pc", "photocard raro"],
     "classe_gramatical": "substantivo",
@@ -560,6 +588,7 @@
     ]
   },
   {
+    "id": 29,
     "nome": "fansign",
     "variacoes": ["evento de fansign"],
     "classe_gramatical": "substantivo",
@@ -580,6 +609,7 @@
     ]
   },
   {
+    "id": 30,
     "nome": "hallyu",
     "variacoes": ["onda hallyu", "hallyu wave"],
     "classe_gramatical": "substantivo",

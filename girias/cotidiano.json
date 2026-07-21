@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "nome": "cringe",
     "variacoes": ["cringou", "cringenta"],
     "classe_gramatical": "adjetivo",
@@ -20,6 +21,7 @@
     ]
   },
   {
+    "id": 2,
     "nome": "rizz",
     "variacoes": ["silent rizz"],
     "classe_gramatical": "substantivo",
@@ -40,6 +42,7 @@
     ]
   },
   {
+    "id": 3,
     "nome": "sigma",
     "variacoes": ["homem sigma"],
     "classe_gramatical": "adjetivo",
@@ -60,6 +63,7 @@
     ]
   },
   {
+    "id": 4,
     "nome": "biscoitar",
     "variacoes": ["biscoito", "biscoiteiro"],
     "classe_gramatical": "verbo",
@@ -80,6 +84,7 @@
     ]
   },
   {
+    "id": 5,
     "nome": "lacrar",
     "variacoes": ["lacre", "lacradora", "lacrou"],
     "classe_gramatical": "verbo",
@@ -100,6 +105,7 @@
     ]
   },
   {
+    "id": 6,
     "nome": "hablar",
     "variacoes": ["hablou"],
     "classe_gramatical": "verbo",
@@ -120,6 +126,7 @@
     ]
   },
   {
+    "id": 7,
     "nome": "slay",
     "variacoes": ["slayou"],
     "classe_gramatical": "interjeição",
@@ -140,6 +147,7 @@
     ]
   },
   {
+    "id": 8,
     "nome": "divar",
     "variacoes": ["divou", "diva"],
     "classe_gramatical": "verbo",
@@ -160,6 +168,7 @@
     ]
   },
   {
+    "id": 9,
     "nome": "de cria",
     "variacoes": ["cria"],
     "classe_gramatical": "locução adjetiva",
@@ -180,6 +189,7 @@
     ]
   },
   {
+    "id": 10,
     "nome": "miar",
     "variacoes": ["miou", "miei"],
     "classe_gramatical": "verbo",
@@ -200,6 +210,7 @@
     ]
   },
   {
+    "id": 11,
     "nome": "gatilho",
     "variacoes": ["gatilhos"],
     "classe_gramatical": "substantivo",
@@ -220,6 +231,7 @@
     ]
   },
   {
+    "id": 12,
     "nome": "hypado",
     "variacoes": ["hype", "hypar", "hipado"],
     "classe_gramatical": "adjetivo",
@@ -240,6 +252,7 @@
     ]
   },
   {
+    "id": 13,
     "nome": "mitar",
     "variacoes": ["mitou", "mito"],
     "classe_gramatical": "verbo",
@@ -260,6 +273,7 @@
     ]
   },
   {
+    "id": 14,
     "nome": "foi de base",
     "variacoes": ["ir de base", "foi de arrasta", "foi de arrasta pra cima", "foi de americanas"],
     "classe_gramatical": "locução verbal",
@@ -280,6 +294,7 @@
     ]
   },
   {
+    "id": 15,
     "nome": "delulu",
     "variacoes": ["delulice"],
     "classe_gramatical": "adjetivo",
@@ -300,6 +315,7 @@
     ]
   },
   {
+    "id": 16,
     "nome": "gag",
     "variacoes": ["gag de la gag", "gagged"],
     "classe_gramatical": "adjetivo",
@@ -320,6 +336,7 @@
     ]
   },
   {
+    "id": 17,
     "nome": "lacre",
     "variacoes": ["lacrei", "lacração"],
     "classe_gramatical": "substantivo",
@@ -340,6 +357,7 @@
     ]
   },
   {
+    "id": 18,
     "nome": "F",
     "variacoes": ["F no chat"],
     "classe_gramatical": "interjeição",
@@ -360,6 +378,7 @@
     ]
   },
   {
+    "id": 19,
     "nome": "aesthetic",
     "variacoes": ["estética"],
     "classe_gramatical": "substantivo",
@@ -380,6 +399,7 @@
     ]
   },
   {
+    "id": 20,
     "nome": "baddie",
     "variacoes": [],
     "classe_gramatical": "substantivo",
@@ -400,6 +420,7 @@
     ]
   },
   {
+    "id": 21,
     "nome": "bed rot",
     "variacoes": ["bed rotting"],
     "classe_gramatical": "substantivo",
@@ -420,6 +441,7 @@
     ]
   },
   {
+    "id": 22,
     "nome": "coringar",
     "variacoes": ["coringou", "coringando"],
     "classe_gramatical": "verbo",
@@ -440,6 +462,7 @@
     ]
   },
   {
+    "id": 23,
     "nome": "CPA",
     "variacoes": ["se pá"],
     "classe_gramatical": "locução adverbial",
@@ -460,6 +483,7 @@
     ]
   },
   {
+    "id": 24,
     "nome": "crash out",
     "variacoes": ["crashou out"],
     "classe_gramatical": "verbo",
@@ -480,6 +504,7 @@
     ]
   },
   {
+    "id": 25,
     "nome": "deixa ele cozinhar",
     "variacoes": ["let him cook", "deixa ela cozinhar"],
     "classe_gramatical": "locução verbal",
@@ -500,6 +525,7 @@
     ]
   },
   {
+    "id": 26,
     "nome": "dump",
     "variacoes": ["photo dump"],
     "classe_gramatical": "substantivo",
@@ -520,6 +546,7 @@
     ]
   },
   {
+    "id": 27,
     "nome": "fanfic",
     "variacoes": ["fic", "fanfiqueira"],
     "classe_gramatical": "substantivo",
@@ -540,6 +567,7 @@
     ]
   },
   {
+    "id": 28,
     "nome": "fomo",
     "variacoes": [],
     "classe_gramatical": "substantivo",
@@ -560,6 +588,7 @@
     ]
   },
   {
+    "id": 29,
     "nome": "jantou",
     "variacoes": ["jantar", "jantou muito"],
     "classe_gramatical": "verbo",
@@ -580,6 +609,7 @@
     ]
   },
   {
+    "id": 30,
     "nome": "lowkey",
     "variacoes": [],
     "classe_gramatical": "advérbio",
@@ -600,6 +630,7 @@
     ]
   },
   {
+    "id": 31,
     "nome": "moggar",
     "variacoes": ["mogged", "mogging"],
     "classe_gramatical": "verbo",
@@ -620,6 +651,7 @@
     ]
   },
   {
+    "id": 32,
     "nome": "POV",
     "variacoes": [],
     "classe_gramatical": "substantivo",
@@ -640,6 +672,7 @@
     ]
   },
   {
+    "id": 33,
     "nome": "red flag",
     "variacoes": ["red flags"],
     "classe_gramatical": "substantivo",
@@ -660,6 +693,7 @@
     ]
   },
   {
+    "id": 34,
     "nome": "skibidi",
     "variacoes": ["skibidi toilet"],
     "classe_gramatical": "adjetivo",
@@ -680,6 +714,7 @@
     ]
   },
   {
+    "id": 35,
     "nome": "tamo junto",
     "variacoes": ["tmj"],
     "classe_gramatical": "interjeição",
@@ -700,6 +735,7 @@
     ]
   },
   {
+    "id": 36,
     "nome": "lá ele",
     "variacoes": [],
     "classe_gramatical": "interjeição",
@@ -720,6 +756,7 @@
     ]
   },
   {
+    "id": 37,
     "nome": "massa",
     "variacoes": [],
     "classe_gramatical": "adjetivo",
@@ -740,6 +777,7 @@
     ]
   },
   {
+    "id": 38,
     "nome": "0800",
     "variacoes": [],
     "classe_gramatical": "adjetivo",
@@ -760,6 +798,7 @@
     ]
   },
   {
+    "id": 39,
     "nome": "embrazar",
     "variacoes": ["embrazou", "embrazado"],
     "classe_gramatical": "verbo",
@@ -780,6 +819,7 @@
     ]
   },
   {
+    "id": 40,
     "nome": "brotar",
     "variacoes": ["brota", "brotou"],
     "classe_gramatical": "verbo",
@@ -800,6 +840,7 @@
     ]
   },
   {
+    "id": 41,
     "nome": "mec",
     "variacoes": ["tá mec"],
     "classe_gramatical": "adjetivo",
@@ -820,6 +861,7 @@
     ]
   },
   {
+    "id": 42,
     "nome": "chave",
     "variacoes": ["chavoso", "chaveoso"],
     "classe_gramatical": "adjetivo",
@@ -840,6 +882,7 @@
     ]
   },
   {
+    "id": 43,
     "nome": "emocionado",
     "variacoes": ["emocionada"],
     "classe_gramatical": "adjetivo",
@@ -860,6 +903,7 @@
     ]
   },
   {
+    "id": 44,
     "nome": "talarico",
     "variacoes": ["talaricar", "talaricagem"],
     "classe_gramatical": "substantivo",
@@ -880,6 +924,7 @@
     ]
   },
   {
+    "id": 45,
     "nome": "gado",
     "variacoes": ["gado demais", "gadice"],
     "classe_gramatical": "adjetivo",
@@ -900,6 +945,7 @@
     ]
   },
   {
+    "id": 46,
     "nome": "amostradinho",
     "variacoes": ["amostrado", "amostradinha"],
     "classe_gramatical": "adjetivo",

@@ -1,6 +1,7 @@
 {
   "girias_antigas": [
     {
+      "id": 1,
       "nome": "bafafá",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": 2,
       "nome": "barbeiro",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "id": 3,
       "nome": "chá de cadeira",
       "variacoes": [],
       "classe_gramatical": "locução substantiva",
@@ -61,6 +64,7 @@
       ]
     },
     {
+      "id": 4,
       "nome": "lascar o cano",
       "variacoes": [],
       "classe_gramatical": "locução verbal",
@@ -81,6 +85,7 @@
       ]
     },
     {
+      "id": 5,
       "nome": "marcar touca",
       "variacoes": [],
       "classe_gramatical": "locução verbal",
@@ -101,6 +106,7 @@
       ]
     },
     {
+      "id": 6,
       "nome": "boa pinta",
       "variacoes": [],
       "classe_gramatical": "locução substantiva",
@@ -121,6 +127,7 @@
       ]
     },
     {
+      "id": 7,
       "nome": "borogodó",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -141,6 +148,7 @@
       ]
     },
     {
+      "id": 8,
       "nome": "broto",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -161,6 +169,7 @@
       ]
     },
     {
+      "id": 9,
       "nome": "bulhufas",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -181,6 +190,7 @@
       ]
     },
     {
+      "id": 10,
       "nome": "cafona",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -201,6 +211,7 @@
       ]
     },
     {
+      "id": 11,
       "nome": "lelé da cuca",
       "variacoes": [],
       "classe_gramatical": "locução adjetiva",
@@ -221,6 +232,7 @@
       ]
     },
     {
+      "id": 12,
       "nome": "sebo nas canelas",
       "variacoes": [],
       "classe_gramatical": "locução interjetiva",
@@ -241,6 +253,7 @@
       ]
     },
     {
+      "id": 13,
       "nome": "papo furado",
       "variacoes": [],
       "classe_gramatical": "locução substantiva",
@@ -261,6 +274,7 @@
       ]
     },
     {
+      "id": 14,
       "nome": "barra pesada",
       "variacoes": [],
       "classe_gramatical": "locução adjetiva",
@@ -281,6 +295,7 @@
       ]
     },
     {
+      "id": 15,
       "nome": "bidu",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -301,6 +316,7 @@
       ]
     },
     {
+      "id": 16,
       "nome": "careta",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -321,6 +337,7 @@
       ]
     },
     {
+      "id": 17,
       "nome": "chuchu beleza",
       "variacoes": [],
       "classe_gramatical": "interjeição",
@@ -341,6 +358,7 @@
       ]
     },
     {
+      "id": 18,
       "nome": "grilado",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -361,6 +379,7 @@
       ]
     },
     {
+      "id": 19,
       "nome": "patota",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -381,6 +400,7 @@
       ]
     },
     {
+      "id": 20,
       "nome": "tutu",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -401,6 +421,7 @@
       ]
     },
     {
+      "id": 21,
       "nome": "ficar de bode",
       "variacoes": [],
       "classe_gramatical": "locução verbal",
@@ -421,6 +442,7 @@
       ]
     },
     {
+      "id": 22,
       "nome": "viajar na maionese",
       "variacoes": [],
       "classe_gramatical": "locução verbal",
@@ -441,6 +463,7 @@
       ]
     },
     {
+      "id": 23,
       "nome": "pentelho",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -461,6 +484,7 @@
       ]
     },
     {
+      "id": 24,
       "nome": "rachar o bico",
       "variacoes": [],
       "classe_gramatical": "locução verbal",
@@ -481,6 +505,7 @@
       ]
     },
     {
+      "id": 25,
       "nome": "antenado",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -501,6 +526,7 @@
       ]
     },
     {
+      "id": 26,
       "nome": "azarar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -521,6 +547,7 @@
       ]
     },
     {
+      "id": 27,
       "nome": "baranga",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -541,6 +568,7 @@
       ]
     },
     {
+      "id": 28,
       "nome": "bolado",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -561,6 +589,7 @@
       ]
     },
     {
+      "id": 29,
       "nome": "chavecar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -581,6 +610,7 @@
       ]
     },
     {
+      "id": 30,
       "nome": "de lei",
       "variacoes": [],
       "classe_gramatical": "locução adjetiva",
@@ -601,6 +631,7 @@
       ]
     },
     {
+      "id": 31,
       "nome": "descolar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -621,6 +652,7 @@
       ]
     },
     {
+      "id": 32,
       "nome": "mauricinho",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -641,6 +673,7 @@
       ]
     },
     {
+      "id": 33,
       "nome": "patricinha",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -661,6 +694,7 @@
       ]
     },
     {
+      "id": 34,
       "nome": "queimar o filme",
       "variacoes": [],
       "classe_gramatical": "locução verbal",
@@ -681,6 +715,7 @@
       ]
     },
     {
+      "id": 35,
       "nome": "xilindró",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -701,6 +736,7 @@
       ]
     },
     {
+      "id": 36,
       "nome": "zoar",
       "variacoes": ["zoeira"],
       "classe_gramatical": "verbo",
@@ -721,6 +757,7 @@
       ]
     },
     {
+      "id": 37,
       "nome": "abalar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -741,6 +778,7 @@
       ]
     },
     {
+      "id": 38,
       "nome": "busão",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -761,6 +799,7 @@
       ]
     },
     {
+      "id": 39,
       "nome": "tá ligado?",
       "variacoes": ["tá ligado", "ta ligado", "ta ligado?"],
       "classe_gramatical": "expressão",
@@ -781,6 +820,7 @@
       ]
     },
     {
+      "id": 40,
       "nome": "x9",
       "variacoes": ["xis nove"],
       "classe_gramatical": "substantivo",

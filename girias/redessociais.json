@@ -1,6 +1,7 @@
 {
   "redesociais": [
     {
+      "id": 1,
       "nome": "ranço",
       "variacoes": ["pegar ranço"],
       "classe_gramatical": "substantivo",
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": 2,
       "nome": "biscoiteiro",
       "variacoes": ["biscoiteira", "dar biscoito", "quer biscoito"],
       "classe_gramatical": "substantivo",
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "id": 3,
       "nome": "10/10",
       "variacoes": ["dez de dez"],
       "classe_gramatical": "adjetivo",
@@ -61,6 +64,7 @@
       ]
     },
     {
+      "id": 4,
       "nome": "tá na Disney",
       "variacoes": ["viajando na Disney", "tá na disney"],
       "classe_gramatical": "expressão",
@@ -81,6 +85,7 @@
       ]
     },
     {
+      "id": 5,
       "nome": "LOL",
       "variacoes": ["lol"],
       "classe_gramatical": "sigla",
@@ -101,6 +106,7 @@
       ]
     },
     {
+      "id": 6,
       "nome": "stalkear",
       "variacoes": ["stalk", "stalker", "estalkear"],
       "classe_gramatical": "verbo",
@@ -121,6 +127,7 @@
       ]
     },
     {
+      "id": 7,
       "nome": "deu ruim",
       "variacoes": ["dar ruim", "vai dar ruim"],
       "classe_gramatical": "expressão",
@@ -141,6 +148,7 @@
       ]
     },
     {
+      "id": 8,
       "nome": "crush",
       "variacoes": ["meu crush"],
       "classe_gramatical": "substantivo",
@@ -161,6 +169,7 @@
       ]
     },
     {
+      "id": 9,
       "nome": "MDS",
       "variacoes": ["mds"],
       "classe_gramatical": "sigla",
@@ -181,6 +190,7 @@
       ]
     },
     {
+      "id": 10,
       "nome": "auge",
       "variacoes": ["o auge"],
       "classe_gramatical": "substantivo",
@@ -201,6 +211,7 @@
       ]
     },
     {
+      "id": 11,
       "nome": "SLC",
       "variacoes": ["slc", "seloco", "cê é loco"],
       "classe_gramatical": "sigla",
@@ -221,6 +232,7 @@
       ]
     },
     {
+      "id": 12,
       "nome": "shippar",
       "variacoes": ["ship", "shippo", "shippando"],
       "classe_gramatical": "verbo",
@@ -241,6 +253,7 @@
       ]
     },
     {
+      "id": 13,
       "nome": "basculho",
       "variacoes": ["basculhos"],
       "classe_gramatical": "substantivo",
@@ -261,6 +274,7 @@
       ]
     },
     {
+      "id": 14,
       "nome": "trollar",
       "variacoes": ["troll", "trollagem", "trollou"],
       "classe_gramatical": "verbo",
@@ -281,6 +295,7 @@
       ]
     },
     {
+      "id": 15,
       "nome": "mec",
       "variacoes": ["tá mec", "ficar mec"],
       "classe_gramatical": "adjetivo",
@@ -301,6 +316,7 @@
       ]
     },
     {
+      "id": 16,
       "nome": "flopar",
       "variacoes": ["flop", "flopou", "flopada"],
       "classe_gramatical": "verbo",
@@ -321,6 +337,7 @@
       ]
     },
     {
+      "id": 17,
       "nome": "fada sensata",
       "variacoes": ["fado sensato"],
       "classe_gramatical": "expressão",
@@ -341,6 +358,7 @@
       ]
     },
     {
+      "id": 18,
       "nome": "poser",
       "variacoes": ["posers"],
       "classe_gramatical": "substantivo",
@@ -361,6 +379,7 @@
       ]
     },
     {
+      "id": 19,
       "nome": "hype",
       "variacoes": ["no hype", "hypado", "hypar"],
       "classe_gramatical": "substantivo",
@@ -381,6 +400,7 @@
       ]
     },
     {
+      "id": 20,
       "nome": "mitou",
       "variacoes": ["mitar", "mitada", "mito"],
       "classe_gramatical": "verbo",
@@ -401,6 +421,7 @@
       ]
     },
     {
+      "id": 21,
       "nome": "divar",
       "variacoes": ["divou", "divando"],
       "classe_gramatical": "verbo",
@@ -421,6 +442,7 @@
       ]
     },
     {
+      "id": 22,
       "nome": "chavoso",
       "variacoes": ["chavosa", "chave"],
       "classe_gramatical": "adjetivo",
@@ -441,6 +463,7 @@
       ]
     },
     {
+      "id": 23,
       "nome": "jantar",
       "variacoes": ["jantou", "jantada", "serviu o jantar"],
       "classe_gramatical": "verbo",
@@ -461,6 +484,7 @@
       ]
     },
     {
+      "id": 24,
       "nome": "old",
       "variacoes": ["old que sim", "oldíssimo"],
       "classe_gramatical": "adjetivo",
@@ -481,6 +505,7 @@
       ]
     },
     {
+      "id": 25,
       "nome": "gatilho",
       "variacoes": ["dar gatilho", "gatilhos"],
       "classe_gramatical": "substantivo",
@@ -501,6 +526,7 @@
       ]
     },
     {
+      "id": 26,
       "nome": "cancelar",
       "variacoes": ["cancelado", "cancelamento", "cultura do cancelamento"],
       "classe_gramatical": "verbo",
@@ -521,6 +547,7 @@
       ]
     },
     {
+      "id": 27,
       "nome": "cringe",
       "variacoes": ["muito cringe", "momento cringe"],
       "classe_gramatical": "adjetivo",
@@ -541,6 +568,7 @@
       ]
     },
     {
+      "id": 28,
       "nome": "based",
       "variacoes": ["baseado"],
       "classe_gramatical": "adjetivo",
@@ -561,6 +589,7 @@
       ]
     },
     {
+      "id": 29,
       "nome": "hitou",
       "variacoes": ["hitar", "hit"],
       "classe_gramatical": "verbo",
@@ -581,6 +610,7 @@
       ]
     },
     {
+      "id": 30,
       "nome": "dar migué",
       "variacoes": ["migué", "deu migué", "miguezeiro"],
       "classe_gramatical": "expressão",

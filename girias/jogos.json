@@ -1,6 +1,7 @@
 {
   "jogos": [
     {
+      "id": 1,
       "nome": "troll",
       "variacoes": ["trollagem"],
       "classe_gramatical": "substantivo",
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": 2,
       "nome": "tilt",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "id": 3,
       "nome": "rush",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -61,6 +64,7 @@
       ]
     },
     {
+      "id": 4,
       "nome": "farm",
       "variacoes": ["farmar"],
       "classe_gramatical": "verbo",
@@ -81,6 +85,7 @@
       ]
     },
     {
+      "id": 5,
       "nome": "nerf",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -101,6 +106,7 @@
       ]
     },
     {
+      "id": 6,
       "nome": "buff",
       "variacoes": ["buffer"],
       "classe_gramatical": "substantivo",
@@ -121,6 +127,7 @@
       ]
     },
     {
+      "id": 7,
       "nome": "noob",
       "variacoes": ["nooba"],
       "classe_gramatical": "substantivo",
@@ -141,6 +148,7 @@
       ]
     },
     {
+      "id": 8,
       "nome": "camp",
       "variacoes": ["camper"],
       "classe_gramatical": "verbo",
@@ -161,6 +169,7 @@
       ]
     },
     {
+      "id": 9,
       "nome": "rage",
       "variacoes": ["ragequit"],
       "classe_gramatical": "substantivo",
@@ -181,6 +190,7 @@
       ]
     },
     {
+      "id": 10,
       "nome": "smurf",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -201,6 +211,7 @@
       ]
     },
     {
+      "id": 11,
       "nome": "clutch",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -221,6 +232,7 @@
       ]
     },
     {
+      "id": 12,
       "nome": "poção",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -241,6 +253,7 @@
       ]
     },
     {
+      "id": 13,
       "nome": "craft",
       "variacoes": ["crafting"],
       "classe_gramatical": "verbo",
@@ -261,6 +274,7 @@
       ]
     },
     {
+      "id": 14,
       "nome": "level",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -281,6 +295,7 @@
       ]
     },
     {
+      "id": 15,
       "nome": "upar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -301,6 +316,7 @@
       ]
     },
     {
+      "id": 16,
       "nome": "charge",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -321,6 +337,7 @@
       ]
     },
     {
+      "id": 17,
       "nome": "tunado",
       "variacoes": ["tunar"],
       "classe_gramatical": "adjetivo",
@@ -341,6 +358,7 @@
       ]
     },
     {
+      "id": 18,
       "nome": "dummy",
       "variacoes": ["dumm"],
       "classe_gramatical": "substantivo",
@@ -361,6 +379,7 @@
       ]
     },
     {
+      "id": 19,
       "nome": "bugado",
       "variacoes": ["bugar", "bug"],
       "classe_gramatical": "adjetivo",
@@ -381,6 +400,7 @@
       ]
     },
     {
+      "id": 20,
       "nome": "pokao",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -401,6 +421,7 @@
       ]
     },
     {
+      "id": 21,
       "nome": "minerar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -421,6 +442,7 @@
       ]
     },
     {
+      "id": 22,
       "nome": "tankar",
       "variacoes": ["tank"],
       "classe_gramatical": "verbo",
@@ -441,6 +463,7 @@
       ]
     },
     {
+      "id": 23,
       "nome": "random",
       "variacoes": [],
       "classe_gramatical": "adjetivo",
@@ -461,6 +484,7 @@
       ]
     },
     {
+      "id": 24,
       "nome": "drop",
       "variacoes": ["dropar"],
       "classe_gramatical": "substantivo",
@@ -481,6 +505,7 @@
       ]
     },
     {
+      "id": 25,
       "nome": "call",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -501,6 +526,7 @@
       ]
     },
     {
+      "id": 26,
       "nome": "tryhard",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -521,6 +547,7 @@
       ]
     },
     {
+      "id": 27,
       "nome": "bot",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -541,6 +568,7 @@
       ]
     },
     {
+      "id": 28,
       "nome": "spawn",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -561,6 +589,7 @@
       ]
     },
     {
+      "id": 29,
       "nome": "griefar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -581,6 +610,7 @@
       ]
     },
     {
+      "id": 30,
       "nome": "skin",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -601,6 +631,7 @@
       ]
     },
     {
+      "id": 31,
       "nome": "buildar",
       "variacoes": ["build"],
       "classe_gramatical": "verbo",
@@ -621,6 +652,7 @@
       ]
     },
     {
+      "id": 32,
       "nome": "server",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -641,6 +673,7 @@
       ]
     },
     {
+      "id": 33,
       "nome": "admin",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -661,6 +694,7 @@
       ]
     },
     {
+      "id": 34,
       "nome": "mod",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -681,6 +715,7 @@
       ]
     },
     {
+      "id": 35,
       "nome": "banir",
       "variacoes": ["ban"],
       "classe_gramatical": "verbo",
@@ -701,6 +736,7 @@
       ]
     },
     {
+      "id": 36,
       "nome": "grindar",
       "variacoes": ["grinding"],
       "classe_gramatical": "verbo",
@@ -721,6 +757,7 @@
       ]
     },
     {
+      "id": 37,
       "nome": "obby",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -741,6 +778,7 @@
       ]
     },
     {
+      "id": 38,
       "nome": "lobby",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -761,6 +799,7 @@
       ]
     },
     {
+      "id": 39,
       "nome": "robux",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -781,6 +820,7 @@
       ]
     },
     {
+      "id": 40,
       "nome": "vbucks",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -801,6 +841,7 @@
       ]
     },
     {
+      "id": 41,
       "nome": "w",
       "variacoes": ["win"],
       "classe_gramatical": "substantivo",
@@ -821,6 +862,7 @@
       ]
     },
     {
+      "id": 42,
       "nome": "l",
       "variacoes": ["lose"],
       "classe_gramatical": "substantivo",
@@ -841,6 +883,7 @@
       ]
     },
     {
+      "id": 43,
       "nome": "givar",
       "variacoes": [],
       "classe_gramatical": "verbo",
@@ -861,6 +904,7 @@
       ]
     },
     {
+      "id": 44,
       "nome": "lag",
       "variacoes": [],
       "classe_gramatical": "substantivo",
@@ -881,6 +925,7 @@
       ]
     },
     {
+      "id": 45,
       "nome": "meta",
       "variacoes": [],
       "classe_gramatical": "substantivo",
