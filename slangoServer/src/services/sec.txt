@@ -54,6 +54,8 @@ function embaralharOpcoes(opcoes: string[]): string[] {
 
 /**
  * Sorteia `quantidade` gírias únicas do pool total.
+ * @Julia @Mariana — "unique" está garantido porque usamos uma lógica de
+ * "comprar cartas de um baralho". A ordem é salva e vamos avançando o índice!
  */
 function puxarProximasGiriasUnicas(nomeDoMundo: string, todasAsGirias: Girias[], quantidade: number): Girias[] {
     if (!estadoDosMundos[nomeDoMundo]) {
@@ -96,7 +98,6 @@ function gerarFase1(giriasSorteadas: Girias[]) {
             textoDaPergunta: `Qual é o significado correto da gíria "${giria.nome}"?`,
             opcoes: embaralharOpcoes(todasAsOpcoes),
             respostaCorreta: giria.significado,
-            explicacao: giria.significado, // Preserva o significado real da gíria
         };
     });
 }
@@ -109,7 +110,6 @@ function gerarFase2(giriasSorteadas: Girias[]) {
             textoDaPergunta: `Qual é o impacto/sentimento que a gíria "${giria.nome}" passa?`,
             opcoes: opcoesDeImpacto, // Não embaralha para manter padrão dos botões
             respostaCorreta: giria.impacto,
-            explicacao: giria.significado, // Preserva o significado real para contexto
         };
     });
 }
@@ -122,34 +122,26 @@ function gerarFase3(giriasSorteadas: Girias[]) {
             textoDaPergunta: `Qual é a aplicação correta da gíria "${giria.nome}" em uma frase?`,
             opcoes: embaralharOpcoes(todasAsFrases),
             respostaCorreta: giria.exemplo_correto,
-            explicacao: giria.significado, // Preserva o significado real para contexto
         };
     });
 }
 
 // ──────────────────────────────────────────────────────────────
-// 3. HELPER: converter pergunta interna → FaseMundo
+// 3. HELPER: converter pergunta interna → FaseMundo (formato do front-end)
+// @Julia @Mariana — o front-end espera FaseMundo com "alternativas"
+// no formato {texto, correta}. Essa função faz essa conversão.
 // ──────────────────────────────────────────────────────────────
-interface PerguntaInterna {
-    giria: string;
-    textoDaPergunta: string;
-    opcoes: string[];
-    respostaCorreta: string;
-    explicacao: string;
-}
-
 function converterParaFaseMundo(
-    pergunta: PerguntaInterna,
+    pergunta: { giria: string; textoDaPergunta: string; opcoes: string[]; respostaCorreta: string },
     id: number,
     variacoes: string[]
-): FaseMundo & { respostaCorreta: string } {
+): FaseMundo {
     return {
         id,
         giria: pergunta.giria,
         variacoes,
         pergunta: pergunta.textoDaPergunta,
-        explicacao: pergunta.explicacao,
-        respostaCorreta: pergunta.respostaCorreta, // Exportado explicitamente para o Gabarito Final
+        explicacao: pergunta.respostaCorreta,
         alternativas: pergunta.opcoes.map((opcao) => ({
             texto: opcao,
             correta: opcao === pergunta.respostaCorreta,
@@ -159,6 +151,8 @@ function converterParaFaseMundo(
 
 // ──────────────────────────────────────────────────────────────
 // 4. FUNÇÃO PRINCIPAL: prepararRodadaAleatoria
+// @Julia @Mariana — essa é a função chamada pelo controller!
+// Ela orquestra tudo: sorteia, gera perguntas, monta a resposta.
 // ──────────────────────────────────────────────────────────────
 export const prepararRodadaAleatoria = async (nomeDoMundo: string) => {
     const mundo = mundos[nomeDoMundo as keyof typeof mundos];
@@ -168,6 +162,7 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string) => {
     }
 
     const chave = Object.keys(mundo)[0];
+
     const todasAsGiriasDoMundo = (mundo as any)[chave] as Girias[];
 
     const tituloDoMundo =
@@ -175,6 +170,7 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string) => {
 
     const descricaoDoMundo =
         `Aprenda as gírias de ${nomeDoMundo}`;
+
 
     // Sorteia 3 gírias únicas usando o nosso "Baralho" dinâmico
     const tresPalavras = puxarProximasGiriasUnicas(nomeDoMundo, todasAsGiriasDoMundo, 3);
@@ -186,15 +182,20 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string) => {
 
     // Mapa de variações por nome de gíria — para usar nas conversões
     const variacoesPorGiria: Record<string, string[]> = {};
-    tresPalavras.forEach((g) => { variacoesPorGiria[g.nome] = g.variacoes || []; });
+    tresPalavras.forEach((g) => { variacoesPorGiria[g.nome] = g.variacoes; });
 
-    // ── fases: as 3 gírias para a Tela de Estudo ──
-    const fases = tresPalavras.map((giria, index) =>
-        converterParaFaseMundo(fase1[index], index + 1, giria.variacoes || [])
+    // ── fases: as 3 gírias para a Tela de Estudo e para a trilha visual ──
+    // @Julia @Mariana — "fases" é o que aparece na StudyScreen (tela de estudo).
+    // Cada item representa UMA gíria com seus dados de apresentação.
+    const fases: FaseMundo[] = tresPalavras.map((giria, index) =>
+        converterParaFaseMundo(fase1[index], index + 1, giria.variacoes)
     );
 
     // ── todasAsPerguntas: as 9 perguntas do quiz em sequência ──
-    const todasAsPerguntas = [
+    // @Julia @Mariana — "todasAsPerguntas" é o que o QuizScreen usa.
+    // Ordem: 3 de significado → 3 de impacto → 3 de uso correto.
+    // Isso dá 9 perguntas no total (3 gírias × 3 tipos de pergunta).
+    const todasAsPerguntas: FaseMundo[] = [
         ...fase1.map((q, i) => converterParaFaseMundo(q, i + 1, variacoesPorGiria[q.giria] ?? [])),
         ...fase2.map((q, i) => converterParaFaseMundo(q, 3 + i + 1, variacoesPorGiria[q.giria] ?? [])),
         ...fase3.map((q, i) => converterParaFaseMundo(q, 6 + i + 1, variacoesPorGiria[q.giria] ?? [])),
@@ -204,9 +205,9 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string) => {
         id: nomeDoMundo,
         nome: tituloDoMundo,
         descricao: descricaoDoMundo,
-        fases,            // 3 itens — para a Tela de Estudo
-        todasAsPerguntas, // 9 itens — com gabarito completo para a Tela Final
-        quiz: { fase1, fase2, fase3 },
+        fases,           // 3 itens — para a Tela de Estudo
+        todasAsPerguntas, // 9 itens — para o QuizScreen
+        quiz: { fase1, fase2, fase3 }, // mantido para compatibilidade futura
     };
 };
 
