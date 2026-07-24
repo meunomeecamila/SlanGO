@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Módulos e Compilação */
+    "target": "ES2022",                                  
+    "module": "commonjs",                                
+    "moduleResolution": "node",                          
+    "esModuleInterop": true,                             
+    "resolveJsonModule": true,                           
+
+    /* Diretórios */
+    "outDir": "./dist",                                  
+    "rootDir": "./src",                                  
+
+    /* Checagem de Tipo e Segurança */
+    "strict": true,                                      
+    "noImplicitAny": true,                               
+    "strictNullChecks": true,                            
+    "forceConsistentCasingInFileNames": true,            
+
+    /* Outros */
+    "skipLibCheck": true                                 
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}
