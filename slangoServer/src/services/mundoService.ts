@@ -216,3 +216,9 @@ export function verificarPremioCustomizavel(pontuacaoFinal: number): boolean {
     const PONTUACAO_MAXIMA = 9; // 3 gírias × 3 fases = 9 perguntas
     return pontuacaoFinal === PONTUACAO_MAXIMA;
 }
+
+export function listarMundos() {
+    return Object.keys(mundos).map((nome) => {
+        return nome.charAt(0).toUpperCase() + nome.slice(1);
+    });
+}

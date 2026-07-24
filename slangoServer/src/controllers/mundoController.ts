@@ -1,5 +1,25 @@
 import { Request, Response } from 'express';
-import { prepararRodadaAleatoria } from '../services/mundoService';
+import { 
+    prepararRodadaAleatoria,
+    listarMundos
+} from '../services/mundoService';
+import {  } from "../services/mundoService";
+
+export function getMundos(req: Request, res: Response) {
+    try {
+        const mundos = listarMundos();
+
+        res.status(200).json({
+            sucesso: true,
+            mundos
+        });
+
+    } catch (error: any) {
+        res.status(500).json({
+            erro: error.message
+        });
+    }
+}
 
 export const getFasesDoMundo = async (req: Request, res: Response) => {
     try {
