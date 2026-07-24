@@ -1,0 +1,655 @@
+{
+  "esportes": [
+    {
+      "id": 1,
+      "nome": "miguezento",
+      "variacoes": ["dar migué", "migué"],
+      "classe_gramatical": "adjetivo / substantivo",
+      "significado": "Jogador que inventa desculpas, finge lesão ou simula uma situação para escapar de treinos, marcação pesada ou responsabilidades.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele sempre finge que tá com dor na coxa na hora de marcar os adversários, é muito miguezento.",
+      "exemplos_incorretos": [
+        "Comprei um miguezento delicioso na padaria.",
+        "O motor do carro quebrou por causa do miguezento.",
+        "Vou plantar um pé de miguezento no meu jardim."
+      ],
+      "significados_incorretos": [
+        "Um tipo de pão doce recheado.",
+        "Uma peça interna do motor automotivo.",
+        "Uma árvore que dá frutos cítricos."
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "firula",
+      "variacoes": ["firulento", "fazer firula"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Expressão usada quando um jogador faz dribles ou jogadas de efeito desnecessárias, geralmente para se exibir, sem objetividade para o gol.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Para de fazer firula na zaga e chuta logo essa bola para longe!",
+      "exemplos_incorretos": [
+        "No almoço, minha avó fez uma firula assada muito boa.",
+        "A firula do meu tênis rasgou e não consigo amarrar.",
+        "Eu adotei uma firula no abrigo de animais ontem."
+      ],
+      "significados_incorretos": [
+        "Um prato típico de comida nordestina.",
+        "O cadarço usado em sapatos esportivos.",
+        "Uma raça de cachorro pequeno e peludo."
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "mão de alface",
+      "variacoes": ["braço de jacaré"],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Goleiro que tem pouca firmeza nas mãos, deixando a bola escapar facilmente, ou que falha em defesas teoricamente simples.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O chute veio fraco no meio do gol, mas o goleiro mão de alface deixou passar.",
+      "exemplos_incorretos": [
+        "Fiz uma salada com tomate e mão de alface no almoço.",
+        "Comprei uma mão de alface fresquinha na feira livre.",
+        "Vou adubar a terra para plantar uma mão de alface."
+      ],
+      "significados_incorretos": [
+        "Uma hortaliça folhosa usada para consumo em saladas.",
+        "Um maço de vegetais amarrados e vendidos na feira.",
+        "Sementes verdes plantadas no quintal."
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "matar no peito",
+      "variacoes": [],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Amortecer a bola com o tórax; por extensão, assumir a responsabilidade de uma situação difícil e resolvê-la com calma.",
+      "tags": ["esportes", "futebol", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Deixa que esse problema do projeto eu vou matar no peito e resolver até amanhã.",
+      "exemplos_incorretos": [
+        "O caçador entrou na floresta para matar no peito um leão.",
+        "Fui ao médico pedindo um remédio para matar no peito a tosse.",
+        "Peguei o chinelo para matar no peito a barata voadora."
+      ],
+      "significados_incorretos": [
+        "Atirar e assassinar um animal selvagem usando uma arma.",
+        "Curar uma forte infecção respiratória nos pulmões.",
+        "Esmagar um inseto asqueroso usando força bruta."
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "de lavada",
+      "variacoes": [],
+      "classe_gramatical": "expressão adverbial",
+      "significado": "Ganhar ou perder um jogo por uma diferença de pontos ou gols muito grande, como em uma goleada imponente.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nosso time jogou demais, ganhamos deles de lavada, foi 6 a 0!",
+      "exemplos_incorretos": [
+        "Deixei minha roupa de lavada na máquina de lavar.",
+        "O carro voltou brilhando de lavada do posto de gasolina.",
+        "Vou dar uma de lavada no chão da cozinha com o esfregão."
+      ],
+      "significados_incorretos": [
+        "O processo de limpar roupas sujas usando sabão em pó.",
+        "O serviço completo de limpeza de veículos automotores.",
+        "Ato de jogar água no piso e esfregar."
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "pendurar a chuteira",
+      "variacoes": ["pendurar as chuteiras"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Aposentar-se da carreira no futebol ou, por extensão, decidir encerrar a prática de qualquer atividade ou profissão regular.",
+      "tags": ["esportes", "futebol", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Depois de vinte anos no mercado corporativo, o diretor decidiu pendurar as chuteiras e ir morar na praia.",
+      "exemplos_incorretos": [
+        "Lavei meus tênis e fui pendurar a chuteira no varal.",
+        "Usei um prego na parede para pendurar a chuteira.",
+        "A vitrine da loja costuma pendurar a chuteira em destaque."
+      ],
+      "significados_incorretos": [
+        "Ato de expor calçados molhados ao sol para secagem.",
+        "Fixar pregos ou ganchos na parede para segurar objetos.",
+        "Modo de exposição de mercadorias em lojas de varejo."
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "bagre",
+      "variacoes": ["perna de pau"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador de futebol de péssima qualidade técnica, sem habilidade ou que apresenta um desempenho muito ruim em campo.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O atacante novo perdeu quatro gols sem goleiro, é um bagre completo.",
+      "exemplos_incorretos": [
+        "Fui pescar no lago no fim de semana e peguei um bagre.",
+        "A moqueca de bagre daquele restaurante é deliciosa.",
+        "Cuidado ao limpar o bagre, pois os espinhos machucam."
+      ],
+      "significados_incorretos": [
+        "Um tipo de peixe de água doce conhecido por ter grandes bigodes.",
+        "Um prato típico de frutos do mar cozido com azeite de dendê.",
+        "Um animal aquático cascudo encontrado em fundos de rios."
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "frango",
+      "variacoes": ["frangar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Falha grave ou erro grotesco do goleiro que não consegue segurar a bola e resulta em um gol facilmente defensável.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O chute foi rasteiro e fraco, mas o goleiro escorregou e levou um frango.",
+      "exemplos_incorretos": [
+        "Comprei um frango assado com batatas na padaria de domingo.",
+        "Preciso temperar o frango e colocar no forno para o jantar.",
+        "O fazendeiro correu para pegar o frango que fugiu do galinheiro."
+      ],
+      "significados_incorretos": [
+        "Uma ave domesticada criada em fazendas para alimentação humana.",
+        "Pedaços de carne branca assada ou grelhada.",
+        "Animal emplumado que bota ovos."
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "pipoqueiro",
+      "variacoes": ["pipocar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que não rende o esperado, some do jogo ou foge da responsabilidade em momentos de muita pressão e partidas decisivas.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Na hora de bater o pênalti decisivo, ele fingiu que estava com dor, um verdadeiro pipoqueiro.",
+      "exemplos_incorretos": [
+        "Comprei pipoca doce e salgada no carrinho do pipoqueiro.",
+        "O pipoqueiro cobrou muito caro pelo saquinho no parque.",
+        "Deixei meu currículo porque quero trabalhar como pipoqueiro no cinema."
+      ],
+      "significados_incorretos": [
+        "Profissional ambulante que vende milho estourado em carrinhos.",
+        "Máquina industrial de fazer pipocas salgadas.",
+        "Trabalhador de bilheteria e entrada de eventos teatrais."
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "fominha",
+      "variacoes": ["fome"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador individualista que segura a bola demais e evita passar para os companheiros de equipe, querendo resolver tudo sozinho.",
+      "tags": ["esportes", "futebol", "jogos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele preferiu chutar de longe e perdeu a chance, sendo que eu estava livre na área, muito fominha.",
+      "exemplos_incorretos": [
+        "Me deu uma fominha agora à tarde, vou comer um biscoito.",
+        "Bebi um copo d'água porque achei que a fominha ia passar.",
+        "O bebê estava irritado por causa de uma fominha chata."
+      ],
+      "significados_incorretos": [
+        "Uma sensação leve e moderada de fome fisiológica.",
+        "Vontade pontual de comer doces fora de hora.",
+        "Sinal físico de que o estômago está vazio."
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "caneta",
+      "variacoes": ["rolinho", "túnel"],
+      "classe_gramatical": "substantivo",
+      "significado": "Drible muito habilidoso onde o jogador passa a bola exatamente por entre as pernas do adversário e pega do outro lado.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O atacante deu uma caneta humilhante no zagueiro e partiu sozinho para o gol.",
+      "exemplos_incorretos": [
+        "Fui assinar o documento, mas a minha caneta ficou sem tinta.",
+        "No primeiro dia de aula, eu comprei uma caneta esferográfica azul.",
+        "Coloquei a caneta no bolso da camisa para não perder."
+      ],
+      "significados_incorretos": [
+        "Um instrumento escolar e de escritório que utiliza tinta para escrever.",
+        "Objeto cilíndrico de plástico usado para anotações em papel.",
+        "Caneta-tinteiro clássica usada para assinar contratos."
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "chapéu",
+      "variacoes": ["lençol", "balão"],
+      "classe_gramatical": "substantivo",
+      "significado": "Drible que consiste em chutar a bola por cima da cabeça do adversário e recuperar o controle da bola nas costas dele.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O camisa dez deu um chapéu maravilhoso no volante antes de cruzar para a área.",
+      "exemplos_incorretos": [
+        "O sol estava muito forte, então decidi usar um chapéu de palha.",
+        "Ao entrar na igreja, o cavaleiro tirou o chapéu em sinal de respeito.",
+        "Comprei um chapéu de feltro muito bonito para ir ao rodeio."
+      ],
+      "significados_incorretos": [
+        "Uma peça de vestuário feita de tecido, palha ou feltro usada na cabeça.",
+        "Proteção contra os raios solares para a pele e o rosto.",
+        "Acessório de moda country usado em festas de peão."
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "cavadinha",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Estilo de finalização de muita classe, muitas vezes em pênaltis, em que o jogador toca por baixo da bola para que ela suba lentamente, encobrindo o goleiro caído.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele cobrou o pênalti de cavadinha no meio do gol enquanto o goleiro pulava para a direita.",
+      "exemplos_incorretos": [
+        "Fiz uma cavadinha na areia da praia para colocar meu guarda-sol.",
+        "O cachorro deu uma cavadinha no quintal para enterrar o osso dele.",
+        "A mãe usou uma pá para dar uma cavadinha na horta."
+      ],
+      "significados_incorretos": [
+        "O ato de abrir um buraco raso na terra ou na areia.",
+        "Pequena escavação feita por animais usando as patas.",
+        "Uma ferramenta pequena usada por jardineiros."
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "corneteiro",
+      "variacoes": ["corneta"],
+      "classe_gramatical": "substantivo",
+      "significado": "Torcedor, jornalista ou crítico muito chato, que reclama constantemente e foca apenas nos erros, nunca reconhecendo o mérito do próprio time.",
+      "tags": ["esportes", "futebol", "torcida"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele tio é muito corneteiro, o time fez 3 a 0 e ele ficou xingando o lateral.",
+      "exemplos_incorretos": [
+        "O corneteiro do exército tocou a alvorada de manhã cedo.",
+        "Na banda da escola, meu irmão era o corneteiro oficial.",
+        "A fanfarra começou a tocar quando o corneteiro deu o sinal."
+      ],
+      "significados_incorretos": [
+        "Um músico que toca instrumentos de sopro de metal.",
+        "O soldado responsável por toques militares em quartéis.",
+        "Um instrumento musical antigo parecido com um clarim."
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "ace",
+      "variacoes": ["saque ace"],
+      "classe_gramatical": "substantivo",
+      "significado": "No vôlei e no tênis, é um saque tão bom e potente que entra diretamente na quadra adversária sem defesa, resultando em ponto imediato.",
+      "tags": ["volei", "tenis", "esportes"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O jogo estava tenso, mas o tenista conseguiu um ace indefensável e venceu a partida.",
+      "exemplos_incorretos": [
+        "Minha mãe usa sabão ace para tirar as manchas difíceis das roupas.",
+        "Fui ao mercado comprar dois pacotes de ace para lavar tapetes.",
+        "O pano de prato estava tão encardido que só ace resolveu."
+      ],
+      "significados_incorretos": [
+        "Uma marca famosa de sabão em pó vendida em supermercados.",
+        "Detergente químico de alta potência para limpeza.",
+        "Tira-manchas líquido para roupas brancas e coloridas."
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "marola",
+      "variacoes": ["ficar de marola", "maroleiro"],
+      "classe_gramatical": "substantivo",
+      "significado": "No surf, refere-se a ondas pequenas e sem força. No dia a dia, significa ficar de bobeira, relaxar e evitar esforço.",
+      "tags": ["esportes", "surf", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Hoje o mar tá só marola, não vai dar nem pra colocar a prancha na água.",
+      "exemplos_incorretos": [
+        "Pedi pro padeiro assar uma marola bem doce para o lanche.",
+        "O pneu do meu carro furou na marola e perdi o controle.",
+        "Usei uma marola de aço para consertar o encanamento vazando."
+      ],
+      "significados_incorretos": [
+        "Uma rosca doce coberta com açúcar cristal e creme.",
+        "A calota ou roda de alumínio de um veículo automotor.",
+        "Uma ferramenta hidráulica em forma de alicate."
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "hail mary",
+      "variacoes": ["passe hail mary"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogada desesperada do Futebol Americano onde o quarterback faz um passe longo para a área final, torcendo por um milagre no último segundo do jogo.",
+      "tags": ["esportes", "futebol americano"],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Faltavam só cinco segundos no relógio e ele tentou um hail mary heroico para vencer a partida.",
+      "exemplos_incorretos": [
+        "Fui na igreja domingo para rezar um hail mary com o coral.",
+        "Na aula de história, aprendemos sobre a rainha Hail Mary da Escócia.",
+        "A cantora lançou uma música gospel chamada Hail Mary."
+      ],
+      "significados_incorretos": [
+        "A tradução em inglês para a reza católica Ave Maria.",
+        "O nome de uma monarca europeia do século XV.",
+        "O título de um hino religioso clássico cantado em igrejas."
+      ]
+    },
+    {
+      "id": 18,
+      "nome": "pé quente",
+      "variacoes": ["ser pé quente"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa muito sortuda ou que supostamente atrai boa sorte para o time ou para o grupo de amigos quando está assistindo ao jogo.",
+      "tags": ["esportes", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Sempre chamo meu primo para ver a final com a gente, o moleque é pé quente demais.",
+      "exemplos_incorretos": [
+        "Fiquei tanto tempo na areia da praia que agora estou com o pé quente.",
+        "Coloquei meia de lã grossa, por isso estou com pé quente.",
+        "Derramei café na minha botina e fiquei com o pé quente e ardendo."
+      ],
+      "significados_incorretos": [
+        "Condição térmica de alta temperatura nas extremidades inferiores do corpo.",
+        "Uma doença que causa febre localizada e vermelhidão na sola dos pés.",
+        "Um aparelho elétrico usado para aquecer sapatos no inverno."
+      ]
+    },
+    {
+      "id": 19,
+      "nome": "vira folha",
+      "variacoes": ["vira-folha", "vira casaca"],
+      "classe_gramatical": "substantivo",
+      "significado": "Torcedor desleal que muda de time de acordo com quem está ganhando mais títulos no momento, abandonando a antiga equipe.",
+      "tags": ["esportes", "futebol"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O cara jurava amor ao São Paulo, mas o Palmeiras começou a ganhar tudo e ele virou a folha rapidinho.",
+      "exemplos_incorretos": [
+        "Comprei um ventilador que venta tão forte que vira folha da mesa toda hora.",
+        "A impressora do escritório travou no modo vira folha e estragou o papel.",
+        "O outono chegou forte e o vento vira folha seca pela calçada o dia inteiro."
+      ],
+      "significados_incorretos": [
+        "Fenômeno meteorológico onde o vento levanta detritos do chão.",
+        "Uma engrenagem mecânica dentro de impressoras de escritório.",
+        "Uma ferramenta de jardinagem usada para revirar gramados."
+      ]
+    },
+    {
+      "id": 20,
+      "nome": "passar a guarda",
+      "variacoes": ["passagem de guarda"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Golpe muito importante no Jiu-Jitsu onde o lutador passa por cima ou ao lado das pernas do adversário caído, chegando ao domínio lateral do corpo dele.",
+      "tags": ["esportes", "artes marciais", "jiu-jitsu"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele usou muita pressão e peso para passar a guarda do oponente e finalizar no braço.",
+      "exemplos_incorretos": [
+        "O síndico desceu na portaria para passar a guarda do turno noturno.",
+        "O rei precisou passar a guarda do castelo para seu capitão de confiança.",
+        "A juíza assinou o papel para passar a guarda do filho para o pai."
+      ],
+      "significados_incorretos": [
+        "O ato jurídico de transferir a responsabilidade civil sobre um menor de idade.",
+        "A troca de turno militar entre soldados vigilantes em guaritas.",
+        "Repasse de chaves entre porteiros de condomínio."
+      ]
+    },
+    {
+      "id": 21,
+      "nome": "pé frio",
+      "variacoes": ["ser pé frio", "mick jagger"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa muito azarada ou que tem a fama de sempre trazer má sorte para o seu time do coração ou eventos que participa.",
+      "tags": ["esportes", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Nem convida ele pro bar pra assistir o jogo, toda vez que ele vai nosso time toma gol, é muito pé frio.",
+      "exemplos_incorretos": [
+        "O inverno foi rígido, precisei usar duas meias pra não ficar com pé frio.",
+        "Eu pisei no piso gelado do banheiro e fiquei com o pé frio.",
+        "A circulação do sangue parou e ele ficou pálido e com pé frio."
+      ],
+      "significados_incorretos": [
+        "Extremidade inferior do corpo humano em baixa temperatura.",
+        "Doença circulatória que causa perda de calor nas pernas.",
+        "Nome médico para o congelamento leve dos membros (frostbite)."
+      ]
+    },
+    {
+      "id": 22,
+      "nome": "tryhard",
+      "variacoes": ["tryhardar", "tryhardeiro"],
+      "classe_gramatical": "substantivo / adjetivo",
+      "significado": "Termo vindo do inglês. Pessoa que se esforça de maneira exagerada e competitiva em um jogo casual ou esporte amador, querendo vencer a qualquer custo.",
+      "tags": ["esportes", "jogos", "esports"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "A gente tava só batendo uma bolinha no fim de semana pra suar e o cara chegou dando carrinho, mó tryhard.",
+      "exemplos_incorretos": [
+        "Comprei um tryhard de memória extra para colocar no meu computador.",
+        "Fui na loja de ferramentas pedir um tryhard pro vazamento do cano.",
+        "O mecânico cobrou muito caro para consertar o tryhard do escapamento."
+      ],
+      "significados_incorretos": [
+        "O disco rígido interno ou placa-mãe de um computador gamer.",
+        "Uma chave inglesa metálica usada por encanadores.",
+        "Uma peça que compõe o sistema de injeção de carros velhos."
+      ]
+    },
+    {
+      "id": 23,
+      "nome": "shape",
+      "variacoes": ["meter o shape", "no shape"],
+      "classe_gramatical": "substantivo",
+      "significado": "Gíria do mundo da musculação para se referir ao condicionamento e forma física, especialmente quando o corpo está musculoso, definido e atraente.",
+      "tags": ["esportes", "academia", "fitness"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O cara fez uma dieta rigorosa e meteu um shape impressionante para o verão.",
+      "exemplos_incorretos": [
+        "Fui na loja de esportes comprar um shape de madeira novo pro meu skate.",
+        "Preciso de uma lixa mais áspera para colocar no shape e não escorregar.",
+        "A professora de matemática mandou desenhar um shape geométrico."
+      ],
+      "significados_incorretos": [
+        "A tábua de madeira lixada que serve de base para o skate.",
+        "Uma figura geométrica como um triângulo ou círculo.",
+        "O formato visual ou extensão final de um arquivo de imagem."
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "gambito",
+      "variacoes": ["fazer um gambito", "gambito da rainha"],
+      "classe_gramatical": "substantivo",
+      "significado": "Manobra do xadrez onde o jogador sacrifica intencionalmente um peão ou peça no começo do jogo, visando ganhar vantagem estratégica no tabuleiro.",
+      "tags": ["esportes", "xadrez", "jogos de tabuleiro"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Para destruir a defesa dele, o mestre russo decidiu usar o gambito do rei na terceira jogada.",
+      "exemplos_incorretos": [
+        "Depois de correr muito, o idoso começou a sentir dor no gambito esquerdo.",
+        "Comprei um gambito de presunto e queijo na padaria para lanchar.",
+        "O cachorro abandonado tinha um gambito bem magrinho e enfaixado."
+      ],
+      "significados_incorretos": [
+        "A perna fina, cambaia ou o osso da canela de um humano/animal.",
+        "Um salgado frito ou assado muito consumido em lanchonetes.",
+        "Uma planta rasteira comum no sertão brasileiro."
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "beijar a lona",
+      "variacoes": ["beijou a lona", "ir para a lona"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Ser nocauteado de forma brutal nos esportes de combate (Boxe, MMA), caindo de barriga ou rosto diretamente no chão do ringue.",
+      "tags": ["esportes", "lutas", "boxe"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele baixou a guarda um segundo, levou um cruzado perfeito no queixo e foi beijar a lona na hora.",
+      "exemplos_incorretos": [
+        "Choveu muito no acampamento e acabei tendo que beijar a lona da barraca para amarrar a corda.",
+        "O caminhoneiro precisou beijar a lona suja do baú antes de fechar a porta.",
+        "O pintor decidiu beijar a lona esticada no chão para não sujar o carpete branco de tinta."
+      ],
+      "significados_incorretos": [
+        "Limpar usando a boca uma capa impermeável de caminhão de carga.",
+        "Ato afetivo de encostar os lábios na cobertura de plástico de uma barraca de camping.",
+        "Técnica bizarra de verificação de qualidade de tecidos grossos e sintéticos."
+      ]
+    },
+    {
+      "id": 26,
+      "nome": "suco",
+      "variacoes": ["tá no suco", "tomar suco", "suco mágico"],
+      "classe_gramatical": "substantivo",
+      "significado": "Gíria do mundo da maromba e musculação para se referir ao uso frequente de esteroides anabolizantes, de forma discreta ou bem-humorada.",
+      "tags": ["esportes", "academia", "fitness"],
+      "permissao": "pais",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Impossível um cara crescer 15 quilos de massa em dois meses só comendo frango, certeza que tá no suco.",
+      "exemplos_incorretos": [
+        "Fui na lanchonete da esquina e pedi um suco de laranja bem gelado.",
+        "Comprei uma caixinha de suco de uva no mercado para a lancheira do meu filho.",
+        "Para matar a sede no calor, nada melhor que bater no liquidificador um suco de limão."
+      ],
+      "significados_incorretos": [
+        "Bebida doce e natural feita a partir da extração do líquido de frutas prensadas.",
+        "Uma bebida industrializada em pó para ser misturada com água e açúcar.",
+        "Néctar de frutas vendido em caixas Tetrapak nos supermercados."
+      ]
+    },
+    {
+      "id": 27,
+      "nome": "zica",
+      "variacoes": ["dar zica", "zicado", "zicar"],
+      "classe_gramatical": "substantivo / verbo",
+      "significado": "Má sorte repetitiva, mau olhado prolongado ou energia ruim onde tudo dá errado, muito usada quando times emendam séries de derrotas ou lesões.",
+      "tags": ["esportes", "futebol", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Esse time não ganha de ninguém faz dez rodadas, alguém tem que tirar essa zica do vestiário.",
+      "exemplos_incorretos": [
+        "No verão passado, muitos moradores do bairro pegaram zica do mosquito.",
+        "Tive dor no corpo e febre porque fui infectado pela zica na viagem.",
+        "O posto de saúde começou uma campanha forte de vacinação contra a zica."
+      ],
+      "significados_incorretos": [
+        "Uma doença infecciosa grave causada pelo vírus da família Flaviviridae.",
+        "O nome do mosquito transmissor Aedes Aegypti.",
+        "Uma epidemia tropical de saúde pública que causa vermelhidão."
+      ]
+    },
+    {
+      "id": 28,
+      "nome": "maria-chuteira",
+      "variacoes": ["maria chuteira"],
+      "classe_gramatical": "substantivo",
+      "significado": "Mulher cujo foco principal é conhecer, paquerar e se relacionar romanticamente apenas com jogadores de futebol, em busca do status e dinheiro.",
+      "tags": ["esportes", "futebol", "relacionamento"],
+      "permissao": "pais",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Foi só o lateral assinar o primeiro contrato milionário que começou a brotar maria-chuteira na rede social dele.",
+      "exemplos_incorretos": [
+        "Minha colega Maria comprou uma maria-chuteira de trava alta para jogar no campo sintético.",
+        "A loja de artigos esportivos fez uma queima de estoque de maria-chuteira e levei duas.",
+        "Usei uma escova dura para limpar a maria-chuteira cheia de barro depois do treino de domingo."
+      ],
+      "significados_incorretos": [
+        "O calçado com travas usado especificamente para a prática do esporte de futebol.",
+        "Uma ferramenta composta de escova e água para limpar calçados após os jogos.",
+        "Uma marca nacional muito antiga de equipamentos esportivos."
+      ]
+    },
+    {
+      "id": 29,
+      "nome": "clutch",
+      "variacoes": ["clutch player", "ser clutch", "clutchar"],
+      "classe_gramatical": "adjetivo / verbo",
+      "significado": "Jogador altamente decisivo e frio, que não sente a pressão da torcida adversária e consegue salvar o jogo ou matar o ponto no último segundo.",
+      "tags": ["esportes", "jogos", "basquete", "esports"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Estávamos perdendo por dois pontos no fim do último quarto, mas ele é muito clutch e acertou de três no estouro do relógio.",
+      "exemplos_incorretos": [
+        "Fui na loja do shopping comprar uma bolsa clutch chique de paetês para o casamento.",
+        "A embreagem do meu carro importado deu defeito, o mecânico disse que a clutch queimou toda.",
+        "Ela combinou o vestido vermelho vibrante com uma clutch preta nas mãos."
+      ],
+      "significados_incorretos": [
+        "Uma bolsa feminina pequena, chique e sem alças usada para carregar poucos itens em festas.",
+        "O pedal da embreagem ou sistema mecânico de troca de marchas em automóveis.",
+        "Uma pochete pequena de prender na cintura."
+      ]
+    },
+    {
+      "id": 30,
+      "nome": "gymbro",
+      "variacoes": ["gym bro", "parceiro de treino"],
+      "classe_gramatical": "substantivo",
+      "significado": "Junção das palavras 'gym' (academia) e 'bro' (irmão). O amigo de academia quase inseparável que treina junto todos os dias e motiva a pegar mais peso.",
+      "tags": ["esportes", "academia", "fitness"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Mandei mensagem pro meu gymbro avisando que hoje é treino de perna e ele já está esperando na catraca.",
+      "exemplos_incorretos": [
+        "Comprei aquele robô aspirador novo da marca gymbro, ele limpa a casa toda pelo celular.",
+        "Na hora do almoço de domingo, pedimos um lanche gorduroso na hamburgueria gymbro.",
+        "Baixei o aplicativo gymbro para aprender matemática de graça."
+      ],
+      "significados_incorretos": [
+        "Um aparelho eletrônico robótico circular que aspira o pó do chão de forma automática.",
+        "Uma grande franquia americana de restaurantes de hambúrguer e fast-food.",
+        "Um aplicativo voltado para o ensino infantil de matemática básica."
+      ]
+    },
+    {
+      "id": 31,
+      "nome": "treinar fofo",
+      "variacoes": ["treino fofo", "malhar fofo"],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Ir à academia sem vontade, pegando pouquíssimo peso, parando toda hora para mexer no celular ou conversar, sem nenhum esforço ou intensidade real.",
+      "tags": ["esportes", "academia", "fitness"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ela vive reclamando que a academia não dá resultado, mas passa uma hora na máquina mexendo no TikTok, fica só treinando fofo.",
+      "exemplos_incorretos": [
+        "Gosto de abraçar meu cachorro e treinar fofo, o pelo dele tá muito macio do pet shop.",
+        "Comprei um urso de pelúcia gigante pra minha namorada, é enorme e dá para treinar fofo.",
+        "O travesseiro novo de plumas da cama serviu perfeito pra treinar fofo antes de dormir."
+      ],
+      "significados_incorretos": [
+        "O ato de abraçar animais de estimação fofinhos e brincar amistosamente com eles.",
+        "Aperfeiçoar habilidades de abraçar bichos de pelúcia.",
+        "Amaciar travesseiros e cobertores de forma suave usando as mãos antes de dormir."
+      ]
+    }
+  ]
+}

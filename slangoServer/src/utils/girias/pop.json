@@ -1,0 +1,905 @@
+[
+  {
+    "id": 1,
+    "nome": "lacrar",
+    "variacoes": ["lacre", "lacradora", "lacrou"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, dar uma excelente resposta ou se sobressair de maneira vitoriosa e irrefutável em uma conversa.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela conseguiu lacrar na apresentação do projeto com argumentos perfeitos.",
+    "exemplos_incorretos": [
+      "Vou lacrar um sanduíche de presunto para o almoço.",
+      "Preciso lacrar a porta de casa com a chave nova.",
+      "O céu vai lacrar de chuva forte hoje à noite."
+    ],
+    "significados_incorretos": [
+      "Fechar uma embalagem plástica com fita adesiva.",
+      "Pintar uma parede inteira com tinta azul.",
+      "Escrever um longo livro de ficção científica."
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "slay",
+    "variacoes": ["slayou", "slayado"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para elogiar ou aprovar quando alguém arrasa no visual, no estilo ou na performance.",
+    "tags": ["Pop", "Redes sociais", "Maquiagem"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Esse vestido novo ficou maravilhoso em você, slay!",
+    "exemplos_incorretos": [
+      "Vou comer um slay de queijo na padaria.",
+      "Meu cachorro gosta de fazer slay no quintal.",
+      "Comprei um slay muito potente para o computador."
+    ],
+    "significados_incorretos": [
+      "Um modelo de carro esportivo muito rápido.",
+      "Uma raça de gato doméstico peludo.",
+      "Um tipo de corte de cabelo masculino."
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "cringe",
+    "variacoes": ["cringou", "cringenta", "cringence"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo considerado vergonhoso, cafona, ultrapassado ou constrangedor.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Achei muito cringe a forma como ele tentou fazer piada na reunião séria.",
+    "exemplos_incorretos": [
+      "Comprei um cringe novo para o meu quarto.",
+      "Vou cozinhar um cringe delicioso para o jantar.",
+      "O céu azul está muito cringe hoje de manhã."
+    ],
+    "significados_incorretos": [
+      "Um doce feito de morango e chocolate.",
+      "Uma ferramenta de construção civil pesada.",
+      "Um animal silvestre nativo da África."
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "flopar",
+    "variacoes": ["flopou", "flop", "flopado"],
+    "classe_gramatical": "verbo",
+    "significado": "Fracassar, não ter o sucesso esperado ou obter baixo engajamento nas redes sociais.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "O vídeo que postei ontem à noite acabou de flopar e não teve curtidas.",
+    "exemplos_incorretos": [
+      "Vou flopar um bolo de cenoura no forno.",
+      "O cachorro do vizinho não para de flopar no portão.",
+      "Comprei um pneu novo para flopar meu carro."
+    ],
+    "significados_incorretos": [
+      "Fazer panquecas doces no café da manhã.",
+      "Nadar no mar aberto durante o verão.",
+      "Limpar a casa usando muita água e sabão."
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "hablar",
+    "variacoes": ["hablou", "habla"],
+    "classe_gramatical": "verbo",
+    "significado": "Dizer verdades de maneira firme, direta, sem rodeios ou expressar uma opinião incontestável.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela pegou o microfone e começou a hablar todas as verdades na cara dele.",
+    "exemplos_incorretos": [
+      "Vou comprar um hablar fresquinho na feira.",
+      "Meu gato adora hablar quando vê um passarinho.",
+      "Preciso hablar o chão da sala antes que a visita chegue."
+    ],
+    "significados_incorretos": [
+      "Comer doces em excesso durante a madrugada.",
+      "Dormir durante a tarde inteira no sofá.",
+      "Andar de bicicleta de forma muito rápida."
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "delulu",
+    "variacoes": ["delulice", "delulas"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa extremamente iludida ou que cria fantasias românticas ou de fã irrealistas na própria mente.",
+    "tags": ["Relacionamentos", "Kpop", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "depende de contexto",
+    "exemplo_correto": "Ela está tão delulu achando que o ator de cinema vai responder a mensagem dela.",
+    "exemplos_incorretos": [
+      "Vou comer um delulu muito gostoso de sobremesa.",
+      "O tempo está bem delulu hoje com esse sol forte.",
+      "Comprei um carro delulu que anda muito rápido na estrada."
+    ],
+    "significados_incorretos": [
+      "Um tipo de doce tradicional árabe.",
+      "Uma marca de shampoo infantil suave.",
+      "Uma espécie de peixe de águas profundas."
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "shippar",
+    "variacoes": ["shippo", "ship", "shippado"],
+    "classe_gramatical": "verbo",
+    "significado": "Torcer pela união romântica de duas pessoas, sejam elas reais, celebridades ou personagens de ficção.",
+    "tags": ["Relacionamentos", "Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Eu não consigo evitar, comecei a shippar muito os dois protagonistas da nova série.",
+    "exemplos_incorretos": [
+      "Vou shippar uma caixa de frutas no supermercado.",
+      "O céu vai shippar muito gelo hoje de madrugada.",
+      "Preciso shippar meu cachorro no quintal de trás."
+    ],
+    "significados_incorretos": [
+      "Enviar uma encomenda grande pelo correio internacional.",
+      "Descascar batatas inglesas para fazer purê.",
+      "Cortar papel usando uma tesoura sem ponta."
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "gag",
+    "variacoes": ["gag de la gag", "gagged"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Ficar em choque, extremamente chocado ou sem palavras diante de um visual impecável ou notícia surpreendente.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Quando ela entrou na festa com aquele vestido brilhante, eu fiquei totalmente gag.",
+    "exemplos_incorretos": [
+      "Vou pintar a minha casa de gag ainda hoje.",
+      "Meu filhote de gato não para de fazer gag no sofá.",
+      "Comprei um gag embrulhado para presente de Natal."
+    ],
+    "significados_incorretos": [
+      "Uma ferramenta utilizada para cavar buracos.",
+      "Um engasgo perigoso com pedaço de comida dura.",
+      "Um brinquedo de morder para animais pequenos."
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "lacre",
+    "variacoes": ["lacrei", "lacração"],
+    "classe_gramatical": "substantivo",
+    "significado": "Resposta perfeita ou atitude brilhante que encerra uma discussão de forma memorável.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O discurso que ela deu no final da reunião foi um verdadeiro lacre.",
+    "exemplos_incorretos": [
+      "Vou comer um lacre de chocolate depois do almoço.",
+      "A tempestade deu um lacre barulhento no telhado.",
+      "Comprei um lacre motorizado para andar na praia."
+    ],
+    "significados_incorretos": [
+      "A peça de metal que abre latas de alumínio.",
+      "Uma cola líquida e transparente para artesanato.",
+      "Um tipo de tecido grosso usado para fazer tapetes."
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "aesthetic",
+    "variacoes": ["estética"],
+    "classe_gramatical": "substantivo",
+    "significado": "Visual ou estilo estético harmonioso, padronizado e visualmente agradável nas redes sociais.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "A organização da mesa de estudos dela tem uma vibe muito aesthetic e relaxante.",
+    "exemplos_incorretos": [
+      "Fiz um prato aesthetic misturando feijão, arroz e macarrão.",
+      "Meu carro estragou de maneira bem aesthetic na rodovia.",
+      "O cachorro da vizinha é da rara raça aesthetic pura."
+    ],
+    "significados_incorretos": [
+      "Um medicamento comprimido para curar dor de estômago.",
+      "Uma prática de esporte radical em altas montanhas.",
+      "Um tecido sintético impermeável para barracas de camping."
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "baddie",
+    "variacoes": ["baddies"],
+    "classe_gramatical": "substantivo",
+    "significado": "Estilo ou pessoa que exala autoconfiança, beleza marcante e muita atitude nas roupas e maquiagem.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela colocou uma bota de couro e óculos escuros, virou uma baddie instantânea.",
+    "exemplos_incorretos": [
+      "Vou baddie a parede do meu quarto de amarelo amanhã.",
+      "Comprei um baddie de controle remoto para o meu sobrinho.",
+      "O clima na cidade hoje está super baddie de frio."
+    ],
+    "significados_incorretos": [
+      "Uma vilã de um filme clássico de terror.",
+      "Um inseto venenoso encontrado na floresta amazônica.",
+      "Um tipo de doce salgado vendido em padarias."
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "dropar",
+    "variacoes": ["dropou", "drop", "dropando"],
+    "classe_gramatical": "verbo",
+    "significado": "Abandonar ou desistir de algo como séries e músicas, ou lançar um novo produto no mercado.",
+    "tags": ["Pop", "Geek", "Redes sociais", "Jogos"],
+    "permissao": "todos",
+    "impacto": "depende de contexto",
+    "exemplo_correto": "A série ficou muito chata na segunda temporada, então eu decidi dropar de vez.",
+    "exemplos_incorretos": [
+      "Vou dropar um suco de laranja bem gelado agora.",
+      "O cachorro gosta muito de dropar a bola no quintal.",
+      "Amanhã o sol vai dropar muito quente na praia."
+    ],
+    "significados_incorretos": [
+      "Derramar uma gota de remédio nos olhos secos.",
+      "Chutar uma bola de futebol por cima do gol.",
+      "Dormir profundamente depois de um longo dia de trabalho."
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "fanfic",
+    "variacoes": ["fic", "fanfiqueira"],
+    "classe_gramatical": "substantivo",
+    "significado": "História inventada, boato, exagero dramático ou fantasia romântica criada mentalmente.",
+    "tags": ["Relacionamentos", "Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "depende de contexto",
+    "exemplo_correto": "Eles nunca namoraram na vida real, tudo isso não passa de uma grande fanfic.",
+    "exemplos_incorretos": [
+      "Vou cozinhar uma fanfic no almoço de domingo em família.",
+      "Comprei uma fanfic esportiva nova para jogar basquete.",
+      "O céu estrelado está muito fanfic de se observar hoje."
+    ],
+    "significados_incorretos": [
+      "Um aparelho eletrônico usado para ventilar o ambiente quente.",
+      "Um selo de autenticidade colocado em documentos de cartório.",
+      "Um pequeno pássaro migratório de cor azul."
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "lowkey",
+    "variacoes": ["low-key"],
+    "classe_gramatical": "advérbio",
+    "significado": "De modo discreto, contido, em segredo ou com moderação.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Eu estou lowkey apaixonado por aquela música nova, mas não contei para ninguém.",
+    "exemplos_incorretos": [
+      "O carro esportivo que comprei é extremamente lowkey e barulhento.",
+      "Vou almoçar um banquete lowkey gigante com dezenas de convidados.",
+      "A tempestade de raios lá fora está lowkey destrutiva."
+    ],
+    "significados_incorretos": [
+      "Uma chave pequena usada para abrir diários pessoais fechados.",
+      "Um tipo de ritmo musical muito lento tocado em pianos.",
+      "A configuração de brilho mais baixa de um celular inteligente."
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "highkey",
+    "variacoes": ["high-key"],
+    "classe_gramatical": "advérbio",
+    "significado": "De modo aberto, claro, sem esconder nada ou com muita intensidade.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Estou highkey obcecada pelo novo álbum da cantora, não paro de ouvir no volume máximo.",
+    "exemplos_incorretos": [
+      "Comprei um segredo highkey e guardei no fundo de uma gaveta trancada.",
+      "Vou sussurrar bem highkey para que ninguém escute o que estou dizendo.",
+      "A tartaruga caminha de forma highkey pela areia fina da praia deserta."
+    ],
+    "significados_incorretos": [
+      "Um estilo fotográfico que utiliza muita iluminação brilhante artificial.",
+      "Uma chave gigante utilizada como decoração de enfeite nas portas.",
+      "Um tipo de chapéu alto e formal usado em casamentos luxuosos."
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "hitar",
+    "variacoes": ["hitou", "hit"],
+    "classe_gramatical": "verbo",
+    "significado": "Fazer muito sucesso, viralizar ou alcançar grande popularidade rapidamente.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "A música nova dela acabou de hitar e já está em primeiro lugar nas paradas mundiais.",
+    "exemplos_incorretos": [
+      "Vou hitar um prego na parede da sala de estar.",
+      "O gato gosta de hitar a pata no pote de ração seca.",
+      "Preciso hitar o botão vermelho de emergência do elevador parado."
+    ],
+    "significados_incorretos": [
+      "Bater violentamente em algum objeto com um martelo.",
+      "Dançar de forma desengonçada em uma boate lotada.",
+      "Digitar um texto longo rapidamente no teclado do computador."
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "biscoitar",
+    "variacoes": ["biscoito", "biscoiteiro"],
+    "classe_gramatical": "verbo",
+    "significado": "Buscar atenção, elogios ou curtidas nas redes sociais por meio de postagens que ressaltam a própria aparência.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Postou aquela selfie maravilhosa no espelho da academia só para biscoitar um pouco nos comentários.",
+    "exemplos_incorretos": [
+      "Vou biscoitar um bolo de chocolate delicioso e macio no fim de semana.",
+      "O carro do meu pai precisa biscoitar o motor velho na oficina mecânica.",
+      "As nuvens escuras vão biscoitar uma chuva forte de granizo à tarde."
+    ],
+    "significados_incorretos": [
+      "Cozinhar pequenos doces secos e crocantes no forno a lenha.",
+      "Andar de bicicleta lentamente nos parques arborizados da cidade.",
+      "Dormir no chão frio de cerâmica durante os dias quentes de verão."
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "jantou",
+    "variacoes": ["jantar", "jantou muito"],
+    "classe_gramatical": "verbo",
+    "significado": "Diz-se quando alguém rebate críticas ou argumentos alheios com maestria absoluta em uma discussão.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Nossa, ele foi lá e simplesmente jantou o hater com fatos e argumentos que não deixaram dúvidas.",
+    "exemplos_incorretos": [
+      "Ele jantou a tela do celular deixando cair da mesa de vidro.",
+      "Vou jantou minha blusa nova amarela no fundo escuro do armário.",
+      "A chuva jantou o telhado de casa e quebrou várias telhas de barro."
+    ],
+    "significados_incorretos": [
+      "Comer uma refeição muito pesada e gordurosa logo antes de dormir.",
+      "Dormir profundamente depois de comer no restaurante da esquina.",
+      "Ato de servir comida para um animal faminto na rua vazia."
+    ]
+  },
+  {
+    "id": 19,
+    "nome": "serviu",
+    "variacoes": ["servindo", "serviu tudo"],
+    "classe_gramatical": "verbo",
+    "significado": "Entregar uma performance excelente, visual impecável ou atitude digna de aplausos.",
+    "tags": ["Pop", "Redes sociais", "Maquiagem"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela subiu no palco com aquele figurino deslumbrante e simplesmente serviu tudo o que os fãs queriam.",
+    "exemplos_incorretos": [
+      "Ela serviu a bola de vôlei para o time adversário na quadra de cimento.",
+      "O pedreiro serviu o tijolo de cimento para construir a parede do quintal.",
+      "A torneira quebrada serviu muita água gelada no chão limpo da cozinha."
+    ],
+    "significados_incorretos": [
+      "Colocar suco gelado ou refrigerante em um copo de vidro pequeno.",
+      "Trabalhar arduamente como garçom em um restaurante de luxo caro.",
+      "Prestar serviços militares obrigatórios no exército por muitos anos."
+    ]
+  },
+  {
+    "id": 20,
+    "nome": "divar",
+    "variacoes": ["divou", "diva"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, sobressair-se de forma glamorosa ou agir com grande autoconfiança e brilho.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fez o cabelo, passou maquiagem e foi para a festa pronta para divar a madrugada inteira.",
+    "exemplos_incorretos": [
+      "Vou divar a parede do quarto com tinta branca e rolo de espuma.",
+      "Meu papagaio não para de divar na gaiola pedindo sementes girassol.",
+      "Amanhã preciso divar todas as contas da casa na mesa da sala."
+    ],
+    "significados_incorretos": [
+      "Mergulhar profundamente em uma piscina de águas muito cristalinas.",
+      "Caminhar descalço pela grama verde de um imenso jardim florido.",
+      "Cantar ópera clássica em um grande teatro de arquitetura antiga."
+    ]
+  },
+  {
+    "id": 21,
+    "nome": "iconic",
+    "variacoes": ["icônico", "icônica"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo extremamente memorável, marcante, histórico ou emblemático no mundo do entretenimento.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Aquela apresentação de dança dela nos prêmios musicais foi um momento totalmente iconic da cultura pop.",
+    "exemplos_incorretos": [
+      "Fiz um prato iconic de feijão puro no jantar caseiro de hoje.",
+      "Comprei um iconic de metal para pregar o quadro na parede branca.",
+      "O clima está super iconic com essa tempestade escura de trovões assustadores."
+    ],
+    "significados_incorretos": [
+      "Um pequeno símbolo de computador clicável exibido em telas digitais.",
+      "Uma estátua religiosa esculpida em ouro dentro de uma igreja antiga.",
+      "Uma moeda rara e valiosa colecionada por estudiosos de numismática."
+    ]
+  },
+  {
+    "id": 22,
+    "nome": "stan",
+    "variacoes": ["stannar", "stanneio"],
+    "classe_gramatical": "substantivo",
+    "significado": "Fã obsessivo, extremamente dedicado ou fervoroso de um artista, celebridade ou grupo.",
+    "tags": ["Pop", "Kpop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Como um bom stan da banda, eu comprei todos os álbuns físicos e fiquei na fila do show por horas.",
+    "exemplos_incorretos": [
+      "Comi um sanduíche stan muito gostoso com batata frita acompanhando de bebida.",
+      "O céu azul vai stan uma bela chuva de granizo à noite.",
+      "Vou stan minha casa nova com móveis azuis e quadros decorativos."
+    ],
+    "significados_incorretos": [
+      "Um apelido comum masculino e curto usado em países de língua inglesa.",
+      "Um pequeno suporte de madeira resistente para apoiar partituras musicais em concertos.",
+      "Uma mancha de sujeira difícil de limpar em tecidos brancos finos."
+    ]
+  },
+  {
+    "id": 23,
+    "nome": "fandom",
+    "variacoes": ["fandoms"],
+    "classe_gramatical": "substantivo",
+    "significado": "Comunidade ou grupo de fãs extremamente dedicados a um artista, série, filme ou personagem.",
+    "tags": ["Pop", "Kpop", "Geek"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "O fandom dessa cantora pop é tão forte que eles subiram dez hashtags para os trending topics hoje.",
+    "exemplos_incorretos": [
+      "Vou cozinhar um grande prato de fandom com legumes na manteiga derretida.",
+      "O carro quebrado de fandom está parado na oficina mecânica desde ontem de tarde.",
+      "Comprei um fandom novo, macio e fofo para dormir confortavelmente à noite."
+    ],
+    "significados_incorretos": [
+      "Um tipo de fantasma amigável retratado em histórias infantis de quadrinhos ilustrados.",
+      "Uma grande feira livre ao ar livre focada em venda de produtos orgânicos.",
+      "Um instrumento musical de sopro grande e ruidoso utilizado em bandas marciais."
+    ]
+  },
+  {
+    "id": 24,
+    "nome": "comeback",
+    "variacoes": ["comebacks"],
+    "classe_gramatical": "substantivo",
+    "significado": "Retorno ou volta triunfal de um artista ou grupo musical após um período de inatividade ou hiato.",
+    "tags": ["Pop", "Kpop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Depois de dois anos sem lançar músicas inéditas, o grupo feminino anunciou um comeback incrível para este verão.",
+    "exemplos_incorretos": [
+      "Vou pedir um comeback duplo de queijo na lanchonete da esquina amanhã.",
+      "Comprei um sapato modelo comeback preto lustroso para usar na formatura escolar.",
+      "A nuvem de chuva vai dar um comeback forte no telhado da vizinhança logo mais."
+    ],
+    "significados_incorretos": [
+      "Um movimento de exercício físico que foca exclusivamente em fortificar as costas largas.",
+      "Um jogo infantil de vai e vem jogado com bolas presas em elásticos de cordas.",
+      "Um estilo de corte de cabelo que puxa os fios totalmente para trás usando gel de cabelo."
+    ]
+  },
+  {
+    "id": 25,
+    "nome": "trend",
+    "variacoes": ["trends", "trendar"],
+    "classe_gramatical": "substantivo",
+    "significado": "Tendência do momento, formato de vídeo, áudio ou comportamento amplamente reproduzido nas redes sociais.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Gravei aquela dancinha difícil que está em alta porque é a maior trend do aplicativo no momento.",
+    "exemplos_incorretos": [
+      "Peguei o trend das oito da manhã para chegar no meu trabalho longe no centro.",
+      "Fiz um almoço de trend muito saboroso e apimentado com bastante feijão no caldo.",
+      "A árvore da praça soltou uma trend pesada em cima do carro vermelho estacionado ali."
+    ],
+    "significados_incorretos": [
+      "Um veículo de transporte coletivo que anda sobre trilhos metálicos nas grandes cidades.",
+      "Um pequeno graveto seco e retorcido caído de galhos de árvores centenárias.",
+      "Uma peça de maquinaria pesada agrícola usada para arar e preparar solos rurais."
+    ]
+  },
+  {
+    "id": 26,
+    "nome": "exposed",
+    "variacoes": ["exposeds", "exposar"],
+    "classe_gramatical": "substantivo",
+    "significado": "Ato de revelar publicamente segredos, mentiras ou boas atitudes de alguém, geralmente apoiado por prints ou provas virtuais.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Fizeram um exposed daquele influenciador famoso provando com prints que ele mentia sobre suas viagens caras.",
+    "exemplos_incorretos": [
+      "Vou comer um suculento filé exposed bem passado com batatas rústicas e molho barbecue.",
+      "Comprei um perfume exposed muito cheiroso e suave na loja de cosméticos importados ontem.",
+      "O céu claro vai exposed o sol brilhante e iluminar toda a cidade de calor escaldante hoje."
+    ],
+    "significados_incorretos": [
+      "Uma técnica de fotografia analógica que deixa o filme queimado por luz forte natural.",
+      "Um tipo de exposição de obras de arte modernas em galerias conceituais e sofisticadas.",
+      "Uma planta rara ornamental que cresce pendurada exposta ao sol direto sem proteção."
+    ]
+  },
+  {
+    "id": 27,
+    "nome": "main character",
+    "variacoes": ["protagonista"],
+    "classe_gramatical": "substantivo",
+    "significado": "Pessoa que se comporta ou se sente como a protagonista de um filme, esbanjando estilo e autoconfiança.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Andando pelas ruas da cidade de óculos escuros e fones de ouvido ouvindo música alta, eu sinto uma energia total de main character.",
+    "exemplos_incorretos": [
+      "Vou comer um main character com hambúrguer duplo e queijo cheddar derretido no pão macio.",
+      "O pneu do meu main character furou no meio da estrada escura e deserta de madrugada.",
+      "Fui pescar no rio e capturei um main character gigantesco e muito pesado com a vara de pescar."
+    ],
+    "significados_incorretos": [
+      "A pessoa responsável por escrever os diálogos longos dos roteiros de grandes filmes em Hollywood.",
+      "O ator secundário figurante que aparece apenas no fundo de cenas de grandes produções dramáticas.",
+      "O diretor criativo que organiza as câmeras e as luzes fortes dos teatros independentes locais."
+    ]
+  },
+  {
+    "id": 28,
+    "nome": "glow up",
+    "variacoes": ["glow-up"],
+    "classe_gramatical": "substantivo",
+    "significado": "Processo notório de transformação positiva e melhoria drástica na aparência física, estilo ou saúde mental.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano", "Maquiagem"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Depois de anos de colégio, ela encontrou seu estilo próprio e teve um glow up absurdo e inspirador.",
+    "exemplos_incorretos": [
+      "Acendi a luz do glow up na sala escura para conseguirmos enxergar os móveis velhos.",
+      "Fui almoçar um maravilhoso glow up na padaria com suco de laranja bem gelado e doce.",
+      "Meu cachorro peludo solta muito glow up pela casa inteira quando o tempo fica muito quente."
+    ],
+    "significados_incorretos": [
+      "Um pó químico fluorescente e perigoso que brilha intensamente no escuro da noite de festa.",
+      "Um tratamento doloroso a laser feito para apagar tatuagens antigas no braço manchado.",
+      "Um brinquedo luminoso descartável distribuído brilhando em festivais noturnos de música."
+    ]
+  },
+  {
+    "id": 29,
+    "nome": "bapho",
+    "variacoes": ["bafafá", "baphon"],
+    "classe_gramatical": "substantivo",
+    "significado": "Situação chocante, fofoca quente ou acontecimento que gera grande repercussão social.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "depende de contexto",
+    "exemplo_correto": "Menina, você não imagina o bapho que rolou na festa de ontem, preciso te contar tudo agora mesmo.",
+    "exemplos_incorretos": [
+      "Vou cozinhar um bapho de carne com batatas ensopadas e muito molho pardo de jantar.",
+      "Meu pai escovou os dentes porque acordou com um forte cheiro de bapho ruim na boca.",
+      "Comprei um bapho de pelúcia cor de rosa grande como presente de aniversário para a menina."
+    ],
+    "significados_incorretos": [
+      "O forte odor exalado pela boca de pessoas que não cuidam da saúde bucal matinal.",
+      "Um bicho de pelúcia infantil em formato de urso fofinho importado de outro país distante.",
+      "Uma marca famosa de tecidos grossos para confecção de sofás confortáveis de sala de estar."
+    ]
+  },
+  {
+    "id": 30,
+    "nome": "cancelar",
+    "variacoes": ["cancelado", "cancelamento"],
+    "classe_gramatical": "verbo",
+    "significado": "Boicotar ou rejeitar socialmente e publicamente uma pessoa, geralmente online, devido a comportamentos reprováveis.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "O influenciador postou um vídeo preconceituoso e os seguidores começaram a cancelar ele imediatamente em todas as redes.",
+    "exemplos_incorretos": [
+      "Fui ao restaurante para cancelar um suculento bife ancho no fogo alto da churrasqueira de lenha.",
+      "Vou cancelar o meu relógio na parede com pregos fortes para ele não cair e quebrar o vidro.",
+      "A nuvem escura e pesada no céu decidiu cancelar raios de tempestade sobre a montanha isolada."
+    ],
+    "significados_incorretos": [
+      "Demitir um funcionário corporativo de seu cargo executivo sem justa causa em um banco.",
+      "Extinguir incêndios gigantes em florestas densas usando mangueiras e helicópteros cheios d'água.",
+      "Apagar letras mal escritas a lápis em um caderno escolar usando borracha branca gasta."
+    ]
+  },
+  {
+    "id": 31,
+    "nome": "situationship",
+    "variacoes": ["situationships"],
+    "classe_gramatical": "substantivo",
+    "significado": "Relacionamento amoroso ou afetivo sem rótulos formais, onde as pessoas agem como casal mas não oficializam o namoro.",
+    "tags": ["Relacionamentos", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "depende de contexto",
+    "exemplo_correto": "Eles saem juntos há meses e se tratam como namorados, mas estão presos em uma confusa situationship sem nome.",
+    "exemplos_incorretos": [
+      "O capitão da marinha navegou seu gigante situationship pelos mares agitados cheios de ondas perigosas.",
+      "Comi um excelente situationship apimentado de frutos do mar frescos no restaurante chique do litoral.",
+      "Preciso consertar a engrenagem do meu situationship antes que ele pare de funcionar no meio da rua vazia."
+    ],
+    "significados_incorretos": [
+      "Um imenso navio de carga internacional luxuoso que navega ao redor de continentes desconhecidos.",
+      "Um estado de confusão mental induzido por excesso de estudo complicado em bibliotecas antigas.",
+      "Uma situação constrangedora ocorrida durante uma importante entrevista de emprego corporativo estressante."
+    ]
+  },
+  {
+    "id": 32,
+    "nome": "chavoso",
+    "variacoes": ["chave", "chaveoso"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa ou estilo extremamente bem arrumado, estiloso, bonito e marcante, comum na cultura urbana.",
+    "tags": ["Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele fez aquele corte de cabelo famoso, colocou os óculos escuros de marca e ficou muito chavoso para o baile.",
+    "exemplos_incorretos": [
+      "Perdi meu chavoso da porta da sala e fiquei trancado pelo lado de fora da casa de madrugada esperando o pedreiro.",
+      "Vou comer um maravilhoso chavoso de queijo recheado e carne bovina derretida no almoço caprichado de domingo.",
+      "A tempestade de raios e trovões furiosos ficou muito chavoso no telhado de telhas vermelhas de manhã cedinho."
+    ],
+    "significados_incorretos": [
+      "Uma ferramenta mecânica e manual específica para apertar e folgar parafusos muito grossos e duros de roda de carro.",
+      "Um chaveiro pesado decorativo artesanal cheio de chaves velhas penduradas e amarradas de portas fechadas.",
+      "Uma pessoa misteriosa e inteligente com habilidades brilhantes avançadas de destrancar cofres modernos gigantes."
+    ]
+  },
+  {
+    "id": 33,
+    "nome": "embrazar",
+    "variacoes": ["embrazou", "embrazado"],
+    "classe_gramatical": "verbo",
+    "significado": "Ficar muito animado, divertir-se intensamente ou entrar no clima de uma festa com energia alta.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Chegou a sexta-feira à noite, agora nós vamos para o festival e vamos embrazar até o sol nascer no horizonte.",
+    "exemplos_incorretos": [
+      "Vou embrazar o frango caipira temperado inteiro nas grelhas da churrasqueira nova do quintal de trás de casa.",
+      "O clima com nuvens negras pesadas vai embrazar chuva violenta de pedra no capô do carro vermelho novinho em folha.",
+      "Comprei um casaco grosso e felpudo de lã pura para embrazar do frio cortante de inverno lá fora nas ruas da cidade."
+    ],
+    "significados_incorretos": [
+      "Queimar madeira velha para criar brasas incandescentes bem vermelhas e quentes para assados temperados.",
+      "Ato de dar um abraço afetuoso e forte e muito demorado e apertado em um amigo especial querido de infância.",
+      "Tingir uma blusa de algodão branca com água quente fervendo misturada em tinta vermelha cor de fogo aceso."
+    ]
+  },
+  {
+    "id": 34,
+    "nome": "hype",
+    "variacoes": ["hypado", "hypar"],
+    "classe_gramatical": "substantivo",
+    "significado": "Grande expectativa, entusiasmo geral ou alta popularidade em torno de um lançamento ou tendência.",
+    "tags": ["Cotidiano", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Tem tanto hype em volta desse novo filme de herói que os ingressos do cinema já estão esgotados há semanas.",
+    "exemplos_incorretos": [
+      "Vou tomar um bom banho longo quente e gostoso com sabonete hype espumoso no banheiro de azulejo branco de casa.",
+      "Fiz um belo bolo gigante e fofinho muito hype recheado de creme brilhante de chocolate de sobremesa de tarde feliz.",
+      "O pneu grande do carro esvaziou furado na lama da estrada velha de chão hype buraco cheio de barro poeirento escuro."
+    ],
+    "significados_incorretos": [
+      "Um peixe exótico tropical amarelado liso encontrado em grandes cardumes calmos em oceanos fundos e limpos salgados.",
+      "Um comportamento sonolento calmo e lerdo e muito quieto de pessoas caladas durante manhãs cansadas chatas.",
+      "Uma bebida doce gelada misturada de água com gás transparente e muitas frutas cortadas coloridas picadas em rodelas."
+    ]
+  },
+  {
+    "id": 35,
+    "nome": "gatilho",
+    "variacoes": ["gatilhos", "gatilhada"],
+    "classe_gramatical": "substantivo",
+    "significado": "Algo que provoca uma forte reação emocional, lembrança marcante ou identificação profunda.",
+    "tags": ["Cotidiano", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "depende de contexto",
+    "exemplo_correto": "Ler aquele poema romântico e triste sobre despedidas e luto foi um enorme gatilho emocional para mim ontem chorar de saudade.",
+    "exemplos_incorretos": [
+      "Vou comer um suculento filé com molho de gatilho feito de queijo branco derretido quente na panela pesada de ferro maciço.",
+      "Puxei o gatilho afiado da faca serrilhada do pão para conseguir fatiar a massa macia doce sem amassar forte e desfazer migalhas.",
+      "A nuvem grande fechada no céu gatilho escura vai certamente desabar chuvas barulhentas longas de noite iluminadas em relâmpagos."
+    ],
+    "significados_incorretos": [
+      "A peça mecânica curva de metal frio de uma arma potente de fogo ativada pelo dedo pequeno esticado pressionado suavemente.",
+      "Um felino minúsculo mamífero pequeno de pelos macios variados criado e amado dentro de casas pequenas humanas confortáveis quentes.",
+      "Um instrumento cortante agrícola usado no passado antigo para separar vagens e folhas verdes e maduras frescas empilhadas."
+    ]
+  },
+  {
+    "id": 36,
+    "nome": "mood",
+    "variacoes": ["moods"],
+    "classe_gramatical": "substantivo",
+    "significado": "Estado de espírito do momento ou algo com o qual a pessoa se identifica emocionalmente na hora.",
+    "tags": ["Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Ficar em casa na cama fofinha tomando chocolate quente nesse dia chuvoso cinzento e lendo livro bom é todo o meu mood.",
+    "exemplos_incorretos": [
+      "Vou preparar no fogão quente um prato de massa italiana acompanhada do maravilhoso molho mood caseiro temperado da minha grande família.",
+      "A porta de madeira gigante pesada emperrada na parede lisa da sala de visitas precisa de um mood forte lubrificante nas suas velhas dobradiças.",
+      "Comprei um moderno telefone inteligente celular mood tecnológico e rápido por muitas dezenas longas de várias parcelas apertadas financeiramente."
+    ],
+    "significados_incorretos": [
+      "Uma técnica de construção rústica e artesanal feita apenas unindo lama crua e palha seca fina misturada firme ao sol alto.",
+      "Um tecido fino muito áspero felpudo utilizado em sacos grossos brancos para carregar pedras brutas duras afiadas arranhadas pesadas.",
+      "Uma manada enorme lenta grande de vacas e touros pastando livremente e mastigando verdes matos rasteiros crescidos vastos úmidos frescos."
+    ]
+  },
+  {
+    "id": 37,
+    "nome": "tea",
+    "variacoes": ["chá", "spill the tea"],
+    "classe_gramatical": "substantivo",
+    "significado": "Fofoca, informação quente ou revelação de segredos de bastidores sobre celebridades ou conhecidos.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Nós precisamos muito conversar em particular para você me contar todo esse tea sobre o término dramático repentino chocante daquele lindo casal.",
+    "exemplos_incorretos": [
+      "Bebi no café rápido da manhã clara uma bela grande xícara de tea aromático de fofoca quente fumegante doce de sobremesa fina elegante.",
+      "Meu cão idoso muito lento e amigável tea passeou arrastado pela vizinhança tranquila verde inteira cheirando todos gramados alheios longos cortados.",
+      "Costurei veloz uma calça apertada pequena furada fina e rasgada no meu joelho exposto usando uma fina pontuda longa afiada fina agulha de aço tea."
+    ],
+    "significados_incorretos": [
+      "Uma bebida perfumada milenar tradicional relaxante de camomila fina fervida demoradamente em panelas esmaltadas com água filtrada cristalina purificada limpa quentinha.",
+      "Um equipamento pesado metálico esportivo grande de musculação difícil com pesos usados intensamente pesados para ombros e força brutal pura humana musculosa fina.",
+      "Uma grande loja luxuosa e brilhante de perfumes requintados líquidos importados florais doces adocicados amadeirados amargos franceses exclusivos raríssimos pequenos finos vermelhos brancos."
+    ]
+  },
+  {
+    "id": 38,
+    "nome": "cunty",
+    "variacoes": ["cuntiness"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Característica de alguém ou de um visual extremamente estiloso, ousado, confiante e com muita atitude.",
+    "tags": ["Pop", "Maquiagem", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela desfilou pelos corredores usando saltos altíssimos barulhentos finos, batom forte chamativo escuro e um casaco incrível, entregando um visual bem cunty.",
+    "exemplos_incorretos": [
+      "Vou limpar toda a pia encardida engordurada da grande cozinha ampla da casa velha no interior usando uma bucha cunty raspadora de aço bem áspera dura e grossa.",
+      "Comi hoje no belo almoço saboroso e feliz um frango frito dourado enorme acompanhado de bastante arroz soltinho cunty bem temperadinho verde gostoso fresco quente macio.",
+      "Preciso muito correr apressado na loja ali para comprar uma camiseta cunty limpa listrada preta e branca larga folgada nova furada macia brilhante antes do anoitar claro alto."
+    ],
+    "significados_incorretos": [
+      "Uma ferramenta rudimentar cortante pequena cega manual com cabo oco pequeno verde para poda rápida rasa fina lenta redonda redonda seca de flores mortas brancas murchas caídas.",
+      "Um doce pastoso macio aerado enjoativo vendido apenas unicamente somente nas lojas de docerias finas grandes em praças públicas ruidosas barulhentas antigas coloniais iluminadas cheias de sol.",
+      "Uma forma antiga de cumprimentar um amigo desconhecido vizinho com abraço afetuoso balançando fortes cabeças inclinadas para os lados esquerdo e direito longos sem pressas paradas duras."
+    ]
+  },
+  {
+    "id": 39,
+    "nome": "wig",
+    "variacoes": ["wig snatched"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para indicar extremo choque ou admiração quando algo é tão bom que parece arrancar a peruca.",
+    "tags": ["Pop", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Quando ela atingiu maravilhosamente bem com sua voz de anjo afinada forte aquela última nota alta impossível da canção difícil triste final da música longa, eu gritei: wig!",
+    "exemplos_incorretos": [
+      "Vou wig e cozinhar de noite uma gostosa janta farta grande salgada para todos velhos conhecidos parentes primos distantes tios cansados próximos do meu núcleo de família gigantesca numerosa de irmãos juntos.",
+      "O lindo filhote de gato dorminhoco recém-nascido pequeno peludinho adora demais vigiar focado atento os passarinhos rápidos que voam longe saltando pelos altos galhos grossos frágeis finos fazendo wig alegres saltitantes miando.",
+      "Preciso desesperadamente pintar ligeiro minha parede branca e imunda de quarto fechado usando a bela tinta rosa wig de ótima e boa alta qualidade cara muito famosa vendida na excelente e cheia e imensa e distante cidade fria loja."
+    ],
+    "significados_incorretos": [
+      "A peruca artesanal plástica artificial humana capilar ou cabelo sintético falsa amarrada feita costurada colocada fixada em fios grossos pretos coloridos longos em finas presilhas grampos carecas limpos finos.",
+      "Um esporte dinâmico e veloz de precisão fina competido ferozmente com pequenas pesadas bolas brancas brilhantes tacadas voadoras usando longos e pontiagudos de fibra pretos bastões macios flexíveis muito duros pesados perigosos e de plásticos vermelhos rápidos lentos calmos.",
+      "A dança alegre camponesa rural europeia tradicional popular alegre antiga em par dançada em amplos círculos grandes longos fechados rápidos abertos ao som vivo vibrante grave intenso agudo suave alegre leve som estrondoso estridente e chato bom ruim mudo triste lindo feio som vivo feliz calmo bom violino agudo de sopros fortes cordas de tambores rápidos finos surdos tocados batidos em alto ritmo bom som vivo e forte."
+    ]
+  },
+  {
+    "id": 40,
+    "nome": "ijbol",
+    "variacoes": ["ijbols"],
+    "classe_gramatical": "interjeição",
+    "significado": "Sigla em inglês para indicar gargalhada ou riso incontrolável diante de algo muito cômico.",
+    "tags": ["Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele tropeçou de forma desajeitada no ar liso tropeçando nos próprios pés longos sapatos cadarços e caiu engraçado de repente do chão nada rindo alto na hora muito e mandei um ijbol enorme com risadas contínuas lágrimas chorando lágrimas molhadas fortes.",
+    "exemplos_incorretos": [
+      "Vou rápido beber gelado de sede um enorme copo vidro plástico de longo e forte ijbol amargo misturado grosso feito esmagado com limão suco sucos frutas tropicais manga gelo muito pouco bastante sem e água açucar doce e água quente filtrada morna limpa purificada potável boa gelada gostosa na hora quente dia cedo de calor no meio começo de amanhã da noite sol longo grande forte claro limpo na tarde dia ensolarado clara longo.",
+      "O gavião ave grande voador imponente majestoso fez ijbol batendo asas veloz mergulho forte para ar em e pegou veloz da caça rápido de garras e peixe rio vivo mar longo peixe prata claro água rio azul claro na verde na natureza selva viva bela mata fechada muito aberta ampla livre grande verde marinha voando longe de perto para caçando livre em bando longo mar pássaro de com o longo bico amarelo em forte curvo bicado em pontudo presa presa forte longa livre caindo voando vivo bom belo lindo e vivo para rápido devagar o ar em pelo ar em céu grande azul no voo livre mar longo livre no ar livre.",
+      "Comprei barato ijbol no um mercado de esquina na feira mercado longo pão com trigo quente ijbol na e para longo doce muito comer bom lanche pão com presunto salgado pão de comer lanche comer bem rápido tarde na amanhã longo gostoso belo e com café pingado gostoso bom no fim no café do manhã bom lanche começo feliz feliz começo com de início e bem rápido na tarde manhã pão belo no lanche de da manhã e no feliz cedo no comer pão comer em o no com amanhã tarde de manhã de lanche da muito pouco longo pão bem longo trigo fofinho com sal branco de trigo escuro pão com bom o tarde na com bom feliz lanche na e com a."
+    ],
+    "significados_incorretos": [
+      "Uma federação secreta internacional gigantesca poderosa e rica de bilionários influentes que controlam ditam e organizam governam os e mercados fortes financeiros todos globais de mundos países longos pobres ricos unidos divididos longe de no centro do norte do meio globo perto fora e em muito dentro de capitalistas em e longes.",
+      "Um modelo elétrico automático avançado seguro silencioso confortável autônomo ecológico chinês asiático coreano japonês europeu carro alemão francês muito de e moderno seguro rápido vermelho bom forte limpo com painel lindo digital prata e painel e carro novo caro motor v8 forte veloz em esportivo em luxuoso forte em no belo verde longo do amanhã ano mercado bom ano moderno do em no longo mercado no carro forte rápido rápido do vermelho luxo preto carro esportivo v8 de novo do em lindo mercado novo rápido no veloz carro de no amanhã de mercado amanhã longo do vermelho ano no luxo bom lindo bom novo caro carro elétrico e em novo do.",
+      "Um formato padronizado obsoleto velho pequeno grande comprimido áudio de arquivo digital corrompido pesado áudio de MP3 pirata livre seguro pesado com vírus em cheio para música longa eletrônica de música rock jazz disco disco clássica em de para e longo ouvir no tocador celular bom MP4 em player velho radinho celular no celular com fones no sem cabo com de fones tocador rádio bom antigo no radinho do player radinho rádio no fones com fones com em do celular mp3 do radinho com fones no e no fones mp4 no ouvir para em do fones no celular tocador de no mp3 de para celular no player do radinho mp4 radinho com e no mp3 fones."
+    ]
+  },
+  {
+    "id": 41,
+    "nome": "soft launch",
+    "variacoes": ["soft-launched"],
+    "classe_gramatical": "substantivo",
+    "significado": "Ato de sugerir de forma discreta e indireta um relacionamento amoroso nas redes sociais, sem revelar o rosto do parceiro.",
+    "tags": ["Relacionamentos", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Ela publicou uma foto apenas de duas taças de vinho e a mão misteriosa de alguém na mesa, fazendo um clássico soft launch romântico enigmático sutil.",
+    "exemplos_incorretos": [
+      "Vou jogar o lixo fedido acumulado pesado e sujo na lixeira grande verde plástica fechada da calçada da lixeira grande velha com um belo macio incrível soft launch longo e verde.",
+      "Meu cão fez um soft launch barulhento alto rápido destruidor forte bravo fofo carinhoso meigo com o macio fofo fofo grande e de lindo e osso de no dente duro longo duro plástico de osso duro morder brinquedo osso osso no com brinquedo o seu grande no forte e com morder osso no longo de duro brincar no para e em osso quintal.",
+      "Bebi um quente soft launch amargo aguado fofo suco ralo gelado amargo forte escuro denso com chá suco vitamina pó água leite com gelo limão canudo no morno com copo em copo amargo limpo no vidro de e copo copo e suco fofo no com suco limpo de em vidro copo com suco."
+    ],
+    "significados_incorretos": [
+      "Lançamento empresarial corporativo estratégico cauteloso financeiro e inicial gradativo pequeno lento de um produto novo caro de e de mercado no e teste e mercado aplicativo novo e em beta em e aplicativo no aplicativo software de novo de novo produto programa programa teste mercado em em e mercado teste de novo aplicativo em e programa para para mercado teste software mercado em e de no e para.",
+      "Bebida misturada com de não de sem forte alcoólica leve doce suave fresca gaseificada colorida gasosa fria com para doce com e frutada infantil em de água lata de lata em longo lata para refrigerante de refrigerante para colorida infantil lata de refrigerante longa de longa colorida e em longa doce e.",
+      "Almofadado fofinho macio e fofinho descanso pequeno suave macio liso travesseiro leve bom alto firme cama de travesseiro de macio travesseiro macio branco longo limpo de macio descanso fofo macio descanso limpo longo de macio macio bom de fofinho limpo longo longo longo fofinho e para longo bom e descanso de descanso limpo longo limpo de."
+    ]
+  },
+  {
+    "id": 42,
+    "nome": "clean girl",
+    "variacoes": ["clean girls"],
+    "classe_gramatical": "substantivo",
+    "significado": "Estética minimalista caracterizada por um visual limpo, maquiagem leve, pele hidratada, cabelo alinhado e rotina saudável.",
+    "tags": ["Maquiagem", "Redes sociais", "Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela aderiu à rotina clean girl usando roupas claras neutras elegantes limpas suaves lisas simples e maquiagem transparente brilhante natural mínima todos os todos para de sair todos os todos dias sempre sempre de todos os sempre todos e sempre para dias.",
+    "exemplos_incorretos": [
+      "Fui pescar peixe grande rio rio pescar fui no limpo longe limpo limpo e para limpo de longe clean girl peixe grande longe com anzol vara de bambu rede pequena peixe em pescar grande rio longe.",
+      "O mecânico limpou limpo graxa óleo na sujo óleo graxa na mãos limpas graxa graxa em limpar na mãos sujo limpar mãos e motor limpo sujo limpar mecânico limpar sujo em clean girl as mãos dele de graxa limpar na mãos de.",
+      "A nuvem grande chuva limpar lavar céu azul limpar chuva lavar limpar limpo no limpo em lavar limpar clean girl de lavar chuvas grossas limpo em de."
+    ],
+    "significados_incorretos": [
+      "A funcionária contratada encarregada faxineira de de para limpadora de limpar e manter a para organização da limpar arrumar de a arrumar e a de a de a da para organização arrumar de e a para a faxina limpar e da casa em ordem limpa e limpa em dia limpar para casa na para e e.",
+      "Um detergente sabão potente pesado industrial forte líquido azul rosa verde sabão sabão em pó pedra pó sabão de para e lavar pano para roupa pano chão azulejo louça de pó sabão lavar pano.",
+      "Uma técnica de higienização de cirúrgica esterilização química laboratorial de laboratório química de esterilização química laboratorial forte de forte e de médica para cirúrgica de laboratorial de e esterilização de."
+    ]
+  },
+  {
+    "id": 43,
+    "nome": "mãe rica indo pro brunch",
+    "variacoes": ["mãe rica"],
+    "classe_gramatical": "substantivo",
+    "significado": "Visual sofisticado, minimalista, luxuoso e chique sem esforço, comumente associado a cores beges e óculos escuros.",
+    "tags": ["Cotidiano", "Redes sociais", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Colocou aquela blusa de linho bege fina clara neutra elegante cara fina calça de pantalona solta clara óculos escuros grandes bolsa cara preta e saiu com ar chique fino de mãe rica indo pro brunch.",
+    "exemplos_incorretos": [
+      "Eu vou comer beber para lanchar comer lanche comer para mãe rica indo pro brunch frito pastel com caldo de cana garapa pastel barraca na comer de de na barraca comer na e e comer feira pastel frito comer de de comer feira na com para.",
+      "O prego martelo enferrujado pesado duro na mãe rica indo pro brunch parede fenda torto muro para no bater de para muro no no e para de muro bater prego muro no para no prego parede prego bater para no parede muro na bater e na prego no bater parede.",
+      "Meu time forte mãe rica indo pro brunch verde camisa no campeonato longo difícil jogo duro time difícil campeonato jogo no campeonato jogo jogo de."
+    ],
+    "significados_incorretos": [
+      "Uma mulher milionária generosa amigável humilde que doa financia patrocina paga caridade ajuda a de a para ajuda orfanato ajuda orfanato em de a de para a para doação a e orfanato caridade doação em e para.",
+      "Um cardápio rico longo longo de caro sofisticado variado buffet de chique e de chique caro requintado longo em de restaurante de para em caro para requintado de de requintado caro de em de restaurante em.",
+      "A herdeira principal rica herdeira primogênita única filha da fortuna filha fortuna de império fortuna empresa de fortuna de para e de de e da dona da para fortuna império de fortuna e de e de para e de dona da de."
+    ]
+  }
+]

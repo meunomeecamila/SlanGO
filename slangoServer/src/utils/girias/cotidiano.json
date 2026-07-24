@@ -1,0 +1,968 @@
+[
+  {
+    "id": 1,
+    "nome": "cringe",
+    "variacoes": ["cringou", "cringenta"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo considerado vergonhoso, cafona ou constrangedor.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Foi muito cringe ver o professor tentando imitar as dancinhas do TikTok na aula.",
+    "exemplos_incorretos": [
+      "Eu dei um cringe muito forte quando deixei meu cotovelo bater na quina da mesa.",
+      "A porta não estava fechando direito porque a dobradiça deu um cringe emperrado.",
+      "Quando o vento gelado bateu no meu rosto de manhã, meu corpo deu um cringe natural."
+    ],
+    "significados_incorretos": [
+      "Ato físico de encolher os ombros ou o corpo rapidamente devido ao frio intenso.",
+      "Som estridente e agudo que metais enferrujados fazem quando são arrastados.",
+      "Sensação física aguda de dor ao bater uma articulação do corpo em um móvel."
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "rizz",
+    "variacoes": ["silent rizz"],
+    "classe_gramatical": "substantivo",
+    "significado": "Carisma ou facilidade e poder de atração no flerte.",
+    "tags": ["Relacionamentos", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele chegou na festa com muito rizz e conseguiu o número da garota em cinco minutos.",
+    "exemplos_incorretos": [
+      "Hoje no almoço eu comi um prato cheio de rizz com feijão bem temperado.",
+      "Puxei o rizz da minha jaqueta, mas ele emperrou no meio do tecido.",
+      "O dentista pediu para eu dar um rizz bem aberto para ele examinar meus dentes."
+    ],
+    "significados_incorretos": [
+      "Prato culinário feito de grãos brancos cozidos, muito comum na mesa brasileira.",
+      "Fecho metálico de roupas e mochilas, popularmente conhecido como zíper.",
+      "Expressão facial que demonstra alegria abrindo a boca e mostrando os dentes."
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "sigma",
+    "variacoes": ["homem sigma"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa independente, focada em si mesma e que não segue convenções de grupos; frequentemente usado de forma irônica ou meme.",
+    "tags": ["Geek", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Ele age como um verdadeiro sigma, sempre treinando sozinho e ignorando as fofocas.",
+    "exemplos_incorretos": [
+      "Para resolver essa conta de matemática, você precisa calcular o sigma dos valores.",
+      "Comprei uma lente da marca sigma para conseguir fotografar os pássaros de longe.",
+      "A professora de física explicou que a força sigma atua no centro de gravidade."
+    ],
+    "significados_incorretos": [
+      "Letra do alfabeto grego utilizada na matemática para representar o somatório de valores.",
+      "Marca renomada de equipamentos fotográficos e lentes de câmeras de alta precisão.",
+      "Conceito da física quântica que mede a densidade da matéria em buracos negros."
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "biscoitar",
+    "variacoes": ["biscoito", "biscoiteiro"],
+    "classe_gramatical": "verbo",
+    "significado": "Buscar atenção, elogios ou curtidas nas redes sociais por meio de postagens que ressaltam a própria aparência ou conquistas.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "depende",
+    "exemplo_correto": "Ela postou aquela foto na academia de novo só para biscoitar e ganhar elogios.",
+    "exemplos_incorretos": [
+      "Toda tarde minha avó adora biscoitar a massa amanteigada e colocar no forno.",
+      "Acabei de biscoitar meu lanche no sofá e agora a almofada está cheia de farelos.",
+      "Não se esqueça de biscoitar o cachorro com aquele petisco de carne que ele gosta."
+    ],
+    "significados_incorretos": [
+      "Ato de assar pequenas porções de massa doce ou salgada até ficarem crocantes.",
+      "Ato de esfarelar e derrubar restos de comida seca em superfícies limpas.",
+      "Ação de recompensar um animal de estimação utilizando petiscos industrializados."
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "lacrar",
+    "variacoes": ["lacre", "lacradora", "lacrou"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, dar uma excelente resposta ou se sobressair de maneira vitoriosa e irrefutável em uma conversa.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela conseguiu lacrar no debate ao trazer dados que ninguém mais conhecia.",
+    "exemplos_incorretos": [
+      "O carteiro veio lacrar a caixa de papelão com bastante fita adesiva para não abrir.",
+      "Preciso lacrar a janela do meu quarto porque o vento frio está entrando pela fresta.",
+      "O fiscal precisou lacrar o restaurante de comida japonesa porque o alvará estava vencido."
+    ],
+    "significados_incorretos": [
+      "Fechar hermeticamente ou colar embalagens e envelopes com fita ou cera derretida.",
+      "Vedar frestas de portas e janelas com silicone para evitar correntes de ar.",
+      "Ato jurídico de interditar e fechar um estabelecimento que descumpriu regras de vigilância."
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "hablar",
+    "variacoes": ["hablou"],
+    "classe_gramatical": "verbo",
+    "significado": "Dizer verdades de maneira firme, direta e sem rodeios sobre algum assunto.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Quando ela pegou o microfone, começou a hablar tudo o que estava entalado na nossa garganta.",
+    "exemplos_incorretos": [
+      "Para viajar para a Argentina no fim de ano, eu preciso aprender a hablar fluentemente.",
+      "Ele começou a hablar com o guia turístico em Madri para pedir informações do museu.",
+      "Estou fazendo um curso para hablar o vocabulário básico de viagens pela América Latina."
+    ],
+    "significados_incorretos": [
+      "Ato literal de comunicar-se utilizando o idioma espanhol.",
+      "Matricular-se em instituições tradicionais de ensino de idiomas estrangeiros.",
+      "Traduzir simultaneamente documentos oficiais do português para o espanhol."
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "slay",
+    "variacoes": ["slayou"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão usada para elogiar ou aprovar quando alguém arrasa no visual, no estilo ou na performance.",
+    "tags": ["Pop", "Redes sociais", "Maquiagem", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Amiga, você está incrível com esse vestido novo, muito slay!",
+    "exemplos_incorretos": [
+      "No inverno passado, nós descemos a montanha de neve montados no nosso slay.",
+      "O guerreiro daquele filme usou uma espada de prata para dar o slay no dragão.",
+      "Eu preciso comprar ração para os cachorros que vão puxar o slay na expedição."
+    ],
+    "significados_incorretos": [
+      "Veículo de madeira sem rodas puxado por cães para deslizar sobre a neve.",
+      "Golpe final e fatal desferido contra um monstro em jogos de fantasia medieval.",
+      "Instrumento de corte musical utilizado em produções de heavy metal."
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "divar",
+    "variacoes": ["divou", "diva"],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar, sobressair-se de forma glamorosa ou agir com grande autoconfiança e brilho.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela resolveu divar na formatura e escolheu o vestido mais deslumbrante da loja.",
+    "exemplos_incorretos": [
+      "Durante a sessão de terapia, eu passei a hora inteira sentado no divar conversando.",
+      "A professora pediu para divar a turma em dois grupos para o trabalho de ciências.",
+      "O marceneiro vai divar a tábua de madeira bem no meio para fazer as duas prateleiras."
+    ],
+    "significados_incorretos": [
+      "Sofá sem encosto clássico utilizado em consultórios de psicanálise e psicologia.",
+      "Ação matemática ou física de separar algo grande em partes iguais e menores.",
+      "Cortar verticalmente um material sólido usando serras elétricas de alta precisão."
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "de cria",
+    "variacoes": ["cria"],
+    "classe_gramatical": "locução adjetiva",
+    "significado": "Algo estiloso, autêntico, de alta qualidade ou característico da vivência urbana e das periferias.",
+    "tags": ["Cotidiano", "Esportes"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O corte de cabelo que ele fez na barbearia hoje ficou muito de cria.",
+    "exemplos_incorretos": [
+      "Fui visitar a fazenda do meu tio e vi um bezerrinho de cria mamando no pasto.",
+      "A de cria do meu cachorro nasceu ontem à noite e são quatro filhotinhos lindos.",
+      "Essa ração nova é excelente para fortalecer a de cria dos pássaros no viveiro."
+    ],
+    "significados_incorretos": [
+      "Animal recém-nascido ou em período de amamentação em ambientes rurais.",
+      "Processo biológico de reprodução e parto em animais de estimação.",
+      "Conjunto de técnicas zootécnicas para reprodução em cativeiro de aves raras."
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "miar",
+    "variacoes": ["miou", "miei"],
+    "classe_gramatical": "verbo",
+    "significado": "Dar errado, ser cancelado ou não acontecer (referindo-se a um plano ou compromisso).",
+    "tags": ["Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "A nossa viagem para a praia no fim de semana acabou de miar por causa das fortes chuvas.",
+    "exemplos_incorretos": [
+      "Eu não consegui dormir à noite porque o gato do vizinho começou a miar no telhado.",
+      "Quando o filhote de leão tentou rugir pela primeira vez, ele só conseguiu miar fraco.",
+      "Vou colocar um pouco de leite no potinho para ver se o gatinho para de miar."
+    ],
+    "significados_incorretos": [
+      "Som estridente e agudo emitido naturalmente por felinos domésticos.",
+      "Vocalização instintiva de gatos filhotes para pedir comida ou reclamar de frio.",
+      "Ato de imitar a voz de um gato de forma teatral em peças infantis."
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "gatilho",
+    "variacoes": ["gatilhos"],
+    "classe_gramatical": "substantivo",
+    "significado": "Algo que provoca uma forte reação emocional, lembrança marcante ou identificação pessoal.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Assistir àquele filme sobre abandono infantil me deu um gatilho muito forte.",
+    "exemplos_incorretos": [
+      "O policial treinou no estande de tiro puxando o gatilho bem devagar.",
+      "Aperte o gatilho do borrifador de água para molhar as folhas da samambaia.",
+      "A furadeira quebrou porque a mola que fica presa no gatilho interno arrebentou."
+    ],
+    "significados_incorretos": [
+      "Peça metálica mecânica acionada pelo dedo para disparar armas de fogo.",
+      "Mecanismo de pressão manual encontrado em embalagens de produtos de limpeza.",
+      "Botão interruptor de ferramentas elétricas que aciona a rotação do motor."
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "hypado",
+    "variacoes": ["hype", "hypar", "hipado"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo que está na moda, muito valorizado ou cercado de grande expectativa.",
+    "tags": ["Cotidiano", "Geek", "Jogos"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Esse jogo novo está tão hypado que os servidores caíram logo no dia do lançamento.",
+    "exemplos_incorretos": [
+      "Eu não coloco sal na comida porque minha família tem histórico de ser muito hypado.",
+      "No zoológico, a criança ficou encantada vendo o hypado nadando na lagoa de lama.",
+      "Para tratar esse problema hormonal crônico, você vai precisar de um remédio hypado."
+    ],
+    "significados_incorretos": [
+      "Condição médica clínica associada a níveis altos de pressão arterial.",
+      "Mamífero herbívoro de grande porte que vive em rios e lagos africanos.",
+      "Doença tireoidiana onde o metabolismo funciona de forma muito acelerada."
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "mitar",
+    "variacoes": ["mitou", "mito"],
+    "classe_gramatical": "verbo",
+    "significado": "Fazer algo genial, surpreendente ou de grande impacto que gera admiração e elogios.",
+    "tags": ["Cotidiano", "Esportes"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele conseguiu mitar na entrevista de emprego ao responder todas as perguntas em inglês fluente.",
+    "exemplos_incorretos": [
+      "Na aula de história, o professor gostava de mitar sobre os deuses antigos do Olimpo.",
+      "O livro fala que você não deve mitar histórias de fantasmas para assustar as crianças.",
+      "A imprensa começou a mitar os acontecimentos daquele acidente para vender jornal."
+    ],
+    "significados_incorretos": [
+      "Ação de transformar um acontecimento histórico banal em uma lenda fantasiosa.",
+      "Contar histórias populares baseadas na mitologia grega, nórdica ou romana.",
+      "Inventar informações irreais para exagerar os detalhes de uma notícia verdadeira."
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "foi de base",
+    "variacoes": ["ir de base", "foi de arrasta", "foi de arrasta pra cima", "foi de americanas"],
+    "classe_gramatical": "locução verbal",
+    "significado": "Expressão bem-humorada para indicar que algo ou alguém quebrou, estragou, acabou ou faleceu.",
+    "tags": ["Jogos", "Geek", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Meu celular caiu da varanda e foi de base, agora vou precisar comprar outro.",
+    "exemplos_incorretos": [
+      "Antes de passar o batom, a maquiadora foi de base e cobriu todas as olheiras.",
+      "O jogador correu muito rápido e logo depois foi de base na partida de beisebol.",
+      "O pedreiro escavou o terreno e foi de base cimentando o alicerce do prédio."
+    ],
+    "significados_incorretos": [
+      "Ato de aplicar a primeira camada de maquiagem líquida para nivelar a pele.",
+      "Chegar na primeira marcação segura de campo durante uma partida de beisebol.",
+      "Ato de construir a estrutura subterrânea inicial que sustenta uma construção civil."
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "delulu",
+    "variacoes": ["delulice"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa extremamente iludida ou que cria fantasias românticas irrealistas na própria mente.",
+    "tags": ["Relacionamentos", "Kpop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ela está tão delulu que acha que o ator famoso curtiu a foto dela de propósito.",
+    "exemplos_incorretos": [
+      "Eu comprei um vestido delulu cheio de pedrarias brilhantes para ir ao casamento.",
+      "O carro modelo delulu vem com bancos de couro originais e teto solar automático.",
+      "Eles se hospedaram na suíte delulu do hotel cinco estrelas para passar a lua de mel."
+    ],
+    "significados_incorretos": [
+      "Categoria de produtos exclusivos, caros e luxuosos, conhecida como 'deluxe'.",
+      "Termo infantil utilizado para se referir a personagens de quadrinhos.",
+      "Classe de assentos mais confortáveis e caros em um voo internacional."
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "gag",
+    "variacoes": ["gag de la gag", "gagged"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Ficar em choque, extremamente chocado ou sem palavras diante de um visual impecável ou notícia surpreendente.",
+    "tags": ["Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Eu fiquei completamente gag quando vi a revelação daquele figurino no tapete vermelho.",
+    "exemplos_incorretos": [
+      "O mágico fez uma gag engraçada com um lenço saindo do bolso e a plateia riu.",
+      "Aquele filme mudo antigo era famoso pela gag do escorregão na casca de banana.",
+      "Comi muito rápido e me deu um gag forte na garganta engolindo o pedaço de pão."
+    ],
+    "significados_incorretos": [
+      "Cena rápida de comédia física em filmes antigos ou apresentações de circo.",
+      "Acessório restritivo colocado na boca em truques de ilusionismo.",
+      "Ato reflexo de engasgar ou sufocar levemente com algum pedaço de comida."
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "lacre",
+    "variacoes": ["lacrei", "lacração"],
+    "classe_gramatical": "substantivo",
+    "significado": "Resposta perfeita ou atitude brilhante que encerra uma discussão de forma memorável.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O discurso de encerramento dela foi um verdadeiro lacre que deixou todo mundo em silêncio.",
+    "exemplos_incorretos": [
+      "Eu tentei abrir o pote de palmito mas o lacre de metal estava apertado demais.",
+      "Para abrir a latinha de refrigerante, basta você puxar o lacre com o dedo indicador.",
+      "O documento imperial verdadeiro sempre vinha com um lacre de cera vermelha grossa."
+    ],
+    "significados_incorretos": [
+      "Anel metálico dobrável utilizado para abrir latas de bebidas carbonatadas.",
+      "Selo plástico colado na tampa de embalagens de alimentos para garantir segurança.",
+      "Porção de cera endurecida sobre um selo oficial que comprova autenticidade."
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "F",
+    "variacoes": ["F no chat"],
+    "classe_gramatical": "interjeição",
+    "significado": "Sinal de luto, respeito ou lamento por algo que deu errado, inspirado no comando de um jogo eletrônico.",
+    "tags": ["Jogos", "Geek", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "O time foi eliminado na primeira rodada do campeonato, podem mandar F nos comentários.",
+    "exemplos_incorretos": [
+      "O aluno estudou muito pouco e tirou um grande F na prova final de matemática.",
+      "Na aula de música, nós aprendemos a tocar a nota F no violão.",
+      "Aperte a tecla F no seu teclado para que a tela cheia do vídeo seja ativada."
+    ],
+    "significados_incorretos": [
+      "Letra que simboliza a menor nota ou reprovação acadêmica em sistemas de ensino americanos.",
+      "A sexta letra do alfabeto latino moderno, logo após a vogal E.",
+      "Acorde musical agudo representado por uma letra em partituras cifradas."
+    ]
+  },
+  {
+    "id": 19,
+    "nome": "aesthetic",
+    "variacoes": ["estética"],
+    "classe_gramatical": "substantivo",
+    "significado": "Visual ou estilo estético harmonioso, padronizado e visualmente agradável nas redes sociais.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela organiza o quarto inteiro apenas com tons pastéis para manter o seu aesthetic impecável.",
+    "exemplos_incorretos": [
+      "Vou agendar uma sessão na aesthetic amanhã de manhã para limpar a pele do meu rosto.",
+      "A cirurgia foi um sucesso, agora a paciente precisará usar uma fita aesthetic no corte.",
+      "A doutora usou um creme aesthetic na maca antes de começar as massagens corporais."
+    ],
+    "significados_incorretos": [
+      "Profissional ou clínica especializada em tratamentos corporais e massagens relaxantes.",
+      "Adesivo hipoalergênico transparente utilizado por médicos em curativos delicados.",
+      "Loção cosmética industrial recomendada para esfoliar cravos profundos."
+    ]
+  },
+  {
+    "id": 20,
+    "nome": "baddie",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Estilo ou pessoa que exala autoconfiança, beleza marcante e muita atitude nas roupas e maquiagem.",
+    "tags": ["Maquiagem", "Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Com aquele delineado forte e botas de couro, ela estava uma verdadeira baddie na festa.",
+    "exemplos_incorretos": [
+      "Aquele personagem com a máscara escura era o baddie principal do filme de terror.",
+      "No último capítulo do jogo, você precisa lutar contra o baddie de fogo na caverna.",
+      "Comer comida estragada pode causar um baddie enorme no seu sistema digestivo."
+    ],
+    "significados_incorretos": [
+      "Vilão, antagonista ou personagem maligno na trama de um filme ou quadrinho.",
+      "Indisposição estomacal aguda causada por intoxicação alimentar em viagens.",
+      "Ato de agir de forma deliberadamente maldosa e criminosa na sociedade."
+    ]
+  },
+  {
+    "id": 21,
+    "nome": "bed rot",
+    "variacoes": ["bed rotting"],
+    "classe_gramatical": "substantivo",
+    "significado": "Hábito de passar o dia inteiro deitado na cama procrastinando, assistindo a vídeos ou descansando.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Eu estava tão cansada do trabalho que meu fim de semana foi puro bed rot maratonando séries.",
+    "exemplos_incorretos": [
+      "A umidade do quarto foi tão forte que o estrado de madeira sofreu um grande bed rot.",
+      "Vou precisar comprar um colchão novo porque esse antigo já começou a ter bed rot nas espumas.",
+      "As plantas que ficaram no escuro ao lado da cama desenvolveram um bed rot terrível nas raízes."
+    ],
+    "significados_incorretos": [
+      "Processo de apodrecimento biológico da madeira do estrado de camas.",
+      "Condição de mofo e proliferação de fungos encontrada em colchões molhados.",
+      "Doença foliar comum em plantas de interior que recebem pouco vento."
+    ]
+  },
+  {
+    "id": 22,
+    "nome": "coringar",
+    "variacoes": ["coringou", "coringando"],
+    "classe_gramatical": "verbo",
+    "significado": "Surtar, perder o controle das próprias emoções ou rir de puro nervosismo diante de dificuldades.",
+    "tags": ["Geek", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Quando o computador desligou sem eu salvar o meu trabalho, eu quase comecei a coringar.",
+    "exemplos_incorretos": [
+      "Para eu ganhar a partida de buraco, eu precisei coringar a carta especial no último turno.",
+      "O ator de circo foi coringar o próprio rosto pintando bochechas vermelhas para o show.",
+      "Ele aprendeu a coringar baralhos com as mãos bem rápido e surpreendeu os amigos na mesa."
+    ],
+    "significados_incorretos": [
+      "Ação estratégica de utilizar a carta 'Coringa' em jogos de baralho para vencer a rodada.",
+      "Ato de aplicar maquiagem de palhaço teatral para espetáculos circenses.",
+      "Técnica de prestidigitação que envolve misturar cartas com agilidade e ilusão."
+    ]
+  },
+  {
+    "id": 23,
+    "nome": "CPA",
+    "variacoes": ["se pá"],
+    "classe_gramatical": "locução adverbial",
+    "significado": "Expressão abreviada de 'se pá', que indica possibilidade, incerteza ou 'talvez'.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "CPA eu chego um pouco mais tarde no churrasco amanhã, depende do trânsito.",
+    "exemplos_incorretos": [
+      "O analista entregou o relatório do CPA mostrando que os lucros da empresa caíram neste mês.",
+      "Para ser gerente de banco de investimentos, você precisa estudar muito e passar no CPA.",
+      "A faculdade enviou a pesquisa do CPA para todos os alunos avaliarem os professores do semestre."
+    ],
+    "significados_incorretos": [
+      "Certificado Profissional Anbima exigido legalmente para quem atua no mercado financeiro.",
+      "Custo Por Aquisição, uma métrica matemática usada em campanhas de marketing digital.",
+      "Comissão Própria de Avaliação, conselho universitário responsável por vistorias no MEC."
+    ]
+  },
+  {
+    "id": 24,
+    "nome": "crash out",
+    "variacoes": ["crashou out"],
+    "classe_gramatical": "verbo",
+    "significado": "Surtar de raiva, explodir emocionalmente ou perder totalmente a cabeça diante de uma situação estressante.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele estava guardando tanta frustração que acabou dando um crash out no meio da reunião.",
+    "exemplos_incorretos": [
+      "A pista molhada fez o pneu derrapar e o carro dar um crash out bem feio no muro lateral.",
+      "Ontem de madrugada, o servidor do site deu crash out e ficamos sem e-mail por dez horas.",
+      "Eu estava tão exausto depois do treino de natação que cheguei em casa e dei um crash out na cama."
+    ],
+    "significados_incorretos": [
+      "Acidente rodoviário físico e destrutivo envolvendo a colisão frontal de veículos.",
+      "Falha estrutural catastrófica onde um sistema de computador paralisa e desliga sozinho.",
+      "Ato de adormecer instantaneamente em um sono profundo devido ao cansaço corporal extremo."
+    ]
+  },
+  {
+    "id": 25,
+    "nome": "deixa ele cozinhar",
+    "variacoes": ["let him cook", "deixa ela cozinhar"],
+    "classe_gramatical": "locução verbal",
+    "significado": "Expressão usada para sugerir que deixem alguém desenvolver sua própria ideia, mesmo que pareça estranha no começo.",
+    "tags": ["Cotidiano", "Redes sociais", "Jogos"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Essa tática no jogo parece ruim, mas não julguem antes da hora, deixa ele cozinhar.",
+    "exemplos_incorretos": [
+      "O frango ainda está muito cru por dentro, então abaixa o fogo e deixa ele cozinhar mais um pouco.",
+      "Eu não posso falar com o chef agora no meio do restaurante lotado, deixa ele cozinhar em paz.",
+      "Coloca o macarrão na água quente e deixa ele cozinhar por pelo menos oito minutos sem tampar."
+    ],
+    "significados_incorretos": [
+      "Ato literal de aquecer alimentos crus no fogo até atingirem a textura comestível.",
+      "Permitir que o profissional da gastronomia trabalhe sem ser interrompido fisicamente.",
+      "Processo químico e térmico de amaciar massas alimentícias em água fervente."
+    ]
+  },
+  {
+    "id": 26,
+    "nome": "dump",
+    "variacoes": ["photo dump"],
+    "classe_gramatical": "substantivo",
+    "significado": "Sequência ou carrossel de fotos variadas, aleatórias e despretensiosas postadas de uma vez nas redes sociais.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Final do mês chegou e ela fez um dump no feed com todos os rolês legais que aconteceram.",
+    "exemplos_incorretos": [
+      "O caminhão passou de manhã e descarregou todo o lixo orgânico lá no dump da rodovia.",
+      "O sistema pediu para eu realizar um dump na memória cache para esvaziar os arquivos corrompidos.",
+      "Por favor, despeje o óleo sujo dentro desse recipiente próprio, nunca no dump da pia."
+    ],
+    "significados_incorretos": [
+      "Aterro sanitário ou lixão a céu aberto onde resíduos sólidos urbanos são despejados.",
+      "Ação técnica de descartar dejetos físicos ou esvaziar a memória temporária de um computador.",
+      "Sifão de encanamento responsável por bloquear maus odores em ralos residenciais."
+    ]
+  },
+  {
+    "id": 27,
+    "nome": "fanfic",
+    "variacoes": ["fic", "fanfiqueira"],
+    "classe_gramatical": "substantivo",
+    "significado": "História inventada, boato, exagero dramático ou fantasia amorosa criada mentalmente.",
+    "tags": ["Relacionamentos", "Pop", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "depende",
+    "exemplo_correto": "Ela me contou que ficou com aquele ator na balada, mas eu tenho certeza que é fanfic.",
+    "exemplos_incorretos": [
+      "Eu sou tão viciado naquele seriado espacial que passei a noite toda lendo uma fanfic sobre naves.",
+      "O site especializado publicou uma fanfic maravilhosa juntando os heróis da Marvel com os da DC.",
+      "A autora começou sua carreira escrevendo fanfic em fóruns na internet antes de publicar seu livro."
+    ],
+    "significados_incorretos": [
+      "Conto literário gratuito e não-oficial escrito por admiradores no universo de uma obra já existente.",
+      "Revista impressa amadora montada por fã-clubes para circulação interna.",
+      "Adaptação de roteiros de cinema para formato de texto digital sem fins lucrativos."
+    ]
+  },
+  {
+    "id": 28,
+    "nome": "fomo",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Ansiedade provocada pelo medo de perder eventos, tendências ou momentos de diversão dos quais outros estão participando.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ver todos os meus amigos no show pelo Instagram me deu um fomo enorme, já que eu fiquei em casa.",
+    "exemplos_incorretos": [
+      "Eu assei a lasanha usando um fomo de alumínio muito resistente no jantar de domingo.",
+      "O eletricista encheu o buraco do tijolo com um fomo branco em spray para bloquear a chuva.",
+      "Na receita do bolo, você tem que bater a clara em neve até formar um fomo bem espesso."
+    ],
+    "significados_incorretos": [
+      "Recipiente de metal refratário utilizado para assar alimentos em temperaturas muito altas.",
+      "Espuma de poliuretano expansiva muito utilizada em preenchimentos e vedações na construção civil.",
+      "Bolhas de ar compactadas que se formam quando se agita fortemente líquidos com proteínas."
+    ]
+  },
+  {
+    "id": 29,
+    "nome": "jantou",
+    "variacoes": ["jantar", "jantou muito"],
+    "classe_gramatical": "verbo",
+    "significado": "Diz-se quando alguém rebate críticas ou argumentos alheios com maestria absoluta em uma discussão.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O jornalista jantou o político arrogante ao vivo e trouxe as provas de tudo.",
+    "exemplos_incorretos": [
+      "Ontem meu pai chegou cansado do serviço e jantou uma macarronada muito rápido.",
+      "Eu não estava com muita fome à noite, então a família toda jantou sem a minha companhia.",
+      "No restaurante francês chique, a modelo jantou apenas uma pequena salada com molho leve."
+    ],
+    "significados_incorretos": [
+      "Ato literal de ingerir alimentos sólidos ou líquidos no período noturno.",
+      "Organizar mesas e cadeiras para a refeição principal servida à noite.",
+      "Digerir grandes porções de carnes e massas após as dezoito horas."
+    ]
+  },
+  {
+    "id": 30,
+    "nome": "lowkey",
+    "variacoes": [],
+    "classe_gramatical": "advérbio",
+    "significado": "De modo discreto, contido, em segredo ou com moderação.",
+    "tags": ["Redes sociais", "Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Eu falei que não ligo para a fofoca, mas lowkey eu estou morrendo de curiosidade.",
+    "exemplos_incorretos": [
+      "O fotógrafo pediu para desligar o flash e usar uma iluminação mais lowkey para destacar as sombras.",
+      "O cantor estava com a garganta ruim, então ele fez o refrão da música numa afinação bem lowkey.",
+      "Para tocar a melodia assustadora, o pianista apertou apenas a lowkey mais grave do teclado."
+    ],
+    "significados_incorretos": [
+      "Técnica fotográfica onde as zonas de sombra predominam amplamente na composição da imagem.",
+      "Nota musical ou tom extremamente grave produzido por cordas vocais cansadas.",
+      "Tecla de cor preta localizada na extremidade esquerda inferior dos pianos de cauda."
+    ]
+  },
+  {
+    "id": 31,
+    "nome": "moggar",
+    "variacoes": ["mogged", "mogging"],
+    "classe_gramatical": "verbo",
+    "significado": "Superar amplamente outra pessoa em estilo, aparência física ou presença marcante em um ambiente.",
+    "tags": ["Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele entrou de terno sob medida na sala de reunião e acabou de moggar todos os outros gerentes.",
+    "exemplos_incorretos": [
+      "O fazendeiro foi cedo para o curral e o bezerro começou a moggar pedindo o leite matinal.",
+      "O carpinteiro prefere moggar as mesas da biblioteca usando sempre madeiras avermelhadas.",
+      "Nesse frio, eu adoro moggar um chocolate quente na caneca grossa perto da lareira acesa."
+    ],
+    "significados_incorretos": [
+      "Som barulhento e longo emitido por bois e vacas nos pastos durante o dia.",
+      "Construir ou entalhar objetos decorativos e móveis robustos usando o mogno.",
+      "Servir ou segurar líquidos escaldantes dentro de canecas de cerâmica grossa, tipo 'mug'."
+    ]
+  },
+  {
+    "id": 32,
+    "nome": "POV",
+    "variacoes": [],
+    "classe_gramatical": "substantivo",
+    "significado": "Sigla para 'Point of View' (ponto de vista); formato de postagem de vídeo gravado sob a perspectiva do espectador.",
+    "tags": ["Redes sociais", "Geek", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "O vídeo era um POV hilário simulando a visão de um gatinho tentando pegar um inseto voando na sala.",
+    "exemplos_incorretos": [
+      "Na aula de biologia, o professor mostrou as células pelo POV microscópio no centro da bancada.",
+      "O piloto do avião ligou o painel do POV para verificar a rota de voo automática antes de decolar.",
+      "O motorista de ônibus parou no POV do centro da cidade para os dez passageiros descerem rápido."
+    ],
+    "significados_incorretos": [
+      "Equipamento de lentes de aumento posicionado de forma vertical em laboratórios (Posição Óptica Vertical).",
+      "Painel de Operações de Voo, display eletrônico localizado no painel superior de cabines de aviação.",
+      "Abreviação metropolitana para Ponto de Ônibus de Viagens rápidas em terminais urbanos."
+    ]
+  },
+  {
+    "id": 33,
+    "nome": "red flag",
+    "variacoes": ["red flags"],
+    "classe_gramatical": "substantivo",
+    "significado": "Sinal ou traço comportamental de alerta que indica problemas de compatibilidade ou potencial toxicidade.",
+    "tags": ["Relacionamentos", "Redes sociais", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele falar mal de todas as ex-namoradas no primeiro encontro já é uma grande red flag para mim.",
+    "exemplos_incorretos": [
+      "O salva-vidas colocou a red flag na areia da praia porque o mar estava muito agitado e perigoso.",
+      "Durante a corrida de Fórmula 1, o acidente foi tão forte que os juízes tiveram que levantar a red flag.",
+      "A torcida agitou a red flag gigante na arquibancada do estádio quando o atacante marcou o gol da vitória."
+    ],
+    "significados_incorretos": [
+      "Bandeira de sinalização de tecido usada na praia indicando alto risco de afogamento.",
+      "Código de regulamentação visual do automobilismo ordenando a paralisação imediata da prova.",
+      "Símbolo oficial de pano ostentado por times de futebol cujas cores principais são escarlates."
+    ]
+  },
+  {
+    "id": 34,
+    "nome": "skibidi",
+    "variacoes": ["skibidi toilet"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Termo irônico com significados diversos como bizarro, legal ou sem sentido, de imensa popularidade na internet infantil.",
+    "tags": ["Geek", "Redes sociais", "Jogos", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "depende",
+    "exemplo_correto": "O meu sobrinho mais novo não para de repetir skibidi enquanto corre pela casa o dia inteiro.",
+    "exemplos_incorretos": [
+      "Nós fomos para as montanhas de Aspen na semana passada para andar de skibidi na neve fresca.",
+      "A bota de skibidi é bem pesada e encaixa perfeitamente nas duas pranchas finas para deslizar.",
+      "No parque aquático, as crianças adoram descer de skibidi na pista de lona molhada e lisa."
+    ],
+    "significados_incorretos": [
+      "Esporte radical de inverno que consiste em deslizar por encostas nevadas utilizando botas acopladas.",
+      "Peça de equipamento plástico retangular acoplado aos pés em esportes de inverno extremos.",
+      "Brincadeira infantil de deslizar sentado sobre lonas ensaboadas em dias de muito calor."
+    ]
+  },
+  {
+    "id": 35,
+    "nome": "tamo junto",
+    "variacoes": ["tmj"],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão que indica parceria, solidariedade, concordância ou forte amizade.",
+    "tags": ["Cotidiano", "Relacionamentos"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Pode me ligar se precisar de ajuda com a mudança amanhã de manhã, tamo junto!",
+    "exemplos_incorretos": [
+      "O metrô na hora do rush estava tão cheio que nós tamo junto e apertados contra a porta de vidro.",
+      "Para fazer essa vitamina reforçada, você coloca banana e mamão e bate tamo junto no liquidificador.",
+      "Você precisa amarrar as duas cordas do barco de forma que fiquem tamo junto no poste do cais."
+    ],
+    "significados_incorretos": [
+      "Estar prensado, esmagado ou com os corpos colados fisicamente pela falta de espaço em conduções.",
+      "Ato culinário de misturar ingredientes e triturá-los no mesmo recipiente ao mesmo tempo.",
+      "Nó marinheiro onde dois barbantes são sobrepostos para fortalecer a amarra contra os ventos."
+    ]
+  },
+  {
+    "id": 36,
+    "nome": "lá ele",
+    "variacoes": [],
+    "classe_gramatical": "interjeição",
+    "significado": "Interjeição baiana usada de forma cômica para se defender de piadas de duplo sentido ou insinuações indesejadas.",
+    "tags": ["Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele falou que ia comer o meu bolo inteiro sozinho, logo respondi 'lá ele' pra não dar margem.",
+    "exemplos_incorretos": [
+      "Eu perguntei onde o ladrão tinha corrido e o policial apontou o dedo gritando: 'olha, lá ele!'",
+      "O meu cachorro escapou da coleira na praça, então eu corri atrás dizendo: 'pegue, foi pra lá ele!'",
+      "Professor, na frase 'João comeu a maçã', podemos dizer que o sujeito é exatamente lá ele?"
+    ],
+    "significados_incorretos": [
+      "Expressão locativa apontando o dedo na direção exata de um indivíduo do sexo masculino correndo.",
+      "Comando de direção geográfica dado em voz alta para cães que se perderam nos parques.",
+      "Classe gramatical correspondente ao pronome pessoal do caso reto da terceira pessoa do singular."
+    ]
+  },
+  {
+    "id": 37,
+    "nome": "massa",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo considerado muito legal, excelente, divertido ou surpreendente.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O filme de terror que nós assistimos no cinema ontem à noite foi muito massa.",
+    "exemplos_incorretos": [
+      "Na aula de física, nós aprendemos a calcular a massa do bloco de aço para descobrir a gravidade.",
+      "Para fazer o bolo crescer macio, você deve bater a massa suavemente usando uma espátula de pau.",
+      "O pedreiro espalhou a massa fresca sobre o tijolo usando uma pá para o muro ficar resistente."
+    ],
+    "significados_incorretos": [
+      "Grandeza física de um corpo que mede a quantidade de matéria e a inércia em laboratórios.",
+      "Mistura culinária úmida e crua de farinha, ovos e líquidos que é levada aos fornos quentes.",
+      "Argamassa de cimento e areia molhada utilizada para fixar lajotas na alvenaria."
+    ]
+  },
+  {
+    "id": 38,
+    "nome": "0800",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Diz-se de algo que é totalmente gratuito ou de graça.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Não precisei pagar nada para entrar no show da praia, o evento foi cem por cento 0800.",
+    "exemplos_incorretos": [
+      "Para fazer a reclamação da fatura da internet, você precisa ligar para o número 0800 da operadora.",
+      "O capitão determinou que a tropa começasse o treinamento físico pesado rigorosamente às 0800 horas.",
+      "O caixa do supermercado travou e exibiu a mensagem de erro 0800 na tela do computador."
+    ],
+    "significados_incorretos": [
+      "Prefixo telefônico institucional de ligações diretas isentas de cobranças de tarifas nas centrais.",
+      "Horário pontual do formato militar correspondente às oito horas da manhã no quartel.",
+      "Código hexadecimal técnico de erro fatal exibido por computadores de sistema antigo."
+    ]
+  },
+  {
+    "id": 39,
+    "nome": "embrazar",
+    "variacoes": ["embrazou", "embrazado"],
+    "classe_gramatical": "verbo",
+    "significado": "Ficar muito animado, divertir-se intensamente ou entrar no clima de uma festa com energia alta.",
+    "tags": ["Pop", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "O som estava alto demais e nós fomos para a pista embrazar até o sol nascer na praia.",
+    "exemplos_incorretos": [
+      "Meu avô abanou bem forte a churrasqueira para embrazar logo o carvão debaixo da picanha.",
+      "Tome cuidado com a panela quente para não embrazar as pontas dos dedos tirando a tampa de metal.",
+      "O cozinheiro resolveu embrazar o pedaço de filé direto no fogo vivo para ele pegar gosto defumado."
+    ],
+    "significados_incorretos": [
+      "Ação de assoprar ou atear fogo em pedaços de carvão vegetal até que eles fiquem incandescentes.",
+      "Provocar queimaduras severas de segundo grau na pele ao tocar em superfícies quentes.",
+      "Técnica culinária extrema de selar carnes encostando-as diretamente em cinzas ardentes."
+    ]
+  },
+  {
+    "id": 40,
+    "nome": "brotar",
+    "variacoes": ["brota", "brotou"],
+    "classe_gramatical": "verbo",
+    "significado": "Comparecer ou aparecer de repente em algum local, festa ou encontro com amigos.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Nós vamos fazer um churrasco lá em casa no domingo, brota lá pra gente conversar um pouco.",
+    "exemplos_incorretos": [
+      "Depois de muita chuva no interior, o feijão começou a brotar no vaso de plástico com algodão molhado.",
+      "O adolescente foi dormir com a pele limpa, mas hoje de manhã brotar duas espinhas feias na testa dele.",
+      "No meio das rochas escuras da caverna, a água cristalina começou a brotar silenciosamente em um riacho."
+    ],
+    "significados_incorretos": [
+      "Processo biológico natural em que a casca de uma semente se rompe e o primeiro caule nasce.",
+      "Erupção cutânea repentina causada por inflamação nas glândulas da pele jovem.",
+      "Emanar ou jorrar água potável diretamente dos lençóis freáticos no solo."
+    ]
+  },
+  {
+    "id": 41,
+    "nome": "mec",
+    "variacoes": ["tá mec"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Situação que está favorável, tranquila, confortável ou totalmente sossegada.",
+    "tags": ["Cotidiano"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Não precisa se preocupar com as contas deste mês não, irmão, aqui tá tudo mec.",
+    "exemplos_incorretos": [
+      "A escola precisou enviar os documentos dos professores novos para o mec validar os cadastros.",
+      "Eu estudei bastante porque quero fazer o vestibular e entrar num curso de engenharia mec.",
+      "O carro começou a fazer um barulho estranho no motor, então levei direto para o mec olhar."
+    ],
+    "significados_incorretos": [
+      "Sigla oficial para o Ministério da Educação, órgão federal máximo de ensino no país.",
+      "Abreviação acadêmica referente aos complexos cursos superiores de mecânica.",
+      "Forma reduzida para chamar o mecânico que realiza manutenção nas oficinas de bairro."
+    ]
+  },
+  {
+    "id": 42,
+    "nome": "chave",
+    "variacoes": ["chavoso", "chaveoso"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Alguém ou algo extremamente bem arrumado, estiloso ou bonito, comum nas gírias urbanas de periferia.",
+    "tags": ["Cotidiano", "Pop"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Com essa jaqueta nova e o tênis branco e limpo, você ficou muito chave pro rolê de hoje.",
+    "exemplos_incorretos": [
+      "Cheguei em casa cansado do serviço e percebi que esqueci a chave de metal pendurada na maçaneta.",
+      "O encanador pediu a chave inglesa número dez para apertar com força as porcas que estavam frouxas na pia.",
+      "Para você extrair esse arquivo compactado no computador, será necessário digitar a chave de segurança correta."
+    ],
+    "significados_incorretos": [
+      "Objeto ranhurado de metal usado exclusivamente para liberar mecanismos de fechaduras domiciliares.",
+      "Ferramenta de boca pesada com cabo longo usada em manutenções mecânicas em porcas sextavadas.",
+      "Senha alfanumérica secreta programada para decodificar arquivos criptografados de softwares."
+    ]
+  },
+  {
+    "id": 43,
+    "nome": "emocionado",
+    "variacoes": ["emocionada"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa que se precipita ou demonstra sentimentos de forma exagerada e veloz logo no início de um relacionamento.",
+    "tags": ["Relacionamentos", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Eles ficaram apenas uma vez e ele já comprou presente para a mãe dela, muito emocionado.",
+    "exemplos_incorretos": [
+      "O meu tio ficou muito emocionado no casamento da filha e acabou sujando o paletó inteiro de lágrimas.",
+      "Ao assistir aquele documentário da natureza salvando os pinguins, eu fiquei profundamente emocionado no sofá.",
+      "O palestrante ficou emocionado quando toda a plateia do auditório levantou para bater palmas no fim da fala."
+    ],
+    "significados_incorretos": [
+      "Ato biológico de verter líquidos oculares motivado por alegrias intensas ou despedidas difíceis.",
+      "Reação de empatia genuína e sensível provocada por cenas de superação ou beleza em filmes.",
+      "Estado de comoção repentina e positiva, onde o peito aperta e a voz embarga diante de homenagens."
+    ]
+  },
+  {
+    "id": 44,
+    "nome": "talarico",
+    "variacoes": ["talaricar", "talaricagem"],
+    "classe_gramatical": "substantivo",
+    "significado": "Pessoa que tenta se envolver amorosamente com o parceiro, ex-parceiro ou pretendente de algum conhecido ou amigo.",
+    "tags": ["Relacionamentos", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele fingia ser o melhor amigo do casal, mas no fundo sempre foi um talarico querendo separá-los.",
+    "exemplos_incorretos": [
+      "Na salada maravilhosa de hoje, eu cortei bem fininho a couve e o talarico firme do brócolis cozido.",
+      "O fiscal do banco destacou a folha assinada e guardou o talarico no arquivo de gaveta do escritório.",
+      "A camisa apertada não coube e o alfaiate precisou soltar o talarico da manga esquerda do casaco caro."
+    ],
+    "significados_incorretos": [
+      "A parte central mais crocante e verde de hortaliças e vegetais folhosos.",
+      "O canhotinho menor que sobra grudado no bloco após destacar folhas de cheque ou recibos bancários.",
+      "Costura extra ou dobra de tecido deixada propositalmente nas axilas para ajustes futuros de paletós."
+    ]
+  },
+  {
+    "id": 45,
+    "nome": "gado",
+    "variacoes": ["gado demais", "gadice"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa extremamente submissa a outra por interesse romântico, aceitando ser tratada de forma secundária para tentar agradar.",
+    "tags": ["Relacionamentos", "Cotidiano"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele é tão gado que ficou a madrugada inteira fazendo o trabalho da faculdade pela menina que ele gosta.",
+    "exemplos_incorretos": [
+      "O fazendeiro acordou de madrugada para levar o gado manso até o pasto lá no outro lado do morro alto.",
+      "A vacina nova foi injetada no gado inteiro para prevenir que eles pegassem aquela doença da febre chata.",
+      "A transportadora comprou cinco caminhões enormes para aguentar o peso de transportar o gado nas rodovias perigosas."
+    ],
+    "significados_incorretos": [
+      "Conjunto enorme de vacas e bois de corte criados soltos nas terras das zonas rurais.",
+      "Animais ruminantes domesticados que são classificados como bovinos nos registos zootécnicos federais.",
+      "Carga viva pesada com cascos que exige caminhões de boiadeiros abertos para ser transportada viva."
+    ]
+  },
+  {
+    "id": 46,
+    "nome": "amostradinho",
+    "variacoes": ["amostrado", "amostradinha"],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa que gosta de se exibir, aparecer de forma exagerada ou realizar palhaçadas e imprudências para ganhar atenção.",
+    "tags": ["Cotidiano", "Redes sociais"],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele empinou a moto na rua apenas porque viu a câmera gravando, é muito amostradinho mesmo.",
+    "exemplos_incorretos": [
+      "A vendedora sorriu e me deu um amostradinho pequeno do creme novo de lavanda hidratante.",
+      "Para descobrir o nível alto do colesterol, o laboratório pegou um amostradinho fino de sangue no braço.",
+      "A costureira entregou o amostradinho quadriculado vermelho para eu aprovar a cor das camisas antes de começar as compras."
+    ],
+    "significados_incorretos": [
+      "Pequeno frasco cosmético dado gratuitamente para testar perfumes e hidratantes antes de fechar a compra.",
+      "Quantidade minúscula de material biológico coletada por seringas finas para exames médicos rápidos de sangue.",
+      "Retalho recortado pequeno de um rolo de tecido maior usado para mostrar o padrão das costuras aos clientes."
+    ]
+  }
+]

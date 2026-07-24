@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-import mundoRoutes from './routes/mundoRoutes.ts';
 
 const app = express();
 
