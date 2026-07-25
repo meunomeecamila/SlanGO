@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'licao.dart';
 import 'revisao.dart';
+import 'mapa/mapa.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF1F1035),
         canvasColor: const Color(0xFF1F1035),
       ),
-      home: const FluxoLicao(),
+      home: const MapaScreen(),
     );
   }
 }
