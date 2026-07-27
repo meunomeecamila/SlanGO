@@ -21,6 +21,26 @@ export function getMundos(req: Request, res: Response) {
     }
 }
 
+export const buscarMundo = async (req: Request, res: Response) => {
+
+    try {
+
+        const { nome } = req.params as { nome: string};
+
+        const rodada = await prepararRodadaAleatoria(nome);
+
+        res.status(200).json(rodada);
+
+    } catch (e) {
+
+        res.status(404).json({
+            mensagem: "Mundo não encontrado"
+        });
+
+    }
+
+};
+
 export const getFasesDoMundo = async (req: Request, res: Response) => {
     try {
         const nomeDoMundoRequisitado = req.params.nomeMundo as string;

@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import mundoRoutes from './routes/mundoRoutes';
+import 'dotenv/config';
 
 const app = express();
 
