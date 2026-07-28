@@ -12,9 +12,8 @@ O **SlanGo** nasceu para resolver um problema real e atual: a distância geracio
 
 | Nome | Função |
 |---|---|
-| Camila Cardoso de Menezes  | Database Developer |
-| Eduardo Borgues de Souza | Coordenador & Back-End Developer |
-| Julia Batista Moreira | Front-End Developer |
+| Camila Cardoso de Menezes  | Coordenadora & Database Developer |
+| Eduardo Borgues de Souza | Back-End & Database Developer |
 | Mariana Temporim Ferreira | Front-End Developer
 | Vitor Chagas Maciel | Back-End & Database Developer |
 
@@ -22,8 +21,8 @@ O **SlanGo** nasceu para resolver um problema real e atual: a distância geracio
 ## 🛠️ Tecnologias Utilizadas
 
 - **Banco de Dados:** MySQL / PostgreSQL
-- **Modelagem:** Draw.io
-- **Linguagem/Framework:** *(preencher conforme o que for usando no app)*
+- **Modelagem:** Claude IA
+- **Linguagem/Framework:** Flutter / TypeScript
 
 
 ## ▶️ Como Executar
