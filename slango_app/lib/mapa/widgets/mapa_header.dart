@@ -10,28 +10,32 @@ class MapaHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "SlanGO",
-              style: GoogleFonts.alfaSlabOne(
-                color: Colors.white,
-                fontSize: 32,
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "SlanGO",
+                overflow: TextOverflow.ellipsis,
+                style: GoogleFonts.alfaSlabOne(
+                  color: Colors.white,
+                  fontSize: 32,
+                ),
               ),
-            ),
-            const SizedBox(height: 2),
-            const Text(
-              "Explore novos mundos",
-              style: TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 14,
+              const SizedBox(height: 2),
+              const Text(
+                "Explore novos mundos",
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 14,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
 
-        const Spacer(),
+        const SizedBox(width: 12),
 
         Container(
           padding: const EdgeInsets.symmetric(

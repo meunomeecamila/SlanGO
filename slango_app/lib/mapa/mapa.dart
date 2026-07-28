@@ -8,7 +8,7 @@ import 'widgets/mapa_header.dart';
 import 'widgets/navegacao_mundos.dart';
 import 'widgets/planeta_widget.dart';
 
-import '../missao/missao.dart';
+import '../missao/widgets/missao.dart';
 
 
 class MapaScreen extends StatefulWidget {
@@ -50,50 +50,51 @@ class _MapaScreenState extends State<MapaScreen> {
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),
-            child: Column(
-              children: [
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
 
-                const MapaHeader(),
+                  const MapaHeader(),
 
-                const SizedBox(height: 10),
+                  const SizedBox(height: 8),
 
 
-                Expanded(
-                  child: Center(
-                    child: PlanetaWidget(
-                      mundo: mundo,
-                    ),
+                  PlanetaWidget(
+                    mundo: mundo,
                   ),
-                ),
 
 
-                NavegacaoMundos(
-                  paginaAtual: mundoAtual,
-                  totalPaginas: mundos.length,
-                  onAnterior: mundoAnterior,
-                  onProximo: proximoMundo,
-                ),
+                  const SizedBox(height: 20),
 
 
-                const SizedBox(height: 30),
+                  NavegacaoMundos(
+                    paginaAtual: mundoAtual,
+                    totalPaginas: mundos.length,
+                    onAnterior: mundoAnterior,
+                    onProximo: proximoMundo,
+                  ),
 
 
-                CardMundo(
-                  mundo: mundo,
-
-                  onExplorar: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const Missao(),
-                      ),
-                    );
-                  },
-                ),
+                  const SizedBox(height: 20),
 
 
-                const SizedBox(height: 70),
-              ],
+                  CardMundo(
+                    mundo: mundo,
+
+                    onExplorar: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const Missao(),
+                        ),
+                      );
+                    },
+                  ),
+
+
+                  const SizedBox(height: 16),
+                ],
+              ),
             ),
           ),
         ),

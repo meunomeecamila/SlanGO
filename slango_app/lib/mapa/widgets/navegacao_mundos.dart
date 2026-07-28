@@ -33,18 +33,21 @@ class NavegacaoMundos extends StatelessWidget {
           ),
         ),
 
-        Row(
-          children: List.generate(
-            totalPaginas,
-            (index) => Container(
-              margin: const EdgeInsets.symmetric(horizontal: 4),
-              width: 10,
-              height: 10,
-              decoration: BoxDecoration(
-                color: index == paginaAtual
-                    ? AppColors.primary
-                    : AppColors.disabled,
-                shape: BoxShape.circle,
+        Flexible(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: List.generate(
+              totalPaginas,
+              (index) => Container(
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                width: 10,
+                height: 10,
+                decoration: BoxDecoration(
+                  color: index == paginaAtual
+                      ? AppColors.primary
+                      : AppColors.disabled,
+                  shape: BoxShape.circle,
+                ),
               ),
             ),
           ),
