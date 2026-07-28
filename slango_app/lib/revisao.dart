@@ -105,7 +105,7 @@ class RevisaoFinalScreen extends StatelessWidget {
           border: Border.all(color: purpleAccent.withOpacity(0.7)),
         ),
         child: Text(
-          'Revisão Final · $nomeMundo',
+          '$nomeMundo',
           style: TextStyle(
             color: purpleLight,
             fontWeight: FontWeight.bold,

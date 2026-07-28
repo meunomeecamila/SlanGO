@@ -22,8 +22,8 @@ O **SlanGo** nasceu para resolver um problema real e atual: a distância geracio
 ## 🛠️ Tecnologias Utilizadas
 
 - **Banco de Dados:** MySQL / PostgreSQL
-- **Modelagem:** Draw.io
-- **Linguagem/Framework:** *(preencher conforme o que for usando no app)*
+- **Modelagem:** Claude IA
+- **Linguagem/Framework:** Flutter / TypeScript
 
 
 ## ▶️ Como Executar

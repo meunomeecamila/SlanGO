@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../main.dart';
 
@@ -19,7 +20,9 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: DefaultTextStyle(
+        style: GoogleFonts.poppins(),
+        child: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -34,7 +37,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
         child: SafeArea(
           child: Column(
             children: [
-              CabecalhoComTituloCentralizado(),
+              const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
               const SizedBox(height: 24),
               PlanetaEFoguete(),
               const Spacer(),
@@ -58,13 +61,16 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
             ],
           ),
         ),
+        ),
       ),
     );
   }
 }
 
 class CabecalhoComTituloCentralizado extends StatelessWidget {
-  const CabecalhoComTituloCentralizado({super.key});
+  final String nomeMundo;
+
+  const CabecalhoComTituloCentralizado({super.key, required this.nomeMundo});
 
   static const Color purpleAccent = Color(0xFF6C4FC9);
   static const Color purpleLight = Color(0xFFB9A6E8);
@@ -80,12 +86,13 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               decoration: BoxDecoration(
+                color: const Color(0xFF241A3D),
                 borderRadius: BorderRadius.circular(30),
-                border: Border.all(color: purpleAccent.withOpacity(0.7)),
+                border: Border.all(color: purpleAccent.withOpacity(0.7), width: 1.5),
               ),
-              child: const Text(
-                'Mundo Jogos',
-                style: TextStyle(
+              child: Text(
+                nomeMundo,
+                style: const TextStyle(
                   color: purpleLight,
                   fontWeight: FontWeight.bold,
                   fontSize: 12,
@@ -101,9 +108,17 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
               conteudo: const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.arrow_back, color: Colors.white, size: 16),
+                  Icon(Icons.arrow_back, color: Color(0xFFB9A6E8), size: 14),
                   SizedBox(width: 6),
-                  Text('Mapa', style: TextStyle(color: Colors.white)),
+                  Text(
+                    'Mapa',
+                    style: TextStyle(
+                      color: Color(0xFFB9A6E8),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -136,7 +151,7 @@ class PlanetaEFoguete extends StatelessWidget {
             ),
             child: ClipOval(
               child: Image.asset(
-                'images/planeta.png',
+                'images/jogos.png',
                 fit: BoxFit.cover,
               ),
             ),
@@ -225,7 +240,7 @@ class BotaoContinuar extends StatelessWidget {
       child: const Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('continuar'),
+          Text('Continuar'),
           SizedBox(width: 6),
           Icon(Icons.arrow_forward, size: 16),
         ],
@@ -244,15 +259,14 @@ class AvatarDoAlien extends StatelessWidget {
         width: 130,
         height: 130,
         decoration: BoxDecoration(
-          color: Colors.black,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(color: const Color(0xFF3D2B6B), width: 2),
         ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: Image.asset(
-            'assets/images/alien.png',
-            fit: BoxFit.cover,
+            'images/avatar.png',
+            fit: BoxFit.contain,
           ),
         ),
       ),
@@ -361,11 +375,11 @@ class BotaoEmFormatoDePilula extends StatelessWidget {
       onTap: aoTocar,
       borderRadius: BorderRadius.circular(30),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
           color: const Color(0xFF241A3D),
           borderRadius: BorderRadius.circular(30),
-          border: Border.all(color: const Color(0xFF4A3A70)),
+          border: Border.all(color: const Color(0xFF6C4FC9).withOpacity(0.7), width: 1.5),
         ),
         child: conteudo,
       ),
