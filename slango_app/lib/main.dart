@@ -23,17 +23,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// Cria uma transição entre as telas,
-Route<T> criarRotaComFade<T>(Widget tela) {
-  return PageRouteBuilder<T>(
-    pageBuilder: (context, animation, secondaryAnimation) => tela,
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      return FadeTransition(opacity: animation, child: child);
-    },
-    transitionDuration: const Duration(milliseconds: 350),
-  );
-}
-
 /// Controla a navegação entre a tela de lição e a tela de revisão final
 class FluxoLicao extends StatefulWidget {
   const FluxoLicao({super.key});
@@ -64,7 +53,7 @@ class _FluxoLicaoState extends State<FluxoLicao> {
         // Ao terminar a lição, navega para a tela de revisão final.
         Navigator.push(
           context,
-          criarRotaComFade(const TelaRevisaoFinal()),
+          MaterialPageRoute(builder: (_) => const TelaRevisaoFinal()),
         );
       },
     );

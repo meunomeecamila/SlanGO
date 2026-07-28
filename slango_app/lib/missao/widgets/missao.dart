@@ -15,7 +15,7 @@ class Missao extends TelaMundoDosJogos {
 }
 
 class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
-  final List<String> giriasDoJogo = ['SMURF', 'MVP', 'CLUTCH', 'FEED', 'NOOB'];
+  final List<String> giriasDoJogo = ['MVP', 'CLUTCH', 'FEED', 'NOOB'];
 
   @override
   Widget build(BuildContext context) {
@@ -40,22 +40,30 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
               const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
               const SizedBox(height: 24),
               PlanetaEFoguete(),
-              const Spacer(),
-              BalaoDeFala(),
-              const SizedBox(height: 24),
-              AvatarDoAlien(),
-              const SizedBox(height: 24),
-              ChipsDeGirias(girias: giriasDoJogo),
-              const SizedBox(height: 16),
-              BotaoIniciarMissao(
-                aoTocar: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => const FluxoLicao(),
-                    ),
-                  );
-                },
+              Expanded(
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      BalaoDeFala(),
+                      const SizedBox(height: 24),
+                      AvatarDoAlien(),
+                      const SizedBox(height: 24),
+                      ChipsDeGirias(girias: giriasDoJogo),
+                      const SizedBox(height: 32),
+                      BotaoIniciarMissao(
+                        aoTocar: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const FluxoLicao(),
+                            ),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
               ),
               const SizedBox(height: 24),
             ],
@@ -136,32 +144,17 @@ class PlanetaEFoguete extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Container(
-            width: 64,
-            height: 64,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: const LinearGradient(
-                colors: [Color(0xFF6C4FC9), Color(0xFF3D2B6B)],
-              ),
-              border: Border.all(color: Colors.white24, width: 2),
-            ),
-            child: ClipOval(
-              child: Image.asset(
-                'images/jogos.png',
-                fit: BoxFit.cover,
-              ),
-            ),
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Opacity(
+          opacity: 0.75,
+          child: Image.asset(
+            'images/jogos.png',
+            width: 112,
+            height: 112,
+            fit: BoxFit.contain,
           ),
-          Image.asset(
-            'images/foguete.png',
-            width: 40,
-            height: 40,
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -193,7 +186,7 @@ class BalaoDeFala extends StatelessWidget {
                   'Olá, astronauta! Bem-vindo ao Mundo dos Games 🎮',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 17,
+                    fontSize: 15,
                     fontWeight: FontWeight.w600,
                     height: 1.3,
                   ),
@@ -235,14 +228,14 @@ class BotaoContinuar extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
       ),
       child: const Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text('Continuar'),
-          SizedBox(width: 6),
-          Icon(Icons.arrow_forward, size: 16),
+          SizedBox(width: 4),
+          Icon(Icons.arrow_forward, size: 11),
         ],
       ),
     );
@@ -305,14 +298,15 @@ class ChipDeGiriaSemClique extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF241A3D),
         borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: const Color(0xFF4A3A70)),
+        border: Border.all(color: const Color(0xFF6C4FC9).withOpacity(0.7), width: 1.5),
       ),
       child: Text(
         texto,
         style: const TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.w500,
-          fontSize: 13,
+          color: Color(0xFFB9A6E8),
+          fontWeight: FontWeight.bold,
+          fontSize: 12,
+          letterSpacing: 0.5,
         ),
       ),
     );
