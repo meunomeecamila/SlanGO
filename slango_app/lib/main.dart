@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'licao.dart';
-import 'revisao.dart';
-import 'mapa/mapa.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+import 'revisao.dart';
+import 'mapa/mapa.dart';
 
-  dotenv.load(fileName: ".env").then((_) {
-    runApp(const MyApp());
-  });
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,6 +22,23 @@ class MyApp extends StatelessWidget {
         canvasColor: const Color(0xFF1F1035),
       ),
       home: const MapaScreen(),
+      onGenerateRoute: (settings) {
+        switch (settings.name) {
+          case '/licao':
+            // final nomeMundo = settings.arguments as String;
+            // TODO: trocar pela tela real de lição (busca fases via
+            // MundoService e monta o SlangQuizScreen)
+            return criarRotaComFade(const TelaRevisaoFinal());
+
+          case '/quiz':
+            // final nomeMundo = settings.arguments as String;
+            // TODO: trocar pela tela real de quiz
+            return criarRotaComFade(const TelaRevisaoFinal());
+
+          default:
+            return null;
+        }
+      },
     );
   }
 }
@@ -37,43 +52,6 @@ Route<T> criarRotaComFade<T>(Widget tela) {
     },
     transitionDuration: const Duration(milliseconds: 350),
   );
-}
-
-/// Controla a navegação entre a tela de lição e a tela de revisão final
-class FluxoLicao extends StatefulWidget {
-  const FluxoLicao({super.key});
-
-  @override
-  State<FluxoLicao> createState() => _FluxoLicaoState();
-}
-
-class _FluxoLicaoState extends State<FluxoLicao> {
-  int cntCorreto = 0;
-  int cntErrado = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return SlangQuizScreen(
-      palavra: 'SMURF',
-      classe: 'Substantivo',
-      significado:
-          'Jogador experiente que usa conta de nível baixo para dominar partidas mais fáceis.',
-      exemplo: '"Cuidado com esse player, ele é um smurf clássico!"',
-      usageHighlight: 'Esse cara é um SMURF — ele destruiu todo mundo!',
-      cntCorreto: cntCorreto,
-      cntErrado: cntErrado,
-      onClose: () {
-        Navigator.of(context).maybePop();
-      },
-      onContinue: () {
-        // Ao terminar a lição, navega para a tela de revisão final.
-        Navigator.push(
-          context,
-          criarRotaComFade(const TelaRevisaoFinal()),
-        );
-      },
-    );
-  }
 }
 
 /// Tela de revisão final com controle próprio de estado
@@ -105,7 +83,6 @@ class _TelaRevisaoFinalState extends State<TelaRevisaoFinal> {
         setState(() => palavraSelecionada = valor);
       },
       onConcluir: () {
-        // voltar para a tela inicial do app.
         Navigator.of(context).popUntil((route) => route.isFirst);
       },
     );

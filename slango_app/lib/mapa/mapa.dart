@@ -85,7 +85,7 @@ class _MapaScreenState extends State<MapaScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const Missao(),
+                          builder: (_) => Missao(nomeMundo: mundo.id),
                         ),
                       );
                     },

@@ -2,6 +2,7 @@ import '../models/mundo.dart';
 
 final List<Mundo> mundos = [
   const Mundo(
+    id: 'jogos',
     nome: 'Mundo Jogos',
     imagem: 'images/jogos.png',
     descricao: 'Disponível',
@@ -10,6 +11,7 @@ final List<Mundo> mundos = [
     desbloqueado: true,
   ),
   const Mundo(
+    id: 'kpop',
     nome: 'Mundo K-Pop',
     imagem: 'images/kpop.png',
     descricao: 'Em breve',
@@ -18,6 +20,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'maquiagem',
     nome: 'Mundo Maquiagem',
     imagem: 'images/maquiagem.png',
     descricao: 'Em breve',
@@ -26,6 +29,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'pop',
     nome: 'Mundo Pop',
     imagem: 'images/pop.png',
     descricao: 'Em breve',
@@ -34,6 +38,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'antigo',
     nome: 'Mundo Antigo',
     imagem: 'images/antigo.png',
     descricao: 'Em breve',
@@ -42,6 +47,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'cotidiano',
     nome: 'Mundo Cotidiano',
     imagem: 'images/cotidiano.png',
     descricao: 'Em breve',
@@ -50,6 +56,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'esportes',
     nome: 'Mundo Esportes',
     imagem: 'images/esportes.png',
     descricao: 'Em breve',
@@ -58,6 +65,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'geek',
     nome: 'Mundo Geek',
     imagem: 'images/geek.png',
     descricao: 'Em breve',
@@ -66,6 +74,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'redessociais',
     nome: 'Mundo Redes Sociais',
     imagem: 'images/redesociais.png',
     descricao: 'Em breve',
@@ -74,6 +83,7 @@ final List<Mundo> mundos = [
     desbloqueado: false,
   ),
   const Mundo(
+    id: 'relacionamentos',
     nome: 'Mundo Relacionamentos',
     imagem: 'images/relacionamentos.png',
     descricao: 'Em breve',

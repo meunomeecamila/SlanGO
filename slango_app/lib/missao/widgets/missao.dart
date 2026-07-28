@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../../main.dart';
-
 class TelaMundoDosJogos extends StatefulWidget {
-  const TelaMundoDosJogos({super.key});
+  final String nomeMundo;
+
+  const TelaMundoDosJogos({super.key, required this.nomeMundo});
 
   @override
   State<TelaMundoDosJogos> createState() => _TelaMundoDosJogosState();
 }
 
 class Missao extends TelaMundoDosJogos {
-  const Missao({super.key});
+  const Missao({super.key, required super.nomeMundo});
 }
 
 class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
@@ -46,11 +46,10 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
               const SizedBox(height: 16),
               BotaoIniciarMissao(
                 aoTocar: () {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(
-                      builder: (_) => const FluxoLicao(),
-                    ),
+                    '/licao',
+                    arguments: widget.nomeMundo,
                   );
                 },
               ),
