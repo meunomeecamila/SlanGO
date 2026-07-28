@@ -20,8 +20,8 @@ class PlanetaWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 260 * scale,
-          height: 260 * scale,
+          width: 300 * scale,
+          height: 300 * scale,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             boxShadow: [

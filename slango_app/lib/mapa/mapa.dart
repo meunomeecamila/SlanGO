@@ -8,6 +8,9 @@ import 'widgets/mapa_header.dart';
 import 'widgets/navegacao_mundos.dart';
 import 'widgets/planeta_widget.dart';
 
+import '../missao/missao.dart';
+
+
 class MapaScreen extends StatefulWidget {
   const MapaScreen({super.key});
 
@@ -15,10 +18,12 @@ class MapaScreen extends StatefulWidget {
   State<MapaScreen> createState() => _MapaScreenState();
 }
 
+
 class _MapaScreenState extends State<MapaScreen> {
   int mundoAtual = 0;
 
   Mundo get mundo => mundos[mundoAtual];
+
 
   void proximoMundo() {
     if (mundoAtual < mundos.length - 1) {
@@ -28,6 +33,7 @@ class _MapaScreenState extends State<MapaScreen> {
     }
   }
 
+
   void mundoAnterior() {
     if (mundoAtual > 0) {
       setState(() {
@@ -35,6 +41,7 @@ class _MapaScreenState extends State<MapaScreen> {
       });
     }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -45,9 +52,11 @@ class _MapaScreenState extends State<MapaScreen> {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
+
                 const MapaHeader(),
 
-                const SizedBox(height: 30),
+                const SizedBox(height: 10),
+
 
                 Expanded(
                   child: Center(
@@ -57,6 +66,7 @@ class _MapaScreenState extends State<MapaScreen> {
                   ),
                 ),
 
+
                 NavegacaoMundos(
                   paginaAtual: mundoAtual,
                   totalPaginas: mundos.length,
@@ -64,16 +74,25 @@ class _MapaScreenState extends State<MapaScreen> {
                   onProximo: proximoMundo,
                 ),
 
-                const SizedBox(height: 24),
+
+                const SizedBox(height: 30),
+
 
                 CardMundo(
                   mundo: mundo,
+
                   onExplorar: () {
-                    // TODO: navegar para a tela do planeta
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const Missao(),
+                      ),
+                    );
                   },
                 ),
 
-                const SizedBox(height: 10),
+
+                const SizedBox(height: 70),
               ],
             ),
           ),

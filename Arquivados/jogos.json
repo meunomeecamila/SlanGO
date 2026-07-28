@@ -1,0 +1,1664 @@
+{
+  "jogos": [
+    {
+      "nome": "troll",
+      "variacoes": ["trollagem"],
+      "classe_gramatical": "substantivo",
+      "significado": "Ação de provocar, enganar ou atrapalhar outros jogadores por diversão.",
+      "tags": ["jogos", "online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele cara estragou a partida fazendo troll com o próprio time.",
+      "exemplos_incorretos": [
+        "Consegui um troll muito forte para derrotar o boss final.",
+        "Preciso de mais ouro para comprar um troll novo na loja.",
+        "O servidor caiu porque deu um troll na conexão de rede."
+      ],
+      "significados_incorretos": [
+        "Aparência visual ou roupa de um personagem do jogo.",
+        "Estratégia avançada usada para vencer partidas profissionais.",
+        "Item consumível que recupera a vida do jogador instantaneamente."
+      ]
+    },
+    {
+      "nome": "tilt",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Estado de irritação ou perda de controle emocional durante o jogo.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Depois de perder aquele round ganho, ele entrou em tilt e não jogou mais nada.",
+      "exemplos_incorretos": [
+        "Fiz um tilt perfeito e eliminei três adversários de uma vez.",
+        "Vou coletar materiais para fazer o tilt da minha armadura.",
+        "Esse jogo tem um tilt muito bonito, os gráficos são incríveis."
+      ],
+      "significados_incorretos": [
+        "Dispositivo usado para melhorar a mira em jogos de tiro.",
+        "Moeda virtual utilizada para comprar cosméticos e passes de batalha.",
+        "Ação de se esconder em um canto do mapa esperando os inimigos passarem."
+      ]
+    },
+    {
+      "nome": "rush",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Avançar rapidamente para atacar ou alcançar um objetivo.",
+      "tags": ["fps", "estrategia"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vamos dar um rush no bomb B antes que eles consigam se defender.",
+      "exemplos_incorretos": [
+        "Fiquei parado na base dando rush até o tempo da partida acabar.",
+        "Minha conta foi banida porque usei um rush proibido no servidor.",
+        "Deixei meu personagem rush para coletar recursos enquanto eu almoçava."
+      ],
+      "significados_incorretos": [
+        "Sair da partida antes do tempo por estar com muita raiva.",
+        "Dano crítico causado por um tiro certeiro na cabeça do oponente.",
+        "Criatura pacífica que troca itens valiosos com os jogadores."
+      ]
+    },
+    {
+      "nome": "farm",
+      "variacoes": ["farmar"],
+      "classe_gramatical": "verbo",
+      "significado": "Coletar recursos, itens ou experiência repetidamente.",
+      "tags": ["rpg", "minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou passar a tarde fazendo farm de ferro para construir minha base.",
+      "exemplos_incorretos": [
+        "Aquele jogador é muito farm, ele começou a jogar ontem e não sabe nada.",
+        "Levei um farm na cabeça e morri instantaneamente para o sniper.",
+        "O jogo atualizou e deu um farm gigante no poder daquela habilidade."
+      ],
+      "significados_incorretos": [
+        "Pessoa que joga com uma conta secundária para enfrentar iniciantes.",
+        "Mensagem repetida várias vezes no chat para irritar os moderadores.",
+        "Erro de programação que faz o jogo fechar sozinho inesperadamente."
+      ]
+    },
+    {
+      "nome": "nerf",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Redução da força ou eficiência de algo em uma atualização.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "A arma que eu mais usava levou um nerf pesado e agora está horrível.",
+      "exemplos_incorretos": [
+        "Usei um nerf para aumentar a velocidade do meu carro de corrida.",
+        "Comprei o passe de batalha só para ganhar o nerf exclusivo.",
+        "O líder do clã deu um nerf na conta de todo mundo para ajudar."
+      ],
+      "significados_incorretos": [
+        "Aumento temporário de atributos concedido por poções mágicas.",
+        "Nome dado à área inicial onde os novos jogadores surgem.",
+        "Código secreto digitado no console para habilitar trapaças de dinheiro."
+      ]
+    },
+    {
+      "nome": "buff",
+      "variacoes": ["buffer"],
+      "classe_gramatical": "substantivo",
+      "significado": "Melhoria aplicada a personagem, item ou habilidade.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A cura do mago recebeu um buff excelente na última atualização.",
+      "exemplos_incorretos": [
+        "Minha tela travou no meio do buff e eu acabei sendo desconectado.",
+        "Esse jogador é muito folgado, vive dando buff no chat global.",
+        "Cuidado para não cair no abismo e tomar um buff fatal."
+      ],
+      "significados_incorretos": [
+        "Penalidade de tempo aplicada a quem abandona partidas competitivas.",
+        "Janela flutuante que mostra as estatísticas de desempenho da máquina.",
+        "História de fundo contada através de livros colecionáveis no mapa."
+      ]
+    },
+    {
+      "nome": "noob",
+      "variacoes": ["nooba"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador iniciante ou inexperiente.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não fica bravo com ele, o cara ainda é noob e está aprendendo as regras.",
+      "exemplos_incorretos": [
+        "Comprei uma espada noob que derrota os inimigos com um só golpe.",
+        "Falta bem pouca experiência para eu subir de noob no meu personagem.",
+        "A partida acabou empatada porque ativei o comando noob no servidor."
+      ],
+      "significados_incorretos": [
+        "Equipamento de nível máximo obtido apenas em missões lendárias.",
+        "Jogador profissional que recebe salário para disputar torneios.",
+        "Inteligência artificial avançada que gerencia os monstros do mapa."
+      ]
+    },
+    {
+      "nome": "camp",
+      "variacoes": ["camper"],
+      "classe_gramatical": "verbo",
+      "significado": "Permanecer parado em um local esperando adversários.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele prefere ficar de camp na janela com a sniper em vez de ajudar a avançar.",
+      "exemplos_incorretos": [
+        "Apertei o botão para dar camp e pular muito mais alto.",
+        "Preciso de uma poção de camp para recuperar minha mana gasta.",
+        "O jogo lançou um camp novo com mapas inspirados no espaço sideral."
+      ],
+      "significados_incorretos": [
+        "Comprar cosméticos utilizando dinheiro real dentro do jogo.",
+        "Criar armas personalizadas misturando materiais raros.",
+        "Ato de se render quando a partida já está completamente perdida."
+      ]
+    },
+    {
+      "nome": "rage",
+      "variacoes": ["ragequit"],
+      "classe_gramatical": "substantivo",
+      "significado": "Raiva intensa causada pelo jogo; sair da partida por raiva.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele morreu três vezes seguidas na mesma armadilha e deu rage.",
+      "exemplos_incorretos": [
+        "Que rage legal, o design desse monstro ficou muito criativo.",
+        "Chamei meus amigos para fazermos um rage de missões cooperativas.",
+        "Ganhei um rage de bônus por ter feito login sete dias seguidos."
+      ],
+      "significados_incorretos": [
+        "Ação de convidar um jogador desconhecido para entrar na sua guilda.",
+        "Opção gráfica que melhora o reflexo da água e das sombras.",
+        "Combinação de botões usada para executar um golpe especial."
+      ]
+    },
+    {
+      "nome": "smurf",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Conta secundária usada por jogador experiente.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "A partida estava muito desequilibrada porque tinha um smurf no time deles.",
+      "exemplos_incorretos": [
+        "Preciso farmar mais smurf para conseguir evoluir minhas habilidades.",
+        "Ativei o escudo de smurf para não receber dano dos monstros.",
+        "Esse jogo tem um smurf muito longo, demorei 40 horas para zerar."
+      ],
+      "significados_incorretos": [
+        "Pequeno monstro azul que vive em florestas de jogos de RPG.",
+        "Aparelho de realidade virtual usado para aumentar a imersão.",
+        "Comando de texto usado para reportar comportamentos tóxicos."
+      ]
+    },
+    {
+      "nome": "clutch",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogada decisiva em situação difícil.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele garantiu o round em um clutch incrível contra três inimigos.",
+      "exemplos_incorretos": [
+        "Nossa, o jogo está travando muito, que clutch insuportável.",
+        "Fui expulso da sala porque me acusaram de usar clutch.",
+        "Preciso tomar um clutch de vida antes que o monstro me ataque de novo."
+      ],
+      "significados_incorretos": [
+        "Ação de sabotar a própria equipe para ajudar o time adversário.",
+        "Menu principal do jogo onde os jogadores escolhem seus personagens.",
+        "Técnica de construção rápida muito utilizada em jogos de sobrevivência."
+      ]
+    },
+    {
+      "nome": "poção",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Item consumível que concede efeitos temporários.",
+      "tags": ["rpg", "minecraft"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Beba essa poção de velocidade para conseguirmos fugir do monstro.",
+      "exemplos_incorretos": [
+        "Aquele jogador é muito poção, erra todos os tiros de propósito.",
+        "A internet caiu bem na hora que eu ia dar uma poção no inimigo.",
+        "O mapa do jogo é dividido em quatro partes e uma poção principal."
+      ],
+      "significados_incorretos": [
+        "Erro técnico que permite atravessar paredes sem permissão.",
+        "Líder supremo de uma facção inimiga dentro da história do jogo.",
+        "Sala de bate-papo por voz onde os times combinam táticas."
+      ]
+    },
+    {
+      "nome": "craft",
+      "variacoes": ["crafting"],
+      "classe_gramatical": "verbo",
+      "significado": "Criar itens utilizando materiais e receitas.",
+      "tags": ["minecraft", "survival"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou coletar madeira para fazer o craft de uma picareta nova.",
+      "exemplos_incorretos": [
+        "A partida acabou porque nosso capitão deu craft por causa do lag.",
+        "Esse monstro é muito rápido, ele dá craft para desviar das flechas.",
+        "Gosto de jogar de craft porque é a classe que mais tem pontos de vida."
+      ],
+      "significados_incorretos": [
+        "Ação de banir永久mente um trapaceiro de um servidor online.",
+        "O ato de correr em zigue-zague para evitar ser atingido por tiros.",
+        "Efeito sonoro emitido quando um jogador alcança a vitória."
+      ]
+    },
+    {
+      "nome": "level",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Nível de progressão do personagem.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Finalmente cheguei no level máximo e liberei a última armadura.",
+      "exemplos_incorretos": [
+        "Apertei a tecla level para abrir o mapa do mundo aberto.",
+        "Minha espada quebrou porque o level dela esgotou na batalha.",
+        "O servidor está cheio de level, não consigo criar minha sala."
+      ],
+      "significados_incorretos": [
+        "Nome da moeda utilizada para comprar itens cosméticos em Fortnite.",
+        "Dispositivo físico utilizado para controlar simulações de voo.",
+        "Histórico detalhado de todas as partidas jogadas na temporada."
+      ]
+    },
+    {
+      "nome": "upar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Ganhar níveis ou melhorar atributos.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Preciso upar meu personagem para conseguir enfrentar o próximo boss.",
+      "exemplos_incorretos": [
+        "Vou upar o chat de voz porque ninguém está conseguindo falar.",
+        "Ele tentou upar na parede mas acabou caindo na lava.",
+        "Upar é um item muito raro que recupera toda a durabilidade da arma."
+      ],
+      "significados_incorretos": [
+        "Denunciar um jogador por comportamento inadequado no fórum.",
+        "Diminuir a qualidade gráfica para rodar o jogo de forma mais fluida.",
+        "Ficar escondido em uma moita aguardando o final do round."
+      ]
+    },
+    {
+      "nome": "charge",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Carga ou energia acumulada para uma habilidade.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Espere o charge do canhão chegar em 100% para dar o tiro fatal.",
+      "exemplos_incorretos": [
+        "Minha conta foi suspensa por 3 dias devido a um charge ilegal.",
+        "O jogo tem muito charge, a história me fez chorar no final.",
+        "Chamei ele para o clã mas ele disse que prefere jogar charge."
+      ],
+      "significados_incorretos": [
+        "Punição automática dada pelo sistema a jogadores inativos.",
+        "Mudança estética na interface do usuário para o modo noturno.",
+        "O ato de pular repetidamente para se movimentar mais rápido."
+      ]
+    },
+    {
+      "nome": "tunado",
+      "variacoes": ["tunar"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Algo melhorado ou personalizado.",
+      "tags": ["corrida", "sandbox"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Gastei todos os meus créditos e deixei meu carro totalmente tunado.",
+      "exemplos_incorretos": [
+        "O servidor ficou tunado e ninguém mais consegue entrar para jogar.",
+        "Fui atingido por uma flecha e fiquei tunado por dez segundos.",
+        "Ele deu um grito tunado no microfone que quase estourou meu fone."
+      ],
+      "significados_incorretos": [
+        "Situação na qual o jogo trava completamente e fecha sozinho.",
+        "Termo usado para designar um jogador iniciante e sem habilidades.",
+        "Mecanismo de segurança que impede o roubo de contas virtuais."
+      ]
+    },
+    {
+      "nome": "dummy",
+      "variacoes": ["dumm"],
+      "classe_gramatical": "substantivo",
+      "significado": "Boneco de treinamento ou alvo de testes.",
+      "tags": ["treino"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou até a área de testes testar o dano dessa arma nova no dummy.",
+      "exemplos_incorretos": [
+        "Ele comprou um dummy novo para mudar o cabelo do personagem.",
+        "Fizemos um dummy excelente e vencemos o campeonato regional.",
+        "A conexão está com dummy alto, por isso as ações estão demorando."
+      ],
+      "significados_incorretos": [
+        "Trapaça que permite ver os inimigos através das estruturas.",
+        "Recompensa diária dada aos jogadores que completam missões.",
+        "Título honorário concedido ao jogador que faz mais eliminações."
+      ]
+    },
+    {
+      "nome": "bugado",
+      "variacoes": ["bugar", "bug"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Algo com erro ou comportamento inesperado.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Essa missão está bugada, o personagem atravessa o chão e morre.",
+      "exemplos_incorretos": [
+        "Meu time jogou de forma muito bugada e por isso fomos campeões.",
+        "Vou comprar essa skin bugada porque achei as cores lindas.",
+        "Tomei uma poção bugada que aumentou minha barra de mana."
+      ],
+      "significados_incorretos": [
+        "Estilo de jogo focado em ser o mais furtivo e silencioso possível.",
+        "Configuração de teclado ideal recomendada por pro-players.",
+        "Ato de doar moedas do jogo para jogadores necessitados."
+      ]
+    },
+    {
+      "nome": "pokao",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Grande quantidade de poções.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Vou levar um pokao para a batalha do Nether para garantir nossa cura.",
+      "exemplos_incorretos": [
+        "Fui banido porque usei um pokao para atravessar o mapa.",
+        "O servidor está rodando em um pokao muito estável hoje.",
+        "Ele é o pokao da guilda, resolve todas as táticas do time."
+      ],
+      "significados_incorretos": [
+        "Tipo de bloco decorativo feito à base de quartzo e ouro.",
+        "Uma criatura selvagem montável que aumenta a velocidade no deserto.",
+        "Gesto de comemoração realizado ao vencer uma rodada difícil."
+      ]
+    },
+    {
+      "nome": "minerar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Coletar minérios e recursos subterrâneos.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Preciso descer até a camada dos diamantes para minerar.",
+      "exemplos_incorretos": [
+        "Vou minerar meus amigos para jogarmos uma partida em equipe.",
+        "O chefe da fase começou a minerar e recuperou toda a vida.",
+        "Escrevi uma mensagem longa e apertei Enter para minerar no chat."
+      ],
+      "significados_incorretos": [
+        "Criar texturas customizadas para os blocos do jogo.",
+        "Expulsar um membro do clã que ficou muito tempo sem jogar.",
+        "Melhorar o sinal de internet configurando as portas do modem."
+      ]
+    },
+    {
+      "nome": "tankar",
+      "variacoes": ["tank"],
+      "classe_gramatical": "verbo",
+      "significado": "Absorver dano ou resistir a ataques.",
+      "tags": ["rpg", "moba"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eu vou na frente para tankar o boss enquanto vocês atacam de longe.",
+      "exemplos_incorretos": [
+        "Não consigo tankar esse arquivo, o download está muito lento.",
+        "Comprei uma casa maravilhosa para tankar meus itens raros.",
+        "A partida acabou porque o tempo do cronômetro tankou."
+      ],
+      "significados_incorretos": [
+        "Caminhar agachado para não revelar sua posição nos radares.",
+        "Utilizar programas ilegais que aumentam a precisão dos disparos.",
+        "Fazer piadas ofensivas nos canais de comunicação da partida."
+      ]
+    },
+    {
+      "nome": "random",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Aleatório ou desconhecido.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Jogar com time random é difícil porque ninguém se comunica.",
+      "exemplos_incorretos": [
+        "Meu personagem está muito random, causa o dobro de dano agora.",
+        "Preciso de dez madeiras para fazer o craft de um random.",
+        "O jogo foi cancelado porque o diretor deu um random técnico."
+      ],
+      "significados_incorretos": [
+        "Pessoa encarregada de moderar as mensagens enviadas no chat.",
+        "Habilidade suprema que possui o maior tempo de recarga do jogo.",
+        "Local exato onde os jogadores derrotados voltam à vida."
+      ]
+    },
+    {
+      "nome": "drop",
+      "variacoes": ["dropar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Item obtido ou deixado por inimigos.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O drop daquele monstro foi uma espada lendária incrível.",
+      "exemplos_incorretos": [
+        "Fiquei drop na parede esperando o adversário passar para atirar.",
+        "Tive que dar um drop na minha conta porque esqueci a senha.",
+        "Esse mapa tem um drop muito bonito, cheio de florestas e rios."
+      ],
+      "significados_incorretos": [
+        "Queda brusca na taxa de quadros por segundo que causa travamentos.",
+        "Comando usado para redefinir todas as configurações padrões.",
+        "Estilo de jogo focado em eliminar oponentes usando apenas socos."
+      ]
+    },
+    {
+      "nome": "call",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Informação ou comunicação estratégica.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Siga a call do capitão para entrarmos juntos no objetivo.",
+      "exemplos_incorretos": [
+        "Essa espada tem uma call gigante que corta qualquer armadura.",
+        "Equipei uma call nova que deixa meu personagem invisível.",
+        "O jogo fechou do nada porque deu erro na call do sistema."
+      ],
+      "significados_incorretos": [
+        "Modificação visual aplicada às roupas básicas dos personagens.",
+        "Lista de punições recebidas por trapacear em servidores públicos.",
+        "Item consumível que aumenta a experiência ganha em dobro."
+      ]
+    },
+    {
+      "nome": "tryhard",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que se esforça excessivamente para vencer.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "A partida era casual, mas tinha um tryhard jogando como se fosse final de campeonato.",
+      "exemplos_incorretos": [
+        "Vou usar um tryhard para craftar ferramentas de diamante.",
+        "O servidor caiu porque deu tryhard no banco de dados.",
+        "Deixei meu tryhard no nível máximo e ganhei uma conquista."
+      ],
+      "significados_incorretos": [
+        "Atrás da parede, ato de usar glitches para enxergar o mapa.",
+        "O jogador que desiste facilmente e abandona os companheiros.",
+        "Moeda premium do jogo comprada exclusivamente com cartões de crédito."
+      ]
+    },
+    {
+      "nome": "bot",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador controlado por computador ou jogador muito ruim.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele cara joga igual a um bot, anda olhando para o chão.",
+      "exemplos_incorretos": [
+        "Gastei meus pontos para comprar um bot de cura na loja.",
+        "Minha arma ficou com o bot quebrado depois da queda.",
+        "Essa fase tem um bot muito bonito, com efeitos de luz legais."
+      ],
+      "significados_incorretos": [
+        "Aceleração rápida que os carros ganham ao usar nitro nas pistas.",
+        "Comunidade oficial de desenvolvedores que criam expansões.",
+        "Dispositivo usado para capturar e transmitir a tela em tempo real."
+      ]
+    },
+    {
+      "nome": "spawn",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Local de surgimento de jogadores ou entidades.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Os inimigos estão nos atacando logo após a gente nascer no spawn.",
+      "exemplos_incorretos": [
+        "Ativei o spawn para aumentar o dano mágico dos meus feitiços.",
+        "Gosto de jogar com a classe spawn porque ela corre mais rápido.",
+        "Minha armadura quebrou e tive que gastar ouro para consertar o spawn."
+      ],
+      "significados_incorretos": [
+        "Estratégia que consiste em gastar todo o dinheiro no primeiro round.",
+        "Denúncia formal enviada ao suporte contra um jogador racista.",
+        "Janela que exibe a tabela de classificação geral do torneio."
+      ]
+    },
+    {
+      "nome": "griefar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Prejudicar intencionalmente a experiência de outros jogadores.",
+      "tags": ["minecraft", "online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele entrou no nosso mundo apenas para griefar e explodir nossa casa.",
+      "exemplos_incorretos": [
+        "Vou griefar essa poção para aumentar minha defesa contra fogo.",
+        "Griefar é a melhor forma de conseguir moedas de ouro rapidamente.",
+        "O jogo atualizou e adicionou a opção de griefar os gráficos."
+      ],
+      "significados_incorretos": [
+        "Ajudar novos jogadores distribuindo itens e ensinando mecânicas.",
+        "Organizar os baús de armazenamento por ordem alfabética.",
+        "Terminar uma partida sem sofrer nenhum tipo de dano dos inimigos."
+      ]
+    },
+    {
+      "nome": "skin",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Aparência visual de personagem ou item.",
+      "tags": ["minecraft", "fps"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Comprei uma skin de ninja super legal para o meu personagem.",
+      "exemplos_incorretos": [
+        "Minha skin está muito baixa, preciso resetar meu modem.",
+        "Levei uma skin na cabeça e fui eliminado na hora.",
+        "A guilda precisa de mais skin para conseguir declarar guerra."
+      ],
+      "significados_incorretos": [
+        "O ato de se desconectar propositalmente para não perder pontos.",
+        "Dispositivo que melhora o tempo de resposta do teclado mecânico.",
+        "Habilidade passiva que permite carregar mais peso no inventário."
+      ]
+    },
+    {
+      "nome": "buildar",
+      "variacoes": ["build"],
+      "classe_gramatical": "verbo",
+      "significado": "Construir estruturas ou montar configurações.",
+      "tags": ["minecraft", "rpg"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou passar o dia focando em buildar minha fazenda automática.",
+      "exemplos_incorretos": [
+        "Ele começou a buildar no chat e foi mutado pelo moderador.",
+        "A internet caiu e não consegui buildar a partida a tempo.",
+        "Minha arma parou de buildar porque acabou a munição dela."
+      ],
+      "significados_incorretos": [
+        "Excluir uma conta de jogo de forma permanente por falta de uso.",
+        "Gritar no microfone com o objetivo de desconcentrar os rivais.",
+        "Modificar arquivos internos para trapacear nas partidas online."
+      ]
+    },
+    {
+      "nome": "server",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Servidor onde ocorre o jogo.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O server vai entrar em manutenção hoje à noite para correção de bugs.",
+      "exemplos_incorretos": [
+        "Ganhei um server de ouro após derrotar o dragão da fase.",
+        "Minha mira está ruim porque o server do meu mouse quebrou.",
+        "Vou equipar este server para andar mais rápido na água."
+      ],
+      "significados_incorretos": [
+        "Equipe técnica encarregada de fazer a dublagem dos personagens.",
+        "Controle físico com sensores de movimento usado em consoles.",
+        "O enredo ou história principal contada nas cenas cinematográficas."
+      ]
+    },
+    {
+      "nome": "admin",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Administrador com permissões especiais.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Chamei o admin do server para banir o hacker que estava estragando o jogo.",
+      "exemplos_incorretos": [
+        "Esqueci de comprar admin e fiquei sem poções durante a raid.",
+        "Minha picareta quebrou porque gastei todo o seu admin.",
+        "Ativei o modo admin para o meu carro correr mais nas pistas."
+      ],
+      "significados_incorretos": [
+        "Tipo de bloco super resistente encontrado apenas em fortalezas.",
+        "Programa malicioso usado para roubar senhas de contas bancárias.",
+        "Ação de se render no meio do jogo quando o time perde um membro."
+      ]
+    },
+    {
+      "nome": "mod",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Moderador ou modificação de jogo.",
+      "tags": ["minecraft", "online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Instalei um mod que adiciona novos animais e biomas ao jogo.",
+      "exemplos_incorretos": [
+        "Levei um mod na cabeça de muito longe e morri na hora.",
+        "Preciso de dez ouros para reparar o mod da minha bota.",
+        "O jogo acabou empatado porque o mod da partida estourou."
+      ],
+      "significados_incorretos": [
+        "Equipamento que permite respirar debaixo d'água por tempo ilimitado.",
+        "Moeda oficial do jogo usada em torneios presenciais internacionais.",
+        "Ato de perder uma partida de propósito para ajudar um amigo."
+      ]
+    },
+    {
+      "nome": "banir",
+      "variacoes": ["ban"],
+      "classe_gramatical": "verbo",
+      "significado": "Remover acesso de um jogador.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O suporte resolveu banir o trapaceiro após analisarem os vídeos.",
+      "exemplos_incorretos": [
+        "Vou banir esse item para melhorar o dano da minha magia.",
+        "Apertei o botão de banir para pular o tutorial inicial.",
+        "Meu time conseguiu banir a vitória no último segundo."
+      ],
+      "significados_incorretos": [
+        "Aumentar o limite máximo de amigos que você pode ter na lista.",
+        "Salvar o progresso do jogo na nuvem para não perder os dados.",
+        "Criar um canal de transmissão ao vivo em plataformas de streaming."
+      ]
+    },
+    {
+      "nome": "grindar",
+      "variacoes": ["grinding"],
+      "classe_gramatical": "verbo",
+      "significado": "Executar tarefas repetitivas para progredir.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou ter que grindar bastante nesse fim de semana para conseguir ouro.",
+      "exemplos_incorretos": [
+        "Ele começou a grindar no microfone e incomodou todo o time.",
+        "Fui banido por grindar usando programas proibidos na minha conta.",
+        "Vou grindar uma parede bem alta ao redor da minha vila."
+      ],
+      "significados_incorretos": [
+        "Humilhar o adversário enviando mensagens provocativas após vencê-lo.",
+        "Configurar os botões do mouse para realizarem cliques mais rápidos.",
+        "Ato de fingir ser um jogador iniciante para enganar os rivais."
+      ]
+    },
+    {
+      "nome": "obby",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Mapa de obstáculos.",
+      "tags": ["roblox"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Passei a tarde jogando um obby super difícil de parkour no Roblox.",
+      "exemplos_incorretos": [
+        "Comprei um obby novo com as moedas que juntei no jogo.",
+        "A conexão caiu porque o obby da internet ficou instável.",
+        "Meu personagem tomou um obby de força e derrotou o vilão."
+      ],
+      "significados_incorretos": [
+        "Configuração de segurança que impede menores de idade de jogarem.",
+        "Moeda virtual oficial utilizada para comprar itens cosméticos.",
+        "Nome dado ao chefe final que protege o castelo principal."
+      ]
+    },
+    {
+      "nome": "lobby",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Área de espera antes de uma partida.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Estamos todos reunidos no lobby aguardando o líder iniciar o jogo.",
+      "exemplos_incorretos": [
+        "Invoquei um lobby muito poderoso para defender meu castelo.",
+        "Minha espada quebrou porque gastei toda a durabilidade do lobby.",
+        "Tomei um lobby de cura e recuperei todos os meus pontos de vida."
+      ],
+      "significados_incorretos": [
+        "Aparência visual alternativa comprada para customizar as armas.",
+        "Erro crítico de rede que faz com que os comandos fiquem atrasados.",
+        "Ação de construir paredes rapidamente para se proteger de tiros."
+      ]
+    },
+    {
+      "nome": "robux",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Moeda virtual do Roblox.",
+      "tags": ["roblox"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Preciso comprar robux para conseguir aquela skin exclusiva na loja.",
+      "exemplos_incorretos": [
+        "Esse monstro solta muito robux quando é derrotado na caverna.",
+        "Minha conta entrou em robux emocional após perder o campeonato.",
+        "O server caiu porque o robux da hospedagem deu erro."
+      ],
+      "significados_incorretos": [
+        "Nome da criatura quadrada que serve como mascote oficial do jogo.",
+        "O nível de experiência que determina o ranque competitivo do jogador.",
+        "Modo de jogo focado em batalhas de dança e ritmo musical."
+      ]
+    },
+    {
+      "nome": "vbucks",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Moeda virtual do Fortnite.",
+      "tags": ["fortnite"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ganhei vbucks ao completar as missões do passe de batalha.",
+      "exemplos_incorretos": [
+        "Vou usar meus vbucks para construir uma ponte de pedra até o céu.",
+        "O jogo está travando porque a taxa de vbucks caiu para 15 FPS.",
+        "Ele levou um vbucks na cabeça e foi eliminado da partida."
+      ],
+      "significados_incorretos": [
+        "Nome da ferramenta de coleta utilizada para quebrar estruturas.",
+        "Sistema de comunicação por voz integrado nativamente nas partidas.",
+        "Tipo de veículo voador adicionado temporariamente em um evento."
+      ]
+    },
+    {
+      "nome": "w",
+      "variacoes": ["win"],
+      "classe_gramatical": "substantivo",
+      "significado": "Vitória.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Jogamos muito bem em equipe e garantimos mais um w na nossa conta.",
+      "exemplos_incorretos": [
+        "Minha arma ficou sem w e não consigo mais atirar nos alvos.",
+        "A internet caiu e o w da partida ficou extremamente alto.",
+        "O jogo deu um w no sistema e fechou sozinho do nada."
+      ],
+      "significados_incorretos": [
+        "Tecla padrão utilizada nos teclados para fazer o personagem agachar.",
+        "Erro técnico que causa o banimento injusto de contas de usuários.",
+        "Nome do principal torneio de esportes eletrônicos do mundo."
+      ]
+    },
+    {
+      "nome": "l",
+      "variacoes": ["lose"],
+      "classe_gramatical": "substantivo",
+      "significado": "Derrota.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Infelizmente cometemos muitos erros no final e aceitamos o l.",
+      "exemplos_incorretos": [
+        "Achei um l lendário guardado dentro do baú secreto.",
+        "Vou usar o l para correr mais rápido e escapar do monstro.",
+        "O design desse l ficou incrível, o jogo tem ótimos gráficos."
+      ],
+      "significados_incorretos": [
+        "Abreviação universal usada para desejar um bom jogo no chat.",
+        "Tipo de poção que redefine os pontos de atributo do personagem.",
+        "Comando administrativo usado para reiniciar o mapa do servidor."
+      ]
+    },
+    {
+      "nome": "givar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Dar ou transferir itens para outro jogador.",
+      "tags": ["minecraft", "online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O administrador do servidor vai givar blocos para quem ajudar no evento.",
+      "exemplos_incorretos": [
+        "Não consigo givar esse chefe sozinho, ele tem muita defesa.",
+        "Minha conta foi banida porque resolvi givar no meio da partida.",
+        "O jogo começou a givar muito depois que mudei as configurações."
+      ],
+      "significados_incorretos": [
+        "Provocar os adversários fazendo gestos repetitivos com o personagem.",
+        "Denunciar uma falha de segurança diretamente para a publicadora.",
+        "Alcançar a pontuação máxima exigida em campeonatos oficiais."
+      ]
+    },
+    {
+      "nome": "lag",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Atraso na resposta do jogo.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Está impossível de jogar hoje por causa do lag da minha conexão.",
+      "exemplos_incorretos": [
+        "Garantimos o lag da rodada após eliminar o time inimigo inteiro.",
+        "Comprei um lag novo para equipar na minha armadura de diamante.",
+        "A história do jogo é ótima, tem um lag muito emocionante."
+      ],
+      "significados_incorretos": [
+        "Trapaça visual que permite enxergar os inimigos através de paredes.",
+        "Estratégia avançada de ataque rápido combinada por todo o time.",
+        "Moeda secundária usada em trocas comerciais com vilarejos neutros."
+      ]
+    },
+    {
+      "nome": "meta",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Estratégia ou escolha considerada mais eficiente.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Usar essa composição de personagens é o meta atual para vencer partidas.",
+      "exemplos_incorretos": [
+        "Minha internet está ruim, o meta está marcando mais de 300ms.",
+        "Levei um meta certeiro na cabeça e caí eliminado no chão.",
+        "Esqueci de levar meta para recuperar minha vida durante a raid."
+      ],
+      "significados_incorretos": [
+        "A área de treinamento onde se realizam os testes de pontaria.",
+        "Erro de código que faz com que os itens do inventário sumam.",
+        "O tempo que leva para o jogo carregar completamente uma partida."
+      ]
+    },
+    {
+      "nome": "stompar",
+      "variacoes": ["stomp"],
+      "classe_gramatical": "verbo",
+      "significado": "Vencer facilmente um adversário.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nosso time treinou muito e conseguiu stompar os rivais no torneio.",
+      "exemplos_incorretos": [
+        "Vou stompar madeira para craftar uma bancada de trabalho.",
+        "Ele começou a stompar no chat e acabou sendo mutado pelo sistema.",
+        "Cuidado para não stompar na armadilha e perder seus itens raras."
+      ],
+      "significados_incorretos": [
+        "Abandonar uma partida competitiva antes do final por frustração.",
+        "Utilizar programas ilegais para flutuar ou voar pelo cenário.",
+        "Fazer login em duas contas diferentes no mesmo computador."
+      ]
+    },
+    {
+      "nome": "headshot",
+      "variacoes": ["hs"],
+      "classe_gramatical": "substantivo",
+      "significado": "Tiro na cabeça.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele eliminou o último oponente com um headshot perfeito de sniper.",
+      "exemplos_incorretos": [
+        "Vou dar um headshot na base para comprar meus equipamentos novos.",
+        "O jogo travou e deu um headshot no meu sistema operacional.",
+        "Preciso minerar mais headshot para concluir a construção da ponte."
+      ],
+      "significados_incorretos": [
+        "Menu de configurações onde o jogador ajusta o volume dos áudios.",
+        "Ação de convidar um adversário para fazer parte da sua guilda.",
+        "Queda de conexão que expulsa o jogador direto para a tela inicial."
+      ]
+    },
+    {
+      "nome": "loot",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Itens coletados durante o jogo.",
+      "tags": ["rpg", "battle-royale"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Aquela caixa de suprimentos tinha um loot maravilhoso com itens épicos.",
+      "exemplos_incorretos": [
+        "Fiquei de loot na moita esperando o inimigo passar distraído.",
+        "Estou com muito loot na conexão, por isso as ações estão travando.",
+        "Ele deu loot na partida porque ficou muito bravo com o time."
+      ],
+      "significados_incorretos": [
+        "Movimento giratório que os personagens fazem para desviar de golpes.",
+        "Sistema automático que pune jogadores ofensivos nas redes sociais.",
+        "A pontuação final acumulada ao término de uma temporada competitiva."
+      ]
+    },
+    {
+      "nome": "squad",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Equipe ou grupo de jogadores.",
+      "tags": ["battle-royale"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Chamei meu squad de sempre para jogarmos o modo Battle Royale hoje.",
+      "exemplos_incorretos": [
+        "Comprei um squad novo para atirar mais rápido nos oponentes.",
+        "Tomei um squad de cura e recuperei toda a minha armadura perdida.",
+        "O servidor caiu porque deu um erro de squad no banco de dados."
+      ],
+      "significados_incorretos": [
+        "Um tipo de veículo terrestre blindado e equipado com metralhadoras.",
+        "Mecânica que permite alterar a cor das roupas dos personagens.",
+        "Nome dado aos moderadores que fiscalizam o chat dos servidores."
+      ]
+    },
+    {
+      "nome": "healer",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Personagem responsável por curar aliados.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nossa equipe precisa de um healer urgente para sobreviver à próxima fase.",
+      "exemplos_incorretos": [
+        "Gastei meus pontos em um healer de fogo para queimar os inimigos.",
+        "O jogo está com healer alto, meus comandos demoram para acontecer.",
+        "Fui banido porque usei um healer proibido que atravessa paredes."
+      ],
+      "significados_incorretos": [
+        "Jogador encarregado de infligir o maior dano físico possível.",
+        "Comando de texto utilizado para limpar o histórico do chat.",
+        "O criador original das regras de um campeonato de e-sports."
+      ]
+    },
+    {
+      "nome": "raid",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Missão ou ataque realizado em grupo.",
+      "tags": ["rpg"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Nos reunimos com vinte jogadores do clã para concluir a raid lendária.",
+      "exemplos_incorretos": [
+        "Ativei a raid da minha bota para pular os obstáculos mais altos.",
+        "Comprei uma raid de diamantes para mudar o visual da minha arma.",
+        "Meu jogo fechou do nada porque deu um erro de raid técnica."
+      ],
+      "significados_incorretos": [
+        "Pequena interface que mostra o mapa e a localização dos aliados.",
+        "Estilo de jogo focado apenas na construção de vilas pacíficas.",
+        "Ação de vender itens raros em troca de moedas virtuais do jogo."
+      ]
+    },
+    {
+      "nome": "macro",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Automação de comandos ou estratégia ampla.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O jogo proíbe o uso de macro para fazer combos automáticos no teclado.",
+      "exemplos_incorretos": [
+        "Levei um macro de sniper na cabeça e morri instantaneamente.",
+        "Preciso tomar um macro de mana antes que meus feitiços acabem.",
+        "Essa skin tem um macro lindo cheio de detalhes dourados e azuis."
+      ],
+      "significados_incorretos": [
+        "Nome dado ao chefe que gerencia o comércio em vilas do RPG.",
+        "Termo usado para descrever o pior jogador de uma equipe.",
+        "A taxa de atualização de quadros que determina a fluidez da tela."
+      ]
+    },
+    {
+      "nome": "micro",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Controle detalhado e preciso de ações.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "A micro daquele jogador profissional de RTS é impressionante de assistir.",
+      "exemplos_incorretos": [
+        "Minha conta foi banida porque o sistema detectou um micro ilegal.",
+        "Vou gastar dez dinheiros para fazer o craft de um micro de pedra.",
+        "O jogo fechou sozinho porque deu erro de micro na inicialização."
+      ],
+      "significados_incorretos": [
+        "Aparelho periférico usado exclusivamente para a captação de áudio.",
+        "Estratégia que consiste em atacar a base inimiga logo no início.",
+        "Nome da menor criatura hostil encontrada nas minas subterrâneas."
+      ]
+    },
+    {
+      "nome": "frag",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Eliminação de um adversário.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Garante mais um frag para o nosso time para podermos vencer o round.",
+      "exemplos_incorretos": [
+        "O jogo está com muito frag, minhas ações demoram um segundo para acontecer.",
+        "Preciso de uma poção de frag para correr mais rápido no mapa.",
+        "Fui expulso do servidor porque o admin não gostou do meu frag."
+      ],
+      "significados_incorretos": [
+        "Tipo de granada explosiva de fragmentação usada em jogos de guerra.",
+        "Pequeno pedaço de código defeituoso que quebra a interface gráfica.",
+        "Título dado ao jogador que comete mais infrações durante as partidas."
+      ]
+    },
+    {
+      "nome": "spray",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Atirar continuamente sem pausas.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Controlar o spray dessa metralhadora é muito difícil por causa do recuo.",
+      "exemplos_incorretos": [
+        "Vou dar spray na minha conta para conseguir subir de nível rápido.",
+        "O servidor entrou em manutenção para aplicar um spray de correções.",
+        "Gastei todo o meu ouro comprando um spray de diamantes na loja."
+      ],
+      "significados_incorretos": [
+        "Pintura ou desenho que os jogadores podem estampar nas paredes.",
+        "Habilidade mágica de cura em área muito utilizada por sacerdotes.",
+        "O ato de pular repetidamente de um avião no início do jogo."
+      ]
+    },
+    {
+      "nome": "wallbang",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Acertar um inimigo através de uma parede.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Consegui eliminar o oponente fazendo um wallbang espetacular na caixa de madeira.",
+      "exemplos_incorretos": [
+        "Usei o wallbang para comprar novas roupas para o meu avatar.",
+        "A conexão de rede caiu porque deu um wallbang no roteador.",
+        "Estou jogando de wallbang, a classe focada em dar escudos aos aliados."
+      ],
+      "significados_incorretos": [
+        "Trapaça que faz o jogador voar ou flutuar pelos limites do mapa.",
+        "Tipo de granada de luz que cega temporariamente quem olhar para ela.",
+        "Mecânica de corrida pelas paredes muito comum em jogos de parkour."
+      ]
+    },
+    {
+      "nome": "bang",
+      "variacoes": ["bangar"],
+      "classe_gramatical": "verbo",
+      "significado": "Acertar ou eliminar com facilidade.",
+      "tags": ["fps"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Apareci atrás deles de surpresa e consegui bangar os dois de uma vez.",
+      "exemplos_incorretos": [
+        "Minha arma quebrou e tive que gastar ouro para consertar o bang.",
+        "O jogo tem um bang incrível, a história me prendeu do início ao fim.",
+        "Fui banido por usar um bang que aumentava minhas moedas virtuais."
+      ],
+      "significados_incorretos": [
+        "Termo usado para descrever o som emitido por explosões distantes.",
+        "Granada de efeito moral que cega e ensurdece os oponentes.",
+        "Ação de pular de lugares altos utilizando um paraquedas."
+      ]
+    },
+    {
+      "nome": "hack",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Programa ou trapaça utilizada para obter vantagem.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele jogador está usando hack, a mira dele trava na cabeça de todo mundo.",
+      "exemplos_incorretos": [
+        "Fiz um hack incrível e salvei meu amigo que estava sem vida.",
+        "Preciso de dez ouros para fazer o craft de um hack de madeira.",
+        "O jogo lançou um hack de expansão com mapas totalmente novos."
+      ],
+      "significados_incorretos": [
+        "Técnica profissional de digitação rápida usada por programadores.",
+        "Tipo de servidor privado criado apenas para testes de desempenho.",
+        "Ação de derrotar um chefe de fase sem usar nenhum equipamento."
+      ]
+    },
+    {
+      "nome": "ult",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Habilidade suprema de um personagem.",
+      "tags": ["moba", "hero-shooter"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Use a sua ult agora para eliminar todo o time deles que está junto.",
+      "exemplos_incorretos": [
+        "A minha ult caiu e o jogo está travando muito com o ping alto.",
+        "Fui expulso do servidor porque o admin achou a minha ult tóxica.",
+        "Vou comprar uma ult nova na loja para mudar a cor do meu carro."
+      ],
+      "significados_incorretos": [
+        "A última rodada de uma partida competitiva que decide o desempate.",
+        "Contrato digital assinado pelos usuários antes de jogar online.",
+        "Nome dado à versão mais atualizada e recente de um jogo eletrônico."
+      ]
+    },
+    {
+      "nome": "carry",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Carregar o time para a vitória.",
+      "tags": ["moba", "fps"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nosso atirador jogou demais e conseguiu carry a partida inteira sozinho.",
+      "exemplos_incorretos": [
+        "Vou usar a habilidade de carry para minerar diamantes mais rápido.",
+        "O jogo fechou sozinho porque deu erro de carry na memória ram.",
+        "Equipei uma espada lendária que tem o atributo carry muito alto."
+      ],
+      "significados_incorretos": [
+        "Estratégia que consiste em esconder-se atrás de barreiras físicas.",
+        "A classe de suporte focada exclusivamente em curar e dar escudos.",
+        "Comando administrativo usado para banir trapaceiros do servidor."
+      ]
+    },
+    {
+      "nome": "jungle",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Área neutra do mapa ou função específica.",
+      "tags": ["moba"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O jogador da jungle garantiu o controle dos monstros objetivos do mapa.",
+      "exemplos_incorretos": [
+        "Comprei um jungle de pele de dragão para o meu guerreiro.",
+        "Minha mira está ruim porque o jungle do meu mouse quebrou.",
+        "O servidor caiu porque deu erro de jungle na rede mundial."
+      ],
+      "significados_incorretos": [
+        "Tipo de bioma tropical adicionado em atualizações de Minecraft.",
+        "Estilo de trilha sonora empolgante tocada em jogos de corrida.",
+        "Ação de pular repetidamente para evitar ataques em jogos de luta."
+      ]
+    },
+    {
+      "nome": "creeper",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura explosiva do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Um creeper surgiu pelas minhas costas e destruiu metade da minha plantação.",
+      "exemplos_incorretos": [
+        "Preciso de um creeper de ferro para minerar blocos de ouro.",
+        "Ativei a habilidade creeper e recuperei toda a minha vida perdida.",
+        "O jogo está muito creeper hoje, as ações acontecem na hora certa."
+      ],
+      "significados_incorretos": [
+        "Planta trepadeira usada para decorar fachadas de construções.",
+        "Jogador inconveniente que fica seguindo outros usuários pelo mapa.",
+        "Tipo de bug visual que deixa a tela piscando em tons de verde."
+      ]
+    },
+    {
+      "nome": "enderman",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura teleportadora do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Não olhe diretamente nos olhos do enderman para ele não te atacar.",
+      "exemplos_incorretos": [
+        "Vou fazer o craft de um enderman para guardar meus minérios raras.",
+        "O líder da guilda me deu um cargo de enderman para gerenciar a sala.",
+        "Minha conexão caiu porque deu um erro de enderman com o servidor."
+      ],
+      "significados_incorretos": [
+        "A dimensão final do jogo onde vive o dragão chefe do Minecraft.",
+        "Modificação visual que deixa o céu do jogo permanentemente escuro.",
+        "Jogador veterano que alcançou a marca de mil horas jogadas."
+      ]
+    },
+    {
+      "nome": "villager",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Habitante das vilas no Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Consegui um villager bibliotecário que vende livros com ótimos encantamentos.",
+      "exemplos_incorretos": [
+        "Equipei um villager afiado para aumentar o dano crítico do ataque.",
+        "Vou dar villager na base para comprar poções e equipamentos novos.",
+        "O jogo atualizou e deu um villager enorme no dano das flechas."
+      ],
+      "significados_incorretos": [
+        "Localização secreta do mapa onde ficam escondidos os baús de tesouro.",
+        "Ferramenta usada para arar a terra e fazer plantações de trigo.",
+        "Comando de console utilizado para alterar o clima do mundo aberto."
+      ]
+    },
+    {
+      "nome": "gg",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Abreviação de Good Game.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A partida foi muito disputada, parabéns a todos e gg!",
+      "exemplos_incorretos": [
+        "Preciso de dez ouros para comprar um gg na loja do jogo.",
+        "O servidor caiu porque deu um erro de gg de rede interna.",
+        "Levei um gg na cabeça e caí eliminado no meio do caminho."
+      ],
+      "significados_incorretos": [
+        "Gesto grosseiro usado para zombar de adversários inexperientes.",
+        "Abreviação técnica para designar placas gráficas de computador.",
+        "O menu onde os jogadores configuram as teclas de atalho."
+      ]
+    },
+    {
+      "nome": "wp",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Abreviação de Well Played.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Vocês jogaram muito bem e mereceram a vitória, wp!",
+      "exemplos_incorretos": [
+        "Minha arma ficou sem wp e por isso parou de atirar nos alvos.",
+        "Fui banido porque usei um wp ilegal para atravessar as estruturas.",
+        "Vou craftar um wp de pedra para conseguir minerar os carvões."
+      ],
+      "significados_incorretos": [
+        "Sistema de pontos utilizado para determinar o ranque competitivo.",
+        "Nome da empresa desenvolvedora de jogos independentes de RPG.",
+        "Atrás da parede, trapacear usando modificações de transparência."
+      ]
+    },
+    {
+      "nome": "easy",
+      "variacoes": ["ez"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Muito fácil.",
+      "tags": ["competitivo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vencemos a rodada sem nenhuma dificuldade, foi totalmente easy.",
+      "exemplos_incorretos": [
+        "Preciso tomar um easy de vida antes que o monstro me alcance.",
+        "O jogo lançou um modo easy com dezenas de mapas espaciais novos.",
+        "A minha conexão está ruim, o easy está batendo mais de 500ms."
+      ],
+      "significados_incorretos": [
+        "Mensagem automática enviada ao suporte para denunciar assédio.",
+        "Estilo de jogo agressivo focado em atacar sem nenhuma estratégia.",
+        "A moeda virtual usada exclusivamente em jogos da plataforma Roblox."
+      ]
+    },
+    {
+      "nome": "lol",
+      "variacoes": [],
+      "classe_gramatical": "interjeicao",
+      "significado": "Expressão de risada.",
+      "tags": ["chat"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele caiu na própria armadilha que tinha armado, lol!",
+      "exemplos_incorretos": [
+        "Vou equipar este lol lendário para aumentar minha defesa física.",
+        "O servidor entrou em manutenção por causa de um lol crítico.",
+        "Preciso farmar bastante lol para conseguir evoluir minhas armas."
+      ],
+      "significados_incorretos": [
+        "Abreviação usada para se referir exclusivamente ao jogo League of Legends.",
+        "Código secreto usado para pular as fases mais difíceis da campanha.",
+        "Tipo de punição digital que bloqueia o chat por comportamento tóxico."
+      ]
+    },
+    {
+      "nome": "block",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Bloco utilizado para construção.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Preciso coletar mais um block de pedra para terminar de fechar o muro.",
+      "exemplos_incorretos": [
+        "Minha conta entrou em block porque esqueci a senha cadastrada.",
+        "Levei um block certeiro de sniper e fui eliminado da sala.",
+        "O jogo tem um block maravilhoso com efeitos de luz realistas."
+      ],
+      "significados_incorretos": [
+        "Ação de impedir que um usuário entre em contato com você.",
+        "O travamento completo do computador devido ao excesso de calor.",
+        "Habilidade defensiva usada para mitigar o dano de ataques físicos."
+      ]
+    },
+    {
+      "nome": "bridge",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Ponte construída para atravessar áreas.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Faça uma bridge rápida de blocos até a ilha central do SkyWars.",
+      "exemplos_incorretos": [
+        "Comprei uma bridge de ouro para mudar a cor da minha skin.",
+        "O servidor caiu porque deu erro na bridge de rede principal.",
+        "Minha espada quebrou porque gastei toda a durabilidade da bridge."
+      ],
+      "significados_incorretos": [
+        "Estratégia que consiste em derrubar as estruturas feitas por rivais.",
+        "Nome da empresa que desenvolve modificações gráficas realistas.",
+        "Modalidade competitiva onde os times jogam de forma sincronizada."
+      ]
+    },
+    {
+      "nome": "cheater",
+      "variacoes": ["cheatar"],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que utiliza trapaças.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele cheater está voando pelo mapa e eliminando todo mundo.",
+      "exemplos_incorretos": [
+        "Consegui um cheater lendário abrindo caixas misteriosas na loja.",
+        "O jogo tem um cheater muito emocionante focado na história.",
+        "Vou usar o cheater para craftar armaduras de ferro na bancada."
+      ],
+      "significados_incorretos": [
+        "Nome dado aos testadores oficiais que buscam falhas no sistema.",
+        "Jogador profissional patrocinado por grandes marcas mundiais.",
+        "Dispositivo usado para capturar imagens da tela em alta resolução."
+      ]
+    },
+    {
+      "nome": "res",
+      "variacoes": ["resistance"],
+      "classe_gramatical": "substantivo",
+      "significado": "Efeito ou atributo de resistência.",
+      "tags": ["minecraft", "rpg"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Tomei uma poção com efeito de res e aguentei as explosões sem morrer.",
+      "exemplos_incorretos": [
+        "A conexão de rede caiu porque o res ficou muito alto do nada.",
+        "O admin usou o comando res para banir os trapaceiros do servidor.",
+        "Escrevi uma mensagem longa e apertei a tecla res para enviar."
+      ],
+      "significados_incorretos": [
+        "Abreviação técnica para a resolução de imagem do monitor do jogador.",
+        "Ação de reviver um companheiro de equipe que foi derrotado.",
+        "O processo de baixar novamente os arquivos corrompidos do jogo."
+      ]
+    },
+    {
+      "nome": "xp",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pontos de experiência.",
+      "tags": ["rpg", "minecraft"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Preciso derrotar mais monstros para juntar xp e encantar meus itens.",
+      "exemplos_incorretos": [
+        "Minha arma ficou sem xp e parou de disparar projéteis na partida.",
+        "O jogo fechou sozinho porque deu um erro de xp na placa de vídeo.",
+        "Vou usar o comando xp para convidar meus amigos para o grupo."
+      ],
+      "significados_incorretos": [
+        "Nome do sistema operacional mais antigo recomendado para emuladores.",
+        "Moeda premium usada para comprar passes de temporada em Fortnite.",
+        "O tempo total de recarga necessário para usar a habilidade máxima."
+      ]
+    },
+    {
+      "nome": "gapple",
+      "variacoes": ["gap"],
+      "classe_gramatical": "substantivo",
+      "significado": "Maçã dourada utilizada para regeneração e buffs.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Coma uma gapple antes de iniciar o combate para garantir sua regeneração.",
+      "exemplos_incorretos": [
+        "Fui banido porque o sistema achou que eu estava usando gapple.",
+        "O servidor está rodando em uma gapple muito estável e sem lag.",
+        "Apertei o botão de gapple para o meu veículo correr mais na pista."
+      ],
+      "significados_incorretos": [
+        "Espada mágica super resistente feita à base de ouro e maçãs.",
+        "Dispositivo portátil usado para jogar títulos de realidade virtual.",
+        "Nome do principal vilão que habita a dimensão do Nether."
+      ]
+    },
+    {
+      "nome": "golem",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura protetora do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Construí um golem de ferro para defender os moradores dos ataques noturnos.",
+      "exemplos_incorretos": [
+        "Vou gastar meus ouros para comprar um golem de skin na loja.",
+        "O jogo travou todo porque deu um erro de golem na placa de som.",
+        "Ativei o comando golem para convidar todo o clã para a sala de bate-papo."
+      ],
+      "significados_incorretos": [
+        "Tipo de bloco decorativo esculpido com desenhos de rostos de monstros.",
+        "Ferramenta de mineração que possui a maior velocidade de quebra.",
+        "Ação de correr pulando de blocos altos sem sofrer nenhum dano."
+      ]
+    },
+    {
+      "nome": "pigman",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura do Nether no Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Não ataque o pigman para que os outros da mesma espécie não venham atrás de você.",
+      "exemplos_incorretos": [
+        "Fiz o craft de um pigman de diamante para colher meus trigos.",
+        "Minha conta foi banida porque usei um pigman proibido no servidor.",
+        "O servidor está instável hoje, o pigman está oscilando muito."
+      ],
+      "significados_incorretos": [
+        "A carne de porco assada que recupera mais pontos de fome no jogo.",
+        "Modo de jogo cooperativo focado na criação de fazendas de animais.",
+        "Nome do criador original das mecânicas de sobrevivência do jogo."
+      ]
+    },
+    {
+      "nome": "pillager",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Inimigo saqueador do Minecraft.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Um grupo de pillager invadiu o vilarejo carregando bestas e bandeiras.",
+      "exemplos_incorretos": [
+        "Vou usar o pillager para aumentar a durabilidade das ferramentas.",
+        "Equipei uma poção de pillager para conseguir respirar debaixo d'água.",
+        "O jogo lançou um pillager novo com ótimos recursos visuais."
+      ],
+      "significados_incorretos": [
+        "Tipo de poção arremessável que causa efeito de veneno prolongado.",
+        "Bloco de pedra usado na sustentação de pontes e construções.",
+        "O jogador que gasta muito dinheiro comprando itens estéticos."
+      ]
+    },
+    {
+      "nome": "pro",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Jogador muito habilinoso.",
+      "tags": ["jogos"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Aquele cara joga demais, as jogadas dele são de nível pro.",
+      "exemplos_incorretos": [
+        "Minha espada quebrou porque gastei todo o pro dela na luta.",
+        "A internet caiu e o pro da partida ficou extremamente alto.",
+        "O jogo travou do nada porque deu um erro de pro de memória."
+      ],
+      "significados_incorretos": [
+        "Abreviação usada para se referir a programas de modificação de mapas.",
+        "Contrato profissional assinado entre desenvolvedores e publicadoras.",
+        "O menu de opções avançadas de áudio e vídeo nos consoles."
+      ]
+    },
+    {
+      "nome": "log",
+      "variacoes": ["logar"],
+      "classe_gramatical": "verbo",
+      "significado": "Entrar em uma conta ou servidor.",
+      "tags": ["online"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou fazer o log na minha conta para coletar a recompensa do dia.",
+      "exemplos_incorretos": [
+        "Levei um log certeiro de sniper na cabeça e fui eliminado da sala.",
+        "Preciso de dez pedras para craftar o log da minha armadura.",
+        "O jogo atualizou e deu um log excelente no dano das magias."
+      ],
+      "significados_incorretos": [
+        "Bloco de madeira bruta coletado ao quebrar troncos de árvores.",
+        "Histórico completo com os códigos de programação internos do jogo.",
+        "Ação de encerrar a transmissão ao vivo de uma partida competitiva."
+      ]
+    },
+    {
+      "nome": "shift",
+      "variacoes": ["shiftar"],
+      "classe_gramatical": "verbo",
+      "significado": "Agachar-se ou mover-se discretamente.",
+      "tags": ["minecraft"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Fique segurando o shift para não cair da beirada enquanto constrói a ponte.",
+      "exemplos_incorretos": [
+        "Comprei um shift novo para o meu guerreiro usar nas batalhas.",
+        "A internet caiu e o shift subiu para mais de 600 milissegundos.",
+        "Usei um shift para banir os trapaceiros que entraram na sala."
+      ],
+      "significados_incorretos": [
+        "Ação de trocar de personagem no meio de uma partida de luta.",
+        "Comando de teclado usado para aumentar a velocidade dos veículos.",
+        "Menu flutuante onde os jogadores compram moedas com dinheiro real."
+      ]
+    },
+    {
+      "nome": "splash",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Poção ou efeito de área.",
+      "tags": ["minecraft", "rpg"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Arremesse essa poção de splash de cura no chão para curar todo o grupo.",
+      "exemplos_incorretos": [
+        "Ele começou a dar splash no chat e acabou sendo mutado pelo mod.",
+        "Minha conta foi banida porque usei um splash proibido para voar.",
+        "O jogo travou por completo porque o splash do computador deu erro."
+      ],
+      "significados_incorretos": [
+        "Imagem artística exibida na tela de carregamento inicial do jogo.",
+        "Efeito sonoro emitido quando um personagem cai dentro da água.",
+        "O movimento feito pelos peixes ao serem pescados com a vara."
+      ]
+    },
+    {
+      "nome": "spam",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Repetir mensagens ou ações excessivamente.",
+      "tags": ["chat", "online"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não fique enviando esse tanto de mensagens para não dar spam no chat.",
+      "exemplos_incorretos": [
+        "Fiz o craft de um spam de diamante para coletar recursos raras.",
+        "Preciso tomar um spam de vida antes que o chefe da fase me acerte.",
+        "O jogo lançou um spam novo com dezenas de missões da história."
+      ],
+      "significados_incorretos": [
+        "Ataque especial executado com o uso de combos de botões.",
+        "Lixo eletrônico ou e-mails promocionais enviados por corporações.",
+        "Tipo de bloco metálico condutor usado em circuitos elétricos."
+      ]
+    },
+    {
+      "nome": "speedrun",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Tentativa de completar um jogo no menor tempo possível.",
+      "tags": ["desafio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele treinou durante meses e quebrou o recorde mundial de speedrun do jogo.",
+      "exemplos_incorretos": [
+        "Equipei uma bota de speedrun que aumenta minha defesa mágica.",
+        "Minha conta foi suspensa por usar speedrun para conseguir moedas.",
+        "O servidor caiu porque deu um erro de speedrun na conexão de rede."
+      ],
+      "significados_incorretos": [
+        "Habilidade que faz o personagem correr infinitamente sem cansar.",
+        "Trapaça ilegal que aumenta a velocidade de movimentação do avatar.",
+        "Maratona beneficente onde jogadores transmitem suas partidas ao vivo."
+      ]
+    }
+  ]
+}

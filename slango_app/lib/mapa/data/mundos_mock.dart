@@ -6,7 +6,7 @@ final List<Mundo> mundos = [
     imagem: 'images/jogos.png',
     descricao: 'Disponível',
     totalGirias: 45,
-    progresso: 0.40,
+    progresso: 0.50,
     desbloqueado: true,
   ),
   const Mundo(
