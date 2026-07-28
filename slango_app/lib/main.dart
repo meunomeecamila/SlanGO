@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'licao.dart';
 import 'revisao.dart';
 import 'mapa/mapa.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  dotenv.load(fileName: ".env").then((_) {
+    runApp(const MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {

@@ -97,6 +97,7 @@
                 opcoes: embaralharOpcoes(todasAsOpcoes),
                 respostaCorreta: giria.significado,
                 explicacao: giria.significado, // Preserva o significado real da gíria
+                exemplo: giria.exemplo_correto,
             };
         });
     }
@@ -110,6 +111,7 @@
                 opcoes: opcoesDeImpacto, // Não embaralha para manter padrão dos botões
                 respostaCorreta: giria.impacto,
                 explicacao: giria.significado, // Preserva o significado real para contexto
+                exemplo: giria.exemplo_correto,
             };
         });
     }
@@ -123,6 +125,7 @@
                 opcoes: embaralharOpcoes(todasAsFrases),
                 respostaCorreta: giria.exemplo_correto,
                 explicacao: giria.significado, // Preserva o significado real para contexto
+                exemplo: giria.exemplo_correto,
             };
         });
     }
@@ -141,15 +144,19 @@
     function converterParaFaseMundo(
         pergunta: PerguntaInterna,
         id: number,
-        variacoes: string[]
-    ): FaseMundo & { respostaCorreta: string } {
+        variacoes: string[],
+        exemplo: string,
+        classe?: string
+    ): FaseMundo & { respostaCorreta: string; exemplo: string; classe?: string } {
         return {
             id,
             giria: pergunta.giria,
             variacoes,
             pergunta: pergunta.textoDaPergunta,
             explicacao: pergunta.explicacao,
-            respostaCorreta: pergunta.respostaCorreta, // Exportado explicitamente para o Gabarito Final
+            respostaCorreta: pergunta.respostaCorreta,
+            exemplo,
+            classe,
             alternativas: pergunta.opcoes.map((opcao) => ({
                 texto: opcao,
                 correta: opcao === pergunta.respostaCorreta,
@@ -190,14 +197,14 @@
 
         // ── fases: as 3 gírias para a Tela de Estudo ──
         const fases = tresPalavras.map((giria, index) =>
-            converterParaFaseMundo(fase1[index], index + 1, giria.variacoes || [])
+            converterParaFaseMundo(fase1[index], index + 1, giria.variacoes || [], giria.exemplo_correto, (giria as any).classe)
         );
 
         // ── todasAsPerguntas: as 9 perguntas do quiz em sequência ──
         const todasAsPerguntas = [
-            ...fase1.map((q, i) => converterParaFaseMundo(q, i + 1, variacoesPorGiria[q.giria] ?? [])),
-            ...fase2.map((q, i) => converterParaFaseMundo(q, 3 + i + 1, variacoesPorGiria[q.giria] ?? [])),
-            ...fase3.map((q, i) => converterParaFaseMundo(q, 6 + i + 1, variacoesPorGiria[q.giria] ?? [])),
+            ...fase1.map((q, i) => converterParaFaseMundo(q, i + 1, variacoesPorGiria[q.giria] ?? [], q.exemplo || '')),
+            ...fase2.map((q, i) => converterParaFaseMundo(q, 3 + i + 1, variacoesPorGiria[q.giria] ?? [], q.exemplo || '')),
+            ...fase3.map((q, i) => converterParaFaseMundo(q, 6 + i + 1, variacoesPorGiria[q.giria] ?? [], q.exemplo || '')),
         ];
 
         return {
