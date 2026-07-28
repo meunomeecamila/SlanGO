@@ -15,20 +15,25 @@ class PlanetaWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final scale = (size.width / 390).clamp(0.9, 1.2);
+    final escalaPelaLargura = size.width / 390;
+    final escalaPelaAltura = size.height / 844;
+    final scale = (escalaPelaLargura < escalaPelaAltura
+            ? escalaPelaLargura
+            : escalaPelaAltura)
+        .clamp(0.7, 1.1);
 
     return Column(
       children: [
         Container(
-          width: 300 * scale,
-          height: 300 * scale,
+          width: 210 * scale,
+          height: 210 * scale,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
                 color: AppColors.primary.withOpacity(0.45),
-                blurRadius: 70,
-                spreadRadius: 8,
+                blurRadius: 50,
+                spreadRadius: 6,
               ),
             ],
           ),
@@ -38,7 +43,7 @@ class PlanetaWidget extends StatelessWidget {
           ),
         ),
 
-        SizedBox(height: 20 * scale),
+        SizedBox(height: 14 * scale),
 
         Text(
           mundo.nome,
@@ -48,28 +53,36 @@ class PlanetaWidget extends StatelessWidget {
 
         SizedBox(height: 8 * scale),
 
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              mundo.desbloqueado
-                  ? Icons.auto_awesome
-                  : Icons.lock,
-              color: mundo.desbloqueado
-                  ? AppColors.cyan
-                  : AppColors.disabled,
-              size: 18,
-            ),
-            const SizedBox(width: 6),
-            Text(
-              mundo.descricao,
-              style: AppText.subtitulo(scale).copyWith(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                mundo.desbloqueado
+                    ? Icons.auto_awesome
+                    : Icons.lock,
                 color: mundo.desbloqueado
-                    ? AppColors.textSecondary
+                    ? AppColors.cyan
                     : AppColors.disabled,
+                size: 18,
               ),
-            ),
-          ],
+              const SizedBox(width: 6),
+              Flexible(
+                child: Text(
+                  mundo.descricao,
+                  textAlign: TextAlign.center,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 2,
+                  style: AppText.subtitulo(scale).copyWith(
+                    color: mundo.desbloqueado
+                        ? AppColors.textSecondary
+                        : AppColors.disabled,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );
