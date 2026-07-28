@@ -14,13 +14,26 @@ class MapaHeader extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "SlanGO",
-                overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.alfaSlabOne(
-                  color: Colors.white,
-                  fontSize: 32,
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Slan",
+                      style: GoogleFonts.alfaSlabOne(
+                        color: Colors.white,
+                        fontSize: 32,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "GO",
+                      style: GoogleFonts.alfaSlabOne(
+                        color:const Color(0xFF5EEAD4),
+                        fontSize: 32,
+                      ),
+                    ),
+                  ],
                 ),
+                overflow: TextOverflow.ellipsis,
               ),
               const SizedBox(height: 2),
               const Text(
