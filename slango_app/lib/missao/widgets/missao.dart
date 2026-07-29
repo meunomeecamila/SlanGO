@@ -3,6 +3,42 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../main.dart';
 
+import 'dart:math';
+
+class FundoEspacial extends StatelessWidget {
+  const FundoEspacial({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final random = Random(42);
+
+    return IgnorePointer(
+      child: Stack(
+        children: List.generate(90, (index) {
+          final size = random.nextDouble() * 3 + 1;
+
+          return Positioned(
+            left: random.nextDouble() *
+                MediaQuery.of(context).size.width,
+            top: random.nextDouble() *
+                MediaQuery.of(context).size.height,
+            child: Container(
+              width: size,
+              height: size,
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(
+                  random.nextDouble() * .8 + .2,
+                ),
+                shape: BoxShape.circle,
+              ),
+            ),
+          );
+        }),
+      ),
+    );
+  }
+}
+
 class TelaMundoDosJogos extends StatefulWidget {
   const TelaMundoDosJogos({super.key});
 
@@ -39,16 +75,41 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
             children: [
               const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
               const SizedBox(height: 24),
-              PlanetaEFoguete(),
               Expanded(
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       BalaoDeFala(),
-                      const SizedBox(height: 24),
-                      AvatarDoAlien(),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 32),
+
+                      Center(
+  child: Stack(
+    alignment: Alignment.center,
+    children: [
+
+      Container(
+        width: 240,
+        height: 240,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.purple.withOpacity(.45),
+              blurRadius: 70,
+              spreadRadius: 20,
+            ),
+          ],
+        ),
+      ),
+
+      Image.asset(
+        '../images/planets_pets/jogo_pet.png',
+        height: 210,
+      ),
+    ],
+  ),
+),
                       ChipsDeGirias(girias: giriasDoJogo),
                       const SizedBox(height: 32),
                       BotaoIniciarMissao(
@@ -137,29 +198,6 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
   }
 }
 
-class PlanetaEFoguete extends StatelessWidget {
-  const PlanetaEFoguete({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child: Opacity(
-          opacity: 0.75,
-          child: Image.asset(
-            'images/jogos.png',
-            width: 112,
-            height: 112,
-            fit: BoxFit.contain,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 class BalaoDeFala extends StatelessWidget {
   const BalaoDeFala({super.key});
 
@@ -237,31 +275,6 @@ class BotaoContinuar extends StatelessWidget {
           SizedBox(width: 4),
           Icon(Icons.arrow_forward, size: 11),
         ],
-      ),
-    );
-  }
-}
-
-class AvatarDoAlien extends StatelessWidget {
-  const AvatarDoAlien({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: 130,
-        height: 130,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: const Color(0xFF3D2B6B), width: 2),
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: Image.asset(
-            'images/avatar.png',
-            fit: BoxFit.contain,
-          ),
-        ),
       ),
     );
   }
