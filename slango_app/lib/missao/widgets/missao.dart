@@ -104,7 +104,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
       ),
 
       Image.asset(
-        '../images/planets_pets/jogo_pet.png',
+        '../images/planets_pets/jogo_pet.jpg',
         height: 210,
       ),
     ],
