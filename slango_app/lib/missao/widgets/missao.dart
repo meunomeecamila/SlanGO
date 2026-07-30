@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../main.dart';
+import 'package:slango_app/mapa/mapa.dart';
 
 import 'dart:math';
 
@@ -59,77 +60,86 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
       body: DefaultTextStyle(
         style: GoogleFonts.poppins(),
         child: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF1A0F2E),
-              Color(0xFF120B24),
-              Color(0xFF0D0818),
-            ],
-          ),
-        ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
-              const SizedBox(height: 24),
-              Expanded(
-                child: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      BalaoDeFala(),
-                      const SizedBox(height: 32),
-
-                      Center(
-  child: Stack(
-    alignment: Alignment.center,
-    children: [
-
-      Container(
-        width: 240,
-        height: 240,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.purple.withOpacity(.45),
-              blurRadius: 70,
-              spreadRadius: 20,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color(0xFF1A0F2E),
+                Color(0xFF120B24),
+                Color(0xFF0D0818),
+              ],
             ),
-          ],
-        ),
-      ),
+          ),
+          child: SafeArea(
+            child: Column(
+              children: [
+                const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
+                const SizedBox(height: 24),
+                Expanded(
+                  child: Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        BalaoDeFala(),
+                        const SizedBox(height: 32),
 
-      Image.asset(
-        '../images/planets_pets/jogo_pet.png',
-        height: 210,
-      ),
-    ],
-  ),
-),
-                      ChipsDeGirias(girias: giriasDoJogo),
-                      const SizedBox(height: 32),
-                      BotaoIniciarMissao(
-                        aoTocar: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const FluxoLicao(),
+                        Center(
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const MapaScreen(),
+                                ),
+                              );
+                            },
+                            child: Stack(
+                              alignment: Alignment.center,
+                              children: [
+                                Container(
+                                  width: 240,
+                                  height: 240,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.purple.withOpacity(.45),
+                                        blurRadius: 70,
+                                        spreadRadius: 20,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Image.asset(
+                                  'images/planets_pets/jogo_pet.png',
+                                  height: 210,
+                                ),
+                              ],
                             ),
-                          );
-                        },
-                      ),
-                    ],
+                          ),
+                        ),
+
+                        ChipsDeGirias(girias: giriasDoJogo),
+                        const SizedBox(height: 32),
+                        BotaoIniciarMissao(
+                          aoTocar: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => const FluxoLicao(),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 24),
-            ],
+                const SizedBox(height: 24),
+              ],
+            ),
           ),
-        ),
         ),
       ),
     );
