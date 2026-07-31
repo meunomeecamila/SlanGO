@@ -32,6 +32,14 @@ class FluxoLicao extends StatefulWidget {
   State<FluxoLicao> createState() => _FluxoLicaoState();
 }
 
+Route<T> criarRotaSemAnimacao<T>(Widget tela) {
+  return PageRouteBuilder<T>(
+    pageBuilder: (_, __, ___) => tela,
+    transitionDuration: Duration.zero,
+    reverseTransitionDuration: Duration.zero,
+  );
+}
+
 class _FluxoLicaoState extends State<FluxoLicao> {
   int cntCorreto = 0;
   int cntErrado = 0;
