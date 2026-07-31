@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
 import { 
     prepararRodadaAleatoria,
-    listarMundos
+    listarMundos,
+    contarGiriasPorMundos
 } from '../services/mundoService';
 import {  } from "../services/mundoService";
 
@@ -81,4 +82,13 @@ export const validarResultadoJogo = (req: Request, res: Response) => {
     } catch (error: any) {
         res.status(500).json({ error: error.message });
     }
+};
+
+export function contarGiriasPorMundo(req: Request, res: Response) {
+    try {
+        const contagem = contarGiriasPorMundos();
+        res.status(200).json(contagem);
+    } catch (error: any) {
+        res.status(500).json({ error: error.message });
+    }   
 };
