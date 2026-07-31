@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../inicio/widgets/logo_slango.dart';
+import '../login/login.dart';
 import '../mapa/mapa.dart';
+import '../mapa/styles/texto.dart';
 import '../shared/widgets/background_espaco.dart';
 import 'widgets/botao_registrar.dart';
 import 'widgets/campo_texto.dart';
@@ -56,20 +58,55 @@ class _RegistroScreenState extends State<RegistroScreen> {
     return Scaffold(
       body: BackgroundEspaco(
         child: SafeArea(
-          child: Center(
+          child: Align(
+            alignment: Alignment.topCenter,
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(
                 horizontal: 28,
-                vertical: 24,
+                vertical: 18,
               ),
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 420),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: IconButton(
+                        padding: EdgeInsets.zero,
+                        constraints: const BoxConstraints(),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back_ios_new_rounded,
+                          color: Colors.white,
+                          size: 24,
+                        ),
+                      ),
+                    ),
+
+                    const SizedBox(height: 8),
+
                     const LogoSlango(),
 
-                    const SizedBox(height: 35),
+                    const SizedBox(height: 18),
+
+                    Text(
+                      "Criar Conta",
+                      textAlign: TextAlign.center,
+                      style: AppText.titulo(0.95),
+                    ),
+
+                    const SizedBox(height: 8),
+
+                    Text(
+                      "Comece sua aventura no universo das gírias!",
+                      textAlign: TextAlign.center,
+                      style: AppText.subtitulo(0.95),
+                    ),
+
+                    const SizedBox(height: 45),
 
                     CampoTexto(
                       label: "Nome",
@@ -129,6 +166,39 @@ class _RegistroScreenState extends State<RegistroScreen> {
                     BotaoRegistrar(
                       onPressed: registrar,
                     ),
+
+                    const SizedBox(height: 24),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text(
+                          "Já possui uma conta? ",
+                          style: TextStyle(
+                            color: Colors.white70,
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => const LoginScreen(),
+                              ),
+                            );
+                          },
+                          child: const Text(
+                            "Fazer Login",
+                            style: TextStyle(
+                              color: Color(0xFF57E6D8),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 20),
                   ],
                 ),
               ),
