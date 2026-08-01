@@ -17,10 +17,10 @@ class CardMundo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(18),
+      padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: AppColors.card,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(22),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,31 +28,61 @@ class CardMundo extends StatelessWidget {
           Row(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
                   mundo.imagem,
-                  width: 60,
-                  height: 60,
+                  width: 50,
+                  height: 50,
                   fit: BoxFit.cover,
                 ),
               ),
 
-              const SizedBox(width: 16),
+              const SizedBox(width: 14),
 
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      mundo.nome,
-                      style: AppText.cardTitulo(1),
+                    Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            mundo.nome,
+                            style: AppText.cardTitulo(0.95),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 3,
+                          ),
+                          decoration: BoxDecoration(
+                            color: (mundo.desbloqueado
+                                    ? AppColors.cyan
+                                    : AppColors.disabled)
+                                .withOpacity(0.18),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Text(
+                            mundo.status,
+                            style: AppText.cardSubtitulo(0.8).copyWith(
+                              color: mundo.desbloqueado
+                                  ? AppColors.cyan
+                                  : AppColors.disabled,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
 
-                    const SizedBox(height: 4),
+                    const SizedBox(height: 2),
 
                     Text(
                       "${mundo.totalGirias} gírias para aprender",
-                      style: AppText.cardSubtitulo(1),
+                      style: AppText.cardSubtitulo(0.9),
                     ),
                   ],
                 ),
@@ -60,13 +90,21 @@ class CardMundo extends StatelessWidget {
             ],
           ),
 
-          const SizedBox(height: 18),
+          if (mundo.descricao.isNotEmpty) ...[
+            const SizedBox(height: 10),
+            Text(
+              mundo.descricao,
+              style: AppText.cardSubtitulo(0.9),
+            ),
+          ],
+
+          const SizedBox(height: 14),
 
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: LinearProgressIndicator(
               value: mundo.progresso,
-              minHeight: 10,
+              minHeight: 8,
               backgroundColor: Colors.white10,
               valueColor: const AlwaysStoppedAnimation(
                 AppColors.primary,
@@ -74,25 +112,25 @@ class CardMundo extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 22),
+          const SizedBox(height: 16),
 
           SizedBox(
             width: double.infinity,
-            height: 54,
+            height: 48,
             child: ElevatedButton(
               onPressed: mundo.desbloqueado ? onExplorar : null,
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.primary,
                 disabledBackgroundColor: Colors.grey.shade700,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(28),
                 ),
               ),
               child: Text(
                 mundo.desbloqueado
                     ? "Explorar Planeta"
                     : "Bloqueado",
-                style: AppText.botao(1),
+                style: AppText.botao(0.95),
               ),
             ),
           ),
