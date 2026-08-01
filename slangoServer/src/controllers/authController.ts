@@ -11,11 +11,11 @@ export const login = async (req: Request, res: Response) => {
             return res.status(401).json({ erro: 'Email ou senha inválidos' });
         }
 
-        const token = gerarToken({ id: usuario.id, email: usuario.email });
+        const token = gerarToken({ id: usuario.id, email: usuario.Email });
 
         res.status(200).json({
             token,
-            usuario: { id: usuario.id, nome: usuario.nome, email: usuario.email } // nunca a senha
+            usuario: { id: usuario.id, nome: usuario.Nome, email: usuario.Email }
         });
     } catch (error: any) {
         res.status(500).json({ erro: error.message });
