@@ -59,3 +59,4 @@ export interface UsuarioPersonagem {
   idUsuario: number;    
   idPersonagem: number; 
 }
+

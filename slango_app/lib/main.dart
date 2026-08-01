@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-
 import 'licao_page.dart';
 import 'revisao.dart';
 import 'mapa/mapa.dart';
+import 'inicio/inicio.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,13 +22,12 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF1F1035),
         canvasColor: const Color(0xFF1F1035),
       ),
-      home: const MapaScreen(),
+      home: const InicioScreen(),
       onGenerateRoute: (settings) {
         switch (settings.name) {
           case '/licao':
             final nomeMundoLicao = settings.arguments as String? ?? '';
             return criarRotaComFade(LicaoPage(nomeMundo: nomeMundoLicao));
-
           default:
             return null;
         }
@@ -77,6 +76,7 @@ class _TelaRevisaoFinalState extends State<TelaRevisaoFinal> {
         setState(() => palavraSelecionada = valor);
       },
       onConcluir: () {
+        // voltar para a tela inicial do app.
         Navigator.of(context).popUntil((route) => route.isFirst);
       },
     );
