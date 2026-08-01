@@ -228,3 +228,12 @@
             return nome.charAt(0).toUpperCase() + nome.slice(1);
         });
     }
+
+    export function contarGiriasPorMundos(): Record<string, number> {
+        return Object.entries(mundos).reduce((acumulador, [nome, mundoData]) => {
+            const chaves = Object.keys(mundoData);
+            const girias = chaves.length > 0 ? (mundoData as any)[chaves[0]] : [];
+            acumulador[nome] = Array.isArray(girias) ? girias.length : 0;
+            return acumulador;
+    }, {} as Record<string, number>);
+}

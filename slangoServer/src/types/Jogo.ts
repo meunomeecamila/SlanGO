@@ -13,7 +13,7 @@ export interface Girias {
 
 export interface Alternativa {
   texto: string;
-  correta: boolean; 
+  correta: boolean;
 }
 
 export interface FaseMundo {
@@ -27,20 +27,40 @@ export interface FaseMundo {
 
 export interface FaseGiria {
   id: number;
-  idFase: number;  
+  idFase: number;
   idGiria: number;
+}
+
+// ── Modelos ligados ao banco (schema atual do diagrama) ──
+
+export interface Mundo {
+  id: number;
+  nome: string;
+  acessoPersonagem: boolean;
+  quantidadeTotal: number;
 }
 
 export interface Usuario {
   id: number;
   nome: string;
-  sobrenome: string;
   email: string;
+  responsavel: boolean;
   senha: string;
-  permissao: string;
-  nivel: number;
-  acessorios: string[];
+  data: string; // ou Date, dependendo de como o driver do banco devolve
 }
+
+/** Versão segura para respostas da API — nunca inclui a senha */
+export type UsuarioPublico = Omit<Usuario, 'senha'>;
+
+/** Espelha a tabela de junção user_mundo (progresso por mundo, não por fase) */
+export interface UsuarioMundo {
+  idMundo: number;
+  idUser: number;
+  giriasAprendidas: string; // "text" no banco — pode ser JSON stringificado ou lista separada por vírgula
+  progresso: number; // float4
+  quantidadeAprendida: number; // int8
+}
+
 export interface Personagem {
   id: number;
   nome: string;
@@ -48,15 +68,13 @@ export interface Personagem {
   acessorio: string;
   falas: string[];
 }
-export interface UsuarioFase {
-  id: number;
-  idUsuario: number;
-  idFase: number;   
-  girias: string[];
-}
+
 export interface UsuarioPersonagem {
   id: number;
-  idUsuario: number;    
-  idPersonagem: number; 
+  idUsuario: number;
+  idPersonagem: number;
 }
 
+export interface ColecaoDeMundos {
+  [chaveDinamica: string]: Girias[];
+}
