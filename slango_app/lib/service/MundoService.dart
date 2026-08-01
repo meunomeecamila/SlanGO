@@ -52,11 +52,6 @@ class MundoService {
     return RodadaMundo.fromJson(json);
   }
 
-  static Future<List<Fase>> buscarFases(String nomeMundo) async {
-    final rodada = await buscarRodada(nomeMundo);
-    return rodada.fases;
-  }
-
   static Future<Map<String, dynamic>> validarResultado(
     int pontuacaoFinal,
   ) async {

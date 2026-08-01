@@ -2,45 +2,63 @@ import 'package:flutter/material.dart';
 
 import 'fase/fase.dart';
 import 'licao.dart';
+import 'quiz_page.dart';
 import 'service/MundoService.dart';
 
 class LicaoPage extends StatefulWidget {
   final String nomeMundo;
+  /// Rodada já carregada pela tela de Missão. Quando fornecida, a LicaoPage
+  /// usa esses dados diretamente — garantindo que chips, lição e quiz
+  /// mostrem exatamente as mesmas gírias, sem chamadas extras ao endpoint.
+  final RodadaMundo? rodadaPrecarregada;
 
-  const LicaoPage({super.key, required this.nomeMundo});
+  const LicaoPage({
+    super.key,
+    required this.nomeMundo,
+    this.rodadaPrecarregada,
+  });
 
   @override
   State<LicaoPage> createState() => _LicaoPageState();
 }
 
 class _LicaoPageState extends State<LicaoPage> {
-  late Future<List<Fase>> _futureFases;
+  late Future<RodadaMundo> _futureRodada;
   int _indiceAtual = 0;
 
   @override
   void initState() {
     super.initState();
-    _futureFases = MundoService.buscarFases(widget.nomeMundo);
+    _futureRodada = MundoService.buscarRodada(widget.nomeMundo);
   }
 
-  void _avancar(List<Fase> fases) {
+  void _avancar(RodadaMundo rodada) {
+    final fases = rodada.fases;
     if (_indiceAtual < fases.length - 1) {
       setState(() {
         _indiceAtual++;
       });
     } else {
-      Navigator.pushReplacementNamed(
+      // Passa as perguntas já carregadas para o QuizPage — sem nova requisição.
+      Navigator.pushReplacement(
         context,
-        '/quiz',
-        arguments: widget.nomeMundo,
+        PageRouteBuilder(
+          pageBuilder: (_, __, ___) => QuizPage(
+            nomeMundo: widget.nomeMundo,
+            perguntasPrecarregadas: rodada.todasAsPerguntas,
+          ),
+          transitionsBuilder: (_, animation, __, child) =>
+              FadeTransition(opacity: animation, child: child),
+          transitionDuration: const Duration(milliseconds: 350),
+        ),
       );
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<Fase>>(
-      future: _futureFases,
+    return FutureBuilder<RodadaMundo>(
+      future: _futureRodada,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Scaffold(
@@ -65,9 +83,8 @@ class _LicaoPageState extends State<LicaoPage> {
           );
         }
 
-        final fases = snapshot.data ?? [];
-
-        if (fases.isEmpty) {
+        final rodada = snapshot.data;
+        if (rodada == null || rodada.fases.isEmpty) {
           return const Scaffold(
             backgroundColor: Color(0xFF1F1035),
             body: Center(
@@ -79,19 +96,17 @@ class _LicaoPageState extends State<LicaoPage> {
           );
         }
 
-        final fase = fases[_indiceAtual];
+        final fase = rodada.fases[_indiceAtual];
 
-        // SlangQuizScreen já é um Scaffold completo — não envolvemos em
-        // outro Scaffold aqui.
         return SlangQuizScreen(
           palavra: fase.giria,
           classe: fase.classe ?? '',
           significado: fase.explicacao,
           exemplo: fase.exemplo,
           usageHighlight: fase.exemplo,
-          progresso: (_indiceAtual + 1) / fases.length,
+          progresso: (_indiceAtual + 1) / rodada.fases.length,
           onClose: () => Navigator.pop(context),
-          onContinue: () => _avancar(fases),
+          onContinue: () => _avancar(rodada),
         );
       },
     );

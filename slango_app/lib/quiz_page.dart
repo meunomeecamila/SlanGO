@@ -9,7 +9,16 @@ import 'service/MundoService.dart';
 // ─────────────────────────────────────────────
 class QuizPage extends StatefulWidget {
   final String nomeMundo;
-  const QuizPage({super.key, required this.nomeMundo});
+  /// Perguntas já carregadas pela LicaoPage. Quando fornecidas, o QuizPage
+  /// usa esses dados diretamente sem fazer uma nova chamada ao endpoint,
+  /// garantindo que lição e quiz usem as mesmas gírias sorteadas.
+  final List<Fase>? perguntasPrecarregadas;
+
+  const QuizPage({
+    super.key,
+    required this.nomeMundo,
+    this.perguntasPrecarregadas,
+  });
 
   @override
   State<QuizPage> createState() => _QuizPageState();
@@ -21,9 +30,14 @@ class _QuizPageState extends State<QuizPage> {
   @override
   void initState() {
     super.initState();
-    _futurePerguntas = MundoService.buscarRodada(
-      widget.nomeMundo,
-    ).then((rodada) => rodada.todasAsPerguntas);
+    if (widget.perguntasPrecarregadas != null) {
+      // Usa os dados já carregados — sem nova requisição ao servidor.
+      _futurePerguntas = Future.value(widget.perguntasPrecarregadas);
+    } else {
+      _futurePerguntas = MundoService.buscarRodada(
+        widget.nomeMundo,
+      ).then((rodada) => rodada.todasAsPerguntas);
+    }
   }
 
   @override

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../fase/fase.dart';
+import '../../licao_page.dart';
+import '../../service/MundoService.dart';
+
 class TelaMundoDosJogos extends StatefulWidget {
   final String nomeMundo;
 
@@ -15,7 +19,31 @@ class Missao extends TelaMundoDosJogos {
 }
 
 class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
-  final List<String> giriasDoJogo = ['MVP', 'CLUTCH', 'FEED', 'NOOB'];
+  late Future<RodadaMundo> _futureRodada;
+
+  @override
+  void initState() {
+    super.initState();
+    // Única chamada real ao backend para este mundo. O resultado é
+    // repassado adiante (chips aqui, e depois para LicaoPage/QuizPage)
+    // para que todos mostrem exatamente as mesmas gírias sorteadas.
+    _futureRodada = MundoService.buscarRodada(widget.nomeMundo);
+  }
+
+  void _iniciarMissao(RodadaMundo rodada) {
+    Navigator.push(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (_, __, ___) => LicaoPage(
+          nomeMundo: widget.nomeMundo,
+          rodadaPrecarregada: rodada,
+        ),
+        transitionsBuilder: (_, animation, __, child) =>
+            FadeTransition(opacity: animation, child: child),
+        transitionDuration: const Duration(milliseconds: 350),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,43 +51,77 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
       body: DefaultTextStyle(
         style: GoogleFonts.poppins(),
         child: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF1A0F2E),
-              Color(0xFF120B24),
-              Color(0xFF0D0818),
-            ],
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color(0xFF1A0F2E),
+                Color(0xFF120B24),
+                Color(0xFF0D0818),
+              ],
+            ),
           ),
-        ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
-              const SizedBox(height: 24),
-              PlanetaEFoguete(),
-              const Spacer(),
-              BalaoDeFala(),
-              const SizedBox(height: 24),
-              AvatarDoAlien(),
-              const SizedBox(height: 24),
-              ChipsDeGirias(girias: giriasDoJogo),
-              const SizedBox(height: 16),
-              BotaoIniciarMissao(
-                aoTocar: () {
-                  Navigator.pushNamed(
-                    context,
-                    '/licao',
-                    arguments: widget.nomeMundo,
+          child: SafeArea(
+            child: FutureBuilder<RodadaMundo>(
+              future: _futureRodada,
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(
+                    child: CircularProgressIndicator(color: Color(0xFF7C5CE0)),
                   );
-                },
-              ),
-              const SizedBox(height: 24),
-            ],
+                }
+
+                if (snapshot.hasError) {
+                  return Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(24),
+                      child: Text(
+                        'Erro ao carregar missão:\n${snapshot.error}',
+                        style: const TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  );
+                }
+
+                final rodada = snapshot.data;
+                if (rodada == null || rodada.fases.isEmpty) {
+                  return const Center(
+                    child: Text(
+                      'Nenhuma gíria encontrada para este mundo.',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  );
+                }
+
+                // Gírias reais desta rodada (sem repetição), vindas do backend.
+                final giriasDoJogo = rodada.fases
+                    .map((f) => f.giria.toUpperCase())
+                    .toSet()
+                    .toList();
+
+                return Column(
+                  children: [
+                    CabecalhoComTituloCentralizado(nomeMundo: rodada.nome),
+                    const SizedBox(height: 24),
+                    const PlanetaEFoguete(),
+                    const Spacer(),
+                    const BalaoDeFala(),
+                    const SizedBox(height: 24),
+                    const AvatarDoAlien(),
+                    const SizedBox(height: 24),
+                    ChipsDeGirias(girias: giriasDoJogo),
+                    const SizedBox(height: 16),
+                    BotaoIniciarMissao(
+                      aoTocar: () => _iniciarMissao(rodada),
+                    ),
+                    const SizedBox(height: 24),
+                  ],
+                );
+              },
+            ),
           ),
-        ),
         ),
       ),
     );
@@ -194,7 +256,7 @@ class BalaoDeFala extends StatelessWidget {
                         borderRadius: BorderRadius.circular(3),
                       ),
                     ),
-                    BotaoContinuar(),
+                    const BotaoContinuar(),
                   ],
                 ),
               ],

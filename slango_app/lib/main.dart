@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'licao_page.dart';
-import 'quiz_page.dart';
 import 'revisao.dart';
 import 'mapa/mapa.dart';
 
@@ -29,10 +28,6 @@ class MyApp extends StatelessWidget {
           case '/licao':
             final nomeMundoLicao = settings.arguments as String? ?? '';
             return criarRotaComFade(LicaoPage(nomeMundo: nomeMundoLicao));
-
-          case '/quiz':
-            final nomeMundoQuiz = settings.arguments as String? ?? '';
-            return criarRotaComFade(QuizPage(nomeMundo: nomeMundoQuiz));
 
           default:
             return null;

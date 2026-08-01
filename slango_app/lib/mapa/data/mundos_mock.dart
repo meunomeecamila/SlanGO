@@ -17,7 +17,7 @@ final List<Mundo> mundos = [
     descricao: 'Em breve',
     totalGirias: 30,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'maquiagem',
@@ -26,7 +26,7 @@ final List<Mundo> mundos = [
     descricao: 'Em breve',
     totalGirias: 30,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'pop',
