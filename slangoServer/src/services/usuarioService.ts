@@ -4,43 +4,45 @@ import { supabase } from '../dbConnection';
 
 const SALT_ROUNDS = 10;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'nome' | 'email' | 'senha' | 'responsavel'>;
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel'>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
-    const { senha, ...usuarioPublico } = usuario;
+    const { Senha, ...usuarioPublico } = usuario;
     return usuarioPublico;
 }
 
 export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioPublico> {
-    const emailExistente = await buscarUsuarioPorEmail(dados.email);
+    const emailExistente = await buscarUsuarioPorEmail(dados.Email);
     if (emailExistente) {
         throw new Error('EMAIL_JA_CADASTRADO');
     }
 
-    const senhaHash = await bcrypt.hash(dados.senha, SALT_ROUNDS);
+    const senhaHash = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 
     const { data, error } = await supabase
         .from('User')
         .insert([
             {
-                nome: dados.nome,
-                email: dados.email,
-                senha: senhaHash,
-                responsavel: dados.responsavel ?? false
+                Nome: dados.Nome,
+                Email: dados.Email,
+                Senha: senhaHash,
+                Responsavel: dados.Responsavel ?? false,
+                Data: new Date().toISOString()
             }
         ])
-        .select();
+        .select()
+        .single();
 
     if (error) throw new Error(error.message);
 
-    return removerSenha(data[0]);
+    return removerSenha(data);
 }
 
-export async function buscarUsuarioPorEmail(email: string): Promise<Usuario | null> {
+export async function buscarUsuarioPorEmail(Email: string): Promise<Usuario | null> {
     const { data, error } = await supabase
         .from('User')
         .select('*')
-        .eq('email', email)
+        .eq('Email', Email)
         .maybeSingle();
 
     if (error) throw new Error(error.message);
@@ -48,11 +50,11 @@ export async function buscarUsuarioPorEmail(email: string): Promise<Usuario | nu
 }
 
 
-export async function validarCredenciais(email: string, senhaDigitada: string): Promise<UsuarioPublico | null> {
-    const usuario = await buscarUsuarioPorEmail(email);
+export async function validarCredenciais(Email: string, senhaDigitada: string): Promise<UsuarioPublico | null> {
+    const usuario = await buscarUsuarioPorEmail(Email);
     if (!usuario) return null;
 
-    const senhaCorreta = await bcrypt.compare(senhaDigitada, usuario.senha);
+    const senhaCorreta = await bcrypt.compare(senhaDigitada, usuario.Senha);
     if (!senhaCorreta) return null;
 
     return removerSenha(usuario);

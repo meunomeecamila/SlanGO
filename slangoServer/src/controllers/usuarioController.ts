@@ -15,7 +15,7 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'As senhas não coincidem.' });
         }
 
-        const usuarioCriado = await criarUsuario({ nome, email, senha, responsavel });
+        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel });
 
         res.status(201).json({
             sucesso: true,

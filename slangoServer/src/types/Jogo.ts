@@ -42,15 +42,15 @@ export interface Mundo {
 
 export interface Usuario {
   id: number;
-  nome: string;
-  email: string;
-  responsavel: boolean;
-  senha: string;
-  data: string; // ou Date, dependendo de como o driver do banco devolve
+  Nome: string;
+  Email: string;
+  Responsavel: boolean;
+  Senha: string;
+  Data: string; // ou Date, dependendo de como o driver do banco devolve
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */
-export type UsuarioPublico = Omit<Usuario, 'senha'>;
+export type UsuarioPublico = Omit<Usuario, 'Senha'>;
 
 /** Espelha a tabela de junção user_mundo (progresso por mundo, não por fase) */
 export interface UsuarioMundo {

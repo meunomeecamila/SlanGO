@@ -7,7 +7,7 @@ import {
 const usuarioRoutes = Router();
 
 //usuarioRoutes.post("/login", login);
-usuarioRoutes.post("/usuarios", criarUsuarioController);
+usuarioRoutes.post("/cadastrar", criarUsuarioController);
 
 
 export default usuarioRoutes;
