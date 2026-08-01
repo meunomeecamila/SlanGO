@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../licao_page.dart';
+import '../data/falas_service.dart';
+import '../data/mundo_assets.dart';
+import '../data/mundo_slug.dart';
 import 'package:slango_app/mapa/mapa.dart';
 
 import 'dart:math';
@@ -53,46 +56,61 @@ class Missao extends TelaMundoDosJogos {
 class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   final List<String> giriasDoJogo = ['MVP', 'CLUTCH', 'FEED', 'NOOB'];
 
-  // TODO: ALTERAR AQUI — adicione novas falas do ET nesta lista (uma string por
-  // balão). O botão "Continuar" avança para a próxima fala.
-  final List<String> falasDoEt = [
-    'Olá, astronauta! Bem-vindo ao Mundo dos Games 🎮',
-    'Em breve...',
-    
-  ];
+  /// Slug canônico do mundo (ex: 'kpop'), derivado do nome recebido.
+  String get _slugMundo => normalizarMundo(widget.nomeMundo);
+
+  /// Título exibido no cabeçalho (ex: 'Mundo K-Pop').
+  String get _tituloMundo => tituloDoMundo(widget.nomeMundo);
+
+  // Falas carregadas dinamicamente de assets/json/falas.json.
+  List<String> _falasDoMundo = [];
+  bool _carregandoFalas = true;
 
   // Índice da fala atual exibida no balão.
   int _indiceFala = 0;
 
-  void _proximaFala() {
+  @override
+  void initState() {
+    super.initState();
+    _carregarFalas();
+  }
+
+  Future<void> _carregarFalas() async {
+    final falas = await FalasService.obterFalas(_slugMundo);
+    if (!mounted) return;
     setState(() {
-      if (_indiceFala < falasDoEt.length - 1) {
-        _indiceFala++;
-      } else {
-        _indiceFala = 0; // volta para a primeira fala
-      }
+      _falasDoMundo = falas;
+      _indiceFala = 0;
+      _carregandoFalas = false;
     });
   }
 
-  // TODO: CAMINHO DA IMAGEM DO ET — troque/adicione aqui o asset do ET de cada
-  // mundo. A chave é o id do mundo (mesmo id de mundos_mock.dart) e o valor é o
-  // caminho da imagem dentro de images/planets_pets/.
-  static const Map<String, String> _imagensDosEts = {
-    'jogos': 'images/planets_pets/jogo_pet.png',
-    'kpop': 'images/planets_pets/kpop_pet.png',
-    'maquiagem': 'images/planets_pets/maquiagem_pet.png',
-    'pop': 'images/planets_pets/pop_pet.png',
-    'antigo': 'images/planets_pets/antigo_pet.png',
-    'cotidiano': 'images/planets_pets/cotidiano_pet.png',
-    'esportes': 'images/planets_pets/esporte_pet.png',
-    'geek': 'images/planets_pets/geek_pet.png',
-    'redessociais': 'images/planets_pets/redessociais_pet.png',
-    'relacionamentos': 'images/planets_pets/relacionamentos_pet.png',
-  };
+  /// Texto atual do balão (mensagem de carregamento enquanto busca o JSON).
+  String get _textoDaFala {
+    if (_carregandoFalas) return 'Carregando transmissão...';
+    if (_falasDoMundo.isEmpty) return '';
+    return _falasDoMundo[_indiceFala];
+  }
 
-  /// Asset do ET do mundo atual (cai no ET dos jogos se o mundo não estiver no mapa acima).
-  String get _imagemDoEt =>
-      _imagensDosEts[widget.nomeMundo] ?? 'images/planets_pets/jogo_pet.png';
+  /// Só há próxima fala se não estivermos no último índice.
+  bool get _temProximaFala =>
+      !_carregandoFalas && _indiceFala < _falasDoMundo.length - 1;
+
+  void _proximaFala() {
+    if (!_temProximaFala) return;
+    setState(() => _indiceFala++);
+  }
+
+  /// Só há fala anterior se não estivermos na primeira.
+  bool get _temFalaAnterior => !_carregandoFalas && _indiceFala > 0;
+
+  void _falaAnterior() {
+    if (!_temFalaAnterior) return;
+    setState(() => _indiceFala--);
+  }
+
+  /// Asset do ET do mundo atual (centralizado em mundo_assets.dart).
+  String get _imagemDoEt => petDoMundo(widget.nomeMundo);
 
   @override
   Widget build(BuildContext context) {
@@ -110,17 +128,21 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
           child: SafeArea(
             child: Column(
               children: [
-                const CabecalhoComTituloCentralizado(nomeMundo: 'Mundo Jogos'),
+                CabecalhoComTituloCentralizado(nomeMundo: _tituloMundo),
                 const SizedBox(height: 24),
                 Expanded(
-                  child: Center(
+                  child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         BalaoDeFala(
-                          texto: falasDoEt[_indiceFala],
+                          texto: _textoDaFala,
+                          mostrarContinuar: _temProximaFala,
                           aoContinuar: _proximaFala,
+                          mostrarVoltar: _temFalaAnterior,
+                          aoVoltar: _falaAnterior,
                         ),
+
                         const SizedBox(height: 32),
 
                         Center(
@@ -182,7 +204,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
     );
   }
 }
-
 
 class CabecalhoComTituloCentralizado extends StatelessWidget {
   final String nomeMundo;
@@ -250,14 +271,24 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
 }
 
 class BalaoDeFala extends StatelessWidget {
-  /// Fala atual do ET (vem da lista falasDoEt).
+  /// Fala atual do ET (vem do falas.json do mundo).
   final String texto;
+
+  /// Quando false, o botão "Continuar" não é renderizado (falas acabaram).
+  final bool mostrarContinuar;
   final VoidCallback aoContinuar;
+
+  /// Quando true, mostra o botão "Voltar" (há fala anterior).
+  final bool mostrarVoltar;
+  final VoidCallback? aoVoltar;
 
   const BalaoDeFala({
     super.key,
     required this.texto,
     required this.aoContinuar,
+    this.mostrarContinuar = true,
+    this.mostrarVoltar = false,
+    this.aoVoltar,
   });
 
   @override
@@ -292,15 +323,18 @@ class BalaoDeFala extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      width: 24,
-                      height: 6,
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF6C4FC9),
-                        borderRadius: BorderRadius.circular(3),
+                    if (mostrarVoltar && aoVoltar != null)
+                      BotaoVoltarFala(aoTocar: aoVoltar!)
+                    else
+                      Container(
+                        width: 24,
+                        height: 6,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF6C4FC9),
+                          borderRadius: BorderRadius.circular(3),
+                        ),
                       ),
-                    ),
-                    BotaoContinuar(aoTocar: aoContinuar),
+                    if (mostrarContinuar) BotaoContinuar(aoTocar: aoContinuar),
                   ],
                 ),
               ],
@@ -333,6 +367,33 @@ class BotaoContinuar extends StatelessWidget {
           Text('Continuar'),
           SizedBox(width: 4),
           Icon(Icons.arrow_forward, size: 11),
+        ],
+      ),
+    );
+  }
+}
+
+/// Botão discreto para voltar à fala anterior do ET.
+class BotaoVoltarFala extends StatelessWidget {
+  final VoidCallback aoTocar;
+
+  const BotaoVoltarFala({super.key, required this.aoTocar});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: aoTocar,
+      style: TextButton.styleFrom(
+        foregroundColor: const Color(0xFFB9A6E8),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+      ),
+      child: const Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.arrow_back, size: 11),
+          SizedBox(width: 4),
+          Text('Voltar', style: TextStyle(fontWeight: FontWeight.w600)),
         ],
       ),
     );

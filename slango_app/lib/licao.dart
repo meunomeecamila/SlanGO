@@ -64,62 +64,72 @@ class SlangQuizScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 12 * heightScale),
                 _buildTopBar(),
-                SizedBox(height: 28 * heightScale),
-                Text(
-                  'IDENTIFIQUE O SIGNIFICADO',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: purpleLight,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 13 * scale,
-                    letterSpacing: 1.5,
+                Expanded(
+                  child: SingleChildScrollView(
+                    physics: const BouncingScrollPhysics(),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(height: 28 * heightScale),
+                        Text(
+                          'IDENTIFIQUE O SIGNIFICADO',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: purpleLight,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 13 * scale,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                        SizedBox(height: 18 * heightScale),
+                        Text(
+                          palavra.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.alfaSlabOne(
+                            color: Colors.white,
+                            fontSize: 46 * scale,
+                            letterSpacing: 1,
+                            shadows: [
+                              Shadow(
+                                color: purpleAccent.withOpacity(0.6),
+                                blurRadius: 6 * scale,
+                              ),
+                              Shadow(
+                                color: purpleAccent.withOpacity(0.45),
+                                blurRadius: 14 * scale,
+                              ),
+                              Shadow(
+                                color: purpleAccent.withOpacity(0.3),
+                                blurRadius: 24 * scale,
+                              ),
+                              Shadow(
+                                color: purpleLight.withOpacity(0.2),
+                                blurRadius: 36 * scale,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 8 * heightScale),
+                        Text(
+                          classe,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: purpleLight,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 14 * scale,
+                          ),
+                        ),
+                        SizedBox(height: 28 * heightScale),
+                        _buildMeaningRow(scale),
+                        SizedBox(height: 22 * heightScale),
+                        _buildExampleCard(scale),
+                        SizedBox(height: 28 * heightScale),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(height: 18 * heightScale),
-                Text(
-                  palavra.toUpperCase(),
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.alfaSlabOne(
-                    color: Colors.white,
-                    fontSize: 46 * scale,
-                    letterSpacing: 1,
-                    shadows: [
-                      Shadow(
-                        color: purpleAccent.withOpacity(0.6),
-                        blurRadius: 6 * scale,
-                      ),
-                      Shadow(
-                        color: purpleAccent.withOpacity(0.45),
-                        blurRadius: 14 * scale,
-                      ),
-                      Shadow(
-                        color: purpleAccent.withOpacity(0.3),
-                        blurRadius: 24 * scale,
-                      ),
-                      Shadow(
-                        color: purpleLight.withOpacity(0.2),
-                        blurRadius: 36 * scale,
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 8 * heightScale),
-                Text(
-                  classe,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: purpleLight,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 14 * scale,
-                  ),
-                ),
-                SizedBox(height: 28 * heightScale),
-                _buildMeaningRow(scale),
-                SizedBox(height: 22 * heightScale),
-                _buildExampleCard(scale),
-                SizedBox(height: 28 * heightScale),
                 _buildContinueButton(scale),
-                const Spacer(),
                 SizedBox(height: 16 * heightScale),
               ],
             ),

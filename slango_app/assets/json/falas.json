@@ -1,18 +1,92 @@
 [
   {
+    "id": "jogos",
     "mundo": "Mundo Jogos",
-    "fala": "Olá, astronauta! Bem-vindo ao Mundo dos Games! 🎮 Aqui você vai aprender as gírias mais usadas pelos jogadores antes de começar sua missão."
+    "falas": [
+      "Olá, astronauta! Bem-vindo ao Mundo dos Games! 🎮",
+      "Aqui os jogadores falam uma língua própria: MVP, clutch, feed, noob...",
+      "Fica esperto nas gírias abaixo e depois é só iniciar a missão! 🚀"
+    ]
   },
   {
+    "id": "kpop",
     "mundo": "Mundo K-Pop",
-    "fala": "Os idols e fãs usam muitas expressões próprias. Vamos descobrir algumas delas antes da missão! 🎤"
+    "falas": [
+      "Annyeong! Você chegou ao planeta do K-Pop! 🎤",
+      "Aqui tem bias, comeback, fanchant e muito mais.",
+      "Decora essas gírias e arrasa na missão, stan! 💜"
+    ]
   },
   {
+    "id": "maquiagem",
     "mundo": "Mundo Maquiagem",
-    "fala": "Preparado para conhecer o universo da beleza? 💄 Vamos aprender as principais gírias desse mundo."
+    "falas": [
+      "Bem-vindo ao planeta da beleza! 💄",
+      "Por aqui se fala em blush, contorno, glow e pele de vidro.",
+      "Dá uma olhada nas gírias e depois é só brilhar na missão! ✨"
+    ]
   },
   {
+    "id": "pop",
     "mundo": "Mundo Pop",
-    "fala": "Filmes, séries, memes e celebridades têm um vocabulário próprio. Vamos explorar esse planeta! 🌎"
+    "falas": [
+      "Chegamos ao planeta da cultura pop! 🌎",
+      "Filmes, séries, memes e celebridades têm um vocabulário próprio.",
+      "Estuda as gírias abaixo e bora pra missão! 🍿"
+    ]
+  },
+  {
+    "id": "antigo",
+    "mundo": "Mundo Antigo",
+    "falas": [
+      "Segura essa, mano véio: bem-vindo ao Mundo Antigo! 📼",
+      "Aqui rolam gírias que seus pais usavam e ainda dão o maior barato.",
+      "Dá uma treinada nelas antes de encarar a missão! 🕰️"
+    ]
+  },
+  {
+    "id": "cotidiano",
+    "mundo": "Mundo Cotidiano",
+    "falas": [
+      "E aí, tudo certo? Bem-vindo ao Mundo Cotidiano! ☕",
+      "São aquelas gírias do dia a dia que a gente solta sem nem pensar.",
+      "Confere a lista e parte pra missão! 🚀"
+    ]
+  },
+  {
+    "id": "esportes",
+    "mundo": "Mundo Esportes",
+    "falas": [
+      "Bola rolando! Você entrou no Mundo Esportes! ⚽",
+      "Aqui é chapéu, pendurar as chuteiras, gol de placa e muito mais.",
+      "Aquece com as gírias abaixo e entra em campo na missão! 🏆"
+    ]
+  },
+  {
+    "id": "geek",
+    "mundo": "Mundo Geek",
+    "falas": [
+      "Saudações, viajante! Bem-vindo ao Mundo Geek! 🛸",
+      "Animes, HQs, RPG e tecnologia têm um dialeto próprio.",
+      "Estuda o grimório de gírias e parte pra missão! 🧙"
+    ]
+  },
+  {
+    "id": "redessociais",
+    "mundo": "Mundo Redes Sociais",
+    "falas": [
+      "Bem-vindo ao planeta das timelines! 📱",
+      "Aqui se fala em mutual, crush, trend, POV e shippar.",
+      "Dá scroll nas gírias abaixo e começa a missão! 💬"
+    ]
+  },
+  {
+    "id": "relacionamentos",
+    "mundo": "Mundo Relacionamentos",
+    "falas": [
+      "Chegou no planeta dos corações! 💜",
+      "Rolo, ficante, mozão, red flag... tem gíria pra tudo por aqui.",
+      "Aprende essas expressões e vai com tudo pra missão! 💘"
+    ]
   }
 ]
