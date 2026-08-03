@@ -71,4 +71,22 @@ class MundoService {
 
     return jsonDecode(response.body) as Map<String, dynamic>;
   }
+
+  static Future<Map<String, int>> buscarContagemGirias() async {
+    final response = await http.get(
+      Uri.parse('$_baseUrl/mundo/contagem'),
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception('Erro ao buscar contagem');
+    }
+
+    final List<dynamic> dados = jsonDecode(response.body);
+
+    return {
+      for (final item in dados)
+        item['nomeMundo'] as String: item['totalGirias'] as int,
+    };
+  }
 }
+
