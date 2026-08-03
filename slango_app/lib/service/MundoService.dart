@@ -69,7 +69,7 @@ class MundoService {
       );
     }
 
-  static Future<Map<String, int>> buscarContagemGirias() async {
+  Future<Map<String, int>> buscarContagemGirias() async {
     final response = await http.get(
       Uri.parse('$_baseUrl/mundo/contagem'),
     );
