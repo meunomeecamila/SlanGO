@@ -3,7 +3,7 @@
     /* Módulos e Compilação */
     "target": "ES2022",                                  
     "module": "commonjs",                                
-    "moduleResolution": "node",                          
+    "moduleResolution": "node16",                          
     "esModuleInterop": true,                             
     "resolveJsonModule": true,                           
 
