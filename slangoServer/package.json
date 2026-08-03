@@ -22,7 +22,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p src/tsconfig.json",
+    "build": "tsc",
     "start": "node dist/index.js",
     "dev": "ts-node-dev src/index.ts"
   },
