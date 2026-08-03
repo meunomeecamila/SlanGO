@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import '../../mapa/styles/texto.dart';
 
 class BotaoLogin extends StatelessWidget {
-  final VoidCallback? onPressed;
-  final bool carregando;
+  final VoidCallback onPressed;
 
   const BotaoLogin({
     super.key,
     required this.onPressed,
-    this.carregando = false,
   });
 
   @override
@@ -27,19 +25,10 @@ class BotaoLogin extends StatelessWidget {
             borderRadius: BorderRadius.circular(30),
           ),
         ),
-        child: carregando
-            ? const SizedBox(
-                width: 24,
-                height: 24,
-                child: CircularProgressIndicator(
-                  color: Colors.white,
-                  strokeWidth: 2.5,
-                ),
-              )
-            : Text(
-                "Entrar",
-                style: AppText.botao(1.1),
-              ),
+        child: Text(
+          "Entrar",
+          style: AppText.botao(1.1),
+        ),
       ),
     );
   }

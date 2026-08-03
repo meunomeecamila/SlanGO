@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import '../../mapa/styles/texto.dart';
 
 class BotaoRegistrar extends StatelessWidget {
-  final VoidCallback? onPressed;
-  final bool carregando;
+  final VoidCallback onPressed;
 
   const BotaoRegistrar({
     super.key,
     required this.onPressed,
-    this.carregando = false,
   });
 
   @override
@@ -27,19 +25,10 @@ class BotaoRegistrar extends StatelessWidget {
             borderRadius: BorderRadius.circular(30),
           ),
         ),
-        child: carregando
-            ? const SizedBox(
-                width: 24,
-                height: 24,
-                child: CircularProgressIndicator(
-                  color: Colors.white,
-                  strokeWidth: 2.5,
-                ),
-              )
-            : Text(
-                "Criar Conta",
-                style: AppText.botao(1.1),
-              ),
+        child: Text(
+          "Criar Conta",
+          style: AppText.botao(1.1),
+        ),
       ),
     );
   }

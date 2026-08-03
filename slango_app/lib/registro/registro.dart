@@ -5,7 +5,6 @@ import '../login/login.dart';
 import '../mapa/mapa.dart';
 import '../mapa/styles/texto.dart';
 import '../shared/widgets/background_espaco.dart';
-import '../service/UserService.dart';
 import 'widgets/botao_registrar.dart';
 import 'widgets/campo_texto.dart';
 import 'widgets/seletor_tipo_usuario.dart';
@@ -25,7 +24,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
   final idadeController = TextEditingController();
 
   bool ehPai = true;
-  bool carregando = false;
 
   @override
   void dispose() {
@@ -37,51 +35,22 @@ class _RegistroScreenState extends State<RegistroScreen> {
     super.dispose();
   }
 
-  void _mostrarErro(String mensagem) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(mensagem)),
-    );
-  }
-
-  Future<void> registrar() async {
-    if (nomeController.text.isEmpty ||
-        emailController.text.isEmpty ||
-        senhaController.text.isEmpty ||
-        confirmarSenhaController.text.isEmpty) {
-      _mostrarErro("Preencha todos os campos obrigatórios.");
-      return;
-    }
-
+  void registrar() {
     if (senhaController.text != confirmarSenhaController.text) {
-      _mostrarErro("As senhas não coincidem.");
-      return;
-    }
-
-    setState(() => carregando = true);
-
-    try {
-      await UsuarioService.cadastrar(
-        nome: nomeController.text.trim(),
-        email: emailController.text.trim(),
-        senha: senhaController.text,
-        confirmarSenha: confirmarSenhaController.text,
-        responsavel: ehPai,
-      );
-
-      if (!mounted) return;
-
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => const MapaScreen(),
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("As senhas não coincidem."),
         ),
       );
-    } catch (e) {
-      if (!mounted) return;
-      _mostrarErro(e.toString().replaceFirst('Exception: ', ''));
-    } finally {
-      if (mounted) setState(() => carregando = false);
+      return;
     }
+
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const MapaScreen(),
+      ),
+    );
   }
 
   @override
@@ -195,8 +164,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                     const SizedBox(height: 35),
 
                     BotaoRegistrar(
-                      onPressed: carregando ? null : registrar,
-                      carregando: carregando,
+                      onPressed: registrar,
                     ),
 
                     const SizedBox(height: 24),

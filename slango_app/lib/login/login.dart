@@ -5,7 +5,6 @@ import '../mapa/mapa.dart';
 import '../mapa/styles/texto.dart';
 import '../registro/registro.dart';
 import '../shared/widgets/background_espaco.dart';
-import '../service/UserService.dart';
 
 import 'widgets/botao_login.dart';
 import 'widgets/campo_login.dart';
@@ -22,8 +21,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final emailController = TextEditingController();
   final senhaController = TextEditingController();
 
-  bool carregando = false;
-
   @override
   void dispose() {
     emailController.dispose();
@@ -31,40 +28,15 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  void _mostrarErro(String mensagem) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(mensagem)),
+  void entrar() {
+    // Futuramente aqui será feita a autenticação com o backend.
+
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const MapaScreen(),
+      ),
     );
-  }
-
-  Future<void> entrar() async {
-    if (emailController.text.isEmpty || senhaController.text.isEmpty) {
-      _mostrarErro("Preencha email e senha.");
-      return;
-    }
-
-    setState(() => carregando = true);
-
-    try {
-      await UsuarioService.login(
-        emailController.text.trim(),
-        senhaController.text,
-      );
-
-      if (!mounted) return;
-
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => const MapaScreen(),
-        ),
-      );
-    } catch (e) {
-      if (!mounted) return;
-      _mostrarErro(e.toString().replaceFirst('Exception: ', ''));
-    } finally {
-      if (mounted) setState(() => carregando = false);
-    }
   }
 
   @override
@@ -141,8 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(height: 35),
 
                     BotaoLogin(
-                      onPressed: carregando ? null : entrar,
-                      carregando: carregando,
+                      onPressed: entrar,
                     ),
 
                     const SizedBox(height: 24),
