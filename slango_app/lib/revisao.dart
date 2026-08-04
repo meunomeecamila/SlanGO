@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'shared/widgets/fundo_espacial.dart';
+
 class RevisaoFinalScreen extends StatelessWidget {
-  final String nomeMundo; 
+  final String nomeMundo;
   final String mensagemBot;
   final String avatar; // caminho da imagem do personagem
 
@@ -50,47 +52,52 @@ class RevisaoFinalScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: bgBottom,
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [bgTop, bgBottom],
-          ),
-        ),
-        child: SafeArea(
-          child: SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: 20 * scale),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                SizedBox(height: 16 * heightScale),
-                _buildBadge(scale),
-                SizedBox(height: 18 * heightScale),
-                Text(
-                  'Teste seus conhecimentos!',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.baloo2(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 26 * scale,
-                  ),
-                ),
-                SizedBox(height: 20 * heightScale),
-                _buildMensagemBot(scale),
-                SizedBox(height: 20 * heightScale),
-                _buildCardPergunta(scale),
-                SizedBox(height: 18 * heightScale),
-                _buildCardCompletarFrase(scale),
-                SizedBox(height: 24 * heightScale),
-                _buildBotaoConcluir(scale),
-                SizedBox(height: 24 * heightScale),
-              ],
+      body: Stack(
+        children: [
+          Container(
+            width: double.infinity,
+            height: double.infinity,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [bgTop, bgBottom],
+              ),
             ),
           ),
-        ),
+          const Positioned.fill(child: FundoEspacial(interativo: false)),
+          SafeArea(
+            child: SingleChildScrollView(
+              padding: EdgeInsets.symmetric(horizontal: 20 * scale),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  SizedBox(height: 16 * heightScale),
+                  _buildBadge(scale),
+                  SizedBox(height: 18 * heightScale),
+                  Text(
+                    'Teste seus conhecimentos!',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.baloo2(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 26 * scale,
+                    ),
+                  ),
+                  SizedBox(height: 20 * heightScale),
+                  _buildMensagemBot(scale),
+                  SizedBox(height: 20 * heightScale),
+                  _buildCardPergunta(scale),
+                  SizedBox(height: 18 * heightScale),
+                  _buildCardCompletarFrase(scale),
+                  SizedBox(height: 24 * heightScale),
+                  _buildBotaoConcluir(scale),
+                  SizedBox(height: 24 * heightScale),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -99,7 +106,9 @@ class RevisaoFinalScreen extends StatelessWidget {
     return Center(
       child: Container(
         padding: EdgeInsets.symmetric(
-            horizontal: 16 * scale, vertical: 8 * scale),
+          horizontal: 16 * scale,
+          vertical: 8 * scale,
+        ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           border: Border.all(color: purpleAccent.withOpacity(0.7)),
@@ -201,16 +210,14 @@ class RevisaoFinalScreen extends StatelessWidget {
       child: Container(
         width: double.infinity,
         padding: EdgeInsets.symmetric(
-            horizontal: 16 * scale, vertical: 14 * scale),
+          horizontal: 16 * scale,
+          vertical: 14 * scale,
+        ),
         decoration: BoxDecoration(
-          color: selecionada
-              ? purpleAccent.withOpacity(0.25)
-              : cardColorDark,
+          color: selecionada ? purpleAccent.withOpacity(0.25) : cardColorDark,
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-            color: selecionada
-                ? purpleAccent
-                : Colors.white.withOpacity(0.08),
+            color: selecionada ? purpleAccent : Colors.white.withOpacity(0.08),
             width: selecionada ? 1.5 : 1,
           ),
         ),
@@ -266,7 +273,9 @@ class RevisaoFinalScreen extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 4 * scale),
                     padding: EdgeInsets.symmetric(
-                        horizontal: 10 * scale, vertical: 2 * scale),
+                      horizontal: 10 * scale,
+                      vertical: 2 * scale,
+                    ),
                     decoration: BoxDecoration(
                       color: purpleAccent.withOpacity(0.3),
                       borderRadius: BorderRadius.circular(8),
@@ -306,14 +315,14 @@ class RevisaoFinalScreen extends StatelessWidget {
       onTap: () => onSelecionarPalavra(palavra),
       child: Container(
         padding: EdgeInsets.symmetric(
-            horizontal: 18 * scale, vertical: 10 * scale),
+          horizontal: 18 * scale,
+          vertical: 10 * scale,
+        ),
         decoration: BoxDecoration(
           color: selecionada ? purpleAccent : cardColorDark,
           borderRadius: BorderRadius.circular(30),
           border: Border.all(
-            color: selecionada
-                ? purpleAccent
-                : purpleAccent.withOpacity(0.5),
+            color: selecionada ? purpleAccent : purpleAccent.withOpacity(0.5),
           ),
         ),
         child: Text(

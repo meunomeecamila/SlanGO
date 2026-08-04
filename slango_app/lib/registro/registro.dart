@@ -5,6 +5,7 @@ import '../login/login.dart';
 import '../mapa/mapa.dart';
 import '../mapa/styles/texto.dart';
 import '../shared/widgets/background_espaco.dart';
+import '../shared/widgets/fundo_espacial.dart';
 import '../service/usuarioService.dart';
 import 'widgets/botao_registrar.dart';
 import 'widgets/campo_texto.dart';
@@ -87,8 +88,13 @@ class _RegistroScreenState extends State<RegistroScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BackgroundEspaco(
-        child: SafeArea(
+      body: Stack(
+        children: [
+          const Positioned.fill(
+            child: BackgroundEspaco(child: SizedBox.expand()),
+          ),
+          const Positioned.fill(child: FundoEspacial(interativo: false)),
+          SafeArea(
           child: Align(
             alignment: Alignment.topCenter,
             child: SingleChildScrollView(
@@ -236,7 +242,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
               ),
             ),
           ),
-        ),
+          ),
+        ],
       ),
     );
   }

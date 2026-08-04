@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'shared/widgets/fundo_espacial.dart';
+
 class SlangQuizScreen extends StatelessWidget {
   final String palavra; // giria
   final String classe; // classe gramatical
@@ -56,7 +58,10 @@ class SlangQuizScreen extends StatelessWidget {
             colors: [bgTop, bgBottom],
           ),
         ),
-        child: SafeArea(
+        child: Stack(
+          children: [
+            const Positioned.fill(child: FundoEspacial()),
+            SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20 * scale),
             child: Column(
@@ -134,6 +139,8 @@ class SlangQuizScreen extends StatelessWidget {
               ],
             ),
           ),
+        ),
+          ],
         ),
       ),
     );

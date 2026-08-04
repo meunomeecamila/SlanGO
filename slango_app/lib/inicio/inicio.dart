@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../shared/widgets/background_espaco.dart';
+<<<<<<< HEAD
 import '../perfil/perfil_screen.dart';
+=======
+import '../shared/widgets/fundo_espacial.dart';
+>>>>>>> a93d39a8d1a7776b53dc666c4d840913d0ea836a
 import 'widgets/botoes_inicio.dart';
 import 'widgets/logo_slango.dart';
 import 'widgets/texto_boas_vindas.dart';
@@ -12,8 +16,13 @@ class InicioScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BackgroundEspaco(
-        child: SafeArea(
+      body: Stack(
+        children: [
+          const Positioned.fill(
+            child: BackgroundEspaco(child: SizedBox.expand()),
+          ),
+          const Positioned.fill(child: FundoEspacial(interativo: false)),
+          SafeArea(
           child: Stack(
             children: [
               // Mundo Jogos
@@ -72,15 +81,15 @@ class InicioScreen extends StatelessWidget {
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
-                        const SizedBox(height: 20),
+                        const SizedBox(height: 30),
 
                         const LogoSlango(),
 
-                        const SizedBox(height: 20),
+                        const SizedBox(height: 30),
 
                         const TextoBoasVindas(),
 
-                        const SizedBox(height: 25),
+                        const SizedBox(height: 50),
 
                         const BotoesInicio(),
                       ],
@@ -112,7 +121,8 @@ class InicioScreen extends StatelessWidget {
               ),
             ],
           ),
-        ),
+          ),
+        ],
       ),
     );
   }

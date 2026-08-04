@@ -2,42 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../licao_page.dart';
+import '../../shared/widgets/fundo_espacial.dart';
 import '../data/falas_service.dart';
 import '../data/mundo_assets.dart';
 import '../data/mundo_slug.dart';
 import 'package:slango_app/mapa/mapa.dart';
 
-import 'dart:math';
-
-class FundoEspacial extends StatelessWidget {
-  const FundoEspacial({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final random = Random(42);
-
-    return IgnorePointer(
-      child: Stack(
-        children: List.generate(90, (index) {
-          final size = random.nextDouble() * 3 + 1;
-
-          return Positioned(
-            left: random.nextDouble() * MediaQuery.of(context).size.width,
-            top: random.nextDouble() * MediaQuery.of(context).size.height,
-            child: Container(
-              width: size,
-              height: size,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(random.nextDouble() * .8 + .2),
-                shape: BoxShape.circle,
-              ),
-            ),
-          );
-        }),
-      ),
-    );
-  }
-}
+// O campo de estrelas agora mora em shared/widgets/fundo_espacial.dart
+// (com metade das partículas) e é reexportado para não quebrar imports antigos.
+export '../../shared/widgets/fundo_espacial.dart' show FundoEspacial;
 
 class TelaMundoDosJogos extends StatefulWidget {
   /// Slug do mundo (ex: 'jogos', 'geek') — vem do mapa.
@@ -62,7 +35,9 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   /// Título exibido no cabeçalho (ex: 'Mundo K-Pop').
   String get _tituloMundo => tituloDoMundo(widget.nomeMundo);
 
-  // Falas carregadas dinamicamente de assets/json/falas.json.
+  // Falas carregadas via FalasService.
+  // Para adicionar mais falas, insira novas strings neste arquivo aqui:
+  // lib/missao/data/falas_data.dart (e, opcionalmente, assets/json/falas.json).
   List<String> _falasDoMundo = [];
   bool _carregandoFalas = true;
 
@@ -85,14 +60,13 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
     });
   }
 
-  /// Texto atual do balão (mensagem de carregamento enquanto busca o JSON).
+  /// Texto atual do balão (mensagem de carregamento enquanto busca as falas).
   String get _textoDaFala {
     if (_carregandoFalas) return 'Carregando transmissão...';
     if (_falasDoMundo.isEmpty) return '';
     return _falasDoMundo[_indiceFala];
   }
 
-  /// Só há próxima fala se não estivermos no último índice.
   bool get _temProximaFala =>
       !_carregandoFalas && _indiceFala < _falasDoMundo.length - 1;
 
@@ -101,7 +75,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
     setState(() => _indiceFala++);
   }
 
-  /// Só há fala anterior se não estivermos na primeira.
   bool get _temFalaAnterior => !_carregandoFalas && _indiceFala > 0;
 
   void _falaAnterior() {
@@ -125,85 +98,156 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
               colors: [Color(0xFF1A0F2E), Color(0xFF120B24), Color(0xFF0D0818)],
             ),
           ),
-          child: SafeArea(
-            child: Column(
-              children: [
-                CabecalhoComTituloCentralizado(nomeMundo: _tituloMundo),
-                const SizedBox(height: 24),
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        BalaoDeFala(
-                          texto: _textoDaFala,
-                          mostrarContinuar: _temProximaFala,
-                          aoContinuar: _proximaFala,
-                          mostrarVoltar: _temFalaAnterior,
-                          aoVoltar: _falaAnterior,
-                        ),
-
-                        const SizedBox(height: 32),
-
-                        Center(
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (_) => const MapaScreen(),
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                Container(
-                                  width: 240,
-                                  height: 240,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.purple.withOpacity(.45),
-                                        blurRadius: 70,
-                                        spreadRadius: 20,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Image.asset(_imagemDoEt, height: 210),
-                              ],
+          child: Stack(
+            children: [
+              // Fundo de estrelas atrás de todo o conteúdo.
+              const Positioned.fill(child: FundoEspacial()),
+              SafeArea(
+                child: Column(
+                  children: [
+                    CabecalhoComTituloCentralizado(nomeMundo: _tituloMundo),
+                    const SizedBox(height: 24),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            // O balão contém APENAS o texto do ET.
+                            // Tocar no balão avança para a próxima fala.
+                            BalaoDeFala(
+                              texto: _textoDaFala,
+                              aoTocar: _temProximaFala ? _proximaFala : null,
                             ),
-                          ),
-                        ),
 
-                        ChipsDeGirias(girias: giriasDoJogo),
-                        const SizedBox(height: 32),
-                        BotaoIniciarMissao(
-                          aoTocar: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (_) =>
-                                    LicaoPage(nomeMundo: widget.nomeMundo),
+                            const SizedBox(height: 12),
+
+                            // Navegação das falas — FORA do balão.
+                            NavegacaoDasFalas(
+                              mostrarVoltar: _temFalaAnterior,
+                              aoVoltar: _falaAnterior,
+                              mostrarContinuar: _temProximaFala,
+                              aoContinuar: _proximaFala,
+                              indiceAtual: _indiceFala,
+                              total: _falasDoMundo.length,
+                            ),
+
+                            const SizedBox(height: 24),
+
+                            Center(
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (_) => const MapaScreen(),
+                                    ),
+                                  );
+                                },
+                                child: Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    Container(
+                                      width: 240,
+                                      height: 240,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.purple.withOpacity(
+                                              .45,
+                                            ),
+                                            blurRadius: 70,
+                                            spreadRadius: 20,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Image.asset(_imagemDoEt, height: 210),
+                                  ],
+                                ),
                               ),
-                            );
-                          },
+                            ),
+
+                            ChipsDeGirias(girias: giriasDoJogo),
+                            const SizedBox(height: 32),
+                            BotaoIniciarMissao(
+                              aoTocar: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) =>
+                                        LicaoPage(nomeMundo: widget.nomeMundo),
+                                  ),
+                                );
+                              },
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                    const SizedBox(height: 24),
+                  ],
                 ),
-                const SizedBox(height: 24),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
     );
   }
 }
+
+/// Controles de navegação entre as falas do ET.
+/// Fica fora do balão para não sofrer a estilização da caixa roxa.
+class NavegacaoDasFalas extends StatelessWidget {
+  final bool mostrarVoltar;
+  final VoidCallback aoVoltar;
+  final bool mostrarContinuar;
+  final VoidCallback aoContinuar;
+  final int indiceAtual;
+  final int total;
+
+  const NavegacaoDasFalas({
+    super.key,
+    required this.mostrarVoltar,
+    required this.aoVoltar,
+    required this.mostrarContinuar,
+    required this.aoContinuar,
+    required this.indiceAtual,
+    required this.total,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (total <= 1) return const SizedBox(height: 4);
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          if (mostrarVoltar)
+            BotaoVoltarFala(aoTocar: aoVoltar)
+          else
+            const SizedBox(width: 80),
+          Text(
+            '${indiceAtual + 1}/$total',
+            style: const TextStyle(
+              color: Color(0xFFB9A6E8),
+              fontWeight: FontWeight.w600,
+              fontSize: 12,
+            ),
+          ),
+          if (mostrarContinuar)
+            BotaoContinuar(aoTocar: aoContinuar)
+          else
+            const SizedBox(width: 80),
+        ],
+      ),
+    );
+  }
+}
+
 
 class CabecalhoComTituloCentralizado extends StatelessWidget {
   final String nomeMundo;
@@ -270,74 +314,44 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
   }
 }
 
+/// Balão de fala do ET: contém APENAS o texto da fala.
+/// A navegação (Voltar/Continuar) fica fora, em [NavegacaoDasFalas].
 class BalaoDeFala extends StatelessWidget {
-  /// Fala atual do ET (vem do falas.json do mundo).
+  /// Fala atual do ET.
   final String texto;
 
-  /// Quando false, o botão "Continuar" não é renderizado (falas acabaram).
-  final bool mostrarContinuar;
-  final VoidCallback aoContinuar;
+  /// Tocar no balão avança para a próxima fala (null = não há próxima).
+  final VoidCallback? aoTocar;
 
-  /// Quando true, mostra o botão "Voltar" (há fala anterior).
-  final bool mostrarVoltar;
-  final VoidCallback? aoVoltar;
-
-  const BalaoDeFala({
-    super.key,
-    required this.texto,
-    required this.aoContinuar,
-    this.mostrarContinuar = true,
-    this.mostrarVoltar = false,
-    this.aoVoltar,
-  });
+  const BalaoDeFala({super.key, required this.texto, this.aoTocar});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child: CustomPaint(
-          painter: PintaPontaDoBalaoDeFala(),
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
-            decoration: BoxDecoration(
-              color: const Color(0xFF241A3D),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: const Color(0xFF6C4FC9), width: 1.5),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  texto,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
-                    height: 1.3,
-                  ),
+      child: GestureDetector(
+        onTap: aoTocar,
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: CustomPaint(
+            painter: PintaPontaDoBalaoDeFala(),
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.fromLTRB(20, 18, 20, 18),
+              decoration: BoxDecoration(
+                color: const Color(0xFF241A3D),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: const Color(0xFF6C4FC9), width: 1.5),
+              ),
+              child: Text(
+                texto,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w600,
+                  height: 1.3,
                 ),
-                const SizedBox(height: 16),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    if (mostrarVoltar && aoVoltar != null)
-                      BotaoVoltarFala(aoTocar: aoVoltar!)
-                    else
-                      Container(
-                        width: 24,
-                        height: 6,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF6C4FC9),
-                          borderRadius: BorderRadius.circular(3),
-                        ),
-                      ),
-                    if (mostrarContinuar) BotaoContinuar(aoTocar: aoContinuar),
-                  ],
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -345,6 +359,7 @@ class BalaoDeFala extends StatelessWidget {
     );
   }
 }
+
 
 class BotaoContinuar extends StatelessWidget {
   final VoidCallback aoTocar;
