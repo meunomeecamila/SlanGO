@@ -3,13 +3,47 @@ import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
 
 const SALT_ROUNDS = 10;
+const IDADE_MINIMA = 13;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel'>;
-type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel'>>;
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data'>;
+type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data'>>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
     const { Senha, ...usuarioPublico } = usuario;
     return usuarioPublico;
+}
+
+export function calcularIdade(dataNascimento: string): number {
+    const nascimento = new Date(dataNascimento);
+    const hoje = new Date();
+
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+    const mesAtual = hoje.getMonth() - nascimento.getMonth();
+
+    if (mesAtual < 0 || (mesAtual === 0 && hoje.getDate() < nascimento.getDate())) {
+        idade--;
+    }
+
+    return idade;
+}
+
+export function dataNascimentoValida(dataNascimento: string): { valida: boolean; erro?: string } {
+    const data = new Date(dataNascimento);
+
+    if (isNaN(data.getTime())) {
+        return { valida: false, erro: 'Data de nascimento inválida.' };
+    }
+
+    if (data > new Date()) {
+        return { valida: false, erro: 'Data de nascimento não pode ser no futuro.' };
+    }
+
+    const idade = calcularIdade(dataNascimento);
+    if (idade < IDADE_MINIMA) {
+        return { valida: false, erro: `Idade mínima para cadastro é ${IDADE_MINIMA} anos.` };
+    }
+
+    return { valida: true };
 }
 
 export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioPublico> {
@@ -28,7 +62,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Email: dados.Email,
                 Senha: senhaHash,
                 Responsavel: dados.Responsavel ?? false,
-                Data: new Date().toISOString()
+                Data: dados.Data,
             }
         ])
         .select()
@@ -38,6 +72,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
 
     return removerSenha(data);
 }
+
 
 export async function buscarUsuarioPorEmail(Email: string): Promise<Usuario | null> {
     const { data, error } = await supabase

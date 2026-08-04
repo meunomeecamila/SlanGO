@@ -3,16 +3,22 @@ import {
     criarUsuario,
     buscarUsuarioPorId,
     atualizarUsuario,
-    deletarUsuario
+    deletarUsuario,
+    dataNascimentoValida 
 } from '../services/usuarioService';
 import { emailValido, senhaValida } from '../utils/validador';
 
 export const criarUsuarioController = async (req: Request, res: Response) => {
     try {
-        const { nome, email, senha, confirmarSenha, responsavel } = req.body;
+        const { nome, email, senha, confirmarSenha, responsavel, dataNascimento } = req.body;
 
-        if (!nome || !email || !senha || !confirmarSenha) {
-            return res.status(400).json({ erro: 'Nome, email, senha e confirmação de senha são obrigatórios.' });
+        if (!nome || !email || !senha || !confirmarSenha || !dataNascimento) {
+            return res.status(400).json({ erro: 'Nome, email, senha, confirmação de senha e data de nascimento são obrigatórios.' });
+        }
+
+        const validacaoIdade = dataNascimentoValida(dataNascimento);
+        if (!validacaoIdade.valida) {
+            return res.status(400).json({ erro: validacaoIdade.erro });
         }
 
         if (!emailValido(email)) {
@@ -28,7 +34,7 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: validacaoSenha.erro });
         }
 
-        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel });
+        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento });
 
         res.status(201).json({
             sucesso: true,
