@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'fase/fase.dart';
 import 'licao.dart';
+import 'missao/data/mundo_assets.dart';
 import 'quiz_page.dart';
 import 'service/MundoService.dart';
 
 class LicaoPage extends StatefulWidget {
   final String nomeMundo;
+
   /// Rodada já carregada pela tela de Missão. Quando fornecida, a LicaoPage
   /// usa esses dados diretamente — garantindo que chips, lição e quiz
   /// mostrem exatamente as mesmas gírias, sem chamadas extras ao endpoint.
@@ -104,6 +106,8 @@ class _LicaoPageState extends State<LicaoPage> {
           significado: fase.explicacao,
           exemplo: fase.exemplo,
           usageHighlight: fase.exemplo,
+          // ET do mundo atual (cai em 'images/avatar.png' se não houver).
+          avatar: petDoMundo(widget.nomeMundo),
           progresso: (_indiceAtual + 1) / rodada.fases.length,
           onClose: () => Navigator.pop(context),
           onContinue: () => _avancar(rodada),
