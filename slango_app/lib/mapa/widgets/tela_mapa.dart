@@ -8,7 +8,7 @@ import '../widgets/planeta_widget.dart';
 import '../widgets/navegacao_mundos.dart';
 import '../widgets/card_mundo.dart';
 import '../../shared/widgets/particulas_fundo.dart';
-
+import '../../perfil/perfil_screen.dart'; // ajuste o caminho se sua pasta perfil estiver em outro lugar
 
 // Permite arrastar o PageView com mouse, trackpad e stylus além do touch.
 // Necessário no Flutter Web, onde por padrão só "touch" gera drag.
@@ -31,7 +31,6 @@ class TelaMapa extends StatefulWidget {
   @override
   State<TelaMapa> createState() => _TelaMapaState();
 }
-
 
 class _TelaMapaState extends State<TelaMapa> {
   int paginaAtual = 0;
@@ -71,31 +70,44 @@ class _TelaMapaState extends State<TelaMapa> {
     );
   }
 
+  void abrirPerfil() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const PerfilScreen(
+          nome: "Mariana", // TODO: substituir pelos dados reais do usuário logado
+          avatarAsset: "images/avatar_padrao.png",
+          totalMundos: 0,
+          totalGirias: 0,
+          totalCertificados: 0,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final mundoAtual = widget.mundos[paginaAtual];
 
     return Scaffold(
       body: BackgroundEspaco(
-          child: ParticulasFundo(
-            quantidade: 60,
-            corParticulas: const Color(0xFF9C8CF0),
-            child: SafeArea(
+        child: ParticulasFundo(
+          quantidade: 60,
+          corParticulas: const Color(0xFF9C8CF0),
+          child: SafeArea(
             child: Padding(
-
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     const SizedBox(height: 12),
-                    const MapaHeader(),
+                    MapaHeader(onPerfilTap: abrirPerfil),
                     const SizedBox(height: 10),
 
                     // Carrossel de Planetas com altura ideal para não cortar a arte
                     SizedBox(
                       height: 335,
                       child: ScrollConfiguration(
-
                         behavior: _AppScrollBehavior(),
                         child: PageView.builder(
                           controller: _pageController,

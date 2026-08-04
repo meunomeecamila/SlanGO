@@ -4,7 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import '../styles/cores.dart';
 
 class MapaHeader extends StatelessWidget {
-  const MapaHeader({super.key});
+  final VoidCallback? onPerfilTap;
+
+  const MapaHeader({super.key, this.onPerfilTap});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class MapaHeader extends StatelessWidget {
                     TextSpan(
                       text: "GO",
                       style: GoogleFonts.alfaSlabOne(
-                        color:const Color(0xFF5EEAD4),
+                        color: const Color(0xFF5EEAD4),
                         fontSize: 32,
                       ),
                     ),
@@ -80,12 +82,15 @@ class MapaHeader extends StatelessWidget {
 
         const SizedBox(width: 12),
 
-        const CircleAvatar(
-          radius: 22,
-          backgroundColor: AppColors.primary,
-          child: Icon(
-            Icons.person,
-            color: Colors.white,
+        GestureDetector(
+          onTap: onPerfilTap,
+          child: const CircleAvatar(
+            radius: 22,
+            backgroundColor: AppColors.primary,
+            child: Icon(
+              Icons.person,
+              color: Colors.white,
+            ),
           ),
         ),
       ],

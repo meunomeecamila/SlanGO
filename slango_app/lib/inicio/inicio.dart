@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../shared/widgets/background_espaco.dart';
+import '../perfil/perfil_screen.dart';
 import 'widgets/botoes_inicio.dart';
 import 'widgets/logo_slango.dart';
 import 'widgets/texto_boas_vindas.dart';
@@ -87,8 +88,56 @@ class InicioScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              // Ícone de perfil, sempre visível por cima do resto do conteúdo
+              Positioned(
+                top: 8,
+                right: 16,
+                child: _IconePerfil(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const PerfilScreen(
+                          nome: "Mariana",
+                          avatarAsset: "images/avatar_astronauta.png",
+                          totalMundos: 3,
+                          totalGirias: 15,
+                          totalCertificados: 2,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _IconePerfil extends StatelessWidget {
+  final VoidCallback onTap;
+
+  const _IconePerfil({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(24),
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.08),
+          shape: BoxShape.circle,
+        ),
+        child: const Icon(
+          Icons.person,
+          color: Colors.white,
+          size: 24,
         ),
       ),
     );

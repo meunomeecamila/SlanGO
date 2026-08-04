@@ -48,7 +48,7 @@ class _PlanetaWidgetState extends State<PlanetaWidget>
     return Column(
       children: [
         SizedBox(
-          height: 55 * scale,
+          height: 35 * scale,
         ), // tamnho sombraa de cima  ACHEI ONDE ARRUMA
         Container(
           width: 185 * scale,

@@ -44,50 +44,53 @@ class CardMundo extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Flexible(
+                        Expanded(
                           child: Text(
                             mundo.nome,
                             style: AppText.cardTitulo(0.95),
                             overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
                           ),
                         ),
+
                         const SizedBox(width: 8),
-                        Flexible(
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 3,
-                            ),
-                            decoration: BoxDecoration(
-                              color: (mundo.desbloqueado
-                                      ? AppColors.cyan
-                                      : AppColors.disabled)
-                                  .withOpacity(0.18),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Text(
-                              mundo.status,
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: AppText.cardSubtitulo(0.8).copyWith(
-                                color: mundo.desbloqueado
+
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 2,
+                          ),
+                          decoration: BoxDecoration(
+                            color: (mundo.desbloqueado
                                     ? AppColors.cyan
-                                    : AppColors.disabled,
-                                fontWeight: FontWeight.w600,
-                              ),
+                                    : AppColors.disabled)
+                                .withOpacity(0.18),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Text(
+                            mundo.status,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppText.cardSubtitulo(0.8).copyWith(
+                              color: mundo.desbloqueado
+                                  ? AppColors.cyan
+                                  : AppColors.disabled,
+                              fontWeight: FontWeight.w600,
                             ),
                           ),
                         ),
                       ],
                     ),
 
-                    const SizedBox(height: 2),
+                    const SizedBox(height: 4),
 
                     Text(
                       "${mundo.totalGirias} gírias para aprender",
                       style: AppText.cardSubtitulo(0.9),
                       overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
                     ),
                   ],
                 ),
