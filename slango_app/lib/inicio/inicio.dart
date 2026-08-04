@@ -71,15 +71,15 @@ class InicioScreen extends StatelessWidget {
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
-                        const SizedBox(height: 30),
+                        const SizedBox(height: 20),
 
                         const LogoSlango(),
 
-                        const SizedBox(height: 30),
+                        const SizedBox(height: 20),
 
                         const TextoBoasVindas(),
 
-                        const SizedBox(height: 50),
+                        const SizedBox(height: 25),
 
                         const BotoesInicio(),
                       ],

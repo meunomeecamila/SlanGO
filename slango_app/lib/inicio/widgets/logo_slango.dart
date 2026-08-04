@@ -14,7 +14,7 @@ class LogoSlango extends StatelessWidget {
               TextSpan(
                 text: "Slan",
                 style: GoogleFonts.alfaSlabOne(
-                  fontSize: 64,
+                  fontSize: 50,
                   color: Colors.white,
                   height: 1,
                 ),
@@ -22,7 +22,7 @@ class LogoSlango extends StatelessWidget {
               TextSpan(
                 text: "GO",
                 style: GoogleFonts.alfaSlabOne(
-                  fontSize: 64,
+                  fontSize: 54,
                   color: const Color(0xFF57E6D8),
                   height: 1,
                 ),
@@ -37,9 +37,9 @@ class LogoSlango extends StatelessWidget {
           "SEU UNIVERSO DE GÍRIAS",
           style: GoogleFonts.montserrat(
             color: Colors.white70,
-            fontSize: 17,
+            fontSize: 15,
             fontWeight: FontWeight.w700,
-            letterSpacing: 3,
+            letterSpacing: 2,
           ),
         ),
       ],
