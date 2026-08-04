@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import { RequisicaoAutenticada } from '../middlewares/authMiddleware'; // ⚠️ ajuste o caminho conforme sua estrutura
+import { RequisicaoAutenticada } from '../middlewares/authMiddleware';
 import {
     prepararRodadaAleatoria,
     listarMundos,
@@ -102,19 +102,14 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             });
         }
 
-        const contagemMundos = contarGiriasPorMundos();
-
-        const totalGiriasMundo = contagemMundos[nomeDoMundo] || 1;
-
         const ganhouPremio = verificarPremioCustomizavel(pontuacaoFinal);
 
-        // Salva o progresso do usuário (só grava de fato se acerto >= 80%)
+        
         const { salvou, percentualAcerto } = await salvarProgressoUsuario(
             nomeDoMundo,
             idUsuario,
             girias,
-            pontuacaoFinal,
-            totalGiriasMundo
+            pontuacaoFinal
         );
 
         // Devolve o veredito para o celular
@@ -123,10 +118,7 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             pontuacao: pontuacaoFinal,
             ganhouPremio: ganhouPremio,
             progressoSalvo: salvou,
-            percentualAcerto,
-            mensagem: ganhouPremio
-                ? "🎉 Parabéns! Você fez 9/9 pontos! Item customizável LIBERADO!"
-                : `❌ Poxa, você fez ${pontuacaoFinal} de 9 pontos. Tente novamente!`
+            percentualAcerto
         });
 
     } catch (error: any) {
