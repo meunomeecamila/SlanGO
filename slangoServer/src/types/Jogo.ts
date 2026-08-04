@@ -1,4 +1,5 @@
 export interface Girias {
+  id: number;
   nome: string;
   variacoes: string[];
   classe_gramatical: string;

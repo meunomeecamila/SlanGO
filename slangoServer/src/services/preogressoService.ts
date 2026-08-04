@@ -86,45 +86,50 @@ export async function buscarProgressoDoUsuario(
 export async function salvarProgressoUsuario(
     nomeDoMundo: string,
     idUser: number,
-    giriasDaRodada: string[], // nomes das 3 gírias que caíram nessa rodada
+    giriasDaRodada: any[], // Recebe os IDs da rodada
     pontuacaoObtida: number,
     pontuacaoMaxima: number = 9
 ): Promise<{ salvou: boolean; percentualAcerto: number }> {
+    
     const idMundo = await buscarIdMundoPorNome(nomeDoMundo);
     if (idMundo === null) {
-        throw new Error(`Mundo '${nomeDoMundo}' não encontrado na tabela Mundo.`);
+        throw new Error(`Mundo '${nomeDoMundo}' não encontrado.`);
     }
 
     const percentualAcerto = pontuacaoObtida / pontuacaoMaxima;
 
+    // Se não atingir 80%, não salva progresso
     if (percentualAcerto < 0.8) {
-        console.log(
-            `Usuário ${idUser} não atingiu 80% no mundo '${nomeDoMundo}' (${(percentualAcerto * 100).toFixed(0)}%). Progresso não salvo.`
-        );
         return { salvou: false, percentualAcerto };
     }
 
+    // 1. Puxa o que ele já aprendeu (isso retorna um array de strings)
     const giriasJaAprendidas = await buscarGiriasAprendidas(idMundo, idUser);
-    const novaListaGirias = Array.from(new Set([...giriasJaAprendidas, ...giriasDaRodada]));
 
-    const payload: ProgressoUsuario = {
+    // 2. Garante que os itens novos recebidos do Flutter também sejam strings 
+    const rodadaStrings = giriasDaRodada.map(String);
+
+    // 3. Mescla as duas listas e remove duplicatas com Set
+    // Ex: ["1", "2"] + ["2", "3", "4"] = ["1", "2", "3", "4"]
+    const novaListaGirias = Array.from(new Set([...giriasJaAprendidas, ...rodadaStrings]));
+
+    // 4. Salva a nova quantidade (A quantidade vai acumulando perfeitamente)
+    const payload = {
         id_Mundo: idMundo,
         id_User: idUser,
-        Girias_Aprendidas: novaListaGirias.join(', '),
+        Girias_Aprendidas: novaListaGirias.join(', '), // Salva "1, 2, 3, 4"
         Progresso: percentualAcerto,
-        Quantidade_Aprendida: novaListaGirias.length,
+        Quantidade_Aprendida: novaListaGirias.length,  // Soma o total acumulado
     };
 
-    // Precisa de constraint única em (id_Mundo, id_User) na tabela pro onConflict funcionar
     const { error } = await supabase
-        .from(TABELA_PROGRESSO)
+        .from('user_mundo') // Substitua pela sua TABELA_PROGRESSO
         .upsert([payload], { onConflict: 'id_Mundo,id_User' });
 
     if (error) {
-        console.error('Erro ao salvar progresso do usuário:', error);
-        throw new Error('Não foi possível salvar o progresso do usuário.');
+        console.error('Erro ao salvar progresso:', error);
+        throw new Error('Não foi possível salvar o progresso.');
     }
 
-    console.log(`✅ Progresso salvo: usuário ${idUser} aprendeu ${novaListaGirias.length} gírias em '${nomeDoMundo}'.`);
     return { salvou: true, percentualAcerto };
 }

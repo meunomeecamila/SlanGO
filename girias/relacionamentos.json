@@ -671,69 +671,6 @@
         "Um produto químico usado para limpar motores.",
         "Uma marca de roupas para mecânicos automotivos."
       ]
-    },
-    {
-      "id": 33,
-      "nome": "sugar daddy",
-      "variacoes": ["daddy", "patrocinador"],
-      "classe_gramatical": "substantivo",
-      "significado": "Homem maduro e com estabilidade financeira que oferece presentes, viagens ou dinheiro em troca de companhia ou relacionamento com uma pessoa mais jovem.",
-      "tags": ["relacionamento"],
-      "permissao": "pais",
-      "impacto": "depende de contexto",
-      "exemplo_correto": "Ela não trabalha, vive viajando pela Europa, dizem que arrumou um sugar daddy.",
-      "exemplos_incorretos": [
-        "Fui na doceria e comprei um cupcake sabor sugar daddy.",
-        "Coloquei um sugar daddy no meu café porque estava amargo.",
-        "Vou preparar um bolo de chocolate com muito sugar daddy."
-      ],
-      "significados_incorretos": [
-        "Um tipo específico de adoçante artificial dietético.",
-        "Uma marca de doces de caramelo tradicionais.",
-        "Açúcar mascavo importado."
-      ]
-    },
-    {
-      "id": 34,
-      "nome": "sugar mommy",
-      "variacoes": ["mommy"],
-      "classe_gramatical": "substantivo",
-      "significado": "Mulher madura e bem-sucedida financeiramente que sustenta luxos ou oferece presentes em troca do relacionamento ou companhia de alguém mais jovem.",
-      "tags": ["relacionamento"],
-      "permissao": "pais",
-      "impacto": "depende de contexto",
-      "exemplo_correto": "O carro importado dele foi presente da namorada empresária, ela é a sugar mommy dele.",
-      "exemplos_incorretos": [
-        "Minha mãe fez um pudim muito doce, verdadeiro sugar mommy.",
-        "Vou na padaria pedir o pão especial chamado sugar mommy.",
-        "A receita pede duas colheres de sopa de sugar mommy."
-      ],
-      "significados_incorretos": [
-        "Uma gíria para confeiteiras de bolos.",
-        "Uma receita americana de bolo de açúcar.",
-        "Um tipo de açúcar granulado colorido."
-      ]
-    },
-    {
-      "id": 35,
-      "nome": "milf",
-      "variacoes": ["milf"],
-      "classe_gramatical": "substantivo",
-      "significado": "Variação educada no Brasil para a sigla americana MILF. Refere-se a uma mulher mais velha, muitas vezes mãe, que é considerada extremamente atraente.",
-      "tags": ["relacionamento", "internet"],
-      "permissao": "pais",
-      "impacto": "depende de contexto",
-      "exemplo_correto": "A mãe do amigo dele entrou na sala e os caras ficaram babando, uma verdadeira milf.",
-      "exemplos_incorretos": [
-        "Eu tenho mil reais na minha conta do banco.",
-        "Dirigi o carro por mais de mil quilômetros na viagem.",
-        "Tem mais de mil pessoas na fila do show."
-      ],
-      "significados_incorretos": [
-        "O número cardinal 1000 que expressa quantidade.",
-        "Uma milha, unidade de medida de distância.",
-        "Um grão de milho usado na agricultura."
-      ]
     }
   ]
 }

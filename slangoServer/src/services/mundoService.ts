@@ -63,9 +63,10 @@ function puxarProximasGiriasUnicas(
     chaveEstado: string,
     todasAsGirias: Girias[],
     quantidade: number,
-    giriasParaExcluir: string[] = []
+    giriasParaExcluir: any[] = [] // Aceita array de IDs (números ou strings)
 ): Girias[] {
-    let poolDisponivel = todasAsGirias.filter((g) => !giriasParaExcluir.includes(g.nome));
+    // 🔥 MUDANÇA AQUI: Agora compara o ID da gíria em vez do nome
+    let poolDisponivel = todasAsGirias.filter((g) => !giriasParaExcluir.includes(g.id));
 
     // Se o usuário já aprendeu quase tudo (ou tudo) do mundo, libera o pool completo
     // pra ele poder continuar jogando em modo revisão, em vez de travar o sorteio.
@@ -110,6 +111,7 @@ function gerarFase1(giriasSorteadas: Girias[]) {
     return giriasSorteadas.map((giria) => {
         const todasAsOpcoes = [giria.significado, ...giria.significados_incorretos];
         return {
+            giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
             giria: giria.nome,
             textoDaPergunta: `Qual é o significado correto da gíria "${giria.nome}"?`,
             opcoes: embaralharOpcoes(todasAsOpcoes),
@@ -124,6 +126,7 @@ function gerarFase2(giriasSorteadas: Girias[]) {
     const opcoesDeImpacto = ['positiva', 'negativa', 'neutra', 'depende de contexto'];
     return giriasSorteadas.map((giria) => {
         return {
+            giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
             giria: giria.nome,
             textoDaPergunta: `Qual é o impacto/sentimento que a gíria "${giria.nome}" passa?`,
             opcoes: opcoesDeImpacto,
@@ -138,6 +141,7 @@ function gerarFase3(giriasSorteadas: Girias[]) {
     return giriasSorteadas.map((giria) => {
         const todasAsFrases = [giria.exemplo_correto, ...giria.exemplos_incorretos];
         return {
+            giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
             giria: giria.nome,
             textoDaPergunta: `Qual é a aplicação correta da gíria "${giria.nome}" em uma frase?`,
             opcoes: embaralharOpcoes(todasAsFrases),
@@ -152,6 +156,7 @@ function gerarFase3(giriasSorteadas: Girias[]) {
 // 3. HELPER: converter pergunta interna → FaseMundo
 // ──────────────────────────────────────────────────────────────
 interface PerguntaInterna {
+    giriaId: number | string; // 🔥 MUDANÇA: Adicionado na interface interna
     giria: string;
     textoDaPergunta: string;
     opcoes: string[];
@@ -165,9 +170,10 @@ function converterParaFaseMundo(
     variacoes: string[],
     exemplo: string,
     classe?: string
-): FaseMundo & { respostaCorreta: string; exemplo: string; classe?: string } {
+): FaseMundo & { respostaCorreta: string; exemplo: string; classe?: string; giriaId: number | string } {
     return {
-        id,
+        id, // Este é o ID da pergunta no quiz (1 a 9)
+        giriaId: pergunta.giriaId, // 🔥 MUDANÇA: Repassa o ID real da gíria para o Flutter
         giria: pergunta.giria,
         variacoes,
         pergunta: pergunta.textoDaPergunta,
@@ -201,21 +207,19 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
     const descricaoDoMundo =
         `Aprenda as gírias de ${nomeDoMundo}`;
 
-    // Busca no banco quais gírias esse usuário já aprendeu (≥80% em rodada anterior).
-    // Se o mundo ainda não existir na tabela `Mundo`, segue sem excluir nada.
+    // Busca no banco quais gírias (IDs) esse usuário já aprendeu.
     const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
     const giriasJaAprendidas = idMundoNumerico !== null
         ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
         : [];
 
-    // Sorteia 3 gírias únicas, excluindo as que o usuário já aprendeu, do baralho
-    // dinâmico específico desse usuário+mundo
+    // Sorteia 3 gírias únicas
     const chaveEstado = `${idUsuario}_${nomeDoMundo}`;
     const tresPalavras = puxarProximasGiriasUnicas(
         chaveEstado,
         todasAsGiriasDoMundo,
         3,
-        giriasJaAprendidas
+        giriasJaAprendidas // Agora isso é um array de IDs
     );
 
     // Gera as perguntas das 3 fases sobre as mesmas 3 gírias
@@ -223,7 +227,6 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
     const fase2 = gerarFase2(tresPalavras);
     const fase3 = gerarFase3(tresPalavras);
 
-    // Mapa de variações por nome de gíria — para usar nas conversões
     const variacoesPorGiria: Record<string, string[]> = {};
     tresPalavras.forEach((g) => { variacoesPorGiria[g.nome] = g.variacoes || []; });
 
@@ -243,8 +246,8 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
         id: nomeDoMundo,
         nome: tituloDoMundo,
         descricao: descricaoDoMundo,
-        fases,            // 3 itens — para a Tela de Estudo
-        todasAsPerguntas, // 9 itens — com gabarito completo para a Tela Final
+        fases,            
+        todasAsPerguntas, 
         quiz: { fase1, fase2, fase3 },
     };
 };
@@ -297,3 +300,4 @@ export function contarGiriasPorMundos(): Record<string, number> {
         return acumulador;
     }, {} as Record<string, number>);
 }
+

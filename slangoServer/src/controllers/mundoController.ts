@@ -89,11 +89,7 @@ export function verificarPremioCustomizavel(pontuacaoFinal: number): boolean {
 // (idUsuario NÃO vem mais no body — vem do token, evita que alguém salve progresso em nome de outro usuário)
 export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Response) => {
     try {
-        const { nomeDoMundo, girias, pontuacaoFinal } = req.body as {
-            nomeDoMundo: string;
-            girias: string[]; // as 3 gírias que caíram nessa rodada (o Flutter devolve o que recebeu)
-            pontuacaoFinal: number;
-        };
+        const { nomeDoMundo, girias, pontuacaoFinal } = req.body;
         const idUsuario = req.usuario!.id;
 
         if (pontuacaoFinal === undefined) {
@@ -106,6 +102,10 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             });
         }
 
+        const contagemMundos = contarGiriasPorMundos();
+
+        const totalGiriasMundo = contagemMundos[nomeDoMundo] || 1;
+
         const ganhouPremio = verificarPremioCustomizavel(pontuacaoFinal);
 
         // Salva o progresso do usuário (só grava de fato se acerto >= 80%)
@@ -113,7 +113,8 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             nomeDoMundo,
             idUsuario,
             girias,
-            pontuacaoFinal
+            pontuacaoFinal,
+            totalGiriasMundo
         );
 
         // Devolve o veredito para o celular
