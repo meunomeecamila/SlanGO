@@ -31,7 +31,12 @@ class _LicaoPageState extends State<LicaoPage> {
   @override
   void initState() {
     super.initState();
-    _futureRodada = MundoService.buscarRodada(widget.nomeMundo);
+    // CORREÇÃO: Utiliza os dados pré-carregados se existirem (evita chamada extra na API)
+    if (widget.rodadaPrecarregada != null) {
+      _futureRodada = Future.value(widget.rodadaPrecarregada!);
+    } else {
+      _futureRodada = MundoService.buscarRodada(widget.nomeMundo);
+    }
   }
 
   void _avancar(RodadaMundo rodada) {
@@ -106,7 +111,6 @@ class _LicaoPageState extends State<LicaoPage> {
           significado: fase.explicacao,
           exemplo: fase.exemplo,
           usageHighlight: fase.exemplo,
-          // ET do mundo atual (cai em 'images/avatar.png' se não houver).
           avatar: petDoMundo(widget.nomeMundo),
           progresso: (_indiceAtual + 1) / rodada.fases.length,
           onClose: () => Navigator.pop(context),

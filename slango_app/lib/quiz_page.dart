@@ -187,7 +187,26 @@ class _QuizRunnerState extends State<_QuizRunner>
   }
 
   // ── Tela de resultado final ──
-  void _mostrarResultado() {
+ // ── Tela de resultado final e salvamento ──
+  void _mostrarResultado() async {
+    // 1. Extrai APENAS os 3 IDs únicos e converte para String
+    final idsUnicos = widget.perguntas
+        .map((fase) => fase.giriaId.toString()) 
+        .toSet() 
+        .toList();
+
+    // 2. Envia para o backend
+    MundoService.validarResultado(
+      nomeDoMundo: widget.nomeMundo,
+      pontuacaoFinal: _acertos,
+      girias: idsUnicos, // Agora envia exatamente ["1", "2", "3"]
+    ).then((resultado) {
+      
+    }).catchError((erro) {
+      
+    });
+
+    // 3. Navega para a tela final
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (_, __, ___) => _ResultadoScreen(

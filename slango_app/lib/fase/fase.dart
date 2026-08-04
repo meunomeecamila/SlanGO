@@ -17,6 +17,7 @@ class Alternativa {
 
 class Fase {
   final int id;
+  final dynamic giriaId; 
   final String giria;
   final List<String> variacoes;
   final String pergunta;
@@ -28,6 +29,7 @@ class Fase {
 
   const Fase({
     required this.id,
+    required this.giriaId, 
     required this.giria,
     required this.variacoes,
     required this.pergunta,
@@ -41,6 +43,7 @@ class Fase {
   factory Fase.fromJson(Map<String, dynamic> json) {
     return Fase(
       id: json['id'] as int,
+      giriaId: json['giriaId'], 
       giria: json['giria'] as String,
       variacoes: (json['variacoes'] as List<dynamic>)
           .map((e) => e as String)
