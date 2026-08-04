@@ -5,6 +5,7 @@ import '../mapa/mapa.dart';
 import '../mapa/styles/texto.dart';
 import '../registro/registro.dart';
 import '../shared/widgets/background_espaco.dart';
+import '../shared/widgets/fundo_espacial.dart';
 import '../service/usuarioService.dart';
 
 import 'widgets/botao_login.dart';
@@ -70,8 +71,13 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BackgroundEspaco(
-        child: SafeArea(
+      body: Stack(
+        children: [
+          const Positioned.fill(
+            child: BackgroundEspaco(child: SizedBox.expand()),
+          ),
+          const Positioned.fill(child: FundoEspacial(interativo: false)),
+          SafeArea(
           child: Align(
             alignment: Alignment.topCenter,
             child: SingleChildScrollView(
@@ -164,7 +170,8 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
-        ),
+          ),
+        ],
       ),
     );
   }
