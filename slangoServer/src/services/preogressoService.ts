@@ -41,7 +41,7 @@ export async function buscarGiriasAprendidas(idMundo: number, idUser: number): P
         .select('Girias_Aprendidas')
         .eq('id_Mundo', idMundo)
         .eq('id_User', idUser)
-        .maybeSingle(); // não gera erro se ainda não existir linha pra esse usuário/mundo
+        .maybeSingle(); 
 
     if (error) {
         console.error('Erro ao buscar gírias aprendidas:', error);
