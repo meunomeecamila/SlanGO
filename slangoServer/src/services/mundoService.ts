@@ -66,7 +66,15 @@ function puxarProximasGiriasUnicas(
     giriasParaExcluir: any[] = [] // Aceita array de IDs (números ou strings)
 ): Girias[] {
     // 🔥 MUDANÇA AQUI: Agora compara o ID da gíria em vez do nome
-    let poolDisponivel = todasAsGirias.filter((g) => !giriasParaExcluir.includes(g.id));
+    // ⚠️ CORREÇÃO: `giriasParaExcluir` vem do banco como string[] (split de uma
+    // coluna "45, 31, 12"), mas `g.id` nos JSONs é number. Sem normalizar os
+    // dois lados pra String, o .includes() nunca dava match e o filtro de
+    // exclusão nunca excluía nada de verdade — gírias já aprendidas podiam
+    // continuar sendo sorteadas indefinidamente.
+    const idsParaExcluirNormalizados = giriasParaExcluir.map(String);
+    let poolDisponivel = todasAsGirias.filter(
+        (g) => !idsParaExcluirNormalizados.includes(String(g.id))
+    );
 
     // Se o usuário já aprendeu quase tudo (ou tudo) do mundo, libera o pool completo
     // pra ele poder continuar jogando em modo revisão, em vez de travar o sorteio.
@@ -300,4 +308,3 @@ export function contarGiriasPorMundos(): Record<string, number> {
         return acumulador;
     }, {} as Record<string, number>);
 }
-
