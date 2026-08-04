@@ -13,7 +13,7 @@ class BotoesInicio extends StatelessWidget {
       children: [
         SizedBox(
           width: 320,
-          height: 60,
+          height: 50,
           child: ElevatedButton(
             onPressed: () {
               Navigator.push(
@@ -39,11 +39,11 @@ class BotoesInicio extends StatelessWidget {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 15),
 
         SizedBox(
           width: 320,
-          height: 60,
+          height: 50,
           child: OutlinedButton(
             onPressed: () {
               Navigator.push(

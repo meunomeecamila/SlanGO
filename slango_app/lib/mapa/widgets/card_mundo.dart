@@ -53,25 +53,29 @@ class CardMundo extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 8),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 8,
-                            vertical: 3,
-                          ),
-                          decoration: BoxDecoration(
-                            color: (mundo.desbloqueado
+                        Flexible(
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 3,
+                            ),
+                            decoration: BoxDecoration(
+                              color: (mundo.desbloqueado
+                                      ? AppColors.cyan
+                                      : AppColors.disabled)
+                                  .withOpacity(0.18),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              mundo.status,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
+                              style: AppText.cardSubtitulo(0.8).copyWith(
+                                color: mundo.desbloqueado
                                     ? AppColors.cyan
-                                    : AppColors.disabled)
-                                .withOpacity(0.18),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Text(
-                            mundo.status,
-                            style: AppText.cardSubtitulo(0.8).copyWith(
-                              color: mundo.desbloqueado
-                                  ? AppColors.cyan
-                                  : AppColors.disabled,
-                              fontWeight: FontWeight.w600,
+                                    : AppColors.disabled,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ),
@@ -83,6 +87,7 @@ class CardMundo extends StatelessWidget {
                     Text(
                       "${mundo.totalGirias} gírias para aprender",
                       style: AppText.cardSubtitulo(0.9),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ],
                 ),

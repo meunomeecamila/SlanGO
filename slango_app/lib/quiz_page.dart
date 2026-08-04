@@ -4,14 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'fase/fase.dart';
 import 'service/MundoService.dart';
 
-// ─────────────────────────────────────────────
-// QuizPage — carrega as perguntas e controla o fluxo
-// ─────────────────────────────────────────────
+
 class QuizPage extends StatefulWidget {
   final String nomeMundo;
-  /// Perguntas já carregadas pela LicaoPage. Quando fornecidas, o QuizPage
-  /// usa esses dados diretamente sem fazer uma nova chamada ao endpoint,
-  /// garantindo que lição e quiz usem as mesmas gírias sorteadas.
   final List<Fase>? perguntasPrecarregadas;
 
   const QuizPage({
@@ -31,7 +26,6 @@ class _QuizPageState extends State<QuizPage> {
   void initState() {
     super.initState();
     if (widget.perguntasPrecarregadas != null) {
-      // Usa os dados já carregados — sem nova requisição ao servidor.
       _futurePerguntas = Future.value(widget.perguntasPrecarregadas);
     } else {
       _futurePerguntas = MundoService.buscarRodada(
@@ -45,7 +39,6 @@ class _QuizPageState extends State<QuizPage> {
     return FutureBuilder<List<Fase>>(
       future: _futurePerguntas,
       builder: (context, snapshot) {
-        // ── Carregando ──
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Scaffold(
             backgroundColor: Color(0xFF1F1035),
@@ -92,9 +85,6 @@ class _QuizPageState extends State<QuizPage> {
   }
 }
 
-// ─────────────────────────────────────────────
-// _QuizRunner — o quiz em si (stateful)
-// ─────────────────────────────────────────────
 enum _EstadoResposta { aguardando, respondido }
 
 class _QuizRunner extends StatefulWidget {
@@ -129,6 +119,8 @@ class _QuizRunnerState extends State<_QuizRunner>
   static const Color verde = Color(0xFF4ADE80);
   static const Color vermelho = Color(0xFFF87171);
 
+  static const String _avatarGuiaFixo = 'images/planets_pets/mariana.png';
+
   @override
   void initState() {
     super.initState();
@@ -148,7 +140,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     super.dispose();
   }
 
-  // ── Responde uma alternativa ──
   void _responder(String textoSelecionado) {
     if (_estado == _EstadoResposta.respondido) return;
 
@@ -170,7 +161,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     _feedbackController.forward(from: 0);
   }
 
-  // ── Avança para a próxima pergunta ──
   void _avancar() {
     _feedbackController.reverse().then((_) {
       if (_indice < widget.perguntas.length - 1) {
@@ -185,7 +175,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     });
   }
 
-  // ── Tela de resultado final ──
   void _mostrarResultado() {
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
@@ -220,7 +209,6 @@ class _QuizRunnerState extends State<_QuizRunner>
       backgroundColor: bgBottom,
       body: Stack(
         children: [
-          // ── Fundo gradiente ──
           Container(
             width: double.infinity,
             height: double.infinity,
@@ -233,7 +221,6 @@ class _QuizRunnerState extends State<_QuizRunner>
             ),
           ),
 
-          // ── Conteúdo principal ──
           SafeArea(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20 * scale),
@@ -242,82 +229,132 @@ class _QuizRunnerState extends State<_QuizRunner>
                 children: [
                   SizedBox(height: 12 * heightScale),
 
-                  // Barra superior (fechar + progresso + pontuação)
                   _buildTopBar(scale, progresso),
                   SizedBox(height: 20 * heightScale),
 
-                  // Badge do número da pergunta
-                  Center(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 14 * scale,
-                        vertical: 6 * scale,
-                      ),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: roxo.withOpacity(0.6)),
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      child: Text(
-                        'Pergunta ${_indice + 1} de $total',
-                        style: TextStyle(
-                          color: roxoClaro,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12 * scale,
-                          letterSpacing: 0.5,
-                        ),
+                  Container(
+                    width: double.infinity,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 18 * scale,
+                      vertical: 20 * scale,
+                    ),
+                    decoration: BoxDecoration(
+                      color: cardColor,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: roxo.withOpacity(0.45),
+                        width: 1.3,
                       ),
                     ),
-                  ),
-                  SizedBox(height: 18 * heightScale),
-
-                  // Gíria em destaque
-                  Text(
-                    fase.giria.toUpperCase(),
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.alfaSlabOne(
-                      color: Colors.white,
-                      fontSize: 42 * scale,
-                      letterSpacing: 1,
-                      shadows: [
-                        Shadow(
-                          color: roxo.withOpacity(0.6),
-                          blurRadius: 6 * scale,
+                    child: Column(
+                      children: [
+                        Text(
+                          'O QUE SIGNIFICA?',
+                          style: GoogleFonts.poppins(
+                            color: roxoClaro,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 12 * scale,
+                            letterSpacing: 1.1,
+                          ),
                         ),
-                        Shadow(
-                          color: roxo.withOpacity(0.35),
-                          blurRadius: 18 * scale,
+                        SizedBox(height: 10 * heightScale),
+                        Text(
+                          fase.giria.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.alfaSlabOne(
+                            color: Colors.white,
+                            fontSize: 26 * scale,
+                            letterSpacing: 0.5,
+                            shadows: [
+                              Shadow(
+                                color: roxo.withOpacity(0.5),
+                                blurRadius: 10 * scale,
+                              ),
+                            ],
+                          ),
                         ),
-                        Shadow(
-                          color: roxoClaro.withOpacity(0.2),
-                          blurRadius: 32 * scale,
+                        SizedBox(height: 8 * heightScale),
+                        Text(
+                          fase.pergunta,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                            color: Colors.white,
+                            fontSize: 14.5 * scale,
+                            fontWeight: FontWeight.w500,
+                            height: 1.4,
+                          ),
                         ),
                       ],
                     ),
                   ),
-                  SizedBox(height: 14 * heightScale),
 
-                  // Card com o texto da pergunta
-                  Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.all(16 * scale),
-                    decoration: BoxDecoration(
-                      color: cardColor,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Text(
-                      fase.pergunta,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15 * scale,
-                        fontWeight: FontWeight.w600,
-                        height: 1.4,
+                  SizedBox(height: 16 * heightScale),
+
+                  Row(
+                    children: [
+                      Container(
+                        width: 52 * scale,
+                        height: 52 * scale,
+                        padding: EdgeInsets.all(7 * scale),
+                        decoration: BoxDecoration(
+                          color: cardColor,
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(
+                            color: roxo.withOpacity(0.45),
+                            width: 1.2,
+                          ),
+                        ),
+                        child: Image.asset(
+                          _avatarGuiaFixo,
+                          fit: BoxFit.contain,
+                          errorBuilder: (_, __, ___) =>
+                              const Icon(Icons.pets, color: Colors.white54),
+                        ),
                       ),
-                    ),
+                      SizedBox(width: 10 * scale),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16 * scale,
+                            vertical: 12 * scale,
+                          ),
+                          decoration: BoxDecoration(
+                            color: cardDark,
+                            borderRadius: BorderRadius.circular(18),
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  'Escolha a alternativa correta!',
+                                  style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 13 * scale,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                width: 20 * scale,
+                                height: 20 * scale,
+                                decoration: BoxDecoration(
+                                  color: roxo,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(
+                                  Icons.arrow_downward,
+                                  size: 12 * scale,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  SizedBox(height: 20 * heightScale),
+                  SizedBox(height: 18 * heightScale),
 
-                  // Lista de alternativas
                   Expanded(
                     child: ListView.separated(
                       physics: const NeverScrollableScrollPhysics(),
@@ -328,6 +365,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                         final alt = fase.alternativas[i];
                         return _buildAlternativa(
                           alt,
+                          letra: String.fromCharCode(65 + i), // A, B, C, D...
                           scale: scale,
                           heightScale: heightScale,
                           respostaCorreta: respostaCorreta,
@@ -336,7 +374,6 @@ class _QuizRunnerState extends State<_QuizRunner>
                     ),
                   ),
 
-                  // Espaço reservado para o painel de feedback
                   SizedBox(
                     height: _estado == _EstadoResposta.respondido
                         ? 100 * scale
@@ -347,7 +384,6 @@ class _QuizRunnerState extends State<_QuizRunner>
             ),
           ),
 
-          // ── Painel de feedback deslizante ──
           if (_estado == _EstadoResposta.respondido)
             Positioned(
               bottom: 0,
@@ -367,7 +403,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // ─── Barra superior ───
   Widget _buildTopBar(double scale, double progresso) {
     return Row(
       children: [
@@ -412,9 +447,9 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // ─── Botão de alternativa ───
   Widget _buildAlternativa(
     Alternativa alt, {
+    required String letra,
     required double scale,
     required double heightScale,
     required String respostaCorreta,
@@ -422,24 +457,25 @@ class _QuizRunnerState extends State<_QuizRunner>
     Color borderColor = Colors.white.withOpacity(0.08);
     Color bgColor = cardDark;
     Color textColor = Colors.white;
+    Color badgeColor = roxo;
     Widget? trailingIcon;
 
     if (_estado == _EstadoResposta.respondido) {
       if (alt.correta) {
-        // Sempre destaca a correta em verde
         borderColor = verde;
         bgColor = verde.withOpacity(0.15);
         textColor = verde;
+        badgeColor = verde;
         trailingIcon = const Icon(
           Icons.check_circle_rounded,
           color: verde,
           size: 20,
         );
       } else if (alt.texto == _selecionada) {
-        // A errada que foi selecionada fica vermelha
         borderColor = vermelho;
         bgColor = vermelho.withOpacity(0.12);
         textColor = vermelho;
+        badgeColor = vermelho;
         trailingIcon = const Icon(
           Icons.cancel_rounded,
           color: vermelho,
@@ -457,8 +493,8 @@ class _QuizRunnerState extends State<_QuizRunner>
         curve: Curves.easeOut,
         width: double.infinity,
         padding: EdgeInsets.symmetric(
-          horizontal: 16 * scale,
-          vertical: 14 * scale,
+          horizontal: 14 * scale,
+          vertical: 12 * scale,
         ),
         decoration: BoxDecoration(
           color: bgColor,
@@ -467,6 +503,24 @@ class _QuizRunnerState extends State<_QuizRunner>
         ),
         child: Row(
           children: [
+            Container(
+              width: 28 * scale,
+              height: 28 * scale,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: badgeColor, width: 1.5),
+              ),
+              alignment: Alignment.center,
+              child: Text(
+                letra,
+                style: GoogleFonts.poppins(
+                  color: badgeColor,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 13 * scale,
+                ),
+              ),
+            ),
+            SizedBox(width: 12 * scale),
             Expanded(
               child: Text(
                 alt.texto,
