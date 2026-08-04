@@ -11,8 +11,8 @@ import {
 const mundoRoutes = Router();
 
 mundoRoutes.get('/mundos/progresso', autenticar, getMundosComProgresso); 
-mundoRoutes.get('/mundos/:nome', autenticar, buscarMundo);
 mundoRoutes.get('/mundos/contagem', autenticar, contarGiriasPorMundo);
+mundoRoutes.get('/mundos/:nome', autenticar, buscarMundo);
 mundoRoutes.get('/mundos/:nome', autenticar, buscarMundo);
 mundoRoutes.get('/mundos/:nomeMundo/fases', autenticar, getFasesDoMundo);
 mundoRoutes.post('/mundos/resultado', autenticar, validarResultadoJogo);
