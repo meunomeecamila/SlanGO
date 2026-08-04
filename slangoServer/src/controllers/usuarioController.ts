@@ -5,6 +5,7 @@ import {
     atualizarUsuario,
     deletarUsuario
 } from '../services/usuarioService';
+import { emailValido, senhaValida } from '../utils/validador';
 
 export const criarUsuarioController = async (req: Request, res: Response) => {
     try {
@@ -14,8 +15,17 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'Nome, email, senha e confirmação de senha são obrigatórios.' });
         }
 
+        if (!emailValido(email)) {
+            return res.status(400).json({ erro: 'Email inválido.' });
+        }
+
         if (senha !== confirmarSenha) {
             return res.status(400).json({ erro: 'As senhas não coincidem.' });
+        }
+
+        const validacaoSenha = senhaValida(senha);
+        if (!validacaoSenha.valida) {
+            return res.status(400).json({ erro: validacaoSenha.erro });
         }
 
         const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel });
