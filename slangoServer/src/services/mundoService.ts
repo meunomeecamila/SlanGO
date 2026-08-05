@@ -65,12 +65,6 @@ function puxarProximasGiriasUnicas(
     quantidade: number,
     giriasParaExcluir: any[] = [] // Aceita array de IDs (números ou strings)
 ): Girias[] {
-    // 🔥 MUDANÇA AQUI: Agora compara o ID da gíria em vez do nome
-    // ⚠️ CORREÇÃO: `giriasParaExcluir` vem do banco como string[] (split de uma
-    // coluna "45, 31, 12"), mas `g.id` nos JSONs é number. Sem normalizar os
-    // dois lados pra String, o .includes() nunca dava match e o filtro de
-    // exclusão nunca excluía nada de verdade — gírias já aprendidas podiam
-    // continuar sendo sorteadas indefinidamente.
     const idsParaExcluirNormalizados = giriasParaExcluir.map(String);
     let poolDisponivel = todasAsGirias.filter(
         (g) => !idsParaExcluirNormalizados.includes(String(g.id))
@@ -134,7 +128,7 @@ function gerarFase2(giriasSorteadas: Girias[]) {
     const opcoesDeImpacto = ['positiva', 'negativa', 'neutra', 'depende de contexto'];
     return giriasSorteadas.map((giria) => {
         return {
-            giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
+            giriaId: giria.id, 
             giria: giria.nome,
             textoDaPergunta: `Qual é o impacto/sentimento que a gíria "${giria.nome}" passa?`,
             opcoes: opcoesDeImpacto,
@@ -149,7 +143,7 @@ function gerarFase3(giriasSorteadas: Girias[]) {
     return giriasSorteadas.map((giria) => {
         const todasAsFrases = [giria.exemplo_correto, ...giria.exemplos_incorretos];
         return {
-            giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
+            giriaId: giria.id, 
             giria: giria.nome,
             textoDaPergunta: `Qual é a aplicação correta da gíria "${giria.nome}" em uma frase?`,
             opcoes: embaralharOpcoes(todasAsFrases),
@@ -164,7 +158,7 @@ function gerarFase3(giriasSorteadas: Girias[]) {
 // 3. HELPER: converter pergunta interna → FaseMundo
 // ──────────────────────────────────────────────────────────────
 interface PerguntaInterna {
-    giriaId: number | string; // 🔥 MUDANÇA: Adicionado na interface interna
+    giriaId: number | string; 
     giria: string;
     textoDaPergunta: string;
     opcoes: string[];
@@ -181,7 +175,7 @@ function converterParaFaseMundo(
 ): FaseMundo & { respostaCorreta: string; exemplo: string; classe?: string; giriaId: number | string } {
     return {
         id, // Este é o ID da pergunta no quiz (1 a 9)
-        giriaId: pergunta.giriaId, // 🔥 MUDANÇA: Repassa o ID real da gíria para o Flutter
+        giriaId: pergunta.giriaId, 
         giria: pergunta.giria,
         variacoes,
         pergunta: pergunta.textoDaPergunta,

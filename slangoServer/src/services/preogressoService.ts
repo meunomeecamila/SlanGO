@@ -88,19 +88,21 @@ export async function salvarProgressoUsuario(
     idUser: number,
     giriasDaRodada: any[], // Recebe os IDs da rodada
     pontuacaoObtida: number,
-    pontuacaoMaxima: number = 9
-): Promise<{ salvou: boolean; percentualAcerto: number }> {
+    totalGiriasMundo: number, // Total de gírias cadastradas nesse mundo (ex: 45) — vem de contarGiriasPorMundos()
+    pontuacaoMaxima: number = 9 // Nota máxima do QUIZ em si (sempre 9: 3 gírias x 3 fases). Não confundir com totalGiriasMundo.
+): Promise<{ salvou: boolean; percentualAcerto: number; progressoMundo: number | null }> {
     
     const idMundo = await buscarIdMundoPorNome(nomeDoMundo);
     if (idMundo === null) {
         throw new Error(`Mundo '${nomeDoMundo}' não encontrado.`);
     }
 
+    // Nota da rodada atual (sempre sobre 9) — só decide SE o progresso conta ou não.
     const percentualAcerto = pontuacaoObtida / pontuacaoMaxima;
 
-    // Se não atingir 80%, não salva progresso
+    // Se não atingir 80%, não salva progresso (o progresso geral do mundo não muda)
     if (percentualAcerto < 0.8) {
-        return { salvou: false, percentualAcerto };
+        return { salvou: false, percentualAcerto, progressoMundo: null };
     }
 
     // 1. Puxa o que ele já aprendeu (isso retorna um array de strings)
@@ -113,12 +115,18 @@ export async function salvarProgressoUsuario(
     // Ex: ["1", "2"] + ["2", "3", "4"] = ["1", "2", "3", "4"]
     const novaListaGirias = Array.from(new Set([...giriasJaAprendidas, ...rodadaStrings]));
 
-    // 4. Salva a nova quantidade (A quantidade vai acumulando perfeitamente)
+    // 4. Progresso REAL do mundo = quantas gírias já aprendeu / total de gírias que existem no mundo.
+    // Isso é o que alimenta a barrinha de progresso no mapa — não é a nota do quiz.
+    const progressoMundo = totalGiriasMundo > 0
+        ? novaListaGirias.length / totalGiriasMundo
+        : 0;
+
+    // 5. Salva a nova quantidade (A quantidade vai acumulando perfeitamente)
     const payload = {
         id_Mundo: idMundo,
         id_User: idUser,
         Girias_Aprendidas: novaListaGirias.join(', '), // Salva "1, 2, 3, 4"
-        Progresso: percentualAcerto,
+        Progresso: progressoMundo,
         Quantidade_Aprendida: novaListaGirias.length,  // Soma o total acumulado
     };
 
@@ -131,5 +139,5 @@ export async function salvarProgressoUsuario(
         throw new Error('Não foi possível salvar o progresso.');
     }
 
-    return { salvou: true, percentualAcerto };
+    return { salvou: true, percentualAcerto, progressoMundo };
 }

@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import { RequisicaoAutenticada } from '../middlewares/authMiddleware';
+import { RequisicaoAutenticada } from '../middlewares/authMiddleware'; 
 import {
     prepararRodadaAleatoria,
     listarMundos,
@@ -102,14 +102,22 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             });
         }
 
+        const contagemMundos = contarGiriasPorMundos();
+        const totalGiriasMundo = contagemMundos[nomeDoMundo] || 1;
+
         const ganhouPremio = verificarPremioCustomizavel(pontuacaoFinal);
 
-        
-        const { salvou, percentualAcerto } = await salvarProgressoUsuario(
+        // Salva o progresso do usuário (só grava de fato se acerto >= 80%)
+        // `totalGiriasMundo` aqui NÃO é o divisor da nota do quiz (que é sempre /9,
+        // valor padrão dentro de salvarProgressoUsuario) — é o total de gírias
+        // cadastradas no mundo, usado só pra calcular o progresso geral
+        // (quantidadeAprendida / totalGiriasMundo) que alimenta a barrinha do mapa.
+        const { salvou, percentualAcerto, progressoMundo } = await salvarProgressoUsuario(
             nomeDoMundo,
             idUsuario,
             girias,
-            pontuacaoFinal
+            pontuacaoFinal,
+            totalGiriasMundo
         );
 
         // Devolve o veredito para o celular
@@ -118,7 +126,11 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             pontuacao: pontuacaoFinal,
             ganhouPremio: ganhouPremio,
             progressoSalvo: salvou,
-            percentualAcerto
+            percentualAcerto,
+            progressoMundo, // 0 a 1 — quantidade aprendida / total do mundo, pra barrinha do mapa
+            mensagem: ganhouPremio
+                ? "🎉 Parabéns! Você fez 9/9 pontos! Item customizável LIBERADO!"
+                : `❌ Poxa, você fez ${pontuacaoFinal} de 9 pontos. Tente novamente!`
         });
 
     } catch (error: any) {
