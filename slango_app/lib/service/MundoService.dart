@@ -1,12 +1,19 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart'; // <-- Trocamos para secure storage
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../fase/fase.dart';
 
+class ExigeContaException implements Exception {
+  final String mensagem;
+  ExigeContaException(this.mensagem);
+
+  @override
+  String toString() => mensagem;
+}
+
 class MundoService {
-  // Instanciamos o secure storage igual você fez no UsuarioService
   static const _storage = FlutterSecureStorage();
 
   static String get _baseUrl {
@@ -17,25 +24,46 @@ class MundoService {
     return url;
   }
 
-  // 1. Atualizado para buscar no FlutterSecureStorage com a chave 'token'
   static Future<Map<String, String>> _getHeaders() async {
     final token = await _storage.read(key: 'token');
 
     return {
       'Content-Type': 'application/json',
-      // Injeta o token se ele existir
       if (token != null && token.isNotEmpty) 'Authorization': 'Bearer $token',
     };
   }
 
-  // ==========================================
-  // ROTA DE PROGRESSO
-  // ==========================================
+  static void _verificarResposta(http.Response response) {
+    if (response.statusCode == 403) {
+      final dados = jsonDecode(response.body);
+      throw ExigeContaException(dados['erro'] ?? 'Crie uma conta para jogar.');
+    }
+  }
+
+  static Future<List<String>> listarMundos() async {
+    final uri = Uri.parse('$_baseUrl/mundos');
+
+    final headers = await _getHeaders();
+    final response = await http.get(uri, headers: headers);
+
+    if (response.statusCode != 200) {
+      throw Exception('Falha ao buscar mundos: ${response.body}');
+    }
+
+    final jsonResponse = jsonDecode(response.body);
+    if (jsonResponse is Map<String, dynamic> && jsonResponse['mundos'] is List) {
+      return List<String>.from(jsonResponse['mundos']);
+    }
+    return [];
+  }
+
   static Future<List<Map<String, dynamic>>> obterProgressoMundos() async {
     final uri = Uri.parse('$_baseUrl/mundos/progresso');
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);
+
+    _verificarResposta(response);
 
     if (response.statusCode != 200) {
       throw Exception('Falha ao buscar progresso: ${response.body}');
@@ -52,14 +80,13 @@ class MundoService {
     return [];
   }
 
-  // ==========================================
-  // BUSCAR FASES DO MUNDO
-  // ==========================================
   static Future<RodadaMundo> buscarRodada(String nomeMundo) async {
     final uri = Uri.parse('$_baseUrl/mundos/$nomeMundo/fases');
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);
+
+    _verificarResposta(response);
 
     if (response.statusCode != 200) {
       throw Exception('Falha ao buscar rodada: ${response.body}');
@@ -68,9 +95,6 @@ class MundoService {
     return RodadaMundo.fromJson(jsonDecode(response.body));
   }
 
-  // ==========================================
-  // VALIDAR RESULTADO
-  // ==========================================
   static Future<Map<String, dynamic>> validarResultado({
     required String nomeDoMundo,
     required int pontuacaoFinal,
@@ -85,9 +109,11 @@ class MundoService {
       body: jsonEncode({
         'nomeDoMundo': nomeDoMundo,
         'pontuacaoFinal': pontuacaoFinal,
-        'girias': girias, // Envia o array de IDs para o backend
+        'girias': girias, 
       }),
     );
+
+    _verificarResposta(response);
 
     if (response.statusCode != 200) {
       throw Exception('Falha ao validar resultado: ${response.body}');
@@ -101,6 +127,8 @@ class MundoService {
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);
+
+    _verificarResposta(response);
 
     if (response.statusCode != 200) {
       throw Exception('Falha ao buscar progresso do mundo: ${response.body}');

@@ -9,6 +9,7 @@ class UsuarioService {
 
   static const _tokenKey = 'token';
   static const _userIdKey = 'userId';
+  static const _isGuestKey = 'isGuest'; // flag local: sessão atual é de convidado?
 
   static String get _baseUrl {
     final url = dotenv.env['API_URL'];
@@ -33,6 +34,7 @@ class UsuarioService {
   static Future<void> _clearSession() async {
     await _storage.delete(key: _tokenKey);
     await _storage.delete(key: _userIdKey);
+    await _storage.delete(key: _isGuestKey);
   }
 
   // ── Cadastro ──
@@ -77,12 +79,41 @@ class UsuarioService {
     final dados = jsonDecode(response.body);
 
     if (response.statusCode == 201 || response.statusCode == 200) {
+      // Login de verdade sempre substitui uma sessão de convidado anterior
+      await _storage.delete(key: _isGuestKey);
       await _storage.write(key: _tokenKey, value: dados['token']);
       await _storeUserId(dados['usuario']['id']);
       return Usuario.fromJson(dados['usuario']);
     }
 
     throw Exception(dados['erro'] ?? 'Email ou senha inválidos');
+  }
+
+  // ── Sessão de convidado ──
+  // Não cria usuário nenhum: só pega um token temporário que dá acesso
+  // apenas à listagem de mundos (o backend bloqueia o resto com 403).
+  static Future<void> entrarComoConvidado() async {
+    final response = await http.post(
+      Uri.parse('$_baseUrl/auth/convidado'),
+      headers: {'Content-Type': 'application/json'},
+    );
+
+    final dados = jsonDecode(response.body);
+
+    if (response.statusCode != 200) {
+      throw Exception(dados['erro'] ?? 'Erro ao entrar como convidado');
+    }
+
+    // Limpa qualquer resquício de sessão anterior (id de usuário real, se tinha)
+    await _storage.delete(key: _userIdKey);
+    await _storage.write(key: _tokenKey, value: dados['token']);
+    await _storage.write(key: _isGuestKey, value: 'true');
+  }
+
+  /// Sessão atual é de convidado (sem conta de verdade)?
+  static Future<bool> estaConvidado() async {
+    final flag = await _storage.read(key: _isGuestKey);
+    return flag == 'true';
   }
 
   // ── Buscar usuário por id (rota protegida) ──
@@ -181,7 +212,6 @@ class UsuarioService {
     return buscarPorId(id);
   }
 
-  // ── Logout local ──
   static Future<void> logout() async {
     await _clearSession();
   }
