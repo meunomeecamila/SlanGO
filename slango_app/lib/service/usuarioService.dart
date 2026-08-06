@@ -7,6 +7,9 @@ import '../user/User.dart';
 class UsuarioService {
   static const _storage = FlutterSecureStorage();
 
+  static const _tokenKey = 'token';
+  static const _userIdKey = 'userId';
+
   static String get _baseUrl {
     final url = dotenv.env['API_URL'];
     if (url == null || url.isEmpty) {
@@ -16,6 +19,20 @@ class UsuarioService {
       );
     }
     return url;
+  }
+
+  static Future<void> _storeUserId(int id) async {
+    await _storage.write(key: _userIdKey, value: id.toString());
+  }
+
+  static Future<int?> _getStoredUserId() async {
+    final id = await _storage.read(key: _userIdKey);
+    return id == null ? null : int.tryParse(id);
+  }
+
+  static Future<void> _clearSession() async {
+    await _storage.delete(key: _tokenKey);
+    await _storage.delete(key: _userIdKey);
   }
 
   // ── Cadastro ──
@@ -41,7 +58,9 @@ class UsuarioService {
     final dados = jsonDecode(response.body);
 
     if (response.statusCode == 201) {
-      return Usuario.fromJson(dados['usuario']);
+      final usuario = Usuario.fromJson(dados['usuario']);
+      await login(email, senha);
+      return usuario;
     }
 
     throw Exception(dados['erro'] ?? 'Erro ao cadastrar usuário');
@@ -57,8 +76,9 @@ class UsuarioService {
 
     final dados = jsonDecode(response.body);
 
-    if (response.statusCode == 200) {
-      await _storage.write(key: 'token', value: dados['token']);
+    if (response.statusCode == 201 || response.statusCode == 200) {
+      await _storage.write(key: _tokenKey, value: dados['token']);
+      await _storeUserId(dados['usuario']['id']);
       return Usuario.fromJson(dados['usuario']);
     }
 
@@ -67,10 +87,10 @@ class UsuarioService {
 
   // ── Buscar usuário por id (rota protegida) ──
   static Future<Usuario> buscarPorId(int id) async {
-    final token = await _storage.read(key: 'token');
+    final token = await _storage.read(key: _tokenKey);
 
     final response = await http.get(
-      Uri.parse('$_baseUrl/usuarios/$id'),
+      Uri.parse('$_baseUrl/usuario/$id'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -99,7 +119,7 @@ class UsuarioService {
     String? senha,
     bool? responsavel,
   }) async {
-    final token = await _storage.read(key: 'token');
+    final token = await _storage.read(key: _tokenKey);
 
     final corpo = <String, dynamic>{};
     if (nome != null) corpo['nome'] = nome;
@@ -108,7 +128,7 @@ class UsuarioService {
     if (responsavel != null) corpo['responsavel'] = responsavel;
 
     final response = await http.put(
-      Uri.parse('$_baseUrl/usuarios/$id'),
+      Uri.parse('$_baseUrl/usuario/$id'),
       headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
@@ -131,16 +151,21 @@ class UsuarioService {
   }
 
   // ── Deletar usuário (rota protegida) ──
-  static Future<void> deletar(int id) async {
-    final token = await _storage.read(key: 'token');
+  static Future<void> deletar([int? id]) async {
+    final token = await _storage.read(key: _tokenKey);
+    final userId = id ?? await _getStoredUserId();
+
+    if (userId == null) {
+      throw Exception('Usuário não identificado. Faça login novamente.');
+    }
 
     final response = await http.delete(
-      Uri.parse('$_baseUrl/usuarios/$id'),
+      Uri.parse('$_baseUrl/usuario/$userId'),
       headers: {'Authorization': 'Bearer $token'},
     );
 
     if (response.statusCode == 200) {
-      await _storage.delete(key: 'token');
+      await _clearSession();
       return;
     }
 
@@ -148,9 +173,17 @@ class UsuarioService {
     throw Exception(dados['erro'] ?? 'Erro ao deletar usuário');
   }
 
+  static Future<Usuario> buscarUsuarioLogado() async {
+    final id = await _getStoredUserId();
+    if (id == null) {
+      throw Exception('Usuário não identificado. Faça login novamente.');
+    }
+    return buscarPorId(id);
+  }
+
   // ── Logout local ──
   static Future<void> logout() async {
-    await _storage.delete(key: 'token');
+    await _clearSession();
   }
 
   static Future<bool> estaLogado() async {

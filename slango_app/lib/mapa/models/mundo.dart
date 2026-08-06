@@ -11,14 +11,10 @@ class Mundo {
   final String id;
   final String nome;
   final String imagem;
-
-  /// Status de disponibilidade do mundo (ex: "Disponível", "Em breve").
   final String status;
-
-  /// Descrição real do mundo — sobre o que são as gírias dele.
   final String descricao;
-
   final int totalGirias;
+  final int giriasAprendidas;
   final double progresso;
   final bool desbloqueado;
 
@@ -29,6 +25,7 @@ class Mundo {
     this.status = '',
     this.descricao = '',
     this.totalGirias = 0,
+    this.giriasAprendidas = 0,
     this.progresso = 0.0,
     this.desbloqueado = false,
   });
