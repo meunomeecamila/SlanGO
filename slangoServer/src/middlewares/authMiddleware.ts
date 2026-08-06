@@ -2,7 +2,11 @@ import { Request, Response, NextFunction } from 'express';
 import { verificarToken } from '../services/authService';
 
 export interface RequisicaoAutenticada extends Request {
-    usuario?: { id: number; email: string };
+    usuario?: {
+        id?: number;
+        email?: string;
+        convidado: boolean;
+    };
 }
 
 export function autenticar(req: RequisicaoAutenticada, res: Response, next: NextFunction) {
@@ -16,9 +20,22 @@ export function autenticar(req: RequisicaoAutenticada, res: Response, next: Next
 
     try {
         const payload = verificarToken(token);
-        req.usuario = { id: payload.id, email: payload.email };
+
+        if (payload.convidado) {
+            req.usuario = { convidado: true };
+        } else {
+            req.usuario = { id: payload.id, email: payload.email, convidado: false };
+        }
+
         next();
     } catch {
         return res.status(401).json({ erro: 'Token inválido ou expirado' });
     }
+}
+
+export function bloquearConvidado(req: RequisicaoAutenticada, res: Response, next: NextFunction) {
+    if (req.usuario?.convidado) {
+        return res.status(403).json({ erro: 'Crie uma conta para jogar.' });
+    }
+    next();
 }
