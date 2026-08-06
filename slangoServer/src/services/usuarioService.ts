@@ -5,7 +5,7 @@ import { supabase } from '../dbConnection';
 const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data'>;
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>;
 type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data'>>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
@@ -42,6 +42,7 @@ export function dataNascimentoValida(dataNascimento: string): { valida: boolean;
     if (idade < IDADE_MINIMA) {
         return { valida: false, erro: `Idade mínima para cadastro é ${IDADE_MINIMA} anos.` };
     }
+    
 
     return { valida: true };
 }
@@ -63,6 +64,8 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Senha: senhaHash,
                 Responsavel: dados.Responsavel ?? false,
                 Data: dados.Data,
+                perguntaSeguranca: dados.perguntaSeguranca,
+                respostaSeguranca: dados.respostaSeguranca
             }
         ])
         .select()
@@ -109,7 +112,6 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
     const camposParaAtualizar: Record<string, any> = {};
 
     if (dados.Nome !== undefined) camposParaAtualizar.Nome = dados.Nome;
-    if (dados.Email !== undefined) camposParaAtualizar.Email = dados.Email;
     if (dados.Responsavel !== undefined) camposParaAtualizar.Responsavel = dados.Responsavel;
     if (dados.Senha) camposParaAtualizar.Senha = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 

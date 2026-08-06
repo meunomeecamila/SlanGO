@@ -48,6 +48,8 @@ export interface Usuario {
   Responsavel: boolean;
   Senha: string;
   Data: string; // ou Date, dependendo de como o driver do banco devolve
+  perguntaSeguranca: string;
+  respostaSeguranca: string;
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */
