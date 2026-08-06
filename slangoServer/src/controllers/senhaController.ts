@@ -2,10 +2,9 @@ import { Request, Response } from 'express';
 import {
     buscarUsuarioPorEmail,
     validarRespostaSeguranca,
-    atualizarSenhaUsuario
+    atualizarSenhaUsuario,
 } from '../services/senhaService';
-
-import { senhaValida } from '../utils/validador';
+import { emailValido, senhaValida } from '../utils/validador'; 
 
 export const obterPerguntaSeguranca = async (req: Request, res: Response) => {
     try {
@@ -15,11 +14,14 @@ export const obterPerguntaSeguranca = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'E-mail é obrigatório.' });
         }
 
+        if (!emailValido(email)) {
+            return res.status(400).json({ erro: 'Formato de e-mail inválido.' });
+        }
+
         const usuario = await buscarUsuarioPorEmail(email);
 
         if (!usuario) {
-            // mesmo status/formato do caso de sucesso pra não vazar se o email existe
-            return res.status(404).json({ erro: "Email não encontrado." });
+            return res.status(404).json({ erro: 'E-mail ou resposta de segurança inválidos.' });
         }
 
         return res.status(200).json({
@@ -32,10 +34,6 @@ export const obterPerguntaSeguranca = async (req: Request, res: Response) => {
     }
 };
 
-// ==========================================
-// PASSO 2 — POST /recuperar-senha
-// Valida a resposta de segurança e troca a senha.
-// ==========================================
 export const recuperarSenhaController = async (req: Request, res: Response) => {
     try {
         const { email, novaSenha, confirmarNovaSenha, respostaSeguranca } = req.body;
@@ -48,16 +46,19 @@ export const recuperarSenhaController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'As senhas não coincidem.' });
         }
 
-        if (!senhaValida(novaSenha)) {
-            return res.status(400).json({
-                erro: 'A senha deve ter no mínimo 8 caracteres, incluindo letras e números.',
-            });
+        // 3. Formato do e-mail
+        if (!emailValido(email)) {
+            return res.status(400).json({ erro: 'Formato de e-mail inválido.' });
         }
-        
+        const resultadoSenha = senhaValida(novaSenha);
+        if (!resultadoSenha.valida) {
+            return res.status(400).json({ erro: resultadoSenha.erro });
+        }
+
         const usuario = await buscarUsuarioPorEmail(email);
 
         if (!usuario) {
-            return res.status(400).json({ erro: "Email não encontrado." });
+            return res.status(400).json({ erro: 'E-mail ou resposta de segurança inválidos.' });
         }
 
         const respostaCorreta = await validarRespostaSeguranca(
@@ -66,7 +67,7 @@ export const recuperarSenhaController = async (req: Request, res: Response) => {
         );
 
         if (!respostaCorreta) {
-            return res.status(400).json({ erro: "Resposta de segurança incorreta." });
+            return res.status(400).json({ erro: 'E-mail ou resposta de segurança inválidos.' });
         }
 
         await atualizarSenhaUsuario(usuario.id, novaSenha);

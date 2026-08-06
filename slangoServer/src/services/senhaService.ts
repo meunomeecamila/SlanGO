@@ -4,8 +4,6 @@ import { Usuario } from '../types/Jogo';
 
 const TABELA_USUARIO = 'User';
 
-
-
 export async function buscarUsuarioPorEmail(email: string): Promise<Usuario | null> {
     const { data, error } = await supabase
         .from(TABELA_USUARIO)
@@ -24,10 +22,11 @@ export async function buscarUsuarioPorEmail(email: string): Promise<Usuario | nu
 
 export async function validarRespostaSeguranca(
     respostaEnviada: string,
-    hashSalvo: string
+    valorSalvo: string
 ): Promise<boolean> {
     const respostaNormalizada = respostaEnviada.trim().toLowerCase();
-    return bcrypt.compare(respostaNormalizada, hashSalvo);
+    const valorSalvoNormalizado = valorSalvo.trim().toLowerCase();
+    return respostaNormalizada === valorSalvoNormalizado;
 }
 
 export async function atualizarSenhaUsuario(idUsuario: number, novaSenha: string): Promise<void> {
