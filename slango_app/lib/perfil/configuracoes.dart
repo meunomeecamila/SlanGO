@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../service/usuarioService.dart';
+import '../login/login.dart';
 import 'cores.dart';
 import 'texto.dart';
 import 'background.dart';
@@ -12,10 +14,31 @@ class ConfiguracoesScreen extends StatefulWidget {
 }
 
 class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
-  // TODO: substituir pelos valores reais vindos do usuário logado.
-  final TextEditingController _nomeController = TextEditingController(text: "Mariana");
-  final TextEditingController _idadeController = TextEditingController(text: "21");
-  final TextEditingController _tipoContaController = TextEditingController(text: "Gratuita");
+  final TextEditingController _nomeController = TextEditingController();
+  final TextEditingController _idadeController = TextEditingController();
+  final TextEditingController _tipoContaController = TextEditingController();
+  bool _carregando = true;
+  String? _erro;
+
+  @override
+  void initState() {
+    super.initState();
+    _carregarUsuario();
+  }
+
+  Future<void> _carregarUsuario() async {
+    try {
+      final usuario = await UsuarioService.buscarUsuarioLogado();
+      if (!mounted) return;
+      _nomeController.text = usuario.nome;
+      _idadeController.text = usuario.idade?.toString() ?? '';
+      _tipoContaController.text = usuario.responsavel ? 'Responsável' : 'Jovem';
+    } catch (error) {
+      _erro = error.toString().replaceFirst('Exception: ', '');
+    } finally {
+      if (mounted) setState(() => _carregando = false);
+    }
+  }
 
   @override
   void dispose() {
@@ -37,38 +60,58 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               children: [
                 _buildHeader(context),
                 const SizedBox(height: 24),
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _campoEditavel(label: "Nome", controller: _nomeController),
-                        const SizedBox(height: 16),
-                        _campoEditavel(
-                          label: "Idade",
-                          controller: _idadeController,
-                          teclado: TextInputType.number,
-                        ),
-                        const SizedBox(height: 16),
-                        _campoEditavel(label: "Tipo de conta", controller: _tipoContaController, editavel: false),
-                        const SizedBox(height: 32),
-                        _botaoAcao(
-                          texto: "Sair da conta",
-                          cor: AppColors.textSecondary,
-                          onTap: () {
-                            // TODO: implementar logout
-                          },
-                        ),
-                        const SizedBox(height: 12),
-                        _botaoAcao(
-                          texto: "Excluir conta",
-                          cor: AppColors.danger,
-                          onTap: () => _confirmarExclusao(context),
-                        ),
-                      ],
+                if (_carregando)
+                  const Expanded(
+                    child: Center(child: CircularProgressIndicator()),
+                  )
+                else if (_erro != null)
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        _erro!,
+                        style: AppText.subtitulo(1),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  )
+                else
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _campoEditavel(
+                            label: "Nome",
+                            controller: _nomeController,
+                          ),
+                          const SizedBox(height: 16),
+                          _campoEditavel(
+                            label: "Idade",
+                            controller: _idadeController,
+                            teclado: TextInputType.number,
+                          ),
+                          const SizedBox(height: 16),
+                          _campoEditavel(
+                            label: "Tipo de conta",
+                            controller: _tipoContaController,
+                            editavel: false,
+                          ),
+                          const SizedBox(height: 32),
+                          _botaoAcao(
+                            texto: "Sair da conta",
+                            cor: AppColors.textSecondary,
+                            onTap: _sairDaConta,
+                          ),
+                          const SizedBox(height: 12),
+                          _botaoAcao(
+                            texto: "Excluir conta",
+                            cor: AppColors.danger,
+                            onTap: () => _confirmarExclusao(context),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
               ],
             ),
           ),
@@ -82,7 +125,11 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       children: [
         InkWell(
           onTap: () => Navigator.of(context).pop(),
-          child: const Icon(Icons.arrow_back, color: AppColors.textPrimary, size: 22),
+          child: const Icon(
+            Icons.arrow_back,
+            color: AppColors.textPrimary,
+            size: 22,
+          ),
         ),
         const SizedBox(width: 12),
         Text("Configurações", style: AppText.titulo(0.85)),
@@ -123,8 +170,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               ],
             ),
           ),
-          if (editavel)
-            const Icon(Icons.edit, color: AppColors.cyan, size: 18),
+          if (editavel) const Icon(Icons.edit, color: AppColors.cyan, size: 18),
         ],
       ),
     );
@@ -146,12 +192,27 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
             borderRadius: BorderRadius.circular(28),
           ),
         ),
-        child: Text(
-          texto,
-          style: AppText.botao(0.95).copyWith(color: cor),
-        ),
+        child: Text(texto, style: AppText.botao(0.95).copyWith(color: cor)),
       ),
     );
+  }
+
+  void _sairDaConta() async {
+    try {
+      await UsuarioService.logout();
+      if (!mounted) return;
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (_) => const LoginScreen()),
+        (_) => false,
+      );
+    } catch (error) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error.toString().replaceFirst('Exception: ', '')),
+        ),
+      );
+    }
   }
 
   void _confirmarExclusao(BuildContext context) {
@@ -168,17 +229,47 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: Text("Cancelar", style: AppText.botao(0.85).copyWith(color: AppColors.textSecondary)),
+            child: Text(
+              "Cancelar",
+              style: AppText.botao(
+                0.85,
+              ).copyWith(color: AppColors.textSecondary),
+            ),
           ),
           TextButton(
-            onPressed: () {
-              // TODO: implementar exclusão de conta
+            onPressed: () async {
               Navigator.of(context).pop();
+              await _deletarConta();
             },
-            child: Text("Excluir", style: AppText.botao(0.85).copyWith(color: AppColors.danger)),
+            child: Text(
+              "Excluir",
+              style: AppText.botao(0.85).copyWith(color: AppColors.danger),
+            ),
           ),
         ],
       ),
     );
+  }
+
+  Future<void> _deletarConta() async {
+    setState(() => _carregando = true);
+    try {
+      await UsuarioService.deletar();
+      if (!mounted) return;
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (_) => const LoginScreen()),
+        (_) => false,
+      );
+    } catch (error) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error.toString().replaceFirst('Exception: ', '')),
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _carregando = false);
+    }
   }
 }

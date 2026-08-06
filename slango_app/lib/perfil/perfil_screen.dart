@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 
+import '../service/MundoService.dart';
+import '../service/usuarioService.dart';
+import '../user/User.dart';
 import 'configuracoes.dart';
 import 'progresso.dart';
 import 'models.dart';
@@ -12,7 +15,7 @@ import 'background.dart';
 enum _AbaPerfil { itens, certificados }
 
 class PerfilScreen extends StatefulWidget {
-  final String nome;
+  final String? nome;
   final String avatarAsset;
   final int totalMundos;
   final int totalGirias;
@@ -22,11 +25,11 @@ class PerfilScreen extends StatefulWidget {
 
   const PerfilScreen({
     super.key,
-    required this.nome,
-    required this.avatarAsset,
-    required this.totalMundos,
-    required this.totalGirias,
-    required this.totalCertificados,
+    this.nome,
+    this.avatarAsset = '',
+    this.totalMundos = 0,
+    this.totalGirias = 0,
+    this.totalCertificados = 0,
     this.itens = const [],
     this.certificados = const [],
   });
@@ -37,35 +40,110 @@ class PerfilScreen extends StatefulWidget {
 
 class _PerfilScreenState extends State<PerfilScreen> {
   _AbaPerfil _abaAtual = _AbaPerfil.itens;
+  Usuario? _usuario;
+  List<ProgressoMundo> _mundosProgresso = [];
+  late Future<void> _carregarPerfilFut;
+  String? _erroPerfil;
 
-  // TODO: substituir por a lista real de mundos do app (nomes e total de gírias).
-  // Por enquanto todos os mundos têm 30 gírias fixas, e girasAprendidas = 0
-  // porque isso ainda vai ser controlado pelo backend.
-  List<ProgressoMundo> get _mundosProgresso => const [
-        ProgressoMundo(id: "jogos", nome: "Mundo Jogos", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "kpop", nome: "Mundo K-pop", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "pop", nome: "Mundo Pop", girasAprendidas: 0, totalGirias: 30),
-      ];
+  @override
+  void initState() {
+    super.initState();
+    _carregarPerfilFut = _carregarPerfil();
+  }
+
+  Future<void> _carregarPerfil() async {
+    try {
+      final usuario = await UsuarioService.buscarUsuarioLogado();
+      final mundosJson = await MundoService.obterProgressoMundos();
+
+      final mundos = mundosJson.map<ProgressoMundo>((item) {
+        final id = item['id']?.toString() ?? '';
+        final quantidadeAprendida = item['quantidadeAprendida'] as int? ?? 0;
+        final totalGirias = item['totalGirias'] as int? ?? 30;
+        return ProgressoMundo(
+          id: id,
+          nome: _nomeDoMundo(id),
+          girasAprendidas: quantidadeAprendida,
+          totalGirias: totalGirias,
+        );
+      }).toList();
+
+      if (mounted) {
+        setState(() {
+          _usuario = usuario;
+          _mundosProgresso = mundos;
+          _erroPerfil = null;
+        });
+      }
+    } catch (error) {
+      if (mounted) {
+        setState(() {
+          _erroPerfil = error.toString().replaceFirst('Exception: ', '');
+        });
+      }
+    }
+  }
+
+  String _nomeDoMundo(String id) {
+    const nomes = {
+      'jogos': 'Mundo Jogos',
+      'kpop': 'Mundo K-pop',
+      'pop': 'Mundo Pop',
+      'maquiagem': 'Mundo Maquiagem',
+      'antigo': 'Mundo Antigo',
+      'cotidiano': 'Mundo Cotidiano',
+      'esportes': 'Mundo Esportes',
+      'geek': 'Mundo Geek',
+      'redessociais': 'Mundo Redes Sociais',
+      'relacionamentos': 'Mundo Relacionamentos',
+    };
+    return nomes[id] ?? id;
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: BackgroundEspaco(
         child: SafeArea(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _buildHeader(context),
-                const SizedBox(height: 20),
-                _buildCardAvatar(),
-                const SizedBox(height: 20),
-                _buildAbas(),
-                const SizedBox(height: 16),
-                _buildConteudoAba(),
-              ],
-            ),
+          child: FutureBuilder<void>(
+            future: _carregarPerfilFut,
+            builder: (context, snapshot) {
+              if (snapshot.connectionState != ConnectionState.done) {
+                return const Center(child: CircularProgressIndicator());
+              }
+
+              if (_erroPerfil != null) {
+                return Center(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Text(
+                      _erroPerfil!,
+                      textAlign: TextAlign.center,
+                      style: AppText.subtitulo(1),
+                    ),
+                  ),
+                );
+              }
+
+              return SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 16,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _buildHeader(context),
+                    const SizedBox(height: 20),
+                    _buildCardAvatar(),
+                    const SizedBox(height: 20),
+                    _buildAbas(),
+                    const SizedBox(height: 16),
+                    _buildConteudoAba(),
+                  ],
+                ),
+              );
+            },
           ),
         ),
       ),
@@ -81,7 +159,11 @@ class _PerfilScreenState extends State<PerfilScreen> {
           onTap: () => Navigator.of(context).pop(),
           child: Row(
             children: [
-              const Icon(Icons.arrow_back, color: AppColors.textPrimary, size: 20),
+              const Icon(
+                Icons.arrow_back,
+                color: AppColors.textPrimary,
+                size: 20,
+              ),
               const SizedBox(width: 6),
               Text("Mapa", style: AppText.subtitulo(1.1)),
             ],
@@ -129,6 +211,20 @@ class _PerfilScreenState extends State<PerfilScreen> {
 
   // Card com avatar, nome e estatísticas (Mundos / Gírias / Certificados)
   Widget _buildCardAvatar() {
+    final nome = _usuario?.nome ?? widget.nome ?? 'Usuário';
+    final totalMundos = _mundosProgresso.isNotEmpty
+        ? _mundosProgresso.length
+        : widget.totalMundos;
+    final totalGirias = _mundosProgresso.isNotEmpty
+        ? _mundosProgresso.fold<int>(
+            0,
+            (sum, mundo) => sum + mundo.girasAprendidas,
+          )
+        : widget.totalGirias;
+    final totalCertificados = _mundosProgresso
+        .where((mundo) => mundo.progresso >= 1)
+        .length;
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
@@ -156,14 +252,27 @@ class _PerfilScreenState extends State<PerfilScreen> {
                   ],
                 ),
                 child: ClipOval(
-                  child: Image.asset(
-                    widget.avatarAsset,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(
-                      color: AppColors.background,
-                      child: const Icon(Icons.person, color: AppColors.textSecondary, size: 50),
-                    ),
-                  ),
+                  child: widget.avatarAsset.isNotEmpty
+                      ? Image.asset(
+                          widget.avatarAsset,
+                          fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => Container(
+                            color: AppColors.background,
+                            child: const Icon(
+                              Icons.person,
+                              color: AppColors.textSecondary,
+                              size: 50,
+                            ),
+                          ),
+                        )
+                      : Container(
+                          color: AppColors.background,
+                          child: const Icon(
+                            Icons.person,
+                            color: AppColors.textSecondary,
+                            size: 50,
+                          ),
+                        ),
                 ),
               ),
               Positioned(
@@ -175,20 +284,24 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     color: AppColors.cyan,
                     shape: BoxShape.circle,
                   ),
-                  child: const Icon(Icons.edit, size: 16, color: AppColors.background),
+                  child: const Icon(
+                    Icons.edit,
+                    size: 16,
+                    color: AppColors.background,
+                  ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 14),
-          Text(widget.nome, style: AppText.titulo(1)),
+          Text(nome, style: AppText.titulo(1)),
           const SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _stat(widget.totalMundos.toString(), "Mundos"),
-              _stat(widget.totalGirias.toString(), "Gírias"),
-              _stat(widget.totalCertificados.toString(), "Certificados"),
+              _stat(totalMundos.toString(), "Mundos"),
+              _stat(totalGirias.toString(), "Gírias"),
+              _stat(totalCertificados.toString(), "Certificados"),
             ],
           ),
         ],
@@ -242,7 +355,9 @@ class _PerfilScreenState extends State<PerfilScreen> {
             overflow: TextOverflow.ellipsis,
             maxLines: 1,
             style: AppText.subtitulo(0.95).copyWith(
-              color: selecionada ? AppColors.textPrimary : AppColors.textSecondary,
+              color: selecionada
+                  ? AppColors.textPrimary
+                  : AppColors.textSecondary,
               fontWeight: selecionada ? FontWeight.w700 : FontWeight.w500,
             ),
           ),
@@ -292,8 +407,11 @@ class _PerfilScreenState extends State<PerfilScreen> {
                 item.iconAsset,
                 width: 32,
                 height: 32,
-                errorBuilder: (_, __, ___) =>
-                    const Icon(Icons.star, color: AppColors.textSecondary, size: 28),
+                errorBuilder: (_, __, ___) => const Icon(
+                  Icons.star,
+                  color: AppColors.textSecondary,
+                  size: 28,
+                ),
               ),
               if (item.equipado) ...[
                 const SizedBox(height: 8),
@@ -334,8 +452,11 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     c.iconAsset,
                     width: 36,
                     height: 36,
-                    errorBuilder: (_, __, ___) =>
-                        const Icon(Icons.emoji_events, color: AppColors.cyan, size: 32),
+                    errorBuilder: (_, __, ___) => const Icon(
+                      Icons.emoji_events,
+                      color: AppColors.cyan,
+                      size: 32,
+                    ),
                   ),
                   const SizedBox(width: 12),
                   Expanded(

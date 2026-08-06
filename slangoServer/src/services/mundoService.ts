@@ -274,20 +274,22 @@ export function listarMundos() {
  */
 export async function listarMundosComProgresso(
     idUsuario: number
-): Promise<Array<{ id: string; progresso: number; quantidadeAprendida: number }>> {
+): Promise<Array<{ id: string; progresso: number; quantidadeAprendida: number; totalGirias: number }>> {
     const nomesDosMundos = Object.keys(mundos);
+    const contagemMundos = contarGiriasPorMundos();
 
     const resultados = await Promise.all(
         nomesDosMundos.map(async (nome) => {
             const idMundo = await buscarIdMundoPorNome(nome);
+            const totalGirias = contagemMundos[nome] ?? 0;
 
             if (idMundo === null) {
                 // Mundo existe no código mas ainda não foi cadastrado na tabela `Mundo`
-                return { id: nome, progresso: 0, quantidadeAprendida: 0 };
+                return { id: nome, progresso: 0, quantidadeAprendida: 0, totalGirias };
             }
 
             const { progresso, quantidadeAprendida } = await buscarProgressoDoUsuario(idMundo, idUsuario);
-            return { id: nome, progresso, quantidadeAprendida };
+            return { id: nome, progresso, quantidadeAprendida, totalGirias };
         })
     );
 
