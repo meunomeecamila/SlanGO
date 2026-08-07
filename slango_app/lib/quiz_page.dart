@@ -11,6 +11,7 @@ import 'shared/widgets/fundo_espacial.dart';
 // ─────────────────────────────────────────────
 class QuizPage extends StatefulWidget {
   final String nomeMundo;
+
   /// Perguntas já carregadas pela LicaoPage. Quando fornecidas, o QuizPage
   /// usa esses dados diretamente sem fazer uma nova chamada ao endpoint,
   /// garantindo que lição e quiz usem as mesmas gírias sorteadas.
@@ -195,16 +196,20 @@ class _QuizRunnerState extends State<_QuizRunner>
         .toSet()
         .toList();
 
-    // 2. Envia para o backend
-    MundoService.validarResultado(
-      nomeDoMundo: widget.nomeMundo,
-      pontuacaoFinal: _acertos,
-      girias: idsUnicos, // Agora envia exatamente ["1", "2", "3"]
-    ).then((resultado) {
-
-    }).catchError((erro) {
-
-    });
+    // 2. Envia para o backend e aguarda confirmação (não altera UI)
+    try {
+      await MundoService.validarResultado(
+        nomeDoMundo: widget.nomeMundo,
+        pontuacaoFinal: _acertos,
+        girias: idsUnicos, // Agora envia exatamente ["1", "2", "3"]
+      );
+    } catch (e) {
+      // Se falhar, apenas logamos o erro e seguimos para a tela de resultado
+      // para não bloquear a experiência do usuário.
+      // Você pode enviar esse erro para Sentry/log remoto se desejar.
+      // ignore: avoid_print
+      print('Erro ao salvar resultado: $e');
+    }
 
     // 3. Navega para a tela final
     Navigator.of(context).pushReplacement(
@@ -862,8 +867,10 @@ class _ResultadoScreen extends StatelessWidget {
                   top: 4 * heightScale,
                   right: 6 * scale,
                   child: GestureDetector(
-                    onTap: () =>
-                        Navigator.of(context).popUntil((r) => r.isFirst),
+                    onTap: () => Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (_) => const MapaScreen()),
+                    ),
                     child: Container(
                       padding: EdgeInsets.all(8 * scale),
                       decoration: BoxDecoration(
