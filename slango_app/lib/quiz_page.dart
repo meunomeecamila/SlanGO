@@ -34,7 +34,6 @@ class _QuizPageState extends State<QuizPage> {
   void initState() {
     super.initState();
     if (widget.perguntasPrecarregadas != null) {
-      // Usa os dados já carregados — sem nova requisição ao servidor.
       _futurePerguntas = Future.value(widget.perguntasPrecarregadas);
     } else {
       _futurePerguntas = MundoService.buscarRodada(
@@ -48,7 +47,6 @@ class _QuizPageState extends State<QuizPage> {
     return FutureBuilder<List<Fase>>(
       future: _futurePerguntas,
       builder: (context, snapshot) {
-        // ── Carregando ──
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Scaffold(
             backgroundColor: Color(0xFF1F1035),
@@ -58,7 +56,6 @@ class _QuizPageState extends State<QuizPage> {
           );
         }
 
-        // ── Erro ──
         if (snapshot.hasError) {
           return Scaffold(
             backgroundColor: const Color(0xFF1F1035),
@@ -118,7 +115,6 @@ class _QuizRunnerState extends State<_QuizRunner>
   String? _selecionada;
   _EstadoResposta _estado = _EstadoResposta.aguardando;
 
-  // Animação do feedback
   late final AnimationController _feedbackController;
   late final Animation<Offset> _feedbackSlide;
 
@@ -151,7 +147,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     super.dispose();
   }
 
-  // ── Responde uma alternativa ──
   void _responder(String textoSelecionado) {
     if (_estado == _EstadoResposta.respondido) return;
 
@@ -173,7 +168,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     _feedbackController.forward(from: 0);
   }
 
-  // ── Avança para a próxima pergunta ──
   void _avancar() {
     _feedbackController.reverse().then((_) {
       if (_indice < widget.perguntas.length - 1) {
@@ -188,30 +182,23 @@ class _QuizRunnerState extends State<_QuizRunner>
     });
   }
 
-  // ── Tela de resultado final e salvamento ──
   void _mostrarResultado() async {
-    // 1. Extrai APENAS os 3 IDs únicos e converte para String
     final idsUnicos = widget.perguntas
         .map((fase) => fase.giriaId.toString())
         .toSet()
         .toList();
 
-    // 2. Envia para o backend e aguarda confirmação (não altera UI)
     try {
       await MundoService.validarResultado(
         nomeDoMundo: widget.nomeMundo,
         pontuacaoFinal: _acertos,
-        girias: idsUnicos, // Agora envia exatamente ["1", "2", "3"]
+        girias: idsUnicos,
       );
     } catch (e) {
-      // Se falhar, apenas logamos o erro e seguimos para a tela de resultado
-      // para não bloquear a experiência do usuário.
-      // Você pode enviar esse erro para Sentry/log remoto se desejar.
       // ignore: avoid_print
       print('Erro ao salvar resultado: $e');
     }
 
-    // 3. Navega para a tela final
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (_, __, ___) => _ResultadoScreen(
@@ -223,6 +210,14 @@ class _QuizRunnerState extends State<_QuizRunner>
             FadeTransition(opacity: animation, child: child),
         transitionDuration: const Duration(milliseconds: 350),
       ),
+    );
+  }
+
+  // Volta para o mapa (usado pelo cabeçalho e pelo botão físico de voltar)
+  void _voltarParaMapa() {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const MapaScreen()),
     );
   }
 
@@ -241,169 +236,205 @@ class _QuizRunnerState extends State<_QuizRunner>
         .texto;
     final acertou = _selecionada == respostaCorreta;
 
-    return Scaffold(
-      backgroundColor: bgBottom,
-      body: Stack(
-        children: [
-          // ── Fundo gradiente ──
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [bgTop, bgBottom],
-              ),
-            ),
-          ),
-
-          // ── Fundo de constelação animada ──
-          const Positioned.fill(child: FundoEspacial(interativo: false)),
-
-          // ── Conteúdo principal ──
-          SafeArea(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20 * scale),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  SizedBox(height: 12 * heightScale),
-
-                  // Barra superior (fechar + progresso + pontuação)
-                  _buildTopBar(scale, progresso),
-                  SizedBox(height: 20 * heightScale),
-
-                  // Badge do número da pergunta
-                  Center(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 14 * scale,
-                        vertical: 6 * scale,
-                      ),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: roxo.withOpacity(0.6)),
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      child: Text(
-                        'Pergunta ${_indice + 1} de $total',
-                        style: TextStyle(
-                          color: roxoClaro,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12 * scale,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 18 * heightScale),
-
-                  // Gíria em destaque
-                  Text(
-                    fase.giria.toUpperCase(),
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.alfaSlabOne(
-                      color: Colors.white,
-                      fontSize: 42 * scale,
-                      letterSpacing: 1,
-                      shadows: [
-                        Shadow(
-                          color: roxo.withOpacity(0.6),
-                          blurRadius: 6 * scale,
-                        ),
-                        Shadow(
-                          color: roxo.withOpacity(0.35),
-                          blurRadius: 18 * scale,
-                        ),
-                        Shadow(
-                          color: roxoClaro.withOpacity(0.2),
-                          blurRadius: 32 * scale,
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 14 * heightScale),
-
-                  // Card com o texto da pergunta
-                  Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.all(16 * scale),
-                    decoration: BoxDecoration(
-                      color: cardColor,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Text(
-                      fase.pergunta,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15 * scale,
-                        fontWeight: FontWeight.w600,
-                        height: 1.4,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20 * heightScale),
-
-                  // Lista de alternativas
-                  Expanded(
-                    child: ListView.separated(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      itemCount: fase.alternativas.length,
-                      separatorBuilder: (_, __) => SizedBox(height: 10 * scale),
-                      itemBuilder: (_, i) {
-                        final alt = fase.alternativas[i];
-                        return _buildAlternativa(
-                          alt,
-                          scale: scale,
-                          heightScale: heightScale,
-                          respostaCorreta: respostaCorreta,
-                        );
-                      },
-                    ),
-                  ),
-
-                  // Espaço reservado para o painel de feedback
-                  SizedBox(
-                    height: _estado == _EstadoResposta.respondido
-                        ? 100 * scale
-                        : 16 * scale,
-                  ),
-                ],
-              ),
-            ),
-          ),
-
-          // ── Painel de feedback deslizante ──
-          if (_estado == _EstadoResposta.respondido)
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: SlideTransition(
-                position: _feedbackSlide,
-                child: _buildFeedbackPanel(
-                  acertou: acertou,
-                  respostaCorreta: respostaCorreta,
-                  scale: scale,
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _voltarParaMapa();
+      },
+      child: Scaffold(
+        backgroundColor: bgBottom,
+        body: Stack(
+          children: [
+            Container(
+              width: double.infinity,
+              height: double.infinity,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [bgTop, bgBottom],
                 ),
               ),
             ),
-        ],
+            const Positioned.fill(child: FundoEspacial(interativo: false)),
+            SafeArea(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20 * scale),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    SizedBox(height: 12 * heightScale),
+
+                    _buildTopBar(scale, progresso),
+                    SizedBox(height: 22 * heightScale),
+
+                    // Badge do número da pergunta
+                    Center(
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 14 * scale,
+                          vertical: 6 * scale,
+                        ),
+                        decoration: BoxDecoration(
+                          color: roxo.withOpacity(0.12),
+                          border: Border.all(color: roxo.withOpacity(0.5)),
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Text(
+                          'Pergunta ${_indice + 1} de $total',
+                          style: TextStyle(
+                            color: roxoClaro,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12 * scale,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20 * heightScale),
+
+                    // Gíria em destaque
+                    Text(
+                      fase.giria.toUpperCase(),
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.alfaSlabOne(
+                        color: Colors.white,
+                        fontSize: 40 * scale,
+                        letterSpacing: 1,
+                        shadows: [
+                          Shadow(
+                            color: roxo.withOpacity(0.6),
+                            blurRadius: 6 * scale,
+                          ),
+                          Shadow(
+                            color: roxo.withOpacity(0.35),
+                            blurRadius: 18 * scale,
+                          ),
+                          Shadow(
+                            color: roxoClaro.withOpacity(0.2),
+                            blurRadius: 32 * scale,
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 16 * heightScale),
+
+                    // Card com o texto da pergunta
+                    Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.all(18 * scale),
+                      decoration: BoxDecoration(
+                        color: cardColor,
+                        borderRadius: BorderRadius.circular(18),
+                        border: Border.all(color: Colors.white.withOpacity(0.06)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.25),
+                            blurRadius: 14,
+                            offset: const Offset(0, 6),
+                          ),
+                        ],
+                      ),
+                      child: Text(
+                        fase.pergunta,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.5 * scale,
+                          fontWeight: FontWeight.w600,
+                          height: 1.4,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20 * heightScale),
+
+                    // Lista de alternativas
+                    Expanded(
+                      child: ListView.separated(
+                        physics: const NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: fase.alternativas.length,
+                        separatorBuilder: (_, __) => SizedBox(height: 12 * scale),
+                        itemBuilder: (_, i) {
+                          final alt = fase.alternativas[i];
+                          return _buildAlternativa(
+                            alt,
+                            letra: String.fromCharCode(65 + i), // A, B, C...
+                            scale: scale,
+                            heightScale: heightScale,
+                            respostaCorreta: respostaCorreta,
+                          );
+                        },
+                      ),
+                    ),
+
+                    SizedBox(
+                      height: _estado == _EstadoResposta.respondido
+                          ? 100 * scale
+                          : 16 * scale,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            if (_estado == _EstadoResposta.respondido)
+              Positioned(
+                bottom: 0,
+                left: 0,
+                right: 0,
+                child: SlideTransition(
+                  position: _feedbackSlide,
+                  child: _buildFeedbackPanel(
+                    acertou: acertou,
+                    respostaCorreta: respostaCorreta,
+                    scale: scale,
+                  ),
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
 
-  // ─── Barra superior ───
+  // ─── Barra superior: seta de voltar + "Mapa" + progresso + pontuação ───
   Widget _buildTopBar(double scale, double progresso) {
     return Row(
       children: [
         GestureDetector(
-          onTap: () => Navigator.pop(context),
-          child: const Icon(Icons.close, color: Colors.white70, size: 22),
+          onTap: _voltarParaMapa,
+          child: Container(
+            padding: EdgeInsets.symmetric(
+              horizontal: 10 * scale,
+              vertical: 6 * scale,
+            ),
+            decoration: BoxDecoration(
+              color: cardColor,
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(
+                  Icons.arrow_back_ios_new_rounded,
+                  color: roxoClaro,
+                  size: 15,
+                ),
+                SizedBox(width: 5 * scale),
+                Text(
+                  'Mapa',
+                  style: TextStyle(
+                    color: roxoClaro,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12.5 * scale,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
-        const SizedBox(width: 14),
+        SizedBox(width: 14 * scale),
         Expanded(
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
@@ -415,17 +446,17 @@ class _QuizRunnerState extends State<_QuizRunner>
             ),
           ),
         ),
-        const SizedBox(width: 14),
+        SizedBox(width: 14 * scale),
         Row(
           children: [
-            const Icon(Icons.check, color: verde, size: 18),
+            const Icon(Icons.check_circle_rounded, color: verde, size: 17),
             const SizedBox(width: 4),
             Text(
               '$_acertos',
               style: const TextStyle(color: verde, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(width: 14),
-            const Icon(Icons.close, color: vermelho, size: 18),
+            const SizedBox(width: 12),
+            const Icon(Icons.cancel_rounded, color: vermelho, size: 17),
             const SizedBox(width: 4),
             Text(
               '$_erros',
@@ -440,9 +471,10 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // ─── Botão de alternativa ───
+  // ─── Botão de alternativa (com letra A/B/C/D à esquerda) ───
   Widget _buildAlternativa(
     Alternativa alt, {
+    required String letra,
     required double scale,
     required double heightScale,
     required String respostaCorreta,
@@ -450,24 +482,28 @@ class _QuizRunnerState extends State<_QuizRunner>
     Color borderColor = Colors.white.withOpacity(0.08);
     Color bgColor = cardDark;
     Color textColor = Colors.white;
+    Color letraCor = roxoClaro;
+    Color letraBg = roxo.withOpacity(0.15);
     Widget? trailingIcon;
 
     if (_estado == _EstadoResposta.respondido) {
       if (alt.correta) {
-        // Sempre destaca a correta em verde
         borderColor = verde;
-        bgColor = verde.withOpacity(0.15);
+        bgColor = verde.withOpacity(0.13);
         textColor = verde;
+        letraCor = verde;
+        letraBg = verde.withOpacity(0.18);
         trailingIcon = const Icon(
           Icons.check_circle_rounded,
           color: verde,
           size: 20,
         );
       } else if (alt.texto == _selecionada) {
-        // A errada que foi selecionada fica vermelha
         borderColor = vermelho;
-        bgColor = vermelho.withOpacity(0.12);
+        bgColor = vermelho.withOpacity(0.11);
         textColor = vermelho;
+        letraCor = vermelho;
+        letraBg = vermelho.withOpacity(0.18);
         trailingIcon = const Icon(
           Icons.cancel_rounded,
           color: vermelho,
@@ -485,16 +521,35 @@ class _QuizRunnerState extends State<_QuizRunner>
         curve: Curves.easeOut,
         width: double.infinity,
         padding: EdgeInsets.symmetric(
-          horizontal: 16 * scale,
-          vertical: 14 * scale,
+          horizontal: 14 * scale,
+          vertical: 12 * scale,
         ),
         decoration: BoxDecoration(
           color: bgColor,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(16),
           border: Border.all(color: borderColor, width: 1.5),
         ),
         child: Row(
           children: [
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 220),
+              width: 28 * scale,
+              height: 28 * scale,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: letraBg,
+                shape: BoxShape.circle,
+              ),
+              child: Text(
+                letra,
+                style: TextStyle(
+                  color: letraCor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 13 * scale,
+                ),
+              ),
+            ),
+            SizedBox(width: 12 * scale),
             Expanded(
               child: Text(
                 alt.texto,
@@ -545,6 +600,13 @@ class _QuizRunnerState extends State<_QuizRunner>
         border: Border(
           top: BorderSide(color: cor.withOpacity(0.5), width: 1.5),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.3),
+            blurRadius: 20,
+            offset: const Offset(0, -6),
+          ),
+        ],
       ),
       child: Row(
         children: [
@@ -608,7 +670,7 @@ class _QuizRunnerState extends State<_QuizRunner>
 }
 
 // ─────────────────────────────────────────────
-// _ResultadoScreen — tela final estilo "certificado"
+// _ResultadoScreen — tela final com feedback proporcional ao desempenho
 // ─────────────────────────────────────────────
 class _ResultadoScreen extends StatelessWidget {
   final int acertos;
@@ -627,36 +689,46 @@ class _ResultadoScreen extends StatelessWidget {
   static const Color roxo = Color(0xFF7C5CFF);
   static const Color roxoClaro = Color(0xFFB9A6FF);
   static const Color verde = Color(0xFF4ADE80);
+  static const Color verdeAgua = Color(0xFF5DD39E);
   static const Color vermelho = Color(0xFFF87171);
-  static const Color amarelo = Color(0xFFFBBF24);
 
   int get _erros => total - acertos;
 
   double get _pct => total == 0 ? 0.0 : acertos / total;
 
   Color get _corResultado {
-    if (_pct >= 0.8) return verde;
-    if (_pct >= 0.5) return amarelo;
+    if (_pct >= 0.8) return verdeAgua;
+    if (_pct >= 0.5) return roxo;
     return vermelho;
+  }
+
+  // Emoji, título e mensagem variam de acordo com o aproveitamento —
+  // "Parabéns, Astronauta!" só aparece quando o desempenho foi realmente bom.
+  String get _emoji {
+    if (_pct >= 0.8) return '🎉';
+    if (_pct >= 0.5) return '🚀';
+    return '🌱';
+  }
+
+  String get _titulo {
+    if (_pct == 1.0) return 'Perfeito, Astronauta!';
+    if (_pct >= 0.8) return 'Parabéns, Astronauta!';
+    if (_pct >= 0.5) return 'Bom começo Astronauta! Vamos melhorar';
+    return 'Vamos melhorar juntos, Astronauta!';
   }
 
   String get _mensagem {
     if (_pct == 1.0) return 'Você mandou muito bem nessa jornada!';
     if (_pct >= 0.8) return 'Você foi muito bem nessa jornada!';
-    if (_pct >= 0.5) return 'Bom esforço! Continue evoluindo.';
-    return 'Continue praticando, você vai longe!';
+    if (_pct >= 0.5) return 'Bom esforço! Revise as gírias que errou e tente de novo.';
+    return 'Toda jornada começa com um passo. Que tal revisar a lição e tentar outra vez?';
   }
 
   String get _nomeMundoFormatado => nomeMundo.isEmpty
       ? ''
       : '${nomeMundo[0].toUpperCase()}${nomeMundo.substring(1)}';
 
-  /// 1 a 5 estrelas, proporcional ao aproveitamento.
   int get _estrelas => (1 + (_pct * 4)).clamp(1, 5).round();
-
-  /// Caminho da imagem do mundo — segue o mesmo padrão usado na InicioScreen
-  /// (images/mundo.png, images/kpop.png, images/esportes.png, etc).
-  String get _imagemMundo => 'images/${nomeMundo.toLowerCase()}.png';
 
   @override
   Widget build(BuildContext context) {
@@ -664,236 +736,297 @@ class _ResultadoScreen extends StatelessWidget {
     final double scale = (size.width / 390).clamp(0.9, 1.25);
     final double heightScale = (size.height / 844).clamp(0.85, 1.35);
 
-    return Scaffold(
-      backgroundColor: bgBottom,
-      body: Stack(
-        children: [
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [bgTop, bgBottom],
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => const MapaScreen()),
+          );
+        }
+      },
+      child: Scaffold(
+        backgroundColor: bgBottom,
+        body: Stack(
+          children: [
+            Container(
+              width: double.infinity,
+              height: double.infinity,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [bgTop, bgBottom],
+                ),
               ),
             ),
-          ),
-          const Positioned.fill(child: FundoEspacial(interativo: false)),
-          SafeArea(
-            child: Stack(
-              children: [
-                // ── Conteúdo centralizado verticalmente ──
-                Center(
-                  child: SingleChildScrollView(
-                    physics: const BouncingScrollPhysics(),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 26 * scale,
-                      vertical: 20 * heightScale,
+            const Positioned.fill(child: FundoEspacial(interativo: false)),
+            SafeArea(
+              child: Column(
+                children: [
+                  // ── Cabeçalho: nome do mundo + botão de voltar ao mapa, fixos no topo ──
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      20 * scale,
+                      10 * heightScale,
+                      20 * scale,
+                      0,
                     ),
-                    child: TweenAnimationBuilder<double>(
-                      tween: Tween(begin: 0, end: 1),
-                      duration: const Duration(milliseconds: 550),
-                      curve: Curves.easeOutCubic,
-                      builder: (context, valor, child) {
-                        return Opacity(
-                          opacity: valor,
-                          child: Transform.translate(
-                            offset: Offset(0, (1 - valor) * 24),
-                            child: child,
-                          ),
-                        );
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                    child: SizedBox(
+                      width: double.infinity,
+                      height: 32 * scale,
+                      child: Stack(
+                        alignment: Alignment.center,
                         children: [
-                          // ── Emoji de festa ──
-                          Center(
-                            child: Text(
-                              '🎉',
-                              style: TextStyle(fontSize: 46 * scale),
-                            ),
-                          ),
-                          SizedBox(height: 14 * heightScale),
-
-                          // ── Título ──
-                          Text(
-                            'Parabéns, Astronauta!',
-                            textAlign: TextAlign.center,
-                            style: GoogleFonts.baloo2(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w800,
-                              fontSize: 25 * scale,
-                            ),
-                          ),
-
-                          SizedBox(height: 26 * heightScale),
-
-                          // ── Card "certificado" ──
-                          Container(
-                            width: double.infinity,
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 20 * scale,
-                              vertical: 26 * scale,
-                            ),
-                            decoration: BoxDecoration(
-                              color: cardColor,
-                              borderRadius: BorderRadius.circular(26),
-                              border: Border.all(
-                                color: roxoClaro.withOpacity(0.35),
-                                width: 1.4,
+                          if (_nomeMundoFormatado.isNotEmpty)
+                            Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 14 * scale,
+                                vertical: 6 * scale,
                               ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: roxo.withOpacity(0.18),
-                                  blurRadius: 26,
-                                  spreadRadius: 2,
+                              decoration: BoxDecoration(
+                                color: cardColor,
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(
+                                  color: roxo.withOpacity(0.5),
                                 ),
-                              ],
+                              ),
+                              child: Text(
+                                'Mundo $_nomeMundoFormatado',
+                                style: TextStyle(
+                                  color: roxoClaro,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5 * scale,
+                                  letterSpacing: 0.3,
+                                ),
+                              ),
                             ),
-                            child: Column(
-                              children: [
-                                // Foto do mundo
-                                Transform.translate(
-                                  offset: Offset(0, -10 * scale),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(
-                                      16 * scale,
-                                    ),
-                                    child: Container(
-                                      width: 84 * scale,
-                                      height: 84 * scale,
-                                      color: bgTop,
-                                      child: Image.asset(
-                                        _imagemMundo,
-                                        fit: BoxFit.cover,
-                                        errorBuilder: (_, __, ___) => Icon(
-                                          Icons.public_rounded,
-                                          color: roxoClaro,
-                                          size: 34 * scale,
-                                        ),
-                                      ),
-                                    ),
+                          Positioned(
+                            right: 0,
+                            child: GestureDetector(
+                              onTap: () => Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const MapaScreen(),
+                                ),
+                              ),
+                              child: Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 14 * scale,
+                                  vertical: 6 * scale,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: cardColor,
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(
+                                    color: roxo.withOpacity(0.5),
                                   ),
                                 ),
-
-                                SizedBox(height: 10 * scale),
-
-                                // ── Placar de acertos e erros ──
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    _buildPlacarItem(
-                                      icon: Icons.check_circle_rounded,
-                                      cor: verde,
-                                      valor: acertos,
-                                      label: 'Acertos',
-                                      scale: scale,
+                                    Icon(
+                                      Icons.arrow_forward_ios_rounded,
+                                      color: roxoClaro,
+                                      size: 13 * scale,
                                     ),
-                                    SizedBox(width: 18 * scale),
-                                    Container(
-                                      width: 1,
-                                      height: 44 * scale,
-                                      color: Colors.white12,
-                                    ),
-                                    SizedBox(width: 18 * scale),
-                                    _buildPlacarItem(
-                                      icon: Icons.cancel_rounded,
-                                      cor: vermelho,
-                                      valor: _erros,
-                                      label: 'Erros',
-                                      scale: scale,
+                                    SizedBox(width: 6 * scale),
+                                    Text(
+                                      'Mapa',
+                                      style: TextStyle(
+                                        color: roxoClaro,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12.5 * scale,
+                                        letterSpacing: 0.3,
+                                      ),
                                     ),
                                   ],
                                 ),
-
-                                SizedBox(height: 16 * scale),
-
-                                Text(
-                                  '${(_pct * 100).round()}% de aproveitamento',
-                                  style: TextStyle(
-                                    color: Colors.white54,
-                                    fontSize: 12 * scale,
-                                  ),
-                                ),
-
-                                SizedBox(height: 14 * scale),
-
-                                // ── Estrelas de desempenho ──
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: List.generate(5, (i) {
-                                    final preenchida = i < _estrelas;
-                                    return Padding(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 2 * scale,
-                                      ),
-                                      child: Icon(
-                                        preenchida
-                                            ? Icons.star_rounded
-                                            : Icons.star_border_rounded,
-                                        color: preenchida
-                                            ? amarelo
-                                            : Colors.white24,
-                                        size: 22 * scale,
-                                      ),
-                                    );
-                                  }),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          SizedBox(height: 20 * heightScale),
-
-                          Text(
-                            _mensagem,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontSize: 13.5 * scale,
-                              height: 1.4,
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ),
 
-                // ── Botão pequeno fixo no canto superior direito ──
-                Positioned(
-                  top: 4 * heightScale,
-                  right: 6 * scale,
-                  child: GestureDetector(
-                    onTap: () => Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (_) => const MapaScreen()),
-                    ),
-                    child: Container(
-                      padding: EdgeInsets.all(8 * scale),
-                      decoration: BoxDecoration(
-                        color: cardColor,
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: roxoClaro.withOpacity(0.35),
-                          width: 1.2,
+                  // ── Conteúdo restante da tela ──
+                  Expanded(
+                    child: Stack(
+                      children: [
+                        Center(
+                          child: SingleChildScrollView(
+                            physics: const BouncingScrollPhysics(),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 26 * scale,
+                              vertical: 20 * heightScale,
+                            ),
+                            child: TweenAnimationBuilder<double>(
+                              tween: Tween(begin: 0, end: 1),
+                              duration: const Duration(milliseconds: 550),
+                              curve: Curves.easeOutCubic,
+                              builder: (context, valor, child) {
+                                return Opacity(
+                                  opacity: valor,
+                                  child: Transform.translate(
+                                    offset: Offset(0, (1 - valor) * 24),
+                                    child: child,
+                                  ),
+                                );
+                              },
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                            Center(
+                              child: Text(
+                                _emoji,
+                                style: TextStyle(fontSize: 46 * scale),
+                              ),
+                            ),
+                            SizedBox(height: 14 * heightScale),
+
+                            // ── Título dinâmico, proporcional ao desempenho ──
+                            Text(
+                              _titulo,
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.baloo2(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w800,
+                                fontSize: 24 * scale,
+                              ),
+                            ),
+
+                            SizedBox(height: 26 * heightScale),
+
+                            // ── Card "certificado" ──
+                            Container(
+                              width: double.infinity,
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 20 * scale,
+                                vertical: 26 * scale,
+                              ),
+                              decoration: BoxDecoration(
+                                color: cardColor,
+                                borderRadius: BorderRadius.circular(26),
+                                border: Border.all(
+                                  color: _corResultado.withOpacity(0.35),
+                                  width: 1.4,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: _corResultado.withOpacity(0.18),
+                                    blurRadius: 26,
+                                    spreadRadius: 2,
+                                  ),
+                                ],
+                              ),
+                              child: Column(
+                                children: [
+                                  // ── Placar de acertos e erros ──
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      _buildPlacarItem(
+                                        icon: Icons.check_circle_rounded,
+                                        cor: verde,
+                                        valor: acertos,
+                                        label: 'Acertos',
+                                        scale: scale,
+                                      ),
+                                      SizedBox(width: 18 * scale),
+                                      Container(
+                                        width: 1,
+                                        height: 44 * scale,
+                                        color: Colors.white12,
+                                      ),
+                                      SizedBox(width: 18 * scale),
+                                      _buildPlacarItem(
+                                        icon: Icons.cancel_rounded,
+                                        cor: vermelho,
+                                        valor: _erros,
+                                        label: 'Erros',
+                                        scale: scale,
+                                      ),
+                                    ],
+                                  ),
+
+                                  SizedBox(height: 16 * scale),
+
+                                  // ── Barra de aproveitamento ──
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: LinearProgressIndicator(
+                                      value: _pct,
+                                      minHeight: 8,
+                                      backgroundColor: Colors.white10,
+                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                        _corResultado,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 8 * scale),
+                                  Text(
+                                    '${(_pct * 100).round()}% de aproveitamento',
+                                    style: TextStyle(
+                                      color: Colors.white54,
+                                      fontSize: 12 * scale,
+                                    ),
+                                  ),
+
+                                  SizedBox(height: 14 * scale),
+
+                                  // ── Estrelas de desempenho ──
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: List.generate(5, (i) {
+                                      final preenchida = i < _estrelas;
+                                      return Padding(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 2 * scale,
+                                        ),
+                                        child: Icon(
+                                          preenchida
+                                              ? Icons.star_rounded
+                                              : Icons.star_border_rounded,
+                                          color: preenchida
+                                              ? verdeAgua
+                                              : Colors.white24,
+                                          size: 22 * scale,
+                                        ),
+                                      );
+                                    }),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            SizedBox(height: 20 * heightScale),
+
+                            Text(
+                              _mensagem,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 13.5 * scale,
+                                height: 1.4,
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                      child: Icon(
-                        Icons.close_rounded,
-                        color: roxoClaro,
-                        size: 18 * scale,
                       ),
                     ),
                   ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
     );
   }
 

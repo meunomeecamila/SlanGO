@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../styles/cores.dart';
+import '../../feedback/feedback.dart';
 
 class MapaHeader extends StatelessWidget {
   final VoidCallback? onPerfilTap;
@@ -52,31 +53,33 @@ class MapaHeader extends StatelessWidget {
 
         const SizedBox(width: 12),
 
-        Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 14,
-            vertical: 8,
-          ),
-          decoration: BoxDecoration(
-            color: AppColors.card,
-            borderRadius: BorderRadius.circular(18),
-          ),
-          child: const Row(
-            children: [
-              Icon(
-                Icons.local_fire_department,
-                color: Colors.orange,
-                size: 20,
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const FeedbackPage(),
               ),
-              SizedBox(width: 6),
-              Text(
-                "5",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
+            );
+          },
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 14,
+              vertical: 8,
+            ),
+            decoration: BoxDecoration(
+              color: AppColors.card,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(
+                color: AppColors.primaryLight,
+                width: 1.5,
               ),
-            ],
+            ),
+            child: const Icon(
+              Icons.feedback_outlined,
+              color: AppColors.primaryLight,
+              size: 20,
+            ),
           ),
         ),
 
@@ -84,12 +87,20 @@ class MapaHeader extends StatelessWidget {
 
         GestureDetector(
           onTap: onPerfilTap,
-          child: const CircleAvatar(
-            radius: 22,
-            backgroundColor: AppColors.primary,
-            child: Icon(
+          child: Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.card,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(
+                color: AppColors.primaryLight,
+                width: 1.5,
+              ),
+            ),
+            child: const Icon(
               Icons.person,
-              color: Colors.white,
+              color: AppColors.primaryLight,
+              size: 22,
             ),
           ),
         ),
