@@ -14,20 +14,11 @@ class ConfiguracoesScreen extends StatefulWidget {
 }
 
 class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
-<<<<<<< HEAD
-  // TODO: substituir pelos valores reais vindos do usuário logado.
-  final TextEditingController _nomeController =
-      TextEditingController(text: "Mariana");
-  final TextEditingController _dataNascimentoController =
-      TextEditingController(text: "");
-  final TextEditingController _tipoContaController =
-      TextEditingController(text: "Gratuita");
+  final TextEditingController _nomeController = TextEditingController();
+  final TextEditingController _dataNascimentoController = TextEditingController();
+  final TextEditingController _tipoContaController = TextEditingController();
 
   DateTime? _dataNascimento;
-=======
-  final TextEditingController _nomeController = TextEditingController();
-  final TextEditingController _idadeController = TextEditingController();
-  final TextEditingController _tipoContaController = TextEditingController();
   bool _carregando = true;
   String? _erro;
 
@@ -42,22 +33,15 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       final usuario = await UsuarioService.buscarUsuarioLogado();
       if (!mounted) return;
       _nomeController.text = usuario.nome;
-      _idadeController.text = usuario.idade?.toString() ?? '';
+      // TODO: o backend hoje só manda `idade`, não a data de nascimento
+      // completa. Quando o campo `dataNascimento` existir no back-end e no
+      // model Usuario, popular _dataNascimento/_dataNascimentoController aqui.
       _tipoContaController.text = usuario.responsavel ? 'Responsável' : 'Jovem';
     } catch (error) {
       _erro = error.toString().replaceFirst('Exception: ', '');
     } finally {
       if (mounted) setState(() => _carregando = false);
     }
-  }
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
-
-  @override
-  void dispose() {
-    _nomeController.dispose();
-    _dataNascimentoController.dispose();
-    _tipoContaController.dispose();
-    super.dispose();
   }
 
   String _formatarData(DateTime data) {
@@ -93,8 +77,18 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       setState(() {
         _dataNascimento = dataEscolhida;
         _dataNascimentoController.text = _formatarData(dataEscolhida);
+        // TODO: enviar a nova data de nascimento pro backend (endpoint de
+        // atualização de perfil ainda não existe em UsuarioService).
       });
     }
+  }
+
+  @override
+  void dispose() {
+    _nomeController.dispose();
+    _dataNascimentoController.dispose();
+    _tipoContaController.dispose();
+    super.dispose();
   }
 
   @override
@@ -109,55 +103,6 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               children: [
                 _buildHeader(context),
                 const SizedBox(height: 24),
-<<<<<<< HEAD
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Geral", style: AppText.cardSubtitulo(0.9)),
-                        const SizedBox(height: 12),
-                        _campoEditavel(label: "Nome", controller: _nomeController),
-                        const SizedBox(height: 16),
-                        _campoData(),
-                        const SizedBox(height: 16),
-                        _campoEditavel(
-                          label: "Tipo de conta",
-                          controller: _tipoContaController,
-                          editavel: false,
-                        ),
-
-                        const SizedBox(height: 28),
-                        Text("Segurança", style: AppText.cardSubtitulo(0.9)),
-                        const SizedBox(height: 12),
-                        _linhaAcao(
-                          icone: Icons.lock_outline,
-                          texto: "Alterar senha",
-                          onTap: () => _abrirDialogoSenha(context),
-                        ),
-                        const SizedBox(height: 12),
-                        _linhaAcao(
-                          icone: Icons.email_outlined,
-                          texto: "Alterar e-mail",
-                          onTap: () => _abrirDialogoEmail(context),
-                        ),
-
-                        const SizedBox(height: 32),
-                        _botaoAcao(
-                          texto: "Sair da conta",
-                          cor: AppColors.textSecondary,
-                          onTap: () {
-                            // TODO: implementar logout
-                          },
-                        ),
-                        const SizedBox(height: 12),
-                        _botaoAcao(
-                          texto: "Excluir conta",
-                          cor: AppColors.danger,
-                          onTap: () => _confirmarExclusao(context),
-                        ),
-                      ],
-=======
                 if (_carregando)
                   const Expanded(
                     child: Center(child: CircularProgressIndicator()),
@@ -178,22 +123,36 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          Text("Geral", style: AppText.cardSubtitulo(0.9)),
+                          const SizedBox(height: 12),
                           _campoEditavel(
                             label: "Nome",
                             controller: _nomeController,
                           ),
                           const SizedBox(height: 16),
-                          _campoEditavel(
-                            label: "Idade",
-                            controller: _idadeController,
-                            teclado: TextInputType.number,
-                          ),
+                          _campoData(),
                           const SizedBox(height: 16),
                           _campoEditavel(
                             label: "Tipo de conta",
                             controller: _tipoContaController,
                             editavel: false,
                           ),
+
+                          const SizedBox(height: 28),
+                          Text("Segurança", style: AppText.cardSubtitulo(0.9)),
+                          const SizedBox(height: 12),
+                          _linhaAcao(
+                            icone: Icons.lock_outline,
+                            texto: "Alterar senha",
+                            onTap: () => _abrirDialogoSenha(context),
+                          ),
+                          const SizedBox(height: 12),
+                          _linhaAcao(
+                            icone: Icons.email_outlined,
+                            texto: "Alterar e-mail",
+                            onTap: () => _abrirDialogoEmail(context),
+                          ),
+
                           const SizedBox(height: 32),
                           _botaoAcao(
                             texto: "Sair da conta",
@@ -208,7 +167,6 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                           ),
                         ],
                       ),
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
                     ),
                   ),
               ],
@@ -366,7 +324,6 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
     );
   }
 
-<<<<<<< HEAD
   void _abrirDialogoSenha(BuildContext context) {
     final senhaAtualController = TextEditingController();
     final novaSenhaController = TextEditingController();
@@ -484,7 +441,8 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         ),
       ),
     );
-=======
+  }
+
   void _sairDaConta() async {
     try {
       await UsuarioService.logout();
@@ -501,7 +459,6 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         ),
       );
     }
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
   }
 
   void _confirmarExclusao(BuildContext context) {

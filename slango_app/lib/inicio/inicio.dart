@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../shared/widgets/background_espaco.dart';
-<<<<<<< HEAD
 import '../perfil/perfil_screen.dart';
-=======
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
 import '../shared/widgets/fundo_espacial.dart';
 import 'widgets/botoes_inicio.dart';
 import 'widgets/logo_slango.dart';

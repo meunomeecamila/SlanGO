@@ -9,6 +9,7 @@ import '../shared/widgets/fundo_espacial.dart';
 import '../service/usuarioService.dart';
 import 'widgets/botao_registrar.dart';
 import 'widgets/campo_texto.dart';
+import 'widgets/seletor_pergunta_seguranca.dart';
 import 'widgets/seletor_tipo_usuario.dart';
 
 class RegistroScreen extends StatefulWidget {
@@ -23,10 +24,17 @@ class _RegistroScreenState extends State<RegistroScreen> {
   final emailController = TextEditingController();
   final senhaController = TextEditingController();
   final confirmarSenhaController = TextEditingController();
-  final idadeController = TextEditingController();
+  final dataNascimentoController = TextEditingController();
+  final respostaSegurancaController = TextEditingController();
 
   bool ehPai = true;
   bool carregando = false;
+
+  // Data de nascimento escolhida no calendário.
+  DateTime? dataNascimento;
+
+  // Pergunta de segurança escolhida no dropdown.
+  String? perguntaSeguranca;
 
   @override
   void dispose() {
@@ -34,7 +42,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
     emailController.dispose();
     senhaController.dispose();
     confirmarSenhaController.dispose();
-    idadeController.dispose();
+    dataNascimentoController.dispose();
+    respostaSegurancaController.dispose();
     super.dispose();
   }
 
@@ -42,6 +51,47 @@ class _RegistroScreenState extends State<RegistroScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(mensagem)),
     );
+  }
+
+  String _formatarData(DateTime data) {
+    final dia = data.day.toString().padLeft(2, '0');
+    final mes = data.month.toString().padLeft(2, '0');
+    final ano = data.year.toString();
+    return "$dia/$mes/$ano";
+  }
+
+  Future<void> _selecionarDataNascimento() async {
+    final hoje = DateTime.now();
+
+    final dataEscolhida = await showDatePicker(
+      context: context,
+      initialDate: DateTime(hoje.year - 10, hoje.month, hoje.day),
+      firstDate: DateTime(hoje.year - 100),
+      lastDate: hoje,
+      helpText: "Selecione a data de nascimento",
+      cancelText: "Cancelar",
+      confirmText: "Confirmar",
+      builder: (context, child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme: const ColorScheme.dark(
+              primary: Color(0xFF7C5CFF),
+              onPrimary: Colors.white,
+              surface: Color(0xFF241A3D),
+              onSurface: Colors.white,
+            ),
+          ),
+          child: child!,
+        );
+      },
+    );
+
+    if (dataEscolhida != null) {
+      setState(() {
+        dataNascimento = dataEscolhida;
+        dataNascimentoController.text = _formatarData(dataEscolhida);
+      });
+    }
   }
 
   Future<void> registrar() async {
@@ -58,6 +108,21 @@ class _RegistroScreenState extends State<RegistroScreen> {
       return;
     }
 
+    if (dataNascimento == null) {
+      _mostrarErro("Selecione sua data de nascimento.");
+      return;
+    }
+
+    if (perguntaSeguranca == null) {
+      _mostrarErro("Selecione uma pergunta de segurança.");
+      return;
+    }
+
+    if (respostaSegurancaController.text.trim().isEmpty) {
+      _mostrarErro("Responda a pergunta de segurança.");
+      return;
+    }
+
     setState(() => carregando = true);
 
     try {
@@ -67,6 +132,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
         senha: senhaController.text,
         confirmarSenha: confirmarSenhaController.text,
         responsavel: ehPai,
+        perguntaSeguranca: perguntaSeguranca,
+        respostaSeguranca: respostaSegurancaController.text.trim(),
       );
 
       if (!mounted) return;
@@ -180,11 +247,36 @@ class _RegistroScreenState extends State<RegistroScreen> {
 
                     const SizedBox(height: 18),
 
+                    // Data de nascimento (abre o calendário ao tocar).
+                    GestureDetector(
+                      onTap: _selecionarDataNascimento,
+                      child: AbsorbPointer(
+                        child: CampoTexto(
+                          label: "Data de nascimento",
+                          icon: Icons.cake,
+                          controller: dataNascimentoController,
+                        ),
+                      ),
+                    ),
+
+                    const SizedBox(height: 24),
+
+                    // Pergunta de segurança (usada depois na recuperação de senha).
+                    SeletorPerguntaSeguranca(
+                      perguntaSelecionada: perguntaSeguranca,
+                      onChanged: (valor) {
+                        setState(() {
+                          perguntaSeguranca = valor;
+                        });
+                      },
+                    ),
+
+                    const SizedBox(height: 18),
+
                     CampoTexto(
-                      label: "Idade",
-                      icon: Icons.cake,
-                      keyboardType: TextInputType.number,
-                      controller: idadeController,
+                      label: "Resposta",
+                      icon: Icons.question_answer,
+                      controller: respostaSegurancaController,
                     ),
 
                     const SizedBox(height: 24),

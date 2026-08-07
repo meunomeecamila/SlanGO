@@ -45,10 +45,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
   late Future<void> _carregarPerfilFut;
   String? _erroPerfil;
 
-<<<<<<< HEAD
-  // Avatar atualmente selecionado (começa com o que vier do widget)
-  late String _avatarAtual = widget.avatarAsset;
-
   // Opções de avatar disponíveis pro usuário escolher
   static const List<String> _assetsAvatares = [
     "images/astronautas/Astronauta_I.png",
@@ -58,22 +54,12 @@ class _PerfilScreenState extends State<PerfilScreen> {
     "images/astronautas/Astronauta_V.png",
   ];
 
-  // TODO: substituir por dados reais vindos do backend (girasAprendidas por
-  // mundo). Por enquanto todos os mundos têm 30 gírias fixas e
-  // girasAprendidas = 0.
-  List<ProgressoMundo> get _mundosProgresso => const [
-        ProgressoMundo(id: "jogos", nome: "Mundo Jogos", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "kpop", nome: "Mundo K-pop", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "maquiagem", nome: "Mundo Maquiagem", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "pop", nome: "Mundo Pop", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "antigas", nome: "Mundo Gírias Antigas", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "geek", nome: "Mundo Geek", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "redes_sociais", nome: "Mundo Redes Sociais", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "cotidiano", nome: "Mundo Cotidiano", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "esportes", nome: "Mundo Esportes", girasAprendidas: 0, totalGirias: 30),
-        ProgressoMundo(id: "relacionamentos", nome: "Mundo Relacionamentos", girasAprendidas: 0, totalGirias: 30),
-      ];
-=======
+  // Avatar atualmente selecionado (começa com o que vier do backend/widget;
+  // se vier vazio, cai no primeiro astronauta como padrão).
+  late String _avatarAtual = widget.avatarAsset.isNotEmpty
+      ? widget.avatarAsset
+      : _assetsAvatares.first;
+
   @override
   void initState() {
     super.initState();
@@ -128,7 +114,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
     };
     return nomes[id] ?? id;
   }
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
 
   @override
   Widget build(BuildContext context) {
@@ -188,7 +173,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
       children: [
         InkWell(
           onTap: () => Navigator.of(context).pop(),
-<<<<<<< HEAD
           borderRadius: BorderRadius.circular(30),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -216,18 +200,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
                 ),
               ],
             ),
-=======
-          child: Row(
-            children: [
-              const Icon(
-                Icons.arrow_back,
-                color: AppColors.textPrimary,
-                size: 20,
-              ),
-              const SizedBox(width: 6),
-              Text("Mapa", style: AppText.subtitulo(1.1)),
-            ],
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
           ),
         ),
         Row(
@@ -299,7 +271,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
       ),
       child: Column(
         children: [
-<<<<<<< HEAD
           GestureDetector(
             onTap: _abrirSeletorDeAvatar,
             child: Stack(
@@ -309,56 +280,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
                   width: 110,
                   height: 110,
                   decoration: BoxDecoration(
-=======
-          Stack(
-            clipBehavior: Clip.none,
-            children: [
-              Container(
-                width: 110,
-                height: 110,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.cyan, width: 3),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.primary.withOpacity(0.45),
-                      blurRadius: 30,
-                      spreadRadius: 2,
-                    ),
-                  ],
-                ),
-                child: ClipOval(
-                  child: widget.avatarAsset.isNotEmpty
-                      ? Image.asset(
-                          widget.avatarAsset,
-                          fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Container(
-                            color: AppColors.background,
-                            child: const Icon(
-                              Icons.person,
-                              color: AppColors.textSecondary,
-                              size: 50,
-                            ),
-                          ),
-                        )
-                      : Container(
-                          color: AppColors.background,
-                          child: const Icon(
-                            Icons.person,
-                            color: AppColors.textSecondary,
-                            size: 50,
-                          ),
-                        ),
-                ),
-              ),
-              Positioned(
-                right: -4,
-                bottom: -4,
-                child: Container(
-                  padding: const EdgeInsets.all(7),
-                  decoration: const BoxDecoration(
-                    color: AppColors.cyan,
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: const Color(0xFF6C4FC9).withOpacity(0.7),
@@ -378,18 +299,14 @@ class _PerfilScreenState extends State<PerfilScreen> {
                       fit: BoxFit.cover,
                       errorBuilder: (_, __, ___) => Container(
                         color: AppColors.background,
-                        child: const Icon(Icons.person, color: AppColors.textSecondary, size: 50),
+                        child: const Icon(
+                          Icons.person,
+                          color: AppColors.textSecondary,
+                          size: 50,
+                        ),
                       ),
                     ),
                   ),
-<<<<<<< HEAD
-=======
-                  child: const Icon(
-                    Icons.edit,
-                    size: 16,
-                    color: AppColors.background,
-                  ),
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
                 ),
                 Positioned(
                   right: -4,
@@ -400,7 +317,11 @@ class _PerfilScreenState extends State<PerfilScreen> {
                       color: AppColors.cyan,
                       shape: BoxShape.circle,
                     ),
-                    child: const Icon(Icons.edit, size: 16, color: AppColors.background),
+                    child: const Icon(
+                      Icons.edit,
+                      size: 16,
+                      color: AppColors.background,
+                    ),
                   ),
                 ),
               ],
@@ -455,7 +376,8 @@ class _PerfilScreenState extends State<PerfilScreen> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: selecionado ? AppColors.cyan : Colors.transparent,
+                          color:
+                              selecionado ? AppColors.cyan : Colors.transparent,
                           width: 3,
                         ),
                       ),
@@ -469,7 +391,10 @@ class _PerfilScreenState extends State<PerfilScreen> {
                             width: 70,
                             height: 70,
                             color: AppColors.background,
-                            child: const Icon(Icons.person, color: AppColors.textSecondary),
+                            child: const Icon(
+                              Icons.person,
+                              color: AppColors.textSecondary,
+                            ),
                           ),
                         ),
                       ),
@@ -598,22 +523,14 @@ class _PerfilScreenState extends State<PerfilScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-<<<<<<< HEAD
                 asset,
                 width: 70,
                 height: 70,
-                errorBuilder: (_, __, ___) =>
-                    const Icon(Icons.star, color: AppColors.textSecondary, size: 28),
-=======
-                item.iconAsset,
-                width: 32,
-                height: 32,
                 errorBuilder: (_, __, ___) => const Icon(
                   Icons.star,
                   color: AppColors.textSecondary,
                   size: 28,
                 ),
->>>>>>> c05ac4ddef11d417d46ac6c0e546d673a9b9637d
               ),
               if (itemCorrespondente?.equipado ?? false) ...[
                 const SizedBox(height: 8),

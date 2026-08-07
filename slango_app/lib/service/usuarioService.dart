@@ -44,6 +44,11 @@ class UsuarioService {
     required String senha,
     required String confirmarSenha,
     bool responsavel = false,
+    // TODO: o backend precisa aceitar e persistir esses dois campos no
+    // endpoint /cadastrar (coluna/campo pergunta_seguranca e
+    // resposta_seguranca, por exemplo com hash da resposta).
+    String? perguntaSeguranca,
+    String? respostaSeguranca,
   }) async {
     final response = await http.post(
       Uri.parse('$_baseUrl/cadastrar'),
@@ -54,6 +59,8 @@ class UsuarioService {
         'senha': senha,
         'confirmarSenha': confirmarSenha,
         'responsavel': responsavel,
+        if (perguntaSeguranca != null) 'perguntaSeguranca': perguntaSeguranca,
+        if (respostaSeguranca != null) 'respostaSeguranca': respostaSeguranca,
       }),
     );
 
