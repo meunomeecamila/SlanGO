@@ -5,6 +5,7 @@ import '../../licao_page.dart';
 import '../../shared/widgets/fundo_espacial.dart';
 import '../data/falas_service.dart';
 import '../data/mundo_assets.dart';
+import '../data/girias_exemplo.dart';
 import '../data/mundo_slug.dart';
 import 'package:slango_app/mapa/mapa.dart';
 
@@ -27,7 +28,10 @@ class Missao extends TelaMundoDosJogos {
 }
 
 class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
-  final List<String> giriasDoJogo = ['MVP', 'CLUTCH', 'FEED', 'NOOB'];
+  /// Gírias de exemplo do mundo atual (4 por mundo, cada mundo com as suas).
+  /// TODO: para alterar quais gírias aparecem nos chips, edite o mapa em
+  /// lib/missao/data/girias_exemplo.dart.
+  List<String> get giriasDoMundo => giriasExemploDoMundo(widget.nomeMundo);
 
   /// Slug canônico do mundo (ex: 'kpop'), derivado do nome recebido.
   String get _slugMundo => normalizarMundo(widget.nomeMundo);
@@ -168,7 +172,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                               ),
                             ),
 
-                            ChipsDeGirias(girias: giriasDoJogo),
+                            ChipsDeGirias(girias: giriasDoMundo),
                             const SizedBox(height: 32),
                             BotaoIniciarMissao(
                               aoTocar: () {

@@ -43,7 +43,7 @@ final List<Mundo> mundos = [
         'Expressões da cultura pop: música, séries, memes e tudo que vira assunto do momento.',
     totalGirias: 43,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'antigo',
@@ -54,7 +54,7 @@ final List<Mundo> mundos = [
         'As gírias clássicas de outras décadas, que os mais velhos usam e ainda aparecem por aí.',
     totalGirias: 40,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'cotidiano',
@@ -65,7 +65,7 @@ final List<Mundo> mundos = [
         'O falar do dia a dia: conversas na rua, na escola e em casa, do jeitinho informal.',
     totalGirias: 46,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'esportes',
@@ -76,7 +76,7 @@ final List<Mundo> mundos = [
         'Gírias de quadra, campo e arquibancada: narração, torcida e papo de treino.',
     totalGirias: 31,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'geek',
@@ -87,7 +87,7 @@ final List<Mundo> mundos = [
         'Universo nerd: animes, quadrinhos, RPG e tecnologia com seu vocabulário próprio.',
     totalGirias: 30,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'redessociais',
@@ -98,7 +98,7 @@ final List<Mundo> mundos = [
         'O idioma das timelines: siglas, trends e expressões que viralizam a cada semana.',
     totalGirias: 30,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
   const Mundo(
     id: 'relacionamentos',
@@ -109,6 +109,6 @@ final List<Mundo> mundos = [
         'Como a galera fala sobre paqueras, amizades e términos nas conversas de hoje.',
     totalGirias: 35,
     progresso: 0.0,
-    desbloqueado: false,
+    desbloqueado: true,
   ),
 ];
