@@ -44,8 +44,6 @@ class TelaCertificado extends StatelessWidget {
                     // TODO: substituir pelos dados reais do usuário logado
                     // (via serviço/estado do app) assim que estiver disponível.
                     builder: (context) => const PerfilScreen(
-                      nome: "Astronauta",
-                      avatarAsset: "assets/avatars/default.png",
                       totalMundos: 0,
                       totalGirias: 0,
                       totalCertificados: 0,

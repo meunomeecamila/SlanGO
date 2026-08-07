@@ -1,9 +1,8 @@
-// pagina que mostra o perfil
-
 import 'package:flutter/material.dart';
 
 import '../service/MundoService.dart';
 import '../service/usuarioService.dart';
+import '../service/PerfilService.dart';
 import '../user/User.dart';
 import 'certificados/aba_certificados.dart';
 import 'configuracoes.dart';
@@ -17,21 +16,17 @@ enum _AbaPerfil { itens, certificados }
 
 class PerfilScreen extends StatefulWidget {
   final String? nome;
-  final String avatarAsset;
   final int totalMundos;
   final int totalGirias;
   final int totalCertificados;
-  final List<ItemPerfil> itens;
   final List<CertificadoPerfil> certificados;
 
   const PerfilScreen({
     super.key,
     this.nome,
-    this.avatarAsset = '',
     this.totalMundos = 0,
     this.totalGirias = 0,
     this.totalCertificados = 0,
-    this.itens = const [],
     this.certificados = const [],
   });
 
@@ -46,20 +41,12 @@ class _PerfilScreenState extends State<PerfilScreen> {
   late Future<void> _carregarPerfilFut;
   String? _erroPerfil;
 
-  // Opções de avatar disponíveis pro usuário escolher
-  static const List<String> _assetsAvatares = [
-    "images/astronautas/Astronauta_I.png",
-    "images/astronautas/Astronauta_II.png",
-    "images/astronautas/Astronauta_III.png",
-    "images/astronautas/Astronauta_IV.png",
-    "images/astronautas/Astronauta_V.png",
-  ];
+  List<AstronautaPerfil> _astronautas = [];
+  AstronautaPerfil? _astronautaAtual;
+  bool _salvandoAvatar = false;
 
-  // Avatar atualmente selecionado (começa com o que vier do backend/widget;
-  // se vier vazio, cai no primeiro astronauta como padrão).
-  late String _avatarAtual = widget.avatarAsset.isNotEmpty
-      ? widget.avatarAsset
-      : _assetsAvatares.first;
+  List<ItemPerfil> _itens = [];
+  int? _idItemEquipandoAgora;
 
   @override
   void initState() {
@@ -69,8 +56,17 @@ class _PerfilScreenState extends State<PerfilScreen> {
 
   Future<void> _carregarPerfil() async {
     try {
-      final usuario = await UsuarioService.buscarUsuarioLogado();
-      final mundosJson = await MundoService.obterProgressoMundos();
+      final resultados = await Future.wait([
+        UsuarioService.buscarUsuarioLogado(),
+        MundoService.obterProgressoMundos(),
+        PerfilService.listarAstronautas(),
+        PerfilService.listarItens(),
+      ]);
+
+      final usuario = resultados[0] as Usuario;
+      final mundosJson = resultados[1] as List;
+      final astronautas = resultados[2] as List<AstronautaPerfil>;
+      final itens = resultados[3] as List<ItemPerfil>;
 
       final mundos = mundosJson.map<ProgressoMundo>((item) {
         final id = item['id']?.toString() ?? '';
@@ -84,10 +80,21 @@ class _PerfilScreenState extends State<PerfilScreen> {
         );
       }).toList();
 
+      AstronautaPerfil? astronautaSelecionado;
+      if (astronautas.isNotEmpty) {
+        astronautaSelecionado = astronautas.firstWhere(
+          (a) => a.id == usuario.idAstronauta,
+          orElse: () => astronautas.first,
+        );
+      }
+
       if (mounted) {
         setState(() {
           _usuario = usuario;
           _mundosProgresso = mundos;
+          _astronautas = astronautas;
+          _astronautaAtual = astronautaSelecionado;
+          _itens = itens;
           _erroPerfil = null;
         });
       }
@@ -166,8 +173,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
     );
   }
 
-  // Barra de topo: voltar pro mapa (estilo pill, igual ao botão "Mundo Jogos")
-  // + ícones de configurações e progresso
   Widget _buildHeader(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -247,7 +252,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
     );
   }
 
-  // Card com avatar, nome e estatísticas (Mundos / Gírias / Certificados)
   Widget _buildCardAvatar() {
     final nome = _usuario?.nome ?? widget.nome ?? 'Usuário';
     final totalMundos = _mundosProgresso.isNotEmpty
@@ -263,6 +267,11 @@ class _PerfilScreenState extends State<PerfilScreen> {
         .where((mundo) => mundo.progresso >= 1)
         .length;
 
+    final itemEquipado = _itens.cast<ItemPerfil?>().firstWhere(
+      (item) => item?.equipado == true,
+      orElse: () => null,
+    );
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
@@ -273,7 +282,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
       child: Column(
         children: [
           GestureDetector(
-            onTap: _abrirSeletorDeAvatar,
+            onTap: _astronautas.isEmpty ? null : _abrirSeletorDeAvatar,
             child: Stack(
               clipBehavior: Clip.none,
               children: [
@@ -295,17 +304,51 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     ],
                   ),
                   child: ClipOval(
-                    child: Image.asset(
-                      _avatarAtual,
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
-                        color: AppColors.background,
-                        child: const Icon(
-                          Icons.person,
-                          color: AppColors.textSecondary,
-                          size: 50,
-                        ),
-                      ),
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _astronautaAtual == null
+                            ? Container(
+                                color: AppColors.background,
+                                child: const Icon(
+                                  Icons.person,
+                                  color: AppColors.textSecondary,
+                                  size: 50,
+                                ),
+                              )
+                            : Image.network(
+                                _astronautaAtual!.urlAstronauta,
+                                fit: BoxFit.cover,
+                                loadingBuilder: (context, child, progresso) {
+                                  if (progresso == null) return child;
+                                  return const Center(
+                                    child: SizedBox(
+                                      width: 24,
+                                      height: 24,
+                                      child: CircularProgressIndicator(strokeWidth: 2),
+                                    ),
+                                  );
+                                },
+                                errorBuilder: (_, __, ___) => Container(
+                                  color: AppColors.background,
+                                  child: const Icon(
+                                    Icons.person,
+                                    color: AppColors.textSecondary,
+                                    size: 50,
+                                  ),
+                                ),
+                              ),
+                        if (itemEquipado != null)
+                          Positioned(
+                            bottom: 16,
+                            left: -2,
+                            child: Image.network(
+                              itemEquipado.iconAsset,
+                              width: 35,
+                              height: 35,
+                            ),
+                          ),
+                      ],
                     ),
                   ),
                 ),
@@ -352,59 +395,82 @@ class _PerfilScreenState extends State<PerfilScreen> {
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
       builder: (context) {
-        return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("Escolha seu avatar", style: AppText.titulo(0.9)),
-              const SizedBox(height: 16),
-              Wrap(
-                spacing: 16,
-                runSpacing: 16,
-                alignment: WrapAlignment.center,
-                children: _assetsAvatares.map((asset) {
-                  final selecionado = asset == _avatarAtual;
-                  return InkWell(
-                    onTap: () {
-                      setState(() => _avatarAtual = asset);
-                      Navigator.of(context).pop();
-                    },
-                    borderRadius: BorderRadius.circular(50),
-                    child: Container(
-                      padding: const EdgeInsets.all(3),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color:
-                              selecionado ? AppColors.cyan : Colors.transparent,
-                          width: 3,
-                        ),
-                      ),
-                      child: ClipOval(
-                        child: Image.asset(
-                          asset,
-                          width: 70,
-                          height: 70,
-                          fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Container(
-                            width: 70,
-                            height: 70,
-                            color: AppColors.background,
-                            child: const Icon(
-                              Icons.person,
-                              color: AppColors.textSecondary,
+        return StatefulBuilder(
+          builder: (context, setSheetState) {
+            return Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Escolha seu avatar", style: AppText.titulo(0.9)),
+                  const SizedBox(height: 16),
+                  Wrap(
+                    spacing: 16,
+                    runSpacing: 16,
+                    alignment: WrapAlignment.center,
+                    children: _astronautas.map((astronauta) {
+                      final selecionado = astronauta.id == _astronautaAtual?.id;
+                      return InkWell(
+                        onTap: _salvandoAvatar
+                            ? null
+                            : () async {
+                                setSheetState(() => _salvandoAvatar = true);
+                                try {
+                                  await PerfilService.atualizarAvatar(astronauta.id);
+                                  if (!mounted) return;
+                                  setState(() => _astronautaAtual = astronauta);
+                                  Navigator.of(context).pop();
+                                } catch (error) {
+                                  if (!mounted) return;
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        error.toString().replaceFirst('Exception: ', ''),
+                                      ),
+                                    ),
+                                  );
+                                } finally {
+                                  setSheetState(() => _salvandoAvatar = false);
+                                }
+                              },
+                        borderRadius: BorderRadius.circular(50),
+                        child: Container(
+                          padding: const EdgeInsets.all(3),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: selecionado
+                                  ? AppColors.cyan
+                                  : Colors.transparent,
+                              width: 3,
+                            ),
+                          ),
+                          child: ClipOval(
+                            child: Image.network(
+                              astronauta.urlAstronauta,
+                              width: 70,
+                              height: 70,
+                              fit: BoxFit.cover,
+                              errorBuilder: (_, __, ___) => Container(
+                                width: 70,
+                                height: 70,
+                                color: AppColors.background,
+                                child: const Icon(
+                                  Icons.person,
+                                  color: AppColors.textSecondary,
+                                ),
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                  );
-                }).toList(),
+                      );
+                    }).toList(),
+                  ),
+                ],
               ),
-            ],
-          ),
+            );
+          },
         );
       },
     );
@@ -420,7 +486,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
     );
   }
 
-  // Abas: Itens / Certificados
   Widget _buildAbas() {
     return Container(
       padding: const EdgeInsets.all(4),
@@ -470,83 +535,121 @@ class _PerfilScreenState extends State<PerfilScreen> {
   Widget _buildConteudoAba() {
     switch (_abaAtual) {
       case _AbaPerfil.itens:
-        return _buildGridItens(widget.itens);
+        return _buildGridItens();
       case _AbaPerfil.certificados:
-        // Aba de Certificados: um card por mundo, com bloqueio por progresso.
         return AbaCertificados(mundos: _mundosProgresso);
     }
   }
 
-  // Assets fixos dos 13 itens desbloqueáveis (images/itens/).
-  static const List<String> _assetsItens = [
-    "images/itens/Antigo_carta.png",
-    "images/itens/Antigo_Pena.png",
-    "images/itens/Cotidiano_Despertador.png",
-    "images/itens/Cotidiano_Travesseiro.png",
-    "images/itens/Esporte_Bola.png",
-    "images/itens/Esporte_Medalha.png",
-    "images/itens/Geek_Robo.png",
-    "images/itens/Jogos_Controle.png",
-    "images/itens/Kpop_Bandeira.png",
-    "images/itens/Maquiagem_Paleta.png",
-    "images/itens/Pop_pipoca.png",
-    "images/itens/Ralacionamento_Cupido.png",
-    "images/itens/Redes_Celular.png",
-  ];
+  Future<void> _equiparItem(ItemPerfil item) async {
+    if (!item.desbloqueado || _idItemEquipandoAgora != null) return;
 
-  Widget _buildGridItens(List<ItemPerfil> lista) {
+    setState(() => _idItemEquipandoAgora = item.id);
+    try {
+      await PerfilService.equiparItem(item.id);
+      if (!mounted) return;
+      setState(() {
+        _itens = _itens
+            .map((i) => i.copyWith(equipado: i.id == item.id))
+            .toList();
+      });
+    } catch (error) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error.toString().replaceFirst('Exception: ', '')),
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _idItemEquipandoAgora = null);
+    }
+  }
+
+  Widget _buildGridItens() {
+    if (_itens.isEmpty) {
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 24),
+          child: Text(
+            "Nenhum item disponível ainda.",
+            style: AppText.subtitulo(1),
+          ),
+        ),
+      );
+    }
+
     return GridView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: _assetsItens.length,
+      itemCount: _itens.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 4,
         mainAxisSpacing: 12,
         crossAxisSpacing: 12,
-        childAspectRatio: 0.85,
+        childAspectRatio: 0.70,
       ),
       itemBuilder: (context, index) {
-        final asset = _assetsItens[index];
-        // Se o backend já mandou dados desse item (equipado etc.), casa pelo asset.
-        final itemCorrespondente = lista.where((i) => i.iconAsset == asset).isNotEmpty
-            ? lista.firstWhere((i) => i.iconAsset == asset)
-            : null;
+        final item = _itens[index];
+        final carregandoEsteItem = _idItemEquipandoAgora == item.id;
 
-        return Container(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 6),
-          decoration: BoxDecoration(
-            color: AppColors.card,
+        return Opacity(
+          opacity: item.desbloqueado ? 1.0 : 0.35,
+          child: InkWell(
             borderRadius: BorderRadius.circular(16),
-            border: (itemCorrespondente?.equipado ?? false)
-                ? Border.all(color: AppColors.primary, width: 1.5)
-                : null,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                asset,
-                width: 70,
-                height: 70,
-                errorBuilder: (_, __, ___) => const Icon(
-                  Icons.star,
-                  color: AppColors.textSecondary,
-                  size: 28,
-                ),
+            onTap: item.desbloqueado ? () => _equiparItem(item) : null,
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 6),
+              decoration: BoxDecoration(
+                color: AppColors.card,
+                borderRadius: BorderRadius.circular(16),
+                border: item.equipado
+                    ? Border.all(color: AppColors.primary, width: 1.5)
+                    : null,
               ),
-              if (itemCorrespondente?.equipado ?? false) ...[
-                const SizedBox(height: 8),
-                Text(
-                  "Equipado",
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 1,
-                  style: AppText.cardSubtitulo(0.75).copyWith(
-                    color: AppColors.cyan,
-                    fontWeight: FontWeight.w600,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Image.network(
+                        item.iconAsset,
+                        width: 70,
+                        height: 70,
+                        errorBuilder: (_, __, ___) => const Icon(
+                          Icons.star,
+                          color: AppColors.textSecondary,
+                          size: 28,
+                        ),
+                      ),
+                      if (carregandoEsteItem)
+                        const SizedBox(
+                          width: 24,
+                          height: 24,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        ),
+                    ],
                   ),
-                ),
-              ],
-            ],
+                  const SizedBox(height: 8),
+                  if (!item.desbloqueado)
+                    const Icon(
+                      Icons.lock,
+                      size: 16,
+                      color: AppColors.disabled,
+                    )
+                  else if (item.equipado)
+                    Text(
+                      "Equipado",
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                      style: AppText.cardSubtitulo(0.75).copyWith(
+                        color: AppColors.cyan,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                ],
+              ),
+            ),
           ),
         );
       },

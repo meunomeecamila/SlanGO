@@ -75,8 +75,6 @@ class _TelaMapaState extends State<TelaMapa> {
       context,
       MaterialPageRoute(
         builder: (_) => const PerfilScreen(
-          nome: "Mariana", // TODO: substituir pelos dados reais do usuário logado
-          avatarAsset: "images/avatar_padrao.png",
           totalMundos: 0,
           totalGirias: 0,
           totalCertificados: 0,
