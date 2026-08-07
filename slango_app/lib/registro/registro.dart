@@ -48,9 +48,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
   }
 
   void _mostrarErro(String mensagem) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(mensagem)),
-    );
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(mensagem)));
   }
 
   String _formatarData(DateTime data) {
@@ -132,7 +132,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
         senha: senhaController.text,
         confirmarSenha: confirmarSenhaController.text,
         responsavel: ehPai,
-        perguntaSeguranca: perguntaSeguranca,
+        dataNascimento: dataNascimento?.toIso8601String().split('T').first,
+        perguntaSeguranca: perguntaSeguranca?.trim(),
         respostaSeguranca: respostaSegurancaController.text.trim(),
       );
 
@@ -140,9 +141,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
 
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(
-          builder: (_) => const MapaScreen(),
-        ),
+        MaterialPageRoute(builder: (_) => const MapaScreen()),
       );
     } catch (e) {
       if (!mounted) return;
@@ -162,178 +161,176 @@ class _RegistroScreenState extends State<RegistroScreen> {
           ),
           const Positioned.fill(child: FundoEspacial(interativo: false)),
           SafeArea(
-          child: Align(
-            alignment: Alignment.topCenter,
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 28,
-                vertical: 18,
-              ),
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 420),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(
-                        padding: EdgeInsets.zero,
-                        constraints: const BoxConstraints(),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: const Icon(
-                          Icons.arrow_back_ios_new_rounded,
-                          color: Colors.white,
-                          size: 24,
-                        ),
-                      ),
-                    ),
-
-                    const SizedBox(height: 8),
-
-                    const LogoSlango(),
-
-                    const SizedBox(height: 18),
-
-                    Text(
-                      "Criar Conta",
-                      textAlign: TextAlign.center,
-                      style: AppText.titulo(0.95),
-                    ),
-
-                    const SizedBox(height: 8),
-
-                    Text(
-                      "Comece sua aventura no universo das gírias!",
-                      textAlign: TextAlign.center,
-                      style: AppText.subtitulo(0.95),
-                    ),
-
-                    const SizedBox(height: 45),
-
-                    CampoTexto(
-                      label: "Nome",
-                      icon: Icons.person,
-                      controller: nomeController,
-                    ),
-
-                    const SizedBox(height: 18),
-
-                    CampoTexto(
-                      label: "Email",
-                      icon: Icons.email,
-                      keyboardType: TextInputType.emailAddress,
-                      controller: emailController,
-                    ),
-
-                    const SizedBox(height: 18),
-
-                    CampoTexto(
-                      label: "Senha",
-                      icon: Icons.lock,
-                      obscureText: true,
-                      controller: senhaController,
-                    ),
-
-                    const SizedBox(height: 18),
-
-                    CampoTexto(
-                      label: "Confirmar senha",
-                      icon: Icons.lock_outline,
-                      obscureText: true,
-                      controller: confirmarSenhaController,
-                    ),
-
-                    const SizedBox(height: 18),
-
-                    // Data de nascimento (abre o calendário ao tocar).
-                    GestureDetector(
-                      onTap: _selecionarDataNascimento,
-                      child: AbsorbPointer(
-                        child: CampoTexto(
-                          label: "Data de nascimento",
-                          icon: Icons.cake,
-                          controller: dataNascimentoController,
-                        ),
-                      ),
-                    ),
-
-                    const SizedBox(height: 24),
-
-                    // Pergunta de segurança (usada depois na recuperação de senha).
-                    SeletorPerguntaSeguranca(
-                      perguntaSelecionada: perguntaSeguranca,
-                      onChanged: (valor) {
-                        setState(() {
-                          perguntaSeguranca = valor;
-                        });
-                      },
-                    ),
-
-                    const SizedBox(height: 18),
-
-                    CampoTexto(
-                      label: "Resposta",
-                      icon: Icons.question_answer,
-                      controller: respostaSegurancaController,
-                    ),
-
-                    const SizedBox(height: 24),
-
-                    SeletorTipoUsuario(
-                      ehPai: ehPai,
-                      onChanged: (valor) {
-                        setState(() {
-                          ehPai = valor;
-                        });
-                      },
-                    ),
-
-                    const SizedBox(height: 35),
-
-                    BotaoRegistrar(
-                      onPressed: carregando ? null : registrar,
-                      carregando: carregando,
-                    ),
-
-                    const SizedBox(height: 24),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          "Já possui uma conta? ",
-                          style: TextStyle(
-                            color: Colors.white70,
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 28,
+                  vertical: 18,
+                ),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 420),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: IconButton(
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          icon: const Icon(
+                            Icons.arrow_back_ios_new_rounded,
+                            color: Colors.white,
+                            size: 24,
                           ),
                         ),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (_) => const LoginScreen(),
+                      ),
+
+                      const SizedBox(height: 8),
+
+                      const LogoSlango(),
+
+                      const SizedBox(height: 18),
+
+                      Text(
+                        "Criar Conta",
+                        textAlign: TextAlign.center,
+                        style: AppText.titulo(0.95),
+                      ),
+
+                      const SizedBox(height: 8),
+
+                      Text(
+                        "Comece sua aventura no universo das gírias!",
+                        textAlign: TextAlign.center,
+                        style: AppText.subtitulo(0.95),
+                      ),
+
+                      const SizedBox(height: 45),
+
+                      CampoTexto(
+                        label: "Nome",
+                        icon: Icons.person,
+                        controller: nomeController,
+                      ),
+
+                      const SizedBox(height: 18),
+
+                      CampoTexto(
+                        label: "Email",
+                        icon: Icons.email,
+                        keyboardType: TextInputType.emailAddress,
+                        controller: emailController,
+                      ),
+
+                      const SizedBox(height: 18),
+
+                      CampoTexto(
+                        label: "Senha",
+                        icon: Icons.lock,
+                        obscureText: true,
+                        controller: senhaController,
+                      ),
+
+                      const SizedBox(height: 18),
+
+                      CampoTexto(
+                        label: "Confirmar senha",
+                        icon: Icons.lock_outline,
+                        obscureText: true,
+                        controller: confirmarSenhaController,
+                      ),
+
+                      const SizedBox(height: 18),
+
+                      // Data de nascimento (abre o calendário ao tocar).
+                      GestureDetector(
+                        onTap: _selecionarDataNascimento,
+                        child: AbsorbPointer(
+                          child: CampoTexto(
+                            label: "Data de nascimento",
+                            icon: Icons.cake,
+                            controller: dataNascimentoController,
+                          ),
+                        ),
+                      ),
+
+                      const SizedBox(height: 24),
+
+                      // Pergunta de segurança (usada depois na recuperação de senha).
+                      SeletorPerguntaSeguranca(
+                        perguntaSelecionada: perguntaSeguranca,
+                        onChanged: (valor) {
+                          setState(() {
+                            perguntaSeguranca = valor;
+                          });
+                        },
+                      ),
+
+                      const SizedBox(height: 18),
+
+                      CampoTexto(
+                        label: "Resposta",
+                        icon: Icons.question_answer,
+                        controller: respostaSegurancaController,
+                      ),
+
+                      const SizedBox(height: 24),
+
+                      SeletorTipoUsuario(
+                        ehPai: ehPai,
+                        onChanged: (valor) {
+                          setState(() {
+                            ehPai = valor;
+                          });
+                        },
+                      ),
+
+                      const SizedBox(height: 35),
+
+                      BotaoRegistrar(
+                        onPressed: carregando ? null : registrar,
+                        carregando: carregando,
+                      ),
+
+                      const SizedBox(height: 24),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Já possui uma conta? ",
+                            style: TextStyle(color: Colors.white70),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const LoginScreen(),
+                                ),
+                              );
+                            },
+                            child: const Text(
+                              "Fazer Login",
+                              style: TextStyle(
+                                color: Color(0xFF57E6D8),
+                                fontWeight: FontWeight.bold,
                               ),
-                            );
-                          },
-                          child: const Text(
-                            "Fazer Login",
-                            style: TextStyle(
-                              color: Color(0xFF57E6D8),
-                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ),
-                      ],
-                    ),
+                        ],
+                      ),
 
-                    const SizedBox(height: 20),
-                  ],
+                      const SizedBox(height: 20),
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
           ),
         ],
       ),
