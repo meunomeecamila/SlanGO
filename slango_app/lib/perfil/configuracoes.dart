@@ -15,11 +15,15 @@ class ConfiguracoesScreen extends StatefulWidget {
 
 class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
   final TextEditingController _nomeController = TextEditingController();
-  final TextEditingController _dataNascimentoController = TextEditingController();
+  final TextEditingController _dataNascimentoController =
+      TextEditingController();
   final TextEditingController _tipoContaController = TextEditingController();
 
   DateTime? _dataNascimento;
+  DateTime? _dataNascimentoOriginal;
+  String? _nomeOriginal;
   bool _carregando = true;
+  bool _salvando = false;
   String? _erro;
 
   @override
@@ -33,9 +37,12 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       final usuario = await UsuarioService.buscarUsuarioLogado();
       if (!mounted) return;
       _nomeController.text = usuario.nome;
-      // TODO: o backend hoje só manda `idade`, não a data de nascimento
-      // completa. Quando o campo `dataNascimento` existir no back-end e no
-      // model Usuario, popular _dataNascimento/_dataNascimentoController aqui.
+      _nomeOriginal = usuario.nome;
+      _dataNascimento = _parseDataNascimento(usuario.dataNascimento);
+      _dataNascimentoOriginal = _dataNascimento;
+      if (_dataNascimento != null) {
+        _dataNascimentoController.text = _formatarData(_dataNascimento!);
+      }
       _tipoContaController.text = usuario.responsavel ? 'Responsável' : 'Jovem';
     } catch (error) {
       _erro = error.toString().replaceFirst('Exception: ', '');
@@ -44,17 +51,70 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
     }
   }
 
+  DateTime? _parseDataNascimento(String? valor) {
+    if (valor == null || valor.trim().isEmpty) return null;
+    final data = DateTime.tryParse(valor);
+    return data;
+  }
+
   String _formatarData(DateTime data) {
     final dia = data.day.toString().padLeft(2, '0');
     final mes = data.month.toString().padLeft(2, '0');
     return "$dia/$mes/${data.year}";
   }
 
+  Future<void> _salvarPerfil() async {
+    if (_salvando) return;
+
+    final nomeDigitado = _nomeController.text.trim();
+    final temNomeAlterado =
+        nomeDigitado.isNotEmpty && nomeDigitado != (_nomeOriginal ?? '');
+    final temDataAlterada =
+        _dataNascimento != null &&
+        (_dataNascimentoOriginal == null ||
+            !_dataNascimento!.isAtSameMomentAs(_dataNascimentoOriginal!));
+
+    if (!temNomeAlterado && !temDataAlterada) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Nenhuma alteração para salvar.')),
+      );
+      return;
+    }
+
+    setState(() => _salvando = true);
+
+    try {
+      final usuarioAtual = await UsuarioService.buscarUsuarioLogado();
+      final atualizado = await UsuarioService.atualizar(
+        usuarioAtual.id,
+        nome: temNomeAlterado ? nomeDigitado : null,
+        dataNascimento: _dataNascimento?.toIso8601String().split('T').first,
+      );
+
+      if (!mounted) return;
+      _nomeOriginal = atualizado.nome;
+      _dataNascimentoOriginal = _parseDataNascimento(atualizado.dataNascimento);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Perfil atualizado com sucesso!')),
+      );
+    } catch (error) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error.toString().replaceFirst('Exception: ', '')),
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _salvando = false);
+    }
+  }
+
   Future<void> _selecionarDataNascimento() async {
     final agora = DateTime.now();
     final dataEscolhida = await showDatePicker(
       context: context,
-      initialDate: _dataNascimento ?? DateTime(agora.year - 18, agora.month, agora.day),
+      initialDate:
+          _dataNascimento ?? DateTime(agora.year - 18, agora.month, agora.day),
       firstDate: DateTime(agora.year - 100),
       lastDate: agora,
       helpText: "Data de nascimento",
@@ -77,9 +137,8 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       setState(() {
         _dataNascimento = dataEscolhida;
         _dataNascimentoController.text = _formatarData(dataEscolhida);
-        // TODO: enviar a nova data de nascimento pro backend (endpoint de
-        // atualização de perfil ainda não existe em UsuarioService).
       });
+      await _salvarPerfil();
     }
   }
 
@@ -128,6 +187,14 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                           _campoEditavel(
                             label: "Nome",
                             controller: _nomeController,
+                          ),
+                          const SizedBox(height: 16),
+                          _botaoAcao(
+                            texto: _salvando
+                                ? 'Salvando...'
+                                : 'Salvar alterações',
+                            cor: AppColors.cyan,
+                            onTap: _salvando ? null : _salvarPerfil,
                           ),
                           const SizedBox(height: 16),
                           _campoData(),
@@ -251,7 +318,10 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Data de nascimento", style: AppText.cardSubtitulo(0.85)),
+                  Text(
+                    "Data de nascimento",
+                    style: AppText.cardSubtitulo(0.85),
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 6),
                     child: Text(
@@ -293,10 +363,12 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
           children: [
             Icon(icone, color: AppColors.cyan, size: 20),
             const SizedBox(width: 12),
-            Expanded(
-              child: Text(texto, style: AppText.cardTitulo(0.95)),
+            Expanded(child: Text(texto, style: AppText.cardTitulo(0.95))),
+            const Icon(
+              Icons.chevron_right,
+              color: AppColors.textSecondary,
+              size: 20,
             ),
-            const Icon(Icons.chevron_right, color: AppColors.textSecondary, size: 20),
           ],
         ),
       ),
@@ -306,7 +378,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
   Widget _botaoAcao({
     required String texto,
     required Color cor,
-    required VoidCallback onTap,
+    required VoidCallback? onTap,
   }) {
     return SizedBox(
       width: double.infinity,
@@ -360,14 +432,22 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: Text("Cancelar", style: AppText.botao(0.85).copyWith(color: AppColors.textSecondary)),
+            child: Text(
+              "Cancelar",
+              style: AppText.botao(
+                0.85,
+              ).copyWith(color: AppColors.textSecondary),
+            ),
           ),
           TextButton(
             onPressed: () {
               // TODO: validar e enviar a troca de senha pro backend
               Navigator.of(context).pop();
             },
-            child: Text("Salvar", style: AppText.botao(0.85).copyWith(color: AppColors.cyan)),
+            child: Text(
+              "Salvar",
+              style: AppText.botao(0.85).copyWith(color: AppColors.cyan),
+            ),
           ),
         ],
       ),
@@ -403,14 +483,22 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: Text("Cancelar", style: AppText.botao(0.85).copyWith(color: AppColors.textSecondary)),
+            child: Text(
+              "Cancelar",
+              style: AppText.botao(
+                0.85,
+              ).copyWith(color: AppColors.textSecondary),
+            ),
           ),
           TextButton(
             onPressed: () {
               // TODO: validar e enviar a troca de e-mail pro backend
               Navigator.of(context).pop();
             },
-            child: Text("Salvar", style: AppText.botao(0.85).copyWith(color: AppColors.cyan)),
+            child: Text(
+              "Salvar",
+              style: AppText.botao(0.85).copyWith(color: AppColors.cyan),
+            ),
           ),
         ],
       ),

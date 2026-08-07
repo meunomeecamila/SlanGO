@@ -9,17 +9,22 @@ class UsuarioService {
 
   static const _tokenKey = 'token';
   static const _userIdKey = 'userId';
-  static const _isGuestKey = 'isGuest'; // flag local: sessão atual é de convidado?
+  static const _isGuestKey =
+      'isGuest'; // flag local: sessão atual é de convidado?
 
   static String get _baseUrl {
-    final url = dotenv.env['API_URL'];
+    final url = dotenv.env['API_URL']?.trim();
     if (url == null || url.isEmpty) {
       throw Exception(
         'API_URL não definida. Configure a variável API_URL no arquivo .env '
         'antes de usar o app (ex: API_URL=http://10.0.2.2:3000).',
       );
     }
-    return url;
+
+    final baseSemBarra = url.endsWith('/')
+        ? url.substring(0, url.length - 1)
+        : url;
+    return baseSemBarra.endsWith('/api') ? baseSemBarra : '$baseSemBarra/api';
   }
 
   static Future<void> _storeUserId(int id) async {
@@ -44,24 +49,30 @@ class UsuarioService {
     required String senha,
     required String confirmarSenha,
     bool responsavel = false,
+    String? dataNascimento,
     // TODO: o backend precisa aceitar e persistir esses dois campos no
     // endpoint /cadastrar (coluna/campo pergunta_seguranca e
     // resposta_seguranca, por exemplo com hash da resposta).
     String? perguntaSeguranca,
     String? respostaSeguranca,
   }) async {
+    final payload = <String, dynamic>{
+      'nome': nome,
+      'email': email,
+      'senha': senha,
+      'confirmarSenha': confirmarSenha,
+      'responsavel': responsavel,
+      if (dataNascimento != null) 'dataNascimento': dataNascimento,
+      if (perguntaSeguranca != null && perguntaSeguranca.isNotEmpty)
+        'perguntaSeguranca': perguntaSeguranca,
+      if (respostaSeguranca != null && respostaSeguranca.isNotEmpty)
+        'respostaSeguranca': respostaSeguranca,
+    };
+
     final response = await http.post(
       Uri.parse('$_baseUrl/cadastrar'),
       headers: {'Content-Type': 'application/json'},
-      body: jsonEncode({
-        'nome': nome,
-        'email': email,
-        'senha': senha,
-        'confirmarSenha': confirmarSenha,
-        'responsavel': responsavel,
-        if (perguntaSeguranca != null) 'perguntaSeguranca': perguntaSeguranca,
-        if (respostaSeguranca != null) 'respostaSeguranca': respostaSeguranca,
-      }),
+      body: jsonEncode(payload),
     );
 
     final dados = jsonDecode(response.body);
@@ -156,6 +167,9 @@ class UsuarioService {
     String? email,
     String? senha,
     bool? responsavel,
+    String? dataNascimento,
+    String? perguntaSeguranca,
+    String? respostaSeguranca,
   }) async {
     final token = await _storage.read(key: _tokenKey);
 
@@ -164,6 +178,11 @@ class UsuarioService {
     if (email != null) corpo['email'] = email;
     if (senha != null) corpo['senha'] = senha;
     if (responsavel != null) corpo['responsavel'] = responsavel;
+    if (dataNascimento != null) corpo['dataNascimento'] = dataNascimento;
+    if (perguntaSeguranca != null)
+      corpo['perguntaSeguranca'] = perguntaSeguranca;
+    if (respostaSeguranca != null)
+      corpo['respostaSeguranca'] = respostaSeguranca;
 
     final response = await http.put(
       Uri.parse('$_baseUrl/usuario/$id'),
@@ -209,6 +228,101 @@ class UsuarioService {
 
     final dados = jsonDecode(response.body);
     throw Exception(dados['erro'] ?? 'Erro ao deletar usuário');
+  }
+
+  static Future<void> alterarSenha({
+    required String senhaAtual,
+    required String novaSenha,
+    required String confirmarNovaSenha,
+  }) async {
+    final token = await _storage.read(key: _tokenKey);
+    final userId = await _getStoredUserId();
+
+    if (userId == null) {
+      throw Exception('Usuário não identificado. Faça login novamente.');
+    }
+
+    final response = await http.put(
+      Uri.parse('$_baseUrl/usuario/$userId/alterar-senha'),
+      headers: {
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: jsonEncode({
+        'senhaAtual': senhaAtual,
+        'novaSenha': novaSenha,
+        'confirmarNovaSenha': confirmarNovaSenha,
+      }),
+    );
+
+    final dados = jsonDecode(response.body);
+
+    if (response.statusCode == 200) {
+      return;
+    }
+
+    if (response.statusCode == 401) {
+      await _storage.delete(key: 'token');
+      throw Exception('Senha atual incorreta.');
+    }
+
+    throw Exception(dados['erro'] ?? 'Erro ao alterar senha');
+  }
+
+  static Future<String> obterPerguntaSeguranca(String email) async {
+    final response = await http.get(
+      Uri.parse(
+        '$_baseUrl/recuperar-senha/pergunta?email=${Uri.encodeQueryComponent(email)}',
+      ),
+      headers: {'Content-Type': 'application/json'},
+    );
+
+    if (response.body.trim().isEmpty) {
+      throw Exception(
+        'Resposta vazia do servidor ao buscar pergunta de segurança',
+      );
+    }
+
+    final dados = jsonDecode(response.body);
+
+    if (response.statusCode == 200) {
+      final pergunta = dados['perguntaSeguranca'];
+      if (pergunta is String && pergunta.trim().isNotEmpty) {
+        return pergunta.trim();
+      }
+      if (pergunta != null) {
+        return pergunta.toString().trim();
+      }
+      return '';
+    }
+
+    throw Exception(dados['erro'] ?? 'Erro ao buscar pergunta de segurança');
+  }
+
+  static Future<void> recuperarSenha({
+    required String email,
+    required String novaSenha,
+    required String confirmarNovaSenha,
+    required String respostaSeguranca,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$_baseUrl/recuperar-senha'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'email': email,
+        'novaSenha': novaSenha,
+        'confirmarNovaSenha': confirmarNovaSenha,
+        'respostaSeguranca': respostaSeguranca,
+      }),
+    );
+
+    final dados = jsonDecode(response.body);
+
+    if (response.statusCode == 200) {
+      return;
+    }
+
+    throw Exception(dados['erro'] ?? 'Erro ao recuperar senha');
   }
 
   static Future<Usuario> buscarUsuarioLogado() async {
