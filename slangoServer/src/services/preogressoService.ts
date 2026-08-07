@@ -1,4 +1,5 @@
 import { supabase } from '../dbConnection';
+import { verificarEDesbloquearItens } from './itemService';
 
 const TABELA_PROGRESSO = 'user_mundo';
 const TABELA_MUNDO = 'Mundo';
@@ -56,10 +57,7 @@ export async function buscarGiriasAprendidas(idMundo: number, idUser: number): P
         .filter(Boolean);
 }
 
-/**
- * Busca o progresso (%) e a quantidade aprendida de um usuário num mundo.
- * Útil pra tela do mapa mostrar a barra de progresso real em vez de valor fixo.
- */
+
 export async function buscarProgressoDoUsuario(
     idMundo: number,
     idUser: number
@@ -78,11 +76,7 @@ export async function buscarProgressoDoUsuario(
     return { progresso: data.Progresso ?? 0, quantidadeAprendida: data.Quantidade_Aprendida ?? 0 };
 }
 
-/**
- * Chamada ao final do quiz (endpoint POST /mundos/resultado).
- * Só grava progresso se o usuário acertou ≥ 80% da rodada (padrão 8/9 ou 9/9).
- * Faz merge com o que ele já tinha aprendido antes, sem duplicar gírias.
- */
+
 export async function salvarProgressoUsuario(
     nomeDoMundo: string,
     idUser: number,
@@ -97,31 +91,23 @@ export async function salvarProgressoUsuario(
         throw new Error(`Mundo '${nomeDoMundo}' não encontrado.`);
     }
 
-    // Nota da rodada atual (sempre sobre 9) — só decide SE o progresso conta ou não.
     const percentualAcerto = pontuacaoObtida / pontuacaoMaxima;
 
-    // Se não atingir 80%, não salva progresso (o progresso geral do mundo não muda)
     if (percentualAcerto < 0.8) {
         return { salvou: false, percentualAcerto, progressoMundo: null };
     }
 
-    // 1. Puxa o que ele já aprendeu (isso retorna um array de strings)
     const giriasJaAprendidas = await buscarGiriasAprendidas(idMundo, idUser);
 
-    // 2. Garante que os itens novos recebidos do Flutter também sejam strings 
+
     const rodadaStrings = giriasDaRodada.map(String);
 
-    // 3. Mescla as duas listas e remove duplicatas com Set
-    // Ex: ["1", "2"] + ["2", "3", "4"] = ["1", "2", "3", "4"]
     const novaListaGirias = Array.from(new Set([...giriasJaAprendidas, ...rodadaStrings]));
 
-    // 4. Progresso REAL do mundo = quantas gírias já aprendeu / total de gírias que existem no mundo.
-    // Isso é o que alimenta a barrinha de progresso no mapa — não é a nota do quiz.
     const progressoMundo = totalGiriasMundo > 0
         ? novaListaGirias.length / totalGiriasMundo
         : 0;
 
-    // 5. Salva a nova quantidade (A quantidade vai acumulando perfeitamente)
     const payload = {
         id_Mundo: idMundo,
         id_User: idUser,
@@ -137,6 +123,12 @@ export async function salvarProgressoUsuario(
     if (error) {
         console.error('Erro ao salvar progresso:', error);
         throw new Error('Não foi possível salvar o progresso.');
+    }
+
+    try {
+        await verificarEDesbloquearItens(idUser, idMundo, progressoMundo);
+    } catch (erroDesbloqueio) {
+        console.error('Erro ao desbloquear itens do mundo:', erroDesbloqueio);
     }
 
     return { salvou: true, percentualAcerto, progressoMundo };

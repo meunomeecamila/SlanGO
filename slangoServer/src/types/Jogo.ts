@@ -50,6 +50,7 @@ export interface Usuario {
   Data: string; // ou Date, dependendo de como o driver do banco devolve
   perguntaSeguranca: string;
   respostaSeguranca: string;
+  id_Astronauta: number | null; // avatar escolhido livremente pelo usuário
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */
@@ -80,4 +81,34 @@ export interface UsuarioPersonagem {
 
 export interface ColecaoDeMundos {
   [chaveDinamica: string]: Girias[];
+}
+
+// ── Avatar (Astronauta) e Itens desbloqueáveis ──
+
+/** Astronauta disponível como avatar. Qualquer usuário pode escolher qualquer um, a qualquer momento. */
+export interface Astronauta {
+  id: number;
+  nome: string;
+  url_astronauta: string;
+}
+
+/** Item cosmético do perfil. Cada item pertence a um Mundo e é desbloqueado ao atingir o limiar de progresso nesse mundo. */
+export interface Item {
+  id: number;
+  nome: string;
+  url_item: string;
+  id_Mundo: number;
+}
+
+/** Espelha a tabela de junção user_item (posse + item equipado) */
+export interface UsuarioItem {
+  id_item: number;
+  id_user: number;
+  equipado: boolean;
+}
+
+/** Item com o status do usuário logado, usado na resposta de GET /perfil/itens */
+export interface ItemComStatus extends Item {
+  desbloqueado: boolean;
+  equipado: boolean;
 }
