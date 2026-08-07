@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'cores.dart';
 import 'texto.dart';
-import 'background.dart';
+import '../final/Particulas.dart';
 
 class ConfiguracoesScreen extends StatefulWidget {
   const ConfiguracoesScreen({super.key});
@@ -13,22 +13,64 @@ class ConfiguracoesScreen extends StatefulWidget {
 
 class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
   // TODO: substituir pelos valores reais vindos do usuário logado.
-  final TextEditingController _nomeController = TextEditingController(text: "Mariana");
-  final TextEditingController _idadeController = TextEditingController(text: "21");
-  final TextEditingController _tipoContaController = TextEditingController(text: "Gratuita");
+  final TextEditingController _nomeController =
+      TextEditingController(text: "Mariana");
+  final TextEditingController _dataNascimentoController =
+      TextEditingController(text: "");
+  final TextEditingController _tipoContaController =
+      TextEditingController(text: "Gratuita");
+
+  DateTime? _dataNascimento;
 
   @override
   void dispose() {
     _nomeController.dispose();
-    _idadeController.dispose();
+    _dataNascimentoController.dispose();
     _tipoContaController.dispose();
     super.dispose();
+  }
+
+  String _formatarData(DateTime data) {
+    final dia = data.day.toString().padLeft(2, '0');
+    final mes = data.month.toString().padLeft(2, '0');
+    return "$dia/$mes/${data.year}";
+  }
+
+  Future<void> _selecionarDataNascimento() async {
+    final agora = DateTime.now();
+    final dataEscolhida = await showDatePicker(
+      context: context,
+      initialDate: _dataNascimento ?? DateTime(agora.year - 18, agora.month, agora.day),
+      firstDate: DateTime(agora.year - 100),
+      lastDate: agora,
+      helpText: "Data de nascimento",
+      builder: (context, child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme: const ColorScheme.dark(
+              primary: AppColors.cyan,
+              onPrimary: Colors.white,
+              surface: AppColors.card,
+              onSurface: AppColors.textPrimary,
+            ),
+          ),
+          child: child!,
+        );
+      },
+    );
+
+    if (dataEscolhida != null) {
+      setState(() {
+        _dataNascimento = dataEscolhida;
+        _dataNascimentoController.text = _formatarData(dataEscolhida);
+      });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BackgroundEspaco(
+      body: ParticulasFundo(
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -42,15 +84,33 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Text("Geral", style: AppText.cardSubtitulo(0.9)),
+                        const SizedBox(height: 12),
                         _campoEditavel(label: "Nome", controller: _nomeController),
                         const SizedBox(height: 16),
-                        _campoEditavel(
-                          label: "Idade",
-                          controller: _idadeController,
-                          teclado: TextInputType.number,
-                        ),
+                        _campoData(),
                         const SizedBox(height: 16),
-                        _campoEditavel(label: "Tipo de conta", controller: _tipoContaController, editavel: false),
+                        _campoEditavel(
+                          label: "Tipo de conta",
+                          controller: _tipoContaController,
+                          editavel: false,
+                        ),
+
+                        const SizedBox(height: 28),
+                        Text("Segurança", style: AppText.cardSubtitulo(0.9)),
+                        const SizedBox(height: 12),
+                        _linhaAcao(
+                          icone: Icons.lock_outline,
+                          texto: "Alterar senha",
+                          onTap: () => _abrirDialogoSenha(context),
+                        ),
+                        const SizedBox(height: 12),
+                        _linhaAcao(
+                          icone: Icons.email_outlined,
+                          texto: "Alterar e-mail",
+                          onTap: () => _abrirDialogoEmail(context),
+                        ),
+
                         const SizedBox(height: 32),
                         _botaoAcao(
                           texto: "Sair da conta",
@@ -130,6 +190,76 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
     );
   }
 
+  /// Campo de "Data de nascimento" — não permite digitação livre,
+  /// abre o seletor de data do sistema ao tocar.
+  Widget _campoData() {
+    return InkWell(
+      borderRadius: BorderRadius.circular(16),
+      onTap: _selecionarDataNascimento,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+        decoration: BoxDecoration(
+          color: AppColors.card,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Data de nascimento", style: AppText.cardSubtitulo(0.85)),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 6),
+                    child: Text(
+                      _dataNascimentoController.text.isEmpty
+                          ? "Selecionar data"
+                          : _dataNascimentoController.text,
+                      style: AppText.cardTitulo(0.95).copyWith(
+                        color: _dataNascimentoController.text.isEmpty
+                            ? AppColors.textSecondary
+                            : AppColors.textPrimary,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.calendar_today, color: AppColors.cyan, size: 18),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _linhaAcao({
+    required IconData icone,
+    required String texto,
+    required VoidCallback onTap,
+  }) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(16),
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        decoration: BoxDecoration(
+          color: AppColors.card,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Row(
+          children: [
+            Icon(icone, color: AppColors.cyan, size: 20),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(texto, style: AppText.cardTitulo(0.95)),
+            ),
+            const Icon(Icons.chevron_right, color: AppColors.textSecondary, size: 20),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _botaoAcao({
     required String texto,
     required Color cor,
@@ -149,6 +279,125 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         child: Text(
           texto,
           style: AppText.botao(0.95).copyWith(color: cor),
+        ),
+      ),
+    );
+  }
+
+  void _abrirDialogoSenha(BuildContext context) {
+    final senhaAtualController = TextEditingController();
+    final novaSenhaController = TextEditingController();
+    final confirmarSenhaController = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        backgroundColor: AppColors.card,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: Text("Alterar senha", style: AppText.cardTitulo(1)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _campoDialogo(
+              controller: senhaAtualController,
+              rotulo: "Senha atual",
+              oculto: true,
+            ),
+            const SizedBox(height: 12),
+            _campoDialogo(
+              controller: novaSenhaController,
+              rotulo: "Nova senha",
+              oculto: true,
+            ),
+            const SizedBox(height: 12),
+            _campoDialogo(
+              controller: confirmarSenhaController,
+              rotulo: "Confirmar nova senha",
+              oculto: true,
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: Text("Cancelar", style: AppText.botao(0.85).copyWith(color: AppColors.textSecondary)),
+          ),
+          TextButton(
+            onPressed: () {
+              // TODO: validar e enviar a troca de senha pro backend
+              Navigator.of(context).pop();
+            },
+            child: Text("Salvar", style: AppText.botao(0.85).copyWith(color: AppColors.cyan)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _abrirDialogoEmail(BuildContext context) {
+    final novoEmailController = TextEditingController();
+    final senhaController = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        backgroundColor: AppColors.card,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: Text("Alterar e-mail", style: AppText.cardTitulo(1)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _campoDialogo(
+              controller: novoEmailController,
+              rotulo: "Novo e-mail",
+              teclado: TextInputType.emailAddress,
+            ),
+            const SizedBox(height: 12),
+            _campoDialogo(
+              controller: senhaController,
+              rotulo: "Senha atual",
+              oculto: true,
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: Text("Cancelar", style: AppText.botao(0.85).copyWith(color: AppColors.textSecondary)),
+          ),
+          TextButton(
+            onPressed: () {
+              // TODO: validar e enviar a troca de e-mail pro backend
+              Navigator.of(context).pop();
+            },
+            child: Text("Salvar", style: AppText.botao(0.85).copyWith(color: AppColors.cyan)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _campoDialogo({
+    required TextEditingController controller,
+    required String rotulo,
+    bool oculto = false,
+    TextInputType teclado = TextInputType.text,
+  }) {
+    return TextField(
+      controller: controller,
+      obscureText: oculto,
+      keyboardType: teclado,
+      style: AppText.cardTitulo(0.9),
+      decoration: InputDecoration(
+        labelText: rotulo,
+        labelStyle: AppText.cardSubtitulo(0.85),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.textSecondary),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.cyan),
         ),
       ),
     );

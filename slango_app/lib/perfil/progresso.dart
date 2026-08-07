@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'cores.dart';
 import 'texto.dart';
-import 'background.dart';
+import '../final/Particulas.dart';
 import 'models.dart';
 
 class ProgressoScreen extends StatelessWidget {
@@ -13,7 +13,7 @@ class ProgressoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BackgroundEspaco(
+      body: ParticulasFundo(
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -70,59 +70,69 @@ class ProgressoScreen extends StatelessWidget {
   }
 
   Widget _cardMundo(ProgressoMundo mundo) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppColors.card,
-        borderRadius: BorderRadius.circular(18),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.public, color: AppColors.cyan, size: 22),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(mundo.nome, style: AppText.cardTitulo(1)),
-              ),
-              Text(
-                "${mundo.girasAprendidas}/${mundo.totalGirias}",
-                style: AppText.cardSubtitulo(0.9),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: LinearProgressIndicator(
-              value: mundo.progresso,
-              minHeight: 8,
-              backgroundColor: AppColors.disabled,
-              valueColor: const AlwaysStoppedAnimation(AppColors.cyan),
-            ),
-          ),
-          const SizedBox(height: 12),
-          SizedBox(
-            width: double.infinity,
-            height: 38,
-            child: OutlinedButton(
-              onPressed: () {
-                // TODO: navegar para a tela do mundo quando o backend estiver pronto
-              },
-              style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: AppColors.primary, width: 1.5),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+    final porcentagem = (mundo.progresso * 100).round();
+
+    return InkWell(
+      borderRadius: BorderRadius.circular(18),
+      onTap: () {
+        // TODO: navegar para a tela do mundo quando o backend estiver pronto
+      },
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: AppColors.card,
+          borderRadius: BorderRadius.circular(18),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                // Selo circular com a porcentagem no lugar do ícone de globo
+                SizedBox(
+                  width: 44,
+                  height: 44,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      CircularProgressIndicator(
+                        value: mundo.progresso,
+                        strokeWidth: 3.5,
+                        backgroundColor: AppColors.disabled,
+                        valueColor: const AlwaysStoppedAnimation(AppColors.cyan),
+                      ),
+                      Text(
+                        "$porcentagem%",
+                        style: AppText.cardSubtitulo(0.68).copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.textPrimary,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              child: Text(
-                "Entrar...",
-                style: AppText.botao(0.9).copyWith(color: AppColors.primary),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(mundo.nome, style: AppText.cardTitulo(1)),
+                ),
+                Text(
+                  "${mundo.girasAprendidas}/${mundo.totalGirias}",
+                  style: AppText.cardSubtitulo(0.9),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: LinearProgressIndicator(
+                value: mundo.progresso,
+                minHeight: 8,
+                backgroundColor: AppColors.disabled,
+                valueColor: const AlwaysStoppedAnimation(AppColors.cyan),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
