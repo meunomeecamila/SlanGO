@@ -4,7 +4,8 @@ import {
     buscarUsuarioPorId,
     atualizarUsuario,
     deletarUsuario,
-    dataNascimentoValida 
+    dataNascimentoValida,
+    alterarSenhaUsuario
 } from '../services/usuarioService';
 import { emailValido, senhaValida } from '../utils/validador';
 
@@ -88,6 +89,36 @@ export const atualizarUsuarioController = async (req: Request, res: Response) =>
         }
 
         res.status(200).json({ sucesso: true, usuario: usuarioAtualizado });
+    } catch (error: any) {
+        res.status(500).json({ erro: error.message });
+    }
+};
+
+export const alterarSenhaController = async (req: Request, res: Response) => {
+    try {
+        const { id } = req.params;
+        const { senhaAtual, novaSenha, confirmarNovaSenha } = req.body;
+
+        if (!senhaAtual || !novaSenha || !confirmarNovaSenha) {
+            return res.status(400).json({ erro: 'Todos os campos são obrigatórios.' });
+        }
+
+        if (novaSenha !== confirmarNovaSenha) {
+            return res.status(400).json({ erro: 'As senhas não coincidem.' });
+        }
+
+        const resultadoSenha = senhaValida(novaSenha);
+        if (!resultadoSenha.valida) {
+            return res.status(400).json({ erro: resultadoSenha.erro });
+        }
+
+        const senhaAlterada = await alterarSenhaUsuario(Number(id), senhaAtual, novaSenha);
+
+        if (!senhaAlterada) {
+            return res.status(401).json({ erro: 'Senha atual incorreta.' });
+        }
+
+        res.status(200).json({ sucesso: true, mensagem: 'Senha alterada com sucesso.' });
     } catch (error: any) {
         res.status(500).json({ erro: error.message });
     }

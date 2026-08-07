@@ -140,6 +140,30 @@ export async function deletarUsuario(id: number): Promise<boolean> {
     return (count ?? 0) > 0;
 }
 
+export async function alterarSenhaUsuario(id: number, senhaAtual: string, novaSenha: string): Promise<boolean> {
+    const { data, error } = await supabase
+        .from('User')
+        .select('Senha')
+        .eq('id', id)
+        .maybeSingle();
+
+    if (error) throw new Error(error.message);
+    if (!data) return false;
+
+    const senhaCorreta = await bcrypt.compare(senhaAtual, data.Senha);
+    if (!senhaCorreta) return false;
+
+    const senhaHash = await bcrypt.hash(novaSenha, SALT_ROUNDS);
+
+    const { error: errorAtualizacao } = await supabase
+        .from('User')
+        .update({ Senha: senhaHash })
+        .eq('id', id);
+
+    if (errorAtualizacao) throw new Error(errorAtualizacao.message);
+    return true;
+}
+
 export async function validarCredenciais(Email: string, senhaDigitada: string): Promise<UsuarioPublico | null> {
     const usuario = await buscarUsuarioPorEmail(Email);
     if (!usuario) return null;
