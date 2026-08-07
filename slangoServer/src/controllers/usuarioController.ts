@@ -71,13 +71,16 @@ export const buscarUsuarioController = async (req: Request, res: Response) => {
 export const atualizarUsuarioController = async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
-        const { nome, email, senha, responsavel } = req.body;
+        const { nome, email, senha, responsavel, dataNascimento, perguntaSeguranca, respostaSeguranca } = req.body;
 
         const usuarioAtualizado = await atualizarUsuario(Number(id), {
             Nome: nome,
             Email: email,
             Senha: senha,
-            Responsavel: responsavel
+            Responsavel: responsavel,
+            Data: dataNascimento,
+            perguntaSeguranca,
+            respostaSeguranca,
         });
 
         if (!usuarioAtualizado) {

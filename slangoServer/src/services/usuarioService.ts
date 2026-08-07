@@ -6,7 +6,7 @@ const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
 
 type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>;
-type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data'>>;
+type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
     const { Senha, ...usuarioPublico } = usuario;
@@ -112,7 +112,11 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
     const camposParaAtualizar: Record<string, any> = {};
 
     if (dados.Nome !== undefined) camposParaAtualizar.Nome = dados.Nome;
+    if (dados.Email !== undefined) camposParaAtualizar.Email = dados.Email;
     if (dados.Responsavel !== undefined) camposParaAtualizar.Responsavel = dados.Responsavel;
+    if (dados.Data !== undefined) camposParaAtualizar.Data = dados.Data;
+    if (dados.perguntaSeguranca !== undefined) camposParaAtualizar.perguntaSeguranca = dados.perguntaSeguranca;
+    if (dados.respostaSeguranca !== undefined) camposParaAtualizar.respostaSeguranca = dados.respostaSeguranca;
     if (dados.Senha) camposParaAtualizar.Senha = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 
     const { data, error } = await supabase
