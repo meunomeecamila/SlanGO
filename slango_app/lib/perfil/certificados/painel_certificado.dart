@@ -35,14 +35,7 @@ class PainelCertificado extends StatelessWidget {
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                certificado.corPrimaria.withOpacity(0.35),
-                AppColors.background,
-              ],
-            ),
+            color: AppColors.background,
             borderRadius: const BorderRadius.vertical(
               top: Radius.circular(28),
             ),

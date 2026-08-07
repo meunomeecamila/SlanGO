@@ -78,8 +78,7 @@ class CardCertificadoMundo extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      'Explore os cantinhos deste mundo. '
-                      'Quando chegar a 100%, volte aqui!',
+                      'Quando o mundo chegar a 100%, volte aqui!',
                       textAlign: TextAlign.center,
                       style: AppText.cardSubtitulo(0.95).copyWith(
                         color: Colors.white,
