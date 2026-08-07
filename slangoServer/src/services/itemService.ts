@@ -17,34 +17,21 @@ export async function verificarEDesbloquearItens(
   idMundo: number,
   progresso: number
 ): Promise<void> {
-  // Se não tem nem 50%, não ganha nada, pode sair da função
-  if (progresso < 0.5) return;
+  if (progresso < LIMIAR_DESBLOQUEIO) return;
 
-  // Busca os itens do mundo, ordenados pelo ID (para garantir que o mais antigo vem primeiro)
   const { data: itensDoMundo, error: erroItens } = await supabase
     .from('Item')
     .select('id')
-    .eq('id_Mundo', idMundo)
-    .order('id', { ascending: true });
+    .eq('id_Mundo', idMundo);
 
   if (erroItens) throw new Error(erroItens.message);
   if (!itensDoMundo || itensDoMundo.length === 0) return;
 
-  let itensParaDesbloquear: { id: number }[] = [];
-
-  if (progresso >= 1.0) {
-    itensParaDesbloquear = itensDoMundo;
-  } else if (progresso >= 0.5) {
-    itensParaDesbloquear = [itensDoMundo[0]];
-  }
-  if (itensParaDesbloquear.length === 0) return;
-
-  const linhas = itensParaDesbloquear.map((item) => ({
+  const linhas = itensDoMundo.map((item) => ({
     id_item: item.id,
     id_user: idUser,
   }));
 
-  // Salva usando upsert (se já tiver o item, o ignoreDuplicates cuida para não dar erro)
   const { error: erroInsercao } = await supabase
     .from('user_item')
     .upsert(linhas, { onConflict: 'id_item,id_user', ignoreDuplicates: true });
