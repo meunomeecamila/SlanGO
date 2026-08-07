@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../service/MundoService.dart';
 import '../service/usuarioService.dart';
 import '../user/User.dart';
+import 'certificados/aba_certificados.dart';
 import 'configuracoes.dart';
 import 'progresso.dart';
 import 'models.dart';
@@ -471,7 +472,8 @@ class _PerfilScreenState extends State<PerfilScreen> {
       case _AbaPerfil.itens:
         return _buildGridItens(widget.itens);
       case _AbaPerfil.certificados:
-        return _buildGridCertificados(widget.certificados);
+        // Aba de Certificados: um card por mundo, com bloqueio por progresso.
+        return AbaCertificados(mundos: _mundosProgresso);
     }
   }
 
@@ -548,62 +550,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
           ),
         );
       },
-    );
-  }
-
-  Widget _buildGridCertificados(List<CertificadoPerfil> lista) {
-    if (lista.isEmpty) {
-      return _vazio("Nenhum certificado conquistado ainda.");
-    }
-    return Column(
-      children: lista
-          .map(
-            (c) => Container(
-              margin: const EdgeInsets.only(bottom: 10),
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: AppColors.card,
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Row(
-                children: [
-                  Image.asset(
-                    c.iconAsset,
-                    width: 36,
-                    height: 36,
-                    errorBuilder: (_, __, ___) => const Icon(
-                      Icons.emoji_events,
-                      color: AppColors.cyan,
-                      size: 32,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      c.nome,
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                      style: AppText.cardTitulo(0.9),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          )
-          .toList(),
-    );
-  }
-
-  Widget _vazio(String texto) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 24),
-      child: Center(
-        child: Text(
-          texto,
-          textAlign: TextAlign.center,
-          style: AppText.subtitulo(1),
-        ),
-      ),
     );
   }
 }
