@@ -326,7 +326,7 @@ class SlangQuizScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Entendi! Fazer Pergunta',
+              'Entendi!',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'fase/fase.dart';
+import 'mapa/mapa.dart';
 import 'service/MundoService.dart';
 import 'shared/widgets/fundo_espacial.dart';
 
@@ -186,13 +187,12 @@ class _QuizRunnerState extends State<_QuizRunner>
     });
   }
 
-  // ── Tela de resultado final ──
- // ── Tela de resultado final e salvamento ──
+  // ── Tela de resultado final e salvamento ──
   void _mostrarResultado() async {
     // 1. Extrai APENAS os 3 IDs únicos e converte para String
     final idsUnicos = widget.perguntas
-        .map((fase) => fase.giriaId.toString()) 
-        .toSet() 
+        .map((fase) => fase.giriaId.toString())
+        .toSet()
         .toList();
 
     // 2. Envia para o backend
@@ -201,9 +201,9 @@ class _QuizRunnerState extends State<_QuizRunner>
       pontuacaoFinal: _acertos,
       girias: idsUnicos, // Agora envia exatamente ["1", "2", "3"]
     ).then((resultado) {
-      
+
     }).catchError((erro) {
-      
+
     });
 
     // 3. Navega para a tela final
@@ -603,7 +603,7 @@ class _QuizRunnerState extends State<_QuizRunner>
 }
 
 // ─────────────────────────────────────────────
-// _ResultadoScreen — tela final com placar
+// _ResultadoScreen — tela final estilo "certificado"
 // ─────────────────────────────────────────────
 class _ResultadoScreen extends StatelessWidget {
   final int acertos;
@@ -616,36 +616,48 @@ class _ResultadoScreen extends StatelessWidget {
     required this.nomeMundo,
   });
 
-  static const Color bgTop = Color(0xFF130A24);
-  static const Color bgBottom = Color(0xFF1F1035);
-  static const Color cardColor = Color(0xFF2A1B47);
+  static const Color bgTop = Color(0xFF0E0821);
+  static const Color bgBottom = Color(0xFF1B0F33);
+  static const Color cardColor = Color(0xFF241640);
   static const Color roxo = Color(0xFF7C5CFF);
   static const Color roxoClaro = Color(0xFFB9A6FF);
   static const Color verde = Color(0xFF4ADE80);
   static const Color vermelho = Color(0xFFF87171);
   static const Color amarelo = Color(0xFFFBBF24);
 
+  int get _erros => total - acertos;
+
+  double get _pct => total == 0 ? 0.0 : acertos / total;
+
   Color get _corResultado {
-    final pct = acertos / total;
-    if (pct >= 0.8) return verde;
-    if (pct >= 0.5) return amarelo;
+    if (_pct >= 0.8) return verde;
+    if (_pct >= 0.5) return amarelo;
     return vermelho;
   }
 
   String get _mensagem {
-    final pct = acertos / total;
-    if (pct == 1.0) return '🏆 Perfeito! Você zerou!';
-    if (pct >= 0.8) return '🎉 Muito bem!';
-    if (pct >= 0.5) return '👍 Bom esforço!';
-    return '📚 Continue praticando!';
+    if (_pct == 1.0) return 'Você mandou muito bem nessa jornada!';
+    if (_pct >= 0.8) return 'Você foi muito bem nessa jornada!';
+    if (_pct >= 0.5) return 'Bom esforço! Continue evoluindo.';
+    return 'Continue praticando, você vai longe!';
   }
+
+  String get _nomeMundoFormatado => nomeMundo.isEmpty
+      ? ''
+      : '${nomeMundo[0].toUpperCase()}${nomeMundo.substring(1)}';
+
+  /// 1 a 5 estrelas, proporcional ao aproveitamento.
+  int get _estrelas => (1 + (_pct * 4)).clamp(1, 5).round();
+
+  /// Caminho da imagem do mundo — segue o mesmo padrão usado na InicioScreen
+  /// (images/mundo.png, images/kpop.png, images/esportes.png, etc).
+  String get _imagemMundo => 'images/${nomeMundo.toLowerCase()}.png';
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final double scale = (size.width / 390).clamp(0.9, 1.25);
     final double heightScale = (size.height / 844).clamp(0.85, 1.35);
-    final cor = _corResultado;
 
     return Scaffold(
       backgroundColor: bgBottom,
@@ -664,124 +676,208 @@ class _ResultadoScreen extends StatelessWidget {
           ),
           const Positioned.fill(child: FundoEspacial(interativo: false)),
           SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24 * scale),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+            child: Stack(
               children: [
-                // Badge do mundo
+                // ── Conteúdo centralizado verticalmente ──
                 Center(
-                  child: Container(
+                  child: SingleChildScrollView(
+                    physics: const BouncingScrollPhysics(),
                     padding: EdgeInsets.symmetric(
-                      horizontal: 14 * scale,
-                      vertical: 6 * scale,
+                      horizontal: 26 * scale,
+                      vertical: 20 * heightScale,
                     ),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: roxo.withOpacity(0.6)),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: Text(
-                      'Mundo ${nomeMundo[0].toUpperCase()}${nomeMundo.substring(1)}',
-                      style: TextStyle(
-                        color: roxoClaro,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 12 * scale,
+                    child: TweenAnimationBuilder<double>(
+                      tween: Tween(begin: 0, end: 1),
+                      duration: const Duration(milliseconds: 550),
+                      curve: Curves.easeOutCubic,
+                      builder: (context, valor, child) {
+                        return Opacity(
+                          opacity: valor,
+                          child: Transform.translate(
+                            offset: Offset(0, (1 - valor) * 24),
+                            child: child,
+                          ),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          // ── Emoji de festa ──
+                          Center(
+                            child: Text(
+                              '🎉',
+                              style: TextStyle(fontSize: 46 * scale),
+                            ),
+                          ),
+                          SizedBox(height: 14 * heightScale),
+
+                          // ── Título ──
+                          Text(
+                            'Parabéns, Astronauta!',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.baloo2(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w800,
+                              fontSize: 25 * scale,
+                            ),
+                          ),
+
+                          SizedBox(height: 26 * heightScale),
+
+                          // ── Card "certificado" ──
+                          Container(
+                            width: double.infinity,
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 20 * scale,
+                              vertical: 26 * scale,
+                            ),
+                            decoration: BoxDecoration(
+                              color: cardColor,
+                              borderRadius: BorderRadius.circular(26),
+                              border: Border.all(
+                                color: roxoClaro.withOpacity(0.35),
+                                width: 1.4,
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: roxo.withOpacity(0.18),
+                                  blurRadius: 26,
+                                  spreadRadius: 2,
+                                ),
+                              ],
+                            ),
+                            child: Column(
+                              children: [
+                                // Foto do mundo
+                                Transform.translate(
+                                  offset: Offset(0, -10 * scale),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(
+                                      16 * scale,
+                                    ),
+                                    child: Container(
+                                      width: 84 * scale,
+                                      height: 84 * scale,
+                                      color: bgTop,
+                                      child: Image.asset(
+                                        _imagemMundo,
+                                        fit: BoxFit.cover,
+                                        errorBuilder: (_, __, ___) => Icon(
+                                          Icons.public_rounded,
+                                          color: roxoClaro,
+                                          size: 34 * scale,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                                SizedBox(height: 10 * scale),
+
+                                // ── Placar de acertos e erros ──
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    _buildPlacarItem(
+                                      icon: Icons.check_circle_rounded,
+                                      cor: verde,
+                                      valor: acertos,
+                                      label: 'Acertos',
+                                      scale: scale,
+                                    ),
+                                    SizedBox(width: 18 * scale),
+                                    Container(
+                                      width: 1,
+                                      height: 44 * scale,
+                                      color: Colors.white12,
+                                    ),
+                                    SizedBox(width: 18 * scale),
+                                    _buildPlacarItem(
+                                      icon: Icons.cancel_rounded,
+                                      cor: vermelho,
+                                      valor: _erros,
+                                      label: 'Erros',
+                                      scale: scale,
+                                    ),
+                                  ],
+                                ),
+
+                                SizedBox(height: 16 * scale),
+
+                                Text(
+                                  '${(_pct * 100).round()}% de aproveitamento',
+                                  style: TextStyle(
+                                    color: Colors.white54,
+                                    fontSize: 12 * scale,
+                                  ),
+                                ),
+
+                                SizedBox(height: 14 * scale),
+
+                                // ── Estrelas de desempenho ──
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: List.generate(5, (i) {
+                                    final preenchida = i < _estrelas;
+                                    return Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 2 * scale,
+                                      ),
+                                      child: Icon(
+                                        preenchida
+                                            ? Icons.star_rounded
+                                            : Icons.star_border_rounded,
+                                        color: preenchida
+                                            ? amarelo
+                                            : Colors.white24,
+                                        size: 22 * scale,
+                                      ),
+                                    );
+                                  }),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          SizedBox(height: 20 * heightScale),
+
+                          Text(
+                            _mensagem,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white70,
+                              fontSize: 13.5 * scale,
+                              height: 1.4,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
-                SizedBox(height: 32 * heightScale),
 
-                // Placar circular
-                Center(
-                  child: Container(
-                    width: 130 * scale,
-                    height: 130 * scale,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: cor.withOpacity(0.12),
-                      border: Border.all(color: cor, width: 3),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          '$acertos/$total',
-                          style: GoogleFonts.alfaSlabOne(
-                            color: cor,
-                            fontSize: 36 * scale,
-                          ),
-                        ),
-                        Text(
-                          'acertos',
-                          style: TextStyle(
-                            color: cor.withOpacity(0.8),
-                            fontSize: 13 * scale,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(height: 28 * heightScale),
-
-                // Mensagem
-                Text(
-                  _mensagem,
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.baloo2(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 24 * scale,
-                  ),
-                ),
-                SizedBox(height: 10 * heightScale),
-
-                // Detalhes
-                Container(
-                  padding: EdgeInsets.all(16 * scale),
-                  decoration: BoxDecoration(
-                    color: cardColor,
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      _buildStat('✅ Corretas', '$acertos', verde, scale),
-                      Container(width: 1, height: 40, color: Colors.white12),
-                      _buildStat(
-                        '❌ Erradas',
-                        '${total - acertos}',
-                        vermelho,
-                        scale,
-                      ),
-                      Container(width: 1, height: 40, color: Colors.white12),
-                      _buildStat('📊 Total', '$total', roxoClaro, scale),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 36 * heightScale),
-
-                // Botão voltar ao mapa
-                SizedBox(
-                  height: 56 * scale,
-                  child: ElevatedButton(
-                    onPressed: () =>
+                // ── Botão pequeno fixo no canto superior direito ──
+                Positioned(
+                  top: 4 * heightScale,
+                  right: 6 * scale,
+                  child: GestureDetector(
+                    onTap: () =>
                         Navigator.of(context).popUntil((r) => r.isFirst),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: roxo,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
+                    child: Container(
+                      padding: EdgeInsets.all(8 * scale),
+                      decoration: BoxDecoration(
+                        color: cardColor,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: roxoClaro.withOpacity(0.35),
+                          width: 1.2,
+                        ),
                       ),
-                      elevation: 0,
-                    ),
-                    child: Text(
-                      'Voltar ao Mapa 🗺️',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16 * scale,
+                      child: Icon(
+                        Icons.close_rounded,
+                        color: roxoClaro,
+                        size: 18 * scale,
                       ),
                     ),
                   ),
@@ -789,28 +885,35 @@ class _ResultadoScreen extends StatelessWidget {
               ],
             ),
           ),
-          ),
         ],
       ),
     );
   }
 
-  Widget _buildStat(String label, String valor, Color cor, double scale) {
+  Widget _buildPlacarItem({
+    required IconData icon,
+    required Color cor,
+    required int valor,
+    required String label,
+    required double scale,
+  }) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        Icon(icon, color: cor, size: 26 * scale),
+        SizedBox(height: 6 * scale),
         Text(
-          valor,
+          '$valor',
           style: TextStyle(
-            color: cor,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
             fontSize: 22 * scale,
           ),
         ),
-        const SizedBox(height: 2),
+        SizedBox(height: 2 * scale),
         Text(
           label,
-          style: TextStyle(color: Colors.white54, fontSize: 11 * scale),
+          style: TextStyle(color: Colors.white60, fontSize: 11.5 * scale),
         ),
       ],
     );
