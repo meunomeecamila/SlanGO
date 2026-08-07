@@ -1,18 +1,21 @@
 import { Router } from "express";
+import { autenticar, bloquearConvidado } from '../middlewares/authMiddleware';
 import {
+    getMundos,
     getFasesDoMundo,
     validarResultadoJogo,
-    getMundos,
+    getMundosComProgresso,
     buscarMundo,
     contarGiriasPorMundo
 } from "../controllers/mundoController";
 
 const mundoRoutes = Router();
 
-mundoRoutes.get("/mundos", getMundos);
-mundoRoutes.get("/mundos/contagem", contarGiriasPorMundo);
-mundoRoutes.get("/mundos/:nomeMundo/fases", getFasesDoMundo);
-mundoRoutes.get("/mundos/:nome", buscarMundo);
-mundoRoutes.post("/mundos/resultado", validarResultadoJogo);
+mundoRoutes.get('/mundos', autenticar, getMundos);
+mundoRoutes.get('/mundos/contagem', autenticar, contarGiriasPorMundo);
+mundoRoutes.get('/mundos/progresso', autenticar, getMundosComProgresso);
+mundoRoutes.get('/mundos/:nome', autenticar, buscarMundo);
+mundoRoutes.get('/mundos/:nomeMundo/fases', autenticar, bloquearConvidado, getFasesDoMundo);
+mundoRoutes.post('/mundos/resultado', autenticar, bloquearConvidado, validarResultadoJogo);
 
 export default mundoRoutes;

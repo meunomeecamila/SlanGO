@@ -1,6 +1,9 @@
 import { Request, Response } from 'express';
 import { validarCredenciais } from '../services/usuarioService';
-import { gerarToken } from '../services/authService';
+import { 
+    gerarToken,
+    gerarTokenConvidado
+} from '../services/authService';
 
 export const login = async (req: Request, res: Response) => {
     try {
@@ -21,3 +24,12 @@ export const login = async (req: Request, res: Response) => {
         res.status(500).json({ erro: error.message });
     }
 };
+
+export function criarSessaoConvidado(req: Request, res: Response) {
+    const token = gerarTokenConvidado();
+
+    res.status(200).json({
+        sucesso: true,
+        token,
+    });
+}

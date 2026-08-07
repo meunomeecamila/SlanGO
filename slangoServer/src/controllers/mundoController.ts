@@ -1,12 +1,14 @@
-import { Request, Response } from 'express';
-import { 
+import { Response } from 'express';
+import { RequisicaoAutenticada } from '../middlewares/authMiddleware'; 
+import {
     prepararRodadaAleatoria,
     listarMundos,
+    listarMundosComProgresso,
     contarGiriasPorMundos
 } from '../services/mundoService';
-import {  } from "../services/mundoService";
+import { salvarProgressoUsuario } from '../services/preogressoService';
 
-export function getMundos(req: Request, res: Response) {
+export function getMundos(req: RequisicaoAutenticada, res: Response) {
     try {
         const mundos = listarMundos();
 
@@ -22,13 +24,28 @@ export function getMundos(req: Request, res: Response) {
     }
 }
 
-export const buscarMundo = async (req: Request, res: Response) => {
+export const getMundosComProgresso = async (req: RequisicaoAutenticada, res: Response) => {
+    try {
+        const idUsuario = req.usuario!.id!;
+        const mundosComProgresso = await listarMundosComProgresso(idUsuario);
+
+        res.status(200).json({
+            sucesso: true,
+            mundos: mundosComProgresso
+        });
+    } catch (error: any) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+export const buscarMundo = async (req: RequisicaoAutenticada, res: Response) => {
 
     try {
 
-        const { nome } = req.params as { nome: string};
+        const { nome } = req.params as { nome: string };
+        const idUsuario = req.usuario!.id!; // garantido pelo middleware `autenticar`
 
-        const rodada = await prepararRodadaAleatoria(nome);
+        const rodada = await prepararRodadaAleatoria(nome, idUsuario);
 
         res.status(200).json(rodada);
 
@@ -42,12 +59,13 @@ export const buscarMundo = async (req: Request, res: Response) => {
 
 };
 
-export const getFasesDoMundo = async (req: Request, res: Response) => {
+export const getFasesDoMundo = async (req: RequisicaoAutenticada, res: Response) => {
     try {
         const nomeDoMundoRequisitado = req.params.nomeMundo as string;
+        const idUsuario = req.usuario!.id!;
 
-        const rodadaPronta = await prepararRodadaAleatoria(nomeDoMundoRequisitado);
-        
+        const rodadaPronta = await prepararRodadaAleatoria(nomeDoMundoRequisitado, idUsuario);
+
         res.status(200).json(rodadaPronta);
     } catch (error: any) {
         res.status(404).json({ error: error.message });
@@ -59,23 +77,43 @@ export function verificarPremioCustomizavel(pontuacaoFinal: number): boolean {
     return pontuacaoFinal === PONTUACAO_MAXIMA;
 }
 
-export const validarResultadoJogo = (req: Request, res: Response) => {
+export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Response) => {
     try {
-        const pontuacaoFinal = req.body.pontuacaoFinal as number;
+        const { nomeDoMundo, girias, pontuacaoFinal } = req.body;
+        const idUsuario = req.usuario!.id!;
 
         if (pontuacaoFinal === undefined) {
             return res.status(400).json({ error: "A pontuação final é obrigatória." });
         }
-        
+
+        if (!nomeDoMundo || !Array.isArray(girias) || girias.length === 0) {
+            return res.status(400).json({
+                error: "nomeDoMundo e girias (array com as gírias da rodada) são obrigatórios."
+            });
+        }
+
+        const contagemMundos = contarGiriasPorMundos();
+        const totalGiriasMundo = contagemMundos[nomeDoMundo] || 1;
+
         const ganhouPremio = verificarPremioCustomizavel(pontuacaoFinal);
 
-        // Devolve o veredito para o celular
+        const { salvou, percentualAcerto, progressoMundo } = await salvarProgressoUsuario(
+            nomeDoMundo,
+            idUsuario,
+            girias,
+            pontuacaoFinal,
+            totalGiriasMundo
+        );
+
         res.status(200).json({
             sucesso: true,
             pontuacao: pontuacaoFinal,
             ganhouPremio: ganhouPremio,
-            mensagem: ganhouPremio 
-                ? "🎉 Parabéns! Você fez 9/9 pontos! Item customizável LIBERADO!" 
+            progressoSalvo: salvou,
+            percentualAcerto,
+            progressoMundo, 
+            mensagem: ganhouPremio
+                ? "🎉 Parabéns! Você fez 9/9 pontos! Item customizável LIBERADO!"
                 : `❌ Poxa, você fez ${pontuacaoFinal} de 9 pontos. Tente novamente!`
         });
 
@@ -84,11 +122,11 @@ export const validarResultadoJogo = (req: Request, res: Response) => {
     }
 };
 
-export function contarGiriasPorMundo(req: Request, res: Response) {
+export function contarGiriasPorMundo(req: RequisicaoAutenticada, res: Response) {
     try {
         const contagem = contarGiriasPorMundos();
         res.status(200).json(contagem);
     } catch (error: any) {
         res.status(500).json({ error: error.message });
-    }   
+    }
 };

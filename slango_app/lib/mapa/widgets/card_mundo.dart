@@ -8,11 +8,7 @@ class CardMundo extends StatelessWidget {
   final Mundo mundo;
   final VoidCallback? onExplorar;
 
-  const CardMundo({
-    super.key,
-    required this.mundo,
-    this.onExplorar,
-  });
+  const CardMundo({super.key, required this.mundo, this.onExplorar});
 
   @override
   Widget build(BuildContext context) {
@@ -63,10 +59,11 @@ class CardMundo extends StatelessWidget {
                             vertical: 2,
                           ),
                           decoration: BoxDecoration(
-                            color: (mundo.desbloqueado
-                                    ? AppColors.cyan
-                                    : AppColors.disabled)
-                                .withOpacity(0.18),
+                            color:
+                                (mundo.desbloqueado
+                                        ? AppColors.cyan
+                                        : AppColors.disabled)
+                                    .withOpacity(0.18),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Text(
@@ -87,7 +84,9 @@ class CardMundo extends StatelessWidget {
                     const SizedBox(height: 4),
 
                     Text(
-                      "${mundo.totalGirias} gírias para aprender",
+                      mundo.giriasAprendidas > 0
+                          ? "${mundo.giriasAprendidas}/${mundo.totalGirias} gírias aprendidas"
+                          : "${mundo.totalGirias} gírias para aprender",
                       style: AppText.cardSubtitulo(0.9),
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
@@ -100,23 +99,34 @@ class CardMundo extends StatelessWidget {
 
           if (mundo.descricao.isNotEmpty) ...[
             const SizedBox(height: 10),
-            Text(
-              mundo.descricao,
-              style: AppText.cardSubtitulo(0.9),
-            ),
+            Text(mundo.descricao, style: AppText.cardSubtitulo(0.9)),
           ],
 
           const SizedBox(height: 14),
 
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                mundo.giriasAprendidas > 0
+                    ? "${mundo.giriasAprendidas}/${mundo.totalGirias} aprendidas"
+                    : "0/${mundo.totalGirias} aprendidas",
+                style: AppText.cardSubtitulo(0.85),
+              ),
+              Text(
+                "${(mundo.progresso * 100).round()}%",
+                style: AppText.cardSubtitulo(0.85),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: LinearProgressIndicator(
               value: mundo.progresso,
               minHeight: 8,
               backgroundColor: Colors.white10,
-              valueColor: const AlwaysStoppedAnimation(
-                AppColors.primary,
-              ),
+              valueColor: const AlwaysStoppedAnimation(AppColors.primary),
             ),
           ),
 
@@ -135,9 +145,7 @@ class CardMundo extends StatelessWidget {
                 ),
               ),
               child: Text(
-                mundo.desbloqueado
-                    ? "Explorar Planeta"
-                    : "Bloqueado",
+                mundo.desbloqueado ? "Explorar Planeta" : "Bloqueado",
                 style: AppText.botao(0.95),
               ),
             ),
