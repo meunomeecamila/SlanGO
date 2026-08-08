@@ -11,10 +11,21 @@ import '../perfil/perfil_screen.dart';
 class TelaCertificado extends StatelessWidget {
   final Mundo mundo;
 
+  /// Nome do usuário logado, pra personalizar "Parabéns, {nome}!". Se vier
+  /// nulo/vazio (convidado, ou nome ainda não carregado), mostra
+  /// "Parabéns, Astronauta!" como antes.
+  final String? nomeUsuario;
+
   const TelaCertificado({
     super.key,
     required this.mundo,
+    this.nomeUsuario,
   });
+
+  String get _tratamento {
+    final nome = (nomeUsuario ?? '').trim();
+    return nome.isEmpty ? 'Astronauta' : nome;
+  }
 
   static const Color backgroundDark = Color(0xff04011B);
   static const Color primaryPurple = Color(0xff7C5CFF);
@@ -60,10 +71,10 @@ class TelaCertificado extends StatelessWidget {
                 style: TextStyle(fontSize: 32),
               ),
               const SizedBox(height: 4),
-              const Text(
-                "Parabéns, Astronauta!",
+              Text(
+                "Parabéns, $_tratamento!",
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 22,
                   color: Colors.white,
                   fontWeight: FontWeight.w900,

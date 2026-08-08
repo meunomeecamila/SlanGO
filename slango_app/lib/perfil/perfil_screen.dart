@@ -537,7 +537,10 @@ class _PerfilScreenState extends State<PerfilScreen> {
       case _AbaPerfil.itens:
         return _buildGridItens();
       case _AbaPerfil.certificados:
-        return AbaCertificados(mundos: _mundosProgresso);
+        return AbaCertificados(
+          mundos: _mundosProgresso,
+          nomeUsuario: _usuario?.nome,
+        );
     }
   }
 

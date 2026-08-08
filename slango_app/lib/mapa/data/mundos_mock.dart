@@ -16,7 +16,7 @@ final List<Mundo> mundos = [
     id: 'kpop',
     nome: 'Mundo K-Pop',
     imagem: 'images/kpop.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'O vocabulário dos fandoms coreanos: termos de fã, comebacks e expressões que rolam nos grupos.',
     totalGirias: 30,
@@ -27,7 +27,7 @@ final List<Mundo> mundos = [
     id: 'maquiagem',
     nome: 'Mundo Maquiagem',
     imagem: 'images/maquiagem.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'Termos de beleza e make que dominam tutoriais, resenhas e a rotina de skincare.',
     totalGirias: 30,
@@ -38,7 +38,7 @@ final List<Mundo> mundos = [
     id: 'pop',
     nome: 'Mundo Pop',
     imagem: 'images/pop.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'Expressões da cultura pop: música, séries, memes e tudo que vira assunto do momento.',
     totalGirias: 43,
@@ -49,7 +49,7 @@ final List<Mundo> mundos = [
     id: 'antigo',
     nome: 'Mundo Antigo',
     imagem: 'images/antigo.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'As gírias clássicas de outras décadas, que os mais velhos usam e ainda aparecem por aí.',
     totalGirias: 40,
@@ -60,7 +60,7 @@ final List<Mundo> mundos = [
     id: 'cotidiano',
     nome: 'Mundo Cotidiano',
     imagem: 'images/cotidiano.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'O falar do dia a dia: conversas na rua, na escola e em casa, do jeitinho informal.',
     totalGirias: 46,
@@ -71,7 +71,7 @@ final List<Mundo> mundos = [
     id: 'esportes',
     nome: 'Mundo Esportes',
     imagem: 'images/esportes.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'Gírias de quadra, campo e arquibancada: narração, torcida e papo de treino.',
     totalGirias: 31,
@@ -82,7 +82,7 @@ final List<Mundo> mundos = [
     id: 'geek',
     nome: 'Mundo Geek',
     imagem: 'images/geek.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'Universo nerd: animes, quadrinhos, RPG e tecnologia com seu vocabulário próprio.',
     totalGirias: 30,
@@ -93,7 +93,7 @@ final List<Mundo> mundos = [
     id: 'redessociais',
     nome: 'Mundo Redes Sociais',
     imagem: 'images/redesociais.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'O idioma das timelines: siglas, trends e expressões que viralizam a cada semana.',
     totalGirias: 30,
@@ -104,7 +104,7 @@ final List<Mundo> mundos = [
     id: 'relacionamentos',
     nome: 'Mundo Relacionamentos',
     imagem: 'images/relacionamentos.png',
-    status: 'Em breve',
+    status: 'Disponível',
     descricao:
         'Como a galera fala sobre paqueras, amizades e términos nas conversas de hoje.',
     totalGirias: 35,

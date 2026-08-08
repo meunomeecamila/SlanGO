@@ -12,7 +12,17 @@ import 'painel_certificado.dart';
 class AbaCertificados extends StatelessWidget {
   final List<ProgressoMundo> mundos;
 
-  const AbaCertificados({super.key, required this.mundos});
+  /// Nome do usuário logado, para personalizar a mensagem do certificado
+  /// (ex: "Aêêê, Vitor!" em vez de "Aêêê, astronauta!"). Passe null/vazio
+  /// para manter o tratamento genérico "astronauta" (ex: sessão de
+  /// convidado, ou nome ainda carregando).
+  final String? nomeUsuario;
+
+  const AbaCertificados({
+    super.key,
+    required this.mundos,
+    this.nomeUsuario,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +43,7 @@ class AbaCertificados extends StatelessWidget {
       children: mundos.map((mundo) {
         final certificado = certificadoDoMundo(
           mundo.id.isNotEmpty ? mundo.id : mundo.nome,
-        );
+        ).comNomeUsuario(nomeUsuario);
 
         return CardCertificadoMundo(
           certificado: certificado,

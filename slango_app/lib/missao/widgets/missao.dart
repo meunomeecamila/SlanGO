@@ -7,6 +7,7 @@ import '../data/falas_service.dart';
 import '../data/mundo_assets.dart';
 import '../data/girias_exemplo.dart';
 import '../data/mundo_slug.dart';
+import '../../service/usuarioService.dart';
 import 'package:slango_app/mapa/mapa.dart';
 
 // O campo de estrelas agora mora em shared/widgets/fundo_espacial.dart
@@ -55,7 +56,14 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   }
 
   Future<void> _carregarFalas() async {
-    final falas = await FalasService.obterFalas(_slugMundo);
+    // Nome do usuário logado, pra personalizar falas com {nome} (ex: mundo
+    // Jogos). Vem `null` em sessão de convidado ou se a busca falhar — nesse
+    // caso o FalasService cai no tratamento genérico "astronauta".
+    final nomeUsuario = await UsuarioService.obterNomeUsuarioOuNull();
+    final falas = await FalasService.obterFalas(
+      _slugMundo,
+      nomeUsuario: nomeUsuario,
+    );
     if (!mounted) return;
     setState(() {
       _falasDoMundo = falas;

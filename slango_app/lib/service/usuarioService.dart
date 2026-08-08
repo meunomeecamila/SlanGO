@@ -333,6 +333,16 @@ class UsuarioService {
     return buscarPorId(id);
   }
 
+  static Future<String?> obterNomeUsuarioOuNull() async {
+    try {
+      if (await estaConvidado()) return null;
+      final usuario = await buscarUsuarioLogado();
+      return usuario.nome;
+    } catch (_) {
+      return null;
+    }
+  }
+
   static Future<void> logout() async {
     await _clearSession();
   }
