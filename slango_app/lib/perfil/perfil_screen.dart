@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../service/MundoService.dart';
 import '../service/usuarioService.dart';
-import '../service/PerfilService.dart';
+import '../service/perfilService.dart';
 import '../user/User.dart';
 import 'certificados/aba_certificados.dart';
 import 'configuracoes.dart';

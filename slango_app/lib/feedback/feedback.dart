@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../mapa/styles/cores.dart';
-import '../final/particulas.dart';
+import '../final/Particulas.dart';
 
 class FeedbackPage extends StatefulWidget {
   const FeedbackPage({super.key});
