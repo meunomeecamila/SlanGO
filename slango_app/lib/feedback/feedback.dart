@@ -37,8 +37,8 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
     setState(() => _enviando = true);
 
-    // TODO: integrar com backend/Firestore/API para salvar o feedback
-    // e as sugestões de gírias (_giriaController.text)
+    
+    
     await Future.delayed(const Duration(milliseconds: 800));
 
     setState(() => _enviando = false);
@@ -111,7 +111,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
                           const SizedBox(height: 28),
 
-                          // Seletor de estrelas
+                          
                           Center(
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -137,7 +137,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
                           const SizedBox(height: 28),
 
-                          // Seção: sugestão de gírias
+                          
                           Row(
                             children: [
                               const Icon(
@@ -187,7 +187,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
                           const SizedBox(height: 28),
 
-                          // Seção: comentário geral
+                          
                           Row(
                             children: [
                               const Icon(

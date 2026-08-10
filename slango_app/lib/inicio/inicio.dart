@@ -22,35 +22,35 @@ class InicioScreen extends StatelessWidget {
           SafeArea(
             child: Stack(
               children: [
-                // Mundo Jogos
+                
                 Positioned(
                   left: -50,
                   top: 0,
                   child: Image.asset("images/mundo.png", width: 200),
                 ),
 
-                // Mundo K-Pop
+                
                 Positioned(
                   right: 0,
                   top: -20,
                   child: Image.asset("images/kpop.png", width: 150),
                 ),
 
-                // Mundo Esportes
+                
                 Positioned(
                   right: -20,
                   top: 180,
                   child: Image.asset("images/esportes.png", width: 120),
                 ),
 
-                // Mundo Maquiagem
+                
                 Positioned(
                   right: 240,
                   bottom: 40,
                   child: Image.asset("images/maquiagem.png", width: 250),
                 ),
 
-                // Mundo Geek
+                
                 Positioned(
                   left: 300,
                   bottom: 40,

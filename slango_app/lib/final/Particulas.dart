@@ -2,17 +2,14 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-/// Fundo animado de partículas conectadas (estilo particles.js).
-/// 100% Dart nativo — funciona em Flutter Web e mobile.
+
+
 class ParticulasFundo extends StatefulWidget {
   final Widget child;
   final int quantidade;
   final double distanciaConexao;
   final double raioRepulsao;
   final Color corParticulas;
-
-  /// Quando `true` (padrão), as partículas reagem ao toque/mouse
-  /// (repulsão) — dá pra "mexer" nelas arrastando o dedo/cursor.
   final bool interativo;
 
   const ParticulasFundo({
@@ -74,7 +71,7 @@ class _ParticulasFundoState extends State<ParticulasFundo>
     for (final p in _particulas) {
       Offset novaPos = p.posicao + p.velocidade;
 
-      // Repulsão do toque/mouse (só quando interativo)
+      
       if (widget.interativo) {
         final ponteiro = _ponteiro;
         if (ponteiro != null) {
@@ -88,7 +85,7 @@ class _ParticulasFundoState extends State<ParticulasFundo>
         }
       }
 
-      // Rebote nas bordas
+      
       double dx = p.velocidade.dx;
       double dy = p.velocidade.dy;
       if (novaPos.dx <= 0 || novaPos.dx >= _tamanho.width) dx = -dx;
@@ -121,7 +118,7 @@ class _ParticulasFundoState extends State<ParticulasFundo>
 
         final camadas = Stack(
           children: [
-            // Gradiente de fundo + estrelas fixas, igual ao BackgroundEspaco
+            
             Positioned.fill(
               child: DecoratedBox(
                 decoration: const BoxDecoration(

@@ -7,8 +7,7 @@ const Map<String, List<String>> falasPorMundo = {
   'jogos': [
     'Olá, {nome}! Bem-vindo ao Mundo dos Games! 🎮',
     'Aqui os jogadores falam uma língua própria: MVP, clutch, feed, noob...',
-    'Fica esperto nas gírias abaixo e depois é só iniciar a missão! 🚀TESTE',
-    'PIPIPIPOPOPO',
+    'Fica esperto nas gírias abaixo e depois é só iniciar a missão! 🚀'
   ],
   'kpop': [
     'Annyeong {nome}! Você chegou ao planeta do K-Pop! 🎤',

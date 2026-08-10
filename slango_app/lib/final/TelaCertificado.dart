@@ -5,15 +5,11 @@ import 'Particulas.dart';
 import '../mapa/mapa.dart';
 import '../perfil/perfil_screen.dart';
 
-// ============================================================
-// TELA CERTIFICADO
-// ============================================================
+
+
+
 class TelaCertificado extends StatelessWidget {
   final Mundo mundo;
-
-  /// Nome do usuário logado, pra personalizar "Parabéns, {nome}!". Se vier
-  /// nulo/vazio (convidado, ou nome ainda não carregado), mostra
-  /// "Parabéns, Astronauta!" como antes.
   final String? nomeUsuario;
 
   const TelaCertificado({
@@ -45,15 +41,15 @@ class TelaCertificado extends StatelessWidget {
           ),
           child: Column(
             children: [
-              // 0. Cabeçalho com botões em pílula (Mapa / Perfil)
+              
               _Cabecalho(
                 onMapaTap: () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const MapaScreen()),
                 ),
                 onPerfilTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
-                    // TODO: substituir pelos dados reais do usuário logado
-                    // (via serviço/estado do app) assim que estiver disponível.
+                    
+                    
                     builder: (context) => const PerfilScreen(
                       totalMundos: 0,
                       totalGirias: 0,
@@ -65,7 +61,7 @@ class TelaCertificado extends StatelessWidget {
 
               const SizedBox(height: 26),
 
-              // 1. Emoji + Parabéns Astronauta + Subtítulo
+              
               const Text(
                 "🎉",
                 style: TextStyle(fontSize: 32),
@@ -92,12 +88,12 @@ class TelaCertificado extends StatelessWidget {
 
               const SizedBox(height: 28),
 
-              // 2. Card do Certificado
+              
               _CardCertificado(mundo: mundo),
 
               const SizedBox(height: 30),
 
-              // 3. Item desbloqueado (agora uma única caixa com foto)
+              
               Column(
                 children: [
                   const Row(
@@ -132,9 +128,9 @@ class TelaCertificado extends StatelessWidget {
   }
 }
 
-// ============================================================
-// CABEÇALHO (botões em pílula, estilo das outras telas)
-// ============================================================
+
+
+
 class _Cabecalho extends StatelessWidget {
   final VoidCallback onMapaTap;
   final VoidCallback onPerfilTap;
@@ -222,9 +218,9 @@ class _BotaoPilula extends StatelessWidget {
   }
 }
 
-// ============================================================
-// CARD DO CERTIFICADO
-// ============================================================
+
+
+
 class _CardCertificado extends StatelessWidget {
   final Mundo mundo;
 
@@ -274,7 +270,7 @@ class _CardCertificado extends StatelessWidget {
           ),
           const SizedBox(height: 14),
 
-          // Avatar / Imagem do Mundo
+          
           Container(
             width: 90,
             height: 90,
@@ -350,9 +346,9 @@ class _CardCertificado extends StatelessWidget {
   }
 }
 
-// ============================================================
-// ITEM DESBLOQUEADO (única caixa com foto)
-// ============================================================
+
+
+
 class _ItemDesbloqueadoFoto extends StatelessWidget {
   final String imagem;
 
