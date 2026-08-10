@@ -148,7 +148,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                               const SizedBox(width: 6),
                               Expanded(
                                 child: Text(
-                                  "Sabe alguma gíria que não está no nosso quiz?",
+                                  "Você conhece alguma gíria que não está nos nossos mundos? Nos conte aqui o nome e significado!",
                                   style: GoogleFonts.poppins(
                                     color: AppColors.text,
                                     fontSize: 16,

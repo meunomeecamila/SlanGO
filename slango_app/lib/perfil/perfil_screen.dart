@@ -586,10 +586,10 @@ class _PerfilScreenState extends State<PerfilScreen> {
       physics: const NeverScrollableScrollPhysics(),
       itemCount: _itens.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 4,
+        crossAxisCount: 3,
         mainAxisSpacing: 12,
         crossAxisSpacing: 12,
-        childAspectRatio: 0.70,
+        childAspectRatio: 0.85,
       ),
       itemBuilder: (context, index) {
         final item = _itens[index];
@@ -617,8 +617,8 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     children: [
                       Image.network(
                         item.iconAsset,
-                        width: 70,
-                        height: 70,
+                        width: 81,
+                        height: 81,
                         errorBuilder: (_, __, ___) => const Icon(
                           Icons.star,
                           color: AppColors.textSecondary,
