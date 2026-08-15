@@ -1273,5 +1273,306 @@
       "Pequeno frasco cosmético dado gratuitamente pra testar produtos antes da compra."
     ],
     "justificativa": "Amostradinho critica quem se exibe de forma exagerada ou imprudente apenas para chamar atenção, o que costuma ser mal visto."
+  },
+  {
+    "id": 47,
+    "nome": "flopar",
+    "variacoes": [
+      "flop",
+      "flopou"
+    ],
+    "classe_gramatical": "verbo",
+    "significado": "Fracassar, não fazer sucesso ou não atingir o resultado esperado.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "O vídeo que ela postou ontem flopou, mal chegou a cem curtidas.",
+    "exemplos_incorretos": [
+      "O pescador viu o peixe flopar na beira do rio antes de fugir.",
+      "A panqueca flopou direto na frigideira quando ele tentou virar.",
+      "O colchão inflável flopou assim que encostei nele na piscina."
+    ],
+    "significados_incorretos": [
+      "Movimento brusco e sem controle de um peixe fora d'água.",
+      "Ato de virar um alimento no ar durante o preparo.",
+      "Perder o ar ou murchar repentinamente um objeto inflável."
+    ],
+    "justificativa": "Flopar indica fracasso ou falta de sucesso em algo que se esperava dar certo, gerando frustração."
+  },
+  {
+    "id": 48,
+    "nome": "ghosting",
+    "variacoes": [
+      "dar ghost",
+      "sumir tipo fantasma"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Ato de cortar contato com alguém repentinamente e sem explicação, geralmente em um relacionamento ou paquera.",
+    "tags": [
+      "Relacionamentos",
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Estávamos conversando super bem no aplicativo e do nada ele sumiu, foi um ghosting completo.",
+    "exemplos_incorretos": [
+      "O parque de diversões tinha uma atração de ghosting bem assustadora.",
+      "O filme de terror mostrava um ghosting saindo do porão da casa.",
+      "Colocamos um ghosting de pano branco pra decorar a festa de Halloween."
+    ],
+    "significados_incorretos": [
+      "Fantasia ou decoração temática usada em festas de terror.",
+      "Personagem sobrenatural típico de filmes de assombração.",
+      "Efeito visual usado em atrações de parques temáticos noturnos."
+    ],
+    "justificativa": "Ghosting descreve o abandono repentino e sem explicação de um contato, causando mágoa e confusão em quem foi deixado de lado."
+  },
+  {
+    "id": 49,
+    "nome": "old",
+    "variacoes": [
+      "isso é old"
+    ],
+    "classe_gramatical": "adjetivo",
+    "significado": "Algo ultrapassado, batido ou que já não é mais novidade.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele contou aquela piada achando que era engraçado, mas já é old, todo mundo já viu.",
+    "exemplos_incorretos": [
+      "Meu avô guarda um relógio old que pertenceu ao bisavô dele.",
+      "A loja vende roupas old bem conservadas dos anos oitenta.",
+      "O carro old do meu tio ainda funciona perfeitamente até hoje."
+    ],
+    "significados_incorretos": [
+      "Objeto antigo com valor sentimental ou histórico de família.",
+      "Peça de vestuário vintage vendida em brechós especializados.",
+      "Veículo fabricado há muitos anos, mas ainda em bom estado."
+    ],
+    "justificativa": "Old aponta que um conteúdo, piada ou meme já está ultrapassado, o que costuma soar como crítica em contextos de internet."
+  },
+  {
+    "id": 50,
+    "nome": "servir",
+    "variacoes": [
+      "serviu",
+      "tá servindo"
+    ],
+    "classe_gramatical": "verbo",
+    "significado": "Arrasar visualmente, entregar um visual ou performance impecável.",
+    "tags": [
+      "Redes sociais",
+      "Pop",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela chegou no evento com aquele vestido dourado e serviu demais.",
+    "exemplos_incorretos": [
+      "O garçom foi servir a mesa assim que os pratos ficaram prontos.",
+      "Minha mãe pediu para eu servir a água antes do almoço.",
+      "O restaurante costuma servir o jantar a partir das sete da noite."
+    ],
+    "significados_incorretos": [
+      "Trazer e distribuir alimentos ou bebidas em uma mesa.",
+      "Ato de disponibilizar comida ou líquidos para alguém consumir.",
+      "Oferecer um prato ou refeição em um estabelecimento."
+    ],
+    "justificativa": "Servir, nesse uso, celebra um visual ou performance impecável, sendo motivo de admiração e elogio."
+  },
+  {
+    "id": 51,
+    "nome": "jomo",
+    "variacoes": [
+      "joy of missing out"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Sensação de alívio e satisfação em ficar de fora de eventos, compromissos ou tendências.",
+    "tags": [
+      "Cotidiano",
+      "Redes sociais"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Todo mundo foi para a balada, mas eu fiquei em casa assistindo série, puro jomo.",
+    "exemplos_incorretos": [
+      "A receita pedia uma pitada de jomo para dar sabor ao molho.",
+      "O eletricista trocou o jomo queimado da tomada da cozinha.",
+      "Comprei um jomo novo para decorar a estante da sala."
+    ],
+    "significados_incorretos": [
+      "Tempero ou condimento usado em pratos regionais.",
+      "Componente elétrico usado em instalações residenciais.",
+      "Objeto decorativo utilizado em ambientes internos."
+    ],
+    "justificativa": "Jomo remete ao prazer tranquilo de ficar de fora de compromissos, sendo associado a bem-estar e autocuidado."
+  },
+  {
+    "id": 52,
+    "nome": "tankar",
+    "variacoes": [
+      "tank"
+    ],
+    "classe_gramatical": "verbo",
+    "significado": "Aguentar firme uma situação difícil, suportar críticas, pressão ou problemas sem desmoronar.",
+    "tags": [
+      "Cotidiano",
+      "Redes sociais"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "A semana de provas foi pesada, mas eu tankei tudo sem desistir.",
+    "exemplos_incorretos": [
+      "O caminhão levava um tankar cheio de combustível na carroceria.",
+      "O soldado guardava água potável dentro do tankar de metal.",
+      "O posto de gasolina recebeu um tankar novo essa semana."
+    ],
+    "significados_incorretos": [
+      "Recipiente de grande porte usado para armazenar líquidos.",
+      "Compartimento metálico usado para transportar combustível.",
+      "Reservatório industrial utilizado em postos de abastecimento."
+    ],
+    "justificativa": "Tankar, no uso cotidiano, indica resiliência ao aguentar situações difíceis sem desistir, sendo visto como algo positivo."
+  },
+  {
+    "id": 53,
+    "nome": "alpha",
+    "variacoes": [
+      "alfa"
+    ],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa dominante, confiante e que se destaca naturalmente como líder em um grupo.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Ele sempre toma a frente das decisões do grupo, é o típico alpha da turma.",
+    "exemplos_incorretos": [
+      "O laboratório testou a versão alpha do aplicativo antes do lançamento.",
+      "A onda alpha do cérebro aparece durante estados de relaxamento profundo.",
+      "O time de desenvolvedores corrigiu os bugs da fase alpha do jogo."
+    ],
+    "significados_incorretos": [
+      "Primeira versão de teste de um software antes do lançamento oficial.",
+      "Tipo de atividade elétrica cerebral associada a estados de calma.",
+      "Estágio inicial de desenvolvimento de um produto digital."
+    ],
+    "justificativa": "Alpha descreve uma postura de liderança e confiança, mas é usado de forma tão variada e às vezes irônica que não carrega julgamento fixo."
+  },
+  {
+    "id": 54,
+    "nome": "beta",
+    "variacoes": [],
+    "classe_gramatical": "adjetivo",
+    "significado": "Pessoa considerada submissa, insegura ou sem iniciativa própria, geralmente usado como crítica.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "negativa",
+    "exemplo_correto": "Ele nunca decide nada sozinho, sempre pergunta pra todo mundo antes, muito beta.",
+    "exemplos_incorretos": [
+      "Testei a versão beta do aplicativo antes de ser lançada oficialmente.",
+      "A empresa liberou o acesso beta do jogo para poucos jogadores.",
+      "O cientista estudou a partícula beta emitida durante o experimento."
+    ],
+    "significados_incorretos": [
+      "Versão de teste de um software antes do lançamento final.",
+      "Fase de avaliação de um produto digital com acesso limitado.",
+      "Tipo de radiação estudada em experimentos de física nuclear."
+    ],
+    "justificativa": "Beta é usado de forma pejorativa para criticar falta de iniciativa ou submissão, funcionando quase como um insulto."
+  },
+  {
+    "id": 55,
+    "nome": "farmar",
+    "variacoes": [
+      "farm"
+    ],
+    "classe_gramatical": "verbo",
+    "significado": "Acumular repetidamente curtidas, seguidores, elogios ou engajamento nas redes sociais.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Ela posta várias fotos por dia só para farmar curtidas no perfil.",
+    "exemplos_incorretos": [
+      "Meu avô adora farmar hortaliças no quintal de casa.",
+      "O agricultor foi farmar a plantação de milho antes da chuva.",
+      "Passamos o fim de semana ajudando a farmar a horta da vovó."
+    ],
+    "significados_incorretos": [
+      "Cultivar plantas e hortaliças em um terreno rural.",
+      "Cuidar de uma plantação agrícola familiar.",
+      "Trabalhar em atividades relacionadas ao cultivo da terra."
+    ],
+    "justificativa": "Farmar, no contexto de redes sociais, descreve o acúmulo repetido de engajamento, podendo ser visto de forma neutra dependendo da intenção."
+  },
+  {
+    "id": 56,
+    "nome": "aura",
+    "variacoes": [
+      "aura points",
+      "pontos de aura"
+    ],
+    "classe_gramatical": "substantivo",
+    "significado": "Carisma, presença marcante ou reputação de alguém, medida de forma bem-humorada como se fossem pontos ganhos ou perdidos.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ele ajudou a senhora a atravessar a rua e ganhou uns pontos de aura na hora.",
+    "exemplos_incorretos": [
+      "O terapeuta holístico falou sobre limpar a aura antes da sessão de meditação.",
+      "A vidente disse que conseguia enxergar a aura roxa das pessoas.",
+      "Fizemos um exercício de respiração para equilibrar a aura durante o retiro."
+    ],
+    "significados_incorretos": [
+      "Campo de energia espiritual associado a práticas místicas.",
+      "Suposta emanação energética estudada em terapias alternativas.",
+      "Conceito ligado a crenças espirituais sobre energia pessoal."
+    ],
+    "justificativa": "Aura, no uso de internet, celebra carisma e boas atitudes de forma bem-humorada, sendo associada a reconhecimento positivo."
+  },
+  {
+    "id": 57,
+    "nome": "67",
+    "variacoes": [
+      "six seven"
+    ],
+    "classe_gramatical": "interjeição",
+    "significado": "Expressão sem significado fixo usada como reação aleatória, irônica ou de puro deboche em situações do dia a dia.",
+    "tags": [
+      "Redes sociais",
+      "Cotidiano"
+    ],
+    "permissao": "todos",
+    "impacto": "neutra",
+    "exemplo_correto": "Perguntei que horas eram e ele só respondeu '67' rindo sem parar.",
+    "exemplos_incorretos": [
+      "O ônibus 67 passa na esquina de casa a cada vinte minutos.",
+      "Ela mora no apartamento 67 do prédio novo do bairro.",
+      "O jogador vestia a camisa 67 durante o treino de hoje."
+    ],
+    "significados_incorretos": [
+      "Número de identificação de uma linha de transporte público.",
+      "Numeração usada para identificar uma unidade residencial.",
+      "Número estampado na camisa de um atleta ou jogador."
+    ],
+    "justificativa": "67 é usado como resposta ou reação aleatória e sem sentido fixo, funcionando como piada interna de internet sem carga emocional definida."
   }
 ]
