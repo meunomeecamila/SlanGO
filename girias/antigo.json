@@ -791,6 +791,337 @@
         "Produzir ondas sonoras graves causadas por propulsores.",
         "Regar espécies vegetais para manutenção hidrica."
       ]
+    },
+
+    {
+      "id": 37,
+      "nome": "amigo da onça",
+      "variacoes": [],
+      "classe_gramatical": "locução substantiva",
+      "significado": "Pessoa que finge ser amiga mas na verdade prejudica ou trai.",
+      "tags": ["amizade", "insulto"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Denuncia falsidade e traição por parte de alguém que se apresenta como amigo, mas age contra os interesses do outro.",
+      "exemplo_correto": "Fiquei sabendo que ele contou meu segredo para todo mundo, é um amigo da onça.",
+      "exemplos_incorretos": [
+        "Fui ao zoológico e vi um amigo da onça dormindo na sombra.",
+        "Comprei uma estampa de amigo da onça para a camiseta do meu filho.",
+        "O documentário mostrava um amigo da onça caçando à noite na savana."
+      ],
+      "significados_incorretos": [
+        "Felino selvagem de grande porte encontrado em florestas tropicais.",
+        "Padrão têxtil que imita a pelagem de animais selvagens.",
+        "Registro fotográfico de vida selvagem feito por pesquisadores."
+      ]
+    },
+    {
+      "id": 38,
+      "nome": "babar ovo",
+      "variacoes": ["babação de ovo"],
+      "classe_gramatical": "locução verbal",
+      "significado": "Elogiar ou puxar o saco de alguém de forma excessiva e interesseira.",
+      "tags": ["comportamento", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Critica a bajulação exagerada e falsa, geralmente motivada por interesse próprio.",
+      "exemplo_correto": "Ele vive babando ovo do chefe só para conseguir uma promoção.",
+      "exemplos_incorretos": [
+        "Vou babar ovo para fazer uma omelete no café da manhã.",
+        "O bebê ficou babando ovo depois de comer a papinha.",
+        "Preciso babar ovo na receita do bolo de aniversário."
+      ],
+      "significados_incorretos": [
+        "Processo culinário de bater ovos para preparo de receitas.",
+        "Salivar excessivamente durante a alimentação infantil.",
+        "Misturar ingredientes líquidos em uma tigela de cozinha."
+      ]
+    },
+    {
+      "id": 39,
+      "nome": "bicho",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Forma carinhosa e informal de se referir a um amigo.",
+      "tags": ["amizade", "cumprimento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "justificativa": "Usada de forma afetuosa entre amigos próximos, reforçando vínculo e camaradagem.",
+      "exemplo_correto": "E aí, bicho, bora sair para tomar uma cerveja hoje à noite?",
+      "exemplos_incorretos": [
+        "Vi um bicho estranho andando pelo quintal de madrugada.",
+        "Comprei ração para o bicho de estimação da minha vizinha.",
+        "O veterinário examinou o bicho que estava machucado na pata."
+      ],
+      "significados_incorretos": [
+        "Animal doméstico ou selvagem de qualquer espécie.",
+        "Criatura desconhecida avistada em ambientes rurais.",
+        "Ser vivo não humano que necessita de cuidados veterinários."
+      ]
+    },
+    {
+      "id": 40,
+      "nome": "bater as botas",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Morrer.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Refere-se ao falecimento de alguém, um tema associado à perda e ao luto.",
+      "exemplo_correto": "Meu avô bateu as botas ano passado, aos noventa e dois anos de idade.",
+      "exemplos_incorretos": [
+        "Vou bater as botas na porta para tirar a lama antes de entrar.",
+        "Comprei um par de botas novo para bater as botas na neve.",
+        "Ele gosta de bater as botas no ritmo da música durante o show."
+      ],
+      "significados_incorretos": [
+        "Limpar o solado de calçados batendo-os no chão.",
+        "Dançar marcando o ritmo com os pés calçados.",
+        "Adquirir um novo par de calçados para uso no inverno."
+      ]
+    },
+    {
+      "id": 41,
+      "nome": "boiar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Não entender nada do que está acontecendo ou sendo dito.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Indica confusão, falta de compreensão ou desatualização em relação a um assunto, gerando desconforto para quem está boiando.",
+      "exemplo_correto": "O professor explicou a matéria tão rápido que eu fiquei boiando do início ao fim.",
+      "exemplos_incorretos": [
+        "O barquinho ficou boiando tranquilamente no meio do lago.",
+        "Vou boiar na piscina para relaxar depois do trabalho.",
+        "A boia amarela estava boiando perto da praia para sinalizar perigo."
+      ],
+      "significados_incorretos": [
+        "Flutuar na superfície da água sem afundar.",
+        "Permanecer à deriva sobre um corpo líquido.",
+        "Atividade recreativa de flutuação em piscinas ou mar."
+      ]
+    },
+    {
+      "id": 42,
+      "nome": "bufunfa",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Dinheiro.",
+      "tags": ["dinheiro", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "justificativa": "Representa recurso financeiro, geralmente percebido de forma favorável quando se tem em posse.",
+      "exemplo_correto": "Guardei uma bufunfa esse mês para comprar um presente legal de aniversário.",
+      "exemplos_incorretos": [
+        "Vou passar bufunfa no cabelo para deixá-lo mais brilhante.",
+        "Comi uma bufunfa deliciosa no restaurante japonês ontem.",
+        "O carro fez um barulho de bufunfa estranho ao ligar o motor."
+      ],
+      "significados_incorretos": [
+        "Produto cosmético usado para tratamento capilar.",
+        "Prato típico da culinária asiática servido com molho especial.",
+        "Ruído mecânico associado a falhas no motor de veículos."
+      ]
+    },
+    {
+      "id": 43,
+      "nome": "caô",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Mentira ou conversa fiada usada para enganar alguém.",
+      "tags": ["conversa", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Classifica um discurso como enganoso, falso ou manipulador, gerando desconfiança em quem ouve.",
+      "exemplo_correto": "Não acredita nesse caô que ele te contou sobre o carro novo, é tudo mentira.",
+      "exemplos_incorretos": [
+        "Vou caô a porta que está emperrada há dias.",
+        "Comprei um caô novo para decorar a estante da sala.",
+        "O caô do rádio estava ligado bem alto durante a viagem."
+      ],
+      "significados_incorretos": [
+        "Objeto decorativo utilizado em ambientes residenciais.",
+        "Aparelho eletrônico responsável pela reprodução de áudio.",
+        "Mecanismo de fixação usado em portas e janelas emperradas."
+      ]
+    },
+    {
+      "id": 44,
+      "nome": "estar na pindaíba",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Estar sem dinheiro ou passando por dificuldades financeiras.",
+      "tags": ["dinheiro", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Descreve uma situação financeira difícil, associada à falta de recursos e preocupação.",
+      "exemplo_correto": "Não posso sair esse mês, estou na pindaíba depois de pagar todas as contas.",
+      "exemplos_incorretos": [
+        "Vou plantar pindaíba no quintal para fazer uma cerca viva.",
+        "Comi uma pindaíba deliciosa no mercado municipal ontem.",
+        "O rio estava cheio de pindaíba depois da forte chuva de verão."
+      ],
+      "significados_incorretos": [
+        "Planta arbustiva usada para cercas e delimitação de terrenos.",
+        "Fruta regional consumida em feiras e mercados populares.",
+        "Vegetação característica de margens de rios após enchentes."
+      ]
+    },
+    {
+      "id": 45,
+      "nome": "gamar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Ficar apaixonado ou encantado por alguém ou algo.",
+      "tags": ["relacionamentos", "emoção"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "justificativa": "Expressa encantamento, paixão ou fascínio intenso por alguém ou algo, sendo um sentimento geralmente bem-vindo.",
+      "exemplo_correto": "Assim que ele viu ela na festa, gamou na hora e foi puxar assunto.",
+      "exemplos_incorretos": [
+        "Vou gamar o motor do carro que está fazendo barulho estranho.",
+        "Preciso gamar essa parede antes de pintar o quarto novo.",
+        "O eletricista foi chamado para gamar a fiação da cozinha."
+      ],
+      "significados_incorretos": [
+        "Consertar ou ajustar peças mecânicas com defeito.",
+        "Preparar superfícies para receber tinta ou revestimento.",
+        "Reparar instalações elétricas residenciais com problemas."
+      ]
+    },
+    {
+      "id": 46,
+      "nome": "gambé",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Policial.",
+      "tags": ["segurança", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Usada em tom depreciativo ou de alerta para se referir a policiais, geralmente em contextos de fuga ou desconfiança da autoridade.",
+      "exemplo_correto": "Corre que o gambé tá vindo pra cá, alguém deve ter chamado por causa do barulho.",
+      "exemplos_incorretos": [
+        "Comprei um gambé de pelúcia para o meu sobrinho de presente.",
+        "O gambé do zoológico estava dormindo dentro do recinto.",
+        "Vi um gambé cruzando a estrada durante a viagem à noite."
+      ],
+      "significados_incorretos": [
+        "Pequeno mamífero marsupial noturno encontrado em áreas rurais.",
+        "Animal de estimação empalhado usado como enfeite.",
+        "Espécie silvestre comum em regiões de mata e cerrado."
+      ]
+    },
+    {
+      "id": 47,
+      "nome": "mangar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Zombar ou debochar de alguém.",
+      "tags": ["comportamento", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Indica deboche ou zombaria em relação a alguém, o que pode causar constrangimento ou mágoa.",
+      "exemplo_correto": "Pare de mangar do jeito que ele fala, isso não tem graça nenhuma.",
+      "exemplos_incorretos": [
+        "Vou mangar a fruta que caiu da árvore no quintal.",
+        "Comprei uma mangar madura para fazer suco no café da manhã.",
+        "O pomar estava cheio de mangar prontas para a colheita."
+      ],
+      "significados_incorretos": [
+        "Fruta tropical de polpa doce muito consumida no verão.",
+        "Árvore frutífera comum em regiões de clima quente.",
+        "Alimento rico em vitaminas colhido em pomares domésticos."
+      ]
+    },
+    {
+      "id": 48,
+      "nome": "mofar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Ficar esperando por muito tempo ou ser deixado de lado sem uso.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Expressa o incômodo de ficar parado, esquecido ou esperando por muito tempo sem necessidade.",
+      "exemplo_correto": "Fiquei mofando na fila do banco por mais de uma hora esta manhã.",
+      "exemplos_incorretos": [
+        "O pão começou a mofar depois de uma semana fora da geladeira.",
+        "Vou mofar o queijo para fazer aquela receita especial.",
+        "A fruta mofou rápido porque ficou exposta ao calor."
+      ],
+      "significados_incorretos": [
+        "Desenvolver fungos em alimentos por exposição à umidade.",
+        "Processo de deterioração de produtos perecíveis.",
+        "Alteração química que ocorre em alimentos mal conservados."
+      ]
+    },
+    {
+      "id": 49,
+      "nome": "xabu",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Confusão, encrenca ou problema.",
+      "tags": ["cotidiano", "expressão"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "justificativa": "Refere-se a situações problemáticas ou confusas, geralmente indesejadas por quem se envolve nelas.",
+      "exemplo_correto": "Melhor não ir naquela festa, dizem que sempre dá xabu no final da noite.",
+      "exemplos_incorretos": [
+        "Comprei um xabu novo para guardar meus documentos importantes.",
+        "Vou colocar o xabu na mesa para decorar o jantar de hoje.",
+        "O xabu quebrou assim que tentei ligar o computador de manhã."
+      ],
+      "significados_incorretos": [
+        "Objeto de armazenamento usado para organizar papéis.",
+        "Item decorativo utilizado em mesas de jantar formais.",
+        "Componente eletrônico responsável pela inicialização de aparelhos."
+      ]
+    },
+    {
+      "id": 50,
+      "nome": "tchã",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Charme, sensualidade ou um toque especial que chama atenção.",
+      "tags": ["aparência", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "justificativa": "Elogia a presença marcante, o carisma ou o toque especial de uma pessoa ou coisa que se destaca.",
+      "exemplo_correto": "Essa roupa nova ficou com um tchã todo especial em você.",
+      "exemplos_incorretos": [
+        "Vou colocar tchã no motor para ele funcionar melhor.",
+        "Comprei um tchã de parafusos para consertar a cadeira.",
+        "O eletricista trocou o tchã da tomada que estava queimado."
+      ],
+      "significados_incorretos": [
+        "Peça mecânica utilizada em reparos automotivos.",
+        "Ferramenta de fixação usada em marcenaria e montagem.",
+        "Componente elétrico responsável pela condução de energia."
+      ]
+    },
+    {
+      "id": 51,
+      "nome": "coroa",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa mais velha, geralmente usado para se referir aos pais ou a adultos de meia-idade.",
+      "tags": ["família", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "justificativa": "Termo informal e geralmente afetuoso para se referir a pessoas mais velhas, sem carga emocional fixa positiva ou negativa.",
+      "exemplo_correto": "Vou pedir dinheiro emprestado para o meu coroa comprar o ingresso do show.",
+      "exemplos_incorretos": [
+        "O rei usava uma coroa de ouro cravejada de pedras preciosas.",
+        "Comprei uma coroa de flores para decorar a mesa do casamento.",
+        "O dentista colocou uma coroa nova no meu dente quebrado."
+      ],
+      "significados_incorretos": [
+        "Adorno real usado por monarcas em cerimônias oficiais.",
+        "Arranjo floral circular usado em decorações festivas.",
+        "Prótese odontológica usada para restaurar dentes danificados."
+      ]
     }
   ]
 }
