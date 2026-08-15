@@ -15,7 +15,7 @@ import {
 
 async function garantirAdmin(idUsuario: number): Promise<boolean> {
     const perfil = await buscarPerfilBasicoUsuario(idUsuario);
-    return !!perfil?.Responsavel;
+    return !!perfil?.Administrador;
 }
 
 const CAMPOS_OBRIGATORIOS: Array<keyof NovaSugestao> = [

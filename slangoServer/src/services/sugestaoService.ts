@@ -37,15 +37,15 @@ export interface NovaSugestao {
 /** Retorna dados mínimos do usuário para checar se ele pode moderar. */
 export async function buscarPerfilBasicoUsuario(
     idUsuario: number
-): Promise<{ id: number; Nome: string; Responsavel: boolean } | null> {
+): Promise<{ id: number; Nome: string; Administrador: boolean } | null> {
     const { data, error } = await supabase
         .from('User')
-        .select('id, Nome, Responsavel')
+        .select('id, Nome, Administrador')
         .eq('id', idUsuario)
         .maybeSingle();
 
     if (error) throw new Error(error.message);
-    return data as { id: number; Nome: string; Responsavel: boolean } | null;
+    return data as { id: number; Nome: string; Administrador: boolean } | null;
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -141,13 +141,13 @@ export async function moderarSugestao(
 
     const admin = await buscarPerfilBasicoUsuario(idAdmin);
     if (!admin) throw new Error('ADMIN_NAO_ENCONTRADO');
-    if (!admin.Responsavel) throw new Error('SEM_PERMISSAO');
+    if (!admin.Administrador) throw new Error('SEM_PERMISSAO');
 
     const { data: existente, error: erroBusca } = await supabase
-        .from('sugestoes_girias')
-        .select('id, status')
-        .eq('id', idSugestao)
-        .maybeSingle();
+    .from('sugestoes_girias')
+    .select('id, status')
+    .eq('id', idSugestao)
+    .maybeSingle();
 
     if (erroBusca) throw new Error(erroBusca.message);
     if (!existente) throw new Error('SUGESTAO_NAO_ENCONTRADA');

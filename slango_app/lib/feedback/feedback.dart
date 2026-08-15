@@ -47,7 +47,8 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
   @override
   Widget build(BuildContext context) {
-    final isAdmin = _usuarioLogado?.responsavel ?? false;
+    final isAdmin = _usuarioLogado?.administrador ?? false;
+
     return Scaffold(
       backgroundColor: Colors.transparent,
       extendBodyBehindAppBar: true,
@@ -90,7 +91,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                       _HistoricoSugestoes(key: _historicoKey),
                       const SizedBox(height: 24),
 
-                      // 3. Moderação — SÓ APARECE SE FOR ADMIN
+                      // 3. Moderação — só para admin
                       if (isAdmin) ...[
                         _PainelModeracaoAdmin(
                           nomeAdmin: _usuarioLogado?.nome ?? 'Admin',
@@ -100,7 +101,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
                       // 4. Avaliação geral do app (sempre no final)
                       const _AvaliacaoGeralCard(),
-                                            const SizedBox(height: 12),
+                      const SizedBox(height: 12),
                     ],
                   ),
                 ),

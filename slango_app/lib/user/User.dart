@@ -6,6 +6,7 @@ class Usuario {
   final String? dataNascimento;
   final int? idade;
   final int? idAstronauta;
+  final bool administrador;
 
   Usuario({
     required this.id,
@@ -15,6 +16,7 @@ class Usuario {
     this.dataNascimento,
     this.idade,
     this.idAstronauta,
+    this.administrador = false,
   });
 
   factory Usuario.fromJson(Map<String, dynamic> json) {
@@ -29,6 +31,7 @@ class Usuario {
       dataNascimento: dataNascimento,
       idade: idade,
       idAstronauta: json['idAstronauta'] ?? json['id_Astronauta'],
+      administrador: json['administrador'] ?? json['Administrador'] ?? false,
     );
   }
 }
