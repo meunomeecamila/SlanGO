@@ -7,6 +7,8 @@ export interface Girias {
   tags: string[];
   permissao: string;
   impacto: string;
+  /** Explicação do porquê da gíria ter esse impacto (opcional nos JSONs antigos) */
+  impacto_motivo?: string;
   exemplo_correto: string;
   exemplos_incorretos: string[];
   significados_incorretos: string[];

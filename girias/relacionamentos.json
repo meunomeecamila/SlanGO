@@ -3,10 +3,15 @@
     {
       "id": 1,
       "nome": "crush",
-      "variacoes": ["paquera", "queda"],
+      "variacoes": [
+        "paquera",
+        "queda"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa por quem se tem uma forte atração romântica, interesse ou uma paixão platônica.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Eu vi meu crush na escola hoje e fiquei com vergonha de falar com ele.",
@@ -19,15 +24,23 @@
         "Apelido carinhoso dado entre amigos próximos.",
         "Pessoa com quem você troca mensagens picantes sem compromisso.",
         "Pessoa com quem você já ficou algumas vezes, mas sem assumir nada."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 2,
       "nome": "contatinho",
-      "variacoes": ["esquema", "peguete", "rolinho"],
+      "variacoes": [
+        "esquema",
+        "peguete",
+        "rolinho"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa com quem se mantém conversas frequentes ou encontros casuais voltados para o flerte, sem compromisso formal.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Hoje não vou sair com a turma, marquei de ver um contatinho.",
@@ -40,15 +53,21 @@
         "Amigo de infância que você reencontrou recentemente.",
         "Pessoa que você segue nas redes sociais mas nunca conversou.",
         "Pessoa com quem você já teve um relacionamento sério no passado."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 3,
       "nome": "date",
-      "variacoes": ["encontro"],
+      "variacoes": [
+        "encontro"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Encontro romântico ou social entre duas pessoas, geralmente com o objetivo de conhecer melhor um ao outro ou desenvolver um relacionamento amoroso.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Fui em um date ontem à noite e fomos a um restaurante ótimo.",
@@ -61,15 +80,23 @@
         "Reunião de trabalho marcada em horário incomum.",
         "Saída em grupo com vários amigos sem intenção romântica.",
         "Encontro rápido só pra decidir o status do relacionamento."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 4,
       "nome": "levar bolo",
-      "variacoes": ["dar bolo", "bolo", "deixar na mão"],
+      "variacoes": [
+        "dar bolo",
+        "bolo",
+        "deixar na mão"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ato de deixar alguém esperando pela sua presença em um encontro ou não responder na rede social.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Fiquei esperando ela no cinema por duas horas, acabei levando bolo.",
@@ -82,15 +109,20 @@
         "Receber um presente de aniversário inesperado.",
         "Ser rejeitado ao convidar alguém pra sair.",
         "Ficar esperando resposta de mensagem por muito tempo sem cancelar o encontro."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 5,
       "nome": "dr",
-      "variacoes": ["discutir a relação"],
+      "variacoes": [
+        "discutir a relação"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Sigla para 'Discussão de Relação'. Momento em que o casal conversa seriamente para resolver conflitos, alinhar expectativas ou avaliar o status do relacionamento.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Tivemos uma DR pesada ontem, mas conseguimos nos entender.",
@@ -103,15 +135,21 @@
         "Sigla usada para se referir a um médico de plantão.",
         "Conversa leve sobre planos de fim de semana com o parceiro.",
         "Discussão sobre dividir contas e finanças do casal."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 6,
       "nome": "talarico",
-      "variacoes": ["talaricar", "fura-olho"],
+      "variacoes": [
+        "talaricar",
+        "fura-olho"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa que demonstra interesse amoroso ou se envolve intencionalmente com o parceiro ou parceira de um amigo.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ele deu em cima da namorada do melhor amigo, foi muito talarico.",
@@ -124,15 +162,22 @@
         "Pessoa que organiza festas de casamento como profissão.",
         "Amigo que sempre apresenta pessoas solteiras umas às outras.",
         "Pessoa que flerta abertamente com desconhecidos em festas, sem laço com amigos."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 7,
       "nome": "olhante",
-      "variacoes": ["admirador", "olhar de longe", "respirante"],
+      "variacoes": [
+        "admirador",
+        "olhar de longe",
+        "respirante"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa que observa ou admira alguém à distância, sem se envolver diretamente ou se declarar abertamente.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Maria, o seu olhante, o Pedro, está ali.",
@@ -145,15 +190,21 @@
         "Profissional que trabalha vigiando câmeras de segurança.",
         "Pessoa que segue perfis de famosos nas redes sociais.",
         "Pessoa que manda mensagem discreta pra saber se você está solteiro."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 8,
       "nome": "ficante",
-      "variacoes": ["ficada", "ficar"],
+      "variacoes": [
+        "ficada",
+        "ficar"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa com quem se mantém um envolvimento afetivo e físico recorrente, mas que ainda não evoluiu para um namoro oficial.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Não estamos namorando sério, ele é só meu ficante.",
@@ -166,15 +217,21 @@
         "Pessoa contratada pra fazer companhia em eventos formais.",
         "Pessoa que você conheceu recentemente em um aplicativo de namoro.",
         "Pessoa com quem você já namorou, mas terminou o relacionamento."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 9,
       "nome": "vela",
-      "variacoes": ["segurar vela"],
+      "variacoes": [
+        "segurar vela"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa solteira que acompanha um casal em um passeio ou evento social, sentindo-se deslocada ou sobrando.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Fui ao cinema com meu amigo e a namorada dele e fiquei de vela o filme todo.",
@@ -187,15 +244,22 @@
         "Pessoa que organiza jantares românticos para casais.",
         "Amigo que sempre cancela os planos de última hora.",
         "Pessoa que acompanha o casal só pra dar conselhos de relacionamento."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 10,
       "nome": "shippar",
-      "variacoes": ["ship", "shippador"],
+      "variacoes": [
+        "ship",
+        "shippador"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ato de torcer ou apoiar um casal, seja na vida real ou em ficção, desejando que fiquem juntos.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Eu comecei a shippar muito aqueles dois personagens na série.",
@@ -208,15 +272,21 @@
         "Organizar uma festa surpresa de noivado para os amigos.",
         "Fazer as pazes com o parceiro depois de uma briga.",
         "Apresentar duas pessoas solteiras na esperança de que fiquem juntas."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 11,
       "nome": "ghosting",
-      "variacoes": ["deixar para trás", "desaparecer"],
+      "variacoes": [
+        "deixar para trás",
+        "desaparecer"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ato de interromper uma relação romântica ou social cortando contato de repente, sem aviso prévio ou explicação.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Estávamos conversando todo dia e, do nada, ele me deu ghosting.",
@@ -229,15 +299,20 @@
         "Comportamento de responder mensagens só à noite.",
         "Terminar um relacionamento pessoalmente, com conversa clara.",
         "Reaparecer de repente depois de meses sem falar, como se nada tivesse acontecido."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 12,
       "nome": "love bombing",
-      "variacoes": ["bombardeio de amor"],
+      "variacoes": [
+        "bombardeio de amor"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ato de demonstrar afeto e atenção de forma intensa e exagerada no início da relação para manipular ou manter a pessoa interessada, muitas vezes sem intenção de algo saudável.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ele me mandava flores todo dia na primeira semana, mas depois vi que era só love bombing.",
@@ -250,15 +325,20 @@
         "Declaração pública de amor feita em estádios de futebol.",
         "Trocar presentes simbólicos no aniversário de namoro.",
         "Demonstrar carinho genuíno e equilibrado logo no início do namoro."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 13,
       "nome": "boyzinho",
-      "variacoes": ["garoto bonito"],
+      "variacoes": [
+        "garoto bonito"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa do sexo masculino que é considerada atraente, estilosa ou interessante em termos românticos.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Você viu aquele boyzinho novo que entrou na nossa sala?",
@@ -271,15 +351,22 @@
         "Apelido usado para bebês recém-nascidos do sexo masculino.",
         "Garoto mais novo que a pessoa está namorando.",
         "Rapaz imaturo que ainda mora com os pais e não trabalha."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 14,
       "nome": "pombinhos",
-      "variacoes": ["casal apaixonado"],
+      "variacoes": [
+        "casal apaixonado"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Termo carinhoso usado para descrever um casal que demonstra muito afeto e intimidade de maneira pública ou exagerada.",
-      "tags": ["relacionamento", "cotidiano", "antigo"],
+      "tags": [
+        "relacionamento",
+        "cotidiano",
+        "antigo"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Lá vêm os pombinhos de mãos dadas de novo, que fofos.",
@@ -292,15 +379,22 @@
         "Apelido dado a irmãos gêmeos muito parecidos.",
         "Casal recém-casado que está em lua de mel.",
         "Amigos inseparáveis que sempre andam juntos, sem relação romântica."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 15,
       "nome": "mucilon",
-      "variacoes": ["boy mucilon", "maria mucilon"],
+      "variacoes": [
+        "boy mucilon",
+        "maria mucilon"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Gíria usada para descrever uma pessoa significativamente mais jovem que o seu parceiro em um relacionamento, servindo como uma metáfora humorística para a pouca idade.",
-      "tags": ["cotidiano", "relacionamento"],
+      "tags": [
+        "cotidiano",
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "depende de contexto",
       "exemplo_correto": "Não sabia que a Juliana gostava de mucilon, agora vive com aquele menino de 19 anos.",
@@ -313,15 +407,21 @@
         "Apelido carinhoso dado a bebês pela família.",
         "Pessoa que ainda está na faculdade e mora com os pais.",
         "Pessoa mais nova que aparenta ser mais madura que a idade real."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 16,
       "nome": "amizade colorida",
-      "variacoes": ["amigos com benefícios", "PA"],
+      "variacoes": [
+        "amigos com benefícios",
+        "PA"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Relacionamento onde duas pessoas são amigas, mas também mantêm intimidade física ou sexual sem compromisso amoroso.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Eles não namoram, são apenas uma amizade colorida há anos.",
@@ -334,15 +434,21 @@
         "Grupo de amigos que se veste com roupas coloridas combinando.",
         "Amizade antiga que dura desde a infância.",
         "Relacionamento sério disfarçado de amizade pros pais não desconfiarem."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 17,
       "nome": "namorido",
-      "variacoes": ["namorida"],
+      "variacoes": [
+        "namorida"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Junção das palavras 'namorado' e 'marido'. Usado para descrever casais que namoram, mas vivem juntos e têm rotina de casados, mesmo sem oficializar no papel.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Nós moramos juntos há cinco anos, ele já é meu namorido.",
@@ -355,15 +461,22 @@
         "Apelido dado ao noivo durante a cerimônia de casamento.",
         "Parceiro que mora sozinho, sem dividir casa com ninguém.",
         "Marido oficial, já casado no papel."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 18,
       "nome": "emocionado",
-      "variacoes": ["emocionada", "dar uma de emocionado"],
+      "variacoes": [
+        "emocionada",
+        "dar uma de emocionado"
+      ],
       "classe_gramatical": "adjetivo",
       "significado": "Pessoa que se apega muito rápido, demonstra sentimentos intensos ou planeja o futuro no início de um flerte ou relacionamento.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "depende de contexto",
       "exemplo_correto": "Conheci ele ontem e ele já quer me apresentar para os pais, muito emocionado.",
@@ -376,15 +489,22 @@
         "Pessoa que chora facilmente assistindo filmes românticos.",
         "Pessoa nervosa antes do primeiro encontro.",
         "Pessoa que demonstra interesse genuíno e no ritmo certo desde o início."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 19,
       "nome": "chavecar",
-      "variacoes": ["dar um xaveco", "xavecar"],
+      "variacoes": [
+        "dar um xaveco",
+        "xavecar"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ato de jogar conversa fora com a intenção de flertar, seduzir ou conquistar alguém usando lábia.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Ele passou a festa inteira tentando me chavecar, mas eu não dei bola.",
@@ -397,15 +517,21 @@
         "Consertar uma fechadura quebrada em casa.",
         "Elogiar um amigo de forma sincera sem intenção romântica.",
         "Convidar alguém pra sair de forma direta, sem enrolação."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 20,
       "nome": "tomar um toco",
-      "variacoes": ["levar toco", "levar um fora"],
+      "variacoes": [
+        "levar toco",
+        "levar um fora"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ser rejeitado de forma direta por alguém em quem se tinha interesse romântico.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Fui chamar a menina para sair e acabei tomando um toco.",
@@ -418,15 +544,21 @@
         "Comprar madeira pra fazer uma churrasqueira.",
         "Errar o horário combinado de um encontro.",
         "Ser ignorado nas redes sociais depois de mandar mensagem."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 21,
       "nome": "pular a cerca",
-      "variacoes": ["trair", "chifrar"],
+      "variacoes": [
+        "trair",
+        "chifrar"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Gíria para descrever o ato de trair o parceiro amoroso com outra pessoa.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Terminaram o casamento depois que descobriram que ele vivia pulando a cerca.",
@@ -439,15 +571,22 @@
         "Mudar de time de futebol no meio da temporada.",
         "Terminar um relacionamento de forma repentina.",
         "Flertar com outras pessoas sem realmente trair fisicamente."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 22,
       "nome": "red flag",
-      "variacoes": ["bandeira vermelha", "sinal de alerta"],
+      "variacoes": [
+        "bandeira vermelha",
+        "sinal de alerta"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Sinal de alerta no comportamento de alguém que indica que essa pessoa pode ser tóxica, manipuladora ou não confiável em um relacionamento.",
-      "tags": ["relacionamento", "internet"],
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ela fala mal de todos os ex-namorados, isso para mim é uma red flag enorme.",
@@ -460,15 +599,23 @@
         "Bandeira usada para sinalizar perigo em corridas de Fórmula 1.",
         "Comportamento estranho mas inofensivo do parceiro.",
         "Sinal positivo que indica que a pessoa é confiável e estável."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 23,
       "nome": "ter molho",
-      "variacoes": ["ter o molho", "sauce"],
+      "variacoes": [
+        "ter o molho",
+        "sauce"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Ter estilo, atitude, charme, ou muita confiança, tornando-se muito atraente ou 'cool' (legal).",
-      "tags": ["relacionamento", "estilo", "internet"],
+      "tags": [
+        "relacionamento",
+        "estilo",
+        "internet"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Não tem como, aquele cara sabe se vestir e sabe conversar, ele tem o molho.",
@@ -481,7 +628,8 @@
         "Preparar um prato de massa com molho especial.",
         "Vestir roupas caras e de marca em qualquer ocasião.",
         "Ter dinheiro suficiente pra pagar tudo em um encontro."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 24,
@@ -489,7 +637,9 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa com quem você já teve um envolvimento casual no passado, mas com quem não se relaciona mais de forma amorosa ou física.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Encontrei meu ex-ficante na balada e fingi que nem conhecia.",
@@ -502,15 +652,20 @@
         "Peça de móvel antiga guardada no depósito.",
         "Amigo de longa data que você não vê há anos.",
         "Pessoa com quem você namorou sério no passado."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 25,
       "nome": "ficante premium",
-      "variacoes": ["ficante sério"],
+      "variacoes": [
+        "ficante sério"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Ficante com quem você tem uma relação quase exclusiva e age como namorado (com passeios, carinho, conhecer amigos), mas ainda sem o rótulo oficial.",
-      "tags": ["relacionamento"],
+      "tags": [
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "A gente viaja junto e se fala todo dia, ele não é só ficante, é ficante premium.",
@@ -523,15 +678,22 @@
         "Assinatura paga de um aplicativo de encontros.",
         "Pessoa que só encontra você em ocasiões especiais.",
         "Namorado oficial que ainda não apresentou aos pais."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 26,
       "nome": "catfishing",
-      "variacoes": ["catfish", "perfil fake"],
+      "variacoes": [
+        "catfish",
+        "perfil fake"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Ato de criar uma identidade falsa na internet, usando fotos e informações de outras pessoas, geralmente para enganar alguém romanticamente.",
-      "tags": ["internet", "relacionamento"],
+      "tags": [
+        "internet",
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ela achou que estava namorando um modelo europeu, mas era tudo catfishing.",
@@ -544,15 +706,22 @@
         "Técnica de pesca usando iscas artificiais coloridas.",
         "Usar um filtro de câmera nas fotos de perfil.",
         "Mentir sobre pequenos detalhes pessoais, como idade ou altura, no perfil."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 27,
       "nome": "orbiting",
-      "variacoes": ["orbitar", "curtidor fantasma"],
+      "variacoes": [
+        "orbitar",
+        "curtidor fantasma"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Quando a relação esfria ou rola ghosting, mas a pessoa continua orbitando sua vida virtual: visualiza stories, curte e reage, mas nunca manda mensagem.",
-      "tags": ["relacionamento", "internet"],
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ele sumiu do WhatsApp, mas fica fazendo orbiting nos meus stories do Instagram todo dia.",
@@ -565,15 +734,23 @@
         "Fenômeno astronômico estudado em aulas de física.",
         "Curtir todas as fotos antigas do perfil de alguém de uma vez.",
         "Reaparecer do nada depois de meses de silêncio total."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 28,
       "nome": "zombing",
-      "variacoes": ["zombieing", "haunting", "ressurgir das trevas"],
+      "variacoes": [
+        "zombieing",
+        "haunting",
+        "ressurgir das trevas"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Quando a pessoa que te deu ghosting (sumiu) reaparece de forma aleatória agindo como se nada tivesse acontecido, com mensagens carentes ou reagindo a posts.",
-      "tags": ["relacionamento", "internet"],
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Três meses depois de sumir, ele me mandou um 'saudades'. Caiu no zombing e eu ignorei.",
@@ -586,7 +763,8 @@
         "Estilo de dança popular em festas eletrônicas.",
         "Comportamento de curtir stories sem nunca mandar mensagem.",
         "Sumir de vez e nunca mais dar sinal de vida."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 29,
@@ -594,7 +772,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Referência ao personagem da série Tapas & Beijos. Usado para descrever um homem que não possui qualidades de destaque, pouco esforçado e que não agrega valor no relacionamento.",
-      "tags": ["relacionamento", "cotidiano"],
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Não sei o que a Maria viu nele, o cara não trabalha nem estuda, é um verdadeiro jurandir.",
@@ -607,15 +788,23 @@
         "Personagem fictício usado em propagandas de banco.",
         "Homem carinhoso, mas com pouco dinheiro.",
         "Homem que trabalha muito, mas não tem tempo pro relacionamento."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 30,
       "nome": "gado",
-      "variacoes": ["gadear", "simp", "gado demais"],
+      "variacoes": [
+        "gadear",
+        "simp",
+        "gado demais"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa que faz tudo para agradar alguém romanticamente de forma exagerada e submissa, perdendo a dignidade em troca da atenção da pessoa desejada.",
-      "tags": ["internet", "relacionamento"],
+      "tags": [
+        "internet",
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ela nem olha na cara dele, mas ele continua pagando lanche, é muito gado.",
@@ -628,15 +817,22 @@
         "Apelido usado para torcedores fanáticos de um time de futebol.",
         "Pessoa que sempre concorda com tudo que o parceiro diz, mesmo namorando sério.",
         "Pessoa que trata bem o parceiro por educação e respeito, sem exagero."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 31,
       "nome": "delulu",
-      "variacoes": ["iludido", "delirante"],
+      "variacoes": [
+        "iludido",
+        "delirante"
+      ],
       "classe_gramatical": "adjetivo",
       "significado": "Abreviação de 'delusional' (delirante). Descreve alguém que cria fantasias irreais e românticas na cabeça, acreditando em uma relação que não tem chances de acontecer.",
-      "tags": ["internet", "relacionamento"],
+      "tags": [
+        "internet",
+        "relacionamento"
+      ],
       "permissao": "todos",
       "impacto": "depende de contexto",
       "exemplo_correto": "Ele curtiu minha foto, com certeza a gente vai casar, tô muito delulu hoje.",
@@ -649,7 +845,8 @@
         "Aplicativo de edição de fotos para redes sociais.",
         "Acreditar demais em promessas vazias de alguém.",
         "Ter certeza de um relacionamento sério baseado em sinais reais e claros."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 32,
@@ -657,7 +854,11 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Gíria antiga (mas ainda em uso) para se referir a pessoas que demonstram interesse romântico em alguém apenas por causa do veículo (carro ou moto) ou dos bens materiais que a pessoa possui.",
-      "tags": ["relacionamento", "cotidiano", "antigo"],
+      "tags": [
+        "relacionamento",
+        "cotidiano",
+        "antigo"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Foi só ele comprar um carrão que ela passou a dar bola, maior maria gasolina.",
@@ -670,7 +871,8 @@
         "Apelido de uma dançarina famosa nos anos 90.",
         "Pessoa que só sai com quem tem carro próprio.",
         "Pessoa que valoriza estabilidade financeira ao escolher um parceiro."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     }
   ]
 }

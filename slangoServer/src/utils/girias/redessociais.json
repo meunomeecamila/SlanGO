@@ -25,7 +25,8 @@
         "Um tipo de nó usado por pescadores.",
         "Uma saudade boa de algo do passado.",
         "Qualquer crítica feita sobre alguém, mesmo sem sentimento negativo forte."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 2,
@@ -54,7 +55,8 @@
         "Uma peça de motor usada em carros antigos.",
         "Pessoa tímida que evita aparecer nas redes sociais.",
         "Alguém que posta fotos com frequência nas redes, mesmo sem pedir elogios."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 3,
@@ -82,7 +84,8 @@
         "Uma medida usada em receitas culinárias.",
         "Uma nota mediana, nem boa nem ruim, dada a um produto.",
         "Qualquer elogio dado a algo, mesmo sem ser o máximo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 4,
@@ -110,7 +113,8 @@
         "Expressão usada para pedir silêncio em uma sala de cinema.",
         "Estar distraído pensando em outra coisa, sem imaginar algo absurdo.",
         "Estar sonhando acordado com planos reais para o futuro."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 5,
@@ -138,7 +142,8 @@
         "Sigla usada em bulas de remédio para indicar dosagem.",
         "Expressão usada para demonstrar indiferença sobre algo.",
         "Sigla para o nome de um jogo eletrônico popular."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 6,
@@ -167,7 +172,8 @@
         "Consertar um cano furado embaixo da pia.",
         "Seguir alguém publicamente elogiando todas as postagens.",
         "Ver o perfil de alguém uma única vez por curiosidade."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 7,
@@ -195,7 +201,8 @@
         "Expressão usada para pedir a conta no restaurante.",
         "Quando algo sai apenas um pouco diferente do esperado.",
         "Qualquer situação engraçada que aconteceu por acaso."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 8,
@@ -222,7 +229,8 @@
         "Peça de reposição usada em máquinas de lavar.",
         "Um amigo próximo de longa data, sem envolvimento romântico.",
         "Qualquer pessoa que você acha bonita, mesmo sem sentir nada mais."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 9,
@@ -249,7 +257,8 @@
         "Sigla usada em manuais técnicos de eletrônicos.",
         "Expressão usada para concordar tranquilamente com algo.",
         "Abreviação para demonstrar tristeza profunda."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 10,
@@ -276,7 +285,8 @@
         "Um tipo de parafuso usado em estruturas metálicas.",
         "O momento exato em que alguém erra feio em público.",
         "Qualquer situação normal e sem graça do dia a dia."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 11,
@@ -305,7 +315,8 @@
         "Sigla usada em documentos de trânsito.",
         "Expressão usada para concordar calmamente com algo óbvio.",
         "Sigla para demonstrar tédio ou desinteresse total."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 12,
@@ -334,7 +345,8 @@
         "Consertar o cano de um chuveiro elétrico.",
         "Odiar o relacionamento de dois personagens de uma série.",
         "Torcer para qualquer casal famoso continuar junto, mesmo sem imaginar coisas."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 13,
@@ -361,7 +373,8 @@
         "Um tipo de tempero usado em pratos nordestinos.",
         "Uma pessoa elogiada por todos em um reality show.",
         "Qualquer participante eliminado de um reality show."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 14,
@@ -390,7 +403,8 @@
         "Consertar o freio de uma bicicleta.",
         "Xingar alguém com palavras ofensivas de verdade.",
         "Fazer qualquer brincadeira, mesmo sem intenção de enganar ninguém."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 15,
@@ -418,7 +432,8 @@
         "Um tipo de fivela usada em cintos de couro.",
         "Estar muito nervoso e agitado com uma situação.",
         "Estar cansado depois de um dia cheio de trabalho."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 16,
@@ -447,7 +462,8 @@
         "Um tipo de sola de sapato usada em chinelos.",
         "Cancelar um evento de última hora por falta de gente.",
         "Fazer um post que recebe poucos comentários, mesmo com muitas curtidas."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 17,
@@ -474,7 +490,8 @@
         "Um tipo de doce servido em festas juninas.",
         "Uma pessoa que sempre concorda com tudo pra evitar briga.",
         "Alguém que dá conselhos, mesmo que às vezes erre."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 18,
@@ -501,7 +518,8 @@
         "Um tipo de cola usada em sapatos.",
         "Alguém que conhece muito bem um assunto, mas não fala sobre isso.",
         "Uma pessoa nova em um grupo que ainda está aprendendo sobre o assunto."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 19,
@@ -530,7 +548,8 @@
         "Um tipo de fivela usada em mochilas escolares.",
         "Uma crítica negativa feita sobre um lançamento antes de sair.",
         "Qualquer comentário positivo sobre um produto, mesmo sem expectativa alta."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 20,
@@ -559,7 +578,8 @@
         "Um tipo de argamassa usada em pisos.",
         "Fazer algo mediano que passa despercebido pelos outros.",
         "Qualquer elogio recebido, mesmo sem fazer nada excepcional."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 21,
@@ -587,7 +607,8 @@
         "Consertar uma torneira que está pingando.",
         "Estar mal vestido e desleixado em um evento importante.",
         "Se arrumar bem para qualquer ocasião comum do dia a dia."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 22,
@@ -615,7 +636,8 @@
         "Um tipo de parafuso usado em portas de madeira.",
         "Vestir roupas sociais e formais para o trabalho.",
         "Qualquer pessoa que usa cordão e boné, mesmo sem estilo definido."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 23,
@@ -644,7 +666,8 @@
         "Um tipo de tecido usado em toalhas de mesa.",
         "Fazer um elogio sincero para o adversário durante uma discussão.",
         "Vencer qualquer discussão, mesmo sem argumentos fortes."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 24,
@@ -672,7 +695,8 @@
         "Um tipo de fivela usada em relógios de pulso.",
         "Uma informação totalmente nova que ninguém sabia ainda.",
         "Qualquer assunto que já foi comentado uma vez antes."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 25,
@@ -700,7 +724,8 @@
         "Um tipo de grampo usado para prender papéis.",
         "Uma lembrança boa que traz felicidade repentina.",
         "Qualquer assunto desconfortável de se falar, mesmo sem trauma."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 26,
@@ -729,7 +754,8 @@
         "Um tipo de fecho usado em bolsas.",
         "Elogiar publicamente uma pessoa famosa por algo que ela fez.",
         "Criticar uma vez só uma atitude de alguém famoso nas redes."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 27,
@@ -757,7 +783,8 @@
         "Um tipo de cola usada em trabalhos escolares.",
         "Uma situação impressionante que deixa todo mundo admirado.",
         "Qualquer coisa que causa um pouco de desconforto, mesmo sem vergonha."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 28,
@@ -784,7 +811,8 @@
         "Um tipo de argamassa usada em construção civil.",
         "Alguém que muda de opinião o tempo todo pra agradar geral.",
         "Qualquer pessoa que dá sua opinião, mesmo tentando agradar todo mundo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 29,
@@ -812,7 +840,8 @@
         "Um tipo de cola usada para consertar sapatos.",
         "Uma música que ninguém conhece e passa despercebida.",
         "Qualquer vídeo que recebe uma quantidade razoável de visualizações."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 30,
@@ -841,7 +870,8 @@
         "Um tipo de laço usado em presentes de aniversário.",
         "Cumprir todos os compromissos combinados sem falhar.",
         "Qualquer justificativa dada, mesmo que seja verdadeira."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     }
   ]
 }

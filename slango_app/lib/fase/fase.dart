@@ -17,34 +17,47 @@ class Alternativa {
 
 class Fase {
   final int id;
-  final dynamic giriaId; 
+  final dynamic giriaId;
   final String giria;
+  /// Tipo da questão: 'significado' | 'impacto' | 'aplicacao'
+  final String tipo;
   final List<String> variacoes;
   final String pergunta;
   final String explicacao;
   final String exemplo;
   final String? classe;
   final String respostaCorreta;
+  /// Justificativa do impacto (exibida na caixinha da questão de impacto)
+  final String impactoMotivo;
   final List<Alternativa> alternativas;
 
   const Fase({
     required this.id,
-    required this.giriaId, 
+    required this.giriaId,
     required this.giria,
+    this.tipo = 'significado',
     required this.variacoes,
     required this.pergunta,
     required this.explicacao,
     required this.exemplo,
     this.classe,
     required this.respostaCorreta,
+    this.impactoMotivo = '',
     required this.alternativas,
   });
+
+  /// Verdadeiro para questões de impacto (verifica `tipo` e fallback no texto).
+  bool get isImpacto =>
+      tipo == 'impacto' ||
+      pergunta.toLowerCase().contains('impacto') ||
+      pergunta.toLowerCase().contains('sentimento');
 
   factory Fase.fromJson(Map<String, dynamic> json) {
     return Fase(
       id: json['id'] as int,
-      giriaId: json['giriaId'], 
+      giriaId: json['giriaId'],
       giria: json['giria'] as String,
+      tipo: (json['tipo'] as String?) ?? 'significado',
       variacoes: (json['variacoes'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
@@ -53,6 +66,9 @@ class Fase {
       exemplo: json['exemplo'] as String,
       classe: json['classe'] as String?,
       respostaCorreta: json['respostaCorreta'] as String,
+      impactoMotivo: (json['impactoMotivo'] as String?) ??
+          (json['impacto_motivo'] as String?) ??
+          '',
       alternativas: (json['alternativas'] as List<dynamic>)
           .map((e) => Alternativa.fromJson(e as Map<String, dynamic>))
           .toList(),

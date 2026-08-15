@@ -3,10 +3,16 @@
     {
       "id": 1,
       "nome": "otaku",
-      "variacoes": ["otakus"],
+      "variacoes": [
+        "otakus"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "É como são conhecidos os grandes fãs da cultura pop japonesa, especialmente de animes (animações) e mangás (quadrinhos).",
-      "tags": ["anime", "manga", "japao"],
+      "tags": [
+        "anime",
+        "manga",
+        "japao"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Ele é tão otaku que já assistiu todos os episódios de Naruto três vezes.",
@@ -19,15 +25,22 @@
         "Um tipo de nó usado para prender redes de pesca.",
         "Uma pessoa extremamente organizada e perfeccionista no trabalho.",
         "Sinônimo japonês para colecionador de qualquer objeto, sem relação com anime."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 2,
       "nome": "waifu",
-      "variacoes": ["husbando"],
+      "variacoes": [
+        "husbando"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Personagem fictícia feminina (geralmente de animes ou jogos) por quem um fã tem grande admiração ou atração romântica platônica.",
-      "tags": ["anime", "jogos", "fandom"],
+      "tags": [
+        "anime",
+        "jogos",
+        "fandom"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "A Hinata é a waifu de muitos fãs que acompanham o anime.",
@@ -40,15 +53,22 @@
         "Uma técnica de dobradura de origami muito complexa.",
         "Uma personagem vilã que aparece só no final de um anime.",
         "Qualquer personagem de anime que o fã mais gosta, seja homem ou mulher."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 3,
       "nome": "canon",
-      "variacoes": ["canônico"],
+      "variacoes": [
+        "canônico"
+      ],
       "classe_gramatical": "adjetivo",
       "significado": "Termo usado para definir algo que faz parte oficialmente da história original de uma obra, validado pelo criador.",
-      "tags": ["series", "filmes", "quadrinhos"],
+      "tags": [
+        "series",
+        "filmes",
+        "quadrinhos"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Esse acontecimento no quadrinho é canon, ou seja, faz parte da linha do tempo oficial.",
@@ -61,15 +81,22 @@
         "Um tipo de fio usado para costurar roupas grossas.",
         "Uma teoria de fã sobre o que pode acontecer na próxima temporada.",
         "Qualquer coisa que aparece nos quadrinhos, mesmo que depois seja desmentida."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 4,
       "nome": "filler",
-      "variacoes": ["fillers"],
+      "variacoes": [
+        "fillers"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Episódio ou arco de história criado apenas para preencher espaço em uma série, que não avança a trama principal.",
-      "tags": ["anime", "series", "tv"],
+      "tags": [
+        "anime",
+        "series",
+        "tv"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Pode pular a terceira temporada do anime, é quase toda composta por episódios filler.",
@@ -82,15 +109,23 @@
         "Um tipo de trava usada em portas de segurança.",
         "Um episódio especial com cenas nunca antes vistas do elenco.",
         "Qualquer episódio mais fraco de uma temporada, mesmo que avance a história."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 5,
       "nome": "spoiler",
-      "variacoes": ["dar spoiler", "spoilers"],
+      "variacoes": [
+        "dar spoiler",
+        "spoilers"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Revelação antecipada de detalhes importantes da história de um filme, série ou livro, que estraga a surpresa de quem ainda não viu.",
-      "tags": ["filmes", "series", "cultura-pop"],
+      "tags": [
+        "filmes",
+        "series",
+        "cultura-pop"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Não me conte quem morre no final do filme, eu detesto tomar spoiler!",
@@ -103,15 +138,23 @@
         "Um instrumento de sopro usado em orquestras.",
         "Um resumo oficial divulgado pelo próprio estúdio antes do lançamento.",
         "Qualquer comentário sobre um filme, mesmo sem revelar detalhes da trama."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 6,
       "nome": "cosplay",
-      "variacoes": ["cosplayer", "fazer cosplay"],
+      "variacoes": [
+        "cosplayer",
+        "fazer cosplay"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "A arte de se vestir e interpretar um personagem famoso de animes, quadrinhos, filmes ou videogames.",
-      "tags": ["eventos", "fantasia", "anime"],
+      "tags": [
+        "eventos",
+        "fantasia",
+        "anime"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "O evento geek estava lotado de pessoas fazendo cosplay de super-heróis.",
@@ -124,15 +167,22 @@
         "Uma técnica de encanamento para trocar tubulações antigas.",
         "Uma peça de roupa vendida pronta, sem qualquer produção artesanal.",
         "Vestir qualquer fantasia, mesmo sem ser de um personagem específico."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 7,
       "nome": "easter egg",
-      "variacoes": ["easter eggs"],
+      "variacoes": [
+        "easter eggs"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Referência, piada ou mensagem secreta escondida pelos criadores dentro de um jogo, filme ou site para os fãs descobrirem.",
-      "tags": ["filmes", "jogos", "curiosidades"],
+      "tags": [
+        "filmes",
+        "jogos",
+        "curiosidades"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Você viu aquele easter egg do escudo do Capitão América escondido na cena do filme?",
@@ -145,7 +195,8 @@
         "Um utensílio de cozinha usado para bater claras em neve.",
         "Um final alternativo oficial divulgado pelos produtores do filme.",
         "Qualquer detalhe engraçado que aparece sem querer numa cena."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 8,
@@ -153,7 +204,11 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Uma reviravolta chocante e inesperada no roteiro de uma história, mudando completamente o rumo das coisas.",
-      "tags": ["filmes", "series", "livros"],
+      "tags": [
+        "filmes",
+        "series",
+        "livros"
+      ],
       "permissao": "todos",
       "impacto": "depende de contexto",
       "exemplo_correto": "O vilão era o melhor amigo do herói o tempo todo. Que plot twist absurdo!",
@@ -166,15 +221,22 @@
         "Um nó usado por escoteiros para amarrar barracas.",
         "Qualquer cena de ação emocionante no meio do filme.",
         "Uma cena triste que muda o humor do público, mesmo sem surpresa real."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 9,
       "nome": "crossover",
-      "variacoes": ["crossovers"],
+      "variacoes": [
+        "crossovers"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Encontro de personagens, cenários ou universos de histórias diferentes em uma única obra especial.",
-      "tags": ["quadrinhos", "filmes", "jogos"],
+      "tags": [
+        "quadrinhos",
+        "filmes",
+        "jogos"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Os Vingadores é o maior crossover de heróis da história do cinema.",
@@ -187,15 +249,22 @@
         "Um tipo de solado usado em tênis de corrida.",
         "Uma citação rápida de outro filme, sem os personagens aparecerem de verdade.",
         "Qualquer sequência de um filme que continua a história anterior."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 10,
       "nome": "padawan",
-      "variacoes": ["jovem padawan"],
+      "variacoes": [
+        "jovem padawan"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Termo que vem de Star Wars para designar um aprendiz. Usado na vida real para se referir a alguém novato em alguma área.",
-      "tags": ["star-wars", "ficcao-cientifica", "conversa"],
+      "tags": [
+        "star-wars",
+        "ficcao-cientifica",
+        "conversa"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Você ainda tem muito o que aprender sobre programação, meu jovem padawan.",
@@ -208,15 +277,24 @@
         "Uma ferramenta de jardinagem para cortar grama alta.",
         "Um vilão que trai seu mestre no meio da história.",
         "Qualquer personagem jovem de um filme de ficção científica."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 11,
       "nome": "noob",
-      "variacoes": ["n00b", "nub", "noobão"],
+      "variacoes": [
+        "n00b",
+        "nub",
+        "noobão"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa novata, sem experiência ou com pouca habilidade em um jogo ou tecnologia.",
-      "tags": ["jogos", "comportamento", "competicao"],
+      "tags": [
+        "jogos",
+        "comportamento",
+        "competicao"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ele morreu logo no primeiro minuto da partida, jogou como um verdadeiro noob.",
@@ -229,15 +307,23 @@
         "Um tipo de parafuso usado em montagem de móveis.",
         "Um jogador experiente que finge não saber jogar para provocar os outros.",
         "Qualquer pessoa que está jogando pela primeira vez uma partida específica."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 12,
       "nome": "lag",
-      "variacoes": ["lagado", "lagando"],
+      "variacoes": [
+        "lagado",
+        "lagando"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Atraso na comunicação de rede, fazendo com que o jogo ou a transmissão trave ou responda devagar.",
-      "tags": ["tecnologia", "jogos", "internet"],
+      "tags": [
+        "tecnologia",
+        "jogos",
+        "internet"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Eu só perdi a luta no jogo porque minha internet estava com muito lag.",
@@ -250,15 +336,23 @@
         "Um tempero usado na culinária escandinava.",
         "Queda total de conexão, quando a internet cai por completo.",
         "Qualquer demora no carregamento de uma página de internet."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 13,
       "nome": "bug",
-      "variacoes": ["bugado", "bugar"],
+      "variacoes": [
+        "bugado",
+        "bugar"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Erro ou falha de programação em um jogo, aplicativo ou sistema que faz algo funcionar de forma estranha.",
-      "tags": ["tecnologia", "jogos", "programacao"],
+      "tags": [
+        "tecnologia",
+        "jogos",
+        "programacao"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "O meu personagem ficou preso na parede do jogo por causa de um bug.",
@@ -271,15 +365,23 @@
         "Um tipo de gravata usada em trajes formais.",
         "Uma atualização oficial lançada pela empresa para o jogo.",
         "Qualquer coisa estranha que acontece no jogo, mesmo que seja proposital."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 14,
       "nome": "upar",
-      "variacoes": ["upou", "upando"],
+      "variacoes": [
+        "upou",
+        "upando"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Subir o nível (Level Up) de um personagem em um jogo ou melhorar um equipamento.",
-      "tags": ["jogos", "rpg", "evolucao"],
+      "tags": [
+        "jogos",
+        "rpg",
+        "evolucao"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Fiquei o fim de semana inteiro jogando para conseguir upar meu herói para o nível máximo.",
@@ -292,15 +394,23 @@
         "Cortar o cabelo bem curto, tipo um corte militar.",
         "Comprar um item novo na loja do jogo com dinheiro real.",
         "Ganhar qualquer recompensa dentro do jogo, mesmo sem mudar de nível."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 15,
       "nome": "farmar",
-      "variacoes": ["farm", "farmando"],
+      "variacoes": [
+        "farm",
+        "farmando"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Realizar tarefas repetitivas em um jogo com o objetivo de acumular muito dinheiro, pontos de experiência ou itens específicos.",
-      "tags": ["jogos", "rpg", "estrategia"],
+      "tags": [
+        "jogos",
+        "rpg",
+        "estrategia"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Vou ficar farmar essas criaturas fracas por uma hora para conseguir ouro suficiente para a espada.",
@@ -313,15 +423,24 @@
         "Consertar um vazamento de água em casa.",
         "Comprar itens do jogo com dinheiro real ao invés de jogar para consegui-los.",
         "Fazer qualquer missão do jogo, mesmo que seja só uma vez."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 16,
       "nome": "loot",
-      "variacoes": ["lootear", "lote", "looteando"],
+      "variacoes": [
+        "lootear",
+        "lote",
+        "looteando"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Recompensas, itens ou tesouros que caem de inimigos derrotados ou que são encontrados em baús nos jogos.",
-      "tags": ["jogos", "recompensa", "rpg"],
+      "tags": [
+        "jogos",
+        "recompensa",
+        "rpg"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Derrotamos o chefão e o loot foi incrível, conseguimos uma armadura lendária.",
@@ -334,15 +453,23 @@
         "Um tipo de sapato usado em corridas de rua.",
         "A moeda oficial do jogo usada para comprar itens na loja.",
         "Qualquer item que o jogador compra, mesmo sem derrotar inimigos."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 17,
       "nome": "drop",
-      "variacoes": ["dropar", "dropou"],
+      "variacoes": [
+        "dropar",
+        "dropou"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "O ato de um inimigo no jogo deixar cair um item quando é derrotado, ou a probabilidade de um item raro cair.",
-      "tags": ["jogos", "itens", "rpg"],
+      "tags": [
+        "jogos",
+        "itens",
+        "rpg"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "A chance de drop dessa espada rara é de apenas 1%, vamos ter que tentar muitas vezes.",
@@ -355,15 +482,23 @@
         "Um passo de dança usado em festas eletrônicas.",
         "Um item que o jogador ganha automaticamente ao completar o tutorial.",
         "Qualquer recompensa do jogo, mesmo que comprada na loja oficial."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 18,
       "nome": "respawn",
-      "variacoes": ["respawnar", "dar respawn"],
+      "variacoes": [
+        "respawnar",
+        "dar respawn"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "O local ou o ato de renascer no jogo depois que o personagem ou um inimigo foi morto.",
-      "tags": ["jogos", "mecanica", "acao"],
+      "tags": [
+        "jogos",
+        "mecanica",
+        "acao"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Fiquei esperando no ponto de respawn até o meu personagem voltar para a partida.",
@@ -376,15 +511,23 @@
         "Um tipo de assento reclinável usado em cinemas.",
         "O momento em que o jogo salva o progresso automaticamente.",
         "Qualquer vez que o personagem volta a se mexer depois de parado."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 19,
       "nome": "buff",
-      "variacoes": ["buffado", "buffar"],
+      "variacoes": [
+        "buffado",
+        "buffar"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Uma melhoria temporária nos atributos do personagem (como força ou defesa) dada por uma magia, ou uma melhoria definitiva feita pelos criadores do jogo.",
-      "tags": ["jogos", "estrategia", "rpg"],
+      "tags": [
+        "jogos",
+        "estrategia",
+        "rpg"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "O mago usou um feitiço de buff e agora nosso time inteiro causa o dobro de dano.",
@@ -397,15 +540,23 @@
         "Um tipo de vidro usado em janelas blindadas.",
         "Um item raro que aparece só uma vez por partida.",
         "Qualquer vantagem que o jogador ganha, mesmo sem ser temporária."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 20,
       "nome": "nerf",
-      "variacoes": ["nerfar", "nerfado"],
+      "variacoes": [
+        "nerfar",
+        "nerfado"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Quando os desenvolvedores de um jogo diminuem o poder de um personagem ou arma porque estava forte demais e desequilibrando o jogo.",
-      "tags": ["jogos", "balanceamento", "reclamacao"],
+      "tags": [
+        "jogos",
+        "balanceamento",
+        "reclamacao"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Eles deram um nerf na minha classe favorita e agora está impossível ganhar as partidas.",
@@ -418,15 +569,22 @@
         "Um tipo de cola usada em trabalhos manuais escolares.",
         "Quando o jogo remove completamente um personagem por ser injusto.",
         "Qualquer mudança feita pelos desenvolvedores em uma atualização do jogo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 21,
       "nome": "NPC",
-      "variacoes": ["npcs"],
+      "variacoes": [
+        "npcs"
+      ],
       "classe_gramatical": "sigla",
       "significado": "Sigla para 'Non-Playable Character' (Personagem Não Jogável). Personagens do jogo controlados pelo computador, geralmente para dar missões ou vender itens.",
-      "tags": ["jogos", "historia", "meme"],
+      "tags": [
+        "jogos",
+        "historia",
+        "meme"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Falei com o NPC da cidade para iniciar a próxima parte da história do jogo.",
@@ -439,15 +597,23 @@
         "Um tipo de parafuso sextavado usado em montagem industrial.",
         "O personagem principal controlado pelo jogador na história.",
         "Qualquer personagem secundário que aparece em poucas cenas do jogo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 22,
       "nome": "boss",
-      "variacoes": ["boss fight", "chefão"],
+      "variacoes": [
+        "boss fight",
+        "chefão"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "O 'chefão' final de uma fase ou do jogo inteiro, um inimigo muito mais forte e difícil de derrotar do que os normais.",
-      "tags": ["jogos", "desafio", "acao"],
+      "tags": [
+        "jogos",
+        "desafio",
+        "acao"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Fiquei três horas tentando e finalmente consegui derrotar o último boss do jogo.",
@@ -460,15 +626,23 @@
         "Um tipo de tecido usado em cortinas pesadas.",
         "Qualquer inimigo comum que aparece várias vezes na fase.",
         "O personagem mais forte que aparece logo no início do jogo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 23,
       "nome": "camper",
-      "variacoes": ["camperar", "ze camperinho"],
+      "variacoes": [
+        "camperar",
+        "ze camperinho"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Jogador de jogos de tiro que fica escondido em um único ponto estratégico esperando o inimigo passar para atirar, sem se movimentar pelo mapa.",
-      "tags": ["jogos", "tiro", "comportamento"],
+      "tags": [
+        "jogos",
+        "tiro",
+        "comportamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Aquele camper ficou escondido atrás da porta a partida inteira só esperando a gente passar.",
@@ -481,15 +655,23 @@
         "Um tipo de esponja usada para lavar louça.",
         "Um jogador que corre pelo mapa inteiro sem parar em lugar nenhum.",
         "Qualquer jogador que fica parado por alguns segundos durante a partida."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 24,
       "nome": "rushar",
-      "variacoes": ["rush", "rushando"],
+      "variacoes": [
+        "rush",
+        "rushando"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Atacar o inimigo rapidamente de forma agressiva e direta, sem dar tempo para ele se preparar, ou avançar rapidamente no jogo ignorando missões secundárias.",
-      "tags": ["jogos", "estrategia", "acao"],
+      "tags": [
+        "jogos",
+        "estrategia",
+        "acao"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Vamos rushar a base inimiga todos juntos agora enquanto eles estão distraídos!",
@@ -502,15 +684,22 @@
         "Passar um creme hidratante na pele depois do banho.",
         "Explorar o mapa devagar, coletando todos os itens possíveis.",
         "Qualquer ataque feito no jogo, mesmo que devagar e com cautela."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 25,
       "nome": "headshot",
-      "variacoes": ["HS"],
+      "variacoes": [
+        "HS"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Um tiro certeiro na cabeça do inimigo em jogos de tiro, que geralmente elimina o alvo instantaneamente e exige muita habilidade.",
-      "tags": ["jogos", "tiro", "habilidade"],
+      "tags": [
+        "jogos",
+        "tiro",
+        "habilidade"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Eu consegui acertar um headshot de muito longe usando o rifle de precisão.",
@@ -523,15 +712,22 @@
         "Um tipo de penteado usado em salões de beleza.",
         "Qualquer tiro que acerta o inimigo, seja onde for.",
         "Um tiro certeiro no peito do inimigo que também elimina na hora."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 26,
       "nome": "mana",
-      "variacoes": ["MP"],
+      "variacoes": [
+        "MP"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Energia mágica que um personagem possui em jogos de RPG, necessária para lançar feitiços e usar habilidades especiais. Quando acaba, você não pode soltar magias.",
-      "tags": ["jogos", "magia", "rpg"],
+      "tags": [
+        "jogos",
+        "magia",
+        "rpg"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Minha mana acabou, preciso beber uma poção azul antes de lançar outro feitiço.",
@@ -544,15 +740,23 @@
         "Um tipo de vento forte comum no litoral nordestino.",
         "A vida do personagem, que quando acaba, ele morre no jogo.",
         "Qualquer barra de energia do personagem, incluindo a de vida."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 27,
       "nome": "aggro",
-      "variacoes": ["agrar", "puxar o aggro"],
+      "variacoes": [
+        "agrar",
+        "puxar o aggro"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Gíria para se referir à atenção do inimigo controlado pelo jogo. 'Puxar o aggro' significa fazer o monstro atacar você em vez do seu aliado mais fraco.",
-      "tags": ["jogos", "estrategia", "rpg"],
+      "tags": [
+        "jogos",
+        "estrategia",
+        "rpg"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Como você é o cavaleiro de armadura pesada, puxe o aggro do dragão para eu poder curar o time.",
@@ -565,15 +769,22 @@
         "Um tipo de argamassa usada em obras de construção.",
         "O dano total que um personagem causa durante a partida.",
         "Qualquer momento em que o inimigo aparece perto do jogador."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 28,
       "nome": "glitch",
-      "variacoes": ["glitches"],
+      "variacoes": [
+        "glitches"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "Uma falha bizarra e temporária no jogo que causa efeitos visuais estranhos, como texturas piscando, ou quebra a física do cenário sem necessariamente estragar o progresso.",
-      "tags": ["tecnologia", "jogos", "erros"],
+      "tags": [
+        "tecnologia",
+        "jogos",
+        "erros"
+      ],
       "permissao": "todos",
       "impacto": "depende de contexto",
       "exemplo_correto": "Deu um glitch engraçado e as paredes do jogo começaram a ficar transparentes.",
@@ -586,15 +797,22 @@
         "Um tipo de laço usado para prender cabelo.",
         "Uma atualização de segurança lançada pela desenvolvedora do jogo.",
         "Qualquer efeito visual bonito que aparece de propósito no jogo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 29,
       "nome": "speedrun",
-      "variacoes": ["speedrunner"],
+      "variacoes": [
+        "speedrunner"
+      ],
       "classe_gramatical": "substantivo",
       "significado": "O desafio de tentar finalizar um jogo (ou uma fase) no menor tempo possível, geralmente usando técnicas avançadas e explorando falhas do game.",
-      "tags": ["jogos", "competicao", "desafio"],
+      "tags": [
+        "jogos",
+        "competicao",
+        "desafio"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Ele quebrou o recorde mundial fazendo um speedrun e zerou o Super Mario em menos de cinco minutos.",
@@ -607,15 +825,23 @@
         "Um tipo de tecido impermeável usado em capas de chuva.",
         "Terminar o jogo no modo mais difícil disponível, sem se importar com o tempo.",
         "Qualquer jogador que termina o jogo rápido, mesmo sem técnica nenhuma."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     },
     {
       "id": 30,
       "nome": "craftar",
-      "variacoes": ["craft", "craftando"],
+      "variacoes": [
+        "craft",
+        "craftando"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Vem do inglês 'craft'. Significa combinar materiais e recursos no jogo para criar novos itens, como armas, poções ou armaduras.",
-      "tags": ["jogos", "sobrevivencia", "rpg"],
+      "tags": [
+        "jogos",
+        "sobrevivencia",
+        "rpg"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Coletei madeira e ferro suficientes, agora vou na oficina craftar uma espada nova.",
@@ -628,7 +854,8 @@
         "Um tipo de sapato usado para caminhadas em trilhas.",
         "Comprar um item pronto direto na loja do jogo.",
         "Qualquer ação de juntar dois itens no inventário, mesmo sem criar nada novo."
-      ]
+      ],
+      "impacto_motivo": "vazio"
     }
   ]
 }

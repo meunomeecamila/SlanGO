@@ -25,7 +25,7 @@
       "Reação física de afastar bruscamente o corpo ao sentir um cheiro muito forte.",
       "Sensação de dor aguda e repentina causada por uma pancada leve em uma articulação."
     ],
-    "justificativa": "Cringe descreve algo constrangedor ou vergonhoso, gerando desconforto ou vergonha alheia em quem observa."
+    "impacto_motivo": "Cringe descreve algo constrangedor ou vergonhoso, gerando desconforto ou vergonha alheia em quem observa."
   },
   {
     "id": 2,
@@ -53,7 +53,7 @@
       "Som sibilante e curto que alguns aparelhos eletrônicos emitem ao ligar.",
       "Fecho de metal ou plástico usado para abrir e fechar roupas e bolsas rapidamente."
     ],
-    "justificativa": "Rizz descreve carisma e habilidade de atrair pessoas, sendo uma qualidade admirada e desejada."
+    "impacto_motivo": "Rizz descreve carisma e habilidade de atrair pessoas, sendo uma qualidade admirada e desejada."
   },
   {
     "id": 3,
@@ -81,7 +81,7 @@
       "Nome popular dado a um tipo específico de nó usado em escaladas.",
       "Letra grega usada em fórmulas matemáticas para representar somatórios de valores."
     ],
-    "justificativa": "Sigma descreve independência e autossuficiência, mas é usado de forma tão irônica e variada que não carrega um julgamento fixo."
+    "impacto_motivo": "Sigma descreve independência e autossuficiência, mas é usado de forma tão irônica e variada que não carrega um julgamento fixo."
   },
   {
     "id": 4,
@@ -109,7 +109,7 @@
       "Ato de quebrar um objeto frágil em pequenos pedaços acidentalmente.",
       "Assar pequenas porções de massa doce até ficarem crocantes no forno."
     ],
-    "justificativa": "Biscoitar pode ser visto como positivo quando é apenas autoconfiança, ou negativo quando soa como carência excessiva de validação, por isso o impacto depende do contexto."
+    "impacto_motivo": "Biscoitar pode ser visto como positivo quando é apenas autoconfiança, ou negativo quando soa como carência excessiva de validação, por isso o impacto depende do contexto."
   },
   {
     "id": 5,
@@ -139,7 +139,7 @@
       "Vedar frestas de portas e janelas com silicone para evitar correntes de ar.",
       "Fechar hermeticamente uma embalagem ou envelope usando fita ou cera."
     ],
-    "justificativa": "Lacrar remete a uma vitória verbal ou performance impecável, sendo motivo de admiração e elogio."
+    "impacto_motivo": "Lacrar remete a uma vitória verbal ou performance impecável, sendo motivo de admiração e elogio."
   },
   {
     "id": 6,
@@ -167,7 +167,7 @@
       "Matricular-se em cursos tradicionais de idiomas estrangeiros.",
       "Comunicar-se utilizando o idioma espanhol."
     ],
-    "justificativa": "Hablar remete a falar verdades com coragem e sinceridade, sendo valorizado como atitude autêntica."
+    "impacto_motivo": "Hablar remete a falar verdades com coragem e sinceridade, sendo valorizado como atitude autêntica."
   },
   {
     "id": 7,
@@ -196,7 +196,7 @@
       "Golpe final e decisivo desferido contra um inimigo em jogos de fantasia.",
       "Veículo de madeira sem rodas puxado por cães para deslizar sobre a neve."
     ],
-    "justificativa": "Slay é uma expressão de elogio usada para celebrar quando alguém se destaca no visual ou desempenho."
+    "impacto_motivo": "Slay é uma expressão de elogio usada para celebrar quando alguém se destaca no visual ou desempenho."
   },
   {
     "id": 8,
@@ -224,7 +224,7 @@
       "Separar um material grande em partes iguais e menores.",
       "Sofá sem encosto clássico usado em consultórios de psicanálise."
     ],
-    "justificativa": "Divar remete a se destacar com glamour e autoconfiança, sendo associado a um momento de brilho pessoal."
+    "impacto_motivo": "Divar remete a se destacar com glamour e autoconfiança, sendo associado a um momento de brilho pessoal."
   },
   {
     "id": 9,
@@ -251,7 +251,7 @@
       "Conjunto de técnicas usadas para reproduzir aves em cativeiro.",
       "Animal recém-nascido ainda em fase de amamentação no meio rural."
     ],
-    "justificativa": "De cria valoriza autenticidade e estilo ligados à vivência urbana, sendo usado como elogio."
+    "impacto_motivo": "De cria valoriza autenticidade e estilo ligados à vivência urbana, sendo usado como elogio."
   },
   {
     "id": 10,
@@ -278,7 +278,7 @@
       "Imitar a voz de um gato de forma teatral em peças infantis.",
       "Som estridente e agudo emitido naturalmente por felinos domésticos."
     ],
-    "justificativa": "Miar indica que um plano falhou ou foi cancelado, trazendo frustração para quem esperava que acontecesse."
+    "impacto_motivo": "Miar indica que um plano falhou ou foi cancelado, trazendo frustração para quem esperava que acontecesse."
   },
   {
     "id": 11,
@@ -305,7 +305,7 @@
       "Botão interruptor de ferramentas elétricas que aciona a rotação do motor.",
       "Peça metálica acionada pelo dedo para disparar armas de fogo."
     ],
-    "justificativa": "Gatilho está associado a lembranças dolorosas ou reações emocionais negativas ligadas a traumas ou desconfortos."
+    "impacto_motivo": "Gatilho está associado a lembranças dolorosas ou reações emocionais negativas ligadas a traumas ou desconfortos."
   },
   {
     "id": 12,
@@ -335,7 +335,7 @@
       "Condição clínica associada a níveis elevados de pressão arterial.",
       "Doença tireoidiana em que o metabolismo funciona de forma muito acelerada."
     ],
-    "justificativa": "Hypado indica grande expectativa e entusiasmo positivo em torno de algo popular ou desejado."
+    "impacto_motivo": "Hypado indica grande expectativa e entusiasmo positivo em torno de algo popular ou desejado."
   },
   {
     "id": 13,
@@ -363,7 +363,7 @@
       "Inventar informações irreais para exagerar detalhes de uma notícia verdadeira.",
       "Contar histórias populares baseadas na mitologia grega ou nórdica."
     ],
-    "justificativa": "Mitar celebra uma ação genial ou impressionante que gera admiração de quem observa."
+    "impacto_motivo": "Mitar celebra uma ação genial ou impressionante que gera admiração de quem observa."
   },
   {
     "id": 14,
@@ -394,7 +394,7 @@
       "Chegar na primeira marcação segura de campo durante uma partida de beisebol.",
       "Ato de aplicar a primeira camada de maquiagem líquida para nivelar a pele."
     ],
-    "justificativa": "Foi de base indica que algo quebrou, estragou ou deu errado, remetendo a uma perda ou contratempo."
+    "impacto_motivo": "Foi de base indica que algo quebrou, estragou ou deu errado, remetendo a uma perda ou contratempo."
   },
   {
     "id": 15,
@@ -423,7 +423,7 @@
       "Termo infantil usado para se referir a bonecos de pelúcia macios.",
       "Categoria de produtos exclusivos, caros e luxuosos, conhecida como 'deluxe'."
     ],
-    "justificativa": "Delulu aponta para uma ilusão exagerada e pouco saudável sobre uma situação romântica irreal."
+    "impacto_motivo": "Delulu aponta para uma ilusão exagerada e pouco saudável sobre uma situação romântica irreal."
   },
   {
     "id": 16,
@@ -452,7 +452,7 @@
       "Cena rápida de comédia física em filmes antigos ou circo.",
       "Ato reflexo de engasgar levemente com algum pedaço de comida."
     ],
-    "justificativa": "Gag expressa um choque agradável e positivo diante de algo impressionante ou visualmente impecável."
+    "impacto_motivo": "Gag expressa um choque agradável e positivo diante de algo impressionante ou visualmente impecável."
   },
   {
     "id": 17,
@@ -481,7 +481,7 @@
       "Anel metálico dobrável utilizado para abrir latas de bebidas.",
       "Selo plástico colado na tampa de embalagens pra garantir segurança."
     ],
-    "justificativa": "Lacre celebra uma resposta ou atitude brilhante que encerra uma discussão de forma memorável e admirada."
+    "impacto_motivo": "Lacre celebra uma resposta ou atitude brilhante que encerra uma discussão de forma memorável e admirada."
   },
   {
     "id": 18,
@@ -510,7 +510,7 @@
       "Nota musical tocada no violão durante aulas básicas de música.",
       "Letra que simboliza reprovação acadêmica em sistemas de ensino americanos."
     ],
-    "justificativa": "F expressa lamento ou luto diante de uma situação ruim, carregando um tom de pesar."
+    "impacto_motivo": "F expressa lamento ou luto diante de uma situação ruim, carregando um tom de pesar."
   },
   {
     "id": 19,
@@ -539,7 +539,7 @@
       "Loção cosmética industrial recomendada para esfoliar cravos profundos.",
       "Clínica especializada em tratamentos corporais e massagens relaxantes."
     ],
-    "justificativa": "Aesthetic remete a um visual cuidado e harmonioso, sendo associado a algo bonito e desejável."
+    "impacto_motivo": "Aesthetic remete a um visual cuidado e harmonioso, sendo associado a algo bonito e desejável."
   },
   {
     "id": 20,
@@ -566,7 +566,7 @@
       "Indisposição estomacal aguda causada por intoxicação alimentar.",
       "Vilão ou antagonista principal na trama de um filme ou quadrinho."
     ],
-    "justificativa": "Baddie remete a autoconfiança e estilo marcante, sendo usado como elogio à aparência e atitude."
+    "impacto_motivo": "Baddie remete a autoconfiança e estilo marcante, sendo usado como elogio à aparência e atitude."
   },
   {
     "id": 21,
@@ -593,7 +593,7 @@
       "Processo de apodrecimento biológico da madeira usada em estrados de cama.",
       "Condição de mofo e proliferação de fungos encontrada em colchões molhados."
     ],
-    "justificativa": "Bed rot está associado à procrastinação e à falta de produtividade, podendo refletir esgotamento ou desânimo."
+    "impacto_motivo": "Bed rot está associado à procrastinação e à falta de produtividade, podendo refletir esgotamento ou desânimo."
   },
   {
     "id": 22,
@@ -622,7 +622,7 @@
       "Ato de aplicar maquiagem de palhaço teatral para espetáculos circenses.",
       "Ação estratégica de utilizar a carta 'Coringa' em jogos de baralho."
     ],
-    "justificativa": "Coringar remete a perder o controle emocional diante de uma situação difícil, geralmente de forma nervosa ou desesperada."
+    "impacto_motivo": "Coringar remete a perder o controle emocional diante de uma situação difícil, geralmente de forma nervosa ou desesperada."
   },
   {
     "id": 23,
@@ -649,7 +649,7 @@
       "Custo Por Aquisição, métrica usada em campanhas de marketing digital.",
       "Certificado Profissional Anbima exigido para atuar no mercado financeiro."
     ],
-    "justificativa": "CPA apenas indica incerteza ou possibilidade sobre algo, sem carga emocional positiva ou negativa."
+    "impacto_motivo": "CPA apenas indica incerteza ou possibilidade sobre algo, sem carga emocional positiva ou negativa."
   },
   {
     "id": 24,
@@ -676,7 +676,7 @@
       "Falha estrutural onde um sistema de computador paralisa e desliga sozinho.",
       "Acidente rodoviário envolvendo a colisão frontal de dois veículos."
     ],
-    "justificativa": "Crash out remete a uma explosão emocional descontrolada, associada a raiva e perda de controle."
+    "impacto_motivo": "Crash out remete a uma explosão emocional descontrolada, associada a raiva e perda de controle."
   },
   {
     "id": 25,
@@ -705,7 +705,7 @@
       "Permitir que o profissional da cozinha trabalhe sem interrupções durante o preparo.",
       "Ato de aquecer um alimento cru no fogo até ficar comestível."
     ],
-    "justificativa": "Deixa ele cozinhar incentiva paciência e confiança para que alguém desenvolva sua própria ideia sem julgamento precipitado."
+    "impacto_motivo": "Deixa ele cozinhar incentiva paciência e confiança para que alguém desenvolva sua própria ideia sem julgamento precipitado."
   },
   {
     "id": 26,
@@ -732,7 +732,7 @@
       "Sifão de encanamento responsável por bloquear maus odores em ralos.",
       "Aterro sanitário onde resíduos sólidos urbanos são despejados."
     ],
-    "justificativa": "Dump é apenas uma forma despretensiosa de compartilhar fotos, sem carga emocional própria."
+    "impacto_motivo": "Dump é apenas uma forma despretensiosa de compartilhar fotos, sem carga emocional própria."
   },
   {
     "id": 27,
@@ -762,7 +762,7 @@
       "Revista impressa amadora montada por fã-clubes pra circulação interna.",
       "Conto literário não-oficial escrito por admiradores no universo de uma obra existente."
     ],
-    "justificativa": "Fanfic pode ser inofensivo como fantasia divertida ou negativo quando usado para zombar de uma mentira, então o impacto depende do contexto."
+    "impacto_motivo": "Fanfic pode ser inofensivo como fantasia divertida ou negativo quando usado para zombar de uma mentira, então o impacto depende do contexto."
   },
   {
     "id": 28,
@@ -787,7 +787,7 @@
       "Espuma de poliuretano expansiva usada em vedações na construção civil.",
       "Bolhas de ar compactadas formadas ao agitar fortemente líquidos com proteínas."
     ],
-    "justificativa": "Fomo está ligado à ansiedade e ao desconforto de sentir que está perdendo algo importante."
+    "impacto_motivo": "Fomo está ligado à ansiedade e ao desconforto de sentir que está perdendo algo importante."
   },
   {
     "id": 29,
@@ -815,7 +815,7 @@
       "Digerir grandes porções de comida depois das dezoito horas.",
       "Ato literal de ingerir alimentos no período noturno."
     ],
-    "justificativa": "Jantou celebra quando alguém rebate argumentos com maestria, sendo visto como uma vitória impressionante."
+    "impacto_motivo": "Jantou celebra quando alguém rebate argumentos com maestria, sendo visto como uma vitória impressionante."
   },
   {
     "id": 30,
@@ -841,7 +841,7 @@
       "Nota musical ou tom grave produzido por cordas vocais cansadas.",
       "Técnica fotográfica onde as sombras predominam na composição da imagem."
     ],
-    "justificativa": "Lowkey apenas indica discrição ou moderação em algo, sem carga emocional positiva ou negativa."
+    "impacto_motivo": "Lowkey apenas indica discrição ou moderação em algo, sem carga emocional positiva ou negativa."
   },
   {
     "id": 31,
@@ -869,7 +869,7 @@
       "Servir líquidos quentes dentro de canecas grossas de cerâmica, tipo 'mug'.",
       "Som barulhento emitido por bois e vacas nos pastos durante o dia."
     ],
-    "justificativa": "Moggar descreve alguém superando outra pessoa em aparência, o que pode soar como comparação prejudicial a quem foi superado."
+    "impacto_motivo": "Moggar descreve alguém superando outra pessoa em aparência, o que pode soar como comparação prejudicial a quem foi superado."
   },
   {
     "id": 32,
@@ -895,7 +895,7 @@
       "Abreviação usada em terminais rodoviários pra indicar ponto de parada.",
       "Painel de instrumentos localizado na cabine de aviões durante o voo."
     ],
-    "justificativa": "POV apenas descreve um formato de vídeo gravado sob determinada perspectiva, sem carga emocional."
+    "impacto_motivo": "POV apenas descreve um formato de vídeo gravado sob determinada perspectiva, sem carga emocional."
   },
   {
     "id": 33,
@@ -923,7 +923,7 @@
       "Bandeira usada na praia pra indicar risco de afogamento devido ao mar agitado.",
       "Código do automobilismo que ordena a paralisação imediata de uma prova."
     ],
-    "justificativa": "Red flag alerta sobre comportamentos problemáticos que sinalizam riscos em um relacionamento."
+    "impacto_motivo": "Red flag alerta sobre comportamentos problemáticos que sinalizam riscos em um relacionamento."
   },
   {
     "id": 34,
@@ -952,7 +952,7 @@
       "Peça de equipamento plástico acoplada aos pés em esportes de inverno.",
       "Esporte radical de inverno que consiste em deslizar por encostas nevadas."
     ],
-    "justificativa": "Skibidi tem significados variados e é usado de forma tão flexível e irônica que seu impacto muda conforme o contexto."
+    "impacto_motivo": "Skibidi tem significados variados e é usado de forma tão flexível e irônica que seu impacto muda conforme o contexto."
   },
   {
     "id": 35,
@@ -979,7 +979,7 @@
       "Nó marinheiro onde duas cordas são sobrepostas pra fortalecer a amarra.",
       "Estar prensado e apertado fisicamente pela falta de espaço em transportes."
     ],
-    "justificativa": "Tamo junto expressa apoio, solidariedade e parceria entre pessoas, sendo uma expressão acolhedora."
+    "impacto_motivo": "Tamo junto expressa apoio, solidariedade e parceria entre pessoas, sendo uma expressão acolhedora."
   },
   {
     "id": 36,
@@ -1004,7 +1004,7 @@
       "Expressão locativa que aponta a direção exata de alguém correndo.",
       "Pronome pessoal do caso reto da terceira pessoa do singular em análise gramatical."
     ],
-    "justificativa": "Lá ele é usado de forma bem-humorada para se defender de insinuações, sem intenção ofensiva."
+    "impacto_motivo": "Lá ele é usado de forma bem-humorada para se defender de insinuações, sem intenção ofensiva."
   },
   {
     "id": 37,
@@ -1028,7 +1028,7 @@
       "Argamassa de cimento e areia molhada usada pra fixar lajotas na alvenaria.",
       "Grandeza física que mede a quantidade de matéria de um corpo em laboratório."
     ],
-    "justificativa": "Massa expressa aprovação e entusiasmo por algo considerado divertido ou excelente."
+    "impacto_motivo": "Massa expressa aprovação e entusiasmo por algo considerado divertido ou excelente."
   },
   {
     "id": 38,
@@ -1052,7 +1052,7 @@
       "Horário do formato militar correspondente às oito horas da manhã.",
       "Prefixo telefônico institucional de ligações isentas de cobrança de tarifas."
     ],
-    "justificativa": "0800 indica que algo é gratuito, o que é sempre visto como vantajoso por quem recebe."
+    "impacto_motivo": "0800 indica que algo é gratuito, o que é sempre visto como vantajoso por quem recebe."
   },
   {
     "id": 39,
@@ -1080,7 +1080,7 @@
       "Provocar queimaduras leves na pele ao encostar em superfícies quentes.",
       "Assoprar ou atear fogo em carvão vegetal até ficar incandescente."
     ],
-    "justificativa": "Embrazar remete a se divertir intensamente e entrar no clima de uma festa, sendo associado à alegria."
+    "impacto_motivo": "Embrazar remete a se divertir intensamente e entrar no clima de uma festa, sendo associado à alegria."
   },
   {
     "id": 40,
@@ -1107,7 +1107,7 @@
       "Erupção cutânea repentina causada por inflamação nas glândulas da pele.",
       "Processo biológico em que o primeiro caule nasce da semente."
     ],
-    "justificativa": "Brotar indica aparecer em um encontro social, sendo um convite amigável e bem-vindo."
+    "impacto_motivo": "Brotar indica aparecer em um encontro social, sendo um convite amigável e bem-vindo."
   },
   {
     "id": 41,
@@ -1133,7 +1133,7 @@
       "Forma reduzida usada pra chamar o mecânico responsável pela manutenção do carro.",
       "Sigla oficial para o Ministério da Educação, órgão federal de ensino."
     ],
-    "justificativa": "Mec indica que uma situação está tranquila e sob controle, trazendo uma sensação de conforto."
+    "impacto_motivo": "Mec indica que uma situação está tranquila e sob controle, trazendo uma sensação de conforto."
   },
   {
     "id": 42,
@@ -1161,7 +1161,7 @@
       "Ferramenta de boca pesada usada em manutenções mecânicas de porcas.",
       "Objeto ranhurado de metal usado pra abrir fechaduras domiciliares."
     ],
-    "justificativa": "Chave elogia a boa aparência e o estilo de alguém, sendo usado como reconhecimento positivo."
+    "impacto_motivo": "Chave elogia a boa aparência e o estilo de alguém, sendo usado como reconhecimento positivo."
   },
   {
     "id": 43,
@@ -1188,7 +1188,7 @@
       "Reação de empatia sensível provocada por cenas de superação em filmes.",
       "Ato de verter lágrimas motivado por alegrias intensas ou despedidas difíceis."
     ],
-    "justificativa": "Emocionado, nesse contexto de relacionamento, critica quem se precipita emocionalmente cedo demais, o que pode assustar o outro ou soar desequilibrado."
+    "impacto_motivo": "Emocionado, nesse contexto de relacionamento, critica quem se precipita emocionalmente cedo demais, o que pode assustar o outro ou soar desequilibrado."
   },
   {
     "id": 44,
@@ -1216,7 +1216,7 @@
       "O canhotinho que sobra grudado no bloco após destacar folhas de cheque.",
       "Parte central mais crocante de hortaliças e vegetais folhosos."
     ],
-    "justificativa": "Talarico descreve alguém que age de forma desleal ao tentar se envolver com o par de um conhecido, sendo uma atitude condenada socialmente."
+    "impacto_motivo": "Talarico descreve alguém que age de forma desleal ao tentar se envolver com o par de um conhecido, sendo uma atitude condenada socialmente."
   },
   {
     "id": 45,
@@ -1244,7 +1244,7 @@
       "Carga viva pesada transportada em caminhões abertos por boiadeiros.",
       "Conjunto de vacas e bois de corte criados nas terras da zona rural."
     ],
-    "justificativa": "Gado critica a submissão excessiva por interesse romântico, remetendo à falta de amor próprio."
+    "impacto_motivo": "Gado critica a submissão excessiva por interesse romântico, remetendo à falta de amor próprio."
   },
   {
     "id": 46,
@@ -1272,7 +1272,7 @@
       "Retalho recortado de um rolo de tecido maior pra mostrar o padrão aos clientes.",
       "Pequeno frasco cosmético dado gratuitamente pra testar produtos antes da compra."
     ],
-    "justificativa": "Amostradinho critica quem se exibe de forma exagerada ou imprudente apenas para chamar atenção, o que costuma ser mal visto."
+    "impacto_motivo": "Amostradinho critica quem se exibe de forma exagerada ou imprudente apenas para chamar atenção, o que costuma ser mal visto."
   },
   {
     "id": 47,
@@ -1300,7 +1300,7 @@
       "Ato de virar um alimento no ar durante o preparo.",
       "Perder o ar ou murchar repentinamente um objeto inflável."
     ],
-    "justificativa": "Flopar indica fracasso ou falta de sucesso em algo que se esperava dar certo, gerando frustração."
+    "impacto_motivo": "Flopar indica fracasso ou falta de sucesso em algo que se esperava dar certo, gerando frustração."
   },
   {
     "id": 48,
@@ -1329,7 +1329,7 @@
       "Personagem sobrenatural típico de filmes de assombração.",
       "Efeito visual usado em atrações de parques temáticos noturnos."
     ],
-    "justificativa": "Ghosting descreve o abandono repentino e sem explicação de um contato, causando mágoa e confusão em quem foi deixado de lado."
+    "impacto_motivo": "Ghosting descreve o abandono repentino e sem explicação de um contato, causando mágoa e confusão em quem foi deixado de lado."
   },
   {
     "id": 49,
@@ -1356,7 +1356,7 @@
       "Peça de vestuário vintage vendida em brechós especializados.",
       "Veículo fabricado há muitos anos, mas ainda em bom estado."
     ],
-    "justificativa": "Old aponta que um conteúdo, piada ou meme já está ultrapassado, o que costuma soar como crítica em contextos de internet."
+    "impacto_motivo": "Old aponta que um conteúdo, piada ou meme já está ultrapassado, o que costuma soar como crítica em contextos de internet."
   },
   {
     "id": 50,
@@ -1385,7 +1385,7 @@
       "Ato de disponibilizar comida ou líquidos para alguém consumir.",
       "Oferecer um prato ou refeição em um estabelecimento."
     ],
-    "justificativa": "Servir, nesse uso, celebra um visual ou performance impecável, sendo motivo de admiração e elogio."
+    "impacto_motivo": "Servir, nesse uso, celebra um visual ou performance impecável, sendo motivo de admiração e elogio."
   },
   {
     "id": 51,
@@ -1412,7 +1412,7 @@
       "Componente elétrico usado em instalações residenciais.",
       "Objeto decorativo utilizado em ambientes internos."
     ],
-    "justificativa": "Jomo remete ao prazer tranquilo de ficar de fora de compromissos, sendo associado a bem-estar e autocuidado."
+    "impacto_motivo": "Jomo remete ao prazer tranquilo de ficar de fora de compromissos, sendo associado a bem-estar e autocuidado."
   },
   {
     "id": 52,
@@ -1439,7 +1439,7 @@
       "Compartimento metálico usado para transportar combustível.",
       "Reservatório industrial utilizado em postos de abastecimento."
     ],
-    "justificativa": "Tankar, no uso cotidiano, indica resiliência ao aguentar situações difíceis sem desistir, sendo visto como algo positivo."
+    "impacto_motivo": "Tankar, no uso cotidiano, indica resiliência ao aguentar situações difíceis sem desistir, sendo visto como algo positivo."
   },
   {
     "id": 53,
@@ -1466,7 +1466,7 @@
       "Tipo de atividade elétrica cerebral associada a estados de calma.",
       "Estágio inicial de desenvolvimento de um produto digital."
     ],
-    "justificativa": "Alpha descreve uma postura de liderança e confiança, mas é usado de forma tão variada e às vezes irônica que não carrega julgamento fixo."
+    "impacto_motivo": "Alpha descreve uma postura de liderança e confiança, mas é usado de forma tão variada e às vezes irônica que não carrega julgamento fixo."
   },
   {
     "id": 54,
@@ -1491,7 +1491,7 @@
       "Fase de avaliação de um produto digital com acesso limitado.",
       "Tipo de radiação estudada em experimentos de física nuclear."
     ],
-    "justificativa": "Beta é usado de forma pejorativa para criticar falta de iniciativa ou submissão, funcionando quase como um insulto."
+    "impacto_motivo": "Beta é usado de forma pejorativa para criticar falta de iniciativa ou submissão, funcionando quase como um insulto."
   },
   {
     "id": 55,
@@ -1518,7 +1518,7 @@
       "Cuidar de uma plantação agrícola familiar.",
       "Trabalhar em atividades relacionadas ao cultivo da terra."
     ],
-    "justificativa": "Farmar, no contexto de redes sociais, descreve o acúmulo repetido de engajamento, podendo ser visto de forma neutra dependendo da intenção."
+    "impacto_motivo": "Farmar, no contexto de redes sociais, descreve o acúmulo repetido de engajamento, podendo ser visto de forma neutra dependendo da intenção."
   },
   {
     "id": 56,
@@ -1546,7 +1546,7 @@
       "Suposta emanação energética estudada em terapias alternativas.",
       "Conceito ligado a crenças espirituais sobre energia pessoal."
     ],
-    "justificativa": "Aura, no uso de internet, celebra carisma e boas atitudes de forma bem-humorada, sendo associada a reconhecimento positivo."
+    "impacto_motivo": "Aura, no uso de internet, celebra carisma e boas atitudes de forma bem-humorada, sendo associada a reconhecimento positivo."
   },
   {
     "id": 57,
@@ -1573,6 +1573,6 @@
       "Numeração usada para identificar uma unidade residencial.",
       "Número estampado na camisa de um atleta ou jogador."
     ],
-    "justificativa": "67 é usado como resposta ou reação aleatória e sem sentido fixo, funcionando como piada interna de internet sem carga emocional definida."
+    "impacto_motivo": "67 é usado como resposta ou reação aleatória e sem sentido fixo, funcionando como piada interna de internet sem carga emocional definida."
   }
 ]

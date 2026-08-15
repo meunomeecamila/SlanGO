@@ -114,12 +114,14 @@ function gerarFase1(giriasSorteadas: Girias[]) {
         const todasAsOpcoes = [giria.significado, ...giria.significados_incorretos];
         return {
             giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
+            tipo: 'significado' as const,
             giria: giria.nome,
             textoDaPergunta: `Qual é o significado correto da gíria "${giria.nome}"?`,
             opcoes: embaralharOpcoes(todasAsOpcoes),
             respostaCorreta: giria.significado,
             explicacao: giria.significado,
             exemplo: giria.exemplo_correto,
+            impactoMotivo: giria.impacto_motivo ?? '',
         };
     });
 }
@@ -129,12 +131,15 @@ function gerarFase2(giriasSorteadas: Girias[]) {
     return giriasSorteadas.map((giria) => {
         return {
             giriaId: giria.id, 
+            tipo: 'impacto' as const,
             giria: giria.nome,
             textoDaPergunta: `Qual é o impacto/sentimento que a gíria "${giria.nome}" passa?`,
             opcoes: opcoesDeImpacto,
             respostaCorreta: giria.impacto,
             explicacao: giria.significado,
             exemplo: giria.exemplo_correto,
+            // Justificativa exibida na caixinha logo abaixo da alternativa correta
+            impactoMotivo: giria.impacto_motivo ?? '',
         };
     });
 }
@@ -144,12 +149,14 @@ function gerarFase3(giriasSorteadas: Girias[]) {
         const todasAsFrases = [giria.exemplo_correto, ...giria.exemplos_incorretos];
         return {
             giriaId: giria.id, 
+            tipo: 'aplicacao' as const,
             giria: giria.nome,
             textoDaPergunta: `Qual é a aplicação correta da gíria "${giria.nome}" em uma frase?`,
             opcoes: embaralharOpcoes(todasAsFrases),
             respostaCorreta: giria.exemplo_correto,
             explicacao: giria.significado,
             exemplo: giria.exemplo_correto,
+            impactoMotivo: giria.impacto_motivo ?? '',
         };
     });
 }
@@ -159,11 +166,13 @@ function gerarFase3(giriasSorteadas: Girias[]) {
 // ──────────────────────────────────────────────────────────────
 interface PerguntaInterna {
     giriaId: number | string; 
+    tipo?: string;
     giria: string;
     textoDaPergunta: string;
     opcoes: string[];
     respostaCorreta: string;
     explicacao: string;
+    impactoMotivo?: string;
 }
 
 function converterParaFaseMundo(
@@ -172,15 +181,24 @@ function converterParaFaseMundo(
     variacoes: string[],
     exemplo: string,
     classe?: string
-): FaseMundo & { respostaCorreta: string; exemplo: string; classe?: string; giriaId: number | string } {
+): FaseMundo & {
+    respostaCorreta: string;
+    exemplo: string;
+    classe?: string;
+    giriaId: number | string;
+    tipo: string;
+    impactoMotivo: string;
+} {
     return {
         id, // Este é o ID da pergunta no quiz (1 a 9)
         giriaId: pergunta.giriaId, 
+        tipo: pergunta.tipo ?? 'significado',
         giria: pergunta.giria,
         variacoes,
         pergunta: pergunta.textoDaPergunta,
         explicacao: pergunta.explicacao,
         respostaCorreta: pergunta.respostaCorreta,
+        impactoMotivo: pergunta.impactoMotivo ?? '',
         exemplo,
         classe,
         alternativas: pergunta.opcoes.map((opcao) => ({
@@ -234,15 +252,29 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
 
     // ── fases: as 3 gírias para a Tela de Estudo ──
     const fases = tresPalavras.map((giria, index) =>
-        converterParaFaseMundo(fase1[index], index + 1, giria.variacoes || [], giria.exemplo_correto, (giria as any).classe)
+        converterParaFaseMundo(
+            fase1[index],
+            index + 1,
+            giria.variacoes || [],
+            giria.exemplo_correto,
+            giria.classe_gramatical ?? (giria as any).classe
+        )
     );
 
-    // ── todasAsPerguntas: as 9 perguntas do quiz em sequência ──
-    const todasAsPerguntas = [
-        ...fase1.map((q, i) => converterParaFaseMundo(q, i + 1, variacoesPorGiria[q.giria] ?? [], q.exemplo || '')),
-        ...fase2.map((q, i) => converterParaFaseMundo(q, 3 + i + 1, variacoesPorGiria[q.giria] ?? [], q.exemplo || '')),
-        ...fase3.map((q, i) => converterParaFaseMundo(q, 6 + i + 1, variacoesPorGiria[q.giria] ?? [], q.exemplo || '')),
-    ];
+    // ── todasAsPerguntas: as 9 perguntas do quiz AGRUPADAS POR GÍRIA ──
+    // Ordem: Gíria 1 (significado → impacto → aplicação), Gíria 2 (...), Gíria 3 (...)
+    const todasAsPerguntas = tresPalavras.flatMap((giria, index) => {
+        const base = index * 3;
+        return [fase1[index], fase2[index], fase3[index]].map((q, offset) =>
+            converterParaFaseMundo(
+                q,
+                base + offset + 1,
+                variacoesPorGiria[q.giria] ?? [],
+                q.exemplo || '',
+                (giria as any).classe_gramatical
+            )
+        );
+    });
 
     return {
         id: nomeDoMundo,

@@ -1,12 +1,15 @@
 {
-  "antigo": [
+  "girias_antigas": [
     {
       "id": 1,
       "nome": "bafafá",
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Confusão ou grande alvoroço.",
-      "tags": ["cotidiano", "informal"],
+      "tags": [
+        "cotidiano",
+        "informal"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Deu o maior bafafá na reunião de condomínio ontem à noite.",
@@ -19,7 +22,8 @@
         "Tipo de doce tradicional feito à base de amendoim.",
         "Combustível fóssil muito utilizado em motores antigos.",
         "Peça de roupa formal usada em festas de gala."
-      ]
+      ],
+      "impacto_motivo": "Refere-se a situações de desordem, desentendimento, briga ou confusão, trazendo uma conotação indesejada ou desagradável."
     },
     {
       "id": 2,
@@ -27,7 +31,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Motorista ruim ou desastrado.",
-      "tags": ["trânsito", "cotidiano"],
+      "tags": [
+        "trânsito",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Aquele barbeiro quase bateu no meu carro ao mudar de faixa sem dar seta.",
@@ -40,7 +47,8 @@
         "Objeto de escrita semelhante a uma caneta esferográfica.",
         "Ferramenta de corte utilizada exclusivamente em escritórios.",
         "Pequeno inseto voador que se alimenta de folhas secas."
-      ]
+      ],
+      "impacto_motivo": "É usada como pejorativo para criticar a falta de habilidade ou imprudência de alguém ao dirigir."
     },
     {
       "id": 3,
@@ -48,7 +56,10 @@
       "variacoes": [],
       "classe_gramatical": "locução substantiva",
       "significado": "Ficar esperando por muito tempo.",
-      "tags": ["cotidiano", "expressão"],
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "O médico atrasou duas horas e eu tomei o maior chá de cadeira na recepção.",
@@ -61,7 +72,8 @@
         "Móvel de madeira estofada usado em salas de jantar.",
         "Infusão de ervas medicinais que ajuda a combater a insônia.",
         "Ferramenta pontiaguda utilizada por marceneiros."
-      ]
+      ],
+      "impacto_motivo": "Expressa o incômodo, o cansaço e a perda de tempo associados a uma espera longa e imprevista."
     },
     {
       "id": 4,
@@ -69,7 +81,10 @@
       "variacoes": [],
       "classe_gramatical": "locução verbal",
       "significado": "Algo dar errado ou ser muito ruim.",
-      "tags": ["cotidiano", "expressão"],
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Se chover no dia do nosso evento ao ar livre, vai lascar o cano.",
@@ -82,7 +97,8 @@
         "Ação de fixar objetos pesados utilizando parafusos.",
         "Prática esportiva focada em caminhadas de longa distância.",
         "Preencher um formulário oficial com dados pessoais."
-      ]
+      ],
+      "impacto_motivo": "Designa falha, complicação ou prejuízo iminente em determinada situação."
     },
     {
       "id": 5,
@@ -90,7 +106,10 @@
       "variacoes": [],
       "classe_gramatical": "locução verbal",
       "significado": "Perder uma oportunidade por distração.",
-      "tags": ["cotidiano", "expressão"],
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ele ficou marcando touca e o ingresso para o show esgotou bem na vez dele.",
@@ -103,7 +122,8 @@
         "Anotar um compromisso importante em um calendário.",
         "Ajustar a temperatura interna de eletrodomésticos.",
         "Utilizar equipamentos de proteção individual na água."
-      ]
+      ],
+      "impacto_motivo": "Indica falha pessoal por falta de atenção ou bobeira, resultando em perda de algo vantajoso."
     },
     {
       "id": 6,
@@ -111,7 +131,10 @@
       "variacoes": [],
       "classe_gramatical": "locução substantiva",
       "significado": "Pessoa bonita ou de boa aparência.",
-      "tags": ["aparência", "informal"],
+      "tags": [
+        "aparência",
+        "informal"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "O novo ator da novela é um rapaz muito boa pinta.",
@@ -124,7 +147,8 @@
         "Pincel de cerdas macias usado na construção civil.",
         "Remédio analgésico vendido sem receita em farmácias.",
         "Mecanismo de metal que compõe as fechaduras modernas."
-      ]
+      ],
+      "impacto_motivo": "Trata-se de um elogio à estética ou apresentação pessoal de alguém."
     },
     {
       "id": 7,
@@ -132,7 +156,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Charme ou atração especial de uma pessoa.",
-      "tags": ["aparência", "comportamento"],
+      "tags": [
+        "aparência",
+        "comportamento"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Aquela cantora tem um borogodó que conquista todo mundo no palco.",
@@ -145,7 +172,8 @@
         "Tempero nordestino feito à base de ervas secas e pimenta.",
         "Pedaço de ferro pontiagudo encontrado em estradas de terra.",
         "Estilo de formatação de texto utilizado em jornais antigos."
-      ]
+      ],
+      "impacto_motivo": "Atribui uma qualidade atraente, encantadora e magnética a uma pessoa."
     },
     {
       "id": 8,
@@ -153,7 +181,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Garota bonita ou atraente.",
-      "tags": ["aparência", "informal"],
+      "tags": [
+        "aparência",
+        "informal"
+      ],
       "permissao": "adolescentes",
       "impacto": "positiva",
       "exemplo_correto": "Aquele rapaz da turma do lado está namorando um broto de menina.",
@@ -166,7 +197,8 @@
         "Vazamento severo de água em tubulações residenciais.",
         "Calçado esportivo com amortecedores nas solas.",
         "Bolo festivo confeitado com pasta americana."
-      ]
+      ],
+      "impacto_motivo": "É uma forma afetuosa e elogiosa de se referir à beleza de uma jovem."
     },
     {
       "id": 9,
@@ -174,7 +206,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Nada ou coisa nenhuma.",
-      "tags": ["cotidiano", "informal"],
+      "tags": [
+        "cotidiano",
+        "informal"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Ele explicou a matéria de física três vezes, mas eu não entendi bulhufas.",
@@ -187,7 +222,8 @@
         "Sacola ou recipiente maleável usado para transporte.",
         "Ninho construído por aves pequenas usando galhos secos.",
         "Componente eletrônico responsável por sintonizar canais."
-      ]
+      ],
+      "impacto_motivo": "Apenas indica a ausência de algo ou falta de compreensão, sem juízo de valor intrínseco moral ou afetivo."
     },
     {
       "id": 10,
@@ -195,7 +231,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Fora de moda ou considerado brega.",
-      "tags": ["aparência", "moda"],
+      "tags": [
+        "aparência",
+        "moda"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Achei aquela combinação de terno verde com camisa amarela muito cafona.",
@@ -208,7 +247,8 @@
         "Prato típico feito com massa folhada e recheio de carne.",
         "Peça mecânica instalada próxima ao escapamento do motor.",
         "Flanela de microfibra usada na limpeza de superfícies delicadas."
-      ]
+      ],
+      "impacto_motivo": "Expressa crítica desfavorável em relação ao gosto, estilo ou elegância de alguém ou algo."
     },
     {
       "id": 11,
@@ -216,7 +256,10 @@
       "variacoes": [],
       "classe_gramatical": "locução adjetiva",
       "significado": "Pessoa considerada doida ou muito distraída.",
-      "tags": ["comportamento", "expressão"],
+      "tags": [
+        "comportamento",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Aquele cara é meio lelé da cuca, saiu na chuva sem guarda-chuva e de bermuda.",
@@ -229,7 +272,8 @@
         "Modelo de calçado infantil com luzes embutidas.",
         "Alimento bem temperado que agrada a paladares exigentes.",
         "Botão de inicialização de sistemas operacionais desktop."
-      ]
+      ],
+      "impacto_motivo": "Aponta comportamento desequilibrado, insensato ou extravagante de uma pessoa."
     },
     {
       "id": 12,
@@ -237,7 +281,10 @@
       "variacoes": [],
       "classe_gramatical": "locução interjetiva",
       "significado": "Expressão usada para incentivar alguém a correr ou se apressar.",
-      "tags": ["action", "expressão"],
+      "tags": [
+        "action",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "O ônibus já está passando na esquina, bota sebo nas canelas!",
@@ -250,7 +297,8 @@
         "Doce cremoso derivado da gordura do leite de vaca.",
         "Luminária de mesa antiga que funciona à base de querosene.",
         "Composto vitamínico em gotas usado para aumentar a imunidade."
-      ]
+      ],
+      "impacto_motivo": "Trata-se de um comando coloquial de apressamento sem carga pejorativa ou de elogio."
     },
     {
       "id": 13,
@@ -258,7 +306,10 @@
       "variacoes": [],
       "classe_gramatical": "locução substantiva",
       "significado": "Conversa sem fundamento ou que não leva a nada.",
-      "tags": ["conversa", "expressão"],
+      "tags": [
+        "conversa",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Esse negócio de que vão dar brindes para todo mundo é puro papo furado.",
@@ -271,7 +322,8 @@
         "Agulha fina usada em trabalhos manuais de alfaiataria.",
         "Conexão de PVC utilizada em sistemas de esgoto residencial.",
         "Suporte metálico fixado em superfícies verticais."
-      ]
+      ],
+      "impacto_motivo": "Classifica o discurso do outro como mentiroso, inútil ou manipulador."
     },
     {
       "id": 14,
@@ -279,7 +331,10 @@
       "variacoes": [],
       "classe_gramatical": "locução adjetiva",
       "significado": "Situação difícil ou complicada.",
-      "tags": ["cotidiano", "expressão"],
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Aquele bairro de madrugada fica meio barra pesada, é melhor evitar.",
@@ -292,7 +347,8 @@
         "Doce industrializado rico em calorias e açúcares.",
         "Acessório elástico usado em penteados esportivos.",
         "Instrumento de metal usado para aferir comprimentos exatos."
-      ]
+      ],
+      "impacto_motivo": "Descreve um ambiente perigoso ou um momento tenso, tenso e desfavorável."
     },
     {
       "id": 15,
@@ -300,7 +356,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Pessoa esperta ou inteligente.",
-      "tags": ["comportamento", "elogio"],
+      "tags": [
+        "comportamento",
+        "elogio"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Aquele menino é bidu, resolveu o enigma do jogo em dois minutos.",
@@ -313,7 +372,8 @@
         "Tipo de chuteira society com cravos de borracha.",
         "Utensílio doméstico serrilhado usado para fatiar alimentos.",
         "Formações gasosas escuras que antecedem tempestades."
-      ]
+      ],
+      "impacto_motivo": "Enaltece a perspicácia, agilidade mental e esperteza de alguém."
     },
     {
       "id": 16,
@@ -321,7 +381,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Pessoa conservadora ou que evita novidades.",
-      "tags": ["comportamento", "informal"],
+      "tags": [
+        "comportamento",
+        "informal"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Meus tios são muito caretas, não deixam os filhos usarem redes sociais.",
@@ -334,7 +397,8 @@
         "Objeto cilíndrico feito de cera que produz chama estável.",
         "Acessório de bolso usado para organizar cartões de crédito.",
         "Bebida gasosa refrescante feita à base de frutas cítricas."
-      ]
+      ],
+      "impacto_motivo": "Usada geralmente como crítica à rigidez de atitude, falta de abertura a novidades ou perfil antiquado."
     },
     {
       "id": 17,
@@ -342,7 +406,10 @@
       "variacoes": [],
       "classe_gramatical": "interjeição",
       "significado": "Expressão usada para indicar que está tudo certo.",
-      "tags": ["cumprimento", "expressão"],
+      "tags": [
+        "cumprimento",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Pode deixar que eu já fiz as compras e está tudo chuchu beleza por aqui.",
@@ -355,7 +422,8 @@
         "Tênis de alta performance usado por maratonistas.",
         "Veículo utilitário de tração integral usado em fazendas.",
         "Creme cosmético importado com propriedades rejuvenescedoras."
-      ]
+      ],
+      "impacto_motivo": "Demonstra satisfação e confirma que determinado estado de coisas está em perfeito funcionamento ou ordem."
     },
     {
       "id": 18,
@@ -363,7 +431,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Desconfiado, preocupado ou inquieto.",
-      "tags": ["emoção", "comportamento"],
+      "tags": [
+        "emoção",
+        "comportamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Fiquei meio grilado com aquela história que ele me contou sobre o sumiço do dinheiro.",
@@ -376,7 +447,8 @@
         "Tecido que sofreu encolhimento devido ao calor excessivo.",
         "Alimento frito em óleo fervente com recheio salgado.",
         "Objeto inflável que apresenta perda de pressão interna."
-      ]
+      ],
+      "impacto_motivo": "Reflete um estado emocional de apreensão, desconfiança ou perturbação interna."
     },
     {
       "id": 19,
@@ -384,7 +456,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Grupo de amigos ou turma.",
-      "tags": ["amizade", "social"],
+      "tags": [
+        "amizade",
+        "social"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "A minha patota costumava se reunir na pracinha todo sábado à tarde.",
@@ -397,7 +472,8 @@
         "Tubérculo comestível rico em amido cozido em refeições.",
         "Caneta esferográfica recarregável usada em escritórios.",
         "Membro superior das aves usado para sustentação do voo."
-      ]
+      ],
+      "impacto_motivo": "Designa de maneira descritiva um grupo social ou círculo de convivência, sem conotação inerentemente boa ou ruim."
     },
     {
       "id": 20,
@@ -405,7 +481,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Dinheiro.",
-      "tags": ["dinheiro", "cotidiano"],
+      "tags": [
+        "dinheiro",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Gostei muito daquela jaqueta, mas estou sem tutu para comprar agora.",
@@ -418,7 +497,8 @@
         "Cadarço feito de algodão ou nylon usado em calçados.",
         "Pássaro silvestre conhecido por seu canto matinal estridente.",
         "Borracha sintética maleável usada para corrigir escrita a lápis."
-      ]
+      ],
+      "impacto_motivo": "Representa recurso financeiro ou poder aquisitivo, geralmente percebido de forma favorável."
     },
     {
       "id": 21,
@@ -426,7 +506,10 @@
       "variacoes": [],
       "classe_gramatical": "locução verbal",
       "significado": "Ficar de mau humor ou irritado.",
-      "tags": ["emoção", "expressão"],
+      "tags": [
+        "emoção",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Ele ficou de bode porque não pôde ir ao jogo de futebol com o pessoal.",
@@ -439,7 +522,8 @@
         "Ato de descansar em superfícies estofadas durante a tarde.",
         "Prática de guardar economias em contas bancárias poupança.",
         "Navegar em embarcações de pequeno porte utilizando remos."
-      ]
+      ],
+      "impacto_motivo": "Expressa aborrecimento, insatisfação ou mau humor da pessoa."
     },
     {
       "id": 22,
@@ -447,7 +531,10 @@
       "variacoes": [],
       "classe_gramatical": "locução verbal",
       "significado": "Imaginar coisas absurdas ou perder o foco da realidade.",
-      "tags": ["imaginação", "expressão"],
+      "tags": [
+        "imaginação",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Você está viajando na maionese achando que vai tirar nota dez sem estudar nada.",
@@ -460,7 +547,8 @@
         "Deslocar-se para outras cidades utilizando rodovias estaduais.",
         "Adicionar molhos condimentados em pratos da culinária fria.",
         "Comparecer a repartições públicas para emissão de vistos."
-      ]
+      ],
+      "impacto_motivo": "Indica um devaneio, pensamento fora do contexto ou distração sem carregar necessariamente um peso ofensivo ou laudatório."
     },
     {
       "id": 23,
@@ -468,7 +556,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Pessoa muito chata ou inconveniente.",
-      "tags": ["comportamento", "insulto"],
+      "tags": [
+        "comportamento",
+        "insulto"
+      ],
       "permissao": "adolescentes",
       "impacto": "negativa",
       "exemplo_correto": "Aquele menino é um pentelho, fica puxando o cabelo da irmã o dia todo.",
@@ -481,7 +572,8 @@
         "Escova plástica usada na higiene bucal diária.",
         "Objeto com dentes finos usado para alinhar fios capilares.",
         "Argola flexível usada para agrupar chaves residenciais."
-      ]
+      ],
+      "impacto_motivo": "É uma palavra pejorativa e ofensiva usada para importunar ou rotular alguém como desagradável."
     },
     {
       "id": 24,
@@ -489,7 +581,10 @@
       "variacoes": [],
       "classe_gramatical": "locução verbal",
       "significado": "Rir muito.",
-      "tags": ["humor", "expressão"],
+      "tags": [
+        "humor",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Nós fomos assistir àquela comédia no cinema e rachamos o bico do início ao fim.",
@@ -502,7 +597,8 @@
         "Causar fratura na estrutura queratinosa de aves silvestres.",
         "Fracionar porções de alimentos congelados usando facas.",
         "Pressionar a ponta esferográfica de instrumentos de escrita."
-      ]
+      ],
+      "impacto_motivo": "Associa-se a um momento de alegria, diversão intensa e descontração."
     },
     {
       "id": 25,
@@ -510,7 +606,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Bem informado ou que entende das coisas.",
-      "tags": ["conhecimento", "comportamento"],
+      "tags": [
+        "conhecimento",
+        "comportamento"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Ela é super antenada em tecnologia, sabe tudo sobre os novos lançamentos.",
@@ -523,7 +622,8 @@
         "Objeto fixado em superfícies verticais por meio de colagem.",
         "Ficar retido em congestionamentos de veículos automotores.",
         "Peça de vestuário que apresenta avarias em seus fechos."
-      ]
+      ],
+      "impacto_motivo": "Elogia a atenção, atualização e capacidade de alguém estar bem informado sobre determinados temas."
     },
     {
       "id": 26,
@@ -531,7 +631,10 @@
       "variacoes": [],
       "classe_gramatical": "verbo",
       "significado": "Flertar ou paquerar alguém.",
-      "tags": ["relacionamentos", "social"],
+      "tags": [
+        "relacionamentos",
+        "social"
+      ],
       "permissao": "adolescentes",
       "impacto": "positiva",
       "exemplo_correto": "Os jovens iam para o baile da cidade antigamente só para azarar.",
@@ -544,7 +647,8 @@
         "Participar de atividades lúdicas envolvendo apostas financeiras.",
         "Realizar a limpeza pesada de ambientes residenciais internos.",
         "Fazer manutenção preventiva em componentes eletromecânicos."
-      ]
+      ],
+      "impacto_motivo": "Relaciona-se ao jogo de atração, paquera e interação afetiva divertida entre pessoas."
     },
     {
       "id": 27,
@@ -552,7 +656,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Pessoa considerada feia ou brega.",
-      "tags": ["aparência", "insulto"],
+      "tags": [
+        "aparência",
+        "insulto"
+      ],
       "permissao": "adolescentes",
       "impacto": "negativa",
       "exemplo_correto": "Aquelas roupas antigas da foto faziam ela parecer uma baranga completa.",
@@ -565,7 +672,8 @@
         "Espécie de peixe de águas profundas muito consumido no litoral.",
         "Bloco sólido de água congelada flutuante em regiões polares.",
         "Objeto artístico emoldurado que serve como adorno residencial."
-      ]
+      ],
+      "impacto_motivo": "É uma expressão insultuosa usada para depreciar a estética ou o estilo de alguém."
     },
     {
       "id": 28,
@@ -573,7 +681,10 @@
       "variacoes": [],
       "classe_gramatical": "adjetivo",
       "significado": "Chateado, bravo ou incomodado.",
-      "tags": ["emoção", "comportamento"],
+      "tags": [
+        "emoção",
+        "comportamento"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Fiquei bolado porque meu melhor amigo não me convidou para a festa dele.",
@@ -586,7 +697,8 @@
         "Alimento esférico confeitado muito servido em festas infantis.",
         "Objeto pneumático que possui deformações estruturais na borracha.",
         "Folha de papel com texturas circulares usada para desenho."
-      ]
+      ],
+      "impacto_motivo": "Expressa descontentamento, chateação ou contrariedade em relação a algum fato."
     },
     {
       "id": 29,
@@ -594,7 +706,10 @@
       "variacoes": [],
       "classe_gramatical": "verbo",
       "significado": "Paquerar ou tentar conquistar alguém.",
-      "tags": ["relacionamentos", "social"],
+      "tags": [
+        "relacionamentos",
+        "social"
+      ],
       "permissao": "adolescentes",
       "impacto": "positiva",
       "exemplo_correto": "Ele tentou chavecar a menina da padaria, mas acabou levando um fora.",
@@ -607,7 +722,8 @@
         "Ação de abrir trincos ou travas utilizando chaves físicas.",
         "Desgastar superfícies rústicas por meio de lixamento mecânico.",
         "Emitir sons vocais agudos que causam distorção em aparelhos de áudio."
-      ]
+      ],
+      "impacto_motivo": "Diz respeito a investidas amorosas ou flertes que buscam demonstrar interesse afetivo por alguém."
     },
     {
       "id": 30,
@@ -615,7 +731,10 @@
       "variacoes": [],
       "classe_gramatical": "locução adjetiva",
       "significado": "Algo que sempre acontece ou é garantido.",
-      "tags": ["cotidiano", "expressão"],
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Aquele futebol de quarta-feira à noite com o pessoal do trabalho é de lei.",
@@ -628,7 +747,8 @@
         "Vade mecum ou compilação de artigos constitucionais impressos.",
         "Material de alta densidade extraído de árvores nativas nobres.",
         "Correspondência formal redigida à mão para parentes distantes."
-      ]
+      ],
+      "impacto_motivo": "Descreve hábitos, rotinas ou tradições habituais sem implicar um valor positivo ou negativo."
     },
     {
       "id": 31,
@@ -636,7 +756,10 @@
       "variacoes": [],
       "classe_gramatical": "verbo",
       "significado": "Conseguir ou arranjar alguma coisa.",
-      "tags": ["cotidiano", "ação"],
+      "tags": [
+        "cotidiano",
+        "ação"
+      ],
       "permissao": "todos",
       "impacto": "positiva",
       "exemplo_correto": "Vou ver se consigo descolar dois ingressos VIP para o festival deste fim de semana.",
@@ -649,15 +772,19 @@
         "Remover películas colantes de superfícies por tração manual.",
         "Perder altitude de forma abrupta devido à falta de correntes aéreas.",
         "Procedimento ortopédico de realinhamento de articulações fraturadas."
-      ]
+      ],
+      "impacto_motivo": "Associa-se a obter sucesso em obter recursos, oportunidades ou objetos desejados."
     },
     {
       "id": 32,
       "nome": "mauricinho",
       "variacoes": [],
       "classe_gramatical": "substantivo",
-      "significado": "Rapaz bem arrumado, certinho ou associado a uma condição financeira privilegiada.",
-      "tags": ["comportamento", "estereótipo"],
+      "significado": "Rapaz bem arrumado, certinho ou associado a uma condição financeira privileged.",
+      "tags": [
+        "comportamento",
+        "estereótipo"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Aquele menino é um mauricinho, só anda com camisa de marca e cabelo perfeitamente penteado.",
@@ -670,7 +797,8 @@
         "Salgado frito feito com massa de batata e recheio proteico.",
         "Componente hidráulico fixado próximo ao radiador de carros.",
         "Aparelho eletrodoméstico que faz a aspiração de resíduos sólidos."
-      ]
+      ],
+      "impacto_motivo": "Apesar de descrever um estereótipo social ou estilo de vida, é usado primariamente como rótulo descritivo sem tom estritamente ofensivo ou laudatório."
     },
     {
       "id": 33,
@@ -678,7 +806,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Menina considerada muito vaidosa, rica ou mimada.",
-      "tags": ["comportamento", "estereótipo"],
+      "tags": [
+        "comportamento",
+        "estereótipo"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "Ela faz o estilo patricinha, adora ir ao shopping e só usa roupas cor-de-rosa.",
@@ -691,7 +822,8 @@
         "Espécie de arbusto ornamental originário de regiões subtropicais.",
         "Estojo de plástico rígido usado para armazenar chaves inglesas.",
         "Estrutura de madeira usada na ancoragem de grandes embarcações."
-      ]
+      ],
+      "impacto_motivo": "Atua como rótulo descritivo de estilo e perfil social, podendo ter variações contextuais sem ser necessariamente um insulto grave."
     },
     {
       "id": 34,
@@ -699,7 +831,10 @@
       "variacoes": [],
       "classe_gramatical": "locução verbal",
       "significado": "Prejudicar a própria imagem ou reputação.",
-      "tags": ["comportamento", "expressão"],
+      "tags": [
+        "comportamento",
+        "expressão"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "Não chegue atrasado na entrevista para não queimar o filme com o chefe.",
@@ -712,7 +847,8 @@
         "Incinerar rolos de celulose para produção de energia térmica.",
         "Causar superexposição à luz em películas fotográficas analógicas.",
         "Derreter mídias digitais de armazenamento usando calor direto."
-      ]
+      ],
+      "impacto_motivo": "Envolve danos à reputação, perda de moral ou julgamento desfavorável por parte de terceiros."
     },
     {
       "id": 35,
@@ -720,7 +856,10 @@
       "variacoes": [],
       "classe_gramatical": "substantivo",
       "significado": "Prisão ou cadeia.",
-      "tags": ["segurança", "cotidiano"],
+      "tags": [
+        "segurança",
+        "cotidiano"
+      ],
       "permissao": "todos",
       "impacto": "negativa",
       "exemplo_correto": "O ladrão foi pego roubando a loja e acabou direto no xilindró.",
@@ -733,15 +872,21 @@
         "Xarope doce misturado com água gasosa e essências artificiais.",
         "Instrumento de percussão composto por pequenas barras de ferro.",
         "Dispositivo clínico de vidro usado para aferição de temperatura corporal."
-      ]
+      ],
+      "impacto_motivo": "Refere-se ao encarceramento e à privação de liberdade decorrente de delitos."
     },
     {
       "id": 36,
       "nome": "zoar",
-      "variacoes": ["zoeira"],
+      "variacoes": [
+        "zoeira"
+      ],
       "classe_gramatical": "verbo",
       "significado": "Brincar, fazer bagunça ou tirar sarro de alguém.",
-      "tags": ["humor", "social"],
+      "tags": [
+        "humor",
+        "social"
+      ],
       "permissao": "todos",
       "impacto": "neutra",
       "exemplo_correto": "A gente adora zoar o nosso amigo quando o time dele perde o clássico.",
@@ -752,93 +897,387 @@
       ],
       "significados_incorretos": [
         "Adornar doces festivos utilizando coberturas comestíveis.",
-        "Produzir ondas sonoras graves causadas pelo deslocamento de ar.",
-        "Umedecer a terra cultivável utilizando mangueiras de irrigação."
-      ]
+        "Produzir ondas sonoras graves causadas por propulsores.",
+        "Regar espécies vegetais para manutenção hidrica."
+      ],
+      "impacto_motivo": "Pode representar uma brincadeira saudável entre amigos ou uma provocação, variando conforme o contexto sem ter impacto estritamente positivo ou negativo por padrão."
     },
     {
       "id": 37,
-      "nome": "abalar",
+      "nome": "amigo da onça",
       "variacoes": [],
-      "classe_gramatical": "verbo",
-      "significado": "Arrasar ou causar boa impressão.",
-      "tags": ["elogio", "social"],
+      "classe_gramatical": "locução substantiva",
+      "significado": "Pessoa que finge ser amiga mas na verdade prejudica ou trai.",
+      "tags": [
+        "amizade",
+        "insulto"
+      ],
       "permissao": "todos",
-      "impacto": "positiva",
-      "exemplo_correto": "Ela comprou um vestido maravilhoso para abalar na festa de formatura.",
+      "impacto": "negativa",
+      "exemplo_correto": "Fiquei sabendo que ele contou meu segredo para todo mundo, é um amigo da onça.",
       "exemplos_incorretos": [
-        "O vento forte conseguiu abalar os copos de vidro da mesa.",
-        "O terremoto fez a terra abalar na região central do país.",
-        "Vou abalar o casaco no armário para tirar a poeira antiga."
+        "Fui ao zoológico e vi um amigo da onça dormindo na sombra.",
+        "Comprei uma estampa de amigo da onça para a camiseta do meu filho.",
+        "O documentário mostrava um amigo da onça caçando à noite na savana."
       ],
       "significados_incorretos": [
-        "Derrubar objetos leves devido à ação de correntes de ar.",
-        "Provocar tremores na crosta terrestre por causas tectônicas.",
-        "Sacudir peças de tecido para eliminação de resíduos secos."
-      ]
+        "Felino selvagem de grande porte encontrado em florestas tropicais.",
+        "Padrão têxtil que imita a pelagem de animais selvagens.",
+        "Registro fotográfico de vida selvagem feito por pesquisadores."
+      ],
+      "impacto_motivo": "Denuncia falsidade e traição por parte de alguém que se apresenta como amigo, mas age contra os interesses do outro."
     },
     {
       "id": 38,
-      "nome": "busão",
-      "variacoes": [],
-      "classe_gramatical": "substantivo",
-      "significado": "Ônibus.",
-      "tags": ["transporte", "cotidiano"],
+      "nome": "babar ovo",
+      "variacoes": [
+        "babação de ovo"
+      ],
+      "classe_gramatical": "locução verbal",
+      "significado": "Elogiar ou puxar o saco de alguém de forma excessiva e interesseira.",
+      "tags": [
+        "comportamento",
+        "expressão"
+      ],
       "permissao": "todos",
-      "impacto": "neutra",
-      "exemplo_correto": "Preciso correr para o ponto antes que o busão das sete horas passe.",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele vive babando ovo do chefe só para conseguir uma promoção.",
       "exemplos_incorretos": [
-        "Comi um busão recheado de presunto e queijo na padaria.",
-        "Escrevi os dados na folha usando um busão preto muito bom.",
-        "O busão do meu casaco quebrou quando tentei fechar no frio."
+        "Vou babar ovo para fazer uma omelete no café da manhã.",
+        "O bebê ficou babando ovo depois de comer a papinha.",
+        "Preciso babar ovo na receita do bolo de aniversário."
       ],
       "significados_incorretos": [
-        "Panificado salgado feito com farinha de trigo refinada.",
-        "Grafite cilíndrico envolto em madeira usado para desenho.",
-        "Fecho circular de plástico costurado em roupas de inverno."
-      ]
+        "Processo culinário de bater ovos para preparo de receitas.",
+        "Salivar excessivamente durante a alimentação infantil.",
+        "Misturar ingredientes líquidos em uma tigela de cozinha."
+      ],
+      "impacto_motivo": "Critica a bajulação exagerada e falsa, geralmente motivada por interesse próprio."
     },
     {
       "id": 39,
-      "nome": "tá ligado?",
-      "variacoes": ["tá ligado", "ta ligado", "ta ligado?"],
-      "classe_gramatical": "expressão",
-      "significado": "Expressão usada para perguntar se alguém entendeu ou concorda.",
-      "tags": ["conversa", "expressão"],
+      "nome": "bicho",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Forma carinhosa e informal de se referir a um amigo.",
+      "tags": [
+        "amizade",
+        "cumprimento"
+      ],
       "permissao": "todos",
-      "impacto": "neutra",
-      "exemplo_correto": "Vou passar na sua casa às oito horas, tá ligado? Não se atrase.",
+      "impacto": "positiva",
+      "exemplo_correto": "E aí, bicho, bora sair para tomar uma cerveja hoje à noite?",
       "exemplos_incorretos": [
-        "O liquidificador está quebrado, mas agora tá ligado na tomada.",
-        "O fio elétrico tá ligado direto no poste de alta tensão da rua.",
-        "Meu computador tá ligado desde ontem fazendo download de arquivos."
+        "Vi um bicho estranho andando pelo quintal de madrugada.",
+        "Comprei ração para o bicho de estimação da minha vizinha.",
+        "O veterinário examinou o bicho que estava machucado na pata."
       ],
       "significados_incorretos": [
-        "Eletrodoméstico que recebeu fluxo de corrente elétrica em seus circuitos.",
-        "Condutor de cobre conectado fisicamente a redes de distribuição.",
-        "Equipamento de processamento de dados em estado operacional ativo."
-      ]
+        "Animal doméstico ou selvagem de qualquer espécie.",
+        "Criatura desconhecida avistada em ambientes rurais.",
+        "Ser vivo não humano que necessita de cuidados veterinários."
+      ],
+      "impacto_motivo": "Usada de forma afetuosa entre amigos próximos, reforçando vínculo e camaradagem."
     },
     {
       "id": 40,
-      "nome": "x9",
-      "variacoes": ["xis nove"],
-      "classe_gramatical": "substantivo",
-      "significado": "Pessoa que delata ou informa algo para outras pessoas ou autoridades.",
-      "tags": ["comportamento", "crime"],
-      "permissao": "adolescentes",
+      "nome": "bater as botas",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Morrer.",
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
+      "permissao": "todos",
       "impacto": "negativa",
-      "exemplo_correto": "Ninguém na escola gosta daquele garoto porque ele é o x9 que conta tudo para a diretora.",
+      "exemplo_correto": "Meu avô bateu as botas ano passado, aos noventa e dois anos de idade.",
       "exemplos_incorretos": [
-        "Comprei um carro x9 super rápido de seis marchas.",
-        "O médico mandou eu tomar o remédio x9 vezes ao dia.",
-        "Resolvi a equação matemática e o resultado final deu x9."
+        "Vou bater as botas na porta para tirar a lama antes de entrar.",
+        "Comprei um par de botas novo para bater as botas na neve.",
+        "Ele gosta de bater as botas no ritmo da música durante o show."
       ],
       "significados_incorretos": [
-        "Modelo de veículo automotivo equipado com motores turbo.",
-        "Frequência de dosagem terapêutica indicada em receitas clínicas.",
-        "Incógnita algébrica multiplicada por fatores numéricos inteiros."
-      ]
+        "Limpar o solado de calçados batendo-os no chão.",
+        "Dançar marcando o ritmo com os pés calçados.",
+        "Adquirir um novo par de calçados para uso no inverno."
+      ],
+      "impacto_motivo": "Refere-se ao falecimento de alguém, um tema associado à perda e ao luto."
+    },
+    {
+      "id": 41,
+      "nome": "boiar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Não entender nada do que está acontecendo ou sendo dito.",
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O professor explicou a matéria tão rápido que eu fiquei boiando do início ao fim.",
+      "exemplos_incorretos": [
+        "O barquinho ficou boiando tranquilamente no meio do lago.",
+        "Vou boiar na piscina para relaxar depois do trabalho.",
+        "A boia amarela estava boiando perto da praia para sinalizar perigo."
+      ],
+      "significados_incorretos": [
+        "Flutuar na superfície da água sem afundar.",
+        "Permanecer à deriva sobre um corpo líquido.",
+        "Atividade recreativa de flutuação em piscinas ou mar."
+      ],
+      "impacto_motivo": "Indica confusão, falta de compreensão ou desatualização em relação a um assunto, gerando desconforto para quem está boiando."
+    },
+    {
+      "id": 42,
+      "nome": "bufunfa",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Dinheiro.",
+      "tags": [
+        "dinheiro",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Guardei uma bufunfa esse mês para comprar um presente legal de aniversário.",
+      "exemplos_incorretos": [
+        "Vou passar bufunfa no cabelo para deixá-lo mais brilhante.",
+        "Comi uma bufunfa deliciosa no restaurante japonês ontem.",
+        "O carro fez um barulho de bufunfa estranho ao ligar o motor."
+      ],
+      "significados_incorretos": [
+        "Produto cosmético usado para tratamento capilar.",
+        "Prato típico da culinária asiática servido com molho especial.",
+        "Ruído mecânico associado a falhas no motor de veículos."
+      ],
+      "impacto_motivo": "Representa recurso financeiro, geralmente percebido de forma favorável quando se tem em posse."
+    },
+    {
+      "id": 43,
+      "nome": "caô",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Mentira ou conversa fiada usada para enganar alguém.",
+      "tags": [
+        "conversa",
+        "expressão"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não acredita nesse caô que ele te contou sobre o carro novo, é tudo mentira.",
+      "exemplos_incorretos": [
+        "Vou caô a porta que está emperrada há dias.",
+        "Comprei um caô novo para decorar a estante da sala.",
+        "O caô do rádio estava ligado bem alto durante a viagem."
+      ],
+      "significados_incorretos": [
+        "Objeto decorativo utilizado em ambientes residenciais.",
+        "Aparelho eletrônico responsável pela reprodução de áudio.",
+        "Mecanismo de fixação usado em portas e janelas emperradas."
+      ],
+      "impacto_motivo": "Classifica um discurso como enganoso, falso ou manipulador, gerando desconfiança em quem ouve."
+    },
+    {
+      "id": 44,
+      "nome": "estar na pindaíba",
+      "variacoes": [],
+      "classe_gramatical": "locução verbal",
+      "significado": "Estar sem dinheiro ou passando por dificuldades financeiras.",
+      "tags": [
+        "dinheiro",
+        "expressão"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não posso sair esse mês, estou na pindaíba depois de pagar todas as contas.",
+      "exemplos_incorretos": [
+        "Vou plantar pindaíba no quintal para fazer uma cerca viva.",
+        "Comi uma pindaíba deliciosa no mercado municipal ontem.",
+        "O rio estava cheio de pindaíba depois da forte chuva de verão."
+      ],
+      "significados_incorretos": [
+        "Planta arbustiva usada para cercas e delimitação de terrenos.",
+        "Fruta regional consumida em feiras e mercados populares.",
+        "Vegetação característica de margens de rios após enchentes."
+      ],
+      "impacto_motivo": "Descreve uma situação financeira difícil, associada à falta de recursos e preocupação."
+    },
+    {
+      "id": 45,
+      "nome": "gamar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Ficar apaixonado ou encantado por alguém ou algo.",
+      "tags": [
+        "relacionamentos",
+        "emoção"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Assim que ele viu ela na festa, gamou na hora e foi puxar assunto.",
+      "exemplos_incorretos": [
+        "Vou gamar o motor do carro que está fazendo barulho estranho.",
+        "Preciso gamar essa parede antes de pintar o quarto novo.",
+        "O eletricista foi chamado para gamar a fiação da cozinha."
+      ],
+      "significados_incorretos": [
+        "Consertar ou ajustar peças mecânicas com defeito.",
+        "Preparar superfícies para receber tinta ou revestimento.",
+        "Reparar instalações elétricas residenciais com problemas."
+      ],
+      "impacto_motivo": "Expressa encantamento, paixão ou fascínio intenso por alguém ou algo, sendo um sentimento geralmente bem-vindo."
+    },
+    {
+      "id": 46,
+      "nome": "gambé",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Policial.",
+      "tags": [
+        "segurança",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Corre que o gambé tá vindo pra cá, alguém deve ter chamado por causa do barulho.",
+      "exemplos_incorretos": [
+        "Comprei um gambé de pelúcia para o meu sobrinho de presente.",
+        "O gambé do zoológico estava dormindo dentro do recinto.",
+        "Vi um gambé cruzando a estrada durante a viagem à noite."
+      ],
+      "significados_incorretos": [
+        "Pequeno mamífero marsupial noturno encontrado em áreas rurais.",
+        "Animal de estimação empalhado usado como enfeite.",
+        "Espécie silvestre comum em regiões de mata e cerrado."
+      ],
+      "impacto_motivo": "Usada em tom depreciativo ou de alerta para se referir a policiais, geralmente em contextos de fuga ou desconfiança da autoridade."
+    },
+    {
+      "id": 47,
+      "nome": "mangar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Zombar ou debochar de alguém.",
+      "tags": [
+        "comportamento",
+        "expressão"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Pare de mangar do jeito que ele fala, isso não tem graça nenhuma.",
+      "exemplos_incorretos": [
+        "Vou mangar a fruta que caiu da árvore no quintal.",
+        "Comprei uma mangar madura para fazer suco no café da manhã.",
+        "O pomar estava cheio de mangar prontas para a colheita."
+      ],
+      "significados_incorretos": [
+        "Fruta tropical de polpa doce muito consumida no verão.",
+        "Árvore frutífera comum em regiões de clima quente.",
+        "Alimento rico em vitaminas colhido em pomares domésticos."
+      ],
+      "impacto_motivo": "Indica deboche ou zombaria em relação a alguém, o que pode causar constrangimento ou mágoa."
+    },
+    {
+      "id": 48,
+      "nome": "mofar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Ficar esperando por muito tempo ou ser deixado de lado sem uso.",
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fiquei mofando na fila do banco por mais de uma hora esta manhã.",
+      "exemplos_incorretos": [
+        "O pão começou a mofar depois de uma semana fora da geladeira.",
+        "Vou mofar o queijo para fazer aquela receita especial.",
+        "A fruta mofou rápido porque ficou exposta ao calor."
+      ],
+      "significados_incorretos": [
+        "Desenvolver fungos em alimentos por exposição à umidade.",
+        "Processo de deterioração de produtos perecíveis.",
+        "Alteração química que ocorre em alimentos mal conservados."
+      ],
+      "impacto_motivo": "Expressa o incômodo de ficar parado, esquecido ou esperando por muito tempo sem necessidade."
+    },
+    {
+      "id": 49,
+      "nome": "xabu",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Confusão, encrenca ou problema.",
+      "tags": [
+        "cotidiano",
+        "expressão"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Melhor não ir naquela festa, dizem que sempre dá xabu no final da noite.",
+      "exemplos_incorretos": [
+        "Comprei um xabu novo para guardar meus documentos importantes.",
+        "Vou colocar o xabu na mesa para decorar o jantar de hoje.",
+        "O xabu quebrou assim que tentei ligar o computador de manhã."
+      ],
+      "significados_incorretos": [
+        "Objeto de armazenamento usado para organizar papéis.",
+        "Item decorativo utilizado em mesas de jantar formais.",
+        "Componente eletrônico responsável pela inicialização de aparelhos."
+      ],
+      "impacto_motivo": "Refere-se a situações problemáticas ou confusas, geralmente indesejadas por quem se envolve nelas."
+    },
+    {
+      "id": 50,
+      "nome": "tchã",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Charme, sensualidade ou um toque especial que chama atenção.",
+      "tags": [
+        "aparência",
+        "elogio"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Essa roupa nova ficou com um tchã todo especial em você.",
+      "exemplos_incorretos": [
+        "Vou colocar tchã no motor para ele funcionar melhor.",
+        "Comprei um tchã de parafusos para consertar a cadeira.",
+        "O eletricista trocou o tchã da tomada que estava queimado."
+      ],
+      "significados_incorretos": [
+        "Peça mecânica utilizada em reparos automotivos.",
+        "Ferramenta de fixação usada em marcenaria e montagem.",
+        "Componente elétrico responsável pela condução de energia."
+      ],
+      "impacto_motivo": "Elogia a presença marcante, o carisma ou o toque especial de uma pessoa ou coisa que se destaca."
+    },
+    {
+      "id": 51,
+      "nome": "coroa",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa mais velha, geralmente usado para se referir aos pais ou a adultos de meia-idade.",
+      "tags": [
+        "família",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou pedir dinheiro emprestado para o meu coroa comprar o ingresso do show.",
+      "exemplos_incorretos": [
+        "O rei usava uma coroa de ouro cravejada de pedras preciosas.",
+        "Comprei uma coroa de flores para decorar a mesa do casamento.",
+        "O dentista colocou uma coroa nova no meu dente quebrado."
+      ],
+      "significados_incorretos": [
+        "Adorno real usado por monarcas em cerimônias oficiais.",
+        "Arranjo floral circular usado em decorações festivas.",
+        "Prótese odontológica usada para restaurar dentes danificados."
+      ],
+      "impacto_motivo": "Termo informal e geralmente afetuoso para se referir a pessoas mais velhas, sem carga emocional fixa positiva ou negativa."
     }
   ]
 }

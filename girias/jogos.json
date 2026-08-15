@@ -25,7 +25,7 @@
         "Estratégia avançada usada para vencer partidas profissionais.",
         "Item consumível que recupera a vida do jogador instantaneamente."
       ],
-      "justificativa": "Troll é usado para descrever ações que prejudicam de propósito a diversão de outros jogadores, causando frustração no grupo."
+      "impacto_motivo": "Troll é usado para descrever ações que prejudicam de propósito a diversão de outros jogadores, causando frustração no grupo."
     },
     {
       "id": 2,
@@ -49,7 +49,7 @@
         "Moeda virtual utilizada para comprar cosméticos e passes de batalha.",
         "Ação de se esconder em um canto do mapa esperando os inimigos passarem."
       ],
-      "justificativa": "Tilt representa perda de controle emocional, o que geralmente prejudica o desempenho do jogador e a experiência do time."
+      "impacto_motivo": "Tilt representa perda de controle emocional, o que geralmente prejudica o desempenho do jogador e a experiência do time."
     },
     {
       "id": 3,
@@ -74,7 +74,7 @@
         "Dano crítico causado por um tiro certeiro na cabeça do oponente.",
         "Criatura pacífica que troca itens valiosos com os jogadores."
       ],
-      "justificativa": "Rush é apenas uma tática de avanço rápido, podendo levar tanto a bons quanto a maus resultados dependendo do contexto."
+      "impacto_motivo": "Rush é apenas uma tática de avanço rápido, podendo levar tanto a bons quanto a maus resultados dependendo do contexto."
     },
     {
       "id": 4,
@@ -101,7 +101,7 @@
         "Mensagem repetida várias vezes no chat para irritar os moderadores.",
         "Erro de programação que faz o jogo fechar sozinho inesperadamente."
       ],
-      "justificativa": "Farm descreve uma atividade comum e necessária de coleta de recursos, sem conotação positiva ou negativa em si."
+      "impacto_motivo": "Farm descreve uma atividade comum e necessária de coleta de recursos, sem conotação positiva ou negativa em si."
     },
     {
       "id": 5,
@@ -125,7 +125,7 @@
         "Nome dado à área inicial onde os novos jogadores surgem.",
         "Código secreto digitado no console para habilitar trapaças de dinheiro."
       ],
-      "justificativa": "Nerf enfraquece algo que o jogador gostava de usar, gerando frustração e sensação de perda de poder."
+      "impacto_motivo": "Nerf enfraquece algo que o jogador gostava de usar, gerando frustração e sensação de perda de poder."
     },
     {
       "id": 6,
@@ -151,7 +151,7 @@
         "Janela flutuante que mostra as estatísticas de desempenho da máquina.",
         "História de fundo contada através de livros colecionáveis no mapa."
       ],
-      "justificativa": "Buff representa uma melhoria que fortalece o personagem ou habilidade, sendo benéfico para quem a recebe."
+      "impacto_motivo": "Buff representa uma melhoria que fortalece o personagem ou habilidade, sendo benéfico para quem a recebe."
     },
     {
       "id": 7,
@@ -177,7 +177,7 @@
         "Jogador profissional que recebe salário para disputar torneios.",
         "Inteligência artificial avançada que gerencia os monstros do mapa."
       ],
-      "justificativa": "Noob é frequentemente usado de forma pejorativa para apontar falta de experiência, soando como crítica ou zombaria."
+      "impacto_motivo": "Noob é frequentemente usado de forma pejorativa para apontar falta de experiência, soando como crítica ou zombaria."
     },
     {
       "id": 8,
@@ -203,7 +203,7 @@
         "Criar armas personalizadas misturando materiais raros.",
         "Ato de se render quando a partida já está completamente perdida."
       ],
-      "justificativa": "Camp é visto como uma prática pouco esportiva, associada a evitar o confronto direto, o que costuma irritar os adversários."
+      "impacto_motivo": "Camp é visto como uma prática pouco esportiva, associada a evitar o confronto direto, o que costuma irritar os adversários."
     },
     {
       "id": 9,
@@ -229,7 +229,7 @@
         "Opção gráfica que melhora o reflexo da água e das sombras.",
         "Combinação de botões usada para executar um golpe especial."
       ],
-      "justificativa": "Rage está ligado a um estado de raiva intensa que compromete o comportamento do jogador e pode levar ao abandono da partida."
+      "impacto_motivo": "Rage está ligado a um estado de raiva intensa que compromete o comportamento do jogador e pode levar ao abandono da partida."
     },
     {
       "id": 10,
@@ -253,7 +253,7 @@
         "Aparelho de realidade virtual usado para aumentar a imersão.",
         "Comando de texto usado para reportar comportamentos tóxicos."
       ],
-      "justificativa": "Smurf desequilibra as partidas ao colocar jogadores experientes contra iniciantes, prejudicando a experiência justa do jogo."
+      "impacto_motivo": "Smurf desequilibra as partidas ao colocar jogadores experientes contra iniciantes, prejudicando a experiência justa do jogo."
     },
     {
       "id": 11,
@@ -277,7 +277,7 @@
         "Menu principal do jogo onde os jogadores escolhem seus personagens.",
         "Técnica de construção rápida muito utilizada em jogos de sobrevivência."
       ],
-      "justificativa": "Clutch celebra uma jogada heroica e decisiva, sendo motivo de admiração e orgulho para quem a executa."
+      "impacto_motivo": "Clutch celebra uma jogada heroica e decisiva, sendo motivo de admiração e orgulho para quem a executa."
     },
     {
       "id": 12,
@@ -302,7 +302,7 @@
         "Líder supremo de uma facção inimiga dentro da história do jogo.",
         "Sala de bate-papo por voz onde os times combinam táticas."
       ],
-      "justificativa": "Poção oferece um benefício direto ao jogador, como cura ou efeitos temporários vantajosos, sendo sempre bem-vinda."
+      "impacto_motivo": "Poção oferece um benefício direto ao jogador, como cura ou efeitos temporários vantajosos, sendo sempre bem-vinda."
     },
     {
       "id": 13,
@@ -329,7 +329,7 @@
         "O ato de correr em zigue-zague para evitar ser atingido por tiros.",
         "Efeito sonoro emitido quando um jogador alcança a vitória."
       ],
-      "justificativa": "Craft é apenas uma mecânica de criação de itens, sem carga emocional positiva ou negativa associada."
+      "impacto_motivo": "Craft é apenas uma mecânica de criação de itens, sem carga emocional positiva ou negativa associada."
     },
     {
       "id": 14,
@@ -353,7 +353,7 @@
         "Dispositivo físico utilizado para controlar simulações de voo.",
         "Histórico detalhado de todas as partidas jogadas na temporada."
       ],
-      "justificativa": "Level representa progresso e evolução do personagem, remetendo a conquista e crescimento dentro do jogo."
+      "impacto_motivo": "Level representa progresso e evolução do personagem, remetendo a conquista e crescimento dentro do jogo."
     },
     {
       "id": 15,
@@ -377,7 +377,7 @@
         "Diminuir a qualidade gráfica para rodar o jogo de forma mais fluida.",
         "Ficar escondido em uma moita aguardando o final do round."
       ],
-      "justificativa": "Upar remete ao ato de evoluir e fortalecer o personagem, refletindo progresso e conquista."
+      "impacto_motivo": "Upar remete ao ato de evoluir e fortalecer o personagem, refletindo progresso e conquista."
     },
     {
       "id": 16,
@@ -401,7 +401,7 @@
         "Mudança estética na interface do usuário para o modo noturno.",
         "O ato de pular repetidamente para se movimentar mais rápido."
       ],
-      "justificativa": "Charge é apenas um mecanismo de acúmulo de energia para uma habilidade, sem conotação emocional própria."
+      "impacto_motivo": "Charge é apenas um mecanismo de acúmulo de energia para uma habilidade, sem conotação emocional própria."
     },
     {
       "id": 17,
@@ -428,7 +428,7 @@
         "Termo usado para designar um jogador iniciante e sem habilidades.",
         "Mecanismo de segurança que impede o roubo de contas virtuais."
       ],
-      "justificativa": "Tunado indica que algo foi melhorado e personalizado, remetendo à customização valorizada pelos jogadores."
+      "impacto_motivo": "Tunado indica que algo foi melhorado e personalizado, remetendo à customização valorizada pelos jogadores."
     },
     {
       "id": 18,
@@ -454,7 +454,7 @@
         "Recompensa diária dada aos jogadores que completam missões.",
         "Título honorário concedido ao jogador que faz mais eliminações."
       ],
-      "justificativa": "Dummy é apenas um boneco de treino usado para testes, sem impacto emocional para o jogador."
+      "impacto_motivo": "Dummy é apenas um boneco de treino usado para testes, sem impacto emocional para o jogador."
     },
     {
       "id": 19,
@@ -481,7 +481,7 @@
         "Configuração de teclado ideal recomendada por pro-players.",
         "Ato de doar moedas do jogo para jogadores necessitados."
       ],
-      "justificativa": "Bugado indica a presença de um erro que atrapalha a experiência de jogo, gerando frustração com falhas do sistema."
+      "impacto_motivo": "Bugado indica a presença de um erro que atrapalha a experiência de jogo, gerando frustração com falhas do sistema."
     },
     {
       "id": 20,
@@ -505,7 +505,7 @@
         "Uma criatura selvagem montável que aumenta a velocidade no deserto.",
         "Gesto de comemoração realizado ao vencer uma rodada difícil."
       ],
-      "justificativa": "Pokao representa uma grande quantidade de poções, garantindo mais recursos e segurança ao jogador."
+      "impacto_motivo": "Pokao representa uma grande quantidade de poções, garantindo mais recursos e segurança ao jogador."
     },
     {
       "id": 21,
@@ -529,7 +529,7 @@
         "Expulsar um membro do clã que ficou muito tempo sem jogar.",
         "Melhorar o sinal de internet configurando as portas do modem."
       ],
-      "justificativa": "Minerar é apenas uma atividade de coleta de recursos subterrâneos, sem conotação emocional."
+      "impacto_motivo": "Minerar é apenas uma atividade de coleta de recursos subterrâneos, sem conotação emocional."
     },
     {
       "id": 22,
@@ -556,7 +556,7 @@
         "Utilizar programas ilegais que aumentam a precisão dos disparos.",
         "Fazer piadas ofensivas nos canais de comunicação da partida."
       ],
-      "justificativa": "Tankar reflete a capacidade de proteger a equipe absorvendo dano, um papel valorizado no jogo em grupo."
+      "impacto_motivo": "Tankar reflete a capacidade de proteger a equipe absorvendo dano, um papel valorizado no jogo em grupo."
     },
     {
       "id": 23,
@@ -580,7 +580,7 @@
         "Habilidade suprema que possui o maior tempo de recarga do jogo.",
         "Local exato onde os jogadores derrotados voltam à vida."
       ],
-      "justificativa": "Random apenas descreve algo aleatório ou desconhecido, sem carga positiva ou negativa."
+      "impacto_motivo": "Random apenas descreve algo aleatório ou desconhecido, sem carga positiva ou negativa."
     },
     {
       "id": 24,
@@ -606,7 +606,7 @@
         "Comando usado para redefinir todas as configurações padrões.",
         "Estilo de jogo focado em eliminar oponentes usando apenas socos."
       ],
-      "justificativa": "Drop representa a recompensa obtida ao derrotar inimigos, sendo sempre bem-vindo pelos jogadores."
+      "impacto_motivo": "Drop representa a recompensa obtida ao derrotar inimigos, sendo sempre bem-vindo pelos jogadores."
     },
     {
       "id": 25,
@@ -630,7 +630,7 @@
         "Lista de punições recebidas por trapacear em servidores públicos.",
         "Item consumível que aumenta a experiência ganha em dobro."
       ],
-      "justificativa": "Call é apenas uma comunicação estratégica entre jogadores, sem conotação emocional própria."
+      "impacto_motivo": "Call é apenas uma comunicação estratégica entre jogadores, sem conotação emocional própria."
     },
     {
       "id": 26,
@@ -654,7 +654,7 @@
         "O jogador que desiste facilmente e abandona os companheiros.",
         "Moeda premium do jogo comprada exclusivamente com cartões de crédito."
       ],
-      "justificativa": "Tryhard descreve alguém que se esforça muito para vencer, podendo ser visto de forma neutra conforme o contexto da partida."
+      "impacto_motivo": "Tryhard descreve alguém que se esforça muito para vencer, podendo ser visto de forma neutra conforme o contexto da partida."
     },
     {
       "id": 27,
@@ -678,7 +678,7 @@
         "Comunidade oficial de desenvolvedores que criam expansões.",
         "Dispositivo usado para capturar e transmitir a tela em tempo real."
       ],
-      "justificativa": "Bot é usado de forma depreciativa para descrever jogadores fracos ou sem habilidade, funcionando quase como um insulto."
+      "impacto_motivo": "Bot é usado de forma depreciativa para descrever jogadores fracos ou sem habilidade, funcionando quase como um insulto."
     },
     {
       "id": 28,
@@ -702,7 +702,7 @@
         "Denúncia formal enviada ao suporte contra um jogador racista.",
         "Janela que exibe a tabela de classificação geral do torneio."
       ],
-      "justificativa": "Spawn é apenas o local onde jogadores ou entidades surgem, sem carga emocional associada."
+      "impacto_motivo": "Spawn é apenas o local onde jogadores ou entidades surgem, sem carga emocional associada."
     },
     {
       "id": 29,
@@ -727,7 +727,7 @@
         "Organizar os baús de armazenamento por ordem alfabética.",
         "Terminar uma partida sem sofrer nenhum tipo de dano dos inimigos."
       ],
-      "justificativa": "Griefar envolve prejudicar intencionalmente outros jogadores, sendo uma atitude prejudicial e mal vista pela comunidade."
+      "impacto_motivo": "Griefar envolve prejudicar intencionalmente outros jogadores, sendo uma atitude prejudicial e mal vista pela comunidade."
     },
     {
       "id": 30,
@@ -752,7 +752,7 @@
         "Dispositivo que melhora o tempo de resposta do teclado mecânico.",
         "Habilidade passiva que permite carregar mais peso no inventário."
       ],
-      "justificativa": "Skin é apenas uma personalização visual, sem impacto na jogabilidade ou carga emocional."
+      "impacto_motivo": "Skin é apenas uma personalização visual, sem impacto na jogabilidade ou carga emocional."
     },
     {
       "id": 31,
@@ -779,7 +779,7 @@
         "Gritar no microfone com o objetivo de desconcentrar os rivais.",
         "Modificar arquivos internos para trapacear nas partidas online."
       ],
-      "justificativa": "Buildar descreve a ação de construir estruturas ou configurações, uma mecânica comum sem conotação emocional específica."
+      "impacto_motivo": "Buildar descreve a ação de construir estruturas ou configurações, uma mecânica comum sem conotação emocional específica."
     },
     {
       "id": 32,
@@ -803,7 +803,7 @@
         "Controle físico com sensores de movimento usado em consoles.",
         "O enredo ou história principal contada nas cenas cinematográficas."
       ],
-      "justificativa": "Server é apenas a infraestrutura onde o jogo acontece, sem carga emocional."
+      "impacto_motivo": "Server é apenas a infraestrutura onde o jogo acontece, sem carga emocional."
     },
     {
       "id": 33,
@@ -827,7 +827,7 @@
         "Programa malicioso usado para roubar senhas de contas bancárias.",
         "Ação de se render no meio do jogo quando o time perde um membro."
       ],
-      "justificativa": "Admin apenas identifica um cargo de administração com permissões especiais, sem conotação positiva ou negativa."
+      "impacto_motivo": "Admin apenas identifica um cargo de administração com permissões especiais, sem conotação positiva ou negativa."
     },
     {
       "id": 34,
@@ -852,7 +852,7 @@
         "Moeda oficial do jogo usada em torneios presenciais internacionais.",
         "Ato de perder uma partida de propósito para ajudar um amigo."
       ],
-      "justificativa": "Mod refere-se a moderação ou modificações do jogo, sem carga emocional intrínseca."
+      "impacto_motivo": "Mod refere-se a moderação ou modificações do jogo, sem carga emocional intrínseca."
     },
     {
       "id": 35,
@@ -878,7 +878,7 @@
         "Salvar o progresso do jogo na nuvem para não perder os dados.",
         "Criar um canal de transmissão ao vivo em plataformas de streaming."
       ],
-      "justificativa": "Banir implica remover o acesso de um jogador, geralmente como punição, tendo caráter restritivo e negativo."
+      "impacto_motivo": "Banir implica remover o acesso de um jogador, geralmente como punição, tendo caráter restritivo e negativo."
     },
     {
       "id": 36,
@@ -904,7 +904,7 @@
         "Configurar os botões do mouse para realizarem cliques mais rápidos.",
         "Ato de fingir ser um jogador iniciante para enganar os rivais."
       ],
-      "justificativa": "Grindar descreve tarefas repetitivas de progressão que podem ser cansativas, mas não carregam conotação negativa fixa."
+      "impacto_motivo": "Grindar descreve tarefas repetitivas de progressão que podem ser cansativas, mas não carregam conotação negativa fixa."
     },
     {
       "id": 37,
@@ -928,7 +928,7 @@
         "Moeda virtual oficial utilizada para comprar itens cosméticos.",
         "Nome dado ao chefe final que protege o castelo principal."
       ],
-      "justificativa": "Obby é apenas um tipo de mapa de obstáculos, sem carga emocional associada."
+      "impacto_motivo": "Obby é apenas um tipo de mapa de obstáculos, sem carga emocional associada."
     },
     {
       "id": 38,
@@ -952,7 +952,7 @@
         "Erro crítico de rede que faz com que os comandos fiquem atrasados.",
         "Ação de construir paredes rapidamente para se proteger de tiros."
       ],
-      "justificativa": "Lobby é apenas uma área de espera antes das partidas, sem conotação emocional."
+      "impacto_motivo": "Lobby é apenas uma área de espera antes das partidas, sem conotação emocional."
     },
     {
       "id": 39,
@@ -976,7 +976,7 @@
         "O nível de experiência que determina o ranque competitivo do jogador.",
         "Modo de jogo focado em batalhas de dança e ritmo musical."
       ],
-      "justificativa": "Robux permite adquirir itens e conteúdos desejados dentro do jogo, sendo um recurso valorizado pelos jogadores."
+      "impacto_motivo": "Robux permite adquirir itens e conteúdos desejados dentro do jogo, sendo um recurso valorizado pelos jogadores."
     },
     {
       "id": 40,
@@ -1000,7 +1000,7 @@
         "Sistema de comunicação por voz integrado nativamente nas partidas.",
         "Tipo de veículo voador adicionado temporariamente em um evento."
       ],
-      "justificativa": "Vbucks permite comprar itens cosméticos desejados, sendo visto como algo vantajoso pelos jogadores."
+      "impacto_motivo": "Vbucks permite comprar itens cosméticos desejados, sendo visto como algo vantajoso pelos jogadores."
     },
     {
       "id": 41,
@@ -1026,7 +1026,7 @@
         "Erro técnico que causa o banimento injusto de contas de usuários.",
         "Nome do principal torneio de esportes eletrônicos do mundo."
       ],
-      "justificativa": "W representa uma vitória, sendo motivo de comemoração para o jogador ou equipe."
+      "impacto_motivo": "W representa uma vitória, sendo motivo de comemoração para o jogador ou equipe."
     },
     {
       "id": 42,
@@ -1052,7 +1052,7 @@
         "Tipo de poção que redefine os pontos de atributo do personagem.",
         "Comando administrativo usado para reiniciar o mapa do servidor."
       ],
-      "justificativa": "L representa uma derrota, associada à frustração e ao fracasso na partida."
+      "impacto_motivo": "L representa uma derrota, associada à frustração e ao fracasso na partida."
     },
     {
       "id": 43,
@@ -1077,7 +1077,7 @@
         "Denunciar uma falha de segurança diretamente para a publicadora.",
         "Alcançar a pontuação máxima exigida em campeonatos oficiais."
       ],
-      "justificativa": "Givar apenas descreve a ação de doar ou transferir itens entre jogadores, sem carga emocional específica."
+      "impacto_motivo": "Givar apenas descreve a ação de doar ou transferir itens entre jogadores, sem carga emocional específica."
     },
     {
       "id": 44,
@@ -1101,7 +1101,7 @@
         "Estratégia avançada de ataque rápido combinada por todo o time.",
         "Moeda secundária usada em trocas comerciais com vilarejos neutros."
       ],
-      "justificativa": "Lag prejudica a experiência de jogo ao causar atrasos e travamentos, gerando frustração nos jogadores."
+      "impacto_motivo": "Lag prejudica a experiência de jogo ao causar atrasos e travamentos, gerando frustração nos jogadores."
     },
     {
       "id": 45,
@@ -1125,7 +1125,7 @@
         "Erro de código que faz com que os itens do inventário sumam.",
         "O tempo que leva para o jogo carregar completamente uma partida."
       ],
-      "justificativa": "Meta apenas indica a estratégia considerada mais eficiente no momento, podendo mudar com o tempo, sem conotação emocional fixa."
+      "impacto_motivo": "Meta apenas indica a estratégia considerada mais eficiente no momento, podendo mudar com o tempo, sem conotação emocional fixa."
     },
     {
       "id": 46,
@@ -1149,7 +1149,7 @@
         "Reiniciar o servidor para corrigir problemas de conexão.",
         "Comemorar de forma exagerada após vencer uma partida difícil."
       ],
-      "justificativa": "Nerfar enfraquece algo que o jogador gostava de usar, gerando frustração e sensação de perda de poder, assim como o substantivo nerf."
+      "impacto_motivo": "Nerfar enfraquece algo que o jogador gostava de usar, gerando frustração e sensação de perda de poder, assim como o substantivo nerf."
     },
     {
       "id": 47,
@@ -1173,7 +1173,7 @@
         "Habilidade passiva que aumenta a velocidade de movimento.",
         "Nome dado ao jogador mais habilidoso de um time competitivo."
       ],
-      "justificativa": "Bomb é apenas um objetivo tático de plantar ou defender, sem conotação emocional própria, dependendo do contexto da partida."
+      "impacto_motivo": "Bomb é apenas um objetivo tático de plantar ou defender, sem conotação emocional própria, dependendo do contexto da partida."
     },
     {
       "id": 48,
@@ -1197,7 +1197,7 @@
         "Ferramenta usada para minerar blocos mais rápido.",
         "Comando de chat que esconde a localização do jogador."
       ],
-      "justificativa": "Enderman é uma criatura hostil e imprevisível que pode atacar o jogador de surpresa, representando perigo dentro do jogo."
+      "impacto_motivo": "Enderman é uma criatura hostil e imprevisível que pode atacar o jogador de surpresa, representando perigo dentro do jogo."
     },
     {
       "id": 49,
@@ -1221,7 +1221,7 @@
         "Efeito visual que deixa a tela desfocada durante a chuva.",
         "Recompensa dada por completar uma missão diária."
       ],
-      "justificativa": "Creeper é associado a destruição repentina de construções, causando frustração e prejuízo ao jogador."
+      "impacto_motivo": "Creeper é associado a destruição repentina de construções, causando frustração e prejuízo ao jogador."
     },
     {
       "id": 50,
@@ -1245,7 +1245,7 @@
         "Habilidade especial que cura toda a equipe instantaneamente.",
         "Local secreto onde aparecem itens lendários no mapa."
       ],
-      "justificativa": "Villager é apenas um NPC pacífico de comércio, sem carga emocional positiva ou negativa associada."
+      "impacto_motivo": "Villager é apenas um NPC pacífico de comércio, sem carga emocional positiva ou negativa associada."
     },
     {
       "id": 51,
@@ -1269,7 +1269,7 @@
         "Item consumível que aumenta a velocidade de ataque.",
         "Comando usado para reportar jogadores tóxicos no chat."
       ],
-      "justificativa": "Golem oferece proteção e segurança ao jogador e à sua base, sendo visto como algo benéfico e desejável."
+      "impacto_motivo": "Golem oferece proteção e segurança ao jogador e à sua base, sendo visto como algo benéfico e desejável."
     },
     {
       "id": 52,
@@ -1293,7 +1293,7 @@
         "Item raro obtido apenas em eventos sazonais.",
         "Comando usado para trocar de time durante a partida."
       ],
-      "justificativa": "Afk indica ausência do jogador durante a partida, prejudicando a equipe e gerando frustração nos companheiros."
+      "impacto_motivo": "Afk indica ausência do jogador durante a partida, prejudicando a equipe e gerando frustração nos companheiros."
     },
     {
       "id": 53,
@@ -1320,7 +1320,7 @@
         "Local onde os jogadores derrotados reaparecem no mapa.",
         "Moeda virtual usada para comprar passes de batalha."
       ],
-      "justificativa": "Ult representa o auge do poder do personagem, sendo motivo de expectativa e satisfação quando bem utilizada."
+      "impacto_motivo": "Ult representa o auge do poder do personagem, sendo motivo de expectativa e satisfação quando bem utilizada."
     }
   ]
 }

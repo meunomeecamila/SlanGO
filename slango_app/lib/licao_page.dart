@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'fase/fase.dart';
-import 'licao.dart';
-import 'missao/data/mundo_assets.dart';
 import 'quiz_page.dart';
 import 'service/MundoService.dart';
 
@@ -26,7 +24,6 @@ class LicaoPage extends StatefulWidget {
 
 class _LicaoPageState extends State<LicaoPage> {
   late Future<RodadaMundo> _futureRodada;
-  int _indiceAtual = 0;
 
   @override
   void initState() {
@@ -36,29 +33,6 @@ class _LicaoPageState extends State<LicaoPage> {
       _futureRodada = Future.value(widget.rodadaPrecarregada!);
     } else {
       _futureRodada = MundoService.buscarRodada(widget.nomeMundo);
-    }
-  }
-
-  void _avancar(RodadaMundo rodada) {
-    final fases = rodada.fases;
-    if (_indiceAtual < fases.length - 1) {
-      setState(() {
-        _indiceAtual++;
-      });
-    } else {
-      // Passa as perguntas já carregadas para o QuizPage — sem nova requisição.
-      Navigator.pushReplacement(
-        context,
-        PageRouteBuilder(
-          pageBuilder: (_, __, ___) => QuizPage(
-            nomeMundo: widget.nomeMundo,
-            perguntasPrecarregadas: rodada.todasAsPerguntas,
-          ),
-          transitionsBuilder: (_, animation, __, child) =>
-              FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 350),
-        ),
-      );
     }
   }
 
@@ -103,18 +77,14 @@ class _LicaoPageState extends State<LicaoPage> {
           );
         }
 
-        final fase = rodada.fases[_indiceAtual];
-
-        return SlangQuizScreen(
-          palavra: fase.giria,
-          classe: fase.classe ?? '',
-          significado: fase.explicacao,
-          exemplo: fase.exemplo,
-          usageHighlight: fase.exemplo,
-          avatar: petDoMundo(widget.nomeMundo),
-          progresso: (_indiceAtual + 1) / rodada.fases.length,
-          onClose: () => Navigator.pop(context),
-          onContinue: () => _avancar(rodada),
+        // As telas de explicação NÃO fazem mais parte do fluxo padrão:
+        // elas são exibidas pelo QuizPage apenas quando o jogador erra
+        // alguma questão daquela gíria. Por isso entramos direto no quiz,
+        // passando as explicações já carregadas (rodada.fases).
+        return QuizPage(
+          nomeMundo: widget.nomeMundo,
+          perguntasPrecarregadas: rodada.todasAsPerguntas,
+          explicacoesPrecarregadas: rodada.fases,
         );
       },
     );
