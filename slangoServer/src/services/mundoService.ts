@@ -9,6 +9,7 @@ import outrosData from '../utils/girias/outros.json';
 import popData from '../utils/girias/pop.json';
 import redesSociaisData from '../utils/girias/redessociais.json';
 import relacionamentosData from '../utils/girias/relacionamentos.json';
+import comunidadeData from '../utils/girias/comunidade.json'
 
 import { Girias, FaseMundo } from '../types/Jogo';
 import { buscarGiriasAprendidas, buscarIdMundoPorNome, buscarProgressoDoUsuario } from './preogressoService'; 
@@ -25,6 +26,7 @@ const mundos = {
     pop: popData,
     redessociais: redesSociaisData,
     relacionamentos: relacionamentosData,
+    comunidade : comunidadeData
 };
 
 interface EstadoMundo {
