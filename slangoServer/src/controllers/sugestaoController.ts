@@ -24,7 +24,6 @@ const CAMPOS_OBRIGATORIOS: Array<keyof NovaSugestao> = [
     'exemplo',
     'impacto',
     'impacto_motivo',
-    'tags',
     'classe_gramatical',
 ];
 
@@ -45,7 +44,6 @@ function validarCamposSugestao(body: any): { ok: true; dados: NovaSugestao } | {
             exemplo: body.exemplo,
             impacto: body.impacto,
             impacto_motivo: body.impacto_motivo,
-            tags: body.tags,
             classe_gramatical: body.classe_gramatical,
         },
     };

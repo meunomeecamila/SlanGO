@@ -13,7 +13,6 @@ export interface SugestaoGiria {
     exemplo: string;
     impacto: string;
     impacto_motivo: string;
-    tags: string;
     classe_gramatical: string;
     status: StatusSugestao;
     criado_em: string;
@@ -28,7 +27,6 @@ export interface NovaSugestao {
     exemplo: string;
     impacto: string;
     impacto_motivo: string;
-    tags: string;
     classe_gramatical: string;
 }
 
@@ -65,7 +63,6 @@ export async function criarSugestao(
         exemplo: dados.exemplo.trim(),
         impacto: dados.impacto.trim(),
         impacto_motivo: dados.impacto_motivo.trim(),
-        tags: dados.tags.trim(),
         classe_gramatical: dados.classe_gramatical.trim(),
         status: 'PENDENTE' as StatusSugestao,
         descricao_adm: null,
