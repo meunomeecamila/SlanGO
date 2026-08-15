@@ -842,6 +842,833 @@
         "Cumprir todos os compromissos combinados sem falhar.",
         "Qualquer justificativa dada, mesmo que seja verdadeira."
       ]
+    },
+    {
+      "id": 31,
+      "nome": "aesthetic",
+      "variacoes": [
+        "aesthetics",
+        "super aesthetic"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Estética – visual bonito ou estilizado.",
+      "tags": [
+        "visual",
+        "estilo",
+        "fotos"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Esse café novo no centro tem uma decoração muito aesthetic.",
+      "exemplos_incorretos": [
+        "Usei um aesthetic forte para remover a mancha do tapete da sala.",
+        "Ele correu tanto que deu um aesthetic no músculo da perna.",
+        "A comida estava boa, mas achei que faltou um pouco de aesthetic no tempero."
+      ],
+      "significados_incorretos": [
+        "Um produto químico de limpeza potente.",
+        "Uma cãibra ou dor muscular aguda.",
+        "Um tipo de tempero usado em pratos quentes."
+      ]
+    },
+    {
+      "id": 32,
+      "nome": "ate",
+      "variacoes": [
+        "she ate",
+        "ate that"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Gíria que significa que a pessoa arrasou, mandou bem.",
+      "tags": [
+        "elogio",
+        "sucesso",
+        "performance"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela simplesmente ate na apresentação de dança ontem.",
+      "exemplos_incorretos": [
+        "Eu ate as duas pontas da corda para segurar a barraca.",
+        "Senti um ate nas costas depois de carregar aquela caixa pesada.",
+        "O mecânico trocou o ate do motor do carro."
+      ],
+      "significados_incorretos": [
+        "O ato de dar um nó em uma corda.",
+        "Uma dor nas costas causada por peso excessivo.",
+        "Uma peça cilíndrica de motores automotivos."
+      ]
+    },
+    {
+      "id": 33,
+      "nome": "aura",
+      "variacoes": [
+        "aura point",
+        "aura negativa"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Energia/carisma de uma pessoa.",
+      "tags": [
+        "presenca",
+        "energia",
+        "carisma"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "A aura dela é incrível e ilumina qualquer lugar que ela entra.",
+      "exemplos_incorretos": [
+        "Comprei uma aura de chocolate maravilhosa para o café da tarde.",
+        "A aura do pneu da minha bicicleta furou no meio do caminho.",
+        "Ele calçou a aura e foi jogar futebol com os amigos no campo."
+      ],
+      "significados_incorretos": [
+        "Um tipo de pão doce recheado de padaria.",
+        "A câmara de ar interna de um pneu.",
+        "Um modelo específico de chuteira esportiva."
+      ]
+    },
+    {
+      "id": 34,
+      "nome": "banger",
+      "variacoes": [
+        "bangers",
+        "é banger"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Algo muito bom, geralmente música.",
+      "tags": [
+        "musica",
+        "elogio",
+        "sucesso"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Essa nova música que lançaram hoje é um verdadeiro banger!",
+      "exemplos_incorretos": [
+        "Senti um banger no estômago depois de comer aquela fritura.",
+        "O marceneiro usou um banger para nivelar a mesa de madeira.",
+        "Ela vestiu um banger brilhante para ir ao baile de formatura."
+      ],
+      "significados_incorretos": [
+        "Uma dor de estômago ou indigestão severa.",
+        "Uma ferramenta de nivelamento de carpintaria.",
+        "Um tipo de vestido de festa de gala."
+      ]
+    },
+    {
+      "id": 35,
+      "nome": "big yikes",
+      "variacoes": [
+        "yikes"
+      ],
+      "classe_gramatical": "expressão",
+      "significado": "Desaprovação ou constrangimento intenso diante de uma atitude infeliz.",
+      "tags": [
+        "reacao",
+        "constrangimento",
+        "desaprovacao"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele fez aquele comentário na frente de todo mundo? Big yikes.",
+      "exemplos_incorretos": [
+        "Pedi um big yikes de frango na lanchonete ontem à noite.",
+        "As crianças foram brincar no big yikes do parque de diversões.",
+        "Derramei o líquido big yikes na piscina para limpar a água."
+      ],
+      "significados_incorretos": [
+        "Um sanduíche grande e recheado de lanchonete.",
+        "Um brinquedo radical de parque de diversões.",
+        "Um produto químico purificador para piscinas."
+      ]
+    },
+    {
+      "id": 36,
+      "nome": "bio",
+      "variacoes": [
+        "na bio",
+        "link na bio"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Biografia – seção 'sobre mim' nas redes.",
+      "tags": [
+        "perfil",
+        "instagram",
+        "informacao"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Coloquei o link do meu site profissional na minha bio.",
+      "exemplos_incorretos": [
+        "Comprei um bio de maçãs frescas na feira hoje de manhã.",
+        "O menino chutou a bola com força e quebrou o bio da janela.",
+        "O mecânico analisou o motor e disse que o carro estava vazando bio."
+      ],
+      "significados_incorretos": [
+        "Um caixote de madeira usado para transportar frutas.",
+        "A vidraça principal de uma janela residencial.",
+        "Um fluido lubrificante essencial para o motor automotivo."
+      ]
+    },
+    {
+      "id": 37,
+      "nome": "camp",
+      "variacoes": [
+        "muito camp",
+        "estética camp"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Estética exagerada e extravagante, propositalmente teatral.",
+      "tags": [
+        "estetica",
+        "moda",
+        "exagerado"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O figurino que ela escolheu usar no tapete vermelho foi muito camp.",
+      "exemplos_incorretos": [
+        "Bebi um copo de camp de laranja bem gelado depois de correr.",
+        "Os técnicos instalaram um camp novo na sala para melhorar a internet.",
+        "Coloquei duas colheres de camp em pó para a massa do bolo crescer."
+      ],
+      "significados_incorretos": [
+        "Um suco ou bebida refrescante e natural.",
+        "Um aparelho roteador de sinal Wi-Fi.",
+        "Um tipo de fermento químico usado na culinária."
+      ]
+    },
+    {
+      "id": 38,
+      "nome": "caught in 4K",
+      "variacoes": [
+        "pego em 4K"
+      ],
+      "classe_gramatical": "expressão",
+      "significado": "Pego em flagrante, com provas claras da situação.",
+      "tags": [
+        "flagrante",
+        "provas",
+        "julgamento"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele disse que estava dormindo cedo, mas foi caught in 4K na balada.",
+      "exemplos_incorretos": [
+        "Comprei um caught in 4K novinho e gigante para colocar na minha sala.",
+        "O pescador comemorou muito quando pescou um caught in 4K no rio.",
+        "A costureira usou caught in 4K de alta qualidade para fazer a barra do vestido."
+      ],
+      "significados_incorretos": [
+        "Um modelo avançado de televisão de tela plana.",
+        "Um peixe raro e muito procurado em rios de água doce.",
+        "Um tipo de linha grossa de costura para tecidos pesados."
+      ]
+    },
+    {
+      "id": 39,
+      "nome": "CEO",
+      "variacoes": [
+        "ceo disso"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "O melhor em algo, dominando completamente um assunto ou comportamento.",
+      "tags": [
+        "referencia",
+        "humor",
+        "habilidade"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela é a CEO das melhores maquiagens artísticas da internet.",
+      "exemplos_incorretos": [
+        "Comi um pedaço de CEO de morango enorme na festa de aniversário.",
+        "A batida dos dois caminhões causou um grande CEO na avenida principal.",
+        "Eles adotaram um filhote de CEO recém-nascido no abrigo de animais."
+      ],
+      "significados_incorretos": [
+        "Um tipo de bolo recheado com frutas.",
+        "Um engarrafamento de trânsito quilométrico.",
+        "Uma raça de cachorro de pequeno porte."
+      ]
+    },
+    {
+      "id": 40,
+      "nome": "cheugy",
+      "variacoes": [
+        "muito cheugy"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Fora de moda, cafona ou tentando demais seguir tendências ultrapassadas.",
+      "tags": [
+        "moda",
+        "critica",
+        "ultrapassado"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquelas decorações com frases motivacionais na parede são muito cheugy.",
+      "exemplos_incorretos": [
+        "Tomei uma sopa cheugy bem quente para curar o resfriado no inverno.",
+        "Ele economizou dinheiro e comprou um cheugy esportivo vermelho maravilhoso.",
+        "Alugamos um cheugy para navegar no lago durante o feriado prolongado."
+      ],
+      "significados_incorretos": [
+        "Um tipo de sopa rústica de legumes.",
+        "Um modelo de carro esportivo importado.",
+        "Um barco a vela de pequeno porte."
+      ]
+    },
+    {
+      "id": 41,
+      "nome": "clap back",
+      "variacoes": [
+        "deu um clap back"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Responder a críticas ou insultos de forma afiada e inteligente.",
+      "tags": [
+        "resposta",
+        "discussao",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela deu um clap back épico na entrevista depois de ouvir aquele comentário.",
+      "exemplos_incorretos": [
+        "O médico receitou um clap back forte para aliviar a dor constante na coluna.",
+        "Comi um clap back doce com mel e manteiga no café da manhã.",
+        "Tive que trocar o clap back da bicicleta porque estava muito enferrujado."
+      ],
+      "significados_incorretos": [
+        "Um medicamento analgésico de tarja preta.",
+        "Uma espécie de panqueca americana doce.",
+        "Uma peça fundamental da engrenagem de bicicletas."
+      ]
+    },
+    {
+      "id": 42,
+      "nome": "clout",
+      "variacoes": [
+        "por clout",
+        "caçando clout"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Influência ou poder nas redes, muitas vezes buscado a qualquer custo.",
+      "tags": [
+        "fama",
+        "seguidores",
+        "influencia"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ele fingiu brigar com o amigo apenas para ganhar clout na internet.",
+      "exemplos_incorretos": [
+        "Fui passear e comprei um clout de roupas no brechó do centro da cidade.",
+        "A confeiteira avisou que a receita leva exatamente um clout de manteiga derretida.",
+        "Fui ao caixa do banco para depositar um clout altíssimo na minha conta corrente."
+      ],
+      "significados_incorretos": [
+        "Um pacote ou fardo de roupas amarradas.",
+        "Uma medida de peso antiga usada na culinária.",
+        "Um cheque bancário de valor alto."
+      ]
+    },
+    {
+      "id": 43,
+      "nome": "coded",
+      "variacoes": [
+        "muito coded"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Ter características de algo/alguém, lembrando fortemente a estética de um personagem.",
+      "tags": [
+        "personalidade",
+        "referencia",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O quarto dela, todo rosa e organizado, é muito Barbie-coded.",
+      "exemplos_incorretos": [
+        "Tomei um comprimido coded recomendado pelo médico para conseguir dormir à noite.",
+        "O pescador jogou a rede e pegou um enorme coded nas profundezas do rio Amazonas.",
+        "Pedimos um corte nobre de carne coded no açougue para assar no churrasco de domingo."
+      ],
+      "significados_incorretos": [
+        "Um remédio forte usado contra a insônia.",
+        "Um tipo de peixe nativo de rios da floresta.",
+        "Um corte bovino específico e saboroso."
+      ]
+    },
+    {
+      "id": 44,
+      "nome": "deinfluencing",
+      "variacoes": [
+        "fazer deinfluencing"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Desencorajar compras desnecessárias, mostrando que um produto viral não vale a pena.",
+      "tags": [
+        "consumo",
+        "critica",
+        "produtos"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Assisti a um vídeo de deinfluencing sobre aquele creme caríssimo e desisti de comprar.",
+      "exemplos_incorretos": [
+        "O dentista precisou fazer um doloroso deinfluencing no meu dente inflamado.",
+        "O carro velho não passou no teste rigoroso de deinfluencing do Detran.",
+        "Este ano a fazenda do meu avô teve uma ótima colheita de deinfluencing."
+      ],
+      "significados_incorretos": [
+        "Um procedimento cirúrgico feito em clínicas odontológicas.",
+        "Um teste obrigatório de emissão de gases e poluentes.",
+        "Um tipo de grão nutritivo cultivado no campo."
+      ]
+    },
+    {
+      "id": 45,
+      "nome": "delulu",
+      "variacoes": [
+        "ficar delulu",
+        "fase delulu"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Delirante, iludido. Acreditar em situações amorosas ou profissionais irreais.",
+      "tags": [
+        "ilusao",
+        "amor",
+        "fandom"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Ela é completamente delulu se acha que o cantor famoso vai notar o comentário dela.",
+      "exemplos_incorretos": [
+        "Coloquei uma colher de delulu na massa para o bolo ficar bem fofinho e macio.",
+        "Ele pegou uma infecção delulu forte com a mudança de tempo e ficou de cama.",
+        "Para a viagem na neve, comprei um casaco revestido do resistente tecido delulu."
+      ],
+      "significados_incorretos": [
+        "Um ingrediente mágico para fazer bolos crescerem.",
+        "Uma doença respiratória grave comum no inverno.",
+        "Um tecido tecnológico com isolamento térmico."
+      ]
+    },
+    {
+      "id": 46,
+      "nome": "doomscrolling",
+      "variacoes": [
+        "doomscroll"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Rolar feed compulsivamente vendo coisas ruins e tragédias na internet.",
+      "tags": [
+        "saude mental",
+        "ansiedade",
+        "noticias"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Passei a madrugada em doomscrolling lendo notícias e acordei super ansioso.",
+      "exemplos_incorretos": [
+        "Prendi a estante pesada na parede usando um resistente parafuso doomscrolling de aço.",
+        "O time colegial treinou doomscrolling o dia todo no campo enlameado para a final.",
+        "Para não escorregar no gelo, meu sapato tem uma sola doomscrolling emborrachada."
+      ],
+      "significados_incorretos": [
+        "Um tipo de parafuso grosso e resistente para fixação.",
+        "Um esporte radical e violento de contato físico.",
+        "Uma tecnologia de sola de calçados antiderrapante."
+      ]
+    },
+    {
+      "id": 47,
+      "nome": "doxxing",
+      "variacoes": [
+        "dox",
+        "doxxed"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Expor informações pessoais de alguém na internet sem consentimento.",
+      "tags": [
+        "crime",
+        "privacidade",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Após a briga no fórum, ele sofreu doxxing e teve seu endereço residencial divulgado.",
+      "exemplos_incorretos": [
+        "Comi um pão recheado com um doce de doxxing maravilhoso na festa de ontem.",
+        "O pintor caprichou e fez uma textura de doxxing na parede da sala de estar.",
+        "O cachorro cavou a tarde toda e fez um buraco de doxxing no meio do jardim."
+      ],
+      "significados_incorretos": [
+        "Um creme doce e cremoso feito com castanhas.",
+        "Um tipo de textura decorativa para paredes.",
+        "O ato de cavar buracos profundos na terra."
+      ]
+    },
+    {
+      "id": 48,
+      "nome": "era",
+      "variacoes": [
+        "na minha era"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Fase específica da vida de uma pessoa, marcada por um comportamento ou estilo.",
+      "tags": [
+        "fase",
+        "estilo",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Cancelei minhas saídas, estou focado no trabalho e curtindo minha era produtiva.",
+      "exemplos_incorretos": [
+        "Passei no mercado italiano e comprei meio quilo de era para fazer no almoço.",
+        "Bati a era da perna com muita força na quina da mesa de vidro e ficou roxo.",
+        "O carpinteiro comprou pranchas de era da melhor qualidade para construir o telhado."
+      ],
+      "significados_incorretos": [
+        "Um tipo de macarrão artesanal longo.",
+        "Um osso sensível localizado na canela da perna.",
+        "Uma madeira rústica, pesada e muito resistente."
+      ]
+    },
+    {
+      "id": 49,
+      "nome": "face card",
+      "variacoes": [
+        "meu face card",
+        "face card nuca recusa"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Seu rosto/beleza facial, sendo que 'não recusar' significa sempre sair bem nas fotos.",
+      "tags": [
+        "beleza",
+        "aparencia",
+        "elogio"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nas fotos do evento de ontem, o face card dela brilhou e não recusou nenhuma vez.",
+      "exemplos_incorretos": [
+        "O face card do meu computador queimou de vez após a queda abrupta de energia.",
+        "Tive que usar um face card grande de papelão para empacotar os livros da mudança.",
+        "Passei o meu face card na catraca eletrônica para conseguir entrar no prédio comercial."
+      ],
+      "significados_incorretos": [
+        "Uma placa de circuito interna de computadores.",
+        "Uma caixa de papelão reforçada para transporte.",
+        "Um cartão de acesso eletrônico para funcionários."
+      ]
+    },
+    {
+      "id": 50,
+      "nome": "fandom",
+      "variacoes": [
+        "os fandoms"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Grupo de fãs extremamente dedicados a uma obra, série, jogo ou celebridade.",
+      "tags": [
+        "fas",
+        "grupos",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O fandom daquela série fez uma campanha gigante no Twitter para renovarem a temporada.",
+      "exemplos_incorretos": [
+        "Para celebrar o domingo em família, assei um fandom bem suculento com batatas.",
+        "Após o tombo feio, a médica tirou um raio-x e viu que o osso do meu fandom estava trincado.",
+        "Passei a tarde pescando no rio da fazenda e consegui pegar um fandom prateado enorme."
+      ],
+      "significados_incorretos": [
+        "Um corte farto de carne assada no forno.",
+        "Um osso ou articulação sensível do corpo humano.",
+        "Uma espécie de peixe de escamas muito cobiçada."
+      ]
+    },
+    {
+      "id": 51,
+      "nome": "flex",
+      "variacoes": [
+        "dar um flex",
+        "flexing"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Ostentar, se exibir com itens de luxo ou conquistas.",
+      "tags": [
+        "ostentacao",
+        "dinheiro",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele postou foto da chave do carro importado só para dar um flex nos seguidores.",
+      "exemplos_incorretos": [
+        "Fui levantar peso na academia e acabei distendendo o flex do braço esquerdo.",
+        "Para tirar o amargo, coloquei três colheres rasas de flex no café da manhã.",
+        "O pintor passou uma boa camada de flex na parede para corrigir as rachaduras."
+      ],
+      "significados_incorretos": [
+        "Um músculo específico localizado no braço.",
+        "Um tipo de adoçante ou açúcar cristal.",
+        "Uma massa corrida usada em construções."
+      ]
+    },
+    {
+      "id": 52,
+      "nome": "FOMO",
+      "variacoes": [
+        "com fomo",
+        "bateu o fomo"
+      ],
+      "classe_gramatical": "sigla",
+      "significado": "Medo de ficar de fora (Fear Of Missing Out), ansiedade de perder um evento legal.",
+      "tags": [
+        "ansiedade",
+        "eventos",
+        "redes-sociais"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Fui na festa chata ontem apenas porque me deu um FOMO enorme de perder algo importante.",
+      "exemplos_incorretos": [
+        "Limpei a casa toda e aspirei todo o FOMO grosso que estava acumulado no tapete da sala.",
+        "Na primavera, plantaram mudas de FOMO no quintal e as folhas já começaram a nascer.",
+        "Meu celular escorregou da mão, caiu no chão duro e acabou trincando a tela de FOMO."
+      ],
+      "significados_incorretos": [
+        "Poeira acumulada ou sujeira grossa.",
+        "Uma espécie de planta ornamental de jardim.",
+        "O vidro temperado protetor de telas de celular."
+      ]
+    },
+    {
+      "id": 53,
+      "nome": "ghosting",
+      "variacoes": [
+        "deu ghosting",
+        "levar ghosting"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Sumir, parar de responder alguém repentinamente sem dar nenhuma explicação.",
+      "tags": [
+        "relacionamento",
+        "vácuo",
+        "comunicacao"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "A gente saiu três vezes, parecia tudo bem, mas depois ele me deu ghosting e sumiu.",
+      "exemplos_incorretos": [
+        "Fomos ao cinema no final de semana assistir a um clássico filme de ghosting que deu muito medo.",
+        "A fotógrafa reclamou que a câmera estragou e estava fazendo ghosting em todas as imagens.",
+        "Para o Halloween, eu fui na loja e comprei um pacote de ghosting para enfeitar a mesa."
+      ],
+      "significados_incorretos": [
+        "Um gênero cinematográfico de terror.",
+        "Um defeito mecânico na lente de câmeras fotográficas.",
+        "Um adereço decorativo de festa temática."
+      ]
+    },
+    {
+      "id": 54,
+      "nome": "glow up",
+      "variacoes": [
+        "teve um glow up"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Melhorar a aparência, amadurecer e mudar o estilo de forma muito positiva com o tempo.",
+      "tags": [
+        "beleza",
+        "transformacao",
+        "autoestima"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Nossa, você viu as fotos antigas dele? Ele teve um glow up absurdo depois da faculdade.",
+      "exemplos_incorretos": [
+        "Para finalizar a maquiagem da modelo, a maquiadora passou um glow up suave nas bochechas.",
+        "Tomei banho no escuro porque a lâmpada de glow up do banheiro principal queimou de manhã.",
+        "Aproveitei o feriado para enrolar um fio de glow up bem comprido na árvore de Natal da varanda."
+      ],
+      "significados_incorretos": [
+        "Um tipo de pó ou blush de maquiagem iluminadora.",
+        "Uma lâmpada fluorescente comum de teto.",
+        "Luzes pisca-pisca usadas em decorações festivas."
+      ]
+    },
+    {
+      "id": 55,
+      "nome": "GOAT",
+      "variacoes": [
+        "o goat",
+        "ele é goat"
+      ],
+      "classe_gramatical": "sigla",
+      "significado": "O maior de todos os tempos (Greatest Of All Time), usado para lendas do esporte ou da música.",
+      "tags": [
+        "elogio",
+        "sucesso",
+        "esporte"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Com essa quantidade de recordes quebrados, não há dúvida de que ele é o GOAT do tênis.",
+      "exemplos_incorretos": [
+        "O fazendeiro ficou bravo quando o GOAT escapou da cerca do curral para comer o pasto do vizinho.",
+        "Fui na feira artesanal da cidade e aproveitei para comprar uma fatia daquele queijo de GOAT.",
+        "No frio intenso, vesti aquele casaco importado que era feito de pelo macio de GOAT para me esquentar."
+      ],
+      "significados_incorretos": [
+        "Um animal da fazenda que pasta no curral.",
+        "Um tipo de queijo rústico e fedido.",
+        "Uma pelagem animal usada na fabricação de roupas."
+      ]
+    },
+    {
+      "id": 56,
+      "nome": "gucci",
+      "variacoes": [
+        "tudo gucci",
+        "tá gucci"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Tudo bem, de boa. Indica que está tudo tranquilo e sob controle.",
+      "tags": [
+        "estado",
+        "tranquilidade",
+        "conversa"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Não precisa pedir desculpas pelo atraso, tá tudo gucci, a gente espera você chegar.",
+      "exemplos_incorretos": [
+        "Como presente de aniversário, juntei minhas economias e comprei uma bolsa gucci original na loja.",
+        "O mecânico analisou o barulho e avisou que a correia gucci do motor estourou na estrada.",
+        "Para o almoço de domingo em família, a minha tia preparou um delicioso gucci tradicional à bolonhesa."
+      ],
+      "significados_incorretos": [
+        "Uso literal referindo-se a um acessório de marca de luxo.",
+        "Uma peça de borracha do motor de um carro.",
+        "Um tipo de massa italiana cozida com molho de tomate."
+      ]
+    },
+    {
+      "id": 57,
+      "nome": "gyat",
+      "variacoes": [
+        "gyatt"
+      ],
+      "classe_gramatical": "interjeição",
+      "significado": "Expressão de admiração forte por alguém fisicamente muito atraente.",
+      "tags": [
+        "reacao",
+        "elogio",
+        "surpresa"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Quando ele tirou a camisa durante o jogo na praia, a galera só conseguiu soltar um GYAT!",
+      "exemplos_incorretos": [
+        "Chegando na academia, fui direto usar o pesado equipamento GYAT de anilhas para malhar as pernas.",
+        "Meu carro começou a vazar óleo e parou no sinal vermelho porque o GYAT do freio estourou.",
+        "Na hora do lanche, nós picamos as frutas e fizemos uma vitamina gelada com morango e gyat."
+      ],
+      "significados_incorretos": [
+        "Uma máquina complexa de exercícios de musculação.",
+        "Uma peça hidráulica do sistema de freios automotivos.",
+        "Uma fruta tropical de sabor doce e cítrico."
+      ]
+    },
+    {
+      "id": 58,
+      "nome": "hard launch",
+      "variacoes": [
+        "fez hard launch",
+        "hard launch do namoro"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Revelar oficialmente e sem fazer mistério um relacionamento ou produto novo nas redes.",
+      "tags": [
+        "relacionamento",
+        "anuncio",
+        "fotos"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Eles pararam de postar só as mãos dadas e fizeram o hard launch postando uma foto se beijando.",
+      "exemplos_incorretos": [
+        "Assistimos pela televisão quando o incrível hard launch do foguete aconteceu na base espacial.",
+        "Eu estava quase vencendo a partida, mas meu videogame deu um erro de hard launch e travou a tela.",
+        "O capitão acelerou os motores do enorme hard launch para conseguir chegar à ilha antes da tempestade."
+      ],
+      "significados_incorretos": [
+        "O evento literal de lançamento de um foguete ao espaço.",
+        "Um tipo de pane ou erro fatal de sistema de software.",
+        "Uma lancha aquática rápida equipada com motor potente."
+      ]
+    },
+    {
+      "id": 59,
+      "nome": "ick",
+      "variacoes": [
+        "me deu um ick",
+        "peguei ick"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Algo que causa repulsa, perda repentina de atração ou desinteresse total por uma pessoa.",
+      "tags": [
+        "rejeicao",
+        "comportamento",
+        "relacionamento"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele era lindo, mas foi rude com a garçonete, o que me deu um ick automático na hora.",
+      "exemplos_incorretos": [
+        "Como saí sem casaco na chuva forte de ontem, acabei pegando um ick fortíssimo que me deixou de cama.",
+        "Fui à farmácia comprar um vidro de xarope potente porque estou com um ick na garganta que não passa.",
+        "Levei na assistência e o técnico me cobrou caro dizendo que a tela do meu celular novinho estava com um ick."
+      ],
+      "significados_incorretos": [
+        "Um resfriado intenso, gripe ou febre alta repentina.",
+        "Uma tosse seca, alérgica e irritante.",
+        "Um pixel morto, risco ou defeito físico em uma tela de LED."
+      ]
+    },
+    {
+      "id": 60,
+      "nome": "IYKYK",
+      "variacoes": [
+        "iykyk"
+      ],
+      "classe_gramatical": "sigla",
+      "significado": "Caso você saiba, você sabe (If You Know You Know). Usado para piadas internas ou referências obscuras.",
+      "tags": [
+        "referencia",
+        "secreta",
+        "conversa"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Postei aquela foto no bar da esquina com a legenda: a noite de 2019... IYKYK.",
+      "exemplos_incorretos": [
+        "Meu contador me mandou o complicado formulário IYKYK para preencher antes de declarar meus impostos.",
+        "Fui na clínica em jejum e a médica me pediu para fazer um exame de sangue específico do tipo IYKYK.",
+        "Tive que ir na loja de informática do centro comprar um cabo IYKYK para conseguir conectar a TV no computador velho."
+      ],
+      "significados_incorretos": [
+        "Um documento burocrático e obrigatório da Receita Federal.",
+        "Um marcador bioquímico medido em exames de sangue.",
+        "Um cabo adaptador grosso para transmissão de vídeo."
+      ]
     }
   ]
 }
