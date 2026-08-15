@@ -7,13 +7,16 @@ import 'mapa/mapa.dart';
 import 'missao/data/mundo_assets.dart';
 import 'service/MundoService.dart';
 import 'shared/widgets/fundo_espacial.dart';
+import 'service/rankService.dart';
+
+enum ModoQuiz { normal, rankeado }
 
 // ─────────────────────────────────────────────
 // QuizPage — carrega as perguntas e controla o fluxo
 // ─────────────────────────────────────────────
 class QuizPage extends StatefulWidget {
   final String nomeMundo;
-
+  final ModoQuiz modo;
   /// Perguntas já carregadas pela LicaoPage. Quando fornecidas, o QuizPage
   /// usa esses dados diretamente sem fazer uma nova chamada ao endpoint,
   /// garantindo que lição e quiz usem as mesmas gírias sorteadas.
@@ -26,6 +29,7 @@ class QuizPage extends StatefulWidget {
   const QuizPage({
     super.key,
     required this.nomeMundo,
+    this.modo = ModoQuiz.normal,
     this.perguntasPrecarregadas,
     this.explicacoesPrecarregadas,
   });
@@ -38,9 +42,6 @@ class _QuizPageState extends State<QuizPage> {
   late Future<List<Fase>> _futurePerguntas;
   List<Fase> _explicacoes = const [];
 
-  /// Reordena as perguntas agrupando por gíria e, dentro de cada gíria,
-  /// seguindo a ordem fixa: significado → impacto → aplicação.
-  /// Garante a ordem correta independentemente de como o backend devolveu.
   List<Fase> _ordenarPorGiria(List<Fase> perguntas) {
     const prioridade = {'significado': 0, 'impacto': 1, 'aplicacao': 2};
 
@@ -131,6 +132,7 @@ class _QuizPageState extends State<QuizPage> {
         return _QuizRunner(
           perguntas: perguntas,
           nomeMundo: widget.nomeMundo,
+          modo: widget.modo,
           explicacoes: _explicacoes,
         );
       },
@@ -146,11 +148,14 @@ enum _EstadoResposta { aguardando, respondido }
 class _QuizRunner extends StatefulWidget {
   final List<Fase> perguntas;
   final String nomeMundo;
+  final ModoQuiz modo;
   final List<Fase> explicacoes;
 
   const _QuizRunner({
+    super.key,
     required this.perguntas,
     required this.nomeMundo,
+    required this.modo,
     this.explicacoes = const [],
   });
 
@@ -166,14 +171,15 @@ class _QuizRunnerState extends State<_QuizRunner>
   String? _selecionada;
   _EstadoResposta _estado = _EstadoResposta.aguardando;
 
-  /// Explicação pendente (tela de lição exibida como feedback de erro).
   Fase? _explicacaoPendente;
 
   late final AnimationController _feedbackController;
   late final Animation<Offset> _feedbackSlide;
   late final ScrollController _alternativasController;
 
-  // Cores — mesmas do resto do app
+  final Stopwatch _cronometro = Stopwatch();
+  bool get _ehRankeado => widget.modo == ModoQuiz.rankeado;
+
   static const Color bgTop = Color(0xFF130A24);
   static const Color bgBottom = Color(0xFF1F1035);
   static const Color cardColor = Color(0xFF2A1B47);
@@ -186,19 +192,19 @@ class _QuizRunnerState extends State<_QuizRunner>
   @override
   void initState() {
     super.initState();
+    _cronometro.start();
     _feedbackController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 280),
     );
     _feedbackSlide = Tween<Offset>(begin: const Offset(0, 1), end: Offset.zero)
-        .animate(
-      CurvedAnimation(parent: _feedbackController, curve: Curves.easeOut),
-    );
+        .animate(CurvedAnimation(parent: _feedbackController, curve: Curves.easeOut));
     _alternativasController = ScrollController();
   }
 
   @override
   void dispose() {
+    _cronometro.stop();
     _feedbackController.dispose();
     _alternativasController.dispose();
     super.dispose();
@@ -224,7 +230,6 @@ class _QuizRunnerState extends State<_QuizRunner>
 
     _feedbackController.forward(from: 0);
 
-    // Rola até o final para revelar a caixa de impacto_motivo, quando houver.
     if (fasAtual.isImpacto) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!_alternativasController.hasClients) return;
@@ -250,9 +255,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     });
   }
 
-  /// Retorna a explicação da gíria atual sempre que a resposta foi errada.
-  /// A tela é exibida a cada erro — inclusive quando a mesma gíria é
-  /// respondida errado mais de uma vez (Significado, Impacto ou Aplicação).
   Fase? _explicacaoDeErroPendente() {
     final atual = widget.perguntas[_indice];
     final correta = atual.alternativas.firstWhere((a) => a.correta).texto;
@@ -260,8 +262,6 @@ class _QuizRunnerState extends State<_QuizRunner>
 
     final idGiria = atual.giriaId.toString();
 
-    // Tenta casar por giriaId e, como fallback, pelo nome da gíria —
-    // protege contra divergência de tipos (int vs string) entre backend e app.
     for (final e in widget.explicacoes) {
       if (e.giriaId.toString() == idGiria ||
           e.giria.trim().toLowerCase() == atual.giria.trim().toLowerCase()) {
@@ -269,8 +269,6 @@ class _QuizRunnerState extends State<_QuizRunner>
       }
     }
 
-    // Sem explicação dedicada: usa a própria questão de significado da gíria
-    // (que carrega explicacao + exemplo) como tela de revisão.
     return widget.perguntas.firstWhere(
       (p) =>
           p.giriaId.toString() == idGiria &&
@@ -280,7 +278,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  /// Fecha a tela de explicação e continua exatamente de onde parou.
   void _fecharExplicacao() {
     setState(() => _explicacaoPendente = null);
     _irParaProxima();
@@ -299,10 +296,9 @@ class _QuizRunnerState extends State<_QuizRunner>
   }
 
   void _mostrarResultado() async {
-    final idsUnicos = widget.perguntas
-        .map((fase) => fase.giriaId.toString())
-        .toSet()
-        .toList();
+    _cronometro.stop();
+
+    final idsUnicos = widget.perguntas.map((fase) => fase.giriaId).toSet().toList();
 
     try {
       await MundoService.validarResultado(
@@ -311,16 +307,49 @@ class _QuizRunnerState extends State<_QuizRunner>
         girias: idsUnicos,
       );
     } catch (e) {
-      // ignore: avoid_print
-      print('Erro ao salvar resultado: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Não foi possível salvar seu progresso. Verifique sua conexão.'),
+            backgroundColor: Color(0xFFF87171),
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
     }
 
+    // 2. CHAMA A ROTA DE REGISTRAR RANKING
+    if (_ehRankeado) {
+      try {
+        await RankingService.registrarResultado(
+          nomeDoMundo: widget.nomeMundo,
+          pontuacaoFinal: _acertos,
+          tempoMs: _cronometro.elapsedMilliseconds,
+        );
+      } catch (e) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Erro ao registrar no ranking. Tente novamente mais tarde.'),
+              backgroundColor: Color(0xFFF87171),
+              behavior: SnackBarBehavior.floating,
+            ),
+          );
+        }
+      }
+    }
+
+    if (!mounted) return;
+
+    // 3. ENVIA AS INFORMAÇÕES PARA A TELA DE RESULTADO MOSTRAR O TEMPO
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (_, __, ___) => _ResultadoScreen(
           acertos: _acertos,
           total: widget.perguntas.length,
           nomeMundo: widget.nomeMundo,
+          ehRankeado: _ehRankeado,
+          tempoSegundos: _cronometro.elapsed.inSeconds,
         ),
         transitionsBuilder: (_, animation, __, child) =>
             FadeTransition(opacity: animation, child: child),
@@ -329,7 +358,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // Volta para o mapa (usado pelo cabeçalho e pelo botão físico de voltar)
   void _voltarParaMapa() {
     Navigator.pushReplacement(
       context,
@@ -362,7 +390,7 @@ class _QuizRunnerState extends State<_QuizRunner>
         ),
       );
     }
-
+    
     final fase = widget.perguntas[_indice];
     final total = widget.perguntas.length;
     final progresso = (_indice + 1) / total;
@@ -404,7 +432,6 @@ class _QuizRunnerState extends State<_QuizRunner>
                     _buildTopBar(scale, progresso),
                     SizedBox(height: 22 * heightScale),
 
-                    // Badge do número da pergunta
                     Center(
                       child: Container(
                         padding: EdgeInsets.symmetric(
@@ -429,7 +456,6 @@ class _QuizRunnerState extends State<_QuizRunner>
                     ),
                     SizedBox(height: 20 * heightScale),
 
-                    // Gíria em destaque
                     Text(
                       fase.giria.toUpperCase(),
                       textAlign: TextAlign.center,
@@ -455,7 +481,6 @@ class _QuizRunnerState extends State<_QuizRunner>
                     ),
                     SizedBox(height: 16 * heightScale),
 
-                    // Card com o texto da pergunta
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(18 * scale),
@@ -484,7 +509,6 @@ class _QuizRunnerState extends State<_QuizRunner>
                     ),
                     SizedBox(height: 20 * heightScale),
 
-                    // Lista de alternativas + caixinha de impacto_motivo
                     Expanded(
                       child: SingleChildScrollView(
                         controller: _alternativasController,
@@ -548,7 +572,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // ─── Barra superior: seta de voltar + "Mapa" + progresso + pontuação ───
   Widget _buildTopBar(double scale, double progresso) {
     return Row(
       children: [
@@ -597,6 +620,12 @@ class _QuizRunnerState extends State<_QuizRunner>
           ),
         ),
         SizedBox(width: 14 * scale),
+        
+        if (_ehRankeado) ...[
+          _buildCronometroBadge(scale),
+          SizedBox(width: 10 * scale),
+        ],
+
         Row(
           children: [
             const Icon(Icons.check_circle_rounded, color: verde, size: 17),
@@ -621,7 +650,45 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // ─── Botão de alternativa (com letra A/B/C/D à esquerda) ───
+  Widget _buildCronometroBadge(double scale) {
+    return StreamBuilder<int>(
+      stream: Stream.periodic(const Duration(seconds: 1), (i) => i),
+      builder: (context, snapshot) {
+        final segundos = _cronometro.elapsed.inSeconds;
+        final min = segundos ~/ 60;
+        final seg = segundos % 60;
+
+        // Formatação garantindo os dois zeros (00:00)
+        final minTexto = min.toString().padLeft(2, '0');
+        final segTexto = seg.toString().padLeft(2, '0');
+
+        return Container(
+          padding: EdgeInsets.symmetric(horizontal: 10 * scale, vertical: 6 * scale),
+          decoration: BoxDecoration(
+            color: const Color(0xFFFFD166).withOpacity(0.15),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: const Color(0xFFFFD166).withOpacity(0.5)),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.timer_rounded, color: Color(0xFFFFD166), size: 14),
+              SizedBox(width: 4 * scale),
+              Text(
+                '$minTexto:$segTexto',
+                style: const TextStyle(
+                  color: Color(0xFFFFD166),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildAlternativa(
     Alternativa alt, {
     required String letra,
@@ -723,10 +790,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     return botao;
   }
 
-  // ─── Caixinha "Por que esse impacto?" — segue o Design System dos
-  // demais componentes de feedback (cardDark + borda roxo claro + tipografia).
-  // Aparece uma única vez, abaixo das alternativas, sempre que a questão
-  // de impacto é respondida (acertando ou errando).
   Widget _buildImpactoMotivoCard(String motivo, double scale) {
     return Container(
       width: double.infinity,
@@ -779,7 +842,6 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  // ─── Painel de feedback na base ───
   Widget _buildFeedbackPanel({
     required bool acertou,
     required String respostaCorreta,
@@ -884,11 +946,16 @@ class _ResultadoScreen extends StatelessWidget {
   final int acertos;
   final int total;
   final String nomeMundo;
+  final bool ehRankeado;
+  final int tempoSegundos;
 
   const _ResultadoScreen({
+    super.key,
     required this.acertos,
     required this.total,
     required this.nomeMundo,
+    this.ehRankeado = false,
+    this.tempoSegundos = 0,
   });
 
   static const Color bgTop = Color(0xFF0E0821);
@@ -899,9 +966,9 @@ class _ResultadoScreen extends StatelessWidget {
   static const Color verde = Color(0xFF4ADE80);
   static const Color verdeAgua = Color(0xFF5DD39E);
   static const Color vermelho = Color(0xFFF87171);
+  static const Color amareloTempo = Color(0xFFFFD166);
 
   int get _erros => total - acertos;
-
   double get _pct => total == 0 ? 0.0 : acertos / total;
 
   Color get _corResultado {
@@ -919,7 +986,7 @@ class _ResultadoScreen extends StatelessWidget {
   String get _titulo {
     if (_pct == 1.0) return 'Perfeito, Astronauta!';
     if (_pct >= 0.8) return 'Parabéns, Astronauta!';
-    if (_pct >= 0.5) return 'Bom começo Astronauta! Vamos melhorar';
+    if (_pct >= 0.5) return 'Bom começo, Astronauta! Vamos melhorar';
     return 'Vamos melhorar juntos, Astronauta!';
   }
 
@@ -935,6 +1002,17 @@ class _ResultadoScreen extends StatelessWidget {
       : '${nomeMundo[0].toUpperCase()}${nomeMundo.substring(1)}';
 
   int get _estrelas => (1 + (_pct * 4)).clamp(1, 5).round();
+
+  // Função para formatar o tempo garantindo "00:00"
+  String get _tempoFormatado {
+    final min = tempoSegundos ~/ 60;
+    final seg = tempoSegundos % 60;
+    
+    final minTexto = min.toString().padLeft(2, '0');
+    final segTexto = seg.toString().padLeft(2, '0');
+    
+    return '$minTexto:$segTexto';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -1132,7 +1210,7 @@ class _ResultadoScreen extends StatelessWidget {
                                             _buildPlacarItem(
                                               icon: Icons.check_circle_rounded,
                                               cor: verde,
-                                              valor: acertos,
+                                              valor: '$acertos',
                                               label: 'Acertos',
                                               scale: scale,
                                             ),
@@ -1146,10 +1224,28 @@ class _ResultadoScreen extends StatelessWidget {
                                             _buildPlacarItem(
                                               icon: Icons.cancel_rounded,
                                               cor: vermelho,
-                                              valor: _erros,
+                                              valor: '$_erros',
                                               label: 'Erros',
                                               scale: scale,
                                             ),
+                                            
+                                            // AQUI APARECE O TEMPO SE FOR RANKEADO
+                                            if (ehRankeado) ...[
+                                              SizedBox(width: 18 * scale),
+                                              Container(
+                                                width: 1,
+                                                height: 44 * scale,
+                                                color: Colors.white12,
+                                              ),
+                                              SizedBox(width: 18 * scale),
+                                              _buildPlacarItem(
+                                                icon: Icons.timer_rounded,
+                                                cor: amareloTempo,
+                                                valor: _tempoFormatado, // Usando 00:00
+                                                label: 'Tempo',
+                                                scale: scale,
+                                              ),
+                                            ],
                                           ],
                                         ),
 
@@ -1232,7 +1328,7 @@ class _ResultadoScreen extends StatelessWidget {
   Widget _buildPlacarItem({
     required IconData icon,
     required Color cor,
-    required int valor,
+    required String valor,
     required String label,
     required double scale,
   }) {
@@ -1242,7 +1338,7 @@ class _ResultadoScreen extends StatelessWidget {
         Icon(icon, color: cor, size: 26 * scale),
         SizedBox(height: 6 * scale),
         Text(
-          '$valor',
+          valor,
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'fase/fase.dart';
-import 'quiz_page.dart';
+import 'quiz_page.dart'; // Certifique-se de que o enum ModoQuiz está neste arquivo
 import 'service/MundoService.dart';
 
 class LicaoPage extends StatefulWidget {
@@ -12,10 +12,14 @@ class LicaoPage extends StatefulWidget {
   /// mostrem exatamente as mesmas gírias, sem chamadas extras ao endpoint.
   final RodadaMundo? rodadaPrecarregada;
 
+  /// Define se o quiz será Rankeado ou Casual. Padrão: Casual (normal).
+  final ModoQuiz modo; 
+
   const LicaoPage({
     super.key,
     required this.nomeMundo,
     this.rodadaPrecarregada,
+    this.modo = ModoQuiz.normal, 
   });
 
   @override
@@ -28,7 +32,6 @@ class _LicaoPageState extends State<LicaoPage> {
   @override
   void initState() {
     super.initState();
-    // CORREÇÃO: Utiliza os dados pré-carregados se existirem (evita chamada extra na API)
     if (widget.rodadaPrecarregada != null) {
       _futureRodada = Future.value(widget.rodadaPrecarregada!);
     } else {
@@ -44,7 +47,9 @@ class _LicaoPageState extends State<LicaoPage> {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Scaffold(
             backgroundColor: Color(0xFF1F1035),
-            body: Center(child: CircularProgressIndicator()),
+            body: Center(
+              child: CircularProgressIndicator(color: Color(0xFF7C5CFF)),
+            ),
           );
         }
 
@@ -76,13 +81,9 @@ class _LicaoPageState extends State<LicaoPage> {
             ),
           );
         }
-
-        // As telas de explicação NÃO fazem mais parte do fluxo padrão:
-        // elas são exibidas pelo QuizPage apenas quando o jogador erra
-        // alguma questão daquela gíria. Por isso entramos direto no quiz,
-        // passando as explicações já carregadas (rodada.fases).
         return QuizPage(
           nomeMundo: widget.nomeMundo,
+          modo: widget.modo, 
           perguntasPrecarregadas: rodada.todasAsPerguntas,
           explicacoesPrecarregadas: rodada.fases,
         );

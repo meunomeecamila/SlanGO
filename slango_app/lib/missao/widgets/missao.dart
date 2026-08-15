@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../licao_page.dart';
+import '../../quiz_page.dart'; // <-- IMPORT DO MODO QUIZ ADICIONADO AQUI
 import '../../shared/widgets/fundo_espacial.dart';
 import '../data/falas_service.dart';
 import '../data/mundo_assets.dart';
@@ -30,8 +31,6 @@ class Missao extends TelaMundoDosJogos {
 
 class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   /// Gírias de exemplo do mundo atual (4 por mundo, cada mundo com as suas).
-  /// TODO: para alterar quais gírias aparecem nos chips, edite o mapa em
-  /// lib/missao/data/girias_exemplo.dart.
   List<String> get giriasDoMundo => giriasExemploDoMundo(widget.nomeMundo);
 
   /// Slug canônico do mundo (ex: 'kpop'), derivado do nome recebido.
@@ -40,9 +39,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   /// Título exibido no cabeçalho (ex: 'Mundo K-Pop').
   String get _tituloMundo => tituloDoMundo(widget.nomeMundo);
 
-  // Falas carregadas via FalasService.
-  // Para adicionar mais falas, insira novas strings neste arquivo aqui:
-  // lib/missao/data/falas_data.dart (e, opcionalmente, assets/json/falas.json).
   List<String> _falasDoMundo = [];
   bool _carregandoFalas = true;
 
@@ -56,9 +52,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
   }
 
   Future<void> _carregarFalas() async {
-    // Nome do usuário logado, pra personalizar falas com {nome} (ex: mundo
-    // Jogos). Vem `null` em sessão de convidado ou se a busca falhar — nesse
-    // caso o FalasService cai no tratamento genérico "astronauta".
     final nomeUsuario = await UsuarioService.obterNomeUsuarioOuNull();
     final falas = await FalasService.obterFalas(
       _slugMundo,
@@ -72,7 +65,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
     });
   }
 
-  /// Texto atual do balão (mensagem de carregamento enquanto busca as falas).
+  /// Texto atual do balão.
   String get _textoDaFala {
     if (_carregandoFalas) return 'Carregando transmissão...';
     if (_falasDoMundo.isEmpty) return '';
@@ -94,8 +87,128 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
     setState(() => _indiceFala--);
   }
 
-  /// Asset do ET do mundo atual (centralizado em mundo_assets.dart).
+  /// Asset do ET do mundo atual.
   String get _imagemDoEt => petDoMundo(widget.nomeMundo);
+
+  // ─── MÉTODO DO MODAL INSERIDO AQUI ───
+  void _mostrarModalDeEscolhaDeModo(BuildContext context, String nomeMundo) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (context) {
+        return Container(
+          padding: const EdgeInsets.all(24),
+          decoration: const BoxDecoration(
+            color: Color(0xFF1F1035),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            border: Border(
+              top: BorderSide(color: Color(0xFF7C5CFF), width: 2),
+            ),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text(
+                'Escolha o Modo',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Como você deseja jogar essa fase?',
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontSize: 14,
+                ),
+              ),
+              const SizedBox(height: 24),
+
+              // BOTÃO CASUAL
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context); // Fecha o modal
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => LicaoPage(
+                        nomeMundo: nomeMundo,
+                        modo: ModoQuiz.normal, // MODO CASUAL
+                      ),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF2A1B47),
+                  minimumSize: const Size(double.infinity, 56),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.coffee_rounded, color: Color(0xFFB9A6FF)),
+                    SizedBox(width: 12),
+                    Text(
+                      'Modo Casual (Apenas Estudar)',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+
+              // BOTÃO RANKEADO
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context); // Fecha o modal
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => LicaoPage(
+                        nomeMundo: nomeMundo,
+                        modo: ModoQuiz.rankeado, // MODO RANKEADO
+                      ),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF7C5CFF),
+                  minimumSize: const Size(double.infinity, 56),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.timer_rounded, color: Colors.white),
+                    SizedBox(width: 12),
+                    Text(
+                      'Modo Rankeado (Com Tempo)',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
+            ],
+          ),
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +225,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
           ),
           child: Stack(
             children: [
-              // Fundo de estrelas atrás de todo o conteúdo.
               const Positioned.fill(child: FundoEspacial()),
               SafeArea(
                 child: Column(
@@ -124,8 +236,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            // O balão contém APENAS o texto do ET.
-                            // Tocar no balão avança para a próxima fala.
                             BalaoDeFala(
                               texto: _textoDaFala,
                               aoTocar: _temProximaFala ? _proximaFala : null,
@@ -133,7 +243,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
 
                             const SizedBox(height: 12),
 
-                            // Navegação das falas — FORA do balão.
                             NavegacaoDasFalas(
                               mostrarVoltar: _temFalaAnterior,
                               aoVoltar: _falaAnterior,
@@ -184,13 +293,9 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                             const SizedBox(height: 32),
                             BotaoIniciarMissao(
                               aoTocar: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) =>
-                                        LicaoPage(nomeMundo: widget.nomeMundo),
-                                  ),
-                                );
+                                // ─── AQUI ACONTECE A MÁGICA ───
+                                // Substituímos o push direto pela abertura do modal
+                                _mostrarModalDeEscolhaDeModo(context, widget.nomeMundo);
                               },
                             ),
                           ],
@@ -210,7 +315,6 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
 }
 
 /// Controles de navegação entre as falas do ET.
-/// Fica fora do balão para não sofrer a estilização da caixa roxa.
 class NavegacaoDasFalas extends StatelessWidget {
   final bool mostrarVoltar;
   final VoidCallback aoVoltar;
@@ -259,7 +363,6 @@ class NavegacaoDasFalas extends StatelessWidget {
     );
   }
 }
-
 
 class CabecalhoComTituloCentralizado extends StatelessWidget {
   final String nomeMundo;
@@ -326,13 +429,8 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
   }
 }
 
-/// Balão de fala do ET: contém APENAS o texto da fala.
-/// A navegação (Voltar/Continuar) fica fora, em [NavegacaoDasFalas].
 class BalaoDeFala extends StatelessWidget {
-  /// Fala atual do ET.
   final String texto;
-
-  /// Tocar no balão avança para a próxima fala (null = não há próxima).
   final VoidCallback? aoTocar;
 
   const BalaoDeFala({super.key, required this.texto, this.aoTocar});
@@ -372,7 +470,6 @@ class BalaoDeFala extends StatelessWidget {
   }
 }
 
-
 class BotaoContinuar extends StatelessWidget {
   final VoidCallback aoTocar;
 
@@ -400,7 +497,6 @@ class BotaoContinuar extends StatelessWidget {
   }
 }
 
-/// Botão discreto para voltar à fala anterior do ET.
 class BotaoVoltarFala extends StatelessWidget {
   final VoidCallback aoTocar;
 
