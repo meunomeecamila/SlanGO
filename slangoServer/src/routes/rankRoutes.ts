@@ -1,11 +1,15 @@
 import { Router } from 'express';
-import { autenticar } from '../middlewares/authMiddleware'; 
-import { registrarRanking, getRankingDoMundo, getPosicaoDoUsuario } from '../controllers/rankController';
+import { autenticar, bloquearConvidado } from '../middlewares/authMiddleware';
+import {
+    registrarRanking,
+    getRankingGlobal,
+    getMinhaPosicaoGlobal
+} from '../controllers/rankController';
 
 const router = Router();
 
-router.post('/ranking/registrar', autenticar, registrarRanking);
-router.get('/ranking/:nomeDoMundo', autenticar, getRankingDoMundo);
-router.get('/ranking/:nomeDoMundo/posicao', autenticar, getPosicaoDoUsuario);
+router.post('/ranking', autenticar, bloquearConvidado, registrarRanking);
+router.get('/ranking', autenticar, getRankingGlobal);
+router.get('/ranking/minha-posicao', autenticar, getMinhaPosicaoGlobal);
 
 export default router;

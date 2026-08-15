@@ -1,44 +1,47 @@
 import { supabase } from '../dbConnection';
 import { ItemRanking, PosicaoUsuario } from '../types/Jogo';
 
-const PERCENTUAL_MINIMO_RANKING = 0.8;
+const TOTAL_PERGUNTAS_QUIZ = 9; // mesmo valor fixo da correção do bug totalGiriasMundo
 
 interface ResultadoRegistro {
   registrado: boolean;
   percentualAcerto: number;
+  pontuacao: number;
 }
 
 export async function registrarTempoRankeado(
   idUsuario: number,
   idMundo: number,
   tempoMs: number,
-  pontuacaoFinal: number,
-  totalPerguntas = 9 // mesmo valor fixo usado na correção do bug de totalGiriasMundo
+  acertos: number
 ): Promise<ResultadoRegistro> {
-  const percentualAcerto = totalPerguntas > 0 ? pontuacaoFinal / totalPerguntas : 0;
+  const percentualAcerto = acertos / TOTAL_PERGUNTAS_QUIZ;
+  const segundosGastos = Math.floor(tempoMs / 1000);
+  const pontuacao = Math.max(0, acertos * 1000 - segundosGastos);
 
-  if (percentualAcerto < PERCENTUAL_MINIMO_RANKING) {
-    return { registrado: false, percentualAcerto };
+  // Só entra no ranking quem acerta tudo — qualquer erro desqualifica a tentativa.
+  if (acertos !== TOTAL_PERGUNTAS_QUIZ) {
+    return { registrado: false, percentualAcerto, pontuacao };
   }
 
   const { error } = await supabase
     .from('ranking_rodadas')
     .insert([{
       id_User: idUsuario,
-      id_Mundo: idMundo,
+      id_Mundo: idMundo, // mantido só para estatística/depuração, não filtra o leaderboard
       Tempo_Ms: tempoMs,
-      Pontuacao: pontuacaoFinal,
+      Pontuacao: pontuacao,
       Percentual_Acerto: percentualAcerto,
     }]);
 
   if (error) throw new Error(error.message);
 
-  return { registrado: true, percentualAcerto };
+  return { registrado: true, percentualAcerto, pontuacao };
 }
 
-export async function buscarRankingDoMundo(idMundo: number, limite = 20): Promise<ItemRanking[]> {
-  const { data, error } = await supabase.rpc('leaderboard_por_mundo', {
-    p_id_mundo: idMundo,
+// Leaderboard GLOBAL — junta todos os mundos, melhor pontuação por usuário.
+export async function buscarRankingGlobal(limite = 500): Promise<ItemRanking[]> {
+  const { data, error } = await supabase.rpc('leaderboard_global', {
     p_limite: limite,
   });
 
@@ -52,10 +55,9 @@ export async function buscarRankingDoMundo(idMundo: number, limite = 20): Promis
   }));
 }
 
-export async function buscarPosicaoDoUsuario(idMundo: number, idUsuario: number): Promise<PosicaoUsuario> {
-  const { data, error } = await supabase.rpc('posicao_usuario_mundo', {
+export async function buscarPosicaoGlobalDoUsuario(idUsuario: number): Promise<PosicaoUsuario> {
+  const { data, error } = await supabase.rpc('posicao_usuario_global', {
     p_id_usuario: idUsuario,
-    p_id_mundo: idMundo,
   });
 
   if (error) throw new Error(error.message);
