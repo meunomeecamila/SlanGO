@@ -1,17 +1,23 @@
 import { Router } from 'express';
-import { autenticar, exigeAdmin, bloquearConvidado } from '../middlewares/authMiddleware';
+import { autenticar, bloquearConvidado } from '../middlewares/authMiddleware';
 import {
-    sugerirGiria,
-    listarSugestoes,
-    aprovarSugestao,
-    rejeitarSugestao
+    enviarSugestao,
+    historicoDoUsuario,
+    listarPendentes,
+    moderar,
 } from '../controllers/sugestaoController';
 
 const router = Router();
 
-router.post('/girias/sugerir', autenticar, bloquearConvidado, sugerirGiria);
-router.get('/girias/sugestoes', autenticar, exigeAdmin, bloquearConvidado, listarSugestoes);
-router.post('/girias/sugestoes/:id/aprovar', autenticar, exigeAdmin, bloquearConvidado, aprovarSugestao);
-router.post('/girias/sugestoes/:id/rejeitar', autenticar, exigeAdmin, bloquearConvidado, rejeitarSugestao);
+// Todas as rotas exigem usuário logado (convidados não participam).
+router.use(autenticar, bloquearConvidado);
+
+// Usuário comum: enviar sugestão + acompanhar histórico
+router.post('/sugestoes', enviarSugestao);
+router.get('/sugestoes/minhas', historicoDoUsuario);
+
+// Admin: fila de moderação + ação de aceitar/recusar
+router.get('/sugestoes/pendentes', listarPendentes);
+router.patch('/sugestoes/:id/moderar', moderar);
 
 export default router;
