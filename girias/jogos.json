@@ -1126,6 +1126,201 @@
         "O tempo que leva para o jogo carregar completamente uma partida."
       ],
       "justificativa": "Meta apenas indica a estratégia considerada mais eficiente no momento, podendo mudar com o tempo, sem conotação emocional fixa."
+    },
+    {
+      "id": 46,
+      "nome": "nerfar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Reduzir a força, o dano ou a eficiência de algo em uma atualização.",
+      "tags": [
+        "jogos"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Os desenvolvedores foram obrigados a nerfar aquela arma porque estava desequilibrando as partidas.",
+      "exemplos_incorretos": [
+        "Vou nerfar meu personagem até o nível máximo antes do boss final.",
+        "Minha internet está tão ruim que parece que alguém foi nerfar o roteador.",
+        "Consegui nerfar três inimigos seguidos com um único tiro na cabeça."
+      ],
+      "significados_incorretos": [
+        "Melhorar significativamente os atributos de uma arma ou personagem.",
+        "Reiniciar o servidor para corrigir problemas de conexão.",
+        "Comemorar de forma exagerada após vencer uma partida difícil."
+      ],
+      "justificativa": "Nerfar enfraquece algo que o jogador gostava de usar, gerando frustração e sensação de perda de poder, assim como o substantivo nerf."
+    },
+    {
+      "id": 47,
+      "nome": "bomb",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Bomba ou local-objetivo usado em modos de jogo de plantar/defender.",
+      "tags": [
+        "fps"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Eles vão plantar no bomb B, precisamos rotacionar agora.",
+      "exemplos_incorretos": [
+        "Comprei uma bomb nova para deixar meu personagem mais rápido.",
+        "Levei uma bomb na cabeça e fui eliminado direto.",
+        "Meu personagem upou de nível e ganhou uma bomb extra de vida."
+      ],
+      "significados_incorretos": [
+        "Item cosmético raro comprado com moeda premium.",
+        "Habilidade passiva que aumenta a velocidade de movimento.",
+        "Nome dado ao jogador mais habilidoso de um time competitivo."
+      ],
+      "justificativa": "Bomb é apenas um objetivo tático de plantar ou defender, sem conotação emocional própria, dependendo do contexto da partida."
+    },
+    {
+      "id": 48,
+      "nome": "enderman",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura hostil do Minecraft que teleporta e ataca ao ser encarada diretamente.",
+      "tags": [
+        "minecraft"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Não olhe direto para o enderman ou ele vai te atacar na hora.",
+      "exemplos_incorretos": [
+        "Comprei um enderman novo para decorar minha casa no jogo.",
+        "Minha conexão caiu porque deu um enderman na rede.",
+        "Ativei o modo enderman para jogar em dupla com meu amigo."
+      ],
+      "significados_incorretos": [
+        "Item raro que teleporta o jogador para qualquer lugar do mapa.",
+        "Ferramenta usada para minerar blocos mais rápido.",
+        "Comando de chat que esconde a localização do jogador."
+      ],
+      "justificativa": "Enderman é uma criatura hostil e imprevisível que pode atacar o jogador de surpresa, representando perigo dentro do jogo."
+    },
+    {
+      "id": 49,
+      "nome": "creeper",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura hostil do Minecraft que explode ao se aproximar do jogador.",
+      "tags": [
+        "minecraft"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Um creeper explodiu do nada e destruiu metade da minha casa.",
+      "exemplos_incorretos": [
+        "Preciso de um creeper para completar meu craft de armadura.",
+        "Ganhei experiência extra por ter um creeper na minha equipe.",
+        "O jogo ficou com o gráfico creeper depois da atualização."
+      ],
+      "significados_incorretos": [
+        "Personagem aliado que ajuda o jogador a construir estruturas.",
+        "Efeito visual que deixa a tela desfocada durante a chuva.",
+        "Recompensa dada por completar uma missão diária."
+      ],
+      "justificativa": "Creeper é associado a destruição repentina de construções, causando frustração e prejuízo ao jogador."
+    },
+    {
+      "id": 50,
+      "nome": "villager",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "NPC pacífico do Minecraft usado para comércio de itens.",
+      "tags": [
+        "minecraft"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Troquei esmeraldas com o villager para conseguir um encantamento raro.",
+      "exemplos_incorretos": [
+        "Fui banido porque usei um villager proibido no servidor.",
+        "Minha arma quebrou porque gastei todo o villager dela.",
+        "O chefe da fase se transformou em um villager gigante."
+      ],
+      "significados_incorretos": [
+        "Trapaça que permite duplicar itens infinitamente.",
+        "Habilidade especial que cura toda a equipe instantaneamente.",
+        "Local secreto onde aparecem itens lendários no mapa."
+      ],
+      "justificativa": "Villager é apenas um NPC pacífico de comércio, sem carga emocional positiva ou negativa associada."
+    },
+    {
+      "id": 51,
+      "nome": "golem",
+      "variacoes": [],
+      "classe_gramatical": "substantivo",
+      "significado": "Criatura defensiva criada pelo jogador para proteger uma área ou vila.",
+      "tags": [
+        "minecraft"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Construí um golem de ferro para proteger minha vila dos zumbis à noite.",
+      "exemplos_incorretos": [
+        "Levei um golem na cabeça e fui eliminado na hora.",
+        "Minha internet caiu porque o golem do servidor travou.",
+        "Comprei um golem novo na loja de cosméticos do jogo."
+      ],
+      "significados_incorretos": [
+        "Erro de conexão que impede o jogador de se mover.",
+        "Item consumível que aumenta a velocidade de ataque.",
+        "Comando usado para reportar jogadores tóxicos no chat."
+      ],
+      "justificativa": "Golem oferece proteção e segurança ao jogador e à sua base, sendo visto como algo benéfico e desejável."
+    },
+    {
+      "id": 52,
+      "nome": "afk",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Ausente do teclado; jogador inativo durante a partida.",
+      "tags": [
+        "online"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele ficou afk no meio da partida e jogamos o resto em desvantagem numérica.",
+      "exemplos_incorretos": [
+        "Comprei uma espada afk muito forte na loja do jogo.",
+        "Consegui um afk lendário depois de derrotar o boss final.",
+        "O mapa novo tem um design afk incrível, cheio de detalhes."
+      ],
+      "significados_incorretos": [
+        "Habilidade que aumenta a velocidade de ataque do personagem.",
+        "Item raro obtido apenas em eventos sazonais.",
+        "Comando usado para trocar de time durante a partida."
+      ],
+      "justificativa": "Afk indica ausência do jogador durante a partida, prejudicando a equipe e gerando frustração nos companheiros."
+    },
+    {
+      "id": 53,
+      "nome": "ult",
+      "variacoes": [
+        "ultimate"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Habilidade definitiva e mais poderosa do personagem.",
+      "tags": [
+        "moba",
+        "fps"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Guardei minha ult para o momento certo e virei o round sozinho.",
+      "exemplos_incorretos": [
+        "Minha internet caiu bem na hora que ia usar o menu ult.",
+        "Comprei um ult novo para decorar meu inventário.",
+        "O servidor reiniciou porque deu um ult no banco de dados."
+      ],
+      "significados_incorretos": [
+        "Penalidade aplicada a jogadores que abandonam a partida.",
+        "Local onde os jogadores derrotados reaparecem no mapa.",
+        "Moeda virtual usada para comprar passes de batalha."
+      ],
+      "justificativa": "Ult representa o auge do poder do personagem, sendo motivo de expectativa e satisfação quando bem utilizada."
     }
   ]
 }
