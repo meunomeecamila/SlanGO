@@ -8,8 +8,8 @@ import {
 
 const router = Router();
 
-router.post('/ranking', autenticar, bloquearConvidado, registrarRanking);
-router.get('/ranking', autenticar, getRankingGlobal);
-router.get('/ranking/minha-posicao', autenticar, getMinhaPosicaoGlobal);
+router.post('/', autenticar, bloquearConvidado, registrarRanking);
+router.get('/', autenticar, getRankingGlobal);
+router.get('/minha-posicao', autenticar, getMinhaPosicaoGlobal);
 
 export default router;
