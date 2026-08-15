@@ -1,9 +1,9 @@
 import { Response } from 'express';
 import { RequisicaoAutenticada } from '../middlewares/authMiddleware';
 import { 
-    registrarTempoRankeado,
+    registrarTempoRankeado, 
     buscarRankingDoMundo, 
-    buscarPosicaoDoUsuario 
+    buscarPosicaoDoUsuario
 } from '../services/rankService';
 import { buscarIdMundoPorNome } from '../services/preogressoService';
 

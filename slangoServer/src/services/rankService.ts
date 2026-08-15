@@ -1,21 +1,42 @@
 import { supabase } from '../dbConnection';
-import { RegistroRanking, ItemRanking, PosicaoUsuario } from '../types/Jogo';
+import { ItemRanking, PosicaoUsuario } from '../types/Jogo';
 
-export async function registrarResultado(registro: RegistroRanking): Promise<void> {
+const PERCENTUAL_MINIMO_RANKING = 0.8;
+
+interface ResultadoRegistro {
+  registrado: boolean;
+  percentualAcerto: number;
+}
+
+export async function registrarTempoRankeado(
+  idUsuario: number,
+  idMundo: number,
+  tempoMs: number,
+  pontuacaoFinal: number,
+  totalPerguntas = 9 // mesmo valor fixo usado na correção do bug de totalGiriasMundo
+): Promise<ResultadoRegistro> {
+  const percentualAcerto = totalPerguntas > 0 ? pontuacaoFinal / totalPerguntas : 0;
+
+  if (percentualAcerto < PERCENTUAL_MINIMO_RANKING) {
+    return { registrado: false, percentualAcerto };
+  }
+
   const { error } = await supabase
     .from('ranking_rodadas')
     .insert([{
-      id_User: registro.idUsuario,
-      id_Mundo: registro.idMundo,
-      Tempo_Ms: registro.tempoMs,
-      Pontuacao: registro.pontuacao,
-      Percentual_Acerto: registro.percentualAcerto,
+      id_User: idUsuario,
+      id_Mundo: idMundo,
+      Tempo_Ms: tempoMs,
+      Pontuacao: pontuacaoFinal,
+      Percentual_Acerto: percentualAcerto,
     }]);
 
   if (error) throw new Error(error.message);
+
+  return { registrado: true, percentualAcerto };
 }
 
-export async function buscarLeaderboard(idMundo: number, limite = 20): Promise<ItemRanking[]> {
+export async function buscarRankingDoMundo(idMundo: number, limite = 20): Promise<ItemRanking[]> {
   const { data, error } = await supabase.rpc('leaderboard_por_mundo', {
     p_id_mundo: idMundo,
     p_limite: limite,
@@ -31,7 +52,7 @@ export async function buscarLeaderboard(idMundo: number, limite = 20): Promise<I
   }));
 }
 
-export async function buscarPosicaoUsuario(idUsuario: number, idMundo: number): Promise<PosicaoUsuario> {
+export async function buscarPosicaoDoUsuario(idMundo: number, idUsuario: number): Promise<PosicaoUsuario> {
   const { data, error } = await supabase.rpc('posicao_usuario_mundo', {
     p_id_usuario: idUsuario,
     p_id_mundo: idMundo,
