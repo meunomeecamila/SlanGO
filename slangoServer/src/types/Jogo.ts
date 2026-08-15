@@ -112,3 +112,24 @@ export interface ItemComStatus extends Item {
   desbloqueado: boolean;
   equipado: boolean;
 }
+
+export interface RegistroRanking {
+    idUsuario: number;
+    idMundo: number;
+    tempoMs: number;
+    pontuacao: number;
+    percentualAcerto: number;
+}
+
+export interface ItemRanking {
+    posicao: number;
+    idUsuario: number;
+    melhorTempoMs: number;
+    pontuacao: number;
+}
+
+export interface PosicaoUsuario {
+    posicao: number | null;
+    melhorTempoMs: number | null;
+    totalJogadores: number;
+}
