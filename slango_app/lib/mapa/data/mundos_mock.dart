@@ -111,4 +111,15 @@ final List<Mundo> mundos = [
     progresso: 0.0,
     desbloqueado: true,
   ),
+  const Mundo(
+    id: 'comunidade',
+    nome: 'Mundo Da Comunidade',
+    imagem: 'images/comunidade.png',
+    status: 'Disponível',
+    descricao:
+        'O universo da comunidade: termos, expressões e conversas que unem os membros.',
+    totalGirias: 0,
+    progresso: 0.0,
+    desbloqueado: true,
+  ),
 ];
