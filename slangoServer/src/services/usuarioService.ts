@@ -119,10 +119,16 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
     if (dados.Nome !== undefined) camposParaAtualizar.Nome = dados.Nome;
     if (dados.Email !== undefined) camposParaAtualizar.Email = dados.Email;
     if (dados.Responsavel !== undefined) camposParaAtualizar.Responsavel = dados.Responsavel;
-    if (dados.Data !== undefined) camposParaAtualizar.dataNascimento = dados.Data;
+    if (dados.Data !== undefined) {
+        if(!dataNascimentoValida(dados.Data).valida) {
+            throw new Error('Data de nascimento inválida ou menor que a idade mínima.');
+        }
+        camposParaAtualizar.dataNascimento = dados.Data;
+    }
     if (dados.perguntaSeguranca !== undefined) camposParaAtualizar.perguntaSeguranca = dados.perguntaSeguranca;
     if (dados.respostaSeguranca !== undefined) camposParaAtualizar.respostaSeguranca = dados.respostaSeguranca;
     if (dados.Senha) camposParaAtualizar.Senha = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
+
 
     const { data, error } = await supabase
         .from('User')
