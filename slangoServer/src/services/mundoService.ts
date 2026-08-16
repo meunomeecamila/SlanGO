@@ -34,8 +34,21 @@ interface EstadoMundo {
     indiceAtual: number;
 }
 
-// Chave é `${idUsuario}_${nomeDoMundo}` — cada usuário tem seu próprio baralho
 const estadoDosMundos: Record<string, EstadoMundo> = {};
+
+function extrairGiriasDoMundo(mundoData: any): Girias[] {
+    if (Array.isArray(mundoData)) {
+        return mundoData as Girias[];
+    }
+    if (mundoData && typeof mundoData === 'object') {
+        for (const valor of Object.values(mundoData)) {
+            if (Array.isArray(valor)) {
+                return valor as Girias[];
+            }
+        }
+    }
+    return [];
+}
 
 // ──────────────────────────────────────────────────────────────
 // 1. FUNÇÕES AUXILIARES DE EMBARALHAMENTO
@@ -220,8 +233,7 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
         throw new Error('Mundo não encontrado!');
     }
 
-    const chave = Object.keys(mundo)[0];
-    const todasAsGiriasDoMundo = (mundo as any)[chave] as Girias[];
+    const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
 
     const tituloDoMundo =
         `Mundo ${nomeDoMundo.charAt(0).toUpperCase()}${nomeDoMundo.slice(1)}`;
@@ -362,8 +374,7 @@ export async function listarGiriasAprendidasDoMundo(
         throw new Error('Mundo não encontrado!');
     }
 
-    const chave = Object.keys(mundo)[0];
-    const todasAsGiriasDoMundo = (mundo as any)[chave] as Girias[];
+    const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
 
     const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
     const idsAprendidos = idMundoNumerico !== null
@@ -414,9 +425,7 @@ export async function listarGiriasAprendidasPorTodosMundos(
 
 export function contarGiriasPorMundos(): Record<string, number> {
     return Object.entries(mundos).reduce((acumulador, [nome, mundoData]) => {
-        const chaves = Object.keys(mundoData);
-        const girias = chaves.length > 0 ? (mundoData as any)[chaves[0]] : [];
-        acumulador[nome] = Array.isArray(girias) ? girias.length : 0;
+        acumulador[nome] = extrairGiriasDoMundo(mundoData).length;
         return acumulador;
     }, {} as Record<string, number>);
 }
