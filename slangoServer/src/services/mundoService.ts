@@ -235,13 +235,24 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
         ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
         : [];
 
+    // A partir de 10% de gírias aprendidas nesse mundo, elas voltam a
+    // entrar no sorteio normal (chance de reaparecer como revisão), em vez
+    // de ficarem sempre excluídas. Abaixo de 10%, mantém o comportamento
+    // atual (foco total em gírias novas).
+    const totalGiriasDoMundo = todasAsGiriasDoMundo.length;
+    const percentualAprendido = totalGiriasDoMundo > 0
+        ? giriasJaAprendidas.length / totalGiriasDoMundo
+        : 0;
+
+    const giriasParaExcluir = percentualAprendido >= 0.10 ? [] : giriasJaAprendidas;
+
     // Sorteia 3 gírias únicas
     const chaveEstado = `${idUsuario}_${nomeDoMundo}`;
     const tresPalavras = puxarProximasGiriasUnicas(
         chaveEstado,
         todasAsGiriasDoMundo,
         3,
-        giriasJaAprendidas // Agora isso é um array de IDs
+        giriasParaExcluir // Vazio a partir de 10% aprendido, senão os IDs já aprendidos
     );
 
     // Gera as perguntas das 3 fases sobre as mesmas 3 gírias
