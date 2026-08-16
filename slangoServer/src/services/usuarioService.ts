@@ -55,9 +55,9 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
 
     const senhaHash = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 
-    const dataNascimento = dataNascimentoValida(dados.Data);
-    if (!dataNascimento.valida) {
-        throw new Error(dataNascimento.erro);
+    const validacaoData  = dataNascimentoValida(dados.Data);
+    if (!validacaoData.valida) {
+        throw new Error(validacaoData.erro);
     }
 
     const { data, error } = await supabase
@@ -68,7 +68,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Email: dados.Email,
                 Senha: senhaHash,
                 Responsavel: dados.Responsavel ?? false,
-                dataNascimento: dados.Data,
+                Data: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
                 respostaSeguranca: dados.respostaSeguranca
             }
@@ -120,10 +120,11 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
     if (dados.Email !== undefined) camposParaAtualizar.Email = dados.Email;
     if (dados.Responsavel !== undefined) camposParaAtualizar.Responsavel = dados.Responsavel;
     if (dados.Data !== undefined) {
-        if(!dataNascimentoValida(dados.Data).valida) {
-            throw new Error('Data de nascimento inválida ou menor que a idade mínima.');
+        const validacaoData = dataNascimentoValida(dados.Data);
+        if (!validacaoData.valida) {
+            throw new Error(validacaoData.erro);
         }
-        camposParaAtualizar.dataNascimento = dados.Data;
+        camposParaAtualizar.Data = dados.Data;
     }
     if (dados.perguntaSeguranca !== undefined) camposParaAtualizar.perguntaSeguranca = dados.perguntaSeguranca;
     if (dados.respostaSeguranca !== undefined) camposParaAtualizar.respostaSeguranca = dados.respostaSeguranca;
