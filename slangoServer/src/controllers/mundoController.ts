@@ -4,7 +4,9 @@ import {
     prepararRodadaAleatoria,
     listarMundos,
     listarMundosComProgresso,
-    contarGiriasPorMundos
+    contarGiriasPorMundos,
+    listarGiriasAprendidasDoMundo,
+    listarGiriasAprendidasPorTodosMundos
 } from '../services/mundoService';
 import { salvarProgressoUsuario } from '../services/preogressoService';
 
@@ -117,6 +119,39 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
                 : `❌ Poxa, você fez ${pontuacaoFinal} de 9 pontos. Tente novamente!`
         });
 
+    } catch (error: any) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+export const getGiriasAprendidasDoMundo = async (req: RequisicaoAutenticada, res: Response) => {
+    try {
+        const { nome } = req.params as { nome: string };
+        const idUsuario = req.usuario!.id!;
+
+        const girias = await listarGiriasAprendidasDoMundo(nome, idUsuario);
+
+        res.status(200).json({
+            sucesso: true,
+            mundo: nome,
+            quantidade: girias.length,
+            girias
+        });
+    } catch (error: any) {
+        res.status(404).json({ error: error.message });
+    }
+};
+
+export const getGiriasAprendidasTodosMundos = async (req: RequisicaoAutenticada, res: Response) => {
+    try {
+        const idUsuario = req.usuario!.id!;
+
+        const mundos = await listarGiriasAprendidasPorTodosMundos(idUsuario);
+
+        res.status(200).json({
+            sucesso: true,
+            mundos
+        });
     } catch (error: any) {
         res.status(500).json({ error: error.message });
     }

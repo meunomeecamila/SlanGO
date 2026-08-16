@@ -341,6 +341,77 @@ export async function listarMundosComProgresso(
     return resultados;
 }
 
+/**
+ * Retorna, com nome e significado, as gírias que o usuário JÁ aprendeu
+ * (≥80% de acerto em alguma rodada) num mundo específico. Base pra uma
+ * tela de "dicionário pessoal" / revisão.
+ */
+export async function listarGiriasAprendidasDoMundo(
+    nomeDoMundo: string,
+    idUsuario: number
+): Promise<Array<{
+    id: number | string;
+    nome: string;
+    significado: string;
+    exemplo: string;
+    classe?: string;
+    impacto?: string;
+}>> {
+    const mundo = mundos[nomeDoMundo as keyof typeof mundos];
+    if (!mundo) {
+        throw new Error('Mundo não encontrado!');
+    }
+
+    const chave = Object.keys(mundo)[0];
+    const todasAsGiriasDoMundo = (mundo as any)[chave] as Girias[];
+
+    const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
+    const idsAprendidos = idMundoNumerico !== null
+        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
+        : [];
+
+    const idsAprendidosSet = new Set(idsAprendidos.map(String));
+
+    return todasAsGiriasDoMundo
+        .filter((giria) => idsAprendidosSet.has(String(giria.id)))
+        .map((giria) => ({
+            id: giria.id,
+            nome: giria.nome,
+            significado: giria.significado,
+            exemplo: giria.exemplo_correto,
+            classe: giria.classe_gramatical ?? (giria as any).classe,
+            impacto: giria.impacto,
+        }));
+}
+
+/**
+ * Mesma coisa, mas pra TODOS os mundos de uma vez, agrupado por mundo.
+ * Útil pra montar a tela geral de "gírias aprendidas" sem precisar de
+ * uma chamada por mundo no front.
+ */
+export async function listarGiriasAprendidasPorTodosMundos(
+    idUsuario: number
+): Promise<Array<{
+    mundo: string;
+    girias: Array<{
+        id: number | string;
+        nome: string;
+        significado: string;
+        exemplo: string;
+        classe?: string;
+        impacto?: string;
+    }>;
+}>> {
+    const nomesDosMundos = Object.keys(mundos);
+
+    return Promise.all(
+        nomesDosMundos.map(async (nome) => ({
+            mundo: nome,
+            girias: await listarGiriasAprendidasDoMundo(nome, idUsuario),
+        }))
+    );
+}
+
 export function contarGiriasPorMundos(): Record<string, number> {
     return Object.entries(mundos).reduce((acumulador, [nome, mundoData]) => {
         const chaves = Object.keys(mundoData);
