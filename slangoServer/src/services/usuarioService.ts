@@ -55,6 +55,11 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
 
     const senhaHash = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 
+    const dataNascimento = dataNascimentoValida(dados.Data);
+    if (!dataNascimento.valida) {
+        throw new Error(dataNascimento.erro);
+    }
+
     const { data, error } = await supabase
         .from('User')
         .insert([
@@ -63,7 +68,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Email: dados.Email,
                 Senha: senhaHash,
                 Responsavel: dados.Responsavel ?? false,
-                Data: dados.Data,
+                dataNascimento: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
                 respostaSeguranca: dados.respostaSeguranca
             }
@@ -114,7 +119,7 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
     if (dados.Nome !== undefined) camposParaAtualizar.Nome = dados.Nome;
     if (dados.Email !== undefined) camposParaAtualizar.Email = dados.Email;
     if (dados.Responsavel !== undefined) camposParaAtualizar.Responsavel = dados.Responsavel;
-    if (dados.Data !== undefined) camposParaAtualizar.Data = dados.Data;
+    if (dados.Data !== undefined) camposParaAtualizar.dataNascimento = dados.Data;
     if (dados.perguntaSeguranca !== undefined) camposParaAtualizar.perguntaSeguranca = dados.perguntaSeguranca;
     if (dados.respostaSeguranca !== undefined) camposParaAtualizar.respostaSeguranca = dados.respostaSeguranca;
     if (dados.Senha) camposParaAtualizar.Senha = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
