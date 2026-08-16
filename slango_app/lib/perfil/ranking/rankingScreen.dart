@@ -3,87 +3,41 @@ import 'package:flutter/material.dart';
 import '../cores.dart';
 import '../texto.dart';
 import '../../final/Particulas.dart';
+import '../../service/rankService.dart';
 
-// Ajuste os imports acima para o caminho real de cores.dart e texto.dart
-// no seu projeto (ex: '../../estilos/cores.dart').
+class RankingScreen extends StatefulWidget {
+  final String? nomeUsuarioAtual;
+  final int? idUsuarioAtual;
 
-/// Modelo simples de um usuário no ranking.
-class UsuarioRanking {
-  final String nome;
-  final int acertos;
-  final String avatarAsset;
-
-  const UsuarioRanking({
-    required this.nome,
-    required this.acertos,
-    required this.avatarAsset,
+  const RankingScreen({
+    super.key,
+    this.nomeUsuarioAtual,
+    this.idUsuarioAtual,
   });
+
+  @override
+  State<RankingScreen> createState() => _RankingScreenState();
 }
 
-class RankingScreen extends StatelessWidget {
-  /// Nome do usuário logado, usado pra destacar sua própria linha/card
-  /// no ranking. Passe o nome vindo do seu serviço de usuário.
-  final String? nomeUsuarioAtual;
+class _RankingScreenState extends State<RankingScreen> {
+  late Future<List<ItemRanking>> _rankingFuture;
 
-  const RankingScreen({super.key, this.nomeUsuarioAtual});
+  @override
+  void initState() {
+    super.initState();
+    _carregarRanking();
+  }
 
-  // Dados estáticos (mock). Troque por dados reais quando o backend
-  // de ranking estiver pronto.
-  static const List<UsuarioRanking> _usuarios = [
-    UsuarioRanking(
-      nome: 'Camila Souza',
-      acertos: 128,
-      avatarAsset: 'assets/images/astronauta_1.png',
-    ),
-    UsuarioRanking(
-      nome: 'João Pedro',
-      acertos: 115,
-      avatarAsset: 'assets/images/astronauta_2.png',
-    ),
-    UsuarioRanking(
-      nome: 'Beatriz Lima',
-      acertos: 102,
-      avatarAsset: 'assets/images/astronauta_3.png',
-    ),
-    UsuarioRanking(
-      nome: 'Rafael Costa',
-      acertos: 97,
-      avatarAsset: 'assets/images/astronauta_4.png',
-    ),
-    UsuarioRanking(
-      nome: 'Mariana Alves',
-      acertos: 89,
-      avatarAsset: 'assets/images/astronauta_5.png',
-    ),
-    UsuarioRanking(
-      nome: 'Lucas Fernandes',
-      acertos: 81,
-      avatarAsset: 'assets/images/astronauta_6.png',
-    ),
-    UsuarioRanking(
-      nome: 'Ana Julia',
-      acertos: 76,
-      avatarAsset: 'assets/images/astronauta_7.png',
-    ),
-    UsuarioRanking(
-      nome: 'Pedro Henrique',
-      acertos: 68,
-      avatarAsset: 'assets/images/astronauta_8.png',
-    ),
-  ];
+  void _carregarRanking() {
+    setState(() {
+      _rankingFuture = RankingService.buscarRankingGlobal();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    // Escala responsiva baseada na largura da tela (mesmo padrão usado
-    // no SlangQuizScreen: baseline de 375px).
     final width = MediaQuery.of(context).size.width;
     final scale = (width / 375).clamp(0.85, 1.2);
-
-    final ordenados = List<UsuarioRanking>.from(_usuarios)
-      ..sort((a, b) => b.acertos.compareTo(a.acertos));
-
-    final top3 = ordenados.take(3).toList();
-    final resto = ordenados.length > 3 ? ordenados.sublist(3) : <UsuarioRanking>[];
 
     return Scaffold(
       body: ParticulasFundo(
@@ -92,18 +46,85 @@ class RankingScreen extends StatelessWidget {
             children: [
               _buildHeader(context, scale),
               Expanded(
-                child: ListView(
-                  padding: EdgeInsets.symmetric(horizontal: 16 * scale, vertical: 12 * scale),
-                  children: [
-                    if (top3.isNotEmpty) _buildPodio(top3, scale, nomeUsuarioAtual),
-                    SizedBox(height: 20 * scale),
-                    ...List.generate(resto.length, (index) {
-                      final usuario = resto[index];
-                      final posicao = index + 4; // pódio ocupa 1-3
-                      return _buildLinhaRanking(usuario, posicao, scale, nomeUsuarioAtual);
-                    }),
-                    SizedBox(height: 24 * scale),
-                  ],
+                child: FutureBuilder<List<ItemRanking>>(
+                  future: _rankingFuture,
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return const Center(
+                        child: CircularProgressIndicator(color: AppColors.cyan),
+                      );
+                    }
+
+                    if (snapshot.hasError) {
+                      return Center(
+                        child: Padding(
+                          padding: EdgeInsets.all(16.0 * scale),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.error_outline,
+                                color: Colors.redAccent,
+                                size: 48 * scale,
+                              ),
+                              SizedBox(height: 12 * scale),
+                              Text(
+                                '${snapshot.error}',
+                                textAlign: TextAlign.center,
+                                style: AppText.cardSubtitulo(scale),
+                              ),
+                              SizedBox(height: 16 * scale),
+                              ElevatedButton(
+                                onPressed: _carregarRanking,
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppColors.primary,
+                                ),
+                                child: const Text('Tentar novamente'),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    }
+
+                    final listaRanking = snapshot.data ?? [];
+
+                    if (listaRanking.isEmpty) {
+                      return Center(
+                        child: Text(
+                          'Nenhum registro encontrado no ranking.',
+                          style: AppText.cardSubtitulo(scale),
+                        ),
+                      );
+                    }
+
+                    final top3 = listaRanking.take(3).toList();
+                    final resto = listaRanking.length > 3
+                        ? listaRanking.sublist(3)
+                        : <ItemRanking>[];
+
+                    return ListView(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16 * scale,
+                        vertical: 12 * scale,
+                      ),
+                      children: [
+                        if (top3.isNotEmpty)
+                          _buildPodio(top3, scale, widget.idUsuarioAtual),
+                        SizedBox(height: 20 * scale),
+                        ...List.generate(resto.length, (index) {
+                          final item = resto[index];
+                          return _buildLinhaRanking(
+                            item,
+                            item.posicao,
+                            scale,
+                            widget.idUsuarioAtual,
+                          );
+                        }),
+                        SizedBox(height: 24 * scale),
+                      ],
+                    );
+                  },
                 ),
               ),
             ],
@@ -135,8 +156,11 @@ class RankingScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildPodio(List<UsuarioRanking> top3, double scale, String? nomeUsuarioAtual) {
-    // Ordem visual: 2º, 1º, 3º (formato de pódio)
+  Widget _buildPodio(
+    List<ItemRanking> top3,
+    double scale,
+    int? idUsuarioAtual,
+  ) {
     final segundo = top3.length > 1 ? top3[1] : null;
     final primeiro = top3[0];
     final terceiro = top3.length > 2 ? top3[2] : null;
@@ -146,18 +170,36 @@ class RankingScreen extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         if (segundo != null)
-          _buildPodioItem(segundo, 2, scale, altura: 96, ehVoce: segundo.nome == nomeUsuarioAtual),
+          _buildPodioItem(
+            segundo,
+            2,
+            scale,
+            altura: 96,
+            ehVoce: segundo.idUsuario == idUsuarioAtual,
+          ),
         SizedBox(width: 10 * scale),
-        _buildPodioItem(primeiro, 1, scale, altura: 124, ehVoce: primeiro.nome == nomeUsuarioAtual),
+        _buildPodioItem(
+          primeiro,
+          1,
+          scale,
+          altura: 124,
+          ehVoce: primeiro.idUsuario == idUsuarioAtual,
+        ),
         SizedBox(width: 10 * scale),
         if (terceiro != null)
-          _buildPodioItem(terceiro, 3, scale, altura: 78, ehVoce: terceiro.nome == nomeUsuarioAtual),
+          _buildPodioItem(
+            terceiro,
+            3,
+            scale,
+            altura: 78,
+            ehVoce: terceiro.idUsuario == idUsuarioAtual,
+          ),
       ],
     );
   }
 
   Widget _buildPodioItem(
-    UsuarioRanking usuario,
+    ItemRanking item,
     int posicao,
     double scale, {
     required double altura,
@@ -170,6 +212,9 @@ class RankingScreen extends StatelessWidget {
     };
     final corBorda = ehVoce ? AppColors.cyan : corMedalha;
     final tamanhoAvatar = posicao == 1 ? 64.0 : 52.0;
+
+    final avatarAsset = 'assets/images/astronauta_${(item.idUsuario % 8) + 1}.png';
+    final nomeExibicao = item.nomeUsuario;
 
     return SizedBox(
       width: 96 * scale,
@@ -200,7 +245,10 @@ class RankingScreen extends StatelessWidget {
                 height: tamanhoAvatar * scale,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  border: Border.all(color: corBorda, width: ehVoce ? 3.5 * scale : 3 * scale),
+                  border: Border.all(
+                    color: corBorda,
+                    width: ehVoce ? 3.5 * scale : 3 * scale,
+                  ),
                   boxShadow: [
                     BoxShadow(
                       color: corBorda.withOpacity(ehVoce ? 0.85 : 0.5),
@@ -211,11 +259,15 @@ class RankingScreen extends StatelessWidget {
                 ),
                 child: ClipOval(
                   child: Image.asset(
-                    usuario.avatarAsset,
+                    avatarAsset,
                     fit: BoxFit.cover,
                     errorBuilder: (_, __, ___) => Container(
                       color: AppColors.card,
-                      child: Icon(Icons.person, color: AppColors.textSecondary, size: 28 * scale),
+                      child: Icon(
+                        Icons.person,
+                        color: AppColors.textSecondary,
+                        size: 28 * scale,
+                      ),
                     ),
                   ),
                 ),
@@ -223,7 +275,10 @@ class RankingScreen extends StatelessWidget {
               Positioned(
                 bottom: -6 * scale,
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8 * scale, vertical: 2 * scale),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 8 * scale,
+                    vertical: 2 * scale,
+                  ),
                   decoration: BoxDecoration(
                     color: corMedalha,
                     borderRadius: BorderRadius.circular(10),
@@ -242,7 +297,7 @@ class RankingScreen extends StatelessWidget {
           ),
           SizedBox(height: 10 * scale),
           Text(
-            usuario.nome,
+            nomeExibicao,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
@@ -253,7 +308,7 @@ class RankingScreen extends StatelessWidget {
           ),
           SizedBox(height: 2 * scale),
           Text(
-            '${usuario.acertos} acertos',
+            '${item.pontuacao} pts',
             style: AppText.cardSubtitulo(scale).copyWith(fontSize: 11 * scale),
           ),
           SizedBox(height: 6 * scale),
@@ -271,12 +326,15 @@ class RankingScreen extends StatelessWidget {
               ),
               borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
               border: Border.all(
-                color: ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF).withOpacity(0.7),
+                color: ehVoce
+                    ? AppColors.cyan
+                    : const Color(0xFF9D7FFF).withOpacity(0.7),
                 width: ehVoce ? 1.5 : 1,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF)).withOpacity(0.35),
+                  color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF))
+                      .withOpacity(0.35),
                   blurRadius: 8,
                   spreadRadius: 0.5,
                 ),
@@ -288,8 +346,15 @@ class RankingScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLinhaRanking(UsuarioRanking usuario, int posicao, double scale, String? nomeUsuarioAtual) {
-    final ehVoce = usuario.nome == nomeUsuarioAtual;
+  Widget _buildLinhaRanking(
+    ItemRanking item,
+    int posicao,
+    double scale,
+    int? idUsuarioAtual,
+  ) {
+    final ehVoce = item.idUsuario == idUsuarioAtual;
+    final avatarAsset = 'assets/images/astronauta_${(item.idUsuario % 8) + 1}.png';
+    final nomeExibicao = item.nomeUsuario;
 
     return Container(
       margin: EdgeInsets.only(bottom: 10 * scale),
@@ -303,7 +368,8 @@ class RankingScreen extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF)).withOpacity(ehVoce ? 0.35 : 0.18),
+            color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF))
+                .withOpacity(ehVoce ? 0.35 : 0.18),
             blurRadius: ehVoce ? 16 : 6,
             spreadRadius: ehVoce ? 1 : 0,
           ),
@@ -332,13 +398,14 @@ class RankingScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF)).withOpacity(ehVoce ? 0.5 : 0.25),
+                    color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF))
+                        .withOpacity(ehVoce ? 0.5 : 0.25),
                     blurRadius: ehVoce ? 10 : 5,
                   ),
                 ],
               ),
               child: Image.asset(
-                usuario.avatarAsset,
+                avatarAsset,
                 width: 40 * scale,
                 height: 40 * scale,
                 fit: BoxFit.cover,
@@ -346,7 +413,11 @@ class RankingScreen extends StatelessWidget {
                   width: 40 * scale,
                   height: 40 * scale,
                   color: AppColors.background,
-                  child: Icon(Icons.person, color: AppColors.textSecondary, size: 20 * scale),
+                  child: Icon(
+                    Icons.person,
+                    color: AppColors.textSecondary,
+                    size: 20 * scale,
+                  ),
                 ),
               ),
             ),
@@ -357,7 +428,7 @@ class RankingScreen extends StatelessWidget {
               children: [
                 Flexible(
                   child: Text(
-                    usuario.nome,
+                    nomeExibicao,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: AppText.cardTitulo(scale).copyWith(
@@ -369,7 +440,10 @@ class RankingScreen extends StatelessWidget {
                 if (ehVoce) ...[
                   SizedBox(width: 6 * scale),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 6 * scale, vertical: 2 * scale),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 6 * scale,
+                      vertical: 2 * scale,
+                    ),
                     decoration: BoxDecoration(
                       color: AppColors.cyan.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(8),
@@ -390,10 +464,10 @@ class RankingScreen extends StatelessWidget {
           ),
           Row(
             children: [
-              Icon(Icons.check_circle, color: AppColors.cyan, size: 16 * scale),
+              Icon(Icons.star, color: AppColors.cyan, size: 16 * scale),
               SizedBox(width: 4 * scale),
               Text(
-                '${usuario.acertos}',
+                '${item.pontuacao}',
                 style: AppText.numero(scale).copyWith(fontSize: 16 * scale),
               ),
             ],
