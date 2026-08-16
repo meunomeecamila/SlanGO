@@ -7,6 +7,7 @@ import '../user/User.dart';
 import 'certificados/aba_certificados.dart';
 import 'configuracoes.dart';
 import 'progresso.dart';
+import 'ranking/rankingScreen.dart';
 import 'models.dart';
 import 'cores.dart';
 import 'texto.dart';
@@ -211,11 +212,23 @@ class _PerfilScreenState extends State<PerfilScreen> {
         Row(
           children: [
             _iconButton(
-              icon: Icons.bar_chart_rounded,
+              icon: Icons.insights_rounded,
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (_) => ProgressoScreen(mundos: _mundosProgresso),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            _iconButton(
+              icon: Icons.leaderboard_rounded,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => RankingScreen(
+                    nomeUsuarioAtual: _usuario?.nome ?? widget.nome,
+                  ),
                 ),
               ),
             ),
