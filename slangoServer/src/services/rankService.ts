@@ -12,6 +12,7 @@ interface ResultadoRegistro {
 export async function registrarTempoRankeado(
   idUsuario: number,
   idMundo: number,
+  nomeUsuario: string,
   tempoMs: number,
   acertos: number
 ): Promise<ResultadoRegistro> {
@@ -28,7 +29,8 @@ export async function registrarTempoRankeado(
     .from('ranking_rodadas')
     .insert([{
       id_User: idUsuario,
-      id_Mundo: idMundo, // mantido só para estatística/depuração, não filtra o leaderboard
+      id_Mundo: idMundo,
+      nomeUsuario: nomeUsuario,
       Tempo_Ms: tempoMs,
       Pontuacao: pontuacao,
       Percentual_Acerto: percentualAcerto,
@@ -50,6 +52,7 @@ export async function buscarRankingGlobal(limite = 500): Promise<ItemRanking[]> 
   return (data ?? []).map((linha: any, index: number) => ({
     posicao: index + 1,
     idUsuario: linha.idUsuario,
+    nomeUsuario: linha.nomeUsuario,
     melhorTempoMs: linha.melhorTempoMs,
     pontuacao: linha.pontuacao,
   }));
@@ -63,12 +66,13 @@ export async function buscarPosicaoGlobalDoUsuario(idUsuario: number): Promise<P
   if (error) throw new Error(error.message);
 
   if (!data || data.length === 0) {
-    return { posicao: null, melhorTempoMs: null, totalJogadores: 0 };
+    return { posicao: null, nomeUsuario: "", melhorTempoMs: null, totalJogadores: 0 };
   }
 
   const linha = data[0];
   return {
     posicao: linha.posicao,
+    nomeUsuario: linha.nome,
     melhorTempoMs: linha.melhorTempoMs,
     totalJogadores: linha.totalJogadores,
   };
