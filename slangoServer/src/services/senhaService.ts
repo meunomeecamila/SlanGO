@@ -1,3 +1,4 @@
+import bcrypt from 'bcrypt';
 import { supabase } from '../dbConnection';
 import { Usuario } from '../types/Jogo';
 
@@ -28,12 +29,13 @@ export async function validarRespostaSeguranca(
     return respostaNormalizada === valorSalvoNormalizado;
 }
 
-// A senha agora vive no Supabase Auth — não tem mais hash nem coluna
-// "Senha" pra atualizar aqui, só repassa pro Auth via authId.
-export async function atualizarSenhaUsuario(authId: string, novaSenha: string): Promise<void> {
-    const { error } = await supabase.auth.admin.updateUserById(authId, {
-        password: novaSenha,
-    });
+export async function atualizarSenhaUsuario(idUsuario: number, novaSenha: string): Promise<void> {
+    const novaSenhaHash = await bcrypt.hash(novaSenha, 10);
+
+    const { error } = await supabase
+        .from(TABELA_USUARIO)
+        .update({ Senha: novaSenhaHash })
+        .eq('id', idUsuario);
 
     if (error) {
         console.error('Erro ao atualizar senha:', error);

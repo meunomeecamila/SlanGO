@@ -70,7 +70,7 @@ export const recuperarSenhaController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'E-mail ou resposta de segurança inválidos.' });
         }
 
-        await atualizarSenhaUsuario(String(usuario.id), novaSenha);
+        await atualizarSenhaUsuario(usuario.id, novaSenha);
 
         return res.status(200).json({
             sucesso: true,
