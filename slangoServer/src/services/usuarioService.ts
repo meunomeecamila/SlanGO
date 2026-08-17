@@ -1,5 +1,6 @@
 import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
+import { logarErro } from '../error/erros';
 
 const IDADE_MINIMA = 13;
 
@@ -61,6 +62,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
     });
 
     if (authError) {
+        logarErro('criarUsuario:signUp', authError);
         // Supabase retorna 422/"User already registered" pra email duplicado.
         if (authError.status === 422 || /already registered/i.test(authError.message)) {
             throw new Error('EMAIL_JA_CADASTRADO');
@@ -90,6 +92,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
         .single();
 
     if (error) {
+        logarErro('criarUsuario:insertPerfil', error);
         // Perfil falhou depois do Auth já ter criado o usuário — evita ficar
         // com um usuário "fantasma" no Auth sem perfil correspondente.
         await supabase.auth.admin.deleteUser(authData.user.id);
@@ -221,7 +224,10 @@ export async function alterarSenhaUsuario(id: number, senhaAtual: string, novaSe
         email: usuario.Email,
         password: senhaAtual,
     });
-    if (erroLogin) return false;
+    if (erroLogin) {
+        logarErro('alterarSenhaUsuario:confirmarSenhaAtual', erroLogin);
+        return false;
+    }
 
     const { error } = await supabase.auth.admin.updateUserById((usuario as any).authId, {
         password: novaSenha,
@@ -241,6 +247,7 @@ export async function validarCredenciais(Email: string, senhaDigitada: string): 
         if (/email not confirmed/i.test(error.message)) {
             throw new Error('EMAIL_NAO_VERIFICADO');
         }
+        logarErro('validarCredenciais', error);
         return null; // credenciais inválidas
     }
 
