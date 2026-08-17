@@ -52,8 +52,7 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
     
     const { data: authData, error: authError } = await supabase.auth.admin.createUser({
         email: dados.Email,
-        password: dados.Senha,
-        email_confirm: true
+        password: dados.Senha
     });
 
     if (authError) {
