@@ -4,7 +4,6 @@ import {
     gerarToken,
     gerarTokenConvidado
 } from '../services/authService';
-import { logarErro, mensagemErro } from '../error/erros';
 
 export const login = async (req: Request, res: Response) => {
     try {

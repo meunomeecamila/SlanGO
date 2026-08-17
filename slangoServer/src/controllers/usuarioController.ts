@@ -8,7 +8,6 @@ import {
     alterarSenhaUsuario
 } from '../services/usuarioService';
 import { emailValido, senhaValida } from '../utils/validador';
-import { logarErro, mensagemErro } from '../error/erros';
 
 export const criarUsuarioController = async (req: Request, res: Response) => {
     try {
@@ -47,11 +46,10 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             usuario: usuarioCriado
         });
     } catch (error: any) {
-        logarErro('criarUsuarioController', error);
-        if (error?.message === 'EMAIL_JA_CADASTRADO') {
-            return res.status(409).json({ erro: 'Já existe uma conta com esse email.' });
+        if (error.message === 'EMAIL_JA_CADASTRADO') {
+            return res.status(409).json({ erro: 'Erro ao se cadastrar.' });
         }
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível criar a conta. Tente novamente.') });
+        res.status(500).json({ erro: error.message });
     }
 };
 
@@ -67,8 +65,7 @@ export const buscarUsuarioController = async (req: Request, res: Response) => {
 
         res.status(200).json({ sucesso: true, usuario });
     } catch (error: any) {
-        logarErro('buscarUsuarioController', error);
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível buscar o usuário.') });
+        res.status(500).json({ erro: error.message });
     }
 };
 
@@ -93,8 +90,7 @@ export const atualizarUsuarioController = async (req: Request, res: Response) =>
 
         res.status(200).json({ sucesso: true, usuario: usuarioAtualizado });
     } catch (error: any) {
-        logarErro('atualizarUsuarioController', error);
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível atualizar o usuário.') });
+        res.status(500).json({ erro: error.message });
     }
 };
 
@@ -124,8 +120,7 @@ export const alterarSenhaController = async (req: Request, res: Response) => {
 
         res.status(200).json({ sucesso: true, mensagem: 'Senha alterada com sucesso.' });
     } catch (error: any) {
-        logarErro('alterarSenhaController', error);
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível alterar a senha.') });
+        res.status(500).json({ erro: error.message });
     }
 };
 

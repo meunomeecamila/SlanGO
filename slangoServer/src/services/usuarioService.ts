@@ -2,6 +2,7 @@ import bcrypt from 'bcrypt';
 import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
 
+const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
 
 type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>;
@@ -63,9 +64,9 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
         .from('User')
         .insert([
             {
-                authId: authData.user.id,
                 Nome: dados.Nome,
                 Email: dados.Email,
+                Senha: senhaHash,
                 Responsavel: dados.Responsavel ?? false,
                 Data: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
@@ -92,17 +93,6 @@ export async function buscarUsuarioPorEmail(Email: string): Promise<Usuario | nu
     return data as Usuario | null;
 }
 
-export async function buscarUsuarioPorAuthId(authId: string): Promise<UsuarioPublico | null> {
-    const { data, error } = await supabase
-        .from('User')
-        .select('*')
-        .eq('authId', authId)
-        .maybeSingle();
-
-    if (error) throw new Error(error.message);
-    return data as UsuarioPublico | null;
-}
-
 export async function buscarUsuarioPorId(id: number): Promise<UsuarioPublico | null> {
     const { data, error } = await supabase
         .from('User')
@@ -111,26 +101,18 @@ export async function buscarUsuarioPorId(id: number): Promise<UsuarioPublico | n
         .maybeSingle();
 
     if (error) throw new Error(error.message);
-    return data as UsuarioPublico | null;
+    return data ? removerSenha(data as Usuario) : null;
 }
 
 export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuario): Promise<UsuarioPublico | null> {
-    const usuarioExistente = await buscarUsuarioPorId(id);
-    if (!usuarioExistente) return null;
+    const usuarioExistente = await supabase
+        .from('User')
+        .select('*')
+        .eq('id', id)
+        .maybeSingle();
 
-    // Email e senha agora vivem no Supabase Auth — atualiza lá, não na
-    // tabela de perfil.
-    if (dados.Email !== undefined || dados.Senha) {
-        const atualizacaoAuth: { email?: string; password?: string } = {};
-        if (dados.Email !== undefined) atualizacaoAuth.email = dados.Email;
-        if (dados.Senha) atualizacaoAuth.password = dados.Senha;
-
-        const { error: erroAuth } = await supabase.auth.admin.updateUserById(
-            (usuarioExistente as any).authId,
-            atualizacaoAuth
-        );
-        if (erroAuth) throw new Error(erroAuth.message);
-    }
+    if (usuarioExistente.error) throw new Error(usuarioExistente.error.message);
+    if (!usuarioExistente.data) return null;
 
     const camposParaAtualizar: Record<string, any> = {};
 
@@ -146,10 +128,8 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
     }
     if (dados.perguntaSeguranca !== undefined) camposParaAtualizar.perguntaSeguranca = dados.perguntaSeguranca;
     if (dados.respostaSeguranca !== undefined) camposParaAtualizar.respostaSeguranca = dados.respostaSeguranca;
+    if (dados.Senha) camposParaAtualizar.Senha = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 
-    if (Object.keys(camposParaAtualizar).length === 0) {
-        return usuarioExistente;
-    }
 
     const { data, error } = await supabase
         .from('User')
@@ -159,60 +139,62 @@ export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuari
         .single();
 
     if (error) throw new Error(error.message);
-    return data as UsuarioPublico;
+    return removerSenha(data);
 }
 
 export async function deletarUsuario(id: number): Promise<boolean> {
-    const usuario = await buscarUsuarioPorId(id);
-    if (!usuario) return false;
-
-    // Apaga o perfil e o usuário correspondente no Auth.
     const { error, count } = await supabase
         .from('User')
         .delete({ count: 'exact' })
         .eq('id', id);
 
     if (error) throw new Error(error.message);
-
-    const authId = (usuario as any).authId;
-    if (authId) {
-        const { error: erroAuth } = await supabase.auth.admin.deleteUser(authId);
-        if (erroAuth) console.error('Falha ao apagar usuário do Auth:', erroAuth.message);
-    }
-
     return (count ?? 0) > 0;
 }
 
 export async function alterarSenhaUsuario(id: number, senhaAtual: string, novaSenha: string): Promise<boolean> {
-    const usuario = await buscarUsuarioPorId(id);
-    if (!usuario) return false;
-
-    // Confirma a senha atual tentando autenticar com ela.
-    const { error: erroLogin } = await supabase.auth.signInWithPassword({
-        email: usuario.Email,
-        password: senhaAtual,
-    });
-    if (erroLogin) {
-        logarErro('alterarSenhaUsuario:confirmarSenhaAtual', erroLogin);
-        return false;
-    }
-
-    const { error } = await supabase.auth.admin.updateUserById((usuario as any).authId, {
-        password: novaSenha,
-    });
+    const { data, error } = await supabase
+        .from('User')
+        .select('Senha')
+        .eq('id', id)
+        .maybeSingle();
 
     if (error) throw new Error(error.message);
+    if (!data) return false;
+
+    const senhaCorreta = await bcrypt.compare(senhaAtual, data.Senha);
+    if (!senhaCorreta) return false;
+
+    const senhaHash = await bcrypt.hash(novaSenha, SALT_ROUNDS);
+
+    const { error: errorAtualizacao } = await supabase
+        .from('User')
+        .update({ Senha: senhaHash })
+        .eq('id', id);
+
+    if (errorAtualizacao) throw new Error(errorAtualizacao.message);
     return true;
 }
 
 export async function validarCredenciais(Email: string, senhaDigitada: string): Promise<UsuarioPublico | null> {
-    const { data, error } = await supabase.auth.signInWithPassword({
-        email: Email,
-        password: senhaDigitada,
-    });
+    const usuario = await buscarUsuarioPorEmail(Email);
+    if (!usuario) return null;
 
     const senhaCorreta = await bcrypt.compare(senhaDigitada, usuario.Senha);
     if (!senhaCorreta) return null;
 
     return removerSenha(usuario);
+}
+export async function obterNomeUsuarioOuNull(idUsuario: number): Promise<string | null> {
+    const { data, error } = await supabase
+        .from('User')
+        .select('Nome')
+        .eq('id', idUsuario)
+        .single();
+
+    if (error || !data) {
+        return null;
+    }
+
+    return data.Nome ?? null;
 }
