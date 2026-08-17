@@ -4,12 +4,6 @@ import { logarErro } from '../error/erros';
 
 const IDADE_MINIMA = 13;
 
-// Senha, emailVerificado, tokenConfirmacao e tokenExpiraEm saem daqui:
-// isso tudo agora é responsabilidade do Supabase Auth.
-// `authId` é o vínculo entre a linha de perfil (tabela "User") e o usuário
-// no Supabase Auth (auth.users.id).
-// `Senha` não existe mais em `Usuario` (a senha só vive no Supabase Auth),
-// por isso ela é declarada aqui à parte em vez de vir de `Pick<Usuario, ...>`.
 type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'> & {
     Senha: string;
 };
@@ -56,14 +50,15 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
         throw new Error(validacaoData.erro);
     }
     
-    const { data: authData, error: authError } = await supabase.auth.signUp({
+    const { data: authData, error: authError } = await supabase.auth.admin.createUser({
         email: dados.Email,
         password: dados.Senha,
+        email_confirm: true
     });
 
     if (authError) {
         logarErro('criarUsuario:signUp', authError);
-        // Supabase retorna 422/"User already registered" pra email duplicado.
+       
         if (authError.status === 422 || /already registered/i.test(authError.message)) {
             throw new Error('EMAIL_JA_CADASTRADO');
         }
