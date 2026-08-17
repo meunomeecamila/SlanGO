@@ -49,14 +49,11 @@ export interface Usuario {
   Email: string;
   Responsavel: boolean;
   Administrador: boolean;
-  Senha: string;
   Data: string;
   perguntaSeguranca: string;
   respostaSeguranca: string;
   id_Astronauta: number | null;
-  emailVerificado: boolean;
-  tokenConfirmacao: string | null;
-  tokenExpiraEm: string | null; 
+  authId: string;
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */

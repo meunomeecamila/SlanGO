@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { validarCredenciais } from '../services/usuarioService';
-import {
+import { 
     gerarToken,
     gerarTokenConvidado
 } from '../services/authService';
