@@ -22,11 +22,7 @@ export const login = async (req: Request, res: Response) => {
             usuario: { id: usuario.id, nome: usuario.Nome, email: usuario.Email }
         });
     } catch (error: any) {
-        logarErro('login', error);
-        if (error?.message === 'EMAIL_NAO_VERIFICADO') {
-            return res.status(403).json({ erro: 'Confirme seu email antes de entrar.', codigo: 'EMAIL_NAO_VERIFICADO' });
-        }
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível fazer login. Tente novamente.') });
+        res.status(500).json({ erro: error.message });
     }
 };
 

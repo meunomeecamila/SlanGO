@@ -47,13 +47,13 @@ export interface Usuario {
   id: number;
   Nome: string;
   Email: string;
+  Senha: string;
   Responsavel: boolean;
   Administrador: boolean;
-  Data: string;
+  Data: string; // ou Date, dependendo de como o driver do banco devolve
   perguntaSeguranca: string;
   respostaSeguranca: string;
-  id_Astronauta: number | null;
-  authId: string;
+  id_Astronauta: number | null; // avatar escolhido livremente pelo usuário
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */

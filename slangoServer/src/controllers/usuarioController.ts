@@ -5,8 +5,7 @@ import {
     atualizarUsuario,
     deletarUsuario,
     dataNascimentoValida,
-    alterarSenhaUsuario,
-    reenviarConfirmacaoEmail
+    alterarSenhaUsuario
 } from '../services/usuarioService';
 import { emailValido, senhaValida } from '../utils/validador';
 import { logarErro, mensagemErro } from '../error/erros';
@@ -37,19 +36,11 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: validacaoSenha.erro });
         }
 
-        if (!perguntaSeguranca || !respostaSeguranca) {
+        if(!perguntaSeguranca || !respostaSeguranca) {
             return res.status(400).json({ erro: 'Pergunta e resposta de segurança são obrigatórias.' });
         }
 
-        const usuarioCriado = await criarUsuario({
-            Nome: nome,
-            Email: email,
-            Senha: senha,
-            Responsavel: responsavel,
-            Data: dataNascimento,
-            perguntaSeguranca: perguntaSeguranca,
-            respostaSeguranca: respostaSeguranca
-        });
+        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento, perguntaSeguranca: perguntaSeguranca, respostaSeguranca: respostaSeguranca });
 
         res.status(201).json({
             sucesso: true,
@@ -150,23 +141,6 @@ export const deletarUsuarioController = async (req: Request, res: Response) => {
 
         res.status(200).json({ sucesso: true, mensagem: 'Usuário deletado com sucesso.' });
     } catch (error: any) {
-        logarErro('deletarUsuarioController', error);
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível deletar o usuário.') });
-    }
-};
-
-export const reenviarConfirmacaoController = async (req: Request, res: Response) => {
-    try {
-        const { email } = req.body;
-
-        if (!email) {
-            return res.status(400).json({ erro: 'Email é obrigatório.' });
-        }
-
-        await reenviarConfirmacaoEmail(email);
-        res.status(200).json({ sucesso: true, mensagem: 'Se o email existir e não estiver confirmado, um novo link foi enviado.' });
-    } catch (error: any) {
-        logarErro('reenviarConfirmacaoController', error);
-        res.status(500).json({ erro: mensagemErro(error, 'Não foi possível reenviar a confirmação.') });
+        res.status(500).json({ erro: error.message });
     }
 };

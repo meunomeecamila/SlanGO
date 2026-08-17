@@ -1,16 +1,16 @@
-import { createClient } from '@supabase/supabase-js';
+import bcrypt from 'bcrypt';
 import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
-import { logarErro } from '../error/erros';
 
 const IDADE_MINIMA = 13;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'> & {
-    Senha: string;
-};
-type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>> & {
-    Senha?: string;
-};
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>;
+type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>>;
+
+function removerSenha(usuario: Usuario): UsuarioPublico {
+    const { Senha, ...usuarioPublico } = usuario;
+    return usuarioPublico;
+}
 
 export function calcularIdade(dataNascimento: string): number {
     const nascimento = new Date(dataNascimento);
@@ -41,35 +41,24 @@ export function dataNascimentoValida(dataNascimento: string): { valida: boolean;
     if (idade < IDADE_MINIMA) {
         return { valida: false, erro: `Idade mínima para cadastro é ${IDADE_MINIMA} anos.` };
     }
+    
 
     return { valida: true };
 }
 
 export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioPublico> {
-    const validacaoData = dataNascimentoValida(dados.Data);
-    if (!validacaoData.valida) throw new Error(validacaoData.erro);
-    
-
-    const clienteAuthLocal = createClient(
-        process.env.SUPABASE_URL!, 
-        process.env.SUPABASE_SERVICE_ROLE_KEY!, 
-        { auth: { persistSession: false } }
-    );
-
-    const { data: authData, error: authError } = await clienteAuthLocal.auth.signUp({
-        email: dados.Email,
-        password: dados.Senha,
-    });
-
-    if (authError) {
-        logarErro('criarUsuario:signUp', authError);
-        if (authError.status === 422 || /already registered/i.test(authError.message)) {
-            throw new Error('EMAIL_JA_CADASTRADO');
-        }
-        throw new Error(authError.message);
+    const emailExistente = await buscarUsuarioPorEmail(dados.Email);
+    if (emailExistente) {
+        throw new Error('EMAIL_JA_CADASTRADO');
     }
 
-    if (!authData.user) throw new Error('Não foi possível criar o usuário.');
+    const senhaHash = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
+
+    const validacaoData  = dataNascimentoValida(dados.Data);
+    if (!validacaoData.valida) {
+        throw new Error(validacaoData.erro);
+    }
+
     const { data, error } = await supabase
         .from('User')
         .insert([
@@ -80,31 +69,17 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Responsavel: dados.Responsavel ?? false,
                 Data: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
-                respostaSeguranca: dados.respostaSeguranca,
+                respostaSeguranca: dados.respostaSeguranca
             }
         ])
         .select()
         .single();
 
-    if (error) {
-        logarErro('criarUsuario:insertPerfil', error);
-        await supabase.auth.admin.deleteUser(authData.user.id);
-        throw new Error(error.message);
-    }
+    if (error) throw new Error(error.message);
 
-    return data as UsuarioPublico;
+    return removerSenha(data);
 }
 
-export async function reenviarConfirmacaoEmail(email: string): Promise<boolean> {
-    const { error } = await supabase.auth.resend({
-        type: 'signup',
-        email,
-    });
-
-    // Mantém retorno booleano simples: quem decide a mensagem genérica
-    // pro cliente é o controller (padrão anti-enumeração já usado antes).
-    return !error;
-}
 
 export async function buscarUsuarioPorEmail(Email: string): Promise<Usuario | null> {
     const { data, error } = await supabase
@@ -236,29 +211,8 @@ export async function validarCredenciais(Email: string, senhaDigitada: string): 
         password: senhaDigitada,
     });
 
-    if (error) {
-        if (/email not confirmed/i.test(error.message)) {
-            throw new Error('EMAIL_NAO_VERIFICADO');
-        }
-        logarErro('validarCredenciais', error);
-        return null; // credenciais inválidas
-    }
+    const senhaCorreta = await bcrypt.compare(senhaDigitada, usuario.Senha);
+    if (!senhaCorreta) return null;
 
-    if (!data.user) return null;
-
-    return buscarUsuarioPorAuthId(data.user.id);
-}
-
-export async function obterNomeUsuarioOuNull(idUsuario: number): Promise<string | null> {
-    const { data, error } = await supabase
-        .from('User')
-        .select('Nome')
-        .eq('id', idUsuario)
-        .single();
-
-    if (error || !data) {
-        return null;
-    }
-
-    return data.Nome ?? null;
+    return removerSenha(usuario);
 }

@@ -5,8 +5,7 @@ import {
     buscarUsuarioController,
     atualizarUsuarioController,
     alterarSenhaController,
-    deletarUsuarioController,
-    reenviarConfirmacaoController
+    deletarUsuarioController
 } from "../controllers/usuarioController";
 import { login } from "../controllers/authController";
 
@@ -14,7 +13,6 @@ const usuarioRoutes = Router();
 
 usuarioRoutes.post("/login", login);
 usuarioRoutes.post("/cadastrar", criarUsuarioController);
-usuarioRoutes.post("/reenviar-confirmacao", reenviarConfirmacaoController);
 usuarioRoutes.get("/usuario/:id", autenticar, buscarUsuarioController);
 usuarioRoutes.put("/usuario/:id", autenticar, atualizarUsuarioController);
 usuarioRoutes.put("/usuario/:id/alterar-senha", autenticar, alterarSenhaController);
