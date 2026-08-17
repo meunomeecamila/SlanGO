@@ -50,10 +50,13 @@ export interface Usuario {
   Responsavel: boolean;
   Administrador: boolean;
   Senha: string;
-  Data: string; // ou Date, dependendo de como o driver do banco devolve
+  Data: string;
   perguntaSeguranca: string;
   respostaSeguranca: string;
-  id_Astronauta: number | null; // avatar escolhido livremente pelo usuário
+  id_Astronauta: number | null;
+  emailVerificado: boolean;
+  tokenConfirmacao: string | null;
+  tokenExpiraEm: string | null; 
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */

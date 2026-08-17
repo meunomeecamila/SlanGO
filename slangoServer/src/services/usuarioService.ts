@@ -1,10 +1,15 @@
 import bcrypt from 'bcrypt';
+import crypto from 'crypto';
 import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
+import { enviarEmailConfirmacao } from './emailService';
 
 const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
+const TOKEN_EXPIRA_EM_MS = 1000 * 60 * 60; // 1h
 
+// emailVerificado NÃO entra aqui de propósito: é um detalhe interno do fluxo
+// de confirmação, nunca deve vir de fora (controller/client).
 type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>;
 type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>>;
 
@@ -42,7 +47,7 @@ export function dataNascimentoValida(dataNascimento: string): { valida: boolean;
     if (idade < IDADE_MINIMA) {
         return { valida: false, erro: `Idade mínima para cadastro é ${IDADE_MINIMA} anos.` };
     }
-    
+
 
     return { valida: true };
 }
@@ -55,10 +60,13 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
 
     const senhaHash = await bcrypt.hash(dados.Senha, SALT_ROUNDS);
 
-    const validacaoData  = dataNascimentoValida(dados.Data);
+    const validacaoData = dataNascimentoValida(dados.Data);
     if (!validacaoData.valida) {
         throw new Error(validacaoData.erro);
     }
+
+    const tokenConfirmacao = crypto.randomBytes(32).toString('hex');
+    const tokenExpiraEm = new Date(Date.now() + TOKEN_EXPIRA_EM_MS).toISOString();
 
     const { data, error } = await supabase
         .from('User')
@@ -70,7 +78,10 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Responsavel: dados.Responsavel ?? false,
                 Data: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
-                respostaSeguranca: dados.respostaSeguranca
+                respostaSeguranca: dados.respostaSeguranca,
+                emailVerificado: false,
+                tokenConfirmacao,
+                tokenExpiraEm
             }
         ])
         .select()
@@ -78,9 +89,54 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
 
     if (error) throw new Error(error.message);
 
+    // Não deixa o cadastro falhar se o email tiver problema — só loga.
+    try {
+        await enviarEmailConfirmacao(dados.Email, tokenConfirmacao);
+    } catch (erroEmail) {
+        console.error('Falha ao enviar email de confirmação:', erroEmail);
+    }
+
     return removerSenha(data);
 }
 
+export async function confirmarEmail(token: string): Promise<boolean> {
+    const { data, error } = await supabase
+        .from('User')
+        .select('id, "tokenExpiraEm"')
+        .eq('tokenConfirmacao', token)
+        .maybeSingle();
+
+    if (error) throw new Error(error.message);
+    if (!data) return false;
+    if (new Date(data.tokenExpiraEm) < new Date()) return false;
+
+    const { error: errorUpdate } = await supabase
+        .from('User')
+        .update({ emailVerificado: true, tokenConfirmacao: null, tokenExpiraEm: null })
+        .eq('id', data.id);
+
+    if (errorUpdate) throw new Error(errorUpdate.message);
+    return true;
+}
+
+export async function reenviarConfirmacaoEmail(email: string): Promise<boolean> {
+    const usuario = await buscarUsuarioPorEmail(email);
+    if (!usuario) return false;
+    if (usuario.emailVerificado) return false;
+
+    const tokenConfirmacao = crypto.randomBytes(32).toString('hex');
+    const tokenExpiraEm = new Date(Date.now() + TOKEN_EXPIRA_EM_MS).toISOString();
+
+    const { error } = await supabase
+        .from('User')
+        .update({ tokenConfirmacao, tokenExpiraEm })
+        .eq('id', usuario.id);
+
+    if (error) throw new Error(error.message);
+
+    await enviarEmailConfirmacao(email, tokenConfirmacao);
+    return true;
+}
 
 export async function buscarUsuarioPorEmail(Email: string): Promise<Usuario | null> {
     const { data, error } = await supabase
@@ -182,6 +238,10 @@ export async function validarCredenciais(Email: string, senhaDigitada: string): 
 
     const senhaCorreta = await bcrypt.compare(senhaDigitada, usuario.Senha);
     if (!senhaCorreta) return null;
+
+    if (!usuario.emailVerificado) {
+        throw new Error('EMAIL_NAO_VERIFICADO');
+    }
 
     return removerSenha(usuario);
 }

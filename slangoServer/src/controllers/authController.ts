@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { validarCredenciais } from '../services/usuarioService';
-import { 
+import {
     gerarToken,
     gerarTokenConvidado
 } from '../services/authService';
@@ -21,6 +21,9 @@ export const login = async (req: Request, res: Response) => {
             usuario: { id: usuario.id, nome: usuario.Nome, email: usuario.Email }
         });
     } catch (error: any) {
+        if (error.message === 'EMAIL_NAO_VERIFICADO') {
+            return res.status(403).json({ erro: 'Confirme seu email antes de entrar.', codigo: 'EMAIL_NAO_VERIFICADO' });
+        }
         res.status(500).json({ erro: error.message });
     }
 };

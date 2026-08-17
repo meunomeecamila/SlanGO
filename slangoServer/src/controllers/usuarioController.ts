@@ -5,7 +5,9 @@ import {
     atualizarUsuario,
     deletarUsuario,
     dataNascimentoValida,
-    alterarSenhaUsuario
+    alterarSenhaUsuario,
+    confirmarEmail,
+    reenviarConfirmacaoEmail
 } from '../services/usuarioService';
 import { emailValido, senhaValida } from '../utils/validador';
 
@@ -35,11 +37,19 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: validacaoSenha.erro });
         }
 
-        if(!perguntaSeguranca || !respostaSeguranca) {
+        if (!perguntaSeguranca || !respostaSeguranca) {
             return res.status(400).json({ erro: 'Pergunta e resposta de segurança são obrigatórias.' });
         }
 
-        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento, perguntaSeguranca: perguntaSeguranca, respostaSeguranca: respostaSeguranca });
+        const usuarioCriado = await criarUsuario({
+            Nome: nome,
+            Email: email,
+            Senha: senha,
+            Responsavel: responsavel,
+            Data: dataNascimento,
+            perguntaSeguranca: perguntaSeguranca,
+            respostaSeguranca: respostaSeguranca
+        });
 
         res.status(201).json({
             sucesso: true,
@@ -135,6 +145,44 @@ export const deletarUsuarioController = async (req: Request, res: Response) => {
         }
 
         res.status(200).json({ sucesso: true, mensagem: 'Usuário deletado com sucesso.' });
+    } catch (error: any) {
+        res.status(500).json({ erro: error.message });
+    }
+};
+
+export const confirmarEmailController = async (req: Request, res: Response) => {
+    try {
+        const { token } = req.query;
+
+        if (!token || typeof token !== 'string') {
+            return res.status(400).json({ erro: 'Token inválido.' });
+        }
+
+        const confirmado = await confirmarEmail(token);
+
+        if (!confirmado) {
+            return res.status(400).json({ erro: 'Token inválido ou expirado.' });
+        }
+
+        res.status(200).json({ sucesso: true, mensagem: 'Email confirmado com sucesso.' });
+    } catch (error: any) {
+        res.status(500).json({ erro: error.message });
+    }
+};
+
+export const reenviarConfirmacaoController = async (req: Request, res: Response) => {
+    try {
+        const { email } = req.body;
+
+        if (!email) {
+            return res.status(400).json({ erro: 'Email é obrigatório.' });
+        }
+
+        await reenviarConfirmacaoEmail(email);
+
+        // Mensagem genérica de propósito — evita confirmar se o email existe
+        // (mesmo padrão anti-enumeração usado na recuperação de senha).
+        res.status(200).json({ sucesso: true, mensagem: 'Se o email existir e não estiver confirmado, um novo link foi enviado.' });
     } catch (error: any) {
         res.status(500).json({ erro: error.message });
     }
