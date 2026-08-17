@@ -1,3 +1,4 @@
+import { createClient } from '@supabase/supabase-js';
 import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
 import { logarErro } from '../error/erros';
@@ -46,29 +47,29 @@ export function dataNascimentoValida(dataNascimento: string): { valida: boolean;
 
 export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioPublico> {
     const validacaoData = dataNascimentoValida(dados.Data);
-    if (!validacaoData.valida) {
-        throw new Error(validacaoData.erro);
-    }
+    if (!validacaoData.valida) throw new Error(validacaoData.erro);
     
-    const { data: authData, error: authError } = await supabase.auth.admin.createUser({
+
+    const clienteAuthLocal = createClient(
+        process.env.SUPABASE_URL!, 
+        process.env.SUPABASE_SERVICE_ROLE_KEY!, 
+        { auth: { persistSession: false } }
+    );
+
+    const { data: authData, error: authError } = await clienteAuthLocal.auth.signUp({
         email: dados.Email,
-        password: dados.Senha
+        password: dados.Senha,
     });
 
     if (authError) {
         logarErro('criarUsuario:signUp', authError);
-       
         if (authError.status === 422 || /already registered/i.test(authError.message)) {
             throw new Error('EMAIL_JA_CADASTRADO');
         }
         throw new Error(authError.message);
     }
 
-    if (!authData.user) {
-        throw new Error('Não foi possível criar o usuário.');
-    }
-
-    // Perfil da aplicação, vinculado ao usuário do Auth via authId.
+    if (!authData.user) throw new Error('Não foi possível criar o usuário.');
     const { data, error } = await supabase
         .from('User')
         .insert([
@@ -87,8 +88,6 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
 
     if (error) {
         logarErro('criarUsuario:insertPerfil', error);
-        // Perfil falhou depois do Auth já ter criado o usuário — evita ficar
-        // com um usuário "fantasma" no Auth sem perfil correspondente.
         await supabase.auth.admin.deleteUser(authData.user.id);
         throw new Error(error.message);
     }
