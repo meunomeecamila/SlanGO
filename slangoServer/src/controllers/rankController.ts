@@ -6,6 +6,7 @@ import {
     buscarPosicaoGlobalDoUsuario
 } from '../services/rankService';
 import { buscarIdMundoPorNome } from '../services/preogressoService';
+import { obterNomeUsuarioOuNull } from '../services/usuarioService';
 
 export const registrarRanking = async (req: RequisicaoAutenticada, res: Response) => {
     try {
@@ -21,7 +22,12 @@ export const registrarRanking = async (req: RequisicaoAutenticada, res: Response
             return res.status(404).json({ error: 'Mundo não encontrado.' });
         }
 
-        const resultado = await registrarTempoRankeado(idUsuario, idMundo, tempoMs, pontuacaoFinal);
+        const nomeUsuario = await obterNomeUsuarioOuNull(idUsuario);
+        if (!nomeUsuario) {
+            return res.status(404).json({ error: 'Usuário não encontrado.' });
+        }
+
+        const resultado = await registrarTempoRankeado(idUsuario, idMundo, nomeUsuario, tempoMs, pontuacaoFinal);
 
         res.status(200).json({
             sucesso: true,

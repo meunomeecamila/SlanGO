@@ -4,6 +4,7 @@ import 'cores.dart';
 import 'texto.dart';
 import '../final/Particulas.dart';
 import 'models.dart';
+import 'giriasMundoScreen.dart';
 
 class ProgressoScreen extends StatelessWidget {
   final List<ProgressoMundo> mundos;
@@ -33,7 +34,8 @@ class ProgressoScreen extends StatelessWidget {
                       : ListView.separated(
                           itemCount: mundos.length,
                           separatorBuilder: (_, __) => const SizedBox(height: 14),
-                          itemBuilder: (context, index) => _cardMundo(mundos[index]),
+                          itemBuilder: (context, index) =>
+                              _cardMundo(context, mundos[index]),
                         ),
                 ),
               ],
@@ -69,13 +71,24 @@ class ProgressoScreen extends StatelessWidget {
     );
   }
 
-  Widget _cardMundo(ProgressoMundo mundo) {
+  Widget _cardMundo(BuildContext context, ProgressoMundo mundo) {
     final porcentagem = (mundo.progresso * 100).round();
 
     return InkWell(
       borderRadius: BorderRadius.circular(18),
       onTap: () {
-        // TODO: navegar para a tela do mundo quando o backend estiver pronto
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => GiriasMundoScreen(
+              mundo: mundo,
+              // TODO: substituir por dados reais assim que o backend
+              // expuser a lista de gírias por mundo
+              // (ex: await MundoService.getGirias(mundo.id))
+              // Enquanto isso, não passar "girias" faz a tela usar
+              // automaticamente a lista estática giriasExemplo.
+            ),
+          ),
+        );
       },
       child: Container(
         padding: const EdgeInsets.all(16),
@@ -118,6 +131,12 @@ class ProgressoScreen extends StatelessWidget {
                 Text(
                   "${mundo.girasAprendidas}/${mundo.totalGirias}",
                   style: AppText.cardSubtitulo(0.9),
+                ),
+                const SizedBox(width: 6),
+                const Icon(
+                  Icons.chevron_right,
+                  color: AppColors.textSecondary,
+                  size: 22,
                 ),
               ],
             ),

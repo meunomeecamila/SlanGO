@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 import '../service/MundoService.dart';
 import '../service/usuarioService.dart';
 import '../service/perfilService.dart';
+import '../service/rankService.dart';
 import '../user/User.dart';
 import 'certificados/aba_certificados.dart';
 import 'configuracoes.dart';
 import 'progresso.dart';
+import 'ranking/rankingScreen.dart';
+import 'widgets/moldura_rank.dart';
 import 'models.dart';
 import 'cores.dart';
 import 'texto.dart';
@@ -48,6 +51,10 @@ class _PerfilScreenState extends State<PerfilScreen> {
   List<ItemPerfil> _itens = [];
   int? _idItemEquipandoAgora;
 
+  /// Posição do usuário no ranking global (1, 2, 3...). `null` = fora do ranking.
+  /// Usada para decidir qual moldura de Top 3 exibir no avatar.
+  int? _posicaoRank;
+
   @override
   void initState() {
     super.initState();
@@ -88,6 +95,21 @@ class _PerfilScreenState extends State<PerfilScreen> {
         );
       }
 
+      // Posição no ranking global (para a moldura de Top 3). Falha aqui não
+      // deve quebrar o perfil, então tratamos o erro silenciosamente.
+      int? posicaoRank;
+      try {
+        final ranking = await RankingService.buscarRankingGlobal();
+        for (final item in ranking) {
+          if (item.idUsuario == usuario.id) {
+            posicaoRank = item.posicao;
+            break;
+          }
+        }
+      } catch (_) {
+        posicaoRank = null;
+      }
+
       if (mounted) {
         setState(() {
           _usuario = usuario;
@@ -95,6 +117,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
           _astronautas = astronautas;
           _astronautaAtual = astronautaSelecionado;
           _itens = itens;
+          _posicaoRank = posicaoRank;
           _erroPerfil = null;
         });
       }
@@ -119,6 +142,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
       'geek': 'Mundo Geek',
       'redessociais': 'Mundo Redes Sociais',
       'relacionamentos': 'Mundo Relacionamentos',
+      'comunidade': 'Mundo Comunidade',
     };
     return nomes[id] ?? id;
   }
@@ -211,11 +235,23 @@ class _PerfilScreenState extends State<PerfilScreen> {
         Row(
           children: [
             _iconButton(
-              icon: Icons.bar_chart_rounded,
+              icon: Icons.insights_rounded,
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (_) => ProgressoScreen(mundos: _mundosProgresso),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            _iconButton(
+              icon: Icons.leaderboard_rounded,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => RankingScreen(
+                    nomeUsuarioAtual: _usuario?.nome ?? widget.nome,
+                  ),
                 ),
               ),
             ),
@@ -352,6 +388,30 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     ),
                   ),
                 ),
+                // ─── MOLDURA DE RANK (Top 3 do ranking global) ───
+                // Fica POR CIMA do avatar, em volta dele, sem cobrir o rosto.
+                // Renderizada ANTES do botão de editar para que o lápis fique
+                // sempre visível por cima da moldura.
+                if (MolduraRank.caminhoParaPosicao(_posicaoRank) != null)
+                  Positioned.fill(
+                    child: IgnorePointer(
+                      child: Transform.translate(
+                        // <-- AJUSTE AQUI A POSIÇÃO (x, y) DA BORDA
+                        offset: const Offset(0, 0),
+                        child: Transform.scale(
+                          // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA
+                          scale: 1.34,
+                          child: Image.asset(
+                            MolduraRank.caminhoParaPosicao(_posicaoRank)!,
+                            // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA
+                            width: 110,
+                            height: 110,
+                            fit: BoxFit.contain, // em volta, sem cobrir o rosto
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 Positioned(
                   right: -4,
                   bottom: -4,

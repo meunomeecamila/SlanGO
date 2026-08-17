@@ -12,6 +12,7 @@ const Map<String, String> imagensDosEts = {
   'geek': 'images/planets_pets/geek_pet.png',
   'redessociais': 'images/planets_pets/redessociais_pet.png',
   'relacionamentos': 'images/planets_pets/relacionamentos_pet.png',
+  'comunidade': 'images/planets_pets/comunidade_pet.png',
 };
 
 /// Devolve o caminho do ET do mundo a partir de qualquer variação do nome

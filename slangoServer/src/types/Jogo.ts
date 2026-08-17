@@ -122,6 +122,7 @@ export interface ItemComStatus extends Item {
 export interface RegistroRanking {
     idUsuario: number;
     idMundo: number;
+    nomeUsuario: string;
     tempoMs: number;
     pontuacao: number;
     percentualAcerto: number;
@@ -136,6 +137,7 @@ export interface ItemRanking {
 
 export interface PosicaoUsuario {
     posicao: number | null;
+    nomeUsuario: string | null;
     melhorTempoMs: number | null;
     totalJogadores: number;
 }

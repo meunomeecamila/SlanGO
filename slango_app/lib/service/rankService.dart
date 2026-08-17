@@ -27,12 +27,14 @@ class ResultadoRanking {
 class ItemRanking {
   final int posicao;
   final int idUsuario;
+  final String nomeUsuario;
   final int melhorTempoMs;
   final int pontuacao;
 
   ItemRanking({
     required this.posicao,
     required this.idUsuario,
+    required this.nomeUsuario,
     required this.melhorTempoMs,
     required this.pontuacao,
   });
@@ -40,6 +42,7 @@ class ItemRanking {
   factory ItemRanking.fromJson(Map<String, dynamic> json) => ItemRanking(
         posicao: json['posicao'],
         idUsuario: json['idUsuario'],
+        nomeUsuario: json['nomeUsuario'] ?? 'Jogador',
         melhorTempoMs: json['melhorTempoMs'],
         pontuacao: json['pontuacao'],
       );

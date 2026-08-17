@@ -164,7 +164,7 @@ class _QuizRunner extends StatefulWidget {
 }
 
 class _QuizRunnerState extends State<_QuizRunner>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   int _indice = 0;
   int _acertos = 0;
   int _erros = 0;
@@ -176,6 +176,12 @@ class _QuizRunnerState extends State<_QuizRunner>
   late final AnimationController _feedbackController;
   late final Animation<Offset> _feedbackSlide;
   late final ScrollController _alternativasController;
+
+  // Controla o "pulo" da gíria principal: sobe rápido e desce com uma
+  // leve quicada na aterrissagem. Dispara ao abrir a página e a cada
+  // nova pergunta/gíria exibida.
+  late final AnimationController _giriaBounceController;
+  late final Animation<double> _giriaBounceAnim;
 
   final Stopwatch _cronometro = Stopwatch();
   bool get _ehRankeado => widget.modo == ModoQuiz.rankeado;
@@ -200,6 +206,27 @@ class _QuizRunnerState extends State<_QuizRunner>
     _feedbackSlide = Tween<Offset>(begin: const Offset(0, 1), end: Offset.zero)
         .animate(CurvedAnimation(parent: _feedbackController, curve: Curves.easeOut));
     _alternativasController = ScrollController();
+
+    _giriaBounceController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 550),
+    );
+    _giriaBounceAnim = TweenSequence<double>([
+      // Sobe rápido
+      TweenSequenceItem(
+        tween: Tween(begin: 0.0, end: -16.0)
+            .chain(CurveTween(curve: Curves.easeOut)),
+        weight: 40,
+      ),
+      // Desce e quica levemente ao "aterrissar"
+      TweenSequenceItem(
+        tween: Tween(begin: -16.0, end: 0.0)
+            .chain(CurveTween(curve: Curves.bounceOut)),
+        weight: 60,
+      ),
+    ]).animate(_giriaBounceController);
+    // Dispara o pulo assim que a tela abre.
+    _giriaBounceController.forward();
   }
 
   @override
@@ -207,6 +234,7 @@ class _QuizRunnerState extends State<_QuizRunner>
     _cronometro.stop();
     _feedbackController.dispose();
     _alternativasController.dispose();
+    _giriaBounceController.dispose();
     super.dispose();
   }
 
@@ -290,6 +318,8 @@ class _QuizRunnerState extends State<_QuizRunner>
         _selecionada = null;
         _estado = _EstadoResposta.aguardando;
       });
+      // Nova gíria em tela: repete o pulo.
+      _giriaBounceController.forward(from: 0);
     } else {
       _mostrarResultado();
     }
@@ -456,27 +486,36 @@ class _QuizRunnerState extends State<_QuizRunner>
                     ),
                     SizedBox(height: 20 * heightScale),
 
-                    Text(
-                      fase.giria.toUpperCase(),
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.alfaSlabOne(
-                        color: Colors.white,
-                        fontSize: 40 * scale,
-                        letterSpacing: 1,
-                        shadows: [
-                          Shadow(
-                            color: roxo.withOpacity(0.6),
-                            blurRadius: 6 * scale,
-                          ),
-                          Shadow(
-                            color: roxo.withOpacity(0.35),
-                            blurRadius: 18 * scale,
-                          ),
-                          Shadow(
-                            color: roxoClaro.withOpacity(0.2),
-                            blurRadius: 32 * scale,
-                          ),
-                        ],
+                    AnimatedBuilder(
+                      animation: _giriaBounceAnim,
+                      builder: (context, child) {
+                        return Transform.translate(
+                          offset: Offset(0, _giriaBounceAnim.value),
+                          child: child,
+                        );
+                      },
+                      child: Text(
+                        fase.giria.toUpperCase(),
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.alfaSlabOne(
+                          color: Colors.white,
+                          fontSize: 40 * scale,
+                          letterSpacing: 1,
+                          shadows: [
+                            Shadow(
+                              color: roxo.withOpacity(0.6),
+                              blurRadius: 6 * scale,
+                            ),
+                            Shadow(
+                              color: roxo.withOpacity(0.35),
+                              blurRadius: 18 * scale,
+                            ),
+                            Shadow(
+                              color: roxoClaro.withOpacity(0.2),
+                              blurRadius: 32 * scale,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(height: 16 * heightScale),

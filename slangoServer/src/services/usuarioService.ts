@@ -245,3 +245,17 @@ export async function validarCredenciais(Email: string, senhaDigitada: string): 
 
     return removerSenha(usuario);
 }
+
+export async function obterNomeUsuarioOuNull(idUsuario: number): Promise<string | null> {
+    const { data, error } = await supabase
+        .from('User')
+        .select('Nome')
+        .eq('id', idUsuario)
+        .single();
+
+    if (error || !data) {
+        return null;
+    }
+
+    return data.Nome ?? null;
+}
