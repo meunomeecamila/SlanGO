@@ -1,13 +1,15 @@
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const URL_APP = process.env.URL_APP as string; // ex: https://slango.app
+const URL_APP = process.env.URL_APP as string; 
+
+const REMETENTE = 'SlanGO <onboarding@resend.dev>';
 
 export async function enviarEmailConfirmacao(email: string, token: string): Promise<void> {
     const link = `${URL_APP}/confirmar-email?token=${token}`;
 
     const { error } = await resend.emails.send({
-        from: 'SlanGO <noreply@slango.app>',
+        from: REMETENTE,
         to: email,
         subject: 'Confirme seu cadastro no SlanGO',
         html: `
@@ -26,5 +28,8 @@ export async function enviarEmailConfirmacao(email: string, token: string): Prom
         `
     });
 
-    if (error) throw new Error('ERRO_ENVIO_EMAIL');
+    if (error) {
+        console.error('Erro do Resend:', JSON.stringify(error, null, 2));
+        throw new Error('ERRO_ENVIO_EMAIL');
+    }
 }
