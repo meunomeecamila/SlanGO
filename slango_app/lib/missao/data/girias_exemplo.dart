@@ -17,6 +17,8 @@ const Map<String, List<String>> giriasExemploPorMundo = {
   'geek': ['OTAKU', 'WAIFU', 'FILLER', 'COSPLAY'],
   'redessociais': ['RANÇO', 'BISCOITEIRO', 'STALKEAR', 'TÁ NA DISNEY'],
   'relacionamentos': ['CRUSH', 'CONTATINHO', 'LEVAR BOLO', 'TALARICO'],
+  // Mundo Comunidade ainda não tem gírias (lista vazia => nenhum chip é exibido).
+  'comunidade': <String>[],
 };
 
 /// Fallback quando o mundo não estiver mapeado acima.

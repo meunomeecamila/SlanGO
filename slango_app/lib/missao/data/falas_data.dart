@@ -54,4 +54,12 @@ const Map<String, List<String>> falasPorMundo = {
     'Rolo, ficante, mozão, red flag... tem gíria pra tudo por aqui.',
     'Aprende essas expressões e vai com tudo pra missão! 💘',
   ],
+  // Mundo Comunidade — feito pela galera. Ainda sem gírias cadastradas,
+  // por isso as falas focam em colaboração/comunidade em vez de listar gírias.
+  'comunidade': [
+    'Boas-vindas ao Mundo Comunidade, {nome}! Aqui é onde a voz da galera ganha vida! 🌍',
+    'Este mundo é construído por vocês! Que tal mandar sua própria gíria? ✍️',
+    'Ainda estamos reunindo as gírias mais faladas da galáxia... Fique de olho! 👀',
+    'Conectando mentes e gírias de todos os cantos do universo! 🚀',
+  ],
 };

@@ -41,6 +41,7 @@ const Map<String, String> _titulosPorSlug = {
   'geek': 'Mundo Geek',
   'redessociais': 'Mundo Redes Sociais',
   'relacionamentos': 'Mundo Relacionamentos',
+  'comunidade': 'Mundo Comunidade',
 };
 
 /// Título amigável para o cabeçalho. Faz fallback capitalizando o nome cru.

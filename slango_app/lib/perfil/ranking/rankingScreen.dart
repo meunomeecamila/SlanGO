@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../cores.dart';
 import '../texto.dart';
+import '../widgets/moldura_rank.dart';
 import '../../final/Particulas.dart';
 import '../../service/rankService.dart';
 
@@ -272,6 +273,29 @@ class _RankingScreenState extends State<RankingScreen> {
                   ),
                 ),
               ),
+              // ─── MOLDURA DE RANK (1º, 2º ou 3º lugar) ───
+              // Fica em volta do avatar do pódio, sem cobrir o rosto.
+              // Renderizada antes do selo de posição para o número ficar visível.
+              if (MolduraRank.caminhoParaPosicao(posicao) != null)
+                Positioned.fill(
+                  child: IgnorePointer(
+                    child: Transform.translate(
+                      // <-- AJUSTE AQUI A POSIÇÃO (x, y) DA BORDA DO PÓDIO
+                      offset: const Offset(0, 0),
+                      child: Transform.scale(
+                        // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA DO PÓDIO
+                        scale: 1.5,
+                        child: Image.asset(
+                          MolduraRank.caminhoParaPosicao(posicao)!,
+                          // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA DO PÓDIO
+                          width: tamanhoAvatar * scale,
+                          height: tamanhoAvatar * scale,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               Positioned(
                 bottom: -6 * scale,
                 child: Container(
