@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 import 'fase/fase.dart';
 import 'licao.dart';
@@ -183,6 +184,9 @@ class _QuizRunnerState extends State<_QuizRunner>
   late final AnimationController _giriaBounceController;
   late final Animation<double> _giriaBounceAnim;
 
+  // Player para os efeitos sonoros de acerto/erro.
+  final AudioPlayer _sfxPlayer = AudioPlayer();
+
   final Stopwatch _cronometro = Stopwatch();
   bool get _ehRankeado => widget.modo == ModoQuiz.rankeado;
 
@@ -235,6 +239,7 @@ class _QuizRunnerState extends State<_QuizRunner>
     _feedbackController.dispose();
     _alternativasController.dispose();
     _giriaBounceController.dispose();
+    _sfxPlayer.dispose();
     super.dispose();
   }
 
@@ -245,6 +250,11 @@ class _QuizRunnerState extends State<_QuizRunner>
     final correta = fasAtual.alternativas
         .firstWhere((a) => a.texto == textoSelecionado)
         .correta;
+
+    // Toca o som de acerto ou erro assim que a resposta é registrada.
+    _sfxPlayer.play(
+      AssetSource(correta ? 'sons/som_certo.mp3' : 'sons/som_erro.mp3'),
+    );
 
     setState(() {
       _selecionada = textoSelecionado;
@@ -327,6 +337,9 @@ class _QuizRunnerState extends State<_QuizRunner>
 
   void _mostrarResultado() async {
     _cronometro.stop();
+
+    // Toca o som de finalização assim que a sequência de quizes termina.
+    _sfxPlayer.play(AssetSource('sons/som_final_mundo.mp3'));
 
     final idsUnicos = widget.perguntas.map((fase) => fase.giriaId).toSet().toList();
 
