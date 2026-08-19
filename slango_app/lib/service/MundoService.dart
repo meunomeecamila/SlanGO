@@ -122,6 +122,33 @@ class MundoService {
     return jsonDecode(response.body);
   }
 
+  static Future<List<Map<String, dynamic>>> buscarGiriasAprendidas(
+    String nomeMundo,
+  ) async {
+    final uri = Uri.parse('$_baseUrl/mundos/$nomeMundo/aprendidas');
+
+    final headers = await _getHeaders();
+    final response = await http.get(uri, headers: headers);
+
+    _verificarResposta(response);
+
+    if (response.statusCode != 200) {
+      throw Exception('Falha ao buscar gírias aprendidas: ${response.body}');
+    }
+
+    final jsonResponse = jsonDecode(response.body);
+
+    // Defensivo: aceita tanto { girias: [...] } quanto array direto,
+    // seguindo o mesmo padrão usado nos outros métodos deste service.
+    if (jsonResponse is Map<String, dynamic> && jsonResponse['girias'] is List) {
+      return List<Map<String, dynamic>>.from(jsonResponse['girias']);
+    }
+    if (jsonResponse is List) {
+      return List<Map<String, dynamic>>.from(jsonResponse);
+    }
+    return [];
+  }
+
   static Future<Map<String, dynamic>> progressoMundo(String nomeDoMundo) async {
     final uri = Uri.parse('$_baseUrl/mundos/$nomeDoMundo/progresso');
 

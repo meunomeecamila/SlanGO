@@ -4,16 +4,13 @@ import 'cores.dart';
 import 'texto.dart';
 import '../final/Particulas.dart';
 import 'models.dart';
+import '../service/MundoService.dart';
 
-/// ⚠️ Se você já tiver uma cor roxa definida em cores.dart
-/// (ex: AppColors.roxo, AppColors.primary, AppColors.accent),
-/// troque as referências a `_roxoAccent` abaixo por ela.
+
 const Color _roxoAccent = Color(0xFF8B7CF6);
 const Color _roxoGlow = Color(0xFF6C5CE7);
-
-/// Modelo simples pra representar uma gíria dentro de um mundo.
-/// Se você já tiver algo parecido em models.dart, troque por ele.
 class GiriaProgresso {
+  final int? id;
   final String palavra;
   final String significado;
   final bool aprendida;
@@ -21,12 +18,26 @@ class GiriaProgresso {
   final String classe; // classe gramatical (substantivo, verbo, etc)
 
   const GiriaProgresso({
+    this.id,
     required this.palavra,
     required this.significado,
     required this.aprendida,
     this.exemplo,
     this.classe = "gíria",
   });
+
+  /// O endpoint agora devolve TODAS as gírias do mundo, cada uma com
+  /// `aprendida: true/false` de acordo com o progresso do usuário.
+  factory GiriaProgresso.fromJson(Map<String, dynamic> json) {
+    return GiriaProgresso(
+      id: json['id'] is int ? json['id'] as int : int.tryParse('${json['id']}'),
+      palavra: (json['nome'] ?? '').toString(),
+      significado: (json['significado'] ?? '').toString(),
+      exemplo: json['exemplo']?.toString(),
+      classe: (json['classe'] ?? 'gíria').toString(),
+      aprendida: json['aprendida'] == true,
+    );
+  }
 }
 
 /// Lista estática de exemplo — troque/pluga na sua fonte de dados real depois.
@@ -76,18 +87,49 @@ const List<GiriaProgresso> giriasExemplo = [
   ),
 ];
 
-class GiriasMundoScreen extends StatelessWidget {
+class GiriasMundoScreen extends StatefulWidget {
   final ProgressoMundo mundo;
-  final List<GiriaProgresso> girias;
 
-  /// Se `girias` não for passado (ou vier nulo), cai automaticamente
-  /// na lista estática `giriasExemplo` — assim a tela nunca aparece vazia
-  /// enquanto você não pluga a fonte de dados real.
-  GiriasMundoScreen({
+  /// Passar `giriasIniciais` é opcional — útil pra preview/teste.
+  /// Se não passar, a tela busca as gírias aprendidas direto da API.
+  final List<GiriaProgresso>? giriasIniciais;
+
+  const GiriasMundoScreen({
     super.key,
     required this.mundo,
-    List<GiriaProgresso>? girias,
-  }) : girias = girias ?? giriasExemplo;
+    this.giriasIniciais,
+  });
+
+  @override
+  State<GiriasMundoScreen> createState() => _GiriasMundoScreenState();
+}
+
+class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
+  late Future<List<GiriaProgresso>> _futureGirias;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.giriasIniciais != null) {
+      _futureGirias = Future.value(widget.giriasIniciais);
+    } else {
+      _futureGirias = _carregarGirias();
+    }
+  }
+
+  Future<List<GiriaProgresso>> _carregarGirias() async {
+    // ProgressoMundo.id já é o slug (ex: "esportes"), a mesma chave usada
+    // pelo backend em `mundos`. Nada de usar mundo.nome aqui.
+    final dados = await MundoService.buscarGiriasAprendidas(widget.mundo.id);
+    return dados.map((json) => GiriaProgresso.fromJson(json)).toList();
+  }
+
+  Future<void> _recarregar() async {
+    setState(() {
+      _futureGirias = _carregarGirias();
+    });
+    await _futureGirias;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -102,14 +144,54 @@ class GiriasMundoScreen extends StatelessWidget {
                 _buildHeader(context),
                 const SizedBox(height: 24),
                 Expanded(
-                  child: girias.isEmpty
-                      ? Center(
+                  child: FutureBuilder<List<GiriaProgresso>>(
+                    future: _futureGirias,
+                    builder: (context, snapshot) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const Center(
+                          child: CircularProgressIndicator(color: _roxoAccent),
+                        );
+                      }
+
+                      if (snapshot.hasError) {
+                        return Center(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "Não foi possível carregar as gírias aprendidas.",
+                                textAlign: TextAlign.center,
+                                style: AppText.subtitulo(1),
+                              ),
+                              const SizedBox(height: 12),
+                              TextButton(
+                                onPressed: _recarregar,
+                                child: const Text(
+                                  "Tentar novamente",
+                                  style: TextStyle(color: _roxoAccent),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      }
+
+                      final girias = snapshot.data ?? [];
+
+                      if (girias.isEmpty) {
+                        return Center(
                           child: Text(
-                            "Nenhuma gíria cadastrada ainda.",
+                            "Nenhuma gíria aprendida ainda.",
                             style: AppText.subtitulo(1),
                           ),
-                        )
-                      : SingleChildScrollView(
+                        );
+                      }
+
+                      return RefreshIndicator(
+                        onRefresh: _recarregar,
+                        color: _roxoAccent,
+                        child: SingleChildScrollView(
+                          physics: const AlwaysScrollableScrollPhysics(),
                           child: Center(
                             child: Wrap(
                               alignment: WrapAlignment.center,
@@ -121,6 +203,9 @@ class GiriasMundoScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+                      );
+                    },
+                  ),
                 ),
               ],
             ),
@@ -142,10 +227,10 @@ class GiriasMundoScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(mundo.nome, style: AppText.titulo(0.85)),
+              Text(widget.mundo.nome, style: AppText.titulo(0.85)),
               const SizedBox(height: 2),
               Text(
-                "${mundo.girasAprendidas}/${mundo.totalGirias} gírias aprendidas",
+                "${widget.mundo.girasAprendidas}/${widget.mundo.totalGirias} gírias aprendidas",
                 style: AppText.subtitulo(0.9),
               ),
             ],
