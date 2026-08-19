@@ -354,6 +354,23 @@ export async function listarMundosComProgresso(
 }
 
 /**
+ * Helper interno: busca os ids aprendidos pelo usuário num mundo e devolve
+ * já como Set<string>, pronto pra comparar com `String(giria.id)`.
+ * Usado tanto pra filtrar (lista só de aprendidas) quanto pra marcar
+ * (lista completa com flag `aprendida`).
+ */
+async function buscarIdsAprendidosSet(
+    nomeDoMundo: string,
+    idUsuario: number
+): Promise<Set<string>> {
+    const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
+    const idsAprendidos = idMundoNumerico !== null
+        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
+        : [];
+    return new Set(idsAprendidos.map(String));
+}
+
+/**
  * Retorna, com nome e significado, as gírias que o usuário JÁ aprendeu
  * (≥80% de acerto em alguma rodada) num mundo específico. Base pra uma
  * tela de "dicionário pessoal" / revisão.
@@ -375,13 +392,7 @@ export async function listarGiriasAprendidasDoMundo(
     }
 
     const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
-
-    const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
-    const idsAprendidos = idMundoNumerico !== null
-        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
-        : [];
-
-    const idsAprendidosSet = new Set(idsAprendidos.map(String));
+    const idsAprendidosSet = await buscarIdsAprendidosSet(nomeDoMundo, idUsuario);
 
     return todasAsGiriasDoMundo
         .filter((giria) => idsAprendidosSet.has(String(giria.id)))
@@ -393,6 +404,43 @@ export async function listarGiriasAprendidasDoMundo(
             classe: giria.classe_gramatical ?? (giria as any).classe,
             impacto: giria.impacto,
         }));
+}
+
+/**
+ * Igual a `listarGiriasAprendidasDoMundo`, mas devolve TODAS as gírias
+ * do mundo (aprendidas + ainda trancadas), cada uma marcada com
+ * `aprendida: true/false`. É essa que a tela "dicionário do mundo" usa
+ * pra desenhar os cards trancados em cinza ao lado dos já aprendidos.
+ */
+export async function listarTodasGiriasComStatusDoMundo(
+    nomeDoMundo: string,
+    idUsuario: number
+): Promise<Array<{
+    id: number | string;
+    nome: string;
+    significado: string;
+    exemplo: string;
+    classe?: string;
+    impacto?: string;
+    aprendida: boolean;
+}>> {
+    const mundo = mundos[nomeDoMundo as keyof typeof mundos];
+    if (!mundo) {
+        throw new Error('Mundo não encontrado!');
+    }
+
+    const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
+    const idsAprendidosSet = await buscarIdsAprendidosSet(nomeDoMundo, idUsuario);
+
+    return todasAsGiriasDoMundo.map((giria) => ({
+        id: giria.id,
+        nome: giria.nome,
+        significado: giria.significado,
+        exemplo: giria.exemplo_correto,
+        classe: giria.classe_gramatical ?? (giria as any).classe,
+        impacto: giria.impacto,
+        aprendida: idsAprendidosSet.has(String(giria.id)),
+    }));
 }
 
 /**
