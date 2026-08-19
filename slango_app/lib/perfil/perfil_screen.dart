@@ -395,19 +395,16 @@ class _PerfilScreenState extends State<PerfilScreen> {
                 if (MolduraRank.caminhoParaPosicao(_posicaoRank) != null)
                   Positioned.fill(
                     child: IgnorePointer(
-                      child: Transform.translate(
-                        // <-- AJUSTE AQUI A POSIÇÃO (x, y) DA BORDA
-                        offset: const Offset(4, 4),
-                        child: Transform.scale(
-                          // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA
-                          scale: 2.0,
-                          child: Image.asset(
-                            MolduraRank.caminhoParaPosicao(_posicaoRank)!,
-                            // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA
-                            width: 110,
-                            height: 110,
-                            fit: BoxFit.contain, // em volta, sem cobrir o rosto
-                          ),
+                      
+                      child: Transform.scale(
+                        // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA
+                        scale: 2.0,
+                        child: Image.asset(
+                          MolduraRank.caminhoParaPosicao(_posicaoRank)!,
+                          // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA
+                          width: 110,
+                          height: 110,
+                          fit: BoxFit.contain, // em volta, sem cobrir o rosto
                         ),
                       ),
                     ),

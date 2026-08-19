@@ -387,19 +387,15 @@ class _RankingScreenState extends State<RankingScreen> {
               if (MolduraRank.caminhoParaPosicao(posicao) != null)
                 Positioned.fill(
                   child: IgnorePointer(
-                    child: Transform.translate(
-                      // <-- AJUSTE AQUI A POSIÇÃO (x, y) DA BORDA DO PÓDIO
-                      offset: const Offset(4, 4),
-                      child: Transform.scale(
-                        // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA DO PÓDIO
-                        scale: 2.0,
-                        child: Image.asset(
-                          MolduraRank.caminhoParaPosicao(posicao)!,
-                          // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA DO PÓDIO
-                          width: tamanhoAvatar * scale,
-                          height: tamanhoAvatar * scale,
-                          fit: BoxFit.contain,
-                        ),
+                    child: Transform.scale(
+                      // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA DO PÓDIO
+                      scale: 2.0,
+                      child: Image.asset(
+                        MolduraRank.caminhoParaPosicao(posicao)!,
+                        // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA DO PÓDIO
+                        width: tamanhoAvatar * scale,
+                        height: tamanhoAvatar * scale,
+                        fit: BoxFit.contain,
                       ),
                     ),
                   ),
