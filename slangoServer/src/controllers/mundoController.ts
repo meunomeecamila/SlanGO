@@ -5,7 +5,7 @@ import {
     listarMundos,
     listarMundosComProgresso,
     contarGiriasPorMundos,
-    listarGiriasAprendidasDoMundo,
+    listarTodasGiriasComStatusDoMundo,
     listarGiriasAprendidasPorTodosMundos
 } from '../services/mundoService';
 import { salvarProgressoUsuario } from '../services/preogressoService';
@@ -124,12 +124,13 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
     }
 };
 
+
 export const getGiriasAprendidasDoMundo = async (req: RequisicaoAutenticada, res: Response) => {
     try {
         const { nome } = req.params as { nome: string };
         const idUsuario = req.usuario!.id!;
 
-        const girias = await listarGiriasAprendidasDoMundo(nome, idUsuario);
+        const girias = await listarTodasGiriasComStatusDoMundo(nome, idUsuario);
 
         res.status(200).json({
             sucesso: true,
