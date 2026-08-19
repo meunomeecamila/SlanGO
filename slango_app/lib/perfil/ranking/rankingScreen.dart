@@ -389,10 +389,10 @@ class _RankingScreenState extends State<RankingScreen> {
                   child: IgnorePointer(
                     child: Transform.translate(
                       // <-- AJUSTE AQUI A POSIÇÃO (x, y) DA BORDA DO PÓDIO
-                      offset: const Offset(0, 0),
+                      offset: const Offset(4, 4),
                       child: Transform.scale(
                         // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA DO PÓDIO
-                        scale: 1.5,
+                        scale: 2.0,
                         child: Image.asset(
                           MolduraRank.caminhoParaPosicao(posicao)!,
                           // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA DO PÓDIO

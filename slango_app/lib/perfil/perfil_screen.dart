@@ -397,10 +397,10 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     child: IgnorePointer(
                       child: Transform.translate(
                         // <-- AJUSTE AQUI A POSIÇÃO (x, y) DA BORDA
-                        offset: const Offset(0, 0),
+                        offset: const Offset(4, 4),
                         child: Transform.scale(
                           // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA
-                          scale: 1.34,
+                          scale: 2.0,
                           child: Image.asset(
                             MolduraRank.caminhoParaPosicao(_posicaoRank)!,
                             // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA

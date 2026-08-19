@@ -71,6 +71,7 @@ flutter:
     - .env
     - images/itens/
     - images/astronautas/
+    - images/bordar_de_perfil/ 
     # TODO: PDFs estaticos dos certificados de cada mundo ficam nesta pasta.
     - assets/pdfs/
     - assets/sons/som_certo.mp3
