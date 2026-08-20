@@ -56,6 +56,7 @@ class _RankingScreenState extends State<RankingScreen> {
           child: Column(
             children: [
               _buildHeader(context, scale),
+              _buildIntroducao(scale),
               _buildMinhaPosicao(scale),
               Expanded(
                 child: FutureBuilder<List<ItemRanking>>(
@@ -148,63 +149,48 @@ class _RankingScreenState extends State<RankingScreen> {
 
   Widget _buildHeader(BuildContext context, double scale) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(16 * scale, 16 * scale, 16 * scale, 8 * scale),
-      child: SizedBox(
-        height: 44 * scale,
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            // ─── "RANKING" CENTRALIZADO NA TELA ───
-            Center(
-              child: Text(
-                'Ranking',
-                style: GoogleFonts.alfaSlabOne(
-                  color: AppColors.textPrimary,
-                  fontSize: 22 * scale,
-                ),
+      padding: EdgeInsets.fromLTRB(8 * scale, 12 * scale, 16 * scale, 8 * scale),
+      child: Row(
+        children: [
+          IconButton(
+            onPressed: () => Navigator.of(context).maybePop(),
+            icon: Icon(
+              Icons.arrow_back,
+              color: AppColors.textPrimary,
+              size: 22 * scale,
+            ),
+          ),
+          Expanded(
+            child: Text(
+              'Ranking',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.alfaSlabOne(
+                color: AppColors.textPrimary,
+                fontSize: 24 * scale,
+                letterSpacing: 0.5,
               ),
             ),
+          ),
+          Icon(
+            Icons.emoji_events_rounded,
+            color: AppColors.cyan,
+            size: 24 * scale,
+          ),
+          SizedBox(width: 8 * scale),
+        ],
+      ),
+    );
+  }
 
-            // ─── LOGO SLANGO (extrema esquerda) ───
-            Positioned(
-              left: 0,
-              child: Text.rich(
-                TextSpan(
-                  children: [
-                    TextSpan(
-                      text: "Slan",
-                      style: GoogleFonts.alfaSlabOne(
-                        color: Colors.white,
-                        fontSize: 26 * scale,
-                      ),
-                    ),
-                    TextSpan(
-                      text: "GO",
-                      style: GoogleFonts.alfaSlabOne(
-                        color: const Color(0xFF5EEAD4),
-                        fontSize: 26 * scale,
-                      ),
-                    ),
-                  ],
-                ),
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-
-            // ─── SETA VOLTAR PARA O MAPA (extrema direita, virada p/ direita) ───
-            Positioned(
-              right: 0,
-              child: IconButton(
-                onPressed: () => Navigator.of(context).maybePop(),
-                icon: Icon(
-                  Icons.arrow_forward,
-                  color: AppColors.textPrimary,
-                  size: 22 * scale,
-                ),
-              ),
-            ),
-          ],
-        ),
+  /// Texto de introdução explicando o que é a tela de ranking,
+  /// exibido antes do card "Sua posição".
+  Widget _buildIntroducao(double scale) {
+    return Padding(
+      padding: EdgeInsets.fromLTRB(16 * scale, 0, 16 * scale, 12 * scale),
+      child: Text(
+        'Aqui está o nosso ranking! Confira quem já aprendeu mais gírias e completou as rodadas com os melhores tempos.',
+        textAlign: TextAlign.center,
+        style: AppText.cardSubtitulo(scale),
       ),
     );
   }

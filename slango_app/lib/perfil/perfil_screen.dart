@@ -675,7 +675,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
                       "Equipado",
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
-                      style: AppText.cardSubtitulo(0.75).copyWith(
+                      style: AppText.cardSubtitulo(0.70).copyWith(
                         color: AppColors.cyan,
                         fontWeight: FontWeight.w600,
                       ),
