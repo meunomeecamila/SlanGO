@@ -30,6 +30,7 @@ class ItemRanking {
   final String nomeUsuario;
   final int melhorTempoMs;
   final int pontuacao;
+  final String? urlAstronauta; // só vem preenchido pro top 3 (1º, 2º, 3º)
 
   ItemRanking({
     required this.posicao,
@@ -37,6 +38,7 @@ class ItemRanking {
     required this.nomeUsuario,
     required this.melhorTempoMs,
     required this.pontuacao,
+    this.urlAstronauta,
   });
 
   factory ItemRanking.fromJson(Map<String, dynamic> json) => ItemRanking(
@@ -45,6 +47,7 @@ class ItemRanking {
         nomeUsuario: json['nomeUsuario'] ?? 'Jogador',
         melhorTempoMs: json['melhorTempoMs'],
         pontuacao: json['pontuacao'],
+        urlAstronauta: json['urlAstronauta'],
       );
 }
 

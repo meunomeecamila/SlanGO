@@ -130,6 +130,7 @@ export interface ItemRanking {
     idUsuario: number;
     melhorTempoMs: number;
     pontuacao: number;
+    urlAstronauta?: string | null;
 }
 
 export interface PosicaoUsuario {

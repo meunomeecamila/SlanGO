@@ -401,18 +401,31 @@ class _RankingScreenState extends State<RankingScreen> {
                     ],
                   ),
                   child: ClipOval(
-                    child: Image.asset(
-                      avatarAsset,
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
-                        color: AppColors.card,
-                        child: Icon(
-                          Icons.person,
-                          color: AppColors.textSecondary,
-                          size: 28 * scale,
-                        ),
-                      ),
-                    ),
+                    child: item.urlAstronauta != null
+                        ? Image.network(
+                            item.urlAstronauta!,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) => Container(
+                              color: AppColors.card,
+                              child: Icon(
+                                Icons.person,
+                                color: AppColors.textSecondary,
+                                size: 28 * scale,
+                              ),
+                            ),
+                          )
+                        : Image.asset(
+                            avatarAsset,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) => Container(
+                              color: AppColors.card,
+                              child: Icon(
+                                Icons.person,
+                                color: AppColors.textSecondary,
+                                size: 28 * scale,
+                              ),
+                            ),
+                          ),
                   ),
                 ),
               ),

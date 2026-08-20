@@ -96,13 +96,65 @@ export async function buscarRankingGlobal(limite = 500): Promise<ItemRanking[]> 
 
   if (error) throw new Error(error.message);
 
-  return (data ?? []).map((linha: any, index: number) => ({
+  const linhas = data ?? [];
+
+  const ranking: ItemRanking[] = linhas.map((linha: any, index: number) => ({
     posicao: index + 1,
     idUsuario: linha.id_User,
     nomeUsuario: linha.nomeUsuario,
     melhorTempoMs: linha.Tempo_Ms,
     pontuacao: linha.Pontuacao,
   }));
+
+  // Só busca astronauta pro pódio (top 3) — o resto da lista continua leve.
+  await preencherFotosDoPodio(ranking);
+
+  return ranking;
+}
+
+/**
+ * Preenche `urlAstronauta` apenas para quem está em 1º, 2º ou 3º lugar.
+ * Muta o array recebido. Não impacta o restante do ranking (posição 4+).
+ */
+async function preencherFotosDoPodio(ranking: ItemRanking[]): Promise<void> {
+  const top3 = ranking.filter((item) => item.posicao <= 3);
+  if (top3.length === 0) return;
+
+  const idsUsuarios = top3.map((item) => item.idUsuario);
+
+  const { data: usuarios, error: erroUsuarios } = await supabase
+    .from('User')
+    .select('id, id_Astronauta')
+    .in('id', idsUsuarios);
+
+  if (erroUsuarios) throw new Error(erroUsuarios.message);
+
+  const idsAstronautas = (usuarios ?? [])
+    .map((u: any) => u.id_Astronauta)
+    .filter((id: any) => id !== null && id !== undefined);
+
+  if (idsAstronautas.length === 0) return;
+
+  const { data: astronautas, error: erroAstronautas } = await supabase
+    .from('Astronauta')
+    .select('id, url_astronauta')
+    .in('id', idsAstronautas);
+
+  if (erroAstronautas) throw new Error(erroAstronautas.message);
+
+  const mapaUsuarioParaAstronautaId = new Map<number, number>(
+    (usuarios ?? []).map((u: any) => [u.id, u.id_Astronauta])
+  );
+  const mapaAstronautaIdParaUrl = new Map<number, string>(
+    (astronautas ?? []).map((a: any) => [a.id, a.url_astronauta])
+  );
+
+  for (const item of top3) {
+    const idAstronauta = mapaUsuarioParaAstronautaId.get(item.idUsuario);
+    if (idAstronauta) {
+      item.urlAstronauta = mapaAstronautaIdParaUrl.get(idAstronauta) ?? null;
+    }
+  }
 }
 
 export async function buscarPosicaoGlobalDoUsuario(idUsuario: number): Promise<PosicaoUsuario> {
