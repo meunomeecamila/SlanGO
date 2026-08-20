@@ -5,7 +5,6 @@ import geekData from '../utils/girias/geek.json';
 import jogosData from '../utils/girias/jogos.json';
 import kpopData from '../utils/girias/kpop.json';
 import maquiagemData from '../utils/girias/maquiagem.json';
-import outrosData from '../utils/girias/outros.json';
 import popData from '../utils/girias/pop.json';
 import redesSociaisData from '../utils/girias/redessociais.json';
 import relacionamentosData from '../utils/girias/relacionamentos.json';
@@ -22,7 +21,6 @@ const mundos = {
     jogos: jogosData,
     kpop: kpopData,
     maquiagem: maquiagemData,
-    outros: outrosData,
     pop: popData,
     redessociais: redesSociaisData,
     relacionamentos: relacionamentosData,
