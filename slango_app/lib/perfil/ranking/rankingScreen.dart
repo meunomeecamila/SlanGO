@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../cores.dart';
 import '../texto.dart';
@@ -148,21 +149,62 @@ class _RankingScreenState extends State<RankingScreen> {
   Widget _buildHeader(BuildContext context, double scale) {
     return Padding(
       padding: EdgeInsets.fromLTRB(16 * scale, 16 * scale, 16 * scale, 8 * scale),
-      child: Row(
-        children: [
-          IconButton(
-            onPressed: () => Navigator.of(context).maybePop(),
-            icon: Icon(Icons.arrow_back, color: AppColors.textPrimary, size: 22 * scale),
-          ),
-          SizedBox(width: 4 * scale),
-          Expanded(
-            child: Text(
-              'Ranking',
-              style: AppText.titulo(scale),
+      child: SizedBox(
+        height: 44 * scale,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // ─── "RANKING" CENTRALIZADO NA TELA ───
+            Center(
+              child: Text(
+                'Ranking',
+                style: GoogleFonts.alfaSlabOne(
+                  color: AppColors.textPrimary,
+                  fontSize: 22 * scale,
+                ),
+              ),
             ),
-          ),
-          Icon(Icons.emoji_events, color: AppColors.cyan, size: 26 * scale),
-        ],
+
+            // ─── LOGO SLANGO (extrema esquerda) ───
+            Positioned(
+              left: 0,
+              child: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Slan",
+                      style: GoogleFonts.alfaSlabOne(
+                        color: Colors.white,
+                        fontSize: 26 * scale,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "GO",
+                      style: GoogleFonts.alfaSlabOne(
+                        color: const Color(0xFF5EEAD4),
+                        fontSize: 26 * scale,
+                      ),
+                    ),
+                  ],
+                ),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+
+            // ─── SETA VOLTAR PARA O MAPA (extrema direita, virada p/ direita) ───
+            Positioned(
+              right: 0,
+              child: IconButton(
+                onPressed: () => Navigator.of(context).maybePop(),
+                icon: Icon(
+                  Icons.arrow_forward,
+                  color: AppColors.textPrimary,
+                  size: 22 * scale,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -349,57 +391,46 @@ class _RankingScreenState extends State<RankingScreen> {
             clipBehavior: Clip.none,
             alignment: Alignment.center,
             children: [
-              Container(
-                width: tamanhoAvatar * scale,
-                height: tamanhoAvatar * scale,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: corBorda,
-                    width: ehVoce ? 3.5 * scale : 3 * scale,
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: corBorda.withOpacity(ehVoce ? 0.85 : 0.5),
-                      blurRadius: ehVoce ? 22 : 12,
-                      spreadRadius: ehVoce ? 3 : 1,
+              // ─── AVATAR + MOLDURA DE RANK ───
+              AvatarComMoldura(
+                tamanhoAvatar: tamanhoAvatar * scale,
+                // <-- AJUSTE AQUI SE A MOLDURA FICAR GRANDE/PEQUENA DEMAIS
+                escalaMoldura: 1.7,
+                molduraPath: MolduraRank.caminhoParaPosicao(posicao),
+                avatar: Container(
+                  width: tamanhoAvatar * scale,
+                  height: tamanhoAvatar * scale,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: corBorda,
+                      width: ehVoce ? 3.5 * scale : 3 * scale,
                     ),
-                  ],
-                ),
-                child: ClipOval(
-                  child: Image.asset(
-                    avatarAsset,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(
-                      color: AppColors.card,
-                      child: Icon(
-                        Icons.person,
-                        color: AppColors.textSecondary,
-                        size: 28 * scale,
+                    boxShadow: [
+                      BoxShadow(
+                        color: corBorda.withOpacity(ehVoce ? 0.85 : 0.5),
+                        blurRadius: ehVoce ? 22 : 12,
+                        spreadRadius: ehVoce ? 3 : 1,
+                      ),
+                    ],
+                  ),
+                  child: ClipOval(
+                    child: Image.asset(
+                      avatarAsset,
+                      fit: BoxFit.cover,
+                      errorBuilder: (_, __, ___) => Container(
+                        color: AppColors.card,
+                        child: Icon(
+                          Icons.person,
+                          color: AppColors.textSecondary,
+                          size: 28 * scale,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
-              // ─── MOLDURA DE RANK (1º, 2º ou 3º lugar) ───
-              // Fica em volta do avatar do pódio, sem cobrir o rosto.
-              // Renderizada antes do selo de posição para o número ficar visível.
-              if (MolduraRank.caminhoParaPosicao(posicao) != null)
-                Positioned.fill(
-                  child: IgnorePointer(
-                    child: Transform.scale(
-                      // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA DO PÓDIO
-                      scale: 2.0,
-                      child: Image.asset(
-                        MolduraRank.caminhoParaPosicao(posicao)!,
-                        // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA DO PÓDIO
-                        width: tamanhoAvatar * scale,
-                        height: tamanhoAvatar * scale,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                  ),
-                ),
+              // ─── SELO DE POSIÇÃO ("1°", "2°", "3°") — SEMPRE NA FRENTE ───
               Positioned(
                 bottom: -6 * scale,
                 child: Container(
@@ -481,7 +512,6 @@ class _RankingScreenState extends State<RankingScreen> {
     int? idUsuarioAtual,
   ) {
     final ehVoce = item.idUsuario == idUsuarioAtual;
-    final avatarAsset = 'images/astronauta_${(item.idUsuario % 8) + 1}.png';
     final nomeExibicao = item.nomeUsuario;
 
     return Container(
@@ -516,41 +546,6 @@ class _RankingScreenState extends State<RankingScreen> {
             ),
           ),
           SizedBox(width: 8 * scale),
-          ClipOval(
-            child: Container(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF).withOpacity(0.6),
-                  width: ehVoce ? 2 : 1.2,
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: (ehVoce ? AppColors.cyan : const Color(0xFF9D7FFF))
-                        .withOpacity(ehVoce ? 0.5 : 0.25),
-                    blurRadius: ehVoce ? 10 : 5,
-                  ),
-                ],
-              ),
-              child: Image.asset(
-                avatarAsset,
-                width: 40 * scale,
-                height: 40 * scale,
-                fit: BoxFit.cover,
-                errorBuilder: (_, __, ___) => Container(
-                  width: 40 * scale,
-                  height: 40 * scale,
-                  color: AppColors.background,
-                  child: Icon(
-                    Icons.person,
-                    color: AppColors.textSecondary,
-                    size: 20 * scale,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(width: 12 * scale),
           Expanded(
             child: Row(
               children: [

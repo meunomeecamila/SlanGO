@@ -6,8 +6,9 @@ import '../../feedback/feedback.dart';
 
 class MapaHeader extends StatelessWidget {
   final VoidCallback? onPerfilTap;
+  final VoidCallback? onRankingTap;
 
-  const MapaHeader({super.key, this.onPerfilTap});
+  const MapaHeader({super.key, this.onPerfilTap, this.onRankingTap});
 
   @override
   Widget build(BuildContext context) {
@@ -79,6 +80,28 @@ class MapaHeader extends StatelessWidget {
               Icons.feedback_outlined,
               color: AppColors.primaryLight,
               size: 20,
+            ),
+          ),
+        ),
+
+        const SizedBox(width: 12),
+
+        GestureDetector(
+          onTap: onRankingTap,
+          child: Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.card,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(
+                color: AppColors.primaryLight,
+                width: 1.5,
+              ),
+            ),
+            child: const Icon(
+              Icons.leaderboard_rounded,
+              color: AppColors.primaryLight,
+              size: 22,
             ),
           ),
         ),

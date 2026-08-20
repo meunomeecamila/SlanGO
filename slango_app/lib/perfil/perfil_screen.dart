@@ -8,7 +8,6 @@ import '../user/User.dart';
 import 'certificados/aba_certificados.dart';
 import 'configuracoes.dart';
 import 'progresso.dart';
-import 'ranking/rankingScreen.dart';
 import 'widgets/moldura_rank.dart';
 import 'models.dart';
 import 'cores.dart';
@@ -245,18 +244,6 @@ class _PerfilScreenState extends State<PerfilScreen> {
             ),
             const SizedBox(width: 10),
             _iconButton(
-              icon: Icons.leaderboard_rounded,
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => RankingScreen(
-                    nomeUsuarioAtual: _usuario?.nome ?? widget.nome,
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(width: 10),
-            _iconButton(
               icon: Icons.settings,
               onTap: () => Navigator.push(
                 context,
@@ -288,7 +275,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
     );
   }
 
-  Widget _buildCardAvatar() {
+   Widget _buildCardAvatar() {
     final nome = _usuario?.nome ?? widget.nome ?? 'Usuário';
     final totalMundos = _mundosProgresso.isNotEmpty
         ? _mundosProgresso.length
@@ -322,93 +309,79 @@ class _PerfilScreenState extends State<PerfilScreen> {
             child: Stack(
               clipBehavior: Clip.none,
               children: [
-                Container(
-                  width: 110,
-                  height: 110,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: const Color(0xFF6C4FC9).withOpacity(0.7),
-                      width: 3,
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: AppColors.primary.withOpacity(0.45),
-                        blurRadius: 30,
-                        spreadRadius: 2,
+                // ─── AVATAR + MOLDURA DE RANK (centralizada via AvatarComMoldura) ───
+                AvatarComMoldura(
+                  tamanhoAvatar: 110,
+                  // <-- AJUSTE AQUI SE A MOLDURA FICAR GRANDE/PEQUENA DEMAIS
+                  escalaMoldura: 1.75,
+                  molduraPath: MolduraRank.caminhoParaPosicao(_posicaoRank),
+                  avatar: Container(
+                    width: 110,
+                    height: 110,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: const Color(0xFF6C4FC9).withOpacity(0.7),
+                        width: 3,
                       ),
-                    ],
-                  ),
-                  child: ClipOval(
-                    child: Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _astronautaAtual == null
-                            ? Container(
-                                color: AppColors.background,
-                                child: const Icon(
-                                  Icons.person,
-                                  color: AppColors.textSecondary,
-                                  size: 50,
-                                ),
-                              )
-                            : Image.network(
-                                _astronautaAtual!.urlAstronauta,
-                                fit: BoxFit.cover,
-                                loadingBuilder: (context, child, progresso) {
-                                  if (progresso == null) return child;
-                                  return const Center(
-                                    child: SizedBox(
-                                      width: 24,
-                                      height: 24,
-                                      child: CircularProgressIndicator(strokeWidth: 2),
-                                    ),
-                                  );
-                                },
-                                errorBuilder: (_, __, ___) => Container(
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColors.primary.withOpacity(0.45),
+                          blurRadius: 30,
+                          spreadRadius: 2,
+                        ),
+                      ],
+                    ),
+                    child: ClipOval(
+                      child: Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          _astronautaAtual == null
+                              ? Container(
                                   color: AppColors.background,
                                   child: const Icon(
                                     Icons.person,
                                     color: AppColors.textSecondary,
                                     size: 50,
                                   ),
+                                )
+                              : Image.network(
+                                  _astronautaAtual!.urlAstronauta,
+                                  fit: BoxFit.cover,
+                                  loadingBuilder: (context, child, progresso) {
+                                    if (progresso == null) return child;
+                                    return const Center(
+                                      child: SizedBox(
+                                        width: 24,
+                                        height: 24,
+                                        child: CircularProgressIndicator(strokeWidth: 2),
+                                      ),
+                                    );
+                                  },
+                                  errorBuilder: (_, __, ___) => Container(
+                                    color: AppColors.background,
+                                    child: const Icon(
+                                      Icons.person,
+                                      color: AppColors.textSecondary,
+                                      size: 50,
+                                    ),
+                                  ),
                                 ),
+                          if (itemEquipado != null)
+                            Positioned(
+                              bottom: 16,
+                              left: -2,
+                              child: Image.network(
+                                itemEquipado.iconAsset,
+                                width: 35,
+                                height: 35,
                               ),
-                        if (itemEquipado != null)
-                          Positioned(
-                            bottom: 16,
-                            left: -2,
-                            child: Image.network(
-                              itemEquipado.iconAsset,
-                              width: 35,
-                              height: 35,
                             ),
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-                // ─── MOLDURA DE RANK (Top 3 do ranking global) ───
-                // Fica POR CIMA do avatar, em volta dele, sem cobrir o rosto.
-                // Renderizada ANTES do botão de editar para que o lápis fique
-                // sempre visível por cima da moldura.
-                if (MolduraRank.caminhoParaPosicao(_posicaoRank) != null)
-                  Positioned.fill(
-                    child: IgnorePointer(
-                      
-                      child: Transform.scale(
-                        // <-- AJUSTE AQUI A ESCALA/TAMANHO DA BORDA
-                        scale: 2.0,
-                        child: Image.asset(
-                          MolduraRank.caminhoParaPosicao(_posicaoRank)!,
-                          // <-- AJUSTE AQUI A LARGURA/ALTURA DA MOLDURA
-                          width: 110,
-                          height: 110,
-                          fit: BoxFit.contain, // em volta, sem cobrir o rosto
-                        ),
+                        ],
                       ),
                     ),
                   ),
+                ),
                 Positioned(
                   right: -4,
                   bottom: -4,

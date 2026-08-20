@@ -8,7 +8,8 @@ import '../widgets/planeta_widget.dart';
 import '../widgets/navegacao_mundos.dart';
 import '../widgets/card_mundo.dart';
 import '../../shared/widgets/particulas_fundo.dart';
-import '../../perfil/perfil_screen.dart'; // ajuste o caminho se sua pasta perfil estiver em outro lugar
+import '../../perfil/perfil_screen.dart';
+import '../../../perfil/ranking/rankingScreen.dart'; 
 
 // Permite arrastar o PageView com mouse, trackpad e stylus além do touch.
 // Necessário no Flutter Web, onde por padrão só "touch" gera drag.
@@ -83,6 +84,13 @@ class _TelaMapaState extends State<TelaMapa> {
     );
   }
 
+  void abrirRanking() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const RankingScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final mundoAtual = widget.mundos[paginaAtual];
@@ -99,7 +107,10 @@ class _TelaMapaState extends State<TelaMapa> {
                 child: Column(
                   children: [
                     const SizedBox(height: 12),
-                    MapaHeader(onPerfilTap: abrirPerfil),
+                    MapaHeader(
+                      onPerfilTap: abrirPerfil,
+                      onRankingTap: abrirRanking,
+                    ),
                     const SizedBox(height: 10),
 
                     // Carrossel de Planetas com altura ideal para não cortar a arte
