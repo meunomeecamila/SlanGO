@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx-node-dev src/index.ts"
   },
   "keywords": [],
   "author": "",
