@@ -108,7 +108,36 @@ export async function listarSugestoesPendentes(): Promise<
     const sugestoes = (data ?? []) as SugestaoGiria[];
     if (sugestoes.length === 0) return [];
 
-    // Traz o nome do proponente para exibir no painel de moderação.
+    const idsUnicos = Array.from(new Set(sugestoes.map((s) => s.usuario_id)));
+    const { data: usuarios } = await supabase
+        .from('User')
+        .select('id, Nome')
+        .in('id', idsUnicos);
+
+    const mapaNomes = new Map<number, string>();
+    (usuarios ?? []).forEach((u: any) => mapaNomes.set(u.id, u.Nome));
+
+    return sugestoes.map((s) => ({
+        ...s,
+        proponente_nome: mapaNomes.get(s.usuario_id) ?? null,
+    }));
+}
+
+/** Histórico de moderação: sugestões já avaliadas (aprovadas ou recusadas). */
+export async function listarSugestoesModeradas(): Promise<
+    Array<SugestaoGiria & { proponente_nome?: string | null }>
+> {
+    const { data, error } = await supabase
+        .from('sugestoes_girias')
+        .select('*')
+        .in('status', ['APROVADO', 'REJEITADO'])
+        .order('criado_em', { ascending: false });
+
+    if (error) throw new Error(error.message);
+
+    const sugestoes = (data ?? []) as SugestaoGiria[];
+    if (sugestoes.length === 0) return [];
+
     const idsUnicos = Array.from(new Set(sugestoes.map((s) => s.usuario_id)));
     const { data: usuarios } = await supabase
         .from('User')
@@ -168,4 +197,14 @@ export async function moderarSugestao(
 
     if (error) throw new Error(error.message);
     return data as SugestaoGiria;
+}
+
+export async function deletarSugestao(id: number): Promise<boolean> {
+    const { error, count } = await supabase
+        .from('sugestoes_girias')
+        .delete({ count: 'exact' })
+        .eq('id', id);
+
+    if (error) throw new Error(error.message);
+    return (count ?? 0) > 0;
 }
