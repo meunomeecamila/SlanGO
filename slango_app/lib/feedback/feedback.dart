@@ -13,7 +13,8 @@ import 'services/sugestao_service.dart';
 ///   1. Formulário de sugestão de gíria
 ///   2. Histórico de sugestões do usuário logado
 ///   3. (Somente admin) Painel de moderação — sugestões pendentes
-///   4. Avaliação geral do app (estrelas + comentário) — sempre no final
+///   4. (Somente admin) Histórico de moderação — aprovadas/recusadas (com excluir)
+///   5. Avaliação geral do app (estrelas + comentário) — sempre no final
 class FeedbackPage extends StatefulWidget {
   const FeedbackPage({super.key});
 
@@ -97,9 +98,13 @@ class _FeedbackPageState extends State<FeedbackPage> {
                           nomeAdmin: _usuarioLogado?.nome ?? 'Admin',
                         ),
                         const SizedBox(height: 24),
+
+                        // 4. Histórico de moderação (aprovadas/recusadas) — só admin
+                        const _HistoricoModeracaoAdmin(),
+                        const SizedBox(height: 24),
                       ],
 
-                      // 4. Avaliação geral do app (sempre no final)
+                      // 5. Avaliação geral do app (sempre no final)
                       const _AvaliacaoGeralCard(),
                       const SizedBox(height: 12),
                     ],
@@ -871,7 +876,295 @@ class _LinhaCampoLeitura extends StatelessWidget {
 }
 
 // ─────────────────────────────────────────────────────────────
-// 4. AVALIAÇÃO GERAL DO APP (sempre no final)
+// 4. HISTÓRICO DE MODERAÇÃO (só admin) — aprovadas/recusadas + excluir
+// ─────────────────────────────────────────────────────────────
+
+class _HistoricoModeracaoAdmin extends StatefulWidget {
+  const _HistoricoModeracaoAdmin();
+
+  @override
+  State<_HistoricoModeracaoAdmin> createState() =>
+      _HistoricoModeracaoAdminState();
+}
+
+class _HistoricoModeracaoAdminState extends State<_HistoricoModeracaoAdmin> {
+  late Future<List<SugestaoGiria>> _future;
+
+  @override
+  void initState() {
+    super.initState();
+    _future = SugestaoService.historicoModeradas();
+  }
+
+  void _recarregar() {
+    setState(() {
+      _future = SugestaoService.historicoModeradas();
+    });
+  }
+
+  Future<void> _deletar(SugestaoGiria sugestao) async {
+    // Confirmação obrigatória antes de excluir.
+    final confirmar = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.card,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(18),
+        ),
+        title: Text(
+          'Confirmar exclusão',
+          style: GoogleFonts.poppins(
+            color: AppColors.text,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        content: const Text(
+          'Você quer mesmo deletar essa gíria? Ela vai desaparecer',
+          style: TextStyle(color: AppColors.textSecondary, height: 1.35),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: const Text(
+              'Cancelar',
+              style: TextStyle(color: AppColors.textSecondary),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFF87171),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Confirmar'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmar != true) return;
+
+    try {
+      await SugestaoService.deletar(sugestao.id);
+      if (!mounted) return;
+      // Recarrega a lista após excluir com sucesso.
+      _recarregar();
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Gíria deletada com sucesso.'),
+          backgroundColor: Colors.green,
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Erro: ${e.toString().replaceAll('Exception: ', '')}'),
+          backgroundColor: Colors.redAccent,
+        ),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _SecaoCard(
+      icone: Icons.gavel_rounded,
+      titulo: 'Histórico de moderação',
+      subtitulo:
+          'Gírias já avaliadas (aprovadas ou recusadas). Você pode excluí-las.',
+      corTitulo: AppColors.primaryLight,
+      child: FutureBuilder<List<SugestaoGiria>>(
+        future: _future,
+        builder: (context, snap) {
+          if (snap.connectionState == ConnectionState.waiting) {
+            return const Padding(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              child: Center(
+                child: CircularProgressIndicator(color: AppColors.primary),
+              ),
+            );
+          }
+          if (snap.hasError) {
+            return _MensagemErroInline(
+              texto:
+                  'Erro ao carregar histórico de moderação:\n${snap.error.toString().replaceAll('Exception: ', '')}',
+              aoTentarNovamente: _recarregar,
+            );
+          }
+          final moderadas = snap.data ?? [];
+          if (moderadas.isEmpty) {
+            return const _EstadoVazio(
+              texto: 'Nenhuma gíria foi avaliada ainda.',
+              icone: Icons.history_toggle_off_rounded,
+            );
+          }
+          return Column(
+            children: [
+              for (final s in moderadas) ...[
+                _CardHistoricoModeracao(
+                  sugestao: s,
+                  aoDeletar: () => _deletar(s),
+                ),
+                const SizedBox(height: 10),
+              ],
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+/// Card do histórico de moderação (admin). Mostra quem enviou, quem avaliou,
+/// selo de status, observação do admin e o botão exclusivo de excluir.
+class _CardHistoricoModeracao extends StatelessWidget {
+  final SugestaoGiria sugestao;
+  final VoidCallback aoDeletar;
+
+  const _CardHistoricoModeracao({
+    required this.sugestao,
+    required this.aoDeletar,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final s = sugestao;
+
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: AppColors.card.withOpacity(0.75),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: Colors.white.withOpacity(0.06)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  s.nome.toUpperCase(),
+                  style: GoogleFonts.poppins(
+                    color: AppColors.text,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ),
+              _SeloStatus(status: s.status),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            s.significado,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 13,
+              height: 1.35,
+            ),
+          ),
+          const SizedBox(height: 8),
+          // Quem enviou a gíria.
+          if ((s.proponenteNome ?? '').isNotEmpty)
+            _LinhaInfoModeracao(
+              icone: Icons.person_outline_rounded,
+              rotulo: 'Enviado por',
+              valor: s.proponenteNome!,
+            ),
+          // Quem avaliou (admin).
+          if ((s.quemAceitou ?? '').isNotEmpty)
+            _LinhaInfoModeracao(
+              icone: Icons.verified_user_outlined,
+              rotulo: 'Avaliado por',
+              valor: s.quemAceitou!,
+            ),
+          const SizedBox(height: 10),
+          // Observação/justificativa do admin.
+          _RespostaAdmin(
+            descricaoAdm: s.descricaoAdm ?? '',
+            quemAceitou: '', // já exibido acima; evita duplicar
+            status: s.status,
+          ),
+          const SizedBox(height: 8),
+          // Botão de excluir — EXCLUSIVO do histórico de moderação do admin.
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton.icon(
+              onPressed: aoDeletar,
+              style: TextButton.styleFrom(
+                foregroundColor: const Color(0xFFF87171),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+              ),
+              icon: const Icon(Icons.delete_outline, size: 18),
+              label: const Text(
+                'Deletar',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Linha compacta "ícone + rótulo: valor" usada no histórico de moderação.
+class _LinhaInfoModeracao extends StatelessWidget {
+  final IconData icone;
+  final String rotulo;
+  final String valor;
+
+  const _LinhaInfoModeracao({
+    required this.icone,
+    required this.rotulo,
+    required this.valor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        children: [
+          Icon(icone, size: 14, color: AppColors.primaryLight),
+          const SizedBox(width: 6),
+          Expanded(
+            child: RichText(
+              text: TextSpan(
+                style: const TextStyle(
+                  color: AppColors.text,
+                  fontSize: 12.5,
+                  height: 1.3,
+                ),
+                children: [
+                  TextSpan(
+                    text: '$rotulo: ',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.primaryLight,
+                    ),
+                  ),
+                  TextSpan(text: valor),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
+// 5. AVALIAÇÃO GERAL DO APP (sempre no final)
 // ─────────────────────────────────────────────────────────────
 
 class _AvaliacaoGeralCard extends StatefulWidget {

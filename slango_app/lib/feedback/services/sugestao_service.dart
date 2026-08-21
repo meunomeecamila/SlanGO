@@ -138,4 +138,37 @@ class SugestaoService {
     }
     throw Exception(dados['erro'] ?? 'Erro ao moderar sugestão.');
   }
+
+  /// Busca gírias que já foram APROVADAS ou REJEITADAS (apenas admin).
+  static Future<List<SugestaoGiria>> historicoModeradas() async {
+    final resp = await http.get(
+      Uri.parse('$_baseUrl/sugestoes/historico-moderadas'),
+      headers: await _headers(),
+    );
+
+    final dados = _decodeBody(resp);
+    if (resp.statusCode == 200) {
+      final lista = (dados['sugestoes'] as List?) ?? const [];
+      return lista
+          .map((e) => SugestaoGiria.fromJson(e as Map<String, dynamic>))
+          .toList();
+    }
+    if (resp.statusCode == 403) {
+      throw Exception('Apenas administradores acessam esta lista.');
+    }
+    throw Exception(dados['erro'] ?? 'Erro ao carregar histórico de moderação.');
+  }
+
+  /// Deleta uma sugestão do histórico (apenas admin).
+  static Future<void> deletar(String idSugestao) async {
+    final resp = await http.delete(
+      Uri.parse('$_baseUrl/sugestoes/$idSugestao'),
+      headers: await _headers(),
+    );
+
+    if (resp.statusCode != 200 && resp.statusCode != 204) {
+      final dados = _decodeBody(resp);
+      throw Exception(dados['erro'] ?? 'Erro ao deletar sugestão.');
+    }
+  }
 }
