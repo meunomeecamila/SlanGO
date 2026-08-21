@@ -4,7 +4,9 @@ import {
     criarSugestao,
     listarSugestoesDoUsuario,
     listarSugestoesPendentes,
+    listarSugestoesModeradas,
     moderarSugestao,
+    deletarSugestao,
     buscarPerfilBasicoUsuario,
     NovaSugestao,
 } from '../services/sugestaoService';
@@ -123,5 +125,40 @@ export const moderar = async (req: RequisicaoAutenticada, res: Response) => {
             return res.status(409).json({ erro: 'Sugestão já foi moderada anteriormente.' });
         }
         return res.status(500).json({ erro: msg || 'Erro ao moderar sugestão.' });
+    }
+};
+
+export const historicoModeradas = async (req: RequisicaoAutenticada, res: Response) => {
+    try {
+        const idAdmin = req.usuario!.id!;
+        const isAdmin = await garantirAdmin(idAdmin);
+        if (!isAdmin) {
+            return res.status(403).json({ erro: 'Apenas administradores acessam esta rota.' });
+        }
+
+        const sugestoes = await listarSugestoesModeradas();
+        return res.status(200).json({ sucesso: true, sugestoes });
+    } catch (e: any) {
+        return res.status(500).json({ erro: e.message ?? 'Erro ao listar histórico de moderação.' });
+    }
+};
+
+export const excluirSugestao = async (req: RequisicaoAutenticada, res: Response) => {
+    try {
+        const idAdmin = req.usuario!.id!;
+        const isAdmin = await garantirAdmin(idAdmin);
+        if (!isAdmin) {
+            return res.status(403).json({ erro: 'Apenas administradores podem excluir sugestões.' });
+        }
+
+        const { id } = req.params;
+        const excluiu = await deletarSugestao(Number(id));
+        if (!excluiu) {
+            return res.status(404).json({ erro: 'Sugestão não encontrada.' });
+        }
+
+        return res.status(200).json({ sucesso: true });
+    } catch (e: any) {
+        return res.status(500).json({ erro: e.message ?? 'Erro ao excluir sugestão.' });
     }
 };

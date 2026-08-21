@@ -11,7 +11,7 @@ import { emailValido, senhaValida } from '../utils/validador';
 
 export const criarUsuarioController = async (req: Request, res: Response) => {
     try {
-        const { nome, email, senha, confirmarSenha, responsavel, dataNascimento, perguntaSeguranca, respostaSeguranca } = req.body;
+        const { nome, email, senha, confirmarSenha, responsavel, dataNascimento, perguntaSeguranca, respostaSeguranca, email_verificado } = req.body;
 
         if (!nome || !email || !senha || !confirmarSenha || !dataNascimento) {
             return res.status(400).json({ erro: 'Nome, email, senha, confirmação de senha e data de nascimento são obrigatórios.' });
@@ -39,7 +39,7 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'Pergunta e resposta de segurança são obrigatórias.' });
         }
 
-        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento, perguntaSeguranca: perguntaSeguranca, respostaSeguranca: respostaSeguranca });
+        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento, perguntaSeguranca: perguntaSeguranca, respostaSeguranca: respostaSeguranca, email_verificado: email_verificado });
 
         res.status(201).json({
             sucesso: true,

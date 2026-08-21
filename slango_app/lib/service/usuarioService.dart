@@ -50,11 +50,9 @@ class UsuarioService {
     required String confirmarSenha,
     bool responsavel = false,
     String? dataNascimento,
-    // TODO: o backend precisa aceitar e persistir esses dois campos no
-    // endpoint /cadastrar (coluna/campo pergunta_seguranca e
-    // resposta_seguranca, por exemplo com hash da resposta).
     String? perguntaSeguranca,
     String? respostaSeguranca,
+    bool emailVerificado = false, 
   }) async {
     final payload = <String, dynamic>{
       'nome': nome,
@@ -62,6 +60,7 @@ class UsuarioService {
       'senha': senha,
       'confirmarSenha': confirmarSenha,
       'responsavel': responsavel,
+      'email_verificado': emailVerificado,
       if (dataNascimento != null) 'dataNascimento': dataNascimento,
       if (perguntaSeguranca != null && perguntaSeguranca.isNotEmpty)
         'perguntaSeguranca': perguntaSeguranca,
@@ -85,7 +84,6 @@ class UsuarioService {
 
     throw Exception(dados['erro'] ?? 'Erro ao cadastrar usuário');
   }
-
   // ── Login ──
   static Future<Usuario> login(String email, String senha) async {
     final response = await http.post(

@@ -5,6 +5,8 @@ import {
     historicoDoUsuario,
     listarPendentes,
     moderar,
+    historicoModeradas,
+    excluirSugestao,
 } from '../controllers/sugestaoController';
 
 const router = Router();
@@ -19,5 +21,9 @@ router.get('/sugestoes/minhas', historicoDoUsuario);
 // Admin: fila de moderação + ação de aceitar/recusar
 router.get('/sugestoes/pendentes', listarPendentes);
 router.patch('/sugestoes/:id/moderar', moderar);
+
+// Admin: histórico de moderação + exclusão
+router.get('/sugestoes/historico-moderadas', historicoModeradas);
+router.delete('/sugestoes/:id', excluirSugestao);
 
 export default router;

@@ -5,7 +5,7 @@ import { supabase } from '../dbConnection';
 const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>;
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca' | 'email_verificado'>;
 type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
@@ -70,7 +70,8 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Responsavel: dados.Responsavel ?? false,
                 Data: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
-                respostaSeguranca: dados.respostaSeguranca
+                respostaSeguranca: dados.respostaSeguranca,
+                email_verificado: dados.email_verificado
             }
         ])
         .select()
@@ -81,6 +82,15 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
     return removerSenha(data);
 }
 
+export async function verificarEmail(idUsuario: number) {
+    const { data, error } = await supabase
+      .from('usuarios') 
+      .update({ email_verificado: true }) 
+      .eq('id', idUsuario);
+
+    if (error) throw new Error(error.message);
+    return data;
+};
 
 export async function buscarUsuarioPorEmail(Email: string): Promise<Usuario | null> {
     const { data, error } = await supabase

@@ -180,3 +180,4 @@ export async function buscarPosicaoGlobalDoUsuario(idUsuario: number): Promise<P
     totalJogadores,
   };
 }
+

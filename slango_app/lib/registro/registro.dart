@@ -29,11 +29,11 @@ class _RegistroScreenState extends State<RegistroScreen> {
 
   bool ehPai = true;
   bool carregando = false;
+  
+  // NOVA VARIÁVEL: Controle do aceite dos termos
+  bool termosAceitos = false; 
 
-  // Data de nascimento escolhida no calendário.
   DateTime? dataNascimento;
-
-  // Pergunta de segurança escolhida no dropdown.
   String? perguntaSeguranca;
 
   @override
@@ -94,6 +94,83 @@ class _RegistroScreenState extends State<RegistroScreen> {
     }
   }
 
+  // NOVO MÉTODO: Exibir o popup de termos
+  void _mostrarPopupTermos() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          // Cor de fundo do popup parecida com a da imagem
+          backgroundColor: const Color(0xFF2B2244), 
+          // Bordas bem arredondadas do card
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24), 
+          ),
+          title: const Text(
+            'Termos de Responsabilidade',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+              fontSize: 20,
+            ),
+          ),
+          content: const Text(
+            'Ao aceitar, você concorda que seus dados poderão ser utilizados '
+            'para fins de pesquisa, análise de dados e melhoria dos serviços, '
+            'respeitando a privacidade e a segurança das informações.',
+            style: TextStyle(
+              color: Colors.white70,
+              height: 1.4, // Espaçamento entre as linhas para facilitar a leitura
+              fontSize: 15,
+            ),
+          ),
+          // Ajusta o espaçamento dos botões na parte inferior
+          actionsPadding: const EdgeInsets.only(right: 16, bottom: 16, top: 8), 
+          actions: <Widget>[
+            // Botão Rejeitar (Apenas texto vermelho/rosado)
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  termosAceitos = false; 
+                });
+                Navigator.of(context).pop();
+              },
+              child: const Text(
+                'Rejeitar',
+                style: TextStyle(color: Color(0xFFF9627D), fontWeight: FontWeight.bold),
+              ),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF7C5CFF), // O mesmo roxo do botão "Criar Conta"
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30), // Formato de pílula
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+              ),
+              onPressed: () {
+                setState(() {
+                  termosAceitos = true;
+                });
+                Navigator.of(context).pop();
+              },
+              child: const Text(
+                'Aceitar',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   Future<void> registrar() async {
     if (nomeController.text.isEmpty ||
         emailController.text.isEmpty ||
@@ -135,6 +212,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
         dataNascimento: dataNascimento?.toIso8601String().split('T').first,
         perguntaSeguranca: perguntaSeguranca?.trim(),
         respostaSeguranca: respostaSegurancaController.text.trim(),
+        emailVerificado: termosAceitos, 
       );
 
       if (!mounted) return;
@@ -190,9 +268,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       ),
 
                       const SizedBox(height: 8),
-
                       const LogoSlango(),
-
                       const SizedBox(height: 18),
 
                       Text(
@@ -200,7 +276,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         textAlign: TextAlign.center,
                         style: AppText.titulo(0.95),
                       ),
-
                       const SizedBox(height: 8),
 
                       Text(
@@ -208,7 +283,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         textAlign: TextAlign.center,
                         style: AppText.subtitulo(0.95),
                       ),
-
                       const SizedBox(height: 45),
 
                       CampoTexto(
@@ -216,7 +290,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         icon: Icons.person,
                         controller: nomeController,
                       ),
-
                       const SizedBox(height: 18),
 
                       CampoTexto(
@@ -225,7 +298,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         keyboardType: TextInputType.emailAddress,
                         controller: emailController,
                       ),
-
                       const SizedBox(height: 18),
 
                       CampoTexto(
@@ -234,7 +306,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         obscureText: true,
                         controller: senhaController,
                       ),
-
                       const SizedBox(height: 18),
 
                       CampoTexto(
@@ -243,10 +314,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         obscureText: true,
                         controller: confirmarSenhaController,
                       ),
-
                       const SizedBox(height: 18),
 
-                      // Data de nascimento (abre o calendário ao tocar).
                       GestureDetector(
                         onTap: _selecionarDataNascimento,
                         child: AbsorbPointer(
@@ -257,10 +326,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
                           ),
                         ),
                       ),
-
                       const SizedBox(height: 24),
 
-                      // Pergunta de segurança (usada depois na recuperação de senha).
                       SeletorPerguntaSeguranca(
                         perguntaSelecionada: perguntaSeguranca,
                         onChanged: (valor) {
@@ -269,7 +336,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                           });
                         },
                       ),
-
                       const SizedBox(height: 18),
 
                       CampoTexto(
@@ -277,7 +343,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         icon: Icons.question_answer,
                         controller: respostaSegurancaController,
                       ),
-
                       const SizedBox(height: 24),
 
                       SeletorTipoUsuario(
@@ -288,14 +353,40 @@ class _RegistroScreenState extends State<RegistroScreen> {
                           });
                         },
                       ),
+                      const SizedBox(height: 20),
 
-                      const SizedBox(height: 35),
+                      // NOVO WIDGET: Checkbox dos Termos
+                      Theme(
+                        data: Theme.of(context).copyWith(
+                          unselectedWidgetColor: Colors.white70,
+                        ),
+                        child: CheckboxListTile(
+                          contentPadding: EdgeInsets.zero,
+                          title: const Text(
+                            'Li e concordo com os termos de uso e responsabilidade.',
+                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          ),
+                          value: termosAceitos,
+                          activeColor: const Color(0xFF57E6D8), // Ciano do seu tema
+                          checkColor: Colors.black,
+                          controlAffinity: ListTileControlAffinity.leading,
+                          onChanged: (bool? valor) {
+                            if (valor == true) {
+                              _mostrarPopupTermos();
+                            } else {
+                              setState(() {
+                                termosAceitos = false;
+                              });
+                            }
+                          },
+                        ),
+                      ),
+                      const SizedBox(height: 20),
 
                       BotaoRegistrar(
                         onPressed: carregando ? null : registrar,
                         carregando: carregando,
                       ),
-
                       const SizedBox(height: 24),
 
                       Row(
@@ -324,7 +415,6 @@ class _RegistroScreenState extends State<RegistroScreen> {
                           ),
                         ],
                       ),
-
                       const SizedBox(height: 20),
                     ],
                   ),
