@@ -54,6 +54,7 @@ export interface Usuario {
   perguntaSeguranca: string;
   respostaSeguranca: string;
   id_Astronauta: number | null; // avatar escolhido livremente pelo usuário
+  email_verificado: boolean;
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */
