@@ -26,7 +26,7 @@
         "Uma pessoa extremamente organizada e perfeccionista no trabalho.",
         "Sinônimo japonês para colecionador de qualquer objeto, sem relação com anime."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma identidade de fã sem julgamento, apenas indicando forte interesse pela cultura pop japonesa."
     },
     {
       "id": 2,
@@ -54,7 +54,7 @@
         "Uma personagem vilã que aparece só no final de um anime.",
         "Qualquer personagem de anime que o fã mais gosta, seja homem ou mulher."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque nomeia uma preferência de fã por um personagem fictício, sem implicar prejuízo ou mérito para quem usa o termo."
     },
     {
       "id": 3,
@@ -82,7 +82,7 @@
         "Uma teoria de fã sobre o que pode acontecer na próxima temporada.",
         "Qualquer coisa que aparece nos quadrinhos, mesmo que depois seja desmentida."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque é um termo técnico do universo de fãs para validar o que é oficial em uma obra, sem carga emocional."
     },
     {
       "id": 4,
@@ -110,7 +110,7 @@
         "Um episódio especial com cenas nunca antes vistas do elenco.",
         "Qualquer episódio mais fraco de uma temporada, mesmo que avance a história."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve um conteúdo visto como enrolação, que atrasa a trama e frustra quem quer acompanhar a história principal."
     },
     {
       "id": 5,
@@ -139,7 +139,7 @@
         "Um resumo oficial divulgado pelo próprio estúdio antes do lançamento.",
         "Qualquer comentário sobre um filme, mesmo sem revelar detalhes da trama."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque se refere a estragar a surpresa de outra pessoa, sendo considerado falta de consideração entre fãs."
     },
     {
       "id": 6,
@@ -168,7 +168,7 @@
         "Uma peça de roupa vendida pronta, sem qualquer produção artesanal.",
         "Vestir qualquer fantasia, mesmo sem ser de um personagem específico."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra a criatividade, dedicação e habilidade artística de quem se veste e interpreta personagens."
     },
     {
       "id": 7,
@@ -196,7 +196,7 @@
         "Um final alternativo oficial divulgado pelos produtores do filme.",
         "Qualquer detalhe engraçado que aparece sem querer numa cena."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve um detalhe divertido e recompensador, pensado para gerar alegria em quem descobre."
     },
     {
       "id": 8,
@@ -222,7 +222,7 @@
         "Qualquer cena de ação emocionante no meio do filme.",
         "Uma cena triste que muda o humor do público, mesmo sem surpresa real."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser elogiado quando bem executado (surpreende positivamente) ou criticado quando parece forçado ou mal construído."
     },
     {
       "id": 9,
@@ -250,7 +250,7 @@
         "Uma citação rápida de outro filme, sem os personagens aparecerem de verdade.",
         "Qualquer sequência de um filme que continua a história anterior."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra a criatividade de unir universos diferentes de forma especial para os fãs."
     },
     {
       "id": 10,
@@ -278,7 +278,7 @@
         "Um vilão que trai seu mestre no meio da história.",
         "Qualquer personagem jovem de um filme de ficção científica."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque valoriza o aprendizado e o crescimento de quem está começando em uma área, sem tom pejorativo."
     },
     {
       "id": 11,
@@ -308,7 +308,7 @@
         "Um jogador experiente que finge não saber jogar para provocar os outros.",
         "Qualquer pessoa que está jogando pela primeira vez uma partida específica."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque é usado de forma depreciativa para apontar falta de habilidade ou experiência de alguém."
     },
     {
       "id": 12,
@@ -337,7 +337,7 @@
         "Queda total de conexão, quando a internet cai por completo.",
         "Qualquer demora no carregamento de uma página de internet."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve um problema técnico que atrapalha a experiência do jogo ou da transmissão."
     },
     {
       "id": 13,
@@ -366,7 +366,7 @@
         "Uma atualização oficial lançada pela empresa para o jogo.",
         "Qualquer coisa estranha que acontece no jogo, mesmo que seja proposital."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque nomeia uma falha que compromete o funcionamento correto de um sistema ou aplicativo."
     },
     {
       "id": 14,
@@ -395,7 +395,7 @@
         "Comprar um item novo na loja do jogo com dinheiro real.",
         "Ganhar qualquer recompensa dentro do jogo, mesmo sem mudar de nível."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve evolução, progresso e conquista dentro de um jogo."
     },
     {
       "id": 15,
@@ -424,7 +424,7 @@
         "Comprar itens do jogo com dinheiro real ao invés de jogar para consegui-los.",
         "Fazer qualquer missão do jogo, mesmo que seja só uma vez."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma prática comum e estratégica dentro dos jogos, sem juízo de valor sobre quem a faz."
     },
     {
       "id": 16,
@@ -454,7 +454,7 @@
         "A moeda oficial do jogo usada para comprar itens na loja.",
         "Qualquer item que o jogador compra, mesmo sem derrotar inimigos."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve recompensas e conquistas que trazem satisfação ao jogador."
     },
     {
       "id": 17,
@@ -483,7 +483,7 @@
         "Um item que o jogador ganha automaticamente ao completar o tutorial.",
         "Qualquer recompensa do jogo, mesmo que comprada na loja oficial."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque está associado à emoção de conseguir um item desejado no jogo."
     },
     {
       "id": 18,
@@ -512,7 +512,7 @@
         "O momento em que o jogo salva o progresso automaticamente.",
         "Qualquer vez que o personagem volta a se mexer depois de parado."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma mecânica padrão do jogo, sem implicar julgamento sobre o jogador."
     },
     {
       "id": 19,
@@ -541,7 +541,7 @@
         "Um item raro que aparece só uma vez por partida.",
         "Qualquer vantagem que o jogador ganha, mesmo sem ser temporária."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve uma melhoria que fortalece o personagem, beneficiando quem a recebe."
     },
     {
       "id": 20,
@@ -570,7 +570,7 @@
         "Quando o jogo remove completamente um personagem por ser injusto.",
         "Qualquer mudança feita pelos desenvolvedores em uma atualização do jogo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque implica a perda de força de algo que o jogador gostava, sendo recebido geralmente como uma notícia ruim pela comunidade."
     },
     {
       "id": 21,
@@ -598,7 +598,7 @@
         "O personagem principal controlado pelo jogador na história.",
         "Qualquer personagem secundário que aparece em poucas cenas do jogo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque é um termo técnico para classificar personagens controlados pelo jogo, sem carga de valor."
     },
     {
       "id": 22,
@@ -627,7 +627,7 @@
         "Qualquer inimigo comum que aparece várias vezes na fase.",
         "O personagem mais forte que aparece logo no início do jogo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve apenas um tipo de desafio dentro do jogo, sem julgamento sobre o jogador."
     },
     {
       "id": 23,
@@ -656,7 +656,7 @@
         "Um jogador que corre pelo mapa inteiro sem parar em lugar nenhum.",
         "Qualquer jogador que fica parado por alguns segundos durante a partida."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque é usado de forma crítica para apontar uma estratégia considerada covarde ou pouco esportiva dentro do jogo."
     },
     {
       "id": 24,
@@ -685,7 +685,7 @@
         "Explorar o mapa devagar, coletando todos os itens possíveis.",
         "Qualquer ataque feito no jogo, mesmo que devagar e com cautela."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve um estilo de jogo agressivo, que pode ser elogiado ou criticado dependendo da situação, mas o termo em si é apenas descritivo."
     },
     {
       "id": 25,
@@ -713,7 +713,7 @@
         "Qualquer tiro que acerta o inimigo, seja onde for.",
         "Um tiro certeiro no peito do inimigo que também elimina na hora."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra um tiro certeiro que exige alta habilidade do jogador."
     },
     {
       "id": 26,
@@ -741,7 +741,7 @@
         "A vida do personagem, que quando acaba, ele morre no jogo.",
         "Qualquer barra de energia do personagem, incluindo a de vida."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque é um termo técnico de jogos de RPG, sem carga de valor associada."
     },
     {
       "id": 27,
@@ -770,7 +770,7 @@
         "O dano total que um personagem causa durante a partida.",
         "Qualquer momento em que o inimigo aparece perto do jogador."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma mecânica de jogo, sem julgamento sobre quem a utiliza."
     },
     {
       "id": 28,
@@ -798,7 +798,7 @@
         "Uma atualização de segurança lançada pela desenvolvedora do jogo.",
         "Qualquer efeito visual bonito que aparece de propósito no jogo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser visto como algo divertido e curioso pelos jogadores, mas também frustrante quando atrapalha o progresso no jogo."
     },
     {
       "id": 29,
@@ -826,7 +826,7 @@
         "Terminar o jogo no modo mais difícil disponível, sem se importar com o tempo.",
         "Qualquer jogador que termina o jogo rápido, mesmo sem técnica nenhuma."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra a habilidade e dedicação de quem consegue completar o jogo rapidamente."
     },
     {
       "id": 30,
@@ -855,7 +855,872 @@
         "Comprar um item pronto direto na loja do jogo.",
         "Qualquer ação de juntar dois itens no inventário, mesmo sem criar nada novo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma mecânica comum de criação de itens dentro dos jogos."
+    },
+    {
+      "id": 31,
+      "nome": "shippar",
+      "variacoes": [
+        "ship",
+        "shippando",
+        "shippei"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Torcer para que dois personagens ou pessoas formem um casal amoroso em uma história ou na vida real.",
+      "tags": [
+        "fandom",
+        "series",
+        "animes"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eu shippo muito esses dois personagens desde a primeira temporada.",
+      "exemplos_incorretos": [
+        "Preciso shippar essa caixa pesada até o segundo andar.",
+        "Eles já são casados na história oficial, então o autor continua shippando.",
+        "Comprei um shippar novo para a minha estante de colecionáveis."
+      ],
+      "significados_incorretos": [
+        "Carregar ou empurrar um objeto muito pesado.",
+        "Ação oficial do autor ao confirmar um casamento no roteiro.",
+        "Um tipo de boneco colecionável de edição limitada."
+      ],
+      "impacto_motivo": "Positivo porque expressa torcida e apoio carinhoso para que um casal fictício ou real fique junto."
+    },
+    {
+      "id": 32,
+      "nome": "hype",
+      "variacoes": [
+        "hypado",
+        "hypar",
+        "hypada"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Expectativa intensa, empolgação ou barulho publicitário ao redor do lançamento de um jogo, filme ou produto.",
+      "tags": [
+        "cultura-pop",
+        "eventos",
+        "marketing"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O trailer do novo jogo do Homem-Aranha criou um hype gigantesco na comunidade.",
+      "exemplos_incorretos": [
+        "Lavei a louça com o hype que comprei no mercado.",
+        "O filme foi cancelado antes do lançamento por causa de excesso de hype.",
+        "Achei o filme ruim, então com certeza foi feito com muito hype."
+      ],
+      "significados_incorretos": [
+        "Um produto de limpeza de alta eficiência.",
+        "Erro de produção que leva ao cancelamento de um projeto.",
+        "Sinônimo de filme de baixa qualidade visual."
+      ],
+      "impacto_motivo": "Positivo porque expressa empolgação genuína e expectativa positiva por um lançamento."
+    },
+    {
+      "id": 33,
+      "nome": "fandom",
+      "variacoes": [
+        "fandoms"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Comunidade ou conjunto de fãs dedicados a uma franquia, série, jogo, banda ou universo fictício específico.",
+      "tags": [
+        "comunidade",
+        "cultura-pop",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O fandom de Harry Potter continua muito ativo mesmo anos após o término dos livros.",
+      "exemplos_incorretos": [
+        "Comprei um fandom de chocolate na padaria.",
+        "Ele jogou sozinho off-line o tempo todo para criar seu próprio fandom.",
+        "A editora contratou um fandom para desenhar a capa oficial."
+      ],
+      "significados_incorretos": [
+        "Um doce tradicional de confeitaria.",
+        "Modo de jogo individual sem acesso à internet.",
+        "Um ilustrador profissional contratado por grandes editoras."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma comunidade de fãs, sem juízo de valor sobre o grupo."
+    },
+    {
+      "id": 34,
+      "nome": "gank",
+      "variacoes": [
+        "gankar",
+        "gankado",
+        "gankando"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Ação em jogos multiplayer (como MOBAs) onde um ou mais jogadores emboscam um adversário desprevenido em vantagem numérica.",
+      "tags": [
+        "jogos",
+        "estrategia",
+        "moba"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O caçador do nosso time veio na minha rota e fez um gank perfeito para garantir a eliminação.",
+      "exemplos_incorretos": [
+        "Usei um gank para lubrificar a engrenagem da bicicleta.",
+        "O jogador desafiou o adversário para um duelo 1 contra 1 justo e chamou de gank.",
+        "Fiz um gank comprando poções na loja do jogo."
+      ],
+      "significados_incorretos": [
+        "Um tipo de óleo lubrificante industrial.",
+        "Um confronto individual formal e equilibrado entre dois jogadores.",
+        "O ato de adquirir itens consumíveis na loja virtual."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma tática comum em jogos multiplayer, sem indicar má conduta necessariamente."
+    },
+    {
+      "id": 35,
+      "nome": "rage quit",
+      "variacoes": [
+        "rage quittar",
+        "dar rage quit"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "O ato de desconectar ou fechar um jogo abruptamente tomado pela raiva ao estar perdendo ou sofrendo uma frustração.",
+      "tags": [
+        "jogos",
+        "comportamento",
+        "competicao"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Depois de levar três gols seguidos, ele deu um rage quit e desligou o videogame.",
+      "exemplos_incorretos": [
+        "Ele deu rage quit para comemorar a vitória no campeonato.",
+        "O jogo salvou meu progresso normalmente quando fiz o rage quit planejado.",
+        "Fazer rage quit é uma estratégia permitida em torneios para pausar a partida."
+      ],
+      "significados_incorretos": [
+        "Uma celebração entusiasmada após vencer uma partida.",
+        "Sair do jogo de forma tranquila e programada após salvar o progresso.",
+        "Uma pausa tática solicitada oficialmente durante partidas profissionais."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma reação de raiva e falta de controle emocional diante da frustração no jogo."
+    },
+    {
+      "id": 36,
+      "nome": "smurf",
+      "variacoes": [
+        "smurfar",
+        "conta smurf"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador altamente experiente que cria uma conta secundária de nível baixo para jogar contra novatos e vencer facilmente.",
+      "tags": [
+        "jogos",
+        "competicao",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele jogador no nível 5 estava jogando como um profissional, com certeza é um smurf.",
+      "exemplos_incorretos": [
+        "Comprei um smurf na feira para temperar a salada.",
+        "Ele jogou na própria conta principal de nível máximo e chamaram ele de smurf.",
+        "O smurf é o modo de treino oficial disponibilizado pelos desenvolvedores."
+      ],
+      "significados_incorretos": [
+        "Um tipo de condimento usado em receitas caseiras.",
+        "Utilizar a conta principal mais antiga e evoluída em uma partida.",
+        "Um ambiente de treinamento automatizado contra robôs no jogo."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma prática considerada desleal, já que o jogador se aproveita da desvantagem alheia."
+    },
+    {
+      "id": 37,
+      "nome": "tryhard",
+      "variacoes": [
+        "tryhardar",
+        "tryharder"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que se esforça de maneira extrema para vencer a qualquer custo, mesmo em partidas casuais ou sem valor competitivo.",
+      "tags": [
+        "jogos",
+        "competicao",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Era só uma partida amistosa para se divertir, mas tinha um tryhard jogando como se fosse final de campeonato.",
+      "exemplos_incorretos": [
+        "O jogador abandonou a partida no primeiro minuto porque é muito tryhard.",
+        "Ele jogou sem prestar atenção enquanto assistia TV, um verdadeiro tryhard.",
+        "Tryhard é a ferramenta de configuração gráfica nos menus do jogo."
+      ],
+      "significados_incorretos": [
+        "Alguém que desiste do jogo no primeiro obstáculo.",
+        "Um jogador desatento que joga sem qualquer interesse no resultado.",
+        "Um menu de opções visuais para melhorar o desempenho do jogo."
+      ],
+      "impacto_motivo": "Depende do contexto porque pode ser elogiado como dedicação em partidas competitivas, mas criticado quando o esforço excessivo desequilibra jogos casuais."
+    },
+    {
+      "id": 38,
+      "nome": "skin",
+      "variacoes": [
+        "skins"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Visual alternativo, roupa ou aparência estética para um personagem, arma ou item em um jogo, sem alterar seus atributos funcionais.",
+      "tags": [
+        "jogos",
+        "customizacao",
+        "estetica"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Comprei uma skin lendária de Halloween para o meu personagem favorito no jogo.",
+      "exemplos_incorretos": [
+        "Comprei uma skin nova que aumentou o dano da minha espada em 50%.",
+        "O servidor caiu por causa de uma skin na conexão de rede.",
+        "Passei uma skin na parede para cobrir a umidade."
+      ],
+      "significados_incorretos": [
+        "Um item pago que altera o poder de ataque ou atributos de combate.",
+        "Uma falha crítica de infraestrutura nos servidores de um jogo.",
+        "Um tipo de tinta impermeabilizante para construções."
+      ],
+      "impacto_motivo": "Positivo porque está associado à personalização estética e diversão visual dentro do jogo."
+    },
+    {
+      "id": 39,
+      "nome": "clutch",
+      "variacoes": [
+        "clutchar",
+        "clutchei"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Momento crucial em que um jogador consegue vencer uma rodada decisiva sozinho contra múltiplos adversários.",
+      "tags": [
+        "jogos",
+        "habilidade",
+        "competicao"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele ficou sozinho contra três inimigos e fez um clutch incrível para salvar o time.",
+      "exemplos_incorretos": [
+        "O motorista trocou o clutch do motor antes da viagem de carro.",
+        "Ele perdeu a partida fácil em um clutch e o time foi eliminado sem reagir.",
+        "Apertei o botão de clutch para abrir a loja do jogo."
+      ],
+      "significados_incorretos": [
+        "Uma peça mecânica que compõe a transmissão de veículos automotores.",
+        "Uma derrota vexatória contra um único adversário fraco.",
+        "Atalho de teclado destinado a compras de itens no inventário."
+      ],
+      "impacto_motivo": "Positivo porque celebra um momento de virada heroica e habilidade sob pressão."
+    },
+    {
+      "id": 40,
+      "nome": "tiltar",
+      "variacoes": [
+        "tilt",
+        "tiltado",
+        "tiltando"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Perder o controle emocional ou a concentração após erros seguidos, passando a jogar de forma desordenada e com raiva.",
+      "tags": [
+        "jogos",
+        "psicologia",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Errei dois passes no começo do jogo, tiltei completamente e comecei a fazer tudo errado.",
+      "exemplos_incorretos": [
+        "Tiltei o botão no teclado para aumentar o volume da música.",
+        "Ele ficou super calmo e concentrado após tiltar no meio da partida.",
+        "Tiltei a parede da casa para ajustar o ângulo do sol."
+      ],
+      "significados_incorretos": [
+        "Pressionar uma tecla física para controle de áudio no computador.",
+        "Entrar em um estado de foco profundo e tranquilidade mental.",
+        "Inclinar uma estrutura física durante obras de construção."
+      ],
+      "impacto_motivo": "Negativo porque descreve a perda de controle emocional que prejudica o desempenho do jogador."
+    },
+    {
+      "id": 41,
+      "nome": "cooldown",
+      "variacoes": [
+        "CD",
+        "tempo de recarga"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Tempo de espera necessário antes que uma habilidade, magia ou item possa ser utilizado novamente no jogo.",
+      "tags": [
+        "jogos",
+        "mecanica",
+        "estrategia"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Não posso usar a cura agora, a habilidade ainda está em cooldown por mais cinco segundos.",
+      "exemplos_incorretos": [
+        "Liguei o cooldown para gelar a água do filtro da cozinha.",
+        "O cooldown do jogo permite usar a mesma magia infinitas vezes sem parar.",
+        "Comprei um cooldown novo para usar no meu computador portátil."
+      ],
+      "significados_incorretos": [
+        "Aparelho doméstico responsável pelo resfriamento de líquidos.",
+        "Um recurso que elimina o tempo de espera de feitiços de forma definitiva.",
+        "Acessório de hardware para refrigeração de notebooks."
+      ],
+      "impacto_motivo": "Neutro porque descreve um mecanismo técnico padrão dos jogos."
+    },
+    {
+      "id": 42,
+      "nome": "hitbox",
+      "variacoes": [
+        "hitboxes"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Área invisível no código do jogo que determina o espaço exato onde um personagem ou objeto pode receber dano.",
+      "tags": [
+        "jogos",
+        "programacao",
+        "mecanica"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "A hitbox desse personagem é gigantesca, qualquer tiro acerta ele facilmente.",
+      "exemplos_incorretos": [
+        "Guardei minhas ferramentas dentro de uma hitbox de plástico.",
+        "A hitbox do jogo toca as músicas de fundo da fase.",
+        "Apertei o botão de hitbox para trocar de arma na partida."
+      ],
+      "significados_incorretos": [
+        "Uma caixa física de armazenamento para ferramentas de oficina.",
+        "O sistema responsável por reproduzir a trilha sonora de um game.",
+        "Comando de entrada utilizado para alterar o armamento equipado."
+      ],
+      "impacto_motivo": "Neutro porque é um termo técnico de programação de jogos, sem carga de valor."
+    },
+    {
+      "id": 43,
+      "nome": "pay to win",
+      "variacoes": [
+        "P2W",
+        "pague para vencer"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Jogo onde jogadores que gastam dinheiro real obtêm vantagens de desempenho injustas sobre quem joga de graça.",
+      "tags": [
+        "jogos",
+        "monetizacao",
+        "critica"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Esse jogo se tornou extremamente pay to win; quem compra os itens da loja sempre vence.",
+      "exemplos_incorretos": [
+        "Esse jogo é tão pay to win que é impossível gastar dinheiro nele.",
+        "Um jogo pay to win é aquele que vende apenas roupas cosméticas.",
+        "Ele jogou cem horas grátis sem comprar nada e por isso foi chamado de pay to win."
+      ],
+      "significados_incorretos": [
+        "Jogos que não possuem nenhum tipo de loja interna com dinheiro real.",
+        "Títulos que vendem exclusivamente alterações estéticas sem impacto na jogabilidade.",
+        "Jogador que recusa realizar compras com moedas verdadeiras."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma prática considerada injusta, que favorece quem paga em detrimento de quem joga de graça."
+    },
+    {
+      "id": 44,
+      "nome": "tankar",
+      "variacoes": [
+        "tank",
+        "tankando",
+        "tankei"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Absorver grandes quantidades de dano para proteger aliados no jogo, ou resistir a uma situação difícil na vida real.",
+      "tags": [
+        "jogos",
+        "rpg",
+        "giria-da-internet"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Vou de guerreiro pesado nessa partida para tankar os ataques do chefe.",
+      "exemplos_incorretos": [
+        "Tankei o carro na vaga apertada do estacionamento.",
+        "Ele é o atirador de longe, a função dele é tankar na retaguarda.",
+        "Tankei uma poção de vida para recuperar os pontos do personagem."
+      ],
+      "significados_incorretos": [
+        "Estacionar um automóvel em um espaço reduzido.",
+        "Atacar inimigos à distância sem receber golpes diretos.",
+        "Consumir itens comestíveis dentro do inventário."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma função estratégica dentro do jogo (absorver dano), sem julgamento sobre o jogador."
+    },
+    {
+      "id": 45,
+      "nome": "debuff",
+      "variacoes": [
+        "debuffar",
+        "debuffado"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Efeito negativo temporário aplicado a um personagem, como redução de velocidade, defesa ou causar envenenamento.",
+      "tags": [
+        "jogos",
+        "rpg",
+        "mecanica"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O chefe me aplicou um debuff de lentidão e não consegui desviar do ataque.",
+      "exemplos_incorretos": [
+        "Tomei uma poção de debuff para aumentar meu dano em 100%.",
+        "O debuff restaurou toda a vida do meu aliado no combate.",
+        "Troquei o debuff do computador para deixar o sistema mais rápido."
+      ],
+      "significados_incorretos": [
+        "Efeito benéfico que multiplica a força do personagem.",
+        "Habilidade focada em regeneração e cura de vida.",
+        "Processador de dados utilizado na aceleração de sistemas."
+      ],
+      "impacto_motivo": "Negativo porque descreve um efeito prejudicial que enfraquece o personagem."
+    },
+    {
+      "id": 46,
+      "nome": "spin-off",
+      "variacoes": [
+        "spin-offs",
+        "spinoff"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Obra de ficção (série, filme ou jogo) derivada de outra já existente, focando em personagens ou elementos secundários.",
+      "tags": [
+        "series",
+        "filmes",
+        "jogos"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "A série 'Better Call Saul' é um spin-off de sucesso do universo de 'Breaking Bad'.",
+      "exemplos_incorretos": [
+        "O spin-off do carro quebrou durante a curva na pista.",
+        "A continuação direta que foca no mesmo protagonista é chamada de spin-off.",
+        "Comprei um spin-off de chocolate na loja de doces."
+      ],
+      "significados_incorretos": [
+        "Dispositivo mecânico presente em eixos de automóveis.",
+        "Sequência principal que mantém a mesma linha narrativa e protagonista.",
+        "Marca comercial de produtos alimentícios importados."
+      ],
+      "impacto_motivo": "Neutro porque descreve um tipo de produção derivada, sem juízo de valor sobre sua qualidade."
+    },
+    {
+      "id": 47,
+      "nome": "cliffhanger",
+      "variacoes": [
+        "cliffhangers"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Recurso narrativo onde uma história termina em um momento de extremo suspense, sem resolução imediata.",
+      "tags": [
+        "series",
+        "livros",
+        "roteiro"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O último episódio da temporada terminou em um cliffhanger chocante com o destino do herói incerto.",
+      "exemplos_incorretos": [
+        "Usei um cliffhanger para pendurar o quadro na parede do quarto.",
+        "A história foi totalmente concluída e respondeu tudo no meio do capítulo, um clássico cliffhanger.",
+        "O cliffhanger é o ator que faz as cenas de ação perigosas."
+      ],
+      "significados_incorretos": [
+        "Suporte metálico utilizado na fixação de objetos decorativos.",
+        "Encerramento definitivo de uma trama sem deixar dúvidas em aberto.",
+        "Profissional especialista em dublagem de risco em produções."
+      ],
+      "impacto_motivo": "Neutro porque descreve um recurso narrativo comum, sem carga emocional específica."
+    },
+    {
+      "id": 48,
+      "nome": "fanfic",
+      "variacoes": [
+        "fic",
+        "fanfics",
+        "fanfiction"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "História fictícia criada por fãs utilizando personagens e universos de obras já existentes criadas por outros autores.",
+      "tags": [
+        "literatura",
+        "fandom",
+        "criatividade"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ela escreveu uma fanfic incrível imaginando um final alternativo para a saga.",
+      "exemplos_incorretos": [
+        "Comprei o livro de fanfic oficial escrito e publicado pelo autor original.",
+        "O estúdio lançou a fanfic oficial do filme nos cinemas do país.",
+        "Usei uma fanfic para colar as peças do modelo de plástico."
+      ],
+      "significados_incorretos": [
+        "Obra literária canônica publicada diretamente pelo criador da franquia.",
+        "Adaptacao cinematografica de alto orçamento produzida por estúdios.",
+        "Material adesivo utilizado em aeromodelismo."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma prática criativa comum entre fãs, sem julgamento sobre quem a produz."
+    },
+    {
+      "id": 49,
+      "nome": "lore",
+      "variacoes": [
+        "lores"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "O conjunto de histórias, lendas, passado e detalhes do mundo em que se passa um jogo, livro ou série.",
+      "tags": [
+        "historia",
+        "jogos",
+        "universo"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A lore de Dark Souls é rica e precisa ser descoberta através da leitura das descrições dos itens.",
+      "exemplos_incorretos": [
+        "A lore do monitor está ajustada em alta resolução de imagem.",
+        "Comprei uma lore de pão na padaria hoje cedo.",
+        "Ele apertou o botão de lore para pular os diálogos da história."
+      ],
+      "significados_incorretos": [
+        "Configuração técnica de telas e monitores digitais.",
+        "Unidade de medida de panificação artesanal.",
+        "Comando de interface que ignora sequências narrativas."
+      ],
+      "impacto_motivo": "Positivo porque valoriza a riqueza e profundidade da história construída em torno de uma obra."
+    },
+    {
+      "id": 50,
+      "nome": "gacha",
+      "variacoes": [
+        "jogos gacha",
+        "gachas"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Gênero de jogo que utiliza mecânicas de sorteio aleatório similares a máquinas de cápsulas para obter novos personagens ou itens.",
+      "tags": [
+        "jogos",
+        "mobile",
+        "sorte"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Genshin Impact é um dos jogos gacha mais populares do mundo atualmente.",
+      "exemplos_incorretos": [
+        "Instalei um gacha de madeira na janela para bloquear o vento.",
+        "Nesse gacha você escolhe exatamente o personagem que quer comprar sem sorteios.",
+        "Comi um gacha recheado com queijo no almoço."
+      ],
+      "significados_incorretos": [
+        "Estrutura de madeira aplicada em caixilhos de janelas.",
+        "Sistema de loja direta onde não existem elementos aleatórios.",
+        "Prato típico da culinária asiática."
+      ],
+      "impacto_motivo": "Neutro porque descreve um gênero de jogo baseado em sorte, sem juízo de valor implícito no termo em si."
+    },
+    {
+      "id": 51,
+      "nome": "RNG",
+      "variacoes": [
+        "random number generator"
+      ],
+      "classe_gramatical": "sigla",
+      "significado": "Sigla para 'Gerador de Números Aleatórios'. Usado pelos jogadores para se referir ao fator sorte ou probabilidade do jogo.",
+      "tags": [
+        "jogos",
+        "mecanica",
+        "sorte"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Perdi a partida porque o RNG não ajudou e nenhum item raro apareceu para mim.",
+      "exemplos_incorretos": [
+        "O RNG do meu carro pifou na rodovia e o motor parou.",
+        "Aquele jogador venceu usando apenas RNG e nenhuma aleatoriedade.",
+        "Comprei um cabo RNG para conectar a televisão à internet."
+      ],
+      "significados_incorretos": [
+        "Componente elétrico interno de motores a combustão.",
+        "Estilo de jogo determinístico baseado puramente em habilidade sem sorte.",
+        "Padrão de cabeamento para redes de dados locais."
+      ],
+      "impacto_motivo": "Depende do contexto porque pode ser usado para comemorar um resultado sortudo ou para reclamar de azar, dependendo da situação."
+    },
+    {
+      "id": 52,
+      "nome": "stun",
+      "variacoes": [
+        "stunnar",
+        "stunnado"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Efeito de controle de grupo que deixa o personagem atordoado e temporariamente incapaz de se mover ou realizar ações.",
+      "tags": [
+        "jogos",
+        "combate",
+        "mecanica"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Tomei um stun do mago inimigo e fiquei parado sem conseguir atacar por dois segundos.",
+      "exemplos_incorretos": [
+        "Usei o stun para acelerar a corrida do meu personagem pelo mapa.",
+        "O stun aumentou a vida do meu aliado durante a batalha.",
+        "Comprei um stun de couro para usar no inverno."
+      ],
+      "significados_incorretos": [
+        "Habilidade passiva que concede aumento de velocidade de movimento.",
+        "Mecânica responsável por curar pontos de vida.",
+        "Peça de vestuário feita para dias frios."
+      ],
+      "impacto_motivo": "Negativo porque descreve um efeito que prejudica e limita as ações do personagem."
+    },
+    {
+      "id": 53,
+      "nome": "meta",
+      "variacoes": [
+        "metagame"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "A sigla para 'Most Effective Tactic Available'. Refere-se às estratégias, personagens e composições mais eficientes e fortes no momento atual do jogo.",
+      "tags": [
+        "jogos",
+        "estrategia",
+        "competicao"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Essa arma está muito forte e virou a principal escolha do meta na atual atualização.",
+      "exemplos_incorretos": [
+        "A meta do meu computador estragou e o sistema não liga.",
+        "Escolhi o pior personagem do jogo porque ele é o mais meta de todos.",
+        "Gastei toda a minha meta comprando remédios na farmácia."
+      ],
+      "significados_incorretos": [
+        "Placa de circuito impresso de computadores pessoais.",
+        "Elemento do jogo reconhecido como o mais fraco e inútil da versão.",
+        "Anotação financeira de despesas pessoais."
+      ],
+      "impacto_motivo": "Neutro porque é um termo técnico competitivo usado para indicar estratégias eficientes, sem carga emocional."
+    },
+    {
+      "id": 54,
+      "nome": "mob",
+      "variacoes": [
+        "mobs"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Termo geral usado em jogos para designar qualquer criatura ou monstro genérico controlado pela inteligência artificial.",
+      "tags": [
+        "jogos",
+        "rpg",
+        "inimigos"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Eliminei os mobs fracos que estavam no caminho antes de enfrentar o chefe da caverna.",
+      "exemplos_incorretos": [
+        "Limpei o chão com o mob de limpeza antes das visitas chegarem.",
+        "O mob é o jogador humano que lidera a equipe adversária.",
+        "Comprei um mob novo para navegar na internet do celular."
+      ],
+      "significados_incorretos": [
+        "Ferramenta de limpeza doméstica composta por fios de algodão.",
+        "O capitão ou líder humano da equipe rival.",
+        "Navegador de internet feito para dispositivos móveis."
+      ],
+      "impacto_motivo": "Neutro porque descreve genericamente uma criatura do jogo, sem juízo de valor."
+    },
+    {
+      "id": 55,
+      "nome": "baitar",
+      "variacoes": [
+        "bait",
+        "baitado",
+        "baitei"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Atrair um adversário para uma armadilha fazendo-o acreditar que tem uma oportunidade fácil de ataque.",
+      "tags": [
+        "jogos",
+        "estrategia",
+        "enganacao"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Fiquei com pouca vida de propósito para baitar o inimigo até a emboscada da minha equipe.",
+      "exemplos_incorretos": [
+        "Baitei meu sapato antes de sair para a caminhada.",
+        "O jogador atacou de frente abertamente sem plano algum e chamou isso de baitar.",
+        "Baitei o cabo na tomada para ligar a televisão."
+      ],
+      "significados_incorretos": [
+        "Atar ou amarrar calçados esportivos.",
+        "Realizar um ataque direto e frontal sem disfarces.",
+        "Conectar um cabo de energia em uma tomada."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma tática estratégica comum em jogos, sem indicar má conduta."
+    },
+    {
+      "id": 56,
+      "nome": "kiting",
+      "variacoes": [
+        "kitar",
+        "kite"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Tática de atacar o inimigo à distância enquanto se movimenta continuamente para trás para se manter fora do alcance de retaliação.",
+      "tags": [
+        "jogos",
+        "estrategia",
+        "habilidade"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O atirador fez um kiting perfeito contra o guerreiro lento e venceu o duelo sem sofrer dano.",
+      "exemplos_incorretos": [
+        "Fiz um kiting no céu da praia usando uma rabiola de papel.",
+        "Kiting é quando o jogador fica parado no mesmo lugar recebendo todos os golpes.",
+        "Comprei um kiting para fazer exames de laboratório."
+      ],
+      "significados_incorretos": [
+        "Ato de soltar uma pipa de brinquedo ao vento.",
+        "Estratégia de permanecer imóvel absorvendo danos.",
+        "Conjunto de tubos de ensaio para uso científico."
+      ],
+      "impacto_motivo": "Positivo porque celebra a habilidade tática de manter distância segura do inimigo enquanto ataca."
+    },
+    {
+      "id": 57,
+      "nome": "soft reboot",
+      "variacoes": [
+        "reboot suave"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Reinício parcial de uma franquia que altera o tom e o estilo sem apagar os acontecimentos e a cronologia dos filmes ou jogos anteriores.",
+      "tags": [
+        "cinema",
+        "series",
+        "jogos"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "O novo jogo da franquia foi um soft reboot: manteve o mesmo protagonista, mas mudou a jogabilidade e a ambientação.",
+      "exemplos_incorretos": [
+        "Apagaram toda a história anterior e refizeram tudo do zero absoluto num clássico soft reboot.",
+        "O soft reboot é o botão de desligar a tomada na parede.",
+        "Comprei um soft reboot para calçar nos pés durante a corrida."
+      ],
+      "significados_incorretos": [
+        "Reinício total que ignora e apaga completamente todo o passado canônico.",
+        "Interruptor elétrico residencial.",
+        "Calçado esportivo com solado macio."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma prática comum da indústria de entretenimento, sem carga emocional específica."
+    },
+    {
+      "id": 58,
+      "nome": "OTP",
+      "variacoes": [
+        "one true pairing"
+      ],
+      "classe_gramatical": "sigla",
+      "significado": "Sigla para 'One True Pairing'. Refere-se ao casal de personagens favorito e definitivo de um fã em uma obra de ficção.",
+      "tags": [
+        "fandom",
+        "romance",
+        "comunidade"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eles são o meu OTP supremo da série, não aceito ver nenhum dos dois com outros personagens.",
+      "exemplos_incorretos": [
+        "Digitei o OTP da minha conta para fazer uma transferência bancária.",
+        "OTP é quando o jogador escolhe jogar sozinho contra um time inteiro.",
+        "Instalei um OTP novo na minha bicicleta."
+      ],
+      "significados_incorretos": [
+        "Código numérico temporário enviado por SMS para validação financeira.",
+        "Modo de jogo solo contra equipes formadas.",
+        "Acessório refletor instalado em rodas de bicicletas."
+      ],
+      "impacto_motivo": "Positivo porque expressa afeto e admiração pelo casal favorito de um fã em uma obra."
+    },
+    {
+      "id": 59,
+      "nome": "poggers",
+      "variacoes": [
+        "pog"
+      ],
+      "classe_gramatical": "interjeicao",
+      "significado": "Expressão usada na cultura da internet para demonstrar empolgação, surpresa positiva ou reação a uma jogada incrível.",
+      "tags": [
+        "twitch",
+        "internet",
+        "memes"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Que jogada sensacional você fez no campeonato, foi muito poggers!",
+      "exemplos_incorretos": [
+        "Fiquei muito triste com essa notícia ruim, totalmente poggers.",
+        "Comprei um pacote de poggers para comer assistindo ao filme.",
+        "Pressionei o poggers para desligar o computador."
+      ],
+      "significados_incorretos": [
+        "Expressão que representa tristeza profunda ou desapontamento.",
+        "Salgadinho industrializado de pacote.",
+        "Comando de encerramento de sistema operacional."
+      ],
+      "impacto_motivo": "Positivo porque expressa empolgação e reação favorável a algo impressionante."
+    },
+    {
+      "id": 60,
+      "nome": "nerdola",
+      "variacoes": [
+        "nerdolas"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Gíria pejorativa usada para descrever o fã da cultura geek com comportamentos tóxicos, intolerantes ou puristas extremistas.",
+      "tags": [
+        "comportamento",
+        "internet",
+        "critica"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Aquele grupo de nerdolas ficou reclamando na internet só porque a série teve diversão no elenco.",
+      "exemplos_incorretos": [
+        "Ele é um nerdola super gentil que ajuda todo mundo na comunidade.",
+        "Comprei uma nerdola para acender a luz da sala.",
+        "Nerdola é o profissional que faz manutenção em redes de computadores."
+      ],
+      "significados_incorretos": [
+        "Fã amigável e acolhedor dentro de uma comunidade.",
+        "Lâmpada decorativa de teto.",
+        "Técnico encarregado pela infraestrutura de redes."
+      ],
+      "impacto_motivo": "Negativo porque é usado de forma pejorativa para criticar comportamentos tóxicos e extremistas dentro da própria comunidade geek."
     }
   ]
 }

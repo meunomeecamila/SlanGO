@@ -25,7 +25,7 @@
         "Pessoa com quem você troca mensagens picantes sem compromisso.",
         "Pessoa com quem você já ficou algumas vezes, mas sem assumir nada."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Termo neutro pois descreve apenas um sentimento espontâneo de atração, sem carregar julgamento moral ou conotação ofensiva."
     },
     {
       "id": 2,
@@ -54,7 +54,7 @@
         "Pessoa que você segue nas redes sociais mas nunca conversou.",
         "Pessoa com quem você já teve um relacionamento sério no passado."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Classificado como neutro por descrever um tipo de envolvimento casual comum, sem apontar culpa ou mérito para quem está nessa situação."
     },
     {
       "id": 3,
@@ -81,7 +81,7 @@
         "Saída em grupo com vários amigos sem intenção romântica.",
         "Encontro rápido só pra decidir o status do relacionamento."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Impacto positivo porque nomeia um momento de conexão e cuidado entre duas pessoas, associado a expectativa boa e cuidado com a aparência/comportamento."
     },
     {
       "id": 4,
@@ -110,7 +110,7 @@
         "Ser rejeitado ao convidar alguém pra sair.",
         "Ficar esperando resposta de mensagem por muito tempo sem cancelar o encontro."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma atitude de desrespeito e descaso com o tempo e os sentimentos de quem esperava o encontro."
     },
     {
       "id": 5,
@@ -136,7 +136,7 @@
         "Conversa leve sobre planos de fim de semana com o parceiro.",
         "Discussão sobre dividir contas e finanças do casal."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Impacto negativo porque, embora seja uma conversa necessária, o termo costuma surgir associado a tensão, desgaste e risco de término do relacionamento."
     },
     {
       "id": 6,
@@ -163,7 +163,7 @@
         "Amigo que sempre apresenta pessoas solteiras umas às outras.",
         "Pessoa que flerta abertamente com desconhecidos em festas, sem laço com amigos."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo por descrever alguém que age de forma desleal, tentando se envolver com o parceiro ou parceira de um amigo, ferindo confiança e lealdade."
     },
     {
       "id": 7,
@@ -191,7 +191,7 @@
         "Pessoa que segue perfis de famosos nas redes sociais.",
         "Pessoa que manda mensagem discreta pra saber se você está solteiro."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma postura discreta de admiração à distância, sem intenção de prejudicar ninguém nem ação invasiva."
     },
     {
       "id": 8,
@@ -218,7 +218,7 @@
         "Pessoa que você conheceu recentemente em um aplicativo de namoro.",
         "Pessoa com quem você já namorou, mas terminou o relacionamento."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro pois nomeia um estágio intermediário de envolvimento afetivo comum entre jovens, sem juízo de valor sobre certo ou errado."
     },
     {
       "id": 9,
@@ -245,7 +245,7 @@
         "Amigo que sempre cancela os planos de última hora.",
         "Pessoa que acompanha o casal só pra dar conselhos de relacionamento."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque retrata uma situação de constrangimento e exclusão social, evidenciando o desconforto de quem se sente sobrando."
     },
     {
       "id": 10,
@@ -273,7 +273,7 @@
         "Fazer as pazes com o parceiro depois de uma briga.",
         "Apresentar duas pessoas solteiras na esperança de que fiquem juntas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque expressa torcida e apoio genuíno pela felicidade de um casal, seja na vida real ou na ficção."
     },
     {
       "id": 11,
@@ -300,7 +300,7 @@
         "Terminar um relacionamento pessoalmente, com conversa clara.",
         "Reaparecer de repente depois de meses sem falar, como se nada tivesse acontecido."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo pois descreve o corte abrupto e sem explicação de contato, causando confusão e sofrimento emocional em quem foi afastado."
     },
     {
       "id": 12,
@@ -326,7 +326,7 @@
         "Trocar presentes simbólicos no aniversário de namoro.",
         "Demonstrar carinho genuíno e equilibrado logo no início do namoro."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma manipulação afetiva, em que o excesso de atenção inicial é usado como ferramenta para prender emocionalmente a outra pessoa."
     },
     {
       "id": 13,
@@ -352,7 +352,7 @@
         "Garoto mais novo que a pessoa está namorando.",
         "Rapaz imaturo que ainda mora com os pais e não trabalha."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo por elogiar a aparência ou o estilo de um rapaz de forma leve, sem cunho ofensivo."
     },
     {
       "id": 14,
@@ -380,7 +380,7 @@
         "Casal recém-casado que está em lua de mel.",
         "Amigos inseparáveis que sempre andam juntos, sem relação romântica."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve com carinho e bom humor a demonstração pública de afeto de um casal apaixonado."
     },
     {
       "id": 15,
@@ -408,7 +408,7 @@
         "Pessoa que ainda está na faculdade e mora com os pais.",
         "Pessoa mais nova que aparenta ser mais madura que a idade real."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser uma brincadeira leve entre amigos sobre diferença de idade, mas também pode soar depreciativo dependendo do tom e da intenção de quem fala."
     },
     {
       "id": 16,
@@ -435,7 +435,7 @@
         "Amizade antiga que dura desde a infância.",
         "Relacionamento sério disfarçado de amizade pros pais não desconfiarem."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve um arranjo consensual entre duas pessoas que se entendem e respeitam os limites combinados, sem promessas quebradas."
     },
     {
       "id": 17,
@@ -462,7 +462,7 @@
         "Parceiro que mora sozinho, sem dividir casa com ninguém.",
         "Marido oficial, já casado no papel."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve carinhosamente uma rotina de convivência e cumplicidade típica de casais comprometidos, mesmo sem formalização."
     },
     {
       "id": 18,
@@ -490,7 +490,7 @@
         "Pessoa nervosa antes do primeiro encontro.",
         "Pessoa que demonstra interesse genuíno e no ritmo certo desde o início."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser usado como crítica a alguém apressado nos sentimentos, mas também de forma compreensiva, reconhecendo apenas intensidade emocional."
     },
     {
       "id": 19,
@@ -518,7 +518,7 @@
         "Elogiar um amigo de forma sincera sem intenção romântica.",
         "Convidar alguém pra sair de forma direta, sem enrolação."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma prática comum de flerte por meio da conversa, sem indicar má intenção ou prejuízo a alguém."
     },
     {
       "id": 20,
@@ -545,7 +545,7 @@
         "Errar o horário combinado de um encontro.",
         "Ser ignorado nas redes sociais depois de mandar mensagem."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo por descrever a experiência de rejeição direta, um momento desconfortável e de frustração emocional para quem foi recusado."
     },
     {
       "id": 21,
@@ -572,7 +572,7 @@
         "Terminar um relacionamento de forma repentina.",
         "Flertar com outras pessoas sem realmente trair fisicamente."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque nomeia diretamente um ato de traição, quebra de confiança e compromisso dentro de um relacionamento."
     },
     {
       "id": 22,
@@ -600,7 +600,7 @@
         "Comportamento estranho mas inofensivo do parceiro.",
         "Sinal positivo que indica que a pessoa é confiável e estável."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque alerta sobre comportamentos tóxicos ou prejudiciais, funcionando como um sinal de risco a ser evitado num relacionamento."
     },
     {
       "id": 23,
@@ -629,7 +629,7 @@
         "Vestir roupas caras e de marca em qualquer ocasião.",
         "Ter dinheiro suficiente pra pagar tudo em um encontro."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia atributos de autoconfiança, estilo e carisma de alguém, sendo usado como reconhecimento e admiração."
     },
     {
       "id": 24,
@@ -653,7 +653,7 @@
         "Amigo de longa data que você não vê há anos.",
         "Pessoa com quem você namorou sério no passado."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque remete a um vínculo que terminou, muitas vezes carregando lembranças de frustração ou desgaste emocional."
     },
     {
       "id": 25,
@@ -679,7 +679,7 @@
         "Pessoa que só encontra você em ocasiões especiais.",
         "Namorado oficial que ainda não apresentou aos pais."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve um envolvimento afetivo próximo e de qualidade, com atenção e carinho similares aos de um namoro."
     },
     {
       "id": 26,
@@ -707,7 +707,7 @@
         "Usar um filtro de câmera nas fotos de perfil.",
         "Mentir sobre pequenos detalhes pessoais, como idade ou altura, no perfil."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo por descrever um golpe de identidade falsa usado para enganar emocionalmente outra pessoa, envolvendo má-fé."
     },
     {
       "id": 27,
@@ -735,7 +735,7 @@
         "Curtir todas as fotos antigas do perfil de alguém de uma vez.",
         "Reaparecer do nada depois de meses de silêncio total."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma atitude ambígua e desconfortável de quem some do contato direto mas continua observando à distância, gerando confusão."
     },
     {
       "id": 28,
@@ -764,7 +764,7 @@
         "Comportamento de curtir stories sem nunca mandar mensagem.",
         "Sumir de vez e nunca mais dar sinal de vida."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve o reaparecimento repentino de alguém que abandonou o contato sem explicações, o que costuma gerar desconforto e desconfiança."
     },
     {
       "id": 29,
@@ -789,7 +789,7 @@
         "Homem carinhoso, mas com pouco dinheiro.",
         "Homem que trabalha muito, mas não tem tempo pro relacionamento."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque a expressão é usada de forma pejorativa para apontar falta de esforço, mérito ou valor de um parceiro no relacionamento."
     },
     {
       "id": 30,
@@ -818,7 +818,7 @@
         "Pessoa que sempre concorda com tudo que o parceiro diz, mesmo namorando sério.",
         "Pessoa que trata bem o parceiro por educação e respeito, sem exagero."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma submissão excessiva e perda de amor próprio na tentativa de agradar alguém, situação vista como prejudicial à autoestima."
     },
     {
       "id": 31,
@@ -846,7 +846,7 @@
         "Acreditar demais em promessas vazias de alguém.",
         "Ter certeza de um relacionamento sério baseado em sinais reais e claros."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque tanto pode ser uma brincadeira carinhosa entre amigos quanto uma crítica a alguém que se ilude excessivamente com uma situação sem chances reais."
     },
     {
       "id": 32,
@@ -872,7 +872,789 @@
         "Pessoa que só sai com quem tem carro próprio.",
         "Pessoa que valoriza estabilidade financeira ao escolher um parceiro."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque acusa a pessoa de ter interesse apenas em bens materiais, reduzindo o relacionamento a interesse financeiro."
+    },
+    {
+      "id": 33,
+      "nome": "green flag",
+      "variacoes": [
+        "bandeira verde",
+        "sinal verde"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Sinal de bom comportamento ou traço positivo no caráter de alguém que indica maturidade e potencial para um relacionamento saudável.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele sempre escuta com atenção e apoia meus projetos, isso é uma green flag gigante.",
+      "exemplos_incorretos": [
+        "O juiz levantou a green flag para parar o jogo de futebol.",
+        "Ela é super ciumenta e controla minhas mensagens, maior green flag.",
+        "Comprei uma green flag para colocar no mastro do quintal."
+      ],
+      "significados_incorretos": [
+        "Sinalização utilizada por árbitros em partidas esportivas.",
+        "Comportamento possessivo e controlador no relacionamento.",
+        "Bandeira de tecido para decoração de áreas externas."
+      ],
+      "impacto_motivo": "Positivo porque sinaliza qualidades saudáveis e desejáveis em um parceiro, servindo de incentivo a relações mais maduras."
+    },
+    {
+      "id": 34,
+      "nome": "situationship",
+      "variacoes": [
+        "rolo sem rotulo",
+        "relacionamento indefinido"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Envolvimento romântico ou sexual sem definição clara ou compromisso formal, ficando no meio do caminho entre uma amizade e um namoro.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "A gente sai há seis meses mas ninguém rotulou nada, estamos numa verdadeira situationship.",
+      "exemplos_incorretos": [
+        "Assinei uma situationship no banco para conseguir um empréstimo.",
+        "Eles casaram no papel semana passada, vivem uma situationship.",
+        "Comprei uma situationship nova para consertar o pneu do carro."
+      ],
+      "significados_incorretos": [
+        "Contrato financeiro para obtenção de crédito bancário.",
+        "Casamento civil formalmente registrado em cartório.",
+        "Ferramenta automotiva para reparo de pneus."
+      ],
+      "impacto_motivo": "Depende do contexto porque pode ser vivido como algo leve e sem cobranças, mas também gerar frustração pela falta de definição e compromisso."
+    },
+    {
+      "id": 35,
+      "nome": "breadcrumbing",
+      "variacoes": [
+        "migalhas de afeto",
+        "alimentar esperanças"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de enviar sinais esporádicos e mínimos de interesse (curtidas, mensagens curtas) apenas para manter a pessoa interessada sem intenção de criar algo sério.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele só manda mensagem de vez em quando pra eu não esquecer dele, tá fazendo breadcrumbing.",
+      "exemplos_incorretos": [
+        "Passei breadcrumbing no frango antes de fritar na cozinha.",
+        "Ela me pediu em namoro com aliança, puro breadcrumbing.",
+        "Ele sumiu e nunca mais respondeu, fez um clássico breadcrumbing."
+      ],
+      "significados_incorretos": [
+        "Técnica culinária de empanar alimentos antes da fritura.",
+        "Pedido formal de namoro com troca de alianças.",
+        "Ato de sumir e cortar totalmente o contato."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma manipulação sutil de manter alguém interessado com o mínimo de esforço, sem intenção de compromisso real."
+    },
+    {
+      "id": 36,
+      "nome": "soft launch",
+      "variacoes": [
+        "lançamento sutil",
+        "post discreto"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Ato de postar foto com o novo parceiro nas redes sociais de forma sutil e misteriosa (como apenas a mão ou de costas), sem revelar a identidade.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela postou uma foto de duas taças de vinho e a mão dele, fez o soft launch do namorado.",
+      "exemplos_incorretos": [
+        "O foguete fez um soft launch ao decolar rumo ao espaço.",
+        "Ela postou uma foto focada no rosto dele marcando o perfil, um belo soft launch.",
+        "Soft launch é quando você termina o namoro pelas redes sociais."
+      ],
+      "significados_incorretos": [
+        "Lançamento de foguetes espaciais.",
+        "Postar foto explícita marcando o perfil do parceiro.",
+        "Terminar um relacionamento amoroso através das redes sociais."
+      ],
+      "impacto_motivo": "Positivo porque descreve uma forma delicada e sutil de compartilhar uma novidade afetiva, respeitando o próprio ritmo do casal."
+    },
+    {
+      "id": 37,
+      "nome": "hard launch",
+      "variacoes": [
+        "assumir publicamente",
+        "lançamento oficial"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Ato de assumir o relacionamento de forma direta e aberta nas redes sociais, postando foto clara do casal e marcando o perfil.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Depois de meses escondendo, ela fez o hard launch postando foto dos dois se beijando.",
+      "exemplos_incorretos": [
+        "O navio fez um hard launch no porto da cidade.",
+        "Fez hard launch postando só a sombra de alguém no chão.",
+        "Hard launch é quando duas pessoas decidem virar apenas amigas."
+      ],
+      "significados_incorretos": [
+        "Atracação de navios em portos marítimos.",
+        "Postar apenas pistas misteriosas ou sombras sem mostrar a pessoa.",
+        "Transição de um relacionamento romântico para uma amizade."
+      ],
+      "impacto_motivo": "Positivo porque marca o momento de assumir publicamente um relacionamento de forma transparente e confiante."
+    },
+    {
+      "id": 38,
+      "nome": "benching",
+      "variacoes": [
+        "deixar no banco",
+        "reserva"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de manter alguém como opção de reserva, mantendo contato suficiente para a pessoa não ir embora enquanto busca outras opções.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Sinto que estou no benching, ele só me chama quando todos os outros planos dele dão errado.",
+      "exemplos_incorretos": [
+        "Fiz benching na academia levantando cem quilos no supino.",
+        "Ele me assumiu em namoro no primeiro mês, fez um benching perfeito.",
+        "Coloquei um benching de madeira na varanda para sentar."
+      ],
+      "significados_incorretos": [
+        "Exercício físico de levantamento de peso em banco.",
+        "Assumir um compromisso amoroso sério no primeiro mês.",
+        "Banco de madeira utilizado em mobília de jardim."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma prática de manter alguém como plano reserva, o que fere a consideração e o respeito pela outra pessoa."
+    },
+    {
+      "id": 39,
+      "nome": "cushioning",
+      "variacoes": [
+        "amortecer a queda",
+        "contato reserva"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de manter contatinhos ativos enquanto já está em um relacionamento, garantindo opções caso o namoro atual termine.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele continua flertando com ex por mensagem enquanto namora, praticando cushioning.",
+      "exemplos_incorretos": [
+        "Comprei um cushioning de penas para colocar no sofá.",
+        "Cushioning é quando você se dedica 100% ao parceiro sem falar com mais ninguém.",
+        "Ajustei o cushioning do sapato para caminhar melhor."
+      ],
+      "significados_incorretos": [
+        "Almofada de penas para decoração de salas.",
+        "Fidelidade e dedicação exclusiva ao parceiro atual.",
+        "Palmilha ou amortecedor para calçados esportivos."
+      ],
+      "impacto_motivo": "Negativo porque descreve a manutenção de opções paralelas durante um relacionamento firmado, o que caracteriza deslealdade."
+    },
+    {
+      "id": 40,
+      "nome": "trisal",
+      "variacoes": [
+        "relacionamento a tres",
+        "trio amoroso"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Relacionamento amoroso e consensual estabelecido entre três pessoas simultaneamente.",
+      "tags": [
+        "relacionamento",
+        "diversidade"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Eles vivem em um trisal muito bem resolvido e moram os três juntos.",
+      "exemplos_incorretos": [
+        "Comprei um trisal para cortar o mato do jardim.",
+        "Trisal é o nome dado a um casal de namorados com um filho.",
+        "O trisal disputou a corrida de carros na pista."
+      ],
+      "significados_incorretos": [
+        "Ferramenta agrícola usada para jardinagem.",
+        "Casal monogâmico que possui um filho.",
+        "Equipe de pilotos em uma competição automobilística."
+      ],
+      "impacto_motivo": "Neutro porque descreve um arranjo consensual entre três pessoas, sem juízo moral sobre a configuração da relação."
+    },
+    {
+      "id": 41,
+      "nome": "gaslighting",
+      "variacoes": [
+        "manipulação psicologica",
+        "fazer de doido"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Forma de abuso psicológico no relacionamento onde a pessoa distorce os fatos para fazer o parceiro duvidar da própria memória ou sanidade.",
+      "tags": [
+        "relacionamento",
+        "psicologia"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele dizia que eu estava inventando coisas que ele mesmo falou, fazendo gaslighting comigo.",
+      "exemplos_incorretos": [
+        "Liguei o gaslighting no fogão para esquentar a água do café.",
+        "Ela fez gaslighting preparando um jantar surpresa para o namorado.",
+        "Gaslighting é um elogio sincero sobre a inteligência de alguém."
+      ],
+      "significados_incorretos": [
+        "Acendimento de boca de fogão a gás.",
+        "Organização de um jantar surpresa amoroso.",
+        "Elogio genuíno referente ao intelecto do parceiro."
+      ],
+      "impacto_motivo": "Negativo porque nomeia uma forma grave de abuso psicológico, capaz de causar dano real à saúde mental de quem sofre."
+    },
+    {
+      "id": 42,
+      "nome": "pocketing",
+      "variacoes": [
+        "esconder o parceiro",
+        "relacionamento secreto"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Ato de manter o parceiro escondido da vida social, evitando apresentá-lo a amigos ou familiares e ignorando-o nas redes.",
+      "tags": [
+        "relacionamento",
+        "comportamento"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Namoramos há um ano e nunca conheci os amigos dele, estou sofrendo pocketing.",
+      "exemplos_incorretos": [
+        "Guardei a carteira no pocketing da minha calça jeans.",
+        "Fiz pocketing apresentando ela para toda a minha família no domingo.",
+        "Pocketing é a arte de tirar fotos profissionais em encontros."
+      ],
+      "significados_incorretos": [
+        "Bolso de peças de vestuário.",
+        "Apresentar formalmente o parceiro à família e amigos.",
+        "Técnica de fotografia profissional para casais."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma atitude de esconder o parceiro da vida social, o que costuma gerar constrangimento e insegurança em quem é escondido."
+    },
+    {
+      "id": 43,
+      "nome": "estar na pista",
+      "variacoes": [
+        "na pista",
+        "pistar"
+      ],
+      "classe_gramatical": "expressao",
+      "significado": "Estar solteiro, disponível e aberto a novos encontros e relacionamentos amorosos.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Terminei meu namoro mês passado, agora já estou na pista de novo.",
+      "exemplos_incorretos": [
+        "Fiquei na pista esperando o ônibus passar na parada.",
+        "Estar na pista significa estar casado há mais de dez anos.",
+        "O avião pousou na pista com segurança."
+      ],
+      "significados_incorretos": [
+        "Aguardar transporte público em ponto de ônibus.",
+        "Estar casado ou em relacionamento estável de longa data.",
+        "Pista de pouso e decolagem de aeroportos."
+      ],
+      "impacto_motivo": "Positivo porque descreve a liberdade e disponibilidade de quem está solteiro e aberto a novas possibilidades afetivas."
+    },
+    {
+      "id": 44,
+      "nome": "dar um pé na bunda",
+      "variacoes": [
+        "pé na bunda",
+        "levar um pé na bunda"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Terminar um relacionamento amoroso de forma direta, rompendo o compromisso com a outra pessoa.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Cansou das mentiras dele e decidiu dar um pé na bunda no fim de semana.",
+      "exemplos_incorretos": [
+        "Dei um pé na bunda na bola para fazer o gol no jogo.",
+        "Dar um pé na bunda significa pedir a pessoa em casamento.",
+        "Ele levou um pé na bunda e ganhou uma promoção no trabalho."
+      ],
+      "significados_incorretos": [
+        "Chutar uma bola durante partida esportiva.",
+        "Realizar um pedido formal de casamento.",
+        "Receber uma promoção de cargo na empresa."
+      ],
+      "impacto_motivo": "Negativo porque descreve o fim de um relacionamento de forma direta, frequentemente associada à frustração de quem foi dispensado."
+    },
+    {
+      "id": 45,
+      "nome": "friendzone",
+      "variacoes": [
+        "zona de amizade",
+        "friendzonar"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Situação em que uma pessoa deseja um relacionamento amoroso, mas é vista pelo outro apenas como amigo.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Tentei me declarar, mas ela disse que me considera como um irmão, caí na friendzone.",
+      "exemplos_incorretos": [
+        "Entre na friendzone do parque para brincar no balanço.",
+        "Caí na friendzone e começamos a namorar na mesma semana.",
+        "Comprei um ingresso para a área friendzone do show."
+      ],
+      "significados_incorretos": [
+        "Área de lazer infantil em parques públicos.",
+        "Iniciar um namoro bem-sucedido após uma declaração.",
+        "Setor de ingressos em eventos musicais."
+      ],
+      "impacto_motivo": "Negativo porque descreve a frustração de ter um sentimento amoroso não correspondido, sendo visto apenas como amizade."
+    },
+    {
+      "id": 46,
+      "nome": "dar um perdido",
+      "variacoes": [
+        "dar perdido",
+        "tomar um perdido"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Inventar uma desculpa ou sumir sem avisar para não encontrar o parceiro ou contatinho em determinado momento.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele disse que ia dormir cedo, mas foi pra balada e deu um perdido na namorada.",
+      "exemplos_incorretos": [
+        "Dei um perdido no mapa para encontrar a rua certa.",
+        "Dar um perdido é organizar um encontro romântico surpresa.",
+        "Perdi a chave de casa, dei um perdido no molho."
+      ],
+      "significados_incorretos": [
+        "Consultar orientações em um mapa geográfico.",
+        "Planejar um encontro romântico inesperado.",
+        "Extraviar objetos pessoais como chaves."
+      ],
+      "impacto_motivo": "Negativo porque descreve uma atitude de esquiva e falta de compromisso, deixando a outra pessoa sem resposta ou explicação."
+    },
+    {
+      "id": 47,
+      "nome": "embuste",
+      "variacoes": [
+        "embustes"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa mentirosa, tóxica ou de mau caráter com quem se teve um envolvimento amoroso frustrante.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Finalmente terminei com aquele embuste, só me fazia passar raiva.",
+      "exemplos_incorretos": [
+        "Comprei um embuste de chocolate para comer de sobremesa.",
+        "Ele é um embuste, o parceiro mais atencioso e fiel do mundo.",
+        "Ajustei o embuste da mesa que estava balançando."
+      ],
+      "significados_incorretos": [
+        "Doce ou sobremesa saborosa.",
+        "Parceiro amoroso extremamente dedicado e atencioso.",
+        "Calço para nivelamento de móveis."
+      ],
+      "impacto_motivo": "Negativo porque qualifica alguém por comportamento desonesto e prejudicial vivido em um relacionamento passado."
+    },
+    {
+      "id": 48,
+      "nome": "encalhado",
+      "variacoes": [
+        "encalhar",
+        "encalhada"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Termo bem-humorado ou pejorativo para se referir a alguém que está solteiro há muito tempo e não consegue um relacionamento.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Estou encalhado há três anos, não consigo um contatinho nem pra conversar.",
+      "exemplos_incorretos": [
+        "O navio ficou encalhado na praia após a tempestade.",
+        "Ela tá encalhada, casou ontem na igreja com festa grande.",
+        "Comprei um peixe encalhado na feira de frutos do mar."
+      ],
+      "significados_incorretos": [
+        "Embarcação presa em bancos de areia.",
+        "Pessoa recém-casada com grande cerimônia.",
+        "Peixe fresco comercializado em feiras."
+      ],
+      "impacto_motivo": "Depende do contexto porque pode ser usado de forma bem-humorada entre amigos ou de forma pejorativa e ofensiva, dependendo de quem fala e da intenção."
+    },
+    {
+      "id": 49,
+      "nome": "dar o migué",
+      "variacoes": [
+        "meter o migué",
+        "dar migué"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Usar de uma desculpa esfarrapada ou falsa história para se esquivar de um compromisso amoroso.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ela deu o migué dizendo que a avó passou mal só pra cancelar o date.",
+      "exemplos_incorretos": [
+        "Dei o migué no motor do carro para fazer pegar.",
+        "Dar o migué é pedir a mão de alguém em casamento formalmente.",
+        "Preparei um migué com temperos para o almoço."
+      ],
+      "significados_incorretos": [
+        "Dar partida mecânica em veículo automotor.",
+        "Fazer um pedido formal de casamento.",
+        "Receita ou prato culinário temperado."
+      ],
+      "impacto_motivo": "Negativo porque descreve o uso de mentiras para evitar um compromisso, o que envolve falta de honestidade com o parceiro."
+    },
+    {
+      "id": 50,
+      "nome": "cantada",
+      "variacoes": [
+        "dar uma cantada",
+        "cantar"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Frase de xaveco, elogio ou abordagem usada para demonstrar interesse romântico por alguém.",
+      "tags": [
+        "relacionamento",
+        "flerte"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ele jogou uma cantada engraçada e conseguiu tirar um sorriso dela na festa.",
+      "exemplos_incorretos": [
+        "A cantada da ópera foi apresentada pela soprano no teatro.",
+        "Dei uma cantada nele demitindo-o da empresa.",
+        "A cantada do pneu fez um barulho alto no asfalto."
+      ],
+      "significados_incorretos": [
+        "Apresentação vocal em espetáculo lírico.",
+        "Ato de demitir um funcionário do trabalho.",
+        "Ruído produzido pelo atrito de pneus na pista."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma forma comum e socialmente aceita de expressar interesse romântico por alguém."
+    },
+    {
+      "id": 51,
+      "nome": "xamego",
+      "variacoes": [
+        "chamego",
+        "chamegar"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Demonstração de carinho, dengo, abraços e afetividade entre um casal.",
+      "tags": [
+        "relacionamento",
+        "afeto"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Gostamos de ficar no sofá no domingo aproveitando o xamego.",
+      "exemplos_incorretos": [
+        "Comprei um xamego na padaria para tomar no café da manhã.",
+        "Eles tiveram um xamego pesado e discutiram aos gritos.",
+        "Ajustei a roda do carro no xamego do mecânico."
+      ],
+      "significados_incorretos": [
+        "Produto de panificação para café da manhã.",
+        "Discussão acalorada acompanhada de gritos.",
+        "Serviço de alinhamento em oficina mecânica."
+      ],
+      "impacto_motivo": "Positivo porque descreve gestos de carinho e afeto que fortalecem a conexão entre um casal."
+    },
+    {
+      "id": 52,
+      "nome": "sossegar o facho",
+      "variacoes": [
+        "sossegar facho"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Deixar de lado a vida de festas e saídas casuais para se dedicar a um relacionamento estável.",
+      "tags": [
+        "relacionamento",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Depois que começou a namorar, ele sossegou o facho e não vai mais pra balada.",
+      "exemplos_incorretos": [
+        "Sosseguei o facho da fogueira jogando mais lenha no fogo.",
+        "Sossegar o facho significa sair com cinco contatinhos no mesmo fim de semana.",
+        "Sosseguemos o facho para ligar o ar-condicionado no máximo."
+      ],
+      "significados_incorretos": [
+        "Alimentar chamas em uma fogueira com lenha.",
+        "Manter múltiplos relacionamentos casuais simultaneamente.",
+        "Ajustar a temperatura de aparelhos de refrigeração."
+      ],
+      "impacto_motivo": "Positivo porque descreve o amadurecimento de alguém que decide priorizar a estabilidade e o compromisso em um relacionamento."
+    },
+    {
+      "id": 53,
+      "nome": "cupido",
+      "variacoes": [
+        "fazer papel de cupido"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Pessoa que atua como intermediária para aproximar e juntar dois amigos em um relacionamento amoroso.",
+      "tags": [
+        "relacionamento",
+        "amizade"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Minha amiga foi o cupido que me apresentou ao meu atual marido.",
+      "exemplos_incorretos": [
+        "Comprei um cupido para medir a pressão arterial.",
+        "O cupido separou o casal e fez os dois brigarem.",
+        "Cupido é o motorista de aplicativo que fez a corrida."
+      ],
+      "significados_incorretos": [
+        "Aparelho médico de medição de pressão.",
+        "Pessoa responsável por provocar a separação de um casal.",
+        "Motorista de transporte privado urbano."
+      ],
+      "impacto_motivo": "Positivo porque descreve o papel de quem ajuda a aproximar duas pessoas com boas intenções, favorecendo a formação de um casal."
+    },
+    {
+      "id": 54,
+      "nome": "trocar ideia",
+      "variacoes": [
+        "trocar uma ideia",
+        "troca de ideia"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Conversar de forma descontraída com alguém, muitas vezes com intenção de aproximação ou flerte.",
+      "tags": [
+        "relacionamento",
+        "conversacao"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Fiquei trocando ideia com ela a festa inteira antes de pedir o número.",
+      "exemplos_incorretos": [
+        "Fui ao mecânico trocar ideia no óleo do motor.",
+        "Trocar ideia significa discutir agressivamente aos berros.",
+        "Troquei ideia na lâmpada queimada da sala."
+      ],
+      "significados_incorretos": [
+        "Substituir fluido lubrificante de motores.",
+        "Entrar em conflito verbal violento.",
+        "Substituir componentes de iluminação residencial."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma conversa descontraída, podendo ou não ter intenção romântica, sem conotação negativa."
+    },
+    {
+      "id": 55,
+      "nome": "stalkear",
+      "variacoes": [
+        "stalker",
+        "stalkeando",
+        "stalkeei"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Investigar e bisbilhotar o perfil de alguém nas redes sociais para saber mais sobre a vida da pessoa.",
+      "tags": [
+        "internet",
+        "relacionamento"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Fui stalkear o novo crush no Instagram e descobri até o signo dele.",
+      "exemplos_incorretos": [
+        "Fui stalkear o pneu do carro que estava furado.",
+        "Stalkear é contratar um detetive particular no mundo real.",
+        "Ela me stalkeou mandando uma carta registrada pelo correio."
+      ],
+      "significados_incorretos": [
+        "Inspecionar danos em pneus automotivos.",
+        "Contratar serviços profissionais de investigação privada presencial.",
+        "Enviar correspondência física registrada."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma curiosidade comum nas redes sociais, sem necessariamente envolver má intenção, apesar de poder ser excessiva dependendo do grau."
+    },
+    {
+      "id": 56,
+      "nome": "passar pano",
+      "variacoes": [
+        "passou pano",
+        "passando pano"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Defender ou justificar as atitudes erradas ou tóxicas do parceiro por estar apaixonado.",
+      "tags": [
+        "relacionamento",
+        "internet"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele vacila com ela direto e ela continua passando pano pras atitudes dele.",
+      "exemplos_incorretos": [
+        "Passei pano no chão da cozinha para tirar a poeira.",
+        "Passar pano significa terminar o namoro imediatamente.",
+        "Ele passou pano no terno para tirar os amassados."
+      ],
+      "significados_incorretos": [
+        "Limpeza física de superfícies com pano úmido.",
+        "Rompimento imediato de laço afetivo.",
+        "Passar roupas sociais com ferro aquecido."
+      ],
+      "impacto_motivo": "Negativo porque descreve a atitude de justificar comportamentos tóxicos do parceiro, o que perpetua ciclos prejudiciais no relacionamento."
+    },
+    {
+      "id": 57,
+      "nome": "dengo",
+      "variacoes": [
+        "dengoso",
+        "dengosa"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Tratamento carinhoso, manha afetuosa ou apelido dado à pessoa amada.",
+      "tags": [
+        "relacionamento",
+        "afeto"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ela adora receber um dengo antes de dormir.",
+      "exemplos_incorretos": [
+        "O médico receitou um dengo para curar a gripe.",
+        "Dengo é uma briga de trânsito violenta.",
+        "Comprei um dengo de borracha para vedar a janela."
+      ],
+      "significados_incorretos": [
+        "Medicamento para tratamento sintomático de viroses.",
+        "Desentendimento no trânsito.",
+        "Acessório de borracha para isolamento térmico."
+      ],
+      "impacto_motivo": "Positivo porque descreve uma demonstração afetuosa e carinhosa entre pessoas próximas ou apaixonadas."
+    },
+    {
+      "id": 58,
+      "nome": "fazer fita",
+      "variacoes": [
+        "fazendo fita",
+        "fez fita"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Fingir desinteresse ou fazer charme perante uma investida romântica para se fazer de difícil.",
+      "tags": [
+        "relacionamento",
+        "flerte"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ela quer sair com ele, mas fica fazendo fita só pra ele insistir.",
+      "exemplos_incorretos": [
+        "Usei tesoura para fazer fita adesiva no presente.",
+        "Fazer fita é gravar um filme cinematográfico antigo.",
+        "Ele fez fita pagando a conta toda do restaurante sem falar nada."
+      ],
+      "significados_incorretos": [
+        "Confeccionar fitas adesivas artesanalmente.",
+        "Gravação analógica de película cinematográfica.",
+        "Quitar despesas de refeição em silêncio."
+      ],
+      "impacto_motivo": "Neutro porque descreve uma tática comum de sedução baseada em disfarçar o interesse, sem necessariamente prejudicar alguém."
+    },
+    {
+      "id": 59,
+      "nome": "puxar assunto",
+      "variacoes": [
+        "puxar papo",
+        "puxando assunto"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Iniciar uma conversa com o objetivo de quebrar o gelo e demonstrar interesse por alguém.",
+      "tags": [
+        "relacionamento",
+        "conversacao"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Mandei um meme para puxar assunto com o garoto da faculdade.",
+      "exemplos_incorretos": [
+        "Puxei assunto com a corda para erguer a caixa.",
+        "Puxar assunto é ignorar as mensagens da pessoa no WhatsApp.",
+        "Puxei assunto na alavanca para abrir o porta-malas."
+      ],
+      "significados_incorretos": [
+        "Tracionar cordas para içamento de objetos.",
+        "Ato de ignorar ativamente mensagens de texto recebidas.",
+        "Acionar comandos mecânicos automotivos."
+      ],
+      "impacto_motivo": "Positivo porque descreve a iniciativa de se aproximar de alguém de forma genuína, demonstrando interesse e coragem social."
+    },
+    {
+      "id": 60,
+      "nome": "dar uns amassos",
+      "variacoes": [
+        "trocar amassos",
+        "uns amassos"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Trocar beijos ardentes e carinhos intensos com alguém sem necessariamente ter uma relação sexual completa.",
+      "tags": [
+        "relacionamento",
+        "intimidade"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Eles foram para o fundo da festa só para dar uns amassos.",
+      "exemplos_incorretos": [
+        "Dei uns amassos na lataria do carro depois da batida.",
+        "Dar uns amassos significa assinar a certidão de casamento.",
+        "Dei uns amassos no papel para jogar no lixo."
+      ],
+      "significados_incorretos": [
+        "Avariar a lataria de um veículo automotor.",
+        "Firmar certidão oficial de matrimônio.",
+        "Amassar papéis para descarte reciclável."
+      ],
+      "impacto_motivo": "Positivo porque descreve um momento de intimidade e afeto consensual entre duas pessoas."
     }
   ]
 }

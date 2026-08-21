@@ -26,7 +26,7 @@
         "Uma saudade boa de algo do passado.",
         "Qualquer crítica feita sobre alguém, mesmo sem sentimento negativo forte."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é negativa pois expressa um sentimento de desgosto ou irritação em relação a algo ou alguém, podendo gerar afastamento ou desentendimento."
     },
     {
       "id": 2,
@@ -56,7 +56,7 @@
         "Pessoa tímida que evita aparecer nas redes sociais.",
         "Alguém que posta fotos com frequência nas redes, mesmo sem pedir elogios."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é neutra pois pode ter diferentes interpretações dependendo do contexto em que é usada."
     },
     {
       "id": 3,
@@ -85,7 +85,7 @@
         "Uma nota mediana, nem boa nem ruim, dada a um produto.",
         "Qualquer elogio dado a algo, mesmo sem ser o máximo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é positiva pois expressa aprovação, satisfação ou admiração em relação a algo ou alguém, transmitindo uma avaliação altamente favorável."
     },
     {
       "id": 4,
@@ -114,7 +114,7 @@
         "Estar distraído pensando em outra coisa, sem imaginar algo absurdo.",
         "Estar sonhando acordado com planos reais para o futuro."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é neutra pois pode ter diferentes interpretações dependendo do contexto em que é usada."
     },
     {
       "id": 5,
@@ -143,7 +143,7 @@
         "Expressão usada para demonstrar indiferença sobre algo.",
         "Sigla para o nome de um jogo eletrônico popular."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é positiva pois expressa aprovação, satisfação ou admiração em relação a algo ou alguém, transmitindo uma avaliação altamente favorável."
     },
     {
       "id": 6,
@@ -161,7 +161,7 @@
         "investigacao"
       ],
       "permissao": "todos",
-      "impacto": "depende de contexto",
+      "impacto": "negativa",
       "exemplo_correto": "Fui stalkear o Instagram do meu crush e sem querer curti uma foto de 2018.",
       "exemplos_incorretos": [
         "Chamei o encanador pra stalkear o cano da cozinha.",
@@ -173,7 +173,7 @@
         "Seguir alguém publicamente elogiando todas as postagens.",
         "Ver o perfil de alguém uma única vez por curiosidade."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é negativa pois pode ser usada de forma invasiva ou perturbadora."
     },
     {
       "id": 7,
@@ -202,7 +202,7 @@
         "Quando algo sai apenas um pouco diferente do esperado.",
         "Qualquer situação engraçada que aconteceu por acaso."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Ela é negativa pois expressa um sentimento de desgosto ou irritação em relação a algo ou alguém, podendo gerar afastamento ou desentendimento."
     },
     {
       "id": 8,
@@ -230,7 +230,7 @@
         "Um amigo próximo de longa data, sem envolvimento romântico.",
         "Qualquer pessoa que você acha bonita, mesmo sem sentir nada mais."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque descreve um sentimento espontâneo de atração ou admiração, comumente citado de forma leve e bem-humorada."
     },
     {
       "id": 9,
@@ -258,7 +258,7 @@
         "Expressão usada para concordar tranquilamente com algo.",
         "Abreviação para demonstrar tristeza profunda."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque a expressão pode indicar tanto choque positivo (surpresa boa) quanto negativo (susto ou indignação), variando conforme a situação."
     },
     {
       "id": 10,
@@ -286,7 +286,7 @@
         "O momento exato em que alguém erra feio em público.",
         "Qualquer situação normal e sem graça do dia a dia."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser usado tanto como deboche crítico quanto como elogio genuíno ao melhor momento de alguém."
     },
     {
       "id": 11,
@@ -316,7 +316,7 @@
         "Expressão usada para concordar calmamente com algo óbvio.",
         "Sigla para demonstrar tédio ou desinteresse total."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque a expressão pode indicar espanto tanto diante de algo positivo quanto negativo, a depender da situação relatada."
     },
     {
       "id": 12,
@@ -346,7 +346,7 @@
         "Odiar o relacionamento de dois personagens de uma série.",
         "Torcer para qualquer casal famoso continuar junto, mesmo sem imaginar coisas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque expressa torcida sincera para que duas pessoas fiquem juntas."
     },
     {
       "id": 13,
@@ -374,7 +374,7 @@
         "Uma pessoa elogiada por todos em um reality show.",
         "Qualquer participante eliminado de um reality show."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve algo ou alguém como sem valor, sujeira ou sobra, o que é claramente depreciativo."
     },
     {
       "id": 14,
@@ -404,7 +404,7 @@
         "Xingar alguém com palavras ofensivas de verdade.",
         "Fazer qualquer brincadeira, mesmo sem intenção de enganar ninguém."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser uma brincadeira leve entre amigos ou uma forma de zombaria maldosa, dependendo da intenção de quem troloa."
     },
     {
       "id": 15,
@@ -433,7 +433,7 @@
         "Estar muito nervoso e agitado com uma situação.",
         "Estar cansado depois de um dia cheio de trabalho."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque transmite uma sensação de tranquilidade e controle sobre a situação."
     },
     {
       "id": 16,
@@ -463,7 +463,7 @@
         "Cancelar um evento de última hora por falta de gente.",
         "Fazer um post que recebe poucos comentários, mesmo com muitas curtidas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve fracasso ou falta de sucesso, uma conotação claramente desfavorável."
     },
     {
       "id": 17,
@@ -491,7 +491,7 @@
         "Uma pessoa que sempre concorda com tudo pra evitar briga.",
         "Alguém que dá conselhos, mesmo que às vezes erre."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia o bom senso e a assertividade de quem fala ou age corretamente."
     },
     {
       "id": 18,
@@ -519,7 +519,7 @@
         "Alguém que conhece muito bem um assunto, mas não fala sobre isso.",
         "Uma pessoa nova em um grupo que ainda está aprendendo sobre o assunto."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque acusa alguém de falsidade e superficialidade em relação a um interesse que não é genuíno."
     },
     {
       "id": 19,
@@ -549,7 +549,7 @@
         "Uma crítica negativa feita sobre um lançamento antes de sair.",
         "Qualquer comentário positivo sobre um produto, mesmo sem expectativa alta."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque expressa expectativa e empolgação genuína em torno de algo aguardado."
     },
     {
       "id": 20,
@@ -579,7 +579,7 @@
         "Fazer algo mediano que passa despercebido pelos outros.",
         "Qualquer elogio recebido, mesmo sem fazer nada excepcional."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra uma conquista ou atitude impressionante de alguém."
     },
     {
       "id": 21,
@@ -608,7 +608,7 @@
         "Estar mal vestido e desleixado em um evento importante.",
         "Se arrumar bem para qualquer ocasião comum do dia a dia."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia a confiança e o glamour de quem se destaca de forma positiva."
     },
     {
       "id": 22,
@@ -637,7 +637,7 @@
         "Vestir roupas sociais e formais para o trabalho.",
         "Qualquer pessoa que usa cordão e boné, mesmo sem estilo definido."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser usado como elogio a um estilo autêntico ou de forma pejorativa para estigmatizar esse estilo."
     },
     {
       "id": 23,
@@ -667,7 +667,7 @@
         "Fazer um elogio sincero para o adversário durante uma discussão.",
         "Vencer qualquer discussão, mesmo sem argumentos fortes."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra a habilidade de vencer uma discussão com argumentos afiados."
     },
     {
       "id": 24,
@@ -696,7 +696,7 @@
         "Uma informação totalmente nova que ninguém sabia ainda.",
         "Qualquer assunto que já foi comentado uma vez antes."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque apenas indica que algo é óbvio ou repetido, sem necessariamente carregar julgamento forte."
     },
     {
       "id": 25,
@@ -725,7 +725,7 @@
         "Uma lembrança boa que traz felicidade repentina.",
         "Qualquer assunto desconfortável de se falar, mesmo sem trauma."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque se refere a um estímulo que causa sofrimento psicológico real em quem é afetado."
     },
     {
       "id": 26,
@@ -755,7 +755,7 @@
         "Elogiar publicamente uma pessoa famosa por algo que ela fez.",
         "Criticar uma vez só uma atitude de alguém famoso nas redes."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve um boicote público severo, que pode gerar consequências sérias para quem é alvo."
     },
     {
       "id": 27,
@@ -784,7 +784,7 @@
         "Uma situação impressionante que deixa todo mundo admirado.",
         "Qualquer coisa que causa um pouco de desconforto, mesmo sem vergonha."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma sensação de vergonha e desconforto ao presenciar uma situação embaraçosa."
     },
     {
       "id": 28,
@@ -812,7 +812,7 @@
         "Alguém que muda de opinião o tempo todo pra agradar geral.",
         "Qualquer pessoa que dá sua opinião, mesmo tentando agradar todo mundo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia autenticidade e postura firme diante de opiniões e julgamentos alheios."
     },
     {
       "id": 29,
@@ -841,7 +841,7 @@
         "Uma música que ninguém conhece e passa despercebida.",
         "Qualquer vídeo que recebe uma quantidade razoável de visualizações."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra o sucesso e alcance viral de algo ou alguém."
     },
     {
       "id": 30,
@@ -871,7 +871,7 @@
         "Cumprir todos os compromissos combinados sem falhar.",
         "Qualquer justificativa dada, mesmo que seja verdadeira."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve o uso de mentiras para escapar de compromissos, envolvendo falta de honestidade."
     },
     {
       "id": 31,
@@ -900,7 +900,7 @@
         "Uma cãibra ou dor muscular aguda.",
         "Um tipo de tempero usado em pratos quentes."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia um visual agradável e bem cuidado."
     },
     {
       "id": 32,
@@ -929,7 +929,7 @@
         "Uma dor nas costas causada por peso excessivo.",
         "Uma peça cilíndrica de motores automotivos."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra uma performance ou atitude bem-sucedida de alguém."
     },
     {
       "id": 33,
@@ -958,7 +958,7 @@
         "A câmara de ar interna de um pneu.",
         "Um modelo específico de chuteira esportiva."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser usada tanto para elogiar o carisma de alguém quanto para descrever uma energia ruim ou estranha."
     },
     {
       "id": 34,
@@ -987,7 +987,7 @@
         "Uma ferramenta de nivelamento de carpintaria.",
         "Um tipo de vestido de festa de gala."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia a qualidade de algo, geralmente uma música muito boa."
     },
     {
       "id": 35,
@@ -1015,7 +1015,7 @@
         "Um brinquedo radical de parque de diversões.",
         "Um produto químico purificador para piscinas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque expressa forte desaprovação e constrangimento diante de uma atitude considerada errada."
     },
     {
       "id": 36,
@@ -1044,7 +1044,7 @@
         "A vidraça principal de uma janela residencial.",
         "Um fluido lubrificante essencial para o motor automotivo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque apenas descreve uma seção informativa do perfil, sem carga de valor."
     },
     {
       "id": 37,
@@ -1073,7 +1073,7 @@
         "Um aparelho roteador de sinal Wi-Fi.",
         "Um tipo de fermento químico usado na culinária."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra um estilo exagerado e teatral como forma de expressão criativa."
     },
     {
       "id": 38,
@@ -1101,7 +1101,7 @@
         "Um peixe raro e muito procurado em rios de água doce.",
         "Um tipo de linha grossa de costura para tecidos pesados."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque expõe alguém em situação constrangedora, com implicações de exposição indesejada."
     },
     {
       "id": 39,
@@ -1129,7 +1129,7 @@
         "Um engarrafamento de trânsito quilométrico.",
         "Uma raça de cachorro de pequeno porte."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia o domínio e excelência de alguém em determinado assunto."
     },
     {
       "id": 40,
@@ -1157,7 +1157,7 @@
         "Um modelo de carro esportivo importado.",
         "Um barco a vela de pequeno porte."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque critica algo ou alguém como ultrapassado ou de mau gosto por tentar seguir tendências antigas."
     },
     {
       "id": 41,
@@ -1185,7 +1185,7 @@
         "Uma espécie de panqueca americana doce.",
         "Uma peça fundamental da engrenagem de bicicletas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra a inteligência e agilidade de resposta diante de uma crítica."
     },
     {
       "id": 42,
@@ -1214,7 +1214,7 @@
         "Uma medida de peso antiga usada na culinária.",
         "Um cheque bancário de valor alto."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque a busca por influência pode ser vista de forma positiva (reconhecimento merecido) ou negativa (busca oportunista a qualquer custo)."
     },
     {
       "id": 43,
@@ -1242,7 +1242,7 @@
         "Um tipo de peixe nativo de rios da floresta.",
         "Um corte bovino específico e saboroso."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque apenas descreve uma semelhança estética com um personagem ou estilo, sem carga de valor."
     },
     {
       "id": 44,
@@ -1270,7 +1270,7 @@
         "Um teste obrigatório de emissão de gases e poluentes.",
         "Um tipo de grão nutritivo cultivado no campo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque incentiva o consumo consciente e alerta contra compras desnecessárias."
     },
     {
       "id": 45,
@@ -1299,7 +1299,7 @@
         "Uma doença respiratória grave comum no inverno.",
         "Um tecido tecnológico com isolamento térmico."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Depende do contexto porque pode ser usado de forma bem-humorada entre amigos ou como crítica a alguém que se ilude de forma prejudicial."
     },
     {
       "id": 46,
@@ -1327,7 +1327,7 @@
         "Um esporte radical e violento de contato físico.",
         "Uma tecnologia de sola de calçados antiderrapante."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve um hábito compulsivo associado a ansiedade e desgaste emocional ao consumir conteúdo negativo."
     },
     {
       "id": 47,
@@ -1356,7 +1356,7 @@
         "Um tipo de textura decorativa para paredes.",
         "O ato de cavar buracos profundos na terra."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma violação grave de privacidade, com potencial de causar dano real à vítima."
     },
     {
       "id": 48,
@@ -1384,7 +1384,7 @@
         "Um osso sensível localizado na canela da perna.",
         "Uma madeira rústica, pesada e muito resistente."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque apenas descreve uma fase da vida de alguém, sem juízo de valor sobre essa fase."
     },
     {
       "id": 49,
@@ -1413,7 +1413,7 @@
         "Uma caixa de papelão reforçada para transporte.",
         "Um cartão de acesso eletrônico para funcionários."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque elogia a boa aparência de alguém, especialmente em fotos."
     },
     {
       "id": 50,
@@ -1441,7 +1441,7 @@
         "Um osso ou articulação sensível do corpo humano.",
         "Uma espécie de peixe de escamas muito cobiçada."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque descreve uma comunidade de fãs dedicados, sem carga de valor sobre o grupo."
     },
     {
       "id": 51,
@@ -1470,7 +1470,7 @@
         "Um tipo de adoçante ou açúcar cristal.",
         "Uma massa corrida usada em construções."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma ostentação excessiva, vista socialmente como arrogância ou insegurança disfarçada."
     },
     {
       "id": 52,
@@ -1499,7 +1499,7 @@
         "Uma espécie de planta ornamental de jardim.",
         "O vidro temperado protetor de telas de celular."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma ansiedade real gerada pelo medo de ficar de fora de algo."
     },
     {
       "id": 53,
@@ -1528,7 +1528,7 @@
         "Um defeito mecânico na lente de câmeras fotográficas.",
         "Um adereço decorativo de festa temática."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve o corte abrupto de contato sem explicação, gerando frustração em quem foi afetado."
     },
     {
       "id": 54,
@@ -1556,7 +1556,7 @@
         "Uma lâmpada fluorescente comum de teto.",
         "Luzes pisca-pisca usadas em decorações festivas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra uma transformação pessoal vista como uma evolução positiva."
     },
     {
       "id": 55,
@@ -1585,7 +1585,7 @@
         "Um tipo de queijo rústico e fedido.",
         "Uma pelagem animal usada na fabricação de roupas."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque celebra uma conquista ou desempenho excepcional de alguém."
     },
     {
       "id": 56,
@@ -1614,7 +1614,7 @@
         "Uma peça de borracha do motor de um carro.",
         "Um tipo de massa italiana cozida com molho de tomate."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque expressa tranquilidade e satisfação com a situação atual."
     },
     {
       "id": 57,
@@ -1642,7 +1642,7 @@
         "Uma peça hidráulica do sistema de freios automotivos.",
         "Uma fruta tropical de sabor doce e cítrico."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Positivo porque expressa admiração forte pela atratividade física de alguém."
     },
     {
       "id": 58,
@@ -1671,7 +1671,7 @@
         "Um tipo de pane ou erro fatal de sistema de software.",
         "Uma lancha aquática rápida equipada com motor potente."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque apenas descreve o ato de revelar oficialmente algo, sem carga de valor específica."
     },
     {
       "id": 59,
@@ -1700,7 +1700,7 @@
         "Uma tosse seca, alérgica e irritante.",
         "Um pixel morto, risco ou defeito físico em uma tela de LED."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Negativo porque descreve uma sensação de repulsa ou perda súbita de interesse por alguém."
     },
     {
       "id": 60,
@@ -1728,7 +1728,7 @@
         "Um marcador bioquímico medido em exames de sangue.",
         "Um cabo adaptador grosso para transmissão de vídeo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Neutro porque é usado apenas como referência a piadas internas ou conhecimento compartilhado, sem carga de valor."
     }
   ]
 }

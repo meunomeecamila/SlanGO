@@ -26,7 +26,7 @@
         "Jogador que exagera nas comemorações depois de fazer gol.",
         "Jogador que sempre falha nos momentos decisivos por nervosismo, como bater pênalti."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Atribui uma conduta antidesportiva e descompromissada ao atleta, que inventa desculpas para fugir dos deveres e do esforço em equipe."
     },
     {
       "id": 2,
@@ -54,7 +54,7 @@
         "Discussão acalorada entre jogadores durante a partida.",
         "Jogada de efeito bem-sucedida que resulta diretamente em gol."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Critica o excesso de exibicionismo e a falta de objetividade do jogador, priorizando o espetáculo individual em detrimento da eficiência coletiva."
     },
     {
       "id": 3,
@@ -81,7 +81,7 @@
         "Jogador canhoto com pouca força de chute.",
         "Goleiro que se posiciona mal e é vazado de longe."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Evidencia a insegurança técnica do goleiro, associando-o a falhas graves em defesas fáceis que prejudicam o placar."
     },
     {
       "id": 4,
@@ -107,7 +107,7 @@
         "Comemorar um gol batendo forte no peito.",
         "Amortecer a bola com o pé antes de continuar a jogada."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Elogia o controle técnico impecável em campo e, no contexto geral, a postura de liderança e coragem ao assumir a resolução de problemas."
     },
     {
       "id": 5,
@@ -132,7 +132,7 @@
         "Vitória apertada decidida nos pênaltis.",
         "Empate sem gols em uma partida truncada."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Indica uma vitória avassaladora e incontestável, ressaltando o domínio e a performance superior da equipe vencedora."
     },
     {
       "id": 6,
@@ -160,7 +160,7 @@
         "Trocar de time no meio da temporada.",
         "Ficar de fora do time titular por lesão grave."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Descreve um fato natural de encerramento de ciclo ou aposentadoria, sem atribuir um tom positivo ou negativo por si só."
     },
     {
       "id": 7,
@@ -187,7 +187,7 @@
         "Jogador reserva que nunca treina com afinco.",
         "Jogador que erra muitos passes mas se esforça bastante."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Trata-se de uma crítica pejorativa que desqualifica abertamente a capacidade técnica e a habilidade do atleta."
     },
     {
       "id": 8,
@@ -214,7 +214,7 @@
         "Erro de um zagueiro que resulta em pênalti.",
         "Chute fraco que ainda assim vira gol por sorte."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Associa o desempenho do goleiro a um erro constrangedor e primário, resultando no prejuízo direto do gol sofrido."
     },
     {
       "id": 9,
@@ -241,7 +241,7 @@
         "Torcedor barulhento que grita muito durante o jogo.",
         "Jogador que finge lesão pra sair do jogo antes da hora."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Acusa o atleta de ter fragilidade mental e fugir das responsabilidades nos momentos de maior relevância da partida."
     },
     {
       "id": 10,
@@ -269,7 +269,7 @@
         "Atacante que erra muitos gols fáceis.",
         "Jogador que prefere chutar de fora da área ao invés de tocar a bola."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Critica a conduta egoísta do jogador, que desrespeita o trabalho coletivo para tentar se destacar sozinho."
     },
     {
       "id": 11,
@@ -297,7 +297,7 @@
         "Cruzamento preciso da lateral para a área.",
         "Passe de calcanhar surpreendente entre dois adversários."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Exalta o refino técnico e a criatividade do drible, gerando espetáculo e superando o marcador com elegância."
     },
     {
       "id": 12,
@@ -325,7 +325,7 @@
         "Cabeceio certeiro no canto do gol.",
         "Bicicleta espetacular que vira gol de efeito."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Destaca a genialidade e plasticidade da jogada individual, aplaudida por driblar o adversário pelo alto com maestria."
     },
     {
       "id": 13,
@@ -350,7 +350,7 @@
         "Chute forte de bico no ângulo do gol.",
         "Cobrança de falta que passa por cima da barreira."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Elogia a frieza, categoria e precisão técnica necessárias para executar um chute sutil de alto risco."
     },
     {
       "id": 14,
@@ -378,7 +378,7 @@
         "Comentarista esportivo que sempre elogia demais o próprio time.",
         "Torcedor que muda de time conforme quem está ganhando."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Descreve um comportamento tóxico de reclamação excessiva, que desvaloriza as conquistas do time e espalha negatividade."
     },
     {
       "id": 15,
@@ -406,7 +406,7 @@
         "Bloqueio perfeito que impede o ataque adversário.",
         "Cortada potente que o adversário não consegue defender."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Representa a perfeição na execução do saque, garantindo uma pontuação direta e demonstrando soberania técnica."
     },
     {
       "id": 16,
@@ -435,7 +435,7 @@
         "Prancha de surf pequena usada por iniciantes.",
         "Onda grande e perigosa, ideal pra surfistas experientes."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Apenas descreve o estado do mar com pouca movimentação ou um momento do cotidiano voltado ao descanso sem julgamento moral."
     },
     {
       "id": 17,
@@ -462,7 +462,7 @@
         "Jogada defensiva que intercepta o passe adversário.",
         "Field goal decisivo batido no fim do jogo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Se for bem-sucedido, torna-se um ato milagroso e heroico; se falhar, evidencia o desespero e o insucesso do time."
     },
     {
       "id": 18,
@@ -489,7 +489,7 @@
         "Torcedor que vai a todos os jogos fora de casa.",
         "Pessoa que só assiste aos jogos decisivos do time."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Associa a presença da pessoa à sorte e a resultados vitoriosos, tornando-a uma presença querida e requisitada no grupo."
     },
     {
       "id": 19,
@@ -517,7 +517,7 @@
         "Comentarista que muda de opinião sobre o técnico toda semana.",
         "Torcedor que só vai ao estádio quando o time está ganhando títulos."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Reprova a falta de lealdade e o oportunismo da pessoa, que abandona sua paixão esportiva em troca de vitórias fáceis."
     },
     {
       "id": 20,
@@ -545,7 +545,7 @@
         "Finalização por estrangulamento a partir das costas.",
         "Aplicar uma raspagem para inverter a posição no chão."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Reconhece o avanço tático e a conquista de uma posição de domínio no combate, crucial para pontuar ou finalizar a luta."
     },
     {
       "id": 21,
@@ -573,7 +573,7 @@
         "Torcedor que nunca vai ao estádio ver o time.",
         "Pessoa que só traz azar em jogos decisivos, mas não nos normais."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Rotula a pessoa como um amuleto de azar, gerando afaste e brincadeiras pejorativas entre os companheiros de torcida."
     },
     {
       "id": 22,
@@ -602,7 +602,7 @@
         "Pessoa que só joga videogame competitivo de forma séria.",
         "Jogador que finge se esforçar mas na verdade não se importa com o resultado."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Critica a falta de bom senso em ambientes recreativos, onde a obsessão por vencer estraga a diversão e o clima descontraído."
     },
     {
       "id": 23,
@@ -631,7 +631,7 @@
         "Suplemento em pó tomado antes do treino.",
         "Corpo definido conseguido rapidamente com uso de anabolizantes."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Elogia o apuro estético e a disciplina do atleta, reconhecendo o esforço nos treinos e a boa forma física alcançada."
     },
     {
       "id": 24,
@@ -660,7 +660,7 @@
         "Jogada final que resulta em xeque-mate direto.",
         "Estratégia de defesa que evita perder peças no início da partida."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Classifica uma estratégia técnica e neutra do xadrez, cujo valor depende exclusivamente do desdobramento tático no jogo."
     },
     {
       "id": 25,
@@ -689,7 +689,7 @@
         "Golpe potente que derruba o adversário sem nocautear.",
         "Cair no chão de propósito para simular uma queda."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Retrata uma derrota contundente por nocaute, evidenciando a fragilidade e a perda de consciência no combate."
     },
     {
       "id": 26,
@@ -719,7 +719,7 @@
         "Suplemento proteico consumido após o treino.",
         "Corpo naturalmente definido conseguido só com dieta e treino."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Pode ter tom humorístico/admirativo pelo grande ganho de massa, ou tom pejorativo ao indicar trapaça e riscos à saúde."
     },
     {
       "id": 27,
@@ -749,7 +749,7 @@
         "Sequência de vitórias consecutivas de um time.",
         "Pequena lesão que o jogador finge ter durante o jogo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Expressa um período persistente de azar, infortúnios ou energia negativa que prejudica o desempenho do atleta ou time."
     },
     {
       "id": 28,
@@ -777,7 +777,7 @@
         "Torcedora fanática que nunca perde um jogo do time.",
         "Empresária que administra a carreira de jogadores de futebol."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Costuma ser usada pejorativamente para criticar o interesse financeiro, mas pode surgir de forma neutra ou informal no meio esportivo."
     },
     {
       "id": 29,
@@ -808,7 +808,7 @@
         "Jogador reserva que só entra nos últimos minutos do jogo.",
         "Jogador que se destaca só nos treinos, mas trava nos jogos oficiais."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Exalta o controle emocional supremo e a competência de fechar partidas nos momentos mais tensos e decisivos."
     },
     {
       "id": 30,
@@ -837,7 +837,7 @@
         "Aplicativo de treino que monta a ficha de exercícios.",
         "Pessoa que só treina sozinha, sem parceiro, focada no próprio ritmo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Valoriza o companheirismo, a amizade e o incentivo mútuo para manter a consistência e a evolução na musculação."
     },
     {
       "id": 31,
@@ -866,7 +866,824 @@
         "Treino de recuperação feito um dia após esforço intenso.",
         "Treino intervalado de alta intensidade em pouco tempo."
       ],
-      "impacto_motivo": "vazio"
+      "impacto_motivo": "Repreende a falta de dedicação e foco na academia, ironizando quem não aplica intensidade suficiente para obter resultados."
+    },
+    {
+      "id": 32,
+      "nome": "chinelinho",
+      "variacoes": [
+        "jogador chinelo",
+        "chinelo"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Jogador que vive no departamento médico, fingindo lesões ou prolongando recuperações para não ter que jogar ou treinar.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O meia do time é um verdadeiro chinelinho, sente uma pontada na coxa e já pede três meses de departamento médico.",
+      "exemplos_incorretos": [
+        "O atacante colocou o chinelinho no pé para bater o pênalti decisivo.",
+        "O técnico chinelinho deu uma aula de tática no clássico do fim de semana.",
+        "Ele fez um gol de chinelinho cobrando a falta por cima da barreira."
+      ],
+      "significados_incorretos": [
+        "Calçado especial usado pelos jogadores para ter mais precisão nos pênaltis.",
+        "Técnico experiente que usa estratégias defensivas simples.",
+        "Estilo de cobrança de falta suave por cima da barreira."
+      ],
+      "impacto_motivo": "Demonstra falta de compromisso profissional com a equipe, criticando o atleta que evita entrar em campo sob pretexto de lesão."
+    },
+    {
+      "id": 33,
+      "nome": "entregar a paçoca",
+      "variacoes": [
+        "entregou a paçoca",
+        "entregar o ouro"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Cometer um erro infantil e imperdoável na partida, entregando a vitória ou a vantagem de bandeja para o adversário.",
+      "tags": [
+        "esportes",
+        "futebol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O zagueiro tentou recuar a bola sem olhar, o atacante rival interceptou e o time entregou a paçoca nos acréscimos.",
+      "exemplos_incorretos": [
+        "O atacante entregou a paçoca no ângulo com um chute de fora da área.",
+        "A torcida entregou a paçoca cantando do começo ao fim do jogo.",
+        "A diretoria entregou a paçoca e contratou três reforços da Europa."
+      ],
+      "significados_incorretos": [
+        "Chutar a bola com precisão no ângulo do gol.",
+        "Torcer de forma apaixonada e ininterrupta no estádio.",
+        "Anunciar grandes contratações financeiras para a equipe."
+      ],
+      "impacto_motivo": "Responsabiliza o atleta ou equipe por um erro primário e decisivo que resulta em uma derrota frustrante."
+    },
+    {
+      "id": 34,
+      "nome": "carretilha",
+      "variacoes": [
+        "lambreta"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Drible plástico em que o jogador prende a bola entre os tornozelos e a ergue por trás de si, encobrindo o marcador.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O ponta deu uma carretilha desconcertante no lateral e saiu na cara do gol.",
+      "exemplos_incorretos": [
+        "O goleiro deu uma carretilha para defender o chute no canto esquerdo.",
+        "O árbitro aplicou uma carretilha amarela após a falta violenta.",
+        "Ele bateu o pênalti de carretilha com muita força no meio do gol."
+      ],
+      "significados_incorretos": [
+        "Defesa acrobática realizada por um goleiro com as duas mãos.",
+        "Cartão de advertência aplicado pelo juiz por conduta antidesportiva.",
+        "Cobrança de pênalti forte e sem efeito direcionada ao centro."
+      ],
+      "impacto_motivo": "Exalta a habilidade individual, a audácia e o refino técnico do jogador ao realizar um dos dribles mais difíceis do futebol."
+    },
+    {
+      "id": 35,
+      "nome": "pneu",
+      "variacoes": [
+        "tomar um pneu",
+        "dar um pneu"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "No tênis, termo usado quando um jogador vence um set por 6 a 0, sem ceder nenhum game ao adversário.",
+      "tags": [
+        "esportes",
+        "tenis"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O número um do mundo atropelou no primeiro set e aplicou um pneu inquestionável.",
+      "exemplos_incorretos": [
+        "O tenista trocou o pneu da raquete no meio do segundo set.",
+        "O sacador fez um pneu no meio da quadra com um smash certeiro.",
+        "O jogo foi pra um pneu de desempate super equilibrado no terceiro set."
+      ],
+      "significados_incorretos": [
+        "Acessório de borracha para proteger o cabo da raquete de tênis.",
+        "Golpe de smashear a bola no centro da quadra do oponente.",
+        "Tie-break disputado e equilibrado para definir o vencedor do set."
+      ],
+      "impacto_motivo": "Indica uma vitória avassaladora e impecável no tênis, demonstrando total supremacia técnica sobre o oponente."
+    },
+    {
+      "id": 36,
+      "nome": "corujinha",
+      "variacoes": [
+        "onde a coruja dorme",
+        "guardar na coruja"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "O ângulo superior da meta (a junção da trave com o travessão), considerado o local mais difícil de ser defendido pelo goleiro.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ele cobrou a falta com maestria e colocou a bola na corujinha, sem chance de defesa.",
+      "exemplos_incorretos": [
+        "O corujinha do time defendeu três pênaltis na cobrança final.",
+        "O atacante chutou fraco na corujinha e o goleiro segurou em dois tempos.",
+        "O juiz apitou corujinha indicando toque de mão na área."
+      ],
+      "significados_incorretos": [
+        "Apelido carinhoso para o goleiro especialista em defesas de pênalti.",
+        "Chute fraco e sem direção no meio do gol.",
+        "Gesto de apito do árbitro marcando infração com as mãos."
+      ],
+      "impacto_motivo": "Valoriza a extrema precisão e pontaria do chute, resultando em um gol plasticamente bonito e indefensável."
+    },
+    {
+      "id": 37,
+      "nome": "drible da vaca",
+      "variacoes": [
+        "meia-lua",
+        "passar por fora"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Drible em que o jogador toca a bola por um lado do adversário e corre velozmente pelo outro lado para recuperá-la à frente.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O ponta deu um drible da vaca no zagueiro na linha de fundo e cruzou para o meio da área.",
+      "exemplos_incorretos": [
+        "O goleiro deu um drible da vaca pra segurar a bola no alto.",
+        "O lateral cobrou o arremesso de drible da vaca pra dentro da área.",
+        "Ele fez um drible da vaca de cabeça marcando o gol da vitória."
+      ],
+      "significados_incorretos": [
+        "Salto vertical do goleiro para agarrar a bola no ar.",
+        "Cobrança de arremesso lateral com as duas mãos acima da cabeça.",
+        "Cabeceio forte direcionado para o fundo das redes."
+      ],
+      "impacto_motivo": "Elogia a velocidade, o raciocínio rápido e a inteligência do jogador ao usar o espaço de campo contra a marcação."
+    },
+    {
+      "id": 38,
+      "nome": "nó tático",
+      "variacoes": [
+        "dar um nó tático",
+        "baile tático"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Situação em que um treinador supera completamente o esquema e as estratégias do técnico rival durante uma partida.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Com três alterações no intervalo, o técnico deu um nó tático no adversário e virou o jogo.",
+      "exemplos_incorretos": [
+        "O zagueiro deu um nó tático e fez falta violenta pra parar o ataque.",
+        "A torcida deu um nó tático com um lindo mosaico na arquibancada.",
+        "O preparador físico deu um nó tático treinando a corrida dos atletas."
+      ],
+      "significados_incorretos": [
+        "Falta violenta cometida por zagueiro para interromper a jogada.",
+        "Mosaico de papéis montado pelos torcedores no estádio.",
+        "Exercício de corrida intensiva coordenado pela preparação física."
+      ],
+      "impacto_motivo": "Reconhece o brilhantismo estratégico do treinador ao ler o jogo e neutralizar totalmente o plano do oponente."
+    },
+    {
+      "id": 39,
+      "nome": "airball",
+      "variacoes": [
+        "dar um airball",
+        "air ball"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "No basquete, um arremesso tão errado que passa longe e não toca nem no aro, nem na tabela nem na rede.",
+      "tags": [
+        "esportes",
+        "basquete"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O armador tentou chutar de três sem equilíbrio e acabou mandando um airball constrangedor.",
+      "exemplos_incorretos": [
+        "Ele fez um airball espetacular cravando a bola no aro com as duas mãos.",
+        "O pivô pegou o airball ofensivo e deu o passe para o companheiro livre.",
+        "O time comemorou o airball de três pontos no último segundo da partida."
+      ],
+      "significados_incorretos": [
+        "Enterrada potente no aro feita com ambas as mãos.",
+        "Rebote ofensivo pego pelo pivô embaixo da cesta.",
+        "Cesta decisiva de três pontos convertida no fim da partida."
+      ],
+      "impacto_motivo": "Expõe a falta de pontaria do jogador no arremesso, resultando em um erro grotesco e vaias da torcida."
+    },
+    {
+      "id": 40,
+      "nome": "paredão",
+      "variacoes": [
+        "virar um paredão"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Goleiro ou sistema defensivo (como o bloqueio no vôlei) que demonstra extrema eficiência e impede qualquer gol ou ponto adversário.",
+      "tags": [
+        "esportes",
+        "futebol",
+        "volei"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O goleiro virou um paredão hoje, pegou pênalti e três chutes no cara a cara.",
+      "exemplos_incorretos": [
+        "O atacante paredão errou todos os chutes que tentou no jogo.",
+        "O árbitro virou um paredão e deu cinco minutos de acréscimo.",
+        "O time fez um paredão e tomou quatro gols logo no primeiro tempo."
+      ],
+      "significados_incorretos": [
+        "Atacante que erra sucessivas finalizações ao gol.",
+        "Árbitro que concede acréscimo longo no fim do tempo regulamentar.",
+        "Setor defensivo desorganizado que sofre muitos gols."
+      ],
+      "impacto_motivo": "Exalta a solidez, reflexos e invulnerabilidade de um jogador defensivo ou bloqueio durante a competição."
+    },
+    {
+      "id": 41,
+      "nome": "mala branca",
+      "variacoes": [
+        "mudar com mala branca"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Incentivo financeiro pago por terceiros a uma equipe para que ela vença um adversário direto na tabela, sem violar as regras do jogo.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "pais",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "A imprensa especulou que o time já rebaixado recebeu mala branca para jogar com raça extra contra o líder.",
+      "exemplos_incorretos": [
+        "O goleiro levou a mala branca para guardar suas luvas de treino.",
+        "A torcida levou uma mala branca imensa para apoiar o clube.",
+        "O juiz usou a mala branca para paralisar a partida por chuva."
+      ],
+      "significados_incorretos": [
+        "Bolsa esportiva utilizada por goleiros para guardar equipamentos.",
+        "Bandeirão ou faixa de grande porte usada pelas torcidas organizadas.",
+        "Protocolo da arbitragem para interromper jogos em tempestades."
+      ],
+      "impacto_motivo": "É vista por alguns como um incentivo legítimo para a competitividade, mas por outros como uma interferência ética questionável no campeonato."
+    },
+    {
+      "id": 42,
+      "nome": "mala preta",
+      "variacoes": [
+        "pagar mala preta"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Pagamento ilícito e corrupto oferecido a atletas ou árbitros para que facilitem a vitória do adversário ou manipulem o resultado.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "pais",
+      "impacto": "negativa",
+      "exemplo_correto": "Dois jogadores foram banidos do esporte após a comprovação de que aceitaram mala preta para entregar a partida.",
+      "exemplos_incorretos": [
+        "O time comemorou o título recebendo a mala preta no pódio.",
+        "A mala preta do lateral ajudou o ponta a cruzar de primeira.",
+        "Ele fez um gol de mala preta chutaço no canto direito."
+      ],
+      "significados_incorretos": [
+        "Troféu entregue ao time campeão durante a premiação oficial.",
+        "Assistência precisa feita pelo lateral para o atacante.",
+        "Chute forte e bem colocado no canto do gol."
+      ],
+      "impacto_motivo": "Representa a corrupção e a fraude no esporte, destruindo a integridade e a credibilidade do espetáculo esportivo."
+    },
+    {
+      "id": 43,
+      "nome": "apito amigo",
+      "variacoes": [
+        "beneficiado pelo apito amigo"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Gíria usada para insinuar que a equipe de arbitragem favoreceu deliberadamente ou por incompetência um determinado time.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Com dois pênaltis inexistentes marcados a favor, o time rival venceu com uma ajuda clara do apito amigo.",
+      "exemplos_incorretos": [
+        "O treinador usou o apito amigo para orientar a barreira na falta.",
+        "O apito amigo da torcida não parou de soar durante os noventa minutos.",
+        "Ele marcou o gol de apito amigo chutando do meio do campo."
+      ],
+      "significados_incorretos": [
+        "Sinal sonoro utilizado pelo técnico para organizar a barreira.",
+        "Barulho de instrumentos musicais produzidos pela torcida.",
+        "Gol marcado por um chute de longa distância do meio-campo."
+      ],
+      "impacto_motivo": "Questiona a imparcialidade do jogo, sugerindo injustiça e favorecimento indevido promovido pela arbitragem."
+    },
+    {
+      "id": 44,
+      "nome": "matador",
+      "variacoes": [
+        "atacante matador",
+        "artilheiro matador"
+      ],
+      "classe_gramatical": "substantivo / adjetivo",
+      "significado": "Atacante extremamente eficiente, frio e letal que precisa de poucas oportunidades na área para converter em gol.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "A bola sobrou limpa para o camisa nove e ele não perdoou, mostrando por que é o matador do time.",
+      "exemplos_incorretos": [
+        "O zagueiro matador cometeu uma falta dura e levou cartão vermelho.",
+        "O matador do estádio vendeu todos os ingressos para a grande final.",
+        "Ele fez uma defesa de matador espalmando a bola por cima do travessão."
+      ],
+      "significados_incorretos": [
+        "Defensor violento expulso por faltas consecutivas.",
+        "Funcionário encarregado da bilheteria e vendas do estádio.",
+        "Defesa espetacular do goleiro espalmando para escanteio."
+      ],
+      "impacto_motivo": "Elogia a alta capacidade de conversão, precisão e faro de gol de um centroavante decisivo."
+    },
+    {
+      "id": 45,
+      "nome": "amarelar",
+      "variacoes": [
+        "amarelou",
+        "ficar amarelo"
+      ],
+      "classe_gramatical": "verbo",
+      "significado": "Demonstrar covardia, medo ou falta de pulso firme diante de um momento decisivo, perdendo o rendimento por pura pressão.",
+      "tags": [
+        "esportes",
+        "futebol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O time vinha jogando super bem, mas amarelou na final e aceitou a pressão do adversário do começo ao fim.",
+      "exemplos_incorretos": [
+        "O uniforme do time é amarelo, por isso todos foram amarelar no campo.",
+        "O juiz amarelou o gol por ter sido feito com a mão.",
+        "Ele amarelou o chute no ângulo e marcou um golaço inesquecível."
+      ],
+      "significados_incorretos": [
+        "Entrar em campo utilizando a camisa oficial de cor amarela.",
+        "Anular um gol incorreto por infração cometida na jogada.",
+        "Acertar um chute de alta precisão no ângulo do gol."
+      ],
+      "impacto_motivo": "Evidencia a fraqueza psicológica do atleta ou equipe ao sucumbir ao nervosismo em momentos cruciais."
+    },
+    {
+      "id": 46,
+      "nome": "rasgado",
+      "variacoes": [
+        "músculo rasgado",
+        "ficar rasgado"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Pessoa ou atleta com percentual de gordura corporal extremamente baixo e musculatura nitidamente visível e desenhada.",
+      "tags": [
+        "esportes",
+        "academia",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O atleta se preparou por seis meses com dieta estrita e subiu ao palco completamente rasgado.",
+      "exemplos_incorretos": [
+        "O jogador ficou rasgado de raiva por ter sido substituído no primeiro tempo.",
+        "Ele fez um passe rasgado de quarenta metros para o ponta esquerda.",
+        "O calção do atleta ficou rasgado após o carrinho do zagueiro adversário."
+      ],
+      "significados_incorretos": [
+        "Ficar extremamente irritado ao ser sacado do time pelo técnico.",
+        "Passe longo de alta precisão feito em profundidade.",
+        "Rasgo físico no calção provocado por dividida com o adversário."
+      ],
+      "impacto_motivo": "Aclama a disciplina física rigorosa e a conquista de uma definição muscular de alto nível de excelência."
+    },
+    {
+      "id": 47,
+      "nome": "overtraining",
+      "variacoes": [
+        "sintoma de overtraining",
+        "entrar em overtraining"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Estado de esgotamento físico e mental causado por treinos excessivos sem o descanso e a nutrição adequados, levando à queda de rendimento.",
+      "tags": [
+        "esportes",
+        "academia",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ele treinava pesado de domingo a domingo sem descansar, entrou em overtraining e suas cargas despencaram.",
+      "exemplos_incorretos": [
+        "O overtraining do time ajudou a conquistar a vitória na prorrogação.",
+        "Fiz um overtraining leve de dez minutos de esteira pra aquecer.",
+        "Ele contratou um overtraining pessoal para ajudar nos exercícios."
+      ],
+      "significados_incorretos": [
+        "Condicionamento físico privilegiado que garante fôlego no fim do jogo.",
+        "Aquecimento cardiovascular leve realizado antes da musculação.",
+        "Personal trainer especializado em treinos de alta performance."
+      ],
+      "impacto_motivo": "Alerta para os prejuízos à saúde, lesões e queda de desempenho provocados pelo excesso de treino sem o devido descanso e equilíbrio."
+    },
+    {
+      "id": 48,
+      "nome": "chute de bico",
+      "variacoes": [
+        "dar de bico",
+        "bicuda"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Chutar a bola diretamente com a ponta do pé, sem refinamento técnico, priorizando a força bruta sobre a precisão.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "Na hora do desespero, o zagueiro não pensou duas vezes e deu uma bicuda pra longe da área.",
+      "exemplos_incorretos": [
+        "O atacante deu um chute de bico de trivela que encobriu o goleiro com classe.",
+        "O técnico elogiou o chute de bico perfeito na saída de bola trabalhada.",
+        "Ele cobrou o escanteio de chute de bico curva fechada no primeiro pau."
+      ],
+      "significados_incorretos": [
+        "Finalização cheia de efeito feita com a parte externa do pé.",
+        "Passe curto de alta precisão na construção de jogadas ofensivas.",
+        "Cobrança de escanteio com curva pronunciada rumo à primeira trave."
+      ],
+      "impacto_motivo": "Pode ser criticado pela ausência de técnica em jogadas normais, mas é aceito e valorizado como alívio defensivo emergencial."
+    },
+    {
+      "id": 49,
+      "nome": "peidar na farofa",
+      "variacoes": [
+        "peidou na farofa"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Falhar miseravelmente ou desistir por medo no instante mais crucial do jogo ou da competição.",
+      "tags": [
+        "esportes",
+        "futebol",
+        "cotidiano"
+      ],
+      "permissao": "pais",
+      "impacto": "negativa",
+      "exemplo_correto": "Na hora de bater o pênalti que daria o título, ele peidou na farofa e isolou a bola por cima da trave.",
+      "exemplos_incorretos": [
+        "O atacante peidou na farofa comemorando o gol com a torcida organizada.",
+        "O time peidou na farofa e aplicou uma goleada histórica de cinco a zero.",
+        "O técnico peidou na farofa e fez uma substituição perfeita no segundo tempo."
+      ],
+      "significados_incorretos": [
+        "Comemorar calorosamente com os torcedores na arquibancada.",
+        "Dominar o jogo e aplicar uma vitória por placar elevado.",
+        "Fazer substituição tática precisa que garante a vitória."
+      ],
+      "impacto_motivo": "Usa tom chulo/humorístico para ridicularizar o fracasso ou amarelamento do atleta na hora H."
+    },
+    {
+      "id": 50,
+      "nome": "carrinho",
+      "variacoes": [
+        "dar um carrinho",
+        "carrinho por trás"
+      ],
+      "classe_gramatical": "substantivo",
+      "significado": "Manobra defensiva em que o jogador desliza pelo gramado esticando as pernas para roubar a bola ou interceptar um passe.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "depende de contexto",
+      "exemplo_correto": "O volante deu um carrinho limpo na bola e salvou o contra-ataque adversário com maestria.",
+      "exemplos_incorretos": [
+        "O goleiro fez um carrinho de cabeça pra defender o chute no alto.",
+        "O atacante comemorou o gol entrando no carrinho de maca com os médicos.",
+        "Ele cobrou o pênalti de carrinho rasteiro no meio da meta."
+      ],
+      "significados_incorretos": [
+        "Salto acrobático do goleiro afastando a bola com a cabeça.",
+        "Comemoração do atleta usando a maca médica de transporte.",
+        "Cobrança de pênalti fraca e rasteira pelo centro do gol."
+      ],
+      "impacto_motivo": "Se executado de forma limpa na bola, é um lance de raça elogioso; se for violento ou atingir o rival, gera falta e expulsão."
+    },
+    {
+      "id": 51,
+      "nome": "bater o peso",
+      "variacoes": [
+        "bateu o peso",
+        "corte de peso"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Atingir exatamente a faixa de peso exigida pela categoria no momento da pesagem oficial antes de uma luta de artes marciais.",
+      "tags": [
+        "esportes",
+        "artes marciais",
+        "lutas"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Depois de semanas de desidratação e dieta estrita, o lutador bateu o peso e confirmou a disputa do cinturão.",
+      "exemplos_incorretos": [
+        "O zagueiro bateu o peso da bola para o meio da área com força.",
+        "O lutador bateu o peso do adversário e venceu por nocaute técnico.",
+        "Ele bateu o peso no apito final comemorando a vitória do seu time."
+      ],
+      "significados_incorretos": [
+        "Cabecear a bola com vigor em direção ao centro da grande área.",
+        "Golpear o oponente até conseguir o nocaute técnico na luta.",
+        "Gesticular efusivamente ao ouvir o apito de encerramento do jogo."
+      ],
+      "impacto_motivo": "Reflete o profissionalismo, a disciplina e o compromisso ético do atleta com as regras da sua modalidade."
+    },
+    {
+      "id": 52,
+      "nome": "dar um rola",
+      "variacoes": [
+        "fazer um rola",
+        "treino de rola"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "No Jiu-Jitsu e artes marciais de solo, significa fazer o treino prático de combate com um parceiro, aplicando técnicas sem intenção de machucar.",
+      "tags": [
+        "esportes",
+        "artes marciais",
+        "jiu-jitsu"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "No final da aula de Jiu-Jitsu, o mestre chamou todo mundo para dar um rola de dez minutos.",
+      "exemplos_incorretos": [
+        "O atacante deu um rola na trave com um chute do meio da rua.",
+        "O goleiro deu um rola e tomou um gol por entre as pernas.",
+        "A torcida deu um rola invasivo no gramado após o apito do juiz."
+      ],
+      "significados_incorretos": [
+        "Chute forte que atinge o poste da meta adversária.",
+        "Falha técnica do goleiro ao sofrer gol por entre as pernas.",
+        "Invasão coletiva promovida pela torcida ao final da partida."
+      ],
+      "impacto_motivo": "Trata-se de um termo técnico cotidiano da rotina de treino das lutas, não carregando viés positivo nem negativo."
+    },
+    {
+      "id": 53,
+      "nome": "carregar nas costas",
+      "variacoes": [
+        "carregar o time nas costas",
+        "carregar o time"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Situação em que um único jogador tem uma atuação tão brilhante que supera as deficiências dos companheiros e garante a vitória sozinho.",
+      "tags": [
+        "esportes",
+        "futebol",
+        "esports"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O camisa dez carregou o time nas costas o campeonato todo, fazendo gols e dando assistências decisivas.",
+      "exemplos_incorretos": [
+        "O preparador físico teve que carregar nas costas todos os cones do treino.",
+        "O zagueiro fez falta violenta ao carregar nas costas o atacante rival.",
+        "A torcida carregou nas costas as faixas até a arquibancada superior."
+      ],
+      "significados_incorretos": [
+        "Transportar equipamentos de treino ao fim da atividade.",
+        "Cometer falta empurrando o adversário por trás na jogada.",
+        "Transportar bandeiras e adereços para os setores do estádio."
+      ],
+      "impacto_motivo": "Destaca o protagonismo individual de excelência e a capacidade extraordinária de liderar a equipe ao sucesso."
+    },
+    {
+      "id": 54,
+      "nome": "monstro",
+      "variacoes": [
+        "monstro sagrado",
+        "tá um monstro"
+      ],
+      "classe_gramatical": "substantivo / adjetivo",
+      "significado": "Elogio usado para definir um atleta de altíssimo desempenho, força física impressionante ou habilidade fora do comum.",
+      "tags": [
+        "esportes",
+        "futebol",
+        "academia"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O zagueiro jogou demais hoje, cortou todas as bolas pelo alto, é um verdadeiro monstro na zaga.",
+      "exemplos_incorretos": [
+        "O time jogou tão mal que a imprensa chamou a atuação de monstro.",
+        "O juiz foi um monstro e deu cartão vermelho injusto no primeiro minuto.",
+        "Ele cometeu um gol monstro errando o chute sem goleiro."
+      ],
+      "significados_incorretos": [
+        "Atuação pífia e desastrosa de uma equipe em campo.",
+        "Árbitro rigoroso que toma decisões polêmicas e injustas.",
+        "Erro crasso ao perder chance clara de marcar o gol."
+      ],
+      "impacto_motivo": "Consagra o vigor, a imponência e o altíssimo padrão de atuação do esportista em sua posição."
+    },
+    {
+      "id": 55,
+      "nome": "frango de academia",
+      "variacoes": [
+        "frangote",
+        "frango na musculação"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Iniciante na musculação que possui pouca massa muscular mas age com prepotência, executa exercícios errado ou quer pegar mais peso do que suporta.",
+      "tags": [
+        "esportes",
+        "academia",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O frango de academia colocou 100 kg no supino, não aguentou erguer e precisou de ajuda pra não se machucar.",
+      "exemplos_incorretos": [
+        "O personal trainer contratou um frango de academia para ser seu auxiliar.",
+        "Ele é um frango de academia experiente, com dez anos de treino constante.",
+        "Tomei um frango de academia com batata doce no pós-treino."
+      ],
+      "significados_incorretos": [
+        "Auxiliar técnico responsável pela organização do espaço da academia.",
+        "Praticante veterano com vasto histórico e conhecimento em musculação.",
+        "Refeição proteica consumida após as sessões de treinamento."
+      ],
+      "impacto_motivo": "Debocha da inexperiência aliada à vaidade excessiva, gerando execuções incorretas de exercícios e comportamento motivo de chacota."
+    },
+    {
+      "id": 56,
+      "nome": "gol de placa",
+      "variacoes": [
+        "fazer um gol de placa",
+        "placa"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Um gol extraordinário, de rara beleza e perfeição técnica, digno de ser imortalizado com uma homenagem oficial.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "O atacante driblou quatro defensores, encobriu o goleiro de cavadinha e fez um gol de placa inesquecível.",
+      "exemplos_incorretos": [
+        "O árbitro deu um gol de placa após consultar o vídeo do bandeirinha.",
+        "O zagueiro fez um gol de placa contra, cabeceando no próprio patrimônio.",
+        "O jogo terminou empatado por um gol de placa sem graça e sem emoção."
+      ],
+      "significados_incorretos": [
+        "Validação de gol após checagem das imagens pela arbitragem.",
+        "Gol contra marcado acidentalmente pelo próprio defensor da equipe.",
+        "Gol simples e sem destaque estético em partida morna."
+      ],
+      "impacto_motivo": "Exalta a beleza suprema de uma jogada inesquecível que entra para a história do esporte."
+    },
+    {
+      "id": 57,
+      "nome": "jogo de comadres",
+      "variacoes": [
+        "partida de comadres"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Partida morna e sem competitividade em que ambos os times se acomodam com o resultado (geralmente um empate) e evitam se arriscar.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Como o empate classificava os dois clubes, o segundo tempo virou um jogo de comadres sem nenhum chute a gol.",
+      "exemplos_incorretos": [
+        "O clássico foi um jogo de comadres movimentado, com oito gols e três expulsões.",
+        "A torcida fez um jogo de comadres nas bancadas cantando sem parar.",
+        "O atacante fez um jogo de comadres marcando três gols no primeiro tempo."
+      ],
+      "significados_incorretos": [
+        "Confronto intenso e truncado repleto de gols e expulsões.",
+        "Duelo de cantos promovido pelas torcidas organizadas no estádio.",
+        "Atuação brilhante de um atleta com múltiplos gols anotados."
+      ],
+      "impacto_motivo": "Critica o antijogo, o comodismo e a ausência de espírito competitivo, frustrando os torcedores que esperavam uma boa disputa."
+    },
+    {
+      "id": 58,
+      "nome": "fazer cera",
+      "variacoes": [
+        "fazer uma cera",
+        "certeiro"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Retardar intencionalmente o andamento do jogo (demorando para cobrar tiros de meta, fingindo dores) para gastar o tempo do relógio.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "O goleiro ficou caindo no gramado a cada defesa para fazer cera e segurar o placar mínimo até o fim.",
+      "exemplos_incorretos": [
+        "O ponta fez cera cruzando a bola no pé do atacante para marcar o gol.",
+        "A torcida fez cera acendendo sinalizadores para comemorar o título.",
+        "O atacante fez cera e bateu o pênalti com muita força no ângulo."
+      ],
+      "significados_incorretos": [
+        "Realizar cruzamento milimétrico na cabeça do companheiro.",
+        "Fazer festa com uso de artefatos luminosos nas arquibancadas.",
+        "Cobrar penalidade máxima com força no canto superior da meta."
+      ],
+      "impacto_motivo": "Reprova a catimba e o expediente anti-esportivo de enrolar a partida para prejudicar o ritmo do adversário."
+    },
+    {
+      "id": 59,
+      "nome": "virada de mesa",
+      "variacoes": [
+        "virar a mesa"
+      ],
+      "classe_gramatical": "expressão substantiva",
+      "significado": "Alteração de regulamento nos bastidores após o fim da competição para salvar um clube do rebaixamento ou beneficiá-lo indevidamente.",
+      "tags": [
+        "esportes",
+        "futebol"
+      ],
+      "permissao": "pais",
+      "impacto": "negativa",
+      "exemplo_correto": "O clube terminou na zona de rebaixamento, mas a diretoria recorreu aos tribunais e conseguiu uma virada de mesa.",
+      "exemplos_incorretos": [
+        "O atacante fez uma virada de mesa espetacular chutando de bicicleta.",
+        "A virada de mesa ocorreu quando o time saiu perdendo de dois e virou pra três.",
+        "O goleiro fez a virada de mesa espalmando a falta para a linha de fundo."
+      ],
+      "significados_incorretos": [
+        "Finalização de bicicleta executada com maestria pelo atacante.",
+        "Reversão do placar em campo conquistada no segundo tempo da partida.",
+        "Defesa salvadora do goleiro espalmando a bola para escanteio."
+      ],
+      "impacto_motivo": "Evidencia o desrespeito ao mérito esportivo conquistado em campo, apelando para manobras burocráticas e políticas."
+    },
+    {
+      "id": 60,
+      "nome": "zerar o jogo",
+      "variacoes": [
+        "zerar o esporte",
+        "zerou o jogo"
+      ],
+      "classe_gramatical": "expressão verbal",
+      "significado": "Alcançar o ápice da carreira, conquistar todos os títulos possíveis na modalidade ou realizar um feito perfeito e incontestável.",
+      "tags": [
+        "esportes",
+        "esports",
+        "futebol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ao vencer a Copa do Mundo após ganhar a Champions e a Bola de Ouro, o craque simplesmente zerou o jogo.",
+      "exemplos_incorretos": [
+        "O time zerou o jogo ao perder por goleada na estreia do campeonato.",
+        "O árbitro zerou o jogo expulsando três jogadores da mesma equipe.",
+        "Ele zerou o jogo errando a cobrança de pênalti decisiva na disputa."
+      ],
+      "significados_incorretos": [
+        "Apresentar desempenho desastroso sendo goleado na primeira rodada.",
+        "Atuação polêmica do árbitro ao aplicar múltiplos cartões vermelhos.",
+        "Cometer erro crucial ao errar penalidade máxima em decisão."
+      ],
+      "impacto_motivo": "Exalta a conquista máxima do esporte, reconhecendo que o atleta atingiu a perfeição e o teto da modalidade."
     }
   ]
 }
