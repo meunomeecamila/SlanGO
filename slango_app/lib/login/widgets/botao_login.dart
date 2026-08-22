@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../mapa/styles/texto.dart';
+import '../../l10n/l10n.dart';
 
 class BotaoLogin extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -37,7 +38,7 @@ class BotaoLogin extends StatelessWidget {
                 ),
               )
             : Text(
-                "Entrar",
+                context.l10n.login,
                 style: AppText.botao(1.1),
               ),
       ),

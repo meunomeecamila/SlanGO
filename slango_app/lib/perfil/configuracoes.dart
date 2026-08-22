@@ -5,6 +5,8 @@ import '../login/login.dart';
 import 'cores.dart';
 import 'texto.dart';
 import '../final/Particulas.dart';
+import '../l10n/l10n.dart';
+import '../l10n/locale_controller.dart';
 
 class ConfiguracoesScreen extends StatefulWidget {
   const ConfiguracoesScreen({super.key});
@@ -22,6 +24,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
   DateTime? _dataNascimento;
   DateTime? _dataNascimentoOriginal;
   String? _nomeOriginal;
+  bool? _responsavel;
   bool _carregando = true;
   bool _salvando = false;
   String? _erro;
@@ -43,7 +46,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       if (_dataNascimento != null) {
         _dataNascimentoController.text = _formatarData(_dataNascimento!);
       }
-      _tipoContaController.text = usuario.responsavel ? 'Responsável' : 'Jovem';
+      _responsavel = usuario.responsavel;
     } catch (error) {
       _erro = error.toString().replaceFirst('Exception: ', '');
     } finally {
@@ -76,7 +79,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
 
     if (!temNomeAlterado && !temDataAlterada) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Nenhuma alteração para salvar.')),
+        SnackBar(content: Text(context.l10n.noChanges)),
       );
       return;
     }
@@ -95,7 +98,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       _nomeOriginal = atualizado.nome;
       _dataNascimentoOriginal = _parseDataNascimento(atualizado.dataNascimento);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Perfil atualizado com sucesso!')),
+        SnackBar(content: Text(context.l10n.profileUpdated)),
       );
     } catch (error) {
       if (!mounted) return;
@@ -117,7 +120,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
           _dataNascimento ?? DateTime(agora.year - 18, agora.month, agora.day),
       firstDate: DateTime(agora.year - 100),
       lastDate: agora,
-      helpText: "Data de nascimento",
+      helpText: context.l10n.dateOfBirth,
       builder: (context, child) {
         return Theme(
           data: Theme.of(context).copyWith(
@@ -152,6 +155,9 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    _tipoContaController.text = (_responsavel ?? false)
+        ? context.l10n.guardian
+        : context.l10n.youngPerson;
     return Scaffold(
       body: ParticulasFundo(
         child: SafeArea(
@@ -182,17 +188,17 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Geral", style: AppText.cardSubtitulo(0.9)),
+                          Text(context.l10n.general, style: AppText.cardSubtitulo(0.9)),
                           const SizedBox(height: 12),
                           _campoEditavel(
-                            label: "Nome",
+                            label: context.l10n.name,
                             controller: _nomeController,
                           ),
                           const SizedBox(height: 16),
                           _botaoAcao(
                             texto: _salvando
-                                ? 'Salvando...'
-                                : 'Salvar alterações',
+                                ? context.l10n.saving
+                                : context.l10n.saveChanges,
                             cor: AppColors.cyan,
                             onTap: _salvando ? null : _salvarPerfil,
                           ),
@@ -200,35 +206,37 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                           _campoData(),
                           const SizedBox(height: 16),
                           _campoEditavel(
-                            label: "Tipo de conta",
+                            label: context.l10n.accountType,
                             controller: _tipoContaController,
                             editavel: false,
                           ),
 
                           const SizedBox(height: 28),
-                          Text("Segurança", style: AppText.cardSubtitulo(0.9)),
+                          Text(context.l10n.security, style: AppText.cardSubtitulo(0.9)),
                           const SizedBox(height: 12),
                           _linhaAcao(
                             icone: Icons.lock_outline,
-                            texto: "Alterar senha",
+                            texto: context.l10n.changePassword,
                             onTap: () => _abrirDialogoSenha(context),
                           ),
                           const SizedBox(height: 12),
                           _linhaAcao(
                             icone: Icons.email_outlined,
-                            texto: "Alterar e-mail",
+                            texto: context.l10n.changeEmail,
                             onTap: () => _abrirDialogoEmail(context),
                           ),
 
                           const SizedBox(height: 32),
+                          _seletorIdioma(context),
+                          const SizedBox(height: 12),
                           _botaoAcao(
-                            texto: "Sair da conta",
+                            texto: context.l10n.signOut,
                             cor: AppColors.textSecondary,
                             onTap: _sairDaConta,
                           ),
                           const SizedBox(height: 12),
                           _botaoAcao(
-                            texto: "Excluir conta",
+                            texto: context.l10n.deleteAccount,
                             cor: AppColors.danger,
                             onTap: () => _confirmarExclusao(context),
                           ),
@@ -256,8 +264,52 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
           ),
         ),
         const SizedBox(width: 12),
-        Text("Configurações", style: AppText.titulo(0.85)),
+        Text(context.l10n.settings, style: AppText.titulo(0.85)),
       ],
+    );
+  }
+
+  Widget _seletorIdioma(BuildContext context) {
+    final l10n = context.l10n;
+    final localeController = LocaleControllerScope.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(l10n.language, style: AppText.cardSubtitulo(0.85)),
+          ),
+          DropdownButtonHideUnderline(
+            child: DropdownButton<Locale>(
+              value: localeController.locale,
+              dropdownColor: AppColors.card,
+              style: AppText.cardTitulo(0.95),
+              iconEnabledColor: AppColors.cyan,
+              onChanged: (locale) {
+                if (locale != null) localeController.setLocale(locale);
+              },
+              items: [
+                DropdownMenuItem(
+                  value: const Locale('pt'),
+                  child: Text('🇧🇷 ${l10n.portuguese}'),
+                ),
+                DropdownMenuItem(
+                  value: const Locale('en'),
+                  child: Text('🇺🇸 ${l10n.english}'),
+                ),
+                DropdownMenuItem(
+                  value: const Locale('es'),
+                  child: Text('🇪🇸 ${l10n.spanish}'),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -319,14 +371,14 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Data de nascimento",
+                    context.l10n.dateOfBirth,
                     style: AppText.cardSubtitulo(0.85),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 6),
                     child: Text(
                       _dataNascimentoController.text.isEmpty
-                          ? "Selecionar data"
+                          ? context.l10n.selectDate
                           : _dataNascimentoController.text,
                       style: AppText.cardTitulo(0.95).copyWith(
                         color: _dataNascimentoController.text.isEmpty
@@ -406,25 +458,25 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       builder: (_) => AlertDialog(
         backgroundColor: AppColors.card,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-        title: Text("Alterar senha", style: AppText.cardTitulo(1)),
+        title: Text(context.l10n.changePassword, style: AppText.cardTitulo(1)),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             _campoDialogo(
               controller: senhaAtualController,
-              rotulo: "Senha atual",
+              rotulo: context.l10n.currentPassword,
               oculto: true,
             ),
             const SizedBox(height: 12),
             _campoDialogo(
               controller: novaSenhaController,
-              rotulo: "Nova senha",
+              rotulo: context.l10n.newPassword,
               oculto: true,
             ),
             const SizedBox(height: 12),
             _campoDialogo(
               controller: confirmarSenhaController,
-              rotulo: "Confirmar nova senha",
+              rotulo: context.l10n.confirmNewPassword,
               oculto: true,
             ),
           ],
@@ -433,7 +485,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
-              "Cancelar",
+              context.l10n.cancel,
               style: AppText.botao(
                 0.85,
               ).copyWith(color: AppColors.textSecondary),
@@ -445,7 +497,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               Navigator.of(context).pop();
             },
             child: Text(
-              "Salvar",
+              context.l10n.save,
               style: AppText.botao(0.85).copyWith(color: AppColors.cyan),
             ),
           ),
@@ -463,19 +515,19 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       builder: (_) => AlertDialog(
         backgroundColor: AppColors.card,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-        title: Text("Alterar e-mail", style: AppText.cardTitulo(1)),
+        title: Text(context.l10n.changeEmail, style: AppText.cardTitulo(1)),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             _campoDialogo(
               controller: novoEmailController,
-              rotulo: "Novo e-mail",
+              rotulo: context.l10n.newEmail,
               teclado: TextInputType.emailAddress,
             ),
             const SizedBox(height: 12),
             _campoDialogo(
               controller: senhaController,
-              rotulo: "Senha atual",
+              rotulo: context.l10n.currentPassword,
               oculto: true,
             ),
           ],
@@ -484,7 +536,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
-              "Cancelar",
+              context.l10n.cancel,
               style: AppText.botao(
                 0.85,
               ).copyWith(color: AppColors.textSecondary),
@@ -496,7 +548,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               Navigator.of(context).pop();
             },
             child: Text(
-              "Salvar",
+              context.l10n.save,
               style: AppText.botao(0.85).copyWith(color: AppColors.cyan),
             ),
           ),
@@ -555,16 +607,16 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
       builder: (_) => AlertDialog(
         backgroundColor: AppColors.card,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-        title: Text("Excluir conta?", style: AppText.cardTitulo(1)),
+        title: Text(context.l10n.deleteAccountQuestion, style: AppText.cardTitulo(1)),
         content: Text(
-          "Essa ação é permanente e vai apagar todo o seu progresso.",
+          context.l10n.deleteAccountDescription,
           style: AppText.cardSubtitulo(1),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
-              "Cancelar",
+              context.l10n.cancel,
               style: AppText.botao(
                 0.85,
               ).copyWith(color: AppColors.textSecondary),
@@ -576,7 +628,7 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               await _deletarConta();
             },
             child: Text(
-              "Excluir",
+              context.l10n.delete,
               style: AppText.botao(0.85).copyWith(color: AppColors.danger),
             ),
           ),

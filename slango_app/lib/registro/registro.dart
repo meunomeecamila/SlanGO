@@ -7,6 +7,7 @@ import '../mapa/styles/texto.dart';
 import '../shared/widgets/background_espaco.dart';
 import '../shared/widgets/fundo_espacial.dart';
 import '../service/usuarioService.dart';
+import '../l10n/l10n.dart';
 import 'widgets/botao_registrar.dart';
 import 'widgets/campo_texto.dart';
 import 'widgets/seletor_pergunta_seguranca.dart';
@@ -68,9 +69,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
       initialDate: DateTime(hoje.year - 10, hoje.month, hoje.day),
       firstDate: DateTime(hoje.year - 100),
       lastDate: hoje,
-      helpText: "Selecione a data de nascimento",
-      cancelText: "Cancelar",
-      confirmText: "Confirmar",
+      helpText: context.l10n.dateOfBirth,
+      cancelText: context.l10n.cancel,
+      confirmText: context.l10n.save,
       builder: (context, child) {
         return Theme(
           data: Theme.of(context).copyWith(
@@ -181,7 +182,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
     }
 
     if (senhaController.text != confirmarSenhaController.text) {
-      _mostrarErro("As senhas não coincidem.");
+      _mostrarErro(context.l10n.passwordsDoNotMatch);
       return;
     }
 
@@ -286,14 +287,14 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       const SizedBox(height: 45),
 
                       CampoTexto(
-                        label: "Nome",
+                        label: context.l10n.name,
                         icon: Icons.person,
                         controller: nomeController,
                       ),
                       const SizedBox(height: 18),
 
                       CampoTexto(
-                        label: "Email",
+                        label: context.l10n.email,
                         icon: Icons.email,
                         keyboardType: TextInputType.emailAddress,
                         controller: emailController,
@@ -301,7 +302,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       const SizedBox(height: 18),
 
                       CampoTexto(
-                        label: "Senha",
+                        label: context.l10n.password,
                         icon: Icons.lock,
                         obscureText: true,
                         controller: senhaController,
@@ -309,7 +310,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       const SizedBox(height: 18),
 
                       CampoTexto(
-                        label: "Confirmar senha",
+                        label: context.l10n.confirmNewPassword,
                         icon: Icons.lock_outline,
                         obscureText: true,
                         controller: confirmarSenhaController,
@@ -320,7 +321,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         onTap: _selecionarDataNascimento,
                         child: AbsorbPointer(
                           child: CampoTexto(
-                            label: "Data de nascimento",
+                            label: context.l10n.dateOfBirth,
                             icon: Icons.cake,
                             controller: dataNascimentoController,
                           ),

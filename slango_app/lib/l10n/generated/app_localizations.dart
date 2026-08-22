@@ -1,0 +1,582 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_pt.dart';
+
+// ignore_for_file: type=lint
+
+/// Callers can lookup localized strings with an instance of AppLocalizations
+/// returned by `AppLocalizations.of(context)`.
+///
+/// Applications need to include `AppLocalizations.delegate()` in their app's
+/// `localizationDelegates` list, and the locales they support in the app's
+/// `supportedLocales` list. For example:
+///
+/// ```dart
+/// import 'generated/app_localizations.dart';
+///
+/// return MaterialApp(
+///   localizationsDelegates: AppLocalizations.localizationsDelegates,
+///   supportedLocales: AppLocalizations.supportedLocales,
+///   home: MyApplicationHome(),
+/// );
+/// ```
+///
+/// ## Update pubspec.yaml
+///
+/// Please make sure to update your pubspec.yaml to include the following
+/// packages:
+///
+/// ```yaml
+/// dependencies:
+///   # Internationalization support.
+///   flutter_localizations:
+///     sdk: flutter
+///   intl: any # Use the pinned version from flutter_localizations
+///
+///   # Rest of dependencies
+/// ```
+///
+/// ## iOS Applications
+///
+/// iOS applications define key application metadata, including supported
+/// locales, in an Info.plist file that is built into the application bundle.
+/// To configure the locales supported by your app, you’ll need to edit this
+/// file.
+///
+/// First, open your project’s ios/Runner.xcworkspace Xcode workspace file.
+/// Then, in the Project Navigator, open the Info.plist file under the Runner
+/// project’s Runner folder.
+///
+/// Next, select the Information Property List item, select Add Item from the
+/// Editor menu, then select Localizations from the pop-up menu.
+///
+/// Select and expand the newly-created Localizations item then, for each
+/// locale your application supports, add a new item and select the locale
+/// you wish to add from the pop-up menu in the Value field. This list should
+/// be consistent with the languages listed in the AppLocalizations.supportedLocales
+/// property.
+abstract class AppLocalizations {
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+
+  final String localeName;
+
+  static AppLocalizations? of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations);
+  }
+
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
+
+  /// A list of this localizations delegate along with the default localizations
+  /// delegates.
+  ///
+  /// Returns a list of localizations delegates containing this delegate along with
+  /// GlobalMaterialLocalizations.delegate, GlobalCupertinoLocalizations.delegate,
+  /// and GlobalWidgetsLocalizations.delegate.
+  ///
+  /// Additional delegates can be added by appending to this list in
+  /// MaterialApp. This list does not have to be used at all if a custom list
+  /// of delegates is preferred or required.
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
+
+  /// A list of this localizations delegate's supported locales.
+  static const List<Locale> supportedLocales = <Locale>[
+    Locale('en'),
+    Locale('es'),
+    Locale('pt'),
+  ];
+
+  /// No description provided for @appTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'SlanGO'**
+  String get appTitle;
+
+  /// No description provided for @portuguese.
+  ///
+  /// In pt, this message translates to:
+  /// **'Português'**
+  String get portuguese;
+
+  /// No description provided for @english.
+  ///
+  /// In pt, this message translates to:
+  /// **'Inglês'**
+  String get english;
+
+  /// No description provided for @spanish.
+  ///
+  /// In pt, this message translates to:
+  /// **'Espanhol'**
+  String get spanish;
+
+  /// No description provided for @language.
+  ///
+  /// In pt, this message translates to:
+  /// **'Idioma'**
+  String get language;
+
+  /// No description provided for @general.
+  ///
+  /// In pt, this message translates to:
+  /// **'Geral'**
+  String get general;
+
+  /// No description provided for @security.
+  ///
+  /// In pt, this message translates to:
+  /// **'Segurança'**
+  String get security;
+
+  /// No description provided for @settings.
+  ///
+  /// In pt, this message translates to:
+  /// **'Configurações'**
+  String get settings;
+
+  /// No description provided for @name.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome'**
+  String get name;
+
+  /// No description provided for @accountType.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tipo de conta'**
+  String get accountType;
+
+  /// No description provided for @guardian.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responsável'**
+  String get guardian;
+
+  /// No description provided for @youngPerson.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jovem'**
+  String get youngPerson;
+
+  /// No description provided for @dateOfBirth.
+  ///
+  /// In pt, this message translates to:
+  /// **'Data de nascimento'**
+  String get dateOfBirth;
+
+  /// No description provided for @selectDate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selecionar data'**
+  String get selectDate;
+
+  /// No description provided for @saveChanges.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salvar alterações'**
+  String get saveChanges;
+
+  /// No description provided for @saving.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salvando...'**
+  String get saving;
+
+  /// No description provided for @noChanges.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma alteração para salvar.'**
+  String get noChanges;
+
+  /// No description provided for @profileUpdated.
+  ///
+  /// In pt, this message translates to:
+  /// **'Perfil atualizado com sucesso!'**
+  String get profileUpdated;
+
+  /// No description provided for @changePassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alterar senha'**
+  String get changePassword;
+
+  /// No description provided for @changeEmail.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alterar e-mail'**
+  String get changeEmail;
+
+  /// No description provided for @currentPassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Senha atual'**
+  String get currentPassword;
+
+  /// No description provided for @newPassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nova senha'**
+  String get newPassword;
+
+  /// No description provided for @confirmNewPassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Confirmar nova senha'**
+  String get confirmNewPassword;
+
+  /// No description provided for @newEmail.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novo e-mail'**
+  String get newEmail;
+
+  /// No description provided for @cancel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cancelar'**
+  String get cancel;
+
+  /// No description provided for @save.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salvar'**
+  String get save;
+
+  /// No description provided for @signOut.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair da conta'**
+  String get signOut;
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir conta'**
+  String get deleteAccount;
+
+  /// No description provided for @deleteAccountQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir conta?'**
+  String get deleteAccountQuestion;
+
+  /// No description provided for @deleteAccountDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta ação é permanente e apagará todo o seu progresso.'**
+  String get deleteAccountDescription;
+
+  /// No description provided for @delete.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir'**
+  String get delete;
+
+  /// No description provided for @login.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrar'**
+  String get login;
+
+  /// No description provided for @email.
+  ///
+  /// In pt, this message translates to:
+  /// **'E-mail'**
+  String get email;
+
+  /// No description provided for @password.
+  ///
+  /// In pt, this message translates to:
+  /// **'Senha'**
+  String get password;
+
+  /// No description provided for @loginWelcome.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continue sua missão pelo universo das gírias!'**
+  String get loginWelcome;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esqueci minha senha'**
+  String get forgotPassword;
+
+  /// No description provided for @recoverPassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Recuperar senha'**
+  String get recoverPassword;
+
+  /// No description provided for @searching.
+  ///
+  /// In pt, this message translates to:
+  /// **'Buscando...'**
+  String get searching;
+
+  /// No description provided for @searchSecurityQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Buscar pergunta'**
+  String get searchSecurityQuestion;
+
+  /// No description provided for @securityAnswer.
+  ///
+  /// In pt, this message translates to:
+  /// **'Resposta de segurança'**
+  String get securityAnswer;
+
+  /// No description provided for @fillAllFields.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preencha todos os campos.'**
+  String get fillAllFields;
+
+  /// No description provided for @passwordsDoNotMatch.
+  ///
+  /// In pt, this message translates to:
+  /// **'As senhas não coincidem.'**
+  String get passwordsDoNotMatch;
+
+  /// No description provided for @passwordUpdated.
+  ///
+  /// In pt, this message translates to:
+  /// **'Senha atualizada com sucesso.'**
+  String get passwordUpdated;
+
+  /// No description provided for @fillEmailAndPassword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preencha e-mail e senha.'**
+  String get fillEmailAndPassword;
+
+  /// No description provided for @startMission.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar missão'**
+  String get startMission;
+
+  /// No description provided for @continueLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continuar'**
+  String get continueLabel;
+
+  /// No description provided for @back.
+  ///
+  /// In pt, this message translates to:
+  /// **'Voltar'**
+  String get back;
+
+  /// No description provided for @loading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Carregando...'**
+  String get loading;
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tentar novamente'**
+  String get tryAgain;
+
+  /// No description provided for @errorSavingProgress.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível salvar seu progresso. Verifique sua conexão.'**
+  String get errorSavingProgress;
+
+  /// No description provided for @rankingError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erro ao registrar no ranking. Tente novamente mais tarde.'**
+  String get rankingError;
+
+  /// No description provided for @suggestionSent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sugestão enviada! Em breve nossa equipe avaliará.'**
+  String get suggestionSent;
+
+  /// No description provided for @slangDeleted.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gíria excluída com sucesso.'**
+  String get slangDeleted;
+
+  /// No description provided for @chooseRating.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha uma nota antes de enviar'**
+  String get chooseRating;
+
+  /// No description provided for @thanksFeedback.
+  ///
+  /// In pt, this message translates to:
+  /// **'Obrigado pelo seu feedback!'**
+  String get thanksFeedback;
+
+  /// No description provided for @confirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Confirmar'**
+  String get confirm;
+
+  /// No description provided for @selectSecurityQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha uma pergunta'**
+  String get selectSecurityQuestion;
+
+  /// No description provided for @chooseAvatar.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha seu avatar'**
+  String get chooseAvatar;
+
+  /// No description provided for @progress.
+  ///
+  /// In pt, this message translates to:
+  /// **'Progresso'**
+  String get progress;
+
+  /// No description provided for @impactSentiment.
+  ///
+  /// In pt, this message translates to:
+  /// **'Impacto/sentimento'**
+  String get impactSentiment;
+
+  /// No description provided for @map.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mapa'**
+  String get map;
+
+  /// No description provided for @worlds.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundos'**
+  String get worlds;
+
+  /// No description provided for @slangs.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gírias'**
+  String get slangs;
+
+  /// No description provided for @certificates.
+  ///
+  /// In pt, this message translates to:
+  /// **'Certificados'**
+  String get certificates;
+
+  /// No description provided for @items.
+  ///
+  /// In pt, this message translates to:
+  /// **'Itens'**
+  String get items;
+
+  /// No description provided for @equipped.
+  ///
+  /// In pt, this message translates to:
+  /// **'Equipado'**
+  String get equipped;
+
+  /// No description provided for @ranking.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ranking'**
+  String get ranking;
+
+  /// No description provided for @exploreNewWorlds.
+  ///
+  /// In pt, this message translates to:
+  /// **'Explore novos mundos'**
+  String get exploreNewWorlds;
+
+  /// No description provided for @explorePlanet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Explorar planeta'**
+  String get explorePlanet;
+
+  /// No description provided for @locked.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bloqueado'**
+  String get locked;
+
+  /// No description provided for @register.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrar'**
+  String get register;
+
+  /// No description provided for @guestLogin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrar sem login'**
+  String get guestLogin;
+
+  /// No description provided for @loggingIn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrando...'**
+  String get loggingIn;
+
+  /// No description provided for @welcomeMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aprenda gírias de diversas comunidades para se aproximar de quem você ama!'**
+  String get welcomeMessage;
+}
+
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
+  const _AppLocalizationsDelegate();
+
+  @override
+  Future<AppLocalizations> load(Locale locale) {
+    return SynchronousFuture<AppLocalizations>(lookupAppLocalizations(locale));
+  }
+
+  @override
+  bool isSupported(Locale locale) =>
+      <String>['en', 'es', 'pt'].contains(locale.languageCode);
+
+  @override
+  bool shouldReload(_AppLocalizationsDelegate old) => false;
+}
+
+AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when only language code is specified.
+  switch (locale.languageCode) {
+    case 'en':
+      return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'pt':
+      return AppLocalizationsPt();
+  }
+
+  throw FlutterError(
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
+}

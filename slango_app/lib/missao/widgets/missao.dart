@@ -10,6 +10,7 @@ import '../data/girias_exemplo.dart';
 import '../data/mundo_slug.dart';
 import '../../service/usuarioService.dart';
 import 'package:slango_app/mapa/mapa.dart';
+import '../../l10n/l10n.dart';
 
 // O campo de estrelas agora mora em shared/widgets/fundo_espacial.dart
 // (com metade das partículas) e é reexportado para não quebrar imports antigos.
@@ -485,10 +486,10 @@ class BotaoContinuar extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
       ),
-      child: const Row(
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('Continuar'),
+          Text(context.l10n.continueLabel),
           SizedBox(width: 4),
           Icon(Icons.arrow_forward, size: 11),
         ],
@@ -511,12 +512,12 @@ class BotaoVoltarFala extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
-      child: const Row(
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.arrow_back, size: 11),
           SizedBox(width: 4),
-          Text('Voltar', style: TextStyle(fontWeight: FontWeight.w600)),
+          Text(context.l10n.back, style: TextStyle(fontWeight: FontWeight.w600)),
         ],
       ),
     );

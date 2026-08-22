@@ -7,6 +7,8 @@ import 'mapa/mapa.dart';
 import 'inicio/inicio.dart';
 import 'final/TelaCertificado.dart';
 import 'mapa/data/mundos_mock.dart';
+import 'l10n/l10n.dart';
+import 'l10n/locale_controller.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,12 +16,38 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final _localeController = LocaleController();
+
+  @override
+  void initState() {
+    super.initState();
+    _localeController.load();
+  }
+
+  @override
+  void dispose() {
+    _localeController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return AnimatedBuilder(
+      animation: _localeController,
+      builder: (context, _) => LocaleControllerScope(
+        controller: _localeController,
+        child: MaterialApp(
+      locale: _localeController.locale,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color(0xFF1F1035),
@@ -39,6 +67,8 @@ class MyApp extends StatelessWidget {
             return null;
         }
       },
+        ),
+      ),
     );
   }
 }

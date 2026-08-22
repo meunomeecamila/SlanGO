@@ -6,6 +6,7 @@ import '../texto.dart';
 import '../widgets/moldura_rank.dart';
 import '../../final/Particulas.dart';
 import '../../service/rankService.dart';
+import '../../l10n/l10n.dart';
 
 String formatarTempo(int ms) {
   final minutos = ms ~/ 60000;
@@ -92,7 +93,7 @@ class _RankingScreenState extends State<RankingScreen> {
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: AppColors.primary,
                                 ),
-                                child: const Text('Tentar novamente'),
+                                child: Text(context.l10n.tryAgain),
                               ),
                             ],
                           ),

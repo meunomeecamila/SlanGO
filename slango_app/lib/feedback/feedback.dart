@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../final/Particulas.dart';
@@ -189,8 +190,8 @@ class _FormularioSugestaoCardState extends State<_FormularioSugestaoCard> {
       setState(() => _impacto = 'positiva');
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Sugestão enviada! Em breve nossa equipe avalia.'),
+      SnackBar(
+        content: Text(context.l10n.suggestionSent),
           backgroundColor: Colors.green,
         ),
       );
@@ -953,8 +954,8 @@ class _HistoricoModeracaoAdminState extends State<_HistoricoModeracaoAdmin> {
       // Recarrega a lista após excluir com sucesso.
       _recarregar();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Gíria deletada com sucesso.'),
+      SnackBar(
+        content: Text(context.l10n.slangDeleted),
           backgroundColor: Colors.green,
         ),
       );
@@ -1188,8 +1189,8 @@ class _AvaliacaoGeralCardState extends State<_AvaliacaoGeralCard> {
   Future<void> _enviarAvaliacao() async {
     if (_nota == 0) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Escolha uma nota antes de enviar'),
+      SnackBar(
+        content: Text(context.l10n.chooseRating),
           backgroundColor: Colors.redAccent,
         ),
       );
@@ -1205,8 +1206,8 @@ class _AvaliacaoGeralCardState extends State<_AvaliacaoGeralCard> {
       _comentario.clear();
     });
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Obrigado pelo seu feedback!'),
+    SnackBar(
+      content: Text(context.l10n.thanksFeedback),
         backgroundColor: Colors.green,
       ),
     );

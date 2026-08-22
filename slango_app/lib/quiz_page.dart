@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -352,8 +353,8 @@ class _QuizRunnerState extends State<_QuizRunner>
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Não foi possível salvar seu progresso. Verifique sua conexão.'),
+          SnackBar(
+            content: Text(context.l10n.errorSavingProgress),
             backgroundColor: Color(0xFFF87171),
             behavior: SnackBarBehavior.floating,
           ),
@@ -372,8 +373,8 @@ class _QuizRunnerState extends State<_QuizRunner>
       } catch (e) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Erro ao registrar no ranking. Tente novamente mais tarde.'),
+            SnackBar(
+              content: Text(context.l10n.rankingError),
               backgroundColor: Color(0xFFF87171),
               behavior: SnackBarBehavior.floating,
             ),

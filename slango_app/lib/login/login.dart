@@ -7,6 +7,7 @@ import '../registro/registro.dart';
 import '../shared/widgets/background_espaco.dart';
 import '../shared/widgets/fundo_espacial.dart';
 import '../service/usuarioService.dart';
+import '../l10n/l10n.dart';
 
 import 'widgets/botao_login.dart';
 import 'widgets/campo_login.dart';
@@ -57,8 +58,8 @@ class _LoginScreenState extends State<LoginScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18),
               ),
-              title: const Text(
-                'Recuperar senha',
+              title: Text(
+                context.l10n.recoverPassword,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w700,
@@ -74,8 +75,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       textInputAction: TextInputAction.done,
                       onChanged: (_) => setState(() {}),
                       style: const TextStyle(color: Colors.white),
-                      decoration: const InputDecoration(
-                        labelText: 'E-mail',
+                      decoration: InputDecoration(
+                        labelText: context.l10n.email,
                         labelStyle: TextStyle(color: Colors.white70),
                       ),
                     ),
@@ -115,8 +116,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               },
                         child: Text(
                           carregandoPergunta
-                              ? 'Buscando...'
-                              : 'Buscar pergunta',
+                              ? context.l10n.searching
+                              : context.l10n.searchSecurityQuestion,
                           style: const TextStyle(color: Color(0xFF57E6D8)),
                         ),
                       ),
@@ -140,8 +141,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       TextField(
                         controller: respostaController,
                         style: const TextStyle(color: Colors.white),
-                        decoration: const InputDecoration(
-                          labelText: 'Resposta de segurança',
+                        decoration: InputDecoration(
+                          labelText: context.l10n.securityAnswer,
                           labelStyle: TextStyle(color: Colors.white70),
                         ),
                       ),
@@ -150,8 +151,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         controller: novaSenhaController,
                         obscureText: true,
                         style: const TextStyle(color: Colors.white),
-                        decoration: const InputDecoration(
-                          labelText: 'Nova senha',
+                        decoration: InputDecoration(
+                          labelText: context.l10n.newPassword,
                           labelStyle: TextStyle(color: Colors.white70),
                         ),
                       ),
@@ -160,8 +161,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         controller: confirmarSenhaController,
                         obscureText: true,
                         style: const TextStyle(color: Colors.white),
-                        decoration: const InputDecoration(
-                          labelText: 'Confirmar nova senha',
+                        decoration: InputDecoration(
+                          labelText: context.l10n.confirmNewPassword,
                           labelStyle: TextStyle(color: Colors.white70),
                         ),
                       ),
@@ -172,8 +173,8 @@ class _LoginScreenState extends State<LoginScreen> {
               actions: [
                 TextButton(
                   onPressed: () => Navigator.of(dialogContext).pop(),
-                  child: const Text(
-                    'Cancelar',
+                  child: Text(
+                    context.l10n.cancel,
                     style: TextStyle(color: Colors.white70),
                   ),
                 ),
@@ -196,12 +197,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     if (resposta.isEmpty ||
                         novaSenha.isEmpty ||
                         confirmarSenha.isEmpty) {
-                      this._mostrarErro('Preencha todos os campos.');
+                      this._mostrarErro(context.l10n.fillAllFields);
                       return;
                     }
 
                     if (novaSenha != confirmarSenha) {
-                      this._mostrarErro('As senhas não coincidem.');
+                      this._mostrarErro(context.l10n.passwordsDoNotMatch);
                       return;
                     }
 
@@ -215,7 +216,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       if (!mounted) return;
                       Navigator.of(dialogContext).pop();
-                      this._mostrarErro('Senha atualizada com sucesso.');
+                      this._mostrarErro(context.l10n.passwordUpdated);
                     } catch (e) {
                       if (!mounted) return;
                       this._mostrarErro(
@@ -223,8 +224,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       );
                     }
                   },
-                  child: const Text(
-                    'Salvar',
+                  child: Text(
+                    context.l10n.save,
                     style: TextStyle(color: Color(0xFF57E6D8)),
                   ),
                 ),
@@ -238,7 +239,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> entrar() async {
     if (emailController.text.isEmpty || senhaController.text.isEmpty) {
-      _mostrarErro("Preencha email e senha.");
+      _mostrarErro(context.l10n.fillEmailAndPassword);
       return;
     }
 
@@ -309,7 +310,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 18),
 
                       Text(
-                        "Entrar",
+                        context.l10n.login,
                         textAlign: TextAlign.center,
                         style: AppText.titulo(0.95),
                       ),
@@ -317,7 +318,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 8),
 
                       Text(
-                        "Continue sua missão pelo universo das gírias!",
+                        context.l10n.loginWelcome,
                         textAlign: TextAlign.center,
                         style: AppText.subtitulo(0.95),
                       ),
@@ -325,7 +326,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 50),
 
                       CampoLogin(
-                        label: "Email",
+                        label: context.l10n.email,
                         icon: Icons.email,
                         keyboardType: TextInputType.emailAddress,
                         controller: emailController,
@@ -334,7 +335,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 18),
 
                       CampoLogin(
-                        label: "Senha",
+                        label: context.l10n.password,
                         icon: Icons.lock,
                         obscureText: true,
                         controller: senhaController,
@@ -351,8 +352,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       TextButton(
                         onPressed: () => _abrirDialogoRecuperarSenha(context),
-                        child: const Text(
-                          'Esqueci minha senha',
+                        child: Text(
+                          context.l10n.forgotPassword,
                           style: TextStyle(
                             color: Color(0xFF57E6D8),
                             fontWeight: FontWeight.w600,

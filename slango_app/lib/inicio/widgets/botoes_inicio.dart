@@ -5,6 +5,7 @@ import '../../mapa/mapa.dart';
 import '../../mapa/styles/texto.dart';
 import '../../registro/registro.dart';
 import '../../service/usuarioService.dart';
+import '../../l10n/l10n.dart';
 
 class BotoesInicio extends StatefulWidget {
   const BotoesInicio({super.key});
@@ -64,7 +65,7 @@ class _BotoesInicioState extends State<BotoesInicio> {
                 borderRadius: BorderRadius.circular(32),
               ),
             ),
-            child: Text("Fazer Login", style: AppText.botao(1.1)),
+            child: Text(context.l10n.login, style: AppText.botao(1.1)),
           ),
         ),
 
