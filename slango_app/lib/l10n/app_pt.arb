@@ -137,5 +137,27 @@
   "finishWorld": "Concluir Mundo 🏆",
   "defaultWorldName": "Mundo Jogos",
   "defaultReviewIntroMessage": "Quase lá! Vamos revisar o que você aprendeu?",
-  "appTagline": "SEU UNIVERSO DE GÍRIAS"
+  "appTagline": "SEU UNIVERSO DE GÍRIAS",
+  "confirmSecurityQuestionFirst": "Busque a pergunta de segurança primeiro.",
+  "profile": "Perfil",
+  "dontHaveAccountYet": "Ainda não possui uma conta? ",
+  "certificateCongratsMessage": "Parabéns, {name}!",
+  "@certificateCongratsMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "certificateWorldConquered": "Você conquistou o Mundo {worldName}!",
+  "@certificateWorldConquered": {
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      }
+    }
+  },
+  "itemUnlocked": "Item desbloqueado:",
+  "certificateOfCompletion": "CERTIFICADO DE CONCLUSÃO",
+  "defaultAstronautName": "Astronauta"
 }
