@@ -350,4 +350,32 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get appTagline => 'TU UNIVERSO DE JERGA';
+  @override
+  String get confirmSecurityQuestionFirst =>
+      'Busca primero la pregunta de seguridad.';
+
+  @override
+  String get profile => 'Perfil';
+
+  @override
+  String get dontHaveAccountYet => '¿Aún no tienes una cuenta? ';
+
+  @override
+  String certificateCongratsMessage(String name) {
+    return '¡Felicidades, $name!';
+  }
+
+  @override
+  String certificateWorldConquered(String worldName) {
+    return '¡Conquistaste el Mundo $worldName!';
+  }
+
+  @override
+  String get itemUnlocked => 'Objeto desbloqueado:';
+
+  @override
+  String get certificateOfCompletion => 'CERTIFICADO DE FINALIZACIÓN';
+
+  @override
+  String get defaultAstronautName => 'Astronauta';
 }

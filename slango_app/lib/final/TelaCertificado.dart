@@ -4,6 +4,7 @@ import '../../mapa/models/mundo.dart';
 import 'Particulas.dart';
 import '../mapa/mapa.dart';
 import '../perfil/perfil_screen.dart';
+import '../l10n/l10n.dart';
 
 
 
@@ -18,9 +19,9 @@ class TelaCertificado extends StatelessWidget {
     this.nomeUsuario,
   });
 
-  String get _tratamento {
+  String _tratamento(BuildContext context) {
     final nome = (nomeUsuario ?? '').trim();
-    return nome.isEmpty ? 'Astronauta' : nome;
+    return nome.isEmpty ? context.l10n.defaultAstronautName : nome;
   }
 
   static const Color backgroundDark = Color(0xff04011B);
@@ -68,7 +69,7 @@ class TelaCertificado extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                "Parabéns, $_tratamento!",
+                context.l10n.certificateCongratsMessage(_tratamento(context)),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 22,
@@ -78,7 +79,7 @@ class TelaCertificado extends StatelessWidget {
               ),
               const SizedBox(height: 2),
               Text(
-                "Você conquistou o Mundo ${mundo.nome}!",
+                context.l10n.certificateWorldConquered(mundo.nome),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 13,
@@ -96,16 +97,16 @@ class TelaCertificado extends StatelessWidget {
               
               Column(
                 children: [
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         "🎁 ",
                         style: TextStyle(fontSize: 20),
                       ),
                       Text(
-                        "Item desbloqueado:",
-                        style: TextStyle(
+                        context.l10n.itemUnlocked,
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
@@ -146,12 +147,12 @@ class _Cabecalho extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         _BotaoPilula(
-          label: "Mapa",
+          label: context.l10n.map,
           icon: Icons.arrow_back,
           onTap: onMapaTap,
         ),
         _BotaoPilula(
-          label: "Perfil",
+          label: context.l10n.profile,
           trailingIcon: Icons.arrow_forward,
           onTap: onPerfilTap,
         ),
@@ -258,10 +259,10 @@ class _CardCertificado extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text(
-            "CERTIFICADO DE CONCLUSÃO",
+          Text(
+            context.l10n.certificateOfCompletion,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               color: Color(0xffB19CFF),
               fontSize: 13,
               fontWeight: FontWeight.bold,

@@ -189,7 +189,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         perguntaSeguranca == null ||
                         perguntaSeguranca!.isEmpty) {
                       this._mostrarErro(
-                        'Busque a pergunta de segurança primeiro.',
+                        context.l10n.confirmSecurityQuestionFirst,
                       );
                       return;
                     }

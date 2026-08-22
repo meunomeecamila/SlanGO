@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
+
 class LinkRegistro extends StatelessWidget {
   final VoidCallback onTap;
 
@@ -13,17 +15,17 @@ class LinkRegistro extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text(
-          "Ainda não possui uma conta? ",
-          style: TextStyle(
+        Text(
+          context.l10n.dontHaveAccountYet,
+          style: const TextStyle(
             color: Colors.white70,
           ),
         ),
         GestureDetector(
           onTap: onTap,
-          child: const Text(
-            "Registrar",
-            style: TextStyle(
+          child: Text(
+            context.l10n.register,
+            style: const TextStyle(
               color: Color(0xFF57E6D8),
               fontWeight: FontWeight.bold,
             ),
