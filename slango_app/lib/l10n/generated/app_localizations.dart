@@ -543,6 +543,204 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Aprenda gírias de diversas comunidades para se aproximar de quem você ama!'**
   String get welcomeMessage;
+
+  /// No description provided for @questionProgress.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta {current} de {total}'**
+  String questionProgress(int current, int total);
+
+  /// No description provided for @noQuestionsFound.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma pergunta encontrada.'**
+  String get noQuestionsFound;
+
+  /// No description provided for @errorLoadingQuiz.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erro ao carregar quiz:\n{error}'**
+  String errorLoadingQuiz(String error);
+
+  /// No description provided for @noPhasesFound.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma fase encontrada.'**
+  String get noPhasesFound;
+
+  /// No description provided for @errorLoadingPhases.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erro ao carregar fases: {error}'**
+  String errorLoadingPhases(String error);
+
+  /// No description provided for @whyThisImpact.
+  ///
+  /// In pt, this message translates to:
+  /// **'Por que esse impacto?'**
+  String get whyThisImpact;
+
+  /// No description provided for @correctFeedback.
+  ///
+  /// In pt, this message translates to:
+  /// **'Correto! 🎉'**
+  String get correctFeedback;
+
+  /// No description provided for @incorrectFeedback.
+  ///
+  /// In pt, this message translates to:
+  /// **'Errado!'**
+  String get incorrectFeedback;
+
+  /// No description provided for @keepGoingFeedback.
+  ///
+  /// In pt, this message translates to:
+  /// **'Boa! Continue assim.'**
+  String get keepGoingFeedback;
+
+  /// No description provided for @correctAnswerWas.
+  ///
+  /// In pt, this message translates to:
+  /// **'Resposta: {answer}'**
+  String correctAnswerWas(String answer);
+
+  /// No description provided for @resultPerfectTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Perfeito, Astronauta!'**
+  String get resultPerfectTitle;
+
+  /// No description provided for @resultGreatTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Parabéns, Astronauta!'**
+  String get resultGreatTitle;
+
+  /// No description provided for @resultGoodStartTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bom começo, Astronauta! Vamos melhorar'**
+  String get resultGoodStartTitle;
+
+  /// No description provided for @resultImproveTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vamos melhorar juntos, Astronauta!'**
+  String get resultImproveTitle;
+
+  /// No description provided for @resultPerfectMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você mandou muito bem nessa jornada!'**
+  String get resultPerfectMessage;
+
+  /// No description provided for @resultGreatMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você foi muito bem nessa jornada!'**
+  String get resultGreatMessage;
+
+  /// No description provided for @resultGoodEffortMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bom esforço! Revise as gírias que errou e tente de novo.'**
+  String get resultGoodEffortMessage;
+
+  /// No description provided for @resultTryAgainMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toda jornada começa com um passo. Que tal revisar a lição e tentar outra vez?'**
+  String get resultTryAgainMessage;
+
+  /// No description provided for @worldName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo {world}'**
+  String worldName(String world);
+
+  /// No description provided for @correctAnswersLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acertos'**
+  String get correctAnswersLabel;
+
+  /// No description provided for @wrongAnswersLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erros'**
+  String get wrongAnswersLabel;
+
+  /// No description provided for @timeLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tempo'**
+  String get timeLabel;
+
+  /// No description provided for @performancePercentage.
+  ///
+  /// In pt, this message translates to:
+  /// **'{percent}% de aproveitamento'**
+  String performancePercentage(int percent);
+
+  /// No description provided for @identifyMeaning.
+  ///
+  /// In pt, this message translates to:
+  /// **'Identifique o significado'**
+  String get identifyMeaning;
+
+  /// No description provided for @meaningLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Significado: '**
+  String get meaningLabel;
+
+  /// No description provided for @usageExampleLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Exemplo de uso:'**
+  String get usageExampleLabel;
+
+  /// No description provided for @gotIt.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entendi!'**
+  String get gotIt;
+
+  /// No description provided for @testYourKnowledge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Teste seus conhecimentos!'**
+  String get testYourKnowledge;
+
+  /// No description provided for @completeTheSentence.
+  ///
+  /// In pt, this message translates to:
+  /// **'Complete a frase:'**
+  String get completeTheSentence;
+
+  /// No description provided for @finishWorld.
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluir Mundo 🏆'**
+  String get finishWorld;
+
+  /// No description provided for @defaultWorldName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Jogos'**
+  String get defaultWorldName;
+
+  /// No description provided for @defaultReviewIntroMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quase lá! Vamos revisar o que você aprendeu?'**
+  String get defaultReviewIntroMessage;
+
+  /// No description provided for @appTagline.
+  ///
+  /// In pt, this message translates to:
+  /// **'SEU UNIVERSO DE GÍRIAS'**
+  String get appTagline;
 }
 
 class _AppLocalizationsDelegate

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'l10n/l10n.dart';
 import 'fase/fase.dart';
 import 'quiz_page.dart'; // Certifique-se de que o enum ModoQuiz está neste arquivo
 import 'service/MundoService.dart';
@@ -60,7 +61,7 @@ class _LicaoPageState extends State<LicaoPage> {
               child: Padding(
                 padding: const EdgeInsets.all(24),
                 child: Text(
-                  'Erro ao carregar fases: ${snapshot.error}',
+                  context.l10n.errorLoadingPhases(snapshot.error.toString()),
                   style: const TextStyle(color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
@@ -71,12 +72,12 @@ class _LicaoPageState extends State<LicaoPage> {
 
         final rodada = snapshot.data;
         if (rodada == null || rodada.fases.isEmpty) {
-          return const Scaffold(
-            backgroundColor: Color(0xFF1F1035),
+          return Scaffold(
+            backgroundColor: const Color(0xFF1F1035),
             body: Center(
               child: Text(
-                'Nenhuma fase encontrada.',
-                style: TextStyle(color: Colors.white),
+                context.l10n.noPhasesFound,
+                style: const TextStyle(color: Colors.white),
               ),
             ),
           );

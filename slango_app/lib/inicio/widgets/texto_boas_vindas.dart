@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../mapa/styles/texto.dart';
 
 class TextoBoasVindas extends StatelessWidget {
@@ -10,7 +11,7 @@ class TextoBoasVindas extends StatelessWidget {
     return SizedBox(
       width: 320,
       child: Text(
-        "Aprenda gírias de diversas comunidades para se aproximar de quem você ama!",
+        context.l10n.welcomeMessage,
         textAlign: TextAlign.center,
         style: AppText.subtitulo(1.2),
       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../l10n/l10n.dart';
+
 class LogoSlango extends StatelessWidget {
   const LogoSlango({super.key});
 
@@ -34,7 +36,7 @@ class LogoSlango extends StatelessWidget {
         const SizedBox(height: 8),
 
         Text(
-          "SEU UNIVERSO DE GÍRIAS",
+          context.l10n.appTagline,
           style: GoogleFonts.montserrat(
             color: Colors.white70,
             fontSize: 15,

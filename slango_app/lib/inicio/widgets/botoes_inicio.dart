@@ -90,7 +90,7 @@ class _BotoesInicioState extends State<BotoesInicio> {
               ),
             ),
             child: Text(
-              "Registrar",
+              context.l10n.register,
               style: AppText.botao(
                 1.1,
               ).copyWith(color: const Color(0xFF57E6D8)),
@@ -113,7 +113,7 @@ class _BotoesInicioState extends State<BotoesInicio> {
               ),
             ),
             child: Text(
-              carregando ? 'Entrando...' : 'Entrar sem Login',
+              carregando ? context.l10n.loggingIn : context.l10n.guestLogin,
               style: AppText.botao(1.1).copyWith(color: Colors.white),
             ),
           ),

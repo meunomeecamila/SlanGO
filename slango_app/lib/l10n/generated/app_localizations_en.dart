@@ -66,7 +66,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get changePassword => 'Change password';
 
   @override
-  String get changeEmail => 'Alterar e-mail';
+  String get changeEmail => 'Change email';
 
   @override
   String get currentPassword => 'Current password';
@@ -234,4 +234,118 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get welcomeMessage =>
       'Learn slang from different communities and get closer to the people you love!';
+
+  @override
+  String questionProgress(int current, int total) {
+    return 'Question $current of $total';
+  }
+
+  @override
+  String get noQuestionsFound => 'No questions found.';
+
+  @override
+  String errorLoadingQuiz(String error) {
+    return 'Error loading quiz:\n$error';
+  }
+
+  @override
+  String get noPhasesFound => 'No phases found.';
+
+  @override
+  String errorLoadingPhases(String error) {
+    return 'Error loading phases: $error';
+  }
+
+  @override
+  String get whyThisImpact => 'Why this impact?';
+
+  @override
+  String get correctFeedback => 'Correct! 🎉';
+
+  @override
+  String get incorrectFeedback => 'Incorrect!';
+
+  @override
+  String get keepGoingFeedback => 'Nice! Keep it up.';
+
+  @override
+  String correctAnswerWas(String answer) {
+    return 'Answer: $answer';
+  }
+
+  @override
+  String get resultPerfectTitle => 'Perfect, Astronaut!';
+
+  @override
+  String get resultGreatTitle => 'Congratulations, Astronaut!';
+
+  @override
+  String get resultGoodStartTitle => 'Good start, Astronaut! Let\'s improve';
+
+  @override
+  String get resultImproveTitle => 'Let\'s improve together, Astronaut!';
+
+  @override
+  String get resultPerfectMessage => 'You did amazingly on this journey!';
+
+  @override
+  String get resultGreatMessage => 'You did really well on this journey!';
+
+  @override
+  String get resultGoodEffortMessage =>
+      'Good effort! Review the slang you missed and try again.';
+
+  @override
+  String get resultTryAgainMessage =>
+      'Every journey starts with a single step. How about reviewing the lesson and trying again?';
+
+  @override
+  String worldName(String world) {
+    return 'World $world';
+  }
+
+  @override
+  String get correctAnswersLabel => 'Correct';
+
+  @override
+  String get wrongAnswersLabel => 'Wrong';
+
+  @override
+  String get timeLabel => 'Time';
+
+  @override
+  String performancePercentage(int percent) {
+    return '$percent% performance';
+  }
+
+  @override
+  String get identifyMeaning => 'Identify the meaning';
+
+  @override
+  String get meaningLabel => 'Meaning: ';
+
+  @override
+  String get usageExampleLabel => 'Usage example:';
+
+  @override
+  String get gotIt => 'Got it!';
+
+  @override
+  String get testYourKnowledge => 'Test your knowledge!';
+
+  @override
+  String get completeTheSentence => 'Complete the sentence:';
+
+  @override
+  String get finishWorld => 'Finish World 🏆';
+
+  @override
+  String get defaultWorldName => 'Games World';
+
+  @override
+  String get defaultReviewIntroMessage =>
+      'Almost there! Shall we review what you learned?';
+
+  @override
+  String get appTagline => 'YOUR UNIVERSE OF SLANG';
 }

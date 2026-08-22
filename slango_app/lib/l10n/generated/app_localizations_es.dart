@@ -227,12 +227,127 @@ class AppLocalizationsEs extends AppLocalizations {
   String get register => 'Registrar';
 
   @override
-  String get guestLogin => 'Entrar sem login';
+  String get guestLogin => 'Entrar sin cuenta';
 
   @override
   String get loggingIn => 'Entrando...';
 
   @override
   String get welcomeMessage =>
-      'Aprenda gírias de diversas comunidades para se aproximar de quem você ama!';
+      '¡Aprende jerga de diversas comunidades y acércate a las personas que amas!';
+
+  @override
+  String questionProgress(int current, int total) {
+    return 'Pregunta $current de $total';
+  }
+
+  @override
+  String get noQuestionsFound => 'No se encontraron preguntas.';
+
+  @override
+  String errorLoadingQuiz(String error) {
+    return 'Error al cargar el quiz:\n$error';
+  }
+
+  @override
+  String get noPhasesFound => 'No se encontraron fases.';
+
+  @override
+  String errorLoadingPhases(String error) {
+    return 'Error al cargar las fases: $error';
+  }
+
+  @override
+  String get whyThisImpact => '¿Por qué este impacto?';
+
+  @override
+  String get correctFeedback => '¡Correcto! 🎉';
+
+  @override
+  String get incorrectFeedback => '¡Incorrecto!';
+
+  @override
+  String get keepGoingFeedback => '¡Bien! Sigue así.';
+
+  @override
+  String correctAnswerWas(String answer) {
+    return 'Respuesta: $answer';
+  }
+
+  @override
+  String get resultPerfectTitle => '¡Perfecto, Astronauta!';
+
+  @override
+  String get resultGreatTitle => '¡Felicidades, Astronauta!';
+
+  @override
+  String get resultGoodStartTitle =>
+      '¡Buen comienzo, Astronauta! Vamos a mejorar';
+
+  @override
+  String get resultImproveTitle => '¡Vamos a mejorar juntos, Astronauta!';
+
+  @override
+  String get resultPerfectMessage => '¡Lo hiciste increíble en este viaje!';
+
+  @override
+  String get resultGreatMessage => '¡Te fue muy bien en este viaje!';
+
+  @override
+  String get resultGoodEffortMessage =>
+      '¡Buen esfuerzo! Repasa la jerga que fallaste e inténtalo de nuevo.';
+
+  @override
+  String get resultTryAgainMessage =>
+      'Todo viaje comienza con un paso. ¿Qué tal repasar la lección e intentarlo de nuevo?';
+
+  @override
+  String worldName(String world) {
+    return 'Mundo $world';
+  }
+
+  @override
+  String get correctAnswersLabel => 'Aciertos';
+
+  @override
+  String get wrongAnswersLabel => 'Errores';
+
+  @override
+  String get timeLabel => 'Tiempo';
+
+  @override
+  String performancePercentage(int percent) {
+    return '$percent% de rendimiento';
+  }
+
+  @override
+  String get identifyMeaning => 'Identifica el significado';
+
+  @override
+  String get meaningLabel => 'Significado: ';
+
+  @override
+  String get usageExampleLabel => 'Ejemplo de uso:';
+
+  @override
+  String get gotIt => '¡Entendido!';
+
+  @override
+  String get testYourKnowledge => '¡Pon a prueba tus conocimientos!';
+
+  @override
+  String get completeTheSentence => 'Completa la frase:';
+
+  @override
+  String get finishWorld => 'Finalizar Mundo 🏆';
+
+  @override
+  String get defaultWorldName => 'Mundo Juegos';
+
+  @override
+  String get defaultReviewIntroMessage =>
+      '¡Ya casi! ¿Repasamos lo que aprendiste?';
+
+  @override
+  String get appTagline => 'TU UNIVERSO DE JERGA';
 }

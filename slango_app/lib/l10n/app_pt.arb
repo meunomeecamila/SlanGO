@@ -73,5 +73,69 @@
   "register": "Registrar",
   "guestLogin": "Entrar sem login",
   "loggingIn": "Entrando...",
-  "welcomeMessage": "Aprenda gírias de diversas comunidades para se aproximar de quem você ama!"
+  "welcomeMessage": "Aprenda gírias de diversas comunidades para se aproximar de quem você ama!",
+  "questionProgress": "Pergunta {current} de {total}",
+  "@questionProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "noQuestionsFound": "Nenhuma pergunta encontrada.",
+  "errorLoadingQuiz": "Erro ao carregar quiz:\n{error}",
+  "@errorLoadingQuiz": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "noPhasesFound": "Nenhuma fase encontrada.",
+  "errorLoadingPhases": "Erro ao carregar fases: {error}",
+  "@errorLoadingPhases": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "whyThisImpact": "Por que esse impacto?",
+  "correctFeedback": "Correto! 🎉",
+  "incorrectFeedback": "Errado!",
+  "keepGoingFeedback": "Boa! Continue assim.",
+  "correctAnswerWas": "Resposta: {answer}",
+  "@correctAnswerWas": {
+    "placeholders": {
+      "answer": {"type": "String"}
+    }
+  },
+  "resultPerfectTitle": "Perfeito, Astronauta!",
+  "resultGreatTitle": "Parabéns, Astronauta!",
+  "resultGoodStartTitle": "Bom começo, Astronauta! Vamos melhorar",
+  "resultImproveTitle": "Vamos melhorar juntos, Astronauta!",
+  "resultPerfectMessage": "Você mandou muito bem nessa jornada!",
+  "resultGreatMessage": "Você foi muito bem nessa jornada!",
+  "resultGoodEffortMessage": "Bom esforço! Revise as gírias que errou e tente de novo.",
+  "resultTryAgainMessage": "Toda jornada começa com um passo. Que tal revisar a lição e tentar outra vez?",
+  "worldName": "Mundo {world}",
+  "@worldName": {
+    "placeholders": {
+      "world": {"type": "String"}
+    }
+  },
+  "correctAnswersLabel": "Acertos",
+  "wrongAnswersLabel": "Erros",
+  "timeLabel": "Tempo",
+  "performancePercentage": "{percent}% de aproveitamento",
+  "@performancePercentage": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  },
+  "identifyMeaning": "Identifique o significado",
+  "meaningLabel": "Significado: ",
+  "usageExampleLabel": "Exemplo de uso:",
+  "gotIt": "Entendi!",
+  "testYourKnowledge": "Teste seus conhecimentos!",
+  "completeTheSentence": "Complete a frase:",
+  "finishWorld": "Concluir Mundo 🏆",
+  "defaultWorldName": "Mundo Jogos",
+  "defaultReviewIntroMessage": "Quase lá! Vamos revisar o que você aprendeu?",
+  "appTagline": "SEU UNIVERSO DE GÍRIAS"
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'l10n/l10n.dart';
 import 'shared/widgets/fundo_espacial.dart';
 
 class SlangQuizScreen extends StatelessWidget {
@@ -78,7 +79,7 @@ class SlangQuizScreen extends StatelessWidget {
                       children: [
                         SizedBox(height: 28 * heightScale),
                         Text(
-                          'IDENTIFIQUE O SIGNIFICADO',
+                          context.l10n.identifyMeaning.toUpperCase(),
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: purpleLight,
@@ -126,15 +127,15 @@ class SlangQuizScreen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 28 * heightScale),
-                        _buildMeaningRow(scale),
+                        _buildMeaningRow(context, scale),
                         SizedBox(height: 22 * heightScale),
-                        _buildExampleCard(scale),
+                        _buildExampleCard(context, scale),
                         SizedBox(height: 28 * heightScale),
                       ],
                     ),
                   ),
                 ),
-                _buildContinueButton(scale),
+                _buildContinueButton(context, scale),
                 SizedBox(height: 16 * heightScale),
               ],
             ),
@@ -185,7 +186,7 @@ class SlangQuizScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildMeaningRow(double scale) {
+  Widget _buildMeaningRow(BuildContext context, double scale) {
     final double avatarSize = 64 * scale;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -221,9 +222,9 @@ class SlangQuizScreen extends StatelessWidget {
                   height: 1.35,
                 ),
                 children: [
-                  const TextSpan(
-                    text: 'Significado: ',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  TextSpan(
+                    text: context.l10n.meaningLabel,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   TextSpan(text: significado),
                 ],
@@ -235,7 +236,7 @@ class SlangQuizScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildExampleCard(double scale) {
+  Widget _buildExampleCard(BuildContext context, double scale) {
     return Container(
       width: double.infinity,
       padding: EdgeInsets.all(18 * scale),
@@ -248,7 +249,7 @@ class SlangQuizScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Exemplo de uso:',
+            context.l10n.usageExampleLabel,
             style: TextStyle(
               color: purpleLight,
               fontWeight: FontWeight.bold,
@@ -280,7 +281,7 @@ class SlangQuizScreen extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'Identifique o significado',
+                      context.l10n.identifyMeaning,
                       style: TextStyle(
                         color: purpleLight,
                         fontWeight: FontWeight.bold,
@@ -309,7 +310,7 @@ class SlangQuizScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildContinueButton(double scale) {
+  Widget _buildContinueButton(BuildContext context, double scale) {
     return SizedBox(
       width: double.infinity,
       height: 58 * scale,
@@ -326,7 +327,7 @@ class SlangQuizScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Entendi!',
+              context.l10n.gotIt,
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

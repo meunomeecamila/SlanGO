@@ -108,7 +108,7 @@ class _QuizPageState extends State<QuizPage> {
               child: Padding(
                 padding: const EdgeInsets.all(24),
                 child: Text(
-                  'Erro ao carregar quiz:\n${snapshot.error}',
+                  context.l10n.errorLoadingQuiz(snapshot.error.toString()),
                   style: const TextStyle(color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
@@ -120,12 +120,12 @@ class _QuizPageState extends State<QuizPage> {
         final perguntas = snapshot.data ?? [];
 
         if (perguntas.isEmpty) {
-          return const Scaffold(
-            backgroundColor: Color(0xFF1F1035),
+          return Scaffold(
+            backgroundColor: const Color(0xFF1F1035),
             body: Center(
               child: Text(
-                'Nenhuma pergunta encontrada.',
-                style: TextStyle(color: Colors.white),
+                context.l10n.noQuestionsFound,
+                style: const TextStyle(color: Colors.white),
               ),
             ),
           );
@@ -473,7 +473,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                   children: [
                     SizedBox(height: 12 * heightScale),
 
-                    _buildTopBar(scale, progresso),
+                    _buildTopBar(context, scale, progresso),
                     SizedBox(height: 22 * heightScale),
 
                     Center(
@@ -488,7 +488,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                           borderRadius: BorderRadius.circular(30),
                         ),
                         child: Text(
-                          'Pergunta ${_indice + 1} de $total',
+                          context.l10n.questionProgress(_indice + 1, total),
                           style: TextStyle(
                             color: roxoClaro,
                             fontWeight: FontWeight.bold,
@@ -592,6 +592,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                                 fase.impactoMotivo.trim().isNotEmpty) ...[
                               SizedBox(height: 16 * scale),
                               _buildImpactoMotivoCard(
+                                context,
                                 fase.impactoMotivo,
                                 scale,
                               ),
@@ -613,6 +614,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                 child: SlideTransition(
                   position: _feedbackSlide,
                   child: _buildFeedbackPanel(
+                    context: context,
                     acertou: acertou,
                     respostaCorreta: respostaCorreta,
                     scale: scale,
@@ -625,7 +627,7 @@ class _QuizRunnerState extends State<_QuizRunner>
     );
   }
 
-  Widget _buildTopBar(double scale, double progresso) {
+  Widget _buildTopBar(BuildContext context, double scale, double progresso) {
     return Row(
       children: [
         GestureDetector(
@@ -649,7 +651,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                 ),
                 SizedBox(width: 5 * scale),
                 Text(
-                  'Mapa',
+                  context.l10n.map,
                   style: TextStyle(
                     color: roxoClaro,
                     fontWeight: FontWeight.bold,
@@ -843,7 +845,7 @@ class _QuizRunnerState extends State<_QuizRunner>
     return botao;
   }
 
-  Widget _buildImpactoMotivoCard(String motivo, double scale) {
+  Widget _buildImpactoMotivoCard(BuildContext context, String motivo, double scale) {
     return Container(
       width: double.infinity,
       padding: EdgeInsets.all(14 * scale),
@@ -872,7 +874,7 @@ class _QuizRunnerState extends State<_QuizRunner>
               ),
               SizedBox(width: 6 * scale),
               Text(
-                'Por que esse impacto?',
+                context.l10n.whyThisImpact,
                 style: TextStyle(
                   color: roxoClaro,
                   fontWeight: FontWeight.bold,
@@ -896,6 +898,7 @@ class _QuizRunnerState extends State<_QuizRunner>
   }
 
   Widget _buildFeedbackPanel({
+    required BuildContext context,
     required bool acertou,
     required String respostaCorreta,
     required double scale,
@@ -904,10 +907,11 @@ class _QuizRunnerState extends State<_QuizRunner>
     final Color bg = acertou
         ? const Color(0xFF0F3D25)
         : const Color(0xFF3D0F15);
-    final String titulo = acertou ? 'Correto! 🎉' : 'Errado!';
+    final String titulo =
+        acertou ? context.l10n.correctFeedback : context.l10n.incorrectFeedback;
     final String sub = acertou
-        ? 'Boa! Continue assim.'
-        : 'Resposta: $respostaCorreta';
+        ? context.l10n.keepGoingFeedback
+        : context.l10n.correctAnswerWas(respostaCorreta);
 
     return Container(
       width: double.infinity,
@@ -978,7 +982,7 @@ class _QuizRunnerState extends State<_QuizRunner>
                 elevation: 0,
               ),
               child: Text(
-                'Continuar',
+                context.l10n.continueLabel,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 14 * scale,
@@ -1036,18 +1040,18 @@ class _ResultadoScreen extends StatelessWidget {
     return '🌱';
   }
 
-  String get _titulo {
-    if (_pct == 1.0) return 'Perfeito, Astronauta!';
-    if (_pct >= 0.8) return 'Parabéns, Astronauta!';
-    if (_pct >= 0.5) return 'Bom começo, Astronauta! Vamos melhorar';
-    return 'Vamos melhorar juntos, Astronauta!';
+  String _titulo(BuildContext context) {
+    if (_pct == 1.0) return context.l10n.resultPerfectTitle;
+    if (_pct >= 0.8) return context.l10n.resultGreatTitle;
+    if (_pct >= 0.5) return context.l10n.resultGoodStartTitle;
+    return context.l10n.resultImproveTitle;
   }
 
-  String get _mensagem {
-    if (_pct == 1.0) return 'Você mandou muito bem nessa jornada!';
-    if (_pct >= 0.8) return 'Você foi muito bem nessa jornada!';
-    if (_pct >= 0.5) return 'Bom esforço! Revise as gírias que errou e tente de novo.';
-    return 'Toda jornada começa com um passo. Que tal revisar a lição e tentar outra vez?';
+  String _mensagem(BuildContext context) {
+    if (_pct == 1.0) return context.l10n.resultPerfectMessage;
+    if (_pct >= 0.8) return context.l10n.resultGreatMessage;
+    if (_pct >= 0.5) return context.l10n.resultGoodEffortMessage;
+    return context.l10n.resultTryAgainMessage;
   }
 
   String get _nomeMundoFormatado => nomeMundo.isEmpty
@@ -1129,7 +1133,7 @@ class _ResultadoScreen extends StatelessWidget {
                                 ),
                               ),
                               child: Text(
-                                'Mundo $_nomeMundoFormatado',
+                                context.l10n.worldName(_nomeMundoFormatado),
                                 style: TextStyle(
                                   color: roxoClaro,
                                   fontWeight: FontWeight.bold,
@@ -1169,7 +1173,7 @@ class _ResultadoScreen extends StatelessWidget {
                                     ),
                                     SizedBox(width: 6 * scale),
                                     Text(
-                                      'Mapa',
+                                      context.l10n.map,
                                       style: TextStyle(
                                         color: roxoClaro,
                                         fontWeight: FontWeight.bold,
@@ -1223,7 +1227,7 @@ class _ResultadoScreen extends StatelessWidget {
                                   SizedBox(height: 14 * heightScale),
 
                                   Text(
-                                    _titulo,
+                                    _titulo(context),
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.baloo2(
                                       color: Colors.white,
@@ -1264,7 +1268,7 @@ class _ResultadoScreen extends StatelessWidget {
                                               icon: Icons.check_circle_rounded,
                                               cor: verde,
                                               valor: '$acertos',
-                                              label: 'Acertos',
+                                              label: context.l10n.correctAnswersLabel,
                                               scale: scale,
                                             ),
                                             SizedBox(width: 18 * scale),
@@ -1278,7 +1282,7 @@ class _ResultadoScreen extends StatelessWidget {
                                               icon: Icons.cancel_rounded,
                                               cor: vermelho,
                                               valor: '$_erros',
-                                              label: 'Erros',
+                                              label: context.l10n.wrongAnswersLabel,
                                               scale: scale,
                                             ),
                                             
@@ -1295,7 +1299,7 @@ class _ResultadoScreen extends StatelessWidget {
                                                 icon: Icons.timer_rounded,
                                                 cor: amareloTempo,
                                                 valor: _tempoFormatado, // Usando 00:00
-                                                label: 'Tempo',
+                                                label: context.l10n.timeLabel,
                                                 scale: scale,
                                               ),
                                             ],
@@ -1317,7 +1321,8 @@ class _ResultadoScreen extends StatelessWidget {
                                         ),
                                         SizedBox(height: 8 * scale),
                                         Text(
-                                          '${(_pct * 100).round()}% de aproveitamento',
+                                          context.l10n.performancePercentage(
+                                              (_pct * 100).round()),
                                           style: TextStyle(
                                             color: Colors.white54,
                                             fontSize: 12 * scale,
@@ -1353,7 +1358,7 @@ class _ResultadoScreen extends StatelessWidget {
                                   SizedBox(height: 20 * heightScale),
 
                                   Text(
-                                    _mensagem,
+                                    _mensagem(context),
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.white70,

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'l10n/l10n.dart';
 import 'shared/widgets/fundo_espacial.dart';
 
 class RevisaoFinalScreen extends StatelessWidget {
-  final String nomeMundo;
-  final String mensagemBot;
+  /// Quando não informado, usa o nome de mundo padrão traduzido.
+  final String? nomeMundo;
+  /// Quando não informada, usa a mensagem introdutória padrão traduzida.
+  final String? mensagemBot;
   final String avatar; // caminho da imagem do personagem
 
   // Pergunta de múltipla escolha
@@ -30,8 +33,8 @@ class RevisaoFinalScreen extends StatelessWidget {
     required this.palavrasOpcoes,
     required this.onSelecionarPalavra,
     required this.onConcluir,
-    this.nomeMundo = 'Mundo Jogos',
-    this.mensagemBot = 'Quase lá! Vamos revisar o que você aprendeu?',
+    this.nomeMundo,
+    this.mensagemBot,
     this.avatar = 'images/avatar.png',
     this.opcaoSelecionada,
     this.palavraSelecionada,
@@ -73,10 +76,10 @@ class RevisaoFinalScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   SizedBox(height: 16 * heightScale),
-                  _buildBadge(scale),
+                  _buildBadge(context, scale),
                   SizedBox(height: 18 * heightScale),
                   Text(
-                    'Teste seus conhecimentos!',
+                    context.l10n.testYourKnowledge,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.baloo2(
                       color: Colors.white,
@@ -85,13 +88,13 @@ class RevisaoFinalScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20 * heightScale),
-                  _buildMensagemBot(scale),
+                  _buildMensagemBot(context, scale),
                   SizedBox(height: 20 * heightScale),
                   _buildCardPergunta(scale),
                   SizedBox(height: 18 * heightScale),
-                  _buildCardCompletarFrase(scale),
+                  _buildCardCompletarFrase(context, scale),
                   SizedBox(height: 24 * heightScale),
-                  _buildBotaoConcluir(scale),
+                  _buildBotaoConcluir(context, scale),
                   SizedBox(height: 24 * heightScale),
                 ],
               ),
@@ -102,7 +105,7 @@ class RevisaoFinalScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildBadge(double scale) {
+  Widget _buildBadge(BuildContext context, double scale) {
     return Center(
       child: Container(
         padding: EdgeInsets.symmetric(
@@ -114,7 +117,7 @@ class RevisaoFinalScreen extends StatelessWidget {
           border: Border.all(color: purpleAccent.withOpacity(0.7)),
         ),
         child: Text(
-          '$nomeMundo',
+          nomeMundo ?? context.l10n.defaultWorldName,
           style: TextStyle(
             color: purpleLight,
             fontWeight: FontWeight.bold,
@@ -126,7 +129,7 @@ class RevisaoFinalScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildMensagemBot(double scale) {
+  Widget _buildMensagemBot(BuildContext context, double scale) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -159,7 +162,7 @@ class RevisaoFinalScreen extends StatelessWidget {
               ),
             ),
             child: Text(
-              mensagemBot,
+              mensagemBot ?? context.l10n.defaultReviewIntroMessage,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 14.5 * scale,
@@ -233,7 +236,7 @@ class RevisaoFinalScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCardCompletarFrase(double scale) {
+  Widget _buildCardCompletarFrase(BuildContext context, double scale) {
     final partes = fraseIncompleta.split('{}');
     final antes = partes.isNotEmpty ? partes[0] : '';
     final depois = partes.length > 1 ? partes[1] : '';
@@ -250,7 +253,7 @@ class RevisaoFinalScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Complete a frase:',
+            context.l10n.completeTheSentence,
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -337,7 +340,7 @@ class RevisaoFinalScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildBotaoConcluir(double scale) {
+  Widget _buildBotaoConcluir(BuildContext context, double scale) {
     return SizedBox(
       width: double.infinity,
       height: 58 * scale,
@@ -351,7 +354,7 @@ class RevisaoFinalScreen extends StatelessWidget {
           elevation: 0,
         ),
         child: Text(
-          'Concluir Mundo 🏆',
+          context.l10n.finishWorld,
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
