@@ -227,4 +227,26 @@
   "chooseModeSubtitle": "Como você deseja jogar essa fase?",
   "casualModeLabel": "Modo Casual (Apenas Estudar)",
   "rankedModeLabel": "Modo Rankeado (Com Tempo)"
+  "confirmSecurityQuestionFirst": "Busque a pergunta de segurança primeiro.",
+  "profile": "Perfil",
+  "dontHaveAccountYet": "Ainda não possui uma conta? ",
+  "certificateCongratsMessage": "Parabéns, {name}!",
+  "@certificateCongratsMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "certificateWorldConquered": "Você conquistou o Mundo {worldName}!",
+  "@certificateWorldConquered": {
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      }
+    }
+  },
+  "itemUnlocked": "Item desbloqueado:",
+  "certificateOfCompletion": "CERTIFICADO DE CONCLUSÃO",
+  "defaultAstronautName": "Astronauta"
 }

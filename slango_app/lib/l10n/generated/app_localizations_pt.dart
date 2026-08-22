@@ -518,3 +518,32 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get rankedModeLabel => 'Modo Rankeado (Com Tempo)';
 }
+  @override
+  String get confirmSecurityQuestionFirst =>
+      'Busque a pergunta de segurança primeiro.';
+
+  @override
+  String get profile => 'Perfil';
+
+  @override
+  String get dontHaveAccountYet => 'Ainda não possui uma conta? ';
+
+  @override
+  String certificateCongratsMessage(String name) {
+    return 'Parabéns, $name!';
+  }
+
+  @override
+  String certificateWorldConquered(String worldName) {
+    return 'Você conquistou o Mundo $worldName!';
+  }
+
+  @override
+  String get itemUnlocked => 'Item desbloqueado:';
+
+  @override
+  String get certificateOfCompletion => 'CERTIFICADO DE CONCLUSÃO';
+
+  @override
+  String get defaultAstronautName => 'Astronauta';
+}

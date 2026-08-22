@@ -1029,6 +1029,53 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Modo Rankeado (Com Tempo)'**
   String get rankedModeLabel;
+  /// No description provided for @confirmSecurityQuestionFirst.
+  ///
+  /// In pt, this message translates to:
+  /// **'Busque a pergunta de segurança primeiro.'**
+  String get confirmSecurityQuestionFirst;
+
+  /// No description provided for @profile.
+  ///
+  /// In pt, this message translates to:
+  /// **'Perfil'**
+  String get profile;
+
+  /// No description provided for @dontHaveAccountYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda não possui uma conta? '**
+  String get dontHaveAccountYet;
+
+  /// No description provided for @certificateCongratsMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Parabéns, {name}!'**
+  String certificateCongratsMessage(String name);
+
+  /// No description provided for @certificateWorldConquered.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você conquistou o Mundo {worldName}!'**
+  String certificateWorldConquered(String worldName);
+
+  /// No description provided for @itemUnlocked.
+  ///
+  /// In pt, this message translates to:
+  /// **'Item desbloqueado:'**
+  String get itemUnlocked;
+
+  /// No description provided for @certificateOfCompletion.
+  ///
+  /// In pt, this message translates to:
+  /// **'CERTIFICADO DE CONCLUSÃO'**
+  String get certificateOfCompletion;
+
+  /// No description provided for @defaultAstronautName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Astronauta'**
+  String get defaultAstronautName;
 }
 
 class _AppLocalizationsDelegate
