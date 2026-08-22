@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../mapa/styles/texto.dart';
+import '../../l10n/l10n.dart';
 
 class BotaoRegistrar extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -37,7 +38,7 @@ class BotaoRegistrar extends StatelessWidget {
                 ),
               )
             : Text(
-                "Criar Conta",
+                context.l10n.createAccount,
                 style: AppText.botao(1.1),
               ),
       ),

@@ -348,4 +348,170 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get appTagline => 'YOUR UNIVERSE OF SLANG';
+
+  @override
+  String get createAccount => 'Create Account';
+
+  @override
+  String get startAdventureSubtitle =>
+      'Start your adventure in the universe of slang!';
+
+  @override
+  String get selectBirthDateError => 'Select your date of birth.';
+
+  @override
+  String get selectSecurityQuestionError => 'Select a security question.';
+
+  @override
+  String get answerSecurityQuestionError => 'Answer the security question.';
+
+  @override
+  String get termsTitle => 'Terms of Responsibility';
+
+  @override
+  String get termsContent =>
+      'By accepting, you agree that your data may be used for research purposes, data analysis, and service improvement, while respecting the privacy and security of your information.';
+
+  @override
+  String get reject => 'Reject';
+
+  @override
+  String get accept => 'Accept';
+
+  @override
+  String get termsAgreement =>
+      'I have read and agree to the terms of use and responsibility.';
+
+  @override
+  String get alreadyHaveAccount => 'Already have an account? ';
+
+  @override
+  String get doLogin => 'Log in';
+
+  @override
+  String get securityQuestionPet => 'What was the name of your first pet?';
+
+  @override
+  String get securityQuestionBirthCity => 'What city were you born in?';
+
+  @override
+  String get securityQuestionMotherName => 'What is your mother\'s name?';
+
+  @override
+  String get securityQuestionFirstSchool =>
+      'What was the name of your first school?';
+
+  @override
+  String get securityQuestionFavoriteDish => 'What is your favorite dish?';
+
+  @override
+  String get securityQuestionChildhoodFriend =>
+      'What was the name of your childhood best friend?';
+
+  @override
+  String get worldStatusAvailable => 'Available';
+
+  @override
+  String get worldGamesDescription =>
+      'Slang born in online matches: from ranked chat to jokes among gamers.';
+
+  @override
+  String get worldKpopName => 'K-Pop World';
+
+  @override
+  String get worldKpopDescription =>
+      'The vocabulary of Korean fandoms: fan terms, comebacks, and expressions used across groups.';
+
+  @override
+  String get worldMakeupName => 'Makeup World';
+
+  @override
+  String get worldMakeupDescription =>
+      'Beauty and makeup terms that dominate tutorials, reviews, and skincare routines.';
+
+  @override
+  String get worldPopName => 'Pop World';
+
+  @override
+  String get worldPopDescription =>
+      'Pop culture expressions: music, shows, memes, and everything trending right now.';
+
+  @override
+  String get worldOldName => 'Retro World';
+
+  @override
+  String get worldOldDescription =>
+      'Classic slang from past decades that older generations still use today.';
+
+  @override
+  String get worldDailyName => 'Everyday World';
+
+  @override
+  String get worldDailyDescription =>
+      'Everyday speech: conversations on the street, at school, and at home, the casual way.';
+
+  @override
+  String get worldSportsName => 'Sports World';
+
+  @override
+  String get worldSportsDescription =>
+      'Slang from the court, the field, and the stands: commentary, cheering, and locker-room talk.';
+
+  @override
+  String get worldGeekName => 'Geek World';
+
+  @override
+  String get worldGeekDescription =>
+      'The nerd universe: anime, comics, RPGs, and tech with their own vocabulary.';
+
+  @override
+  String get worldSocialName => 'Social Media World';
+
+  @override
+  String get worldSocialDescription =>
+      'The language of timelines: acronyms, trends, and expressions that go viral every week.';
+
+  @override
+  String get worldRelationshipsName => 'Relationships World';
+
+  @override
+  String get worldRelationshipsDescription =>
+      'How people talk about crushes, friendships, and breakups in today\'s conversations.';
+
+  @override
+  String get worldCommunityName => 'Community World';
+
+  @override
+  String get worldCommunityDescription =>
+      'The community\'s universe: terms, expressions, and conversations that bring members together.';
+
+  @override
+  String slangsLearnedProgress(int learned, int total) {
+    return '$learned/$total slang words learned';
+  }
+
+  @override
+  String slangsToLearn(int total) {
+    return '$total slang words to learn';
+  }
+
+  @override
+  String learnedOfTotal(int learned, int total) {
+    return '$learned/$total learned';
+  }
+
+  @override
+  String get loadingTransmission => 'Loading transmission...';
+
+  @override
+  String get chooseModeTitle => 'Choose the Mode';
+
+  @override
+  String get chooseModeSubtitle => 'How do you want to play this phase?';
+
+  @override
+  String get casualModeLabel => 'Casual Mode (Just Study)';
+
+  @override
+  String get rankedModeLabel => 'Ranked Mode (Timed)';
 }

@@ -57,6 +57,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
     final falas = await FalasService.obterFalas(
       _slugMundo,
       nomeUsuario: nomeUsuario,
+      locale: context.l10n.localeName,
     );
     if (!mounted) return;
     setState(() {
@@ -68,7 +69,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
 
   /// Texto atual do balão.
   String get _textoDaFala {
-    if (_carregandoFalas) return 'Carregando transmissão...';
+    if (_carregandoFalas) return context.l10n.loadingTransmission;
     if (_falasDoMundo.isEmpty) return '';
     return _falasDoMundo[_indiceFala];
   }
@@ -109,18 +110,18 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                'Escolha o Modo',
-                style: TextStyle(
+              Text(
+                context.l10n.chooseModeTitle,
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 8),
-              const Text(
-                'Como você deseja jogar essa fase?',
-                style: TextStyle(
+              Text(
+                context.l10n.chooseModeSubtitle,
+                style: const TextStyle(
                   color: Colors.white70,
                   fontSize: 14,
                 ),
@@ -148,14 +149,14 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.coffee_rounded, color: Color(0xFFB9A6FF)),
-                    SizedBox(width: 12),
+                    const Icon(Icons.coffee_rounded, color: Color(0xFFB9A6FF)),
+                    const SizedBox(width: 12),
                     Text(
-                      'Modo Casual (Apenas Estudar)',
-                      style: TextStyle(
+                      context.l10n.casualModeLabel,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -187,14 +188,14 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.timer_rounded, color: Colors.white),
-                    SizedBox(width: 12),
+                    const Icon(Icons.timer_rounded, color: Colors.white),
+                    const SizedBox(width: 12),
                     Text(
-                      'Modo Rankeado (Com Tempo)',
-                      style: TextStyle(
+                      context.l10n.rankedModeLabel,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -406,14 +407,14 @@ class CabecalhoComTituloCentralizado extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: BotaoEmFormatoDePilula(
               aoTocar: () => Navigator.of(context).maybePop(),
-              conteudo: const Row(
+              conteudo: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.arrow_back, color: Color(0xFFB9A6E8), size: 14),
-                  SizedBox(width: 6),
+                  const Icon(Icons.arrow_back, color: Color(0xFFB9A6E8), size: 14),
+                  const SizedBox(width: 6),
                   Text(
-                    'Mapa',
-                    style: TextStyle(
+                    context.l10n.map,
+                    style: const TextStyle(
                       color: Color(0xFFB9A6E8),
                       fontWeight: FontWeight.bold,
                       fontSize: 12,
@@ -598,14 +599,14 @@ class BotaoIniciarMissao extends StatelessWidget {
             elevation: 6,
             shadowColor: const Color(0xFF7C5CE0).withOpacity(0.5),
           ),
-          child: const Row(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('🚀', style: TextStyle(fontSize: 18)),
-              SizedBox(width: 8),
+              const Text('🚀', style: TextStyle(fontSize: 18)),
+              const SizedBox(width: 8),
               Text(
-                'Iniciar Missão',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                context.l10n.startMission,
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ],
           ),

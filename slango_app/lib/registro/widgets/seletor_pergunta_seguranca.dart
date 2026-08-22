@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
+
 /// Lista fixa de perguntas de segurança disponíveis para o usuário escolher
 /// no cadastro. Usadas depois para recuperação de senha.
 const List<String> perguntasDeSeguranca = [
@@ -27,6 +29,21 @@ class SeletorPerguntaSeguranca extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
+    // Mapa apenas para EXIBIÇÃO: a cada pergunta original (valor real,
+    // usado no cadastro e na recuperação de senha) corresponde um texto
+    // traduzido. O valor enviado para o backend continua sendo o texto
+    // original em português, preservando a lógica existente.
+    final Map<String, String> perguntasLocalizadas = {
+      perguntasDeSeguranca[0]: l10n.securityQuestionPet,
+      perguntasDeSeguranca[1]: l10n.securityQuestionBirthCity,
+      perguntasDeSeguranca[2]: l10n.securityQuestionMotherName,
+      perguntasDeSeguranca[3]: l10n.securityQuestionFirstSchool,
+      perguntasDeSeguranca[4]: l10n.securityQuestionFavoriteDish,
+      perguntasDeSeguranca[5]: l10n.securityQuestionChildhoodFriend,
+    };
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
@@ -44,18 +61,18 @@ class SeletorPerguntaSeguranca extends StatelessWidget {
           icon: const Icon(Icons.arrow_drop_down, color: _corVerdeAgua),
           dropdownColor: const Color(0xFF241A3D),
           style: const TextStyle(color: Colors.white, fontSize: 15),
-          decoration: const InputDecoration(
+          decoration: InputDecoration(
             border: InputBorder.none,
-            icon: Icon(Icons.help_outline, color: _corVerdeAgua),
-            hintText: "Escolha uma pergunta",
-            hintStyle: TextStyle(color: Colors.white54),
+            icon: const Icon(Icons.help_outline, color: _corVerdeAgua),
+            hintText: l10n.selectSecurityQuestion,
+            hintStyle: const TextStyle(color: Colors.white54),
           ),
           items: perguntasDeSeguranca
               .map(
                 (pergunta) => DropdownMenuItem<String>(
                   value: pergunta,
                   child: Text(
-                    pergunta,
+                    perguntasLocalizadas[pergunta] ?? pergunta,
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                   ),
@@ -64,7 +81,7 @@ class SeletorPerguntaSeguranca extends StatelessWidget {
               .toList(),
           onChanged: onChanged,
           validator: (valor) =>
-              valor == null ? "Selecione uma pergunta" : null,
+              valor == null ? l10n.selectSecurityQuestion : null,
         ),
       ),
     );

@@ -2,91 +2,211 @@
   {
     "id": "jogos",
     "mundo": "Mundo Jogos",
-    "falas": [
-      "Olá, {nome}! Bem-vindo ao Mundo dos Games! 🎮",
-      "Aqui os jogadores falam uma língua própria: MVP, clutch, feed, noob...",
-      "Fica esperto nas gírias abaixo e depois é só iniciar a missão! 🚀"
-    ]
+    "falas": {
+      "pt": [
+        "Olá, {nome}! Bem-vindo ao Mundo dos Games! 🎮",
+        "Aqui os jogadores falam uma língua própria: MVP, clutch, feed, noob...",
+        "Fica esperto nas gírias abaixo e depois é só iniciar a missão! 🚀"
+      ],
+      "en": [
+        "Hey, {nome}! Welcome to the Gaming World! 🎮",
+        "Here gamers speak a language of their own: MVP, clutch, feed, noob...",
+        "Check out the slang below, then it's time to start the mission! 🚀"
+      ],
+      "es": [
+        "¡Hola, {nome}! ¡Bienvenido al Mundo de los Juegos! 🎮",
+        "Aquí los gamers hablan un idioma propio: MVP, clutch, feed, noob...",
+        "Échale un vistazo a la jerga de abajo y luego solo queda iniciar la misión! 🚀"
+      ]
+    }
   },
   {
     "id": "kpop",
     "mundo": "Mundo K-Pop",
-    "falas": [
-      "Annyeong! Você chegou ao planeta do K-Pop! 🎤",
-      "Aqui tem bias, comeback, fanchant e muito mais.",
-      "Decora essas gírias e arrasa na missão, stan! 💜"
-    ]
+    "falas": {
+      "pt": [
+        "Annyeong! Você chegou ao planeta do K-Pop! 🎤",
+        "Aqui tem bias, comeback, fanchant e muito mais.",
+        "Decora essas gírias e arrasa na missão, stan! 💜"
+      ],
+      "en": [
+        "Annyeong! You've reached the K-Pop planet! 🎤",
+        "Here you'll find bias, comeback, fanchant, and much more.",
+        "Memorize this slang and crush the mission, stan! 💜"
+      ],
+      "es": [
+        "¡Annyeong! ¡Llegaste al planeta del K-Pop! 🎤",
+        "Aquí hay bias, comeback, fanchant y mucho más.",
+        "¡Apréndete esta jerga y arrasa en la misión, stan! 💜"
+      ]
+    }
   },
   {
     "id": "maquiagem",
     "mundo": "Mundo Maquiagem",
-    "falas": [
-      "Bem-vindo ao planeta da beleza! 💄",
-      "Por aqui se fala em blush, contorno, glow e pele de vidro.",
-      "Dá uma olhada nas gírias e depois é só brilhar na missão! ✨"
-    ]
+    "falas": {
+      "pt": [
+        "Bem-vindo ao planeta da beleza! 💄",
+        "Por aqui se fala em blush, contorno, glow e pele de vidro.",
+        "Dá uma olhada nas gírias e depois é só brilhar na missão! ✨"
+      ],
+      "en": [
+        "Welcome to the beauty planet! 💄",
+        "Here people talk about blush, contouring, glow, and glass skin.",
+        "Take a look at the slang, then it's time to shine in the mission! ✨"
+      ],
+      "es": [
+        "¡Bienvenido al planeta de la belleza! 💄",
+        "Aquí se habla de blush, contorno, glow y piel de cristal.",
+        "Échale un vistazo a la jerga y luego solo queda brillar en la misión! ✨"
+      ]
+    }
   },
   {
     "id": "pop",
     "mundo": "Mundo Pop",
-    "falas": [
-      "Chegamos ao planeta da cultura pop! 🌎",
-      "Filmes, séries, memes e celebridades têm um vocabulário próprio.",
-      "Estuda as gírias abaixo e bora pra missão! 🍿"
-    ]
+    "falas": {
+      "pt": [
+        "Chegamos ao planeta da cultura pop! 🌎",
+        "Filmes, séries, memes e celebridades têm um vocabulário próprio.",
+        "Estuda as gírias abaixo e bora pra missão! 🍿"
+      ],
+      "en": [
+        "We've landed on the pop culture planet! 🌎",
+        "Movies, shows, memes, and celebrities have their own vocabulary.",
+        "Study the slang below and let's get to the mission! 🍿"
+      ],
+      "es": [
+        "¡Llegamos al planeta de la cultura pop! 🌎",
+        "Películas, series, memes y celebridades tienen un vocabulario propio.",
+        "¡Estudia la jerga de abajo y vamos a la misión! 🍿"
+      ]
+    }
   },
   {
     "id": "antigo",
     "mundo": "Mundo Antigo",
-    "falas": [
-      "Segura essa, mano véio: bem-vindo ao Mundo Antigo! 📼",
-      "Aqui rolam gírias que seus pais usavam e ainda dão o maior barato.",
-      "Dá uma treinada nelas antes de encarar a missão! 🕰️"
-    ]
+    "falas": {
+      "pt": [
+        "Segura essa, mano véio: bem-vindo ao Mundo Antigo! 📼",
+        "Aqui rolam gírias que seus pais usavam e ainda dão o maior barato.",
+        "Dá uma treinada nelas antes de encarar a missão! 🕰️"
+      ],
+      "en": [
+        "Hold on to your hat, old-timer: welcome to the Retro World! 📼",
+        "Here's the slang your parents used and still get a kick out of.",
+        "Get some practice in before you take on the mission! 🕰️"
+      ],
+      "es": [
+        "Agárrate, viejo amigo: ¡bienvenido al Mundo Antiguo! 📼",
+        "Aquí circula la jerga que usaban tus padres y todavía les encanta.",
+        "¡Practícala un poco antes de encarar la misión! 🕰️"
+      ]
+    }
   },
   {
     "id": "cotidiano",
     "mundo": "Mundo Cotidiano",
-    "falas": [
-      "E aí, tudo certo? Bem-vindo ao Mundo Cotidiano! ☕",
-      "São aquelas gírias do dia a dia que a gente solta sem nem pensar.",
-      "Confere a lista e parte pra missão! 🚀"
-    ]
+    "falas": {
+      "pt": [
+        "E aí, tudo certo? Bem-vindo ao Mundo Cotidiano! ☕",
+        "São aquelas gírias do dia a dia que a gente solta sem nem pensar.",
+        "Confere a lista e parte pra missão! 🚀"
+      ],
+      "en": [
+        "Hey, how's it going? Welcome to the Everyday World! ☕",
+        "These are the everyday slang words we drop without even thinking.",
+        "Check out the list and head off to the mission! 🚀"
+      ],
+      "es": [
+        "¿Qué tal, todo bien? ¡Bienvenido al Mundo Cotidiano! ☕",
+        "Son esas jergas del día a día que soltamos sin pensar.",
+        "¡Revisa la lista y vamos a la misión! 🚀"
+      ]
+    }
   },
   {
     "id": "esportes",
     "mundo": "Mundo Esportes",
-    "falas": [
-      "Bola rolando! Você entrou no Mundo Esportes! ⚽",
-      "Aqui é chapéu, pendurar as chuteiras, gol de placa e muito mais.",
-      "Aquece com as gírias abaixo e entra em campo na missão! 🏆"
-    ]
+    "falas": {
+      "pt": [
+        "Bola rolando! Você entrou no Mundo Esportes! ⚽",
+        "Aqui é chapéu, pendurar as chuteiras, gol de placa e muito mais.",
+        "Aquece com as gírias abaixo e entra em campo na missão! 🏆"
+      ],
+      "en": [
+        "Kickoff! You've entered the Sports World! ⚽",
+        "Here it's nutmegs, hanging up the boots, screamers, and much more.",
+        "Warm up with the slang below and step onto the field for the mission! 🏆"
+      ],
+      "es": [
+        "¡Rueda el balón! ¡Entraste al Mundo Deportes! ⚽",
+        "Aquí es caño, colgar los botines, golazo y mucho más.",
+        "¡Calienta con la jerga de abajo y entra a la cancha en la misión! 🏆"
+      ]
+    }
   },
   {
     "id": "geek",
     "mundo": "Mundo Geek",
-    "falas": [
-      "Saudações, viajante! Bem-vindo ao Mundo Geek! 🛸",
-      "Animes, HQs, RPG e tecnologia têm um dialeto próprio.",
-      "Estuda o grimório de gírias e parte pra missão! 🧙"
-    ]
+    "falas": {
+      "pt": [
+        "Saudações, viajante! Bem-vindo ao Mundo Geek! 🛸",
+        "Animes, HQs, RPG e tecnologia têm um dialeto próprio.",
+        "Estuda o grimório de gírias e parte pra missão! 🧙"
+      ],
+      "en": [
+        "Greetings, traveler! Welcome to the Geek World! 🛸",
+        "Anime, comics, RPGs, and tech have their own dialect.",
+        "Study the slang grimoire and head off to the mission! 🧙"
+      ],
+      "es": [
+        "¡Saludos, viajero! ¡Bienvenido al Mundo Geek! 🛸",
+        "Animes, cómics, RPG y tecnología tienen su propio dialecto.",
+        "¡Estudia el grimorio de jerga y vamos a la misión! 🧙"
+      ]
+    }
   },
   {
     "id": "redessociais",
     "mundo": "Mundo Redes Sociais",
-    "falas": [
-      "Bem-vindo ao planeta das timelines! 📱",
-      "Aqui se fala em mutual, crush, trend, POV e shippar.",
-      "Dá scroll nas gírias abaixo e começa a missão! 💬"
-    ]
+    "falas": {
+      "pt": [
+        "Bem-vindo ao planeta das timelines! 📱",
+        "Aqui se fala em mutual, crush, trend, POV e shippar.",
+        "Dá scroll nas gírias abaixo e começa a missão! 💬"
+      ],
+      "en": [
+        "Welcome to the timelines planet! 📱",
+        "Here people talk about mutuals, crushes, trends, POV, and shipping.",
+        "Scroll through the slang below and start the mission! 💬"
+      ],
+      "es": [
+        "¡Bienvenido al planeta de las timelines! 📱",
+        "Aquí se habla de mutual, crush, trend, POV y shippear.",
+        "¡Haz scroll en la jerga de abajo y comienza la misión! 💬"
+      ]
+    }
   },
   {
     "id": "relacionamentos",
     "mundo": "Mundo Relacionamentos",
-    "falas": [
-      "Chegou no planeta dos corações! 💜",
-      "Rolo, ficante, mozão, red flag... tem gíria pra tudo por aqui.",
-      "Aprende essas expressões e vai com tudo pra missão! 💘"
-    ]
+    "falas": {
+      "pt": [
+        "Chegou no planeta dos corações! 💜",
+        "Rolo, ficante, mozão, red flag... tem gíria pra tudo por aqui.",
+        "Aprende essas expressões e vai com tudo pra missão! 💘"
+      ],
+      "en": [
+        "You've reached the planet of hearts! 💜",
+        "Fling, hookup, bae, red flag... there's slang for everything here.",
+        "Learn these expressions and go all in on the mission! 💘"
+      ],
+      "es": [
+        "¡Llegaste al planeta de los corazones! 💜",
+        "Rollo, ligue, amor, red flag... aquí hay jerga para todo.",
+        "¡Aprende estas expresiones y ve con todo a la misión! 💘"
+      ]
+    }
   }
 ]

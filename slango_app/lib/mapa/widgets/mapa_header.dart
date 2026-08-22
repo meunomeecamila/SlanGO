@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../styles/cores.dart';
 import '../../feedback/feedback.dart';
+import '../../l10n/l10n.dart';
 
 class MapaHeader extends StatelessWidget {
   final VoidCallback? onPerfilTap;
@@ -40,10 +41,10 @@ class MapaHeader extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
               const SizedBox(height: 2),
-              const Text(
-                "Explore novos mundos",
+              Text(
+                context.l10n.exploreNewWorlds,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 14,
                 ),

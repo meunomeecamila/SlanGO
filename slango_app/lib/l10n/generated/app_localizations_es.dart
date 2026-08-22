@@ -350,4 +350,172 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get appTagline => 'TU UNIVERSO DE JERGA';
+
+  @override
+  String get createAccount => 'Crear cuenta';
+
+  @override
+  String get startAdventureSubtitle =>
+      '¡Comienza tu aventura en el universo de la jerga!';
+
+  @override
+  String get selectBirthDateError => 'Selecciona tu fecha de nacimiento.';
+
+  @override
+  String get selectSecurityQuestionError =>
+      'Selecciona una pregunta de seguridad.';
+
+  @override
+  String get answerSecurityQuestionError =>
+      'Responde la pregunta de seguridad.';
+
+  @override
+  String get termsTitle => 'Términos de responsabilidad';
+
+  @override
+  String get termsContent =>
+      'Al aceptar, aceptas que tus datos puedan utilizarse con fines de investigación, análisis de datos y mejora de los servicios, respetando la privacidad y la seguridad de la información.';
+
+  @override
+  String get reject => 'Rechazar';
+
+  @override
+  String get accept => 'Aceptar';
+
+  @override
+  String get termsAgreement =>
+      'He leído y acepto los términos de uso y responsabilidad.';
+
+  @override
+  String get alreadyHaveAccount => '¿Ya tienes una cuenta? ';
+
+  @override
+  String get doLogin => 'Iniciar sesión';
+
+  @override
+  String get securityQuestionPet => '¿Cómo se llamaba tu primera mascota?';
+
+  @override
+  String get securityQuestionBirthCity => '¿En qué ciudad naciste?';
+
+  @override
+  String get securityQuestionMotherName => '¿Cómo se llama tu madre?';
+
+  @override
+  String get securityQuestionFirstSchool =>
+      '¿Cómo se llamaba tu primera escuela?';
+
+  @override
+  String get securityQuestionFavoriteDish => '¿Cuál es tu plato favorito?';
+
+  @override
+  String get securityQuestionChildhoodFriend =>
+      '¿Cómo se llamaba tu mejor amigo de la infancia?';
+
+  @override
+  String get worldStatusAvailable => 'Disponible';
+
+  @override
+  String get worldGamesDescription =>
+      'Jerga que nace en las partidas online: del chat de la ranqueada a las bromas de la gente gamer.';
+
+  @override
+  String get worldKpopName => 'Mundo K-Pop';
+
+  @override
+  String get worldKpopDescription =>
+      'El vocabulario de los fandoms coreanos: términos de fans, comebacks y expresiones que se usan en los grupos.';
+
+  @override
+  String get worldMakeupName => 'Mundo Maquillaje';
+
+  @override
+  String get worldMakeupDescription =>
+      'Términos de belleza y maquillaje que dominan tutoriales, reseñas y la rutina de skincare.';
+
+  @override
+  String get worldPopName => 'Mundo Pop';
+
+  @override
+  String get worldPopDescription =>
+      'Expresiones de la cultura pop: música, series, memes y todo lo que se pone de moda.';
+
+  @override
+  String get worldOldName => 'Mundo Retro';
+
+  @override
+  String get worldOldDescription =>
+      'La jerga clásica de otras décadas, que los mayores todavía usan y sigue apareciendo por ahí.';
+
+  @override
+  String get worldDailyName => 'Mundo Cotidiano';
+
+  @override
+  String get worldDailyDescription =>
+      'El habla del día a día: conversaciones en la calle, en la escuela y en casa, de forma informal.';
+
+  @override
+  String get worldSportsName => 'Mundo Deportes';
+
+  @override
+  String get worldSportsDescription =>
+      'Jerga de cancha, campo y gradas: narración, hinchada y charla de entrenamiento.';
+
+  @override
+  String get worldGeekName => 'Mundo Geek';
+
+  @override
+  String get worldGeekDescription =>
+      'El universo friki: animes, cómics, RPG y tecnología con su propio vocabulario.';
+
+  @override
+  String get worldSocialName => 'Mundo Redes Sociales';
+
+  @override
+  String get worldSocialDescription =>
+      'El idioma de las líneas de tiempo: siglas, tendencias y expresiones que se vuelven virales cada semana.';
+
+  @override
+  String get worldRelationshipsName => 'Mundo Relaciones';
+
+  @override
+  String get worldRelationshipsDescription =>
+      'Cómo la gente habla de conquistas, amistades y rupturas en las conversaciones de hoy.';
+
+  @override
+  String get worldCommunityName => 'Mundo De La Comunidad';
+
+  @override
+  String get worldCommunityDescription =>
+      'El universo de la comunidad: términos, expresiones y conversaciones que unen a sus miembros.';
+
+  @override
+  String slangsLearnedProgress(int learned, int total) {
+    return '$learned/$total jergas aprendidas';
+  }
+
+  @override
+  String slangsToLearn(int total) {
+    return '$total jergas por aprender';
+  }
+
+  @override
+  String learnedOfTotal(int learned, int total) {
+    return '$learned/$total aprendidas';
+  }
+
+  @override
+  String get loadingTransmission => 'Cargando transmisión...';
+
+  @override
+  String get chooseModeTitle => 'Elige el Modo';
+
+  @override
+  String get chooseModeSubtitle => '¿Cómo quieres jugar esta fase?';
+
+  @override
+  String get casualModeLabel => 'Modo Casual (Solo Estudiar)';
+
+  @override
+  String get rankedModeLabel => 'Modo Clasificatorio (Con Tiempo)';
 }

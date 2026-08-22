@@ -741,6 +741,294 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'SEU UNIVERSO DE GÍRIAS'**
   String get appTagline;
+
+  /// No description provided for @createAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Criar Conta'**
+  String get createAccount;
+
+  /// No description provided for @startAdventureSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Comece sua aventura no universo das gírias!'**
+  String get startAdventureSubtitle;
+
+  /// No description provided for @selectBirthDateError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selecione sua data de nascimento.'**
+  String get selectBirthDateError;
+
+  /// No description provided for @selectSecurityQuestionError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selecione uma pergunta de segurança.'**
+  String get selectSecurityQuestionError;
+
+  /// No description provided for @answerSecurityQuestionError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responda a pergunta de segurança.'**
+  String get answerSecurityQuestionError;
+
+  /// No description provided for @termsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termos de Responsabilidade'**
+  String get termsTitle;
+
+  /// No description provided for @termsContent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ao aceitar, você concorda que seus dados poderão ser utilizados para fins de pesquisa, análise de dados e melhoria dos serviços, respeitando a privacidade e a segurança das informações.'**
+  String get termsContent;
+
+  /// No description provided for @reject.
+  ///
+  /// In pt, this message translates to:
+  /// **'Rejeitar'**
+  String get reject;
+
+  /// No description provided for @accept.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aceitar'**
+  String get accept;
+
+  /// No description provided for @termsAgreement.
+  ///
+  /// In pt, this message translates to:
+  /// **'Li e concordo com os termos de uso e responsabilidade.'**
+  String get termsAgreement;
+
+  /// No description provided for @alreadyHaveAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Já possui uma conta? '**
+  String get alreadyHaveAccount;
+
+  /// No description provided for @doLogin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fazer Login'**
+  String get doLogin;
+
+  /// No description provided for @securityQuestionPet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual o nome do seu primeiro animal de estimação?'**
+  String get securityQuestionPet;
+
+  /// No description provided for @securityQuestionBirthCity.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual o nome da cidade onde você nasceu?'**
+  String get securityQuestionBirthCity;
+
+  /// No description provided for @securityQuestionMotherName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual o nome da sua mãe?'**
+  String get securityQuestionMotherName;
+
+  /// No description provided for @securityQuestionFirstSchool.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual foi o nome da sua primeira escola?'**
+  String get securityQuestionFirstSchool;
+
+  /// No description provided for @securityQuestionFavoriteDish.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual é o seu prato favorito?'**
+  String get securityQuestionFavoriteDish;
+
+  /// No description provided for @securityQuestionChildhoodFriend.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual o nome do seu melhor amigo de infância?'**
+  String get securityQuestionChildhoodFriend;
+
+  /// No description provided for @worldStatusAvailable.
+  ///
+  /// In pt, this message translates to:
+  /// **'Disponível'**
+  String get worldStatusAvailable;
+
+  /// No description provided for @worldGamesDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gírias que nascem nas partidas online: do chat da ranqueada às zoeiras da galera gamer.'**
+  String get worldGamesDescription;
+
+  /// No description provided for @worldKpopName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo K-Pop'**
+  String get worldKpopName;
+
+  /// No description provided for @worldKpopDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'O vocabulário dos fandoms coreanos: termos de fã, comebacks e expressões que rolam nos grupos.'**
+  String get worldKpopDescription;
+
+  /// No description provided for @worldMakeupName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Maquiagem'**
+  String get worldMakeupName;
+
+  /// No description provided for @worldMakeupDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termos de beleza e make que dominam tutoriais, resenhas e a rotina de skincare.'**
+  String get worldMakeupDescription;
+
+  /// No description provided for @worldPopName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Pop'**
+  String get worldPopName;
+
+  /// No description provided for @worldPopDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Expressões da cultura pop: música, séries, memes e tudo que vira assunto do momento.'**
+  String get worldPopDescription;
+
+  /// No description provided for @worldOldName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Antigo'**
+  String get worldOldName;
+
+  /// No description provided for @worldOldDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'As gírias clássicas de outras décadas, que os mais velhos usam e ainda aparecem por aí.'**
+  String get worldOldDescription;
+
+  /// No description provided for @worldDailyName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Cotidiano'**
+  String get worldDailyName;
+
+  /// No description provided for @worldDailyDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'O falar do dia a dia: conversas na rua, na escola e em casa, do jeitinho informal.'**
+  String get worldDailyDescription;
+
+  /// No description provided for @worldSportsName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Esportes'**
+  String get worldSportsName;
+
+  /// No description provided for @worldSportsDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gírias de quadra, campo e arquibancada: narração, torcida e papo de treino.'**
+  String get worldSportsDescription;
+
+  /// No description provided for @worldGeekName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Geek'**
+  String get worldGeekName;
+
+  /// No description provided for @worldGeekDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Universo nerd: animes, quadrinhos, RPG e tecnologia com seu vocabulário próprio.'**
+  String get worldGeekDescription;
+
+  /// No description provided for @worldSocialName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Redes Sociais'**
+  String get worldSocialName;
+
+  /// No description provided for @worldSocialDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'O idioma das timelines: siglas, trends e expressões que viralizam a cada semana.'**
+  String get worldSocialDescription;
+
+  /// No description provided for @worldRelationshipsName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Relacionamentos'**
+  String get worldRelationshipsName;
+
+  /// No description provided for @worldRelationshipsDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como a galera fala sobre paqueras, amizades e términos nas conversas de hoje.'**
+  String get worldRelationshipsDescription;
+
+  /// No description provided for @worldCommunityName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mundo Da Comunidade'**
+  String get worldCommunityName;
+
+  /// No description provided for @worldCommunityDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'O universo da comunidade: termos, expressões e conversas que unem os membros.'**
+  String get worldCommunityDescription;
+
+  /// No description provided for @slangsLearnedProgress.
+  ///
+  /// In pt, this message translates to:
+  /// **'{learned}/{total} gírias aprendidas'**
+  String slangsLearnedProgress(int learned, int total);
+
+  /// No description provided for @slangsToLearn.
+  ///
+  /// In pt, this message translates to:
+  /// **'{total} gírias para aprender'**
+  String slangsToLearn(int total);
+
+  /// No description provided for @learnedOfTotal.
+  ///
+  /// In pt, this message translates to:
+  /// **'{learned}/{total} aprendidas'**
+  String learnedOfTotal(int learned, int total);
+
+  /// No description provided for @loadingTransmission.
+  ///
+  /// In pt, this message translates to:
+  /// **'Carregando transmissão...'**
+  String get loadingTransmission;
+
+  /// No description provided for @chooseModeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha o Modo'**
+  String get chooseModeTitle;
+
+  /// No description provided for @chooseModeSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como você deseja jogar essa fase?'**
+  String get chooseModeSubtitle;
+
+  /// No description provided for @casualModeLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Modo Casual (Apenas Estudar)'**
+  String get casualModeLabel;
+
+  /// No description provided for @rankedModeLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Modo Rankeado (Com Tempo)'**
+  String get rankedModeLabel;
 }
 
 class _AppLocalizationsDelegate

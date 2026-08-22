@@ -1,4 +1,230 @@
 {
   "@@locale": "es",
-  "appTitle": "SlanGO", "portuguese": "Portugués", "english": "Inglés", "spanish": "Español", "language": "Idioma", "general": "General", "security": "Seguridad", "settings": "Configuración", "name": "Nombre", "accountType": "Tipo de cuenta", "guardian": "Responsable", "youngPerson": "Joven", "dateOfBirth": "Fecha de nacimiento", "selectDate": "Seleccionar fecha", "saveChanges": "Guardar cambios", "saving": "Guardando...", "noChanges": "No hay cambios para guardar.", "profileUpdated": "¡Perfil actualizado correctamente!", "changePassword": "Cambiar contraseña", "changeEmail": "Cambiar correo electrónico", "currentPassword": "Contraseña actual", "newPassword": "Nueva contraseña", "confirmNewPassword": "Confirmar nueva contraseña", "newEmail": "Nuevo correo electrónico", "cancel": "Cancelar", "save": "Guardar", "signOut": "Cerrar sesión", "deleteAccount": "Eliminar cuenta", "deleteAccountQuestion": "¿Eliminar cuenta?", "deleteAccountDescription": "Esta acción es permanente y borrará todo tu progreso.", "delete": "Eliminar", "login": "Iniciar sesión", "email": "Correo electrónico", "password": "Contraseña", "loginWelcome": "¡Continúa tu misión por el universo de la jerga!", "forgotPassword": "Olvidé mi contraseña", "recoverPassword": "Recuperar contraseña", "searching": "Buscando...", "searchSecurityQuestion": "Buscar pregunta", "securityAnswer": "Respuesta de seguridad", "fillAllFields": "Completa todos los campos.", "passwordsDoNotMatch": "Las contraseñas no coinciden.", "passwordUpdated": "¡Contraseña actualizada correctamente!", "fillEmailAndPassword": "Completa el correo electrónico y la contraseña.", "startMission": "Comenzar misión", "continueLabel": "Continuar", "back": "Volver", "loading": "Cargando...", "tryAgain": "Intentar de nuevo", "errorSavingProgress": "No se pudo guardar tu progreso. Comprueba tu conexión.", "rankingError": "No se pudo registrar en el ranking. Inténtalo más tarde.", "suggestionSent": "¡Sugerencia enviada! Nuestro equipo la evaluará pronto.", "slangDeleted": "Jerga eliminada correctamente.", "chooseRating": "Elige una calificación antes de enviar", "thanksFeedback": "¡Gracias por tus comentarios!", "confirm": "Confirmar", "selectSecurityQuestion": "Elige una pregunta", "chooseAvatar": "Elige tu avatar", "progress": "Progreso", "impactSentiment": "Impacto/sentimiento", "map": "Mapa", "worlds": "Mundos", "slangs": "Jerga", "certificates": "Certificados", "items": "Objetos", "equipped": "Equipado", "ranking": "Clasificación", "exploreNewWorlds": "Explora nuevos mundos", "explorePlanet": "Explorar planeta", "locked": "Bloqueado", "register": "Registrar", "guestLogin": "Entrar sin cuenta", "loggingIn": "Entrando...", "welcomeMessage": "¡Aprende jerga de diversas comunidades y acércate a las personas que amas!", "questionProgress": "Pregunta {current} de {total}", "@questionProgress": {"placeholders": {"current": {"type": "int"}, "total": {"type": "int"}}}, "noQuestionsFound": "No se encontraron preguntas.", "errorLoadingQuiz": "Error al cargar el quiz:\n{error}", "@errorLoadingQuiz": {"placeholders": {"error": {"type": "String"}}}, "noPhasesFound": "No se encontraron fases.", "errorLoadingPhases": "Error al cargar las fases: {error}", "@errorLoadingPhases": {"placeholders": {"error": {"type": "String"}}}, "whyThisImpact": "¿Por qué este impacto?", "correctFeedback": "¡Correcto! 🎉", "incorrectFeedback": "¡Incorrecto!", "keepGoingFeedback": "¡Bien! Sigue así.", "correctAnswerWas": "Respuesta: {answer}", "@correctAnswerWas": {"placeholders": {"answer": {"type": "String"}}}, "resultPerfectTitle": "¡Perfecto, Astronauta!", "resultGreatTitle": "¡Felicidades, Astronauta!", "resultGoodStartTitle": "¡Buen comienzo, Astronauta! Vamos a mejorar", "resultImproveTitle": "¡Vamos a mejorar juntos, Astronauta!", "resultPerfectMessage": "¡Lo hiciste increíble en este viaje!", "resultGreatMessage": "¡Te fue muy bien en este viaje!", "resultGoodEffortMessage": "¡Buen esfuerzo! Repasa la jerga que fallaste e inténtalo de nuevo.", "resultTryAgainMessage": "Todo viaje comienza con un paso. ¿Qué tal repasar la lección e intentarlo de nuevo?", "worldName": "Mundo {world}", "@worldName": {"placeholders": {"world": {"type": "String"}}}, "correctAnswersLabel": "Aciertos", "wrongAnswersLabel": "Errores", "timeLabel": "Tiempo", "performancePercentage": "{percent}% de rendimiento", "@performancePercentage": {"placeholders": {"percent": {"type": "int"}}}, "identifyMeaning": "Identifica el significado", "meaningLabel": "Significado: ", "usageExampleLabel": "Ejemplo de uso:", "gotIt": "¡Entendido!", "testYourKnowledge": "¡Pon a prueba tus conocimientos!", "completeTheSentence": "Completa la frase:", "finishWorld": "Finalizar Mundo 🏆", "defaultWorldName": "Mundo Juegos", "defaultReviewIntroMessage": "¡Ya casi! ¿Repasamos lo que aprendiste?", "appTagline": "TU UNIVERSO DE JERGA"
+  "appTitle": "SlanGO",
+  "portuguese": "Portugués",
+  "english": "Inglés",
+  "spanish": "Español",
+  "language": "Idioma",
+  "general": "General",
+  "security": "Seguridad",
+  "settings": "Configuración",
+  "name": "Nombre",
+  "accountType": "Tipo de cuenta",
+  "guardian": "Responsable",
+  "youngPerson": "Joven",
+  "dateOfBirth": "Fecha de nacimiento",
+  "selectDate": "Seleccionar fecha",
+  "saveChanges": "Guardar cambios",
+  "saving": "Guardando...",
+  "noChanges": "No hay cambios para guardar.",
+  "profileUpdated": "¡Perfil actualizado correctamente!",
+  "changePassword": "Cambiar contraseña",
+  "changeEmail": "Cambiar correo electrónico",
+  "currentPassword": "Contraseña actual",
+  "newPassword": "Nueva contraseña",
+  "confirmNewPassword": "Confirmar nueva contraseña",
+  "newEmail": "Nuevo correo electrónico",
+  "cancel": "Cancelar",
+  "save": "Guardar",
+  "signOut": "Cerrar sesión",
+  "deleteAccount": "Eliminar cuenta",
+  "deleteAccountQuestion": "¿Eliminar cuenta?",
+  "deleteAccountDescription": "Esta acción es permanente y borrará todo tu progreso.",
+  "delete": "Eliminar",
+  "login": "Iniciar sesión",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "loginWelcome": "¡Continúa tu misión por el universo de la jerga!",
+  "forgotPassword": "Olvidé mi contraseña",
+  "recoverPassword": "Recuperar contraseña",
+  "searching": "Buscando...",
+  "searchSecurityQuestion": "Buscar pregunta",
+  "securityAnswer": "Respuesta de seguridad",
+  "fillAllFields": "Completa todos los campos.",
+  "passwordsDoNotMatch": "Las contraseñas no coinciden.",
+  "passwordUpdated": "¡Contraseña actualizada correctamente!",
+  "fillEmailAndPassword": "Completa el correo electrónico y la contraseña.",
+  "startMission": "Comenzar misión",
+  "continueLabel": "Continuar",
+  "back": "Volver",
+  "loading": "Cargando...",
+  "tryAgain": "Intentar de nuevo",
+  "errorSavingProgress": "No se pudo guardar tu progreso. Comprueba tu conexión.",
+  "rankingError": "No se pudo registrar en el ranking. Inténtalo más tarde.",
+  "suggestionSent": "¡Sugerencia enviada! Nuestro equipo la evaluará pronto.",
+  "slangDeleted": "Jerga eliminada correctamente.",
+  "chooseRating": "Elige una calificación antes de enviar",
+  "thanksFeedback": "¡Gracias por tus comentarios!",
+  "confirm": "Confirmar",
+  "selectSecurityQuestion": "Elige una pregunta",
+  "chooseAvatar": "Elige tu avatar",
+  "progress": "Progreso",
+  "impactSentiment": "Impacto/sentimiento",
+  "map": "Mapa",
+  "worlds": "Mundos",
+  "slangs": "Jerga",
+  "certificates": "Certificados",
+  "items": "Objetos",
+  "equipped": "Equipado",
+  "ranking": "Clasificación",
+  "exploreNewWorlds": "Explora nuevos mundos",
+  "explorePlanet": "Explorar planeta",
+  "locked": "Bloqueado",
+  "register": "Registrar",
+  "guestLogin": "Entrar sin cuenta",
+  "loggingIn": "Entrando...",
+  "welcomeMessage": "¡Aprende jerga de diversas comunidades y acércate a las personas que amas!",
+  "questionProgress": "Pregunta {current} de {total}",
+  "@questionProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noQuestionsFound": "No se encontraron preguntas.",
+  "errorLoadingQuiz": "Error al cargar el quiz:\n{error}",
+  "@errorLoadingQuiz": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPhasesFound": "No se encontraron fases.",
+  "errorLoadingPhases": "Error al cargar las fases: {error}",
+  "@errorLoadingPhases": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "whyThisImpact": "¿Por qué este impacto?",
+  "correctFeedback": "¡Correcto! 🎉",
+  "incorrectFeedback": "¡Incorrecto!",
+  "keepGoingFeedback": "¡Bien! Sigue así.",
+  "correctAnswerWas": "Respuesta: {answer}",
+  "@correctAnswerWas": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "resultPerfectTitle": "¡Perfecto, Astronauta!",
+  "resultGreatTitle": "¡Felicidades, Astronauta!",
+  "resultGoodStartTitle": "¡Buen comienzo, Astronauta! Vamos a mejorar",
+  "resultImproveTitle": "¡Vamos a mejorar juntos, Astronauta!",
+  "resultPerfectMessage": "¡Lo hiciste increíble en este viaje!",
+  "resultGreatMessage": "¡Te fue muy bien en este viaje!",
+  "resultGoodEffortMessage": "¡Buen esfuerzo! Repasa la jerga que fallaste e inténtalo de nuevo.",
+  "resultTryAgainMessage": "Todo viaje comienza con un paso. ¿Qué tal repasar la lección e intentarlo de nuevo?",
+  "worldName": "Mundo {world}",
+  "@worldName": {
+    "placeholders": {
+      "world": {
+        "type": "String"
+      }
+    }
+  },
+  "correctAnswersLabel": "Aciertos",
+  "wrongAnswersLabel": "Errores",
+  "timeLabel": "Tiempo",
+  "performancePercentage": "{percent}% de rendimiento",
+  "@performancePercentage": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "identifyMeaning": "Identifica el significado",
+  "meaningLabel": "Significado: ",
+  "usageExampleLabel": "Ejemplo de uso:",
+  "gotIt": "¡Entendido!",
+  "testYourKnowledge": "¡Pon a prueba tus conocimientos!",
+  "completeTheSentence": "Completa la frase:",
+  "finishWorld": "Finalizar Mundo 🏆",
+  "defaultWorldName": "Mundo Juegos",
+  "defaultReviewIntroMessage": "¡Ya casi! ¿Repasamos lo que aprendiste?",
+  "appTagline": "TU UNIVERSO DE JERGA",
+  "createAccount": "Crear cuenta",
+  "startAdventureSubtitle": "¡Comienza tu aventura en el universo de la jerga!",
+  "selectBirthDateError": "Selecciona tu fecha de nacimiento.",
+  "selectSecurityQuestionError": "Selecciona una pregunta de seguridad.",
+  "answerSecurityQuestionError": "Responde la pregunta de seguridad.",
+  "termsTitle": "Términos de responsabilidad",
+  "termsContent": "Al aceptar, aceptas que tus datos puedan utilizarse con fines de investigación, análisis de datos y mejora de los servicios, respetando la privacidad y la seguridad de la información.",
+  "reject": "Rechazar",
+  "accept": "Aceptar",
+  "termsAgreement": "He leído y acepto los términos de uso y responsabilidad.",
+  "alreadyHaveAccount": "¿Ya tienes una cuenta? ",
+  "doLogin": "Iniciar sesión",
+  "securityQuestionPet": "¿Cómo se llamaba tu primera mascota?",
+  "securityQuestionBirthCity": "¿En qué ciudad naciste?",
+  "securityQuestionMotherName": "¿Cómo se llama tu madre?",
+  "securityQuestionFirstSchool": "¿Cómo se llamaba tu primera escuela?",
+  "securityQuestionFavoriteDish": "¿Cuál es tu plato favorito?",
+  "securityQuestionChildhoodFriend": "¿Cómo se llamaba tu mejor amigo de la infancia?",
+  "worldStatusAvailable": "Disponible",
+  "worldGamesDescription": "Jerga que nace en las partidas online: del chat de la ranqueada a las bromas de la gente gamer.",
+  "worldKpopName": "Mundo K-Pop",
+  "worldKpopDescription": "El vocabulario de los fandoms coreanos: términos de fans, comebacks y expresiones que se usan en los grupos.",
+  "worldMakeupName": "Mundo Maquillaje",
+  "worldMakeupDescription": "Términos de belleza y maquillaje que dominan tutoriales, reseñas y la rutina de skincare.",
+  "worldPopName": "Mundo Pop",
+  "worldPopDescription": "Expresiones de la cultura pop: música, series, memes y todo lo que se pone de moda.",
+  "worldOldName": "Mundo Retro",
+  "worldOldDescription": "La jerga clásica de otras décadas, que los mayores todavía usan y sigue apareciendo por ahí.",
+  "worldDailyName": "Mundo Cotidiano",
+  "worldDailyDescription": "El habla del día a día: conversaciones en la calle, en la escuela y en casa, de forma informal.",
+  "worldSportsName": "Mundo Deportes",
+  "worldSportsDescription": "Jerga de cancha, campo y gradas: narración, hinchada y charla de entrenamiento.",
+  "worldGeekName": "Mundo Geek",
+  "worldGeekDescription": "El universo friki: animes, cómics, RPG y tecnología con su propio vocabulario.",
+  "worldSocialName": "Mundo Redes Sociales",
+  "worldSocialDescription": "El idioma de las líneas de tiempo: siglas, tendencias y expresiones que se vuelven virales cada semana.",
+  "worldRelationshipsName": "Mundo Relaciones",
+  "worldRelationshipsDescription": "Cómo la gente habla de conquistas, amistades y rupturas en las conversaciones de hoy.",
+  "worldCommunityName": "Mundo De La Comunidad",
+  "worldCommunityDescription": "El universo de la comunidad: términos, expresiones y conversaciones que unen a sus miembros.",
+  "slangsLearnedProgress": "{learned}/{total} jergas aprendidas",
+  "@slangsLearnedProgress": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "slangsToLearn": "{total} jergas por aprender",
+  "@slangsToLearn": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnedOfTotal": "{learned}/{total} aprendidas",
+  "@learnedOfTotal": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "loadingTransmission": "Cargando transmisión...",
+  "chooseModeTitle": "Elige el Modo",
+  "chooseModeSubtitle": "¿Cómo quieres jugar esta fase?",
+  "casualModeLabel": "Modo Casual (Solo Estudiar)",
+  "rankedModeLabel": "Modo Clasificatorio (Con Tiempo)"
 }

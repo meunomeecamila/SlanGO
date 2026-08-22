@@ -108,19 +108,17 @@ class _RegistroScreenState extends State<RegistroScreen> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24), 
           ),
-          title: const Text(
-            'Termos de Responsabilidade',
-            style: TextStyle(
+          title: Text(
+            context.l10n.termsTitle,
+            style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w600,
               fontSize: 20,
             ),
           ),
-          content: const Text(
-            'Ao aceitar, você concorda que seus dados poderão ser utilizados '
-            'para fins de pesquisa, análise de dados e melhoria dos serviços, '
-            'respeitando a privacidade e a segurança das informações.',
-            style: TextStyle(
+          content: Text(
+            context.l10n.termsContent,
+            style: const TextStyle(
               color: Colors.white70,
               height: 1.4, // Espaçamento entre as linhas para facilitar a leitura
               fontSize: 15,
@@ -137,9 +135,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
                 });
                 Navigator.of(context).pop();
               },
-              child: const Text(
-                'Rejeitar',
-                style: TextStyle(color: Color(0xFFF9627D), fontWeight: FontWeight.bold),
+              child: Text(
+                context.l10n.reject,
+                style: const TextStyle(color: Color(0xFFF9627D), fontWeight: FontWeight.bold),
               ),
             ),
             ElevatedButton(
@@ -157,9 +155,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
                 });
                 Navigator.of(context).pop();
               },
-              child: const Text(
-                'Aceitar',
-                style: TextStyle(
+              child: Text(
+                context.l10n.accept,
+                style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
@@ -177,7 +175,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
         emailController.text.isEmpty ||
         senhaController.text.isEmpty ||
         confirmarSenhaController.text.isEmpty) {
-      _mostrarErro("Preencha todos os campos obrigatórios.");
+      _mostrarErro(context.l10n.fillAllFields);
       return;
     }
 
@@ -187,17 +185,17 @@ class _RegistroScreenState extends State<RegistroScreen> {
     }
 
     if (dataNascimento == null) {
-      _mostrarErro("Selecione sua data de nascimento.");
+      _mostrarErro(context.l10n.selectBirthDateError);
       return;
     }
 
     if (perguntaSeguranca == null) {
-      _mostrarErro("Selecione uma pergunta de segurança.");
+      _mostrarErro(context.l10n.selectSecurityQuestionError);
       return;
     }
 
     if (respostaSegurancaController.text.trim().isEmpty) {
-      _mostrarErro("Responda a pergunta de segurança.");
+      _mostrarErro(context.l10n.answerSecurityQuestionError);
       return;
     }
 
@@ -273,14 +271,14 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       const SizedBox(height: 18),
 
                       Text(
-                        "Criar Conta",
+                        context.l10n.createAccount,
                         textAlign: TextAlign.center,
                         style: AppText.titulo(0.95),
                       ),
                       const SizedBox(height: 8),
 
                       Text(
-                        "Comece sua aventura no universo das gírias!",
+                        context.l10n.startAdventureSubtitle,
                         textAlign: TextAlign.center,
                         style: AppText.subtitulo(0.95),
                       ),
@@ -340,7 +338,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       const SizedBox(height: 18),
 
                       CampoTexto(
-                        label: "Resposta",
+                        label: context.l10n.securityAnswer,
                         icon: Icons.question_answer,
                         controller: respostaSegurancaController,
                       ),
@@ -363,9 +361,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
                         ),
                         child: CheckboxListTile(
                           contentPadding: EdgeInsets.zero,
-                          title: const Text(
-                            'Li e concordo com os termos de uso e responsabilidade.',
-                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          title: Text(
+                            context.l10n.termsAgreement,
+                            style: const TextStyle(color: Colors.white, fontSize: 14),
                           ),
                           value: termosAceitos,
                           activeColor: const Color(0xFF57E6D8), // Ciano do seu tema
@@ -393,9 +391,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text(
-                            "Já possui uma conta? ",
-                            style: TextStyle(color: Colors.white70),
+                          Text(
+                            context.l10n.alreadyHaveAccount,
+                            style: const TextStyle(color: Colors.white70),
                           ),
                           GestureDetector(
                             onTap: () {
@@ -406,9 +404,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                 ),
                               );
                             },
-                            child: const Text(
-                              "Fazer Login",
-                              style: TextStyle(
+                            child: Text(
+                              context.l10n.doLogin,
+                              style: const TextStyle(
                                 color: Color(0xFF57E6D8),
                                 fontWeight: FontWeight.bold,
                               ),

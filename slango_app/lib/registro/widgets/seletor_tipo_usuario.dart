@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
+
 class SeletorTipoUsuario extends StatelessWidget {
   final bool ehPai;
   final ValueChanged<bool> onChanged;
@@ -16,7 +18,7 @@ class SeletorTipoUsuario extends StatelessWidget {
       children: [
         Expanded(
           child: _Botao(
-            texto: "Pai / Mãe",
+            texto: context.l10n.guardian,
             selecionado: ehPai,
             onTap: () => onChanged(true),
           ),
@@ -26,7 +28,7 @@ class SeletorTipoUsuario extends StatelessWidget {
 
         Expanded(
           child: _Botao(
-            texto: "Filho(a)",
+            texto: context.l10n.youngPerson,
             selecionado: !ehPai,
             onTap: () => onChanged(false),
           ),

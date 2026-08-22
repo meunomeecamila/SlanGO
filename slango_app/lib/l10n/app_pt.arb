@@ -77,22 +77,30 @@
   "questionProgress": "Pergunta {current} de {total}",
   "@questionProgress": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "noQuestionsFound": "Nenhuma pergunta encontrada.",
   "errorLoadingQuiz": "Erro ao carregar quiz:\n{error}",
   "@errorLoadingQuiz": {
     "placeholders": {
-      "error": {"type": "String"}
+      "error": {
+        "type": "String"
+      }
     }
   },
   "noPhasesFound": "Nenhuma fase encontrada.",
   "errorLoadingPhases": "Erro ao carregar fases: {error}",
   "@errorLoadingPhases": {
     "placeholders": {
-      "error": {"type": "String"}
+      "error": {
+        "type": "String"
+      }
     }
   },
   "whyThisImpact": "Por que esse impacto?",
@@ -102,7 +110,9 @@
   "correctAnswerWas": "Resposta: {answer}",
   "@correctAnswerWas": {
     "placeholders": {
-      "answer": {"type": "String"}
+      "answer": {
+        "type": "String"
+      }
     }
   },
   "resultPerfectTitle": "Perfeito, Astronauta!",
@@ -116,7 +126,9 @@
   "worldName": "Mundo {world}",
   "@worldName": {
     "placeholders": {
-      "world": {"type": "String"}
+      "world": {
+        "type": "String"
+      }
     }
   },
   "correctAnswersLabel": "Acertos",
@@ -125,7 +137,9 @@
   "performancePercentage": "{percent}% de aproveitamento",
   "@performancePercentage": {
     "placeholders": {
-      "percent": {"type": "int"}
+      "percent": {
+        "type": "int"
+      }
     }
   },
   "identifyMeaning": "Identifique o significado",
@@ -137,5 +151,80 @@
   "finishWorld": "Concluir Mundo 🏆",
   "defaultWorldName": "Mundo Jogos",
   "defaultReviewIntroMessage": "Quase lá! Vamos revisar o que você aprendeu?",
-  "appTagline": "SEU UNIVERSO DE GÍRIAS"
+  "appTagline": "SEU UNIVERSO DE GÍRIAS",
+  "createAccount": "Criar Conta",
+  "startAdventureSubtitle": "Comece sua aventura no universo das gírias!",
+  "selectBirthDateError": "Selecione sua data de nascimento.",
+  "selectSecurityQuestionError": "Selecione uma pergunta de segurança.",
+  "answerSecurityQuestionError": "Responda a pergunta de segurança.",
+  "termsTitle": "Termos de Responsabilidade",
+  "termsContent": "Ao aceitar, você concorda que seus dados poderão ser utilizados para fins de pesquisa, análise de dados e melhoria dos serviços, respeitando a privacidade e a segurança das informações.",
+  "reject": "Rejeitar",
+  "accept": "Aceitar",
+  "termsAgreement": "Li e concordo com os termos de uso e responsabilidade.",
+  "alreadyHaveAccount": "Já possui uma conta? ",
+  "doLogin": "Fazer Login",
+  "securityQuestionPet": "Qual o nome do seu primeiro animal de estimação?",
+  "securityQuestionBirthCity": "Qual o nome da cidade onde você nasceu?",
+  "securityQuestionMotherName": "Qual o nome da sua mãe?",
+  "securityQuestionFirstSchool": "Qual foi o nome da sua primeira escola?",
+  "securityQuestionFavoriteDish": "Qual é o seu prato favorito?",
+  "securityQuestionChildhoodFriend": "Qual o nome do seu melhor amigo de infância?",
+  "worldStatusAvailable": "Disponível",
+  "worldGamesDescription": "Gírias que nascem nas partidas online: do chat da ranqueada às zoeiras da galera gamer.",
+  "worldKpopName": "Mundo K-Pop",
+  "worldKpopDescription": "O vocabulário dos fandoms coreanos: termos de fã, comebacks e expressões que rolam nos grupos.",
+  "worldMakeupName": "Mundo Maquiagem",
+  "worldMakeupDescription": "Termos de beleza e make que dominam tutoriais, resenhas e a rotina de skincare.",
+  "worldPopName": "Mundo Pop",
+  "worldPopDescription": "Expressões da cultura pop: música, séries, memes e tudo que vira assunto do momento.",
+  "worldOldName": "Mundo Antigo",
+  "worldOldDescription": "As gírias clássicas de outras décadas, que os mais velhos usam e ainda aparecem por aí.",
+  "worldDailyName": "Mundo Cotidiano",
+  "worldDailyDescription": "O falar do dia a dia: conversas na rua, na escola e em casa, do jeitinho informal.",
+  "worldSportsName": "Mundo Esportes",
+  "worldSportsDescription": "Gírias de quadra, campo e arquibancada: narração, torcida e papo de treino.",
+  "worldGeekName": "Mundo Geek",
+  "worldGeekDescription": "Universo nerd: animes, quadrinhos, RPG e tecnologia com seu vocabulário próprio.",
+  "worldSocialName": "Mundo Redes Sociais",
+  "worldSocialDescription": "O idioma das timelines: siglas, trends e expressões que viralizam a cada semana.",
+  "worldRelationshipsName": "Mundo Relacionamentos",
+  "worldRelationshipsDescription": "Como a galera fala sobre paqueras, amizades e términos nas conversas de hoje.",
+  "worldCommunityName": "Mundo Da Comunidade",
+  "worldCommunityDescription": "O universo da comunidade: termos, expressões e conversas que unem os membros.",
+  "slangsLearnedProgress": "{learned}/{total} gírias aprendidas",
+  "@slangsLearnedProgress": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "slangsToLearn": "{total} gírias para aprender",
+  "@slangsToLearn": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnedOfTotal": "{learned}/{total} aprendidas",
+  "@learnedOfTotal": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "loadingTransmission": "Carregando transmissão...",
+  "chooseModeTitle": "Escolha o Modo",
+  "chooseModeSubtitle": "Como você deseja jogar essa fase?",
+  "casualModeLabel": "Modo Casual (Apenas Estudar)",
+  "rankedModeLabel": "Modo Rankeado (Com Tempo)"
 }

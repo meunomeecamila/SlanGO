@@ -280,8 +280,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get resultGreatTitle => 'Parabéns, Astronauta!';
 
   @override
-  String get resultGoodStartTitle =>
-      'Bom começo, Astronauta! Vamos melhorar';
+  String get resultGoodStartTitle => 'Bom começo, Astronauta! Vamos melhorar';
 
   @override
   String get resultImproveTitle => 'Vamos melhorar juntos, Astronauta!';
@@ -349,4 +348,173 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get appTagline => 'SEU UNIVERSO DE GÍRIAS';
+
+  @override
+  String get createAccount => 'Criar Conta';
+
+  @override
+  String get startAdventureSubtitle =>
+      'Comece sua aventura no universo das gírias!';
+
+  @override
+  String get selectBirthDateError => 'Selecione sua data de nascimento.';
+
+  @override
+  String get selectSecurityQuestionError =>
+      'Selecione uma pergunta de segurança.';
+
+  @override
+  String get answerSecurityQuestionError => 'Responda a pergunta de segurança.';
+
+  @override
+  String get termsTitle => 'Termos de Responsabilidade';
+
+  @override
+  String get termsContent =>
+      'Ao aceitar, você concorda que seus dados poderão ser utilizados para fins de pesquisa, análise de dados e melhoria dos serviços, respeitando a privacidade e a segurança das informações.';
+
+  @override
+  String get reject => 'Rejeitar';
+
+  @override
+  String get accept => 'Aceitar';
+
+  @override
+  String get termsAgreement =>
+      'Li e concordo com os termos de uso e responsabilidade.';
+
+  @override
+  String get alreadyHaveAccount => 'Já possui uma conta? ';
+
+  @override
+  String get doLogin => 'Fazer Login';
+
+  @override
+  String get securityQuestionPet =>
+      'Qual o nome do seu primeiro animal de estimação?';
+
+  @override
+  String get securityQuestionBirthCity =>
+      'Qual o nome da cidade onde você nasceu?';
+
+  @override
+  String get securityQuestionMotherName => 'Qual o nome da sua mãe?';
+
+  @override
+  String get securityQuestionFirstSchool =>
+      'Qual foi o nome da sua primeira escola?';
+
+  @override
+  String get securityQuestionFavoriteDish => 'Qual é o seu prato favorito?';
+
+  @override
+  String get securityQuestionChildhoodFriend =>
+      'Qual o nome do seu melhor amigo de infância?';
+
+  @override
+  String get worldStatusAvailable => 'Disponível';
+
+  @override
+  String get worldGamesDescription =>
+      'Gírias que nascem nas partidas online: do chat da ranqueada às zoeiras da galera gamer.';
+
+  @override
+  String get worldKpopName => 'Mundo K-Pop';
+
+  @override
+  String get worldKpopDescription =>
+      'O vocabulário dos fandoms coreanos: termos de fã, comebacks e expressões que rolam nos grupos.';
+
+  @override
+  String get worldMakeupName => 'Mundo Maquiagem';
+
+  @override
+  String get worldMakeupDescription =>
+      'Termos de beleza e make que dominam tutoriais, resenhas e a rotina de skincare.';
+
+  @override
+  String get worldPopName => 'Mundo Pop';
+
+  @override
+  String get worldPopDescription =>
+      'Expressões da cultura pop: música, séries, memes e tudo que vira assunto do momento.';
+
+  @override
+  String get worldOldName => 'Mundo Antigo';
+
+  @override
+  String get worldOldDescription =>
+      'As gírias clássicas de outras décadas, que os mais velhos usam e ainda aparecem por aí.';
+
+  @override
+  String get worldDailyName => 'Mundo Cotidiano';
+
+  @override
+  String get worldDailyDescription =>
+      'O falar do dia a dia: conversas na rua, na escola e em casa, do jeitinho informal.';
+
+  @override
+  String get worldSportsName => 'Mundo Esportes';
+
+  @override
+  String get worldSportsDescription =>
+      'Gírias de quadra, campo e arquibancada: narração, torcida e papo de treino.';
+
+  @override
+  String get worldGeekName => 'Mundo Geek';
+
+  @override
+  String get worldGeekDescription =>
+      'Universo nerd: animes, quadrinhos, RPG e tecnologia com seu vocabulário próprio.';
+
+  @override
+  String get worldSocialName => 'Mundo Redes Sociais';
+
+  @override
+  String get worldSocialDescription =>
+      'O idioma das timelines: siglas, trends e expressões que viralizam a cada semana.';
+
+  @override
+  String get worldRelationshipsName => 'Mundo Relacionamentos';
+
+  @override
+  String get worldRelationshipsDescription =>
+      'Como a galera fala sobre paqueras, amizades e términos nas conversas de hoje.';
+
+  @override
+  String get worldCommunityName => 'Mundo Da Comunidade';
+
+  @override
+  String get worldCommunityDescription =>
+      'O universo da comunidade: termos, expressões e conversas que unem os membros.';
+
+  @override
+  String slangsLearnedProgress(int learned, int total) {
+    return '$learned/$total gírias aprendidas';
+  }
+
+  @override
+  String slangsToLearn(int total) {
+    return '$total gírias para aprender';
+  }
+
+  @override
+  String learnedOfTotal(int learned, int total) {
+    return '$learned/$total aprendidas';
+  }
+
+  @override
+  String get loadingTransmission => 'Carregando transmissão...';
+
+  @override
+  String get chooseModeTitle => 'Escolha o Modo';
+
+  @override
+  String get chooseModeSubtitle => 'Como você deseja jogar essa fase?';
+
+  @override
+  String get casualModeLabel => 'Modo Casual (Apenas Estudar)';
+
+  @override
+  String get rankedModeLabel => 'Modo Rankeado (Com Tempo)';
 }

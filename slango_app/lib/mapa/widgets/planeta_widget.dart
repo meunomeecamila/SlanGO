@@ -3,6 +3,47 @@ import 'package:flutter/material.dart';
 import '../models/mundo.dart';
 import '../styles/cores.dart';
 import '../styles/texto.dart';
+import '../../l10n/l10n.dart';
+
+/// Nome e status localizados por id de mundo, com fallback para o texto
+/// original quando o mundo não estiver mapeado (ex.: mundos novos vindos
+/// futuramente do backend).
+String _nomeMundoLocalizado(BuildContext context, Mundo mundo) {
+  final l10n = context.l10n;
+  switch (mundo.id) {
+    case 'jogos':
+      return l10n.defaultWorldName;
+    case 'kpop':
+      return l10n.worldKpopName;
+    case 'maquiagem':
+      return l10n.worldMakeupName;
+    case 'pop':
+      return l10n.worldPopName;
+    case 'antigo':
+      return l10n.worldOldName;
+    case 'cotidiano':
+      return l10n.worldDailyName;
+    case 'esportes':
+      return l10n.worldSportsName;
+    case 'geek':
+      return l10n.worldGeekName;
+    case 'redessociais':
+      return l10n.worldSocialName;
+    case 'relacionamentos':
+      return l10n.worldRelationshipsName;
+    case 'comunidade':
+      return l10n.worldCommunityName;
+    default:
+      return mundo.nome;
+  }
+}
+
+String _statusMundoLocalizado(BuildContext context, Mundo mundo) {
+  if (mundo.status == 'Disponível') {
+    return context.l10n.worldStatusAvailable;
+  }
+  return mundo.status;
+}
 
 class PlanetaWidget extends StatefulWidget {
   final Mundo mundo;
@@ -73,7 +114,7 @@ class _PlanetaWidgetState extends State<PlanetaWidget>
         SizedBox(height: 10 * scale),
 
         Text(
-          mundo.nome,
+          _nomeMundoLocalizado(context, mundo),
           textAlign: TextAlign.center,
           style: AppText.titulo(scale * 0.9),
         ),
@@ -93,7 +134,7 @@ class _PlanetaWidgetState extends State<PlanetaWidget>
               const SizedBox(width: 6),
               Flexible(
                 child: Text(
-                  mundo.status,
+                  _statusMundoLocalizado(context, mundo),
                   textAlign: TextAlign.center,
                   overflow: TextOverflow.ellipsis,
                   maxLines: 1,
