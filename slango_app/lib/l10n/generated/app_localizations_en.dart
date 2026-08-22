@@ -514,7 +514,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get rankedModeLabel => 'Ranked Mode (Timed)';
-}
+
   @override
   String get confirmSecurityQuestionFirst =>
       'Find the security question first.';
