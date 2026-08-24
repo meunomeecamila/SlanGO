@@ -21,6 +21,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get spanish => 'Espanhol';
 
   @override
+  String get italian => 'Italiano';
+
+  @override
   String get language => 'Idioma';
 
   @override
@@ -517,7 +520,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get rankedModeLabel => 'Modo Rankeado (Com Tempo)';
-  
+
   @override
   String get confirmSecurityQuestionFirst =>
       'Busque a pergunta de segurança primeiro.';

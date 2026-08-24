@@ -305,6 +305,10 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
                   value: const Locale('es'),
                   child: Text('🇪🇸 ${l10n.spanish}'),
                 ),
+                DropdownMenuItem(
+                  value: const Locale('it'),
+                  child: Text('🇮🇹 ${l10n.italian}'),
+                ),
               ],
             ),
           ),

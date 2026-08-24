@@ -1,0 +1,253 @@
+{
+  "@@locale": "it",
+  "appTitle": "SlanGO",
+  "portuguese": "Portoghese",
+  "english": "Inglese",
+  "spanish": "Spagnolo",
+  "italian": "Italiano",
+  "language": "Lingua",
+  "general": "Generale",
+  "security": "Sicurezza",
+  "settings": "Impostazioni",
+  "name": "Nome",
+  "accountType": "Tipo di account",
+  "guardian": "Responsabile",
+  "youngPerson": "Giovane",
+  "dateOfBirth": "Data di nascita",
+  "selectDate": "Seleziona data",
+  "saveChanges": "Salva modifiche",
+  "saving": "Salvataggio...",
+  "noChanges": "Non ci sono modifiche da salvare.",
+  "profileUpdated": "Profilo aggiornato con successo!",
+  "changePassword": "Cambia password",
+  "changeEmail": "Cambia email",
+  "currentPassword": "Password attuale",
+  "newPassword": "Nuova password",
+  "confirmNewPassword": "Conferma nuova password",
+  "newEmail": "Nuova email",
+  "cancel": "Annulla",
+  "save": "Salva",
+  "signOut": "Esci dall'account",
+  "deleteAccount": "Elimina account",
+  "deleteAccountQuestion": "Eliminare l'account?",
+  "deleteAccountDescription": "Questa azione è permanente e cancellerà tutti i tuoi progressi.",
+  "delete": "Elimina",
+  "login": "Accedi",
+  "email": "Email",
+  "password": "Password",
+  "loginWelcome": "Continua la tua missione nell'universo dello slang!",
+  "forgotPassword": "Ho dimenticato la password",
+  "recoverPassword": "Recupera password",
+  "searching": "Ricerca in corso...",
+  "searchSecurityQuestion": "Cerca domanda",
+  "securityAnswer": "Risposta di sicurezza",
+  "fillAllFields": "Compila tutti i campi.",
+  "passwordsDoNotMatch": "Le password non coincidono.",
+  "passwordUpdated": "Password aggiornata con successo.",
+  "fillEmailAndPassword": "Inserisci email e password.",
+  "startMission": "Inizia missione",
+  "continueLabel": "Continua",
+  "back": "Indietro",
+  "loading": "Caricamento...",
+  "tryAgain": "Riprova",
+  "errorSavingProgress": "Impossibile salvare i tuoi progressi. Controlla la connessione.",
+  "rankingError": "Impossibile aggiungerti alla classifica. Riprova più tardi.",
+  "suggestionSent": "Suggerimento inviato! Il nostro team lo esaminerà a breve.",
+  "slangDeleted": "Slang eliminato con successo.",
+  "chooseRating": "Scegli una valutazione prima di inviare",
+  "thanksFeedback": "Grazie per il tuo feedback!",
+  "confirm": "Conferma",
+  "selectSecurityQuestion": "Scegli una domanda",
+  "chooseAvatar": "Scegli il tuo avatar",
+  "progress": "Progresso",
+  "impactSentiment": "Impatto/sentimento",
+  "map": "Mappa",
+  "worlds": "Mondi",
+  "slangs": "Slang",
+  "certificates": "Certificati",
+  "items": "Oggetti",
+  "equipped": "Equipaggiato",
+  "ranking": "Classifica",
+  "exploreNewWorlds": "Esplora nuovi mondi",
+  "explorePlanet": "Esplora pianeta",
+  "locked": "Bloccato",
+  "register": "Registrati",
+  "guestLogin": "Continua come ospite",
+  "loggingIn": "Accesso in corso...",
+  "welcomeMessage": "Impara lo slang di diverse comunità e avvicinati alle persone che ami!",
+  "questionProgress": "Domanda {current} di {total}",
+  "@questionProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noQuestionsFound": "Nessuna domanda trovata.",
+  "errorLoadingQuiz": "Errore nel caricamento del quiz:\n{error}",
+  "@errorLoadingQuiz": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPhasesFound": "Nessuna fase trovata.",
+  "errorLoadingPhases": "Errore nel caricamento delle fasi: {error}",
+  "@errorLoadingPhases": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "whyThisImpact": "Perché questo impatto?",
+  "correctFeedback": "Corretto! 🎉",
+  "incorrectFeedback": "Sbagliato!",
+  "keepGoingFeedback": "Bene! Continua così.",
+  "correctAnswerWas": "Risposta: {answer}",
+  "@correctAnswerWas": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "resultPerfectTitle": "Perfetto, Astronauta!",
+  "resultGreatTitle": "Complimenti, Astronauta!",
+  "resultGoodStartTitle": "Buon inizio, Astronauta! Miglioriamo",
+  "resultImproveTitle": "Miglioriamo insieme, Astronauta!",
+  "resultPerfectMessage": "Hai fatto un ottimo lavoro in questo viaggio!",
+  "resultGreatMessage": "Te la sei cavata molto bene in questo viaggio!",
+  "resultGoodEffortMessage": "Buon impegno! Ripassa lo slang che hai sbagliato e riprova.",
+  "resultTryAgainMessage": "Ogni viaggio inizia con un passo. Che ne dici di ripassare la lezione e riprovare?",
+  "worldName": "Mondo {world}",
+  "@worldName": {
+    "placeholders": {
+      "world": {
+        "type": "String"
+      }
+    }
+  },
+  "correctAnswersLabel": "Corrette",
+  "wrongAnswersLabel": "Errate",
+  "timeLabel": "Tempo",
+  "performancePercentage": "{percent}% di rendimento",
+  "@performancePercentage": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "identifyMeaning": "Identifica il significato",
+  "meaningLabel": "Significato: ",
+  "usageExampleLabel": "Esempio d'uso:",
+  "gotIt": "Ho capito!",
+  "testYourKnowledge": "Metti alla prova le tue conoscenze!",
+  "completeTheSentence": "Completa la frase:",
+  "finishWorld": "Completa Mondo 🏆",
+  "defaultWorldName": "Mondo Giochi",
+  "defaultReviewIntroMessage": "Ci siamo quasi! Ripassiamo cosa hai imparato?",
+  "appTagline": "IL TUO UNIVERSO DI SLANG",
+  "createAccount": "Crea account",
+  "startAdventureSubtitle": "Inizia la tua avventura nell'universo dello slang!",
+  "selectBirthDateError": "Seleziona la tua data di nascita.",
+  "selectSecurityQuestionError": "Seleziona una domanda di sicurezza.",
+  "answerSecurityQuestionError": "Rispondi alla domanda di sicurezza.",
+  "termsTitle": "Termini di responsabilità",
+  "termsContent": "Accettando, acconsenti che i tuoi dati possano essere utilizzati per finalità di ricerca, analisi dei dati e miglioramento del servizio, nel rispetto della privacy e della sicurezza delle tue informazioni.",
+  "reject": "Rifiuta",
+  "accept": "Accetta",
+  "termsAgreement": "Ho letto e accetto i termini di utilizzo e responsabilità.",
+  "alreadyHaveAccount": "Hai già un account? ",
+  "doLogin": "Accedi",
+  "securityQuestionPet": "Come si chiamava il tuo primo animale domestico?",
+  "securityQuestionBirthCity": "In quale città sei nato/a?",
+  "securityQuestionMotherName": "Come si chiama tua madre?",
+  "securityQuestionFirstSchool": "Come si chiamava la tua prima scuola?",
+  "securityQuestionFavoriteDish": "Qual è il tuo piatto preferito?",
+  "securityQuestionChildhoodFriend": "Come si chiamava il tuo migliore amico d'infanzia?",
+  "worldStatusAvailable": "Disponibile",
+  "worldGamesDescription": "Slang nato nelle partite online: dalla chat delle classificate alle battute tra gamer.",
+  "worldKpopName": "Mondo K-Pop",
+  "worldKpopDescription": "Il vocabolario dei fandom coreani: termini dei fan, comeback ed espressioni usate nei gruppi.",
+  "worldMakeupName": "Mondo Make-up",
+  "worldMakeupDescription": "Termini di bellezza e make-up che dominano tutorial, recensioni e routine di skincare.",
+  "worldPopName": "Mondo Pop",
+  "worldPopDescription": "Espressioni della cultura pop: musica, serie TV, meme e tutto ciò che è di tendenza ora.",
+  "worldOldName": "Mondo Retrò",
+  "worldOldDescription": "Slang classico di decenni passati, ancora usato oggi dalle generazioni più grandi.",
+  "worldDailyName": "Mondo Quotidiano",
+  "worldDailyDescription": "Il parlato di tutti i giorni: conversazioni per strada, a scuola e a casa, in modo informale.",
+  "worldSportsName": "Mondo Sport",
+  "worldSportsDescription": "Slang dal campo, dal terreno di gioco e dagli spalti: telecronaca, tifo e chiacchiere da spogliatoio.",
+  "worldGeekName": "Mondo Geek",
+  "worldGeekDescription": "L'universo nerd: anime, fumetti, giochi di ruolo e tecnologia con il proprio vocabolario.",
+  "worldSocialName": "Mondo Social Media",
+  "worldSocialDescription": "Il linguaggio delle timeline: sigle, tendenze ed espressioni che diventano virali ogni settimana.",
+  "worldRelationshipsName": "Mondo Relazioni",
+  "worldRelationshipsDescription": "Come si parla di cotte, amicizie e rotture nelle conversazioni di oggi.",
+  "worldCommunityName": "Mondo della Comunità",
+  "worldCommunityDescription": "L'universo della comunità: termini, espressioni e conversazioni che uniscono i membri.",
+  "slangsLearnedProgress": "{learned}/{total} slang imparati",
+  "@slangsLearnedProgress": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "slangsToLearn": "{total} slang da imparare",
+  "@slangsToLearn": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnedOfTotal": "{learned}/{total} imparati",
+  "@learnedOfTotal": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "loadingTransmission": "Caricamento trasmissione...",
+  "chooseModeTitle": "Scegli la modalità",
+  "chooseModeSubtitle": "Come vuoi giocare questa fase?",
+  "casualModeLabel": "Modalità Casual (Solo studio)",
+  "rankedModeLabel": "Modalità Classificata (A tempo)",
+  "confirmSecurityQuestionFirst": "Cerca prima la domanda di sicurezza.",
+  "profile": "Profilo",
+  "dontHaveAccountYet": "Non hai ancora un account? ",
+  "certificateCongratsMessage": "Complimenti, {name}!",
+  "@certificateCongratsMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "certificateWorldConquered": "Hai conquistato il Mondo {worldName}!",
+  "@certificateWorldConquered": {
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      }
+    }
+  },
+  "itemUnlocked": "Oggetto sbloccato:",
+  "certificateOfCompletion": "CERTIFICATO DI COMPLETAMENTO",
+  "defaultAstronautName": "Astronauta"
+}

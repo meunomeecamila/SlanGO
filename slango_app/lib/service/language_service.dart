@@ -11,14 +11,14 @@ class LanguageService extends ChangeNotifier {
   Future<void> load() async {
     final preferences = await SharedPreferences.getInstance();
     final languageCode = preferences.getString(_preferenceKey);
-    if (const {'pt', 'en', 'es'}.contains(languageCode)) {
+    if (const {'pt', 'en', 'es', 'it'}.contains(languageCode)) {
       _locale = Locale(languageCode!);
       notifyListeners();
     }
   }
 
   Future<void> setLocale(Locale locale) async {
-    if (!const {'pt', 'en', 'es'}.contains(locale.languageCode)) return;
+    if (!const {'pt', 'en', 'es', 'it'}.contains(locale.languageCode)) return;
     _locale = locale;
     notifyListeners();
     final preferences = await SharedPreferences.getInstance();
