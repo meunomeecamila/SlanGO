@@ -248,5 +248,58 @@
   },
   "itemUnlocked": "Item desbloqueado:",
   "certificateOfCompletion": "CERTIFICADO DE CONCLUSÃO",
-  "defaultAstronautName": "Astronauta"
+  "defaultAstronautName": "Astronauta",
+  "noSlangsLearnedYet": "Nenhuma gíria aprendida ainda.",
+  "errorLoadingLearnedSlangs": "Não foi possível carregar as gírias aprendidas.",
+  "defaultUserName": "Usuário",
+  "noItemsAvailable": "Nenhum item disponível ainda.",
+  "noWorldsAvailableYet": "Nenhum mundo disponível ainda.",
+  "trackWorldsProgress": "Acompanhe aqui o progresso dos mundos",
+  "noWorldsExploredYet": "Nenhum mundo explorado ainda. Comece a viagem! 🚀",
+  "worldLockedMessage": "Quando o mundo chegar a 100%, volte aqui!",
+  "certificateUnlockedTapToOpen": "Certificado liberado — toque para abrir",
+  "certificateEarned": "Certificado conquistado! 🎉",
+  "downloadOfficialCertificate": "Baixar certificado oficial (PDF)",
+  "downloadEtMessage": "Baixar recadinho do ETzinho (PDF)",
+  "pdfOpenError": "Não foi possível abrir o PDF. Confira se o arquivo existe em assets/pdfs/.",
+  "noRankingRecordsFound": "Nenhum registro encontrado no ranking.",
+  "rankingIntro": "Aqui está o nosso ranking! Confira quem já aprendeu mais gírias e completou as rodadas com os melhores tempos.",
+  "noTimeRegisteredYet": "Você ainda não tem um tempo registrado no ranking.",
+  "noTimedRoundYet": "Você ainda não completou uma rodada cronometrada.",
+  "youLabel": "VOCÊ",
+  "percentExplored": "{percent}% explorado",
+  "@percentExplored": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "yourPosition": "Sua posição: {position}° de {total}",
+  "@yourPosition": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "yourBestTime": "Seu melhor tempo: {time}",
+  "@yourBestTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rankPositionBadge": "{position}°",
+  "@rankPositionBadge": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  }
 }

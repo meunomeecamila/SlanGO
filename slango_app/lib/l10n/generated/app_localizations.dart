@@ -1029,6 +1029,7 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Modo Rankeado (Com Tempo)'**
   String get rankedModeLabel;
+
   /// No description provided for @confirmSecurityQuestionFirst.
   ///
   /// In pt, this message translates to:
@@ -1076,6 +1077,138 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Astronauta'**
   String get defaultAstronautName;
+
+  /// No description provided for @noSlangsLearnedYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma gíria aprendida ainda.'**
+  String get noSlangsLearnedYet;
+
+  /// No description provided for @errorLoadingLearnedSlangs.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível carregar as gírias aprendidas.'**
+  String get errorLoadingLearnedSlangs;
+
+  /// No description provided for @defaultUserName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Usuário'**
+  String get defaultUserName;
+
+  /// No description provided for @noItemsAvailable.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum item disponível ainda.'**
+  String get noItemsAvailable;
+
+  /// No description provided for @noWorldsAvailableYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum mundo disponível ainda.'**
+  String get noWorldsAvailableYet;
+
+  /// No description provided for @trackWorldsProgress.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acompanhe aqui o progresso dos mundos'**
+  String get trackWorldsProgress;
+
+  /// No description provided for @noWorldsExploredYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum mundo explorado ainda. Comece a viagem! 🚀'**
+  String get noWorldsExploredYet;
+
+  /// No description provided for @worldLockedMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quando o mundo chegar a 100%, volte aqui!'**
+  String get worldLockedMessage;
+
+  /// No description provided for @certificateUnlockedTapToOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Certificado liberado — toque para abrir'**
+  String get certificateUnlockedTapToOpen;
+
+  /// No description provided for @certificateEarned.
+  ///
+  /// In pt, this message translates to:
+  /// **'Certificado conquistado! 🎉'**
+  String get certificateEarned;
+
+  /// No description provided for @downloadOfficialCertificate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Baixar certificado oficial (PDF)'**
+  String get downloadOfficialCertificate;
+
+  /// No description provided for @downloadEtMessage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Baixar recadinho do ETzinho (PDF)'**
+  String get downloadEtMessage;
+
+  /// No description provided for @pdfOpenError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível abrir o PDF. Confira se o arquivo existe em assets/pdfs/.'**
+  String get pdfOpenError;
+
+  /// No description provided for @noRankingRecordsFound.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum registro encontrado no ranking.'**
+  String get noRankingRecordsFound;
+
+  /// No description provided for @rankingIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aqui está o nosso ranking! Confira quem já aprendeu mais gírias e completou as rodadas com os melhores tempos.'**
+  String get rankingIntro;
+
+  /// No description provided for @noTimeRegisteredYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você ainda não tem um tempo registrado no ranking.'**
+  String get noTimeRegisteredYet;
+
+  /// No description provided for @noTimedRoundYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você ainda não completou uma rodada cronometrada.'**
+  String get noTimedRoundYet;
+
+  /// No description provided for @youLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'VOCÊ'**
+  String get youLabel;
+
+  /// No description provided for @percentExplored.
+  ///
+  /// In pt, this message translates to:
+  /// **'{percent}% explorado'**
+  String percentExplored(int percent);
+
+  /// No description provided for @yourPosition.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua posição: {position}° de {total}'**
+  String yourPosition(int position, int total);
+
+  /// No description provided for @yourBestTime.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu melhor tempo: {time}'**
+  String yourBestTime(String time);
+
+  /// No description provided for @rankPositionBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'{position}°'**
+  String rankPositionBadge(int position);
 }
 
 class _AppLocalizationsDelegate

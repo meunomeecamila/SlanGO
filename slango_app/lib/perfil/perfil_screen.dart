@@ -13,6 +13,7 @@ import 'models.dart';
 import 'cores.dart';
 import 'texto.dart';
 import '../final/Particulas.dart';
+import '../l10n/l10n.dart';
 
 enum _AbaPerfil { itens, certificados }
 
@@ -74,13 +75,14 @@ class _PerfilScreenState extends State<PerfilScreen> {
       final astronautas = resultados[2] as List<AstronautaPerfil>;
       final itens = resultados[3] as List<ItemPerfil>;
 
+      if (!mounted) return;
       final mundos = mundosJson.map<ProgressoMundo>((item) {
         final id = item['id']?.toString() ?? '';
         final quantidadeAprendida = item['quantidadeAprendida'] as int? ?? 0;
         final totalGirias = item['totalGirias'] as int? ?? 30;
         return ProgressoMundo(
           id: id,
-          nome: _nomeDoMundo(id),
+          nome: _nomeDoMundo(context, id),
           girasAprendidas: quantidadeAprendida,
           totalGirias: totalGirias,
         );
@@ -129,19 +131,20 @@ class _PerfilScreenState extends State<PerfilScreen> {
     }
   }
 
-  String _nomeDoMundo(String id) {
-    const nomes = {
-      'jogos': 'Mundo Jogos',
-      'kpop': 'Mundo K-pop',
-      'pop': 'Mundo Pop',
-      'maquiagem': 'Mundo Maquiagem',
-      'antigo': 'Mundo Antigo',
-      'cotidiano': 'Mundo Cotidiano',
-      'esportes': 'Mundo Esportes',
-      'geek': 'Mundo Geek',
-      'redessociais': 'Mundo Redes Sociais',
-      'relacionamentos': 'Mundo Relacionamentos',
-      'comunidade': 'Mundo Comunidade',
+  String _nomeDoMundo(BuildContext context, String id) {
+    final l10n = context.l10n;
+    final nomes = {
+      'jogos': l10n.defaultWorldName,
+      'kpop': l10n.worldKpopName,
+      'pop': l10n.worldPopName,
+      'maquiagem': l10n.worldMakeupName,
+      'antigo': l10n.worldOldName,
+      'cotidiano': l10n.worldDailyName,
+      'esportes': l10n.worldSportsName,
+      'geek': l10n.worldGeekName,
+      'redessociais': l10n.worldSocialName,
+      'relacionamentos': l10n.worldRelationshipsName,
+      'comunidade': l10n.worldCommunityName,
     };
     return nomes[id] ?? id;
   }
@@ -213,14 +216,14 @@ class _PerfilScreenState extends State<PerfilScreen> {
                 width: 1.5,
               ),
             ),
-            child: const Row(
+            child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.arrow_back, color: Color(0xFFB9A6E8), size: 14),
-                SizedBox(width: 6),
+                const Icon(Icons.arrow_back, color: Color(0xFFB9A6E8), size: 14),
+                const SizedBox(width: 6),
                 Text(
-                  'Mapa',
-                  style: TextStyle(
+                  context.l10n.map,
+                  style: const TextStyle(
                     color: Color(0xFFB9A6E8),
                     fontWeight: FontWeight.bold,
                     fontSize: 13,
@@ -276,7 +279,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
   }
 
    Widget _buildCardAvatar() {
-    final nome = _usuario?.nome ?? widget.nome ?? 'Usuário';
+    final nome = _usuario?.nome ?? widget.nome ?? context.l10n.defaultUserName;
     final totalMundos = _mundosProgresso.isNotEmpty
         ? _mundosProgresso.length
         : widget.totalMundos;
@@ -407,9 +410,9 @@ class _PerfilScreenState extends State<PerfilScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _stat(totalMundos.toString(), "Mundos"),
-              _stat(totalGirias.toString(), "Gírias"),
-              _stat(totalCertificados.toString(), "Certificados"),
+              _stat(totalMundos.toString(), context.l10n.worlds),
+              _stat(totalGirias.toString(), context.l10n.slangs),
+              _stat(totalCertificados.toString(), context.l10n.certificates),
             ],
           ),
         ],
@@ -433,7 +436,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Escolha seu avatar", style: AppText.titulo(0.9)),
+                  Text(context.l10n.chooseAvatar, style: AppText.titulo(0.9)),
                   const SizedBox(height: 16),
                   Wrap(
                     spacing: 16,
@@ -525,8 +528,8 @@ class _PerfilScreenState extends State<PerfilScreen> {
       ),
       child: Row(
         children: [
-          _aba("Itens", _AbaPerfil.itens),
-          _aba("Certificados", _AbaPerfil.certificados),
+          _aba(context.l10n.items, _AbaPerfil.itens),
+          _aba(context.l10n.certificates, _AbaPerfil.certificados),
         ],
       ),
     );
@@ -604,7 +607,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 24),
           child: Text(
-            "Nenhum item disponível ainda.",
+            context.l10n.noItemsAvailable,
             style: AppText.subtitulo(1),
           ),
         ),
@@ -672,7 +675,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     )
                   else if (item.equipado)
                     Text(
-                      "Equipado",
+                      context.l10n.equipped,
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                       style: AppText.cardSubtitulo(0.70).copyWith(

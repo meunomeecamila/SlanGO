@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../cores.dart';
 import '../texto.dart';
+import '../../l10n/l10n.dart';
 import 'certificado_mundo_data.dart';
 
 /// Card de um mundo dentro da aba "Certificados".
@@ -78,7 +79,7 @@ class CardCertificadoMundo extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      'Quando o mundo chegar a 100%, volte aqui!',
+                      context.l10n.worldLockedMessage,
                       textAlign: TextAlign.center,
                       style: AppText.cardSubtitulo(0.95).copyWith(
                         color: Colors.white,
@@ -168,8 +169,8 @@ class CardCertificadoMundo extends StatelessWidget {
                 const SizedBox(height: 6),
                 Text(
                   desbloqueado
-                      ? 'Certificado liberado — toque para abrir'
-                      : '${(progresso * 100).round()}% explorado',
+                      ? context.l10n.certificateUnlockedTapToOpen
+                      : context.l10n.percentExplored((progresso * 100).round()),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: AppText.cardSubtitulo(0.85),

@@ -5,6 +5,7 @@ import 'texto.dart';
 import '../final/Particulas.dart';
 import 'models.dart';
 import '../service/MundoService.dart';
+import '../l10n/l10n.dart';
 
 
 const Color _roxoAccent = Color(0xFF8B7CF6);
@@ -159,16 +160,16 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Text(
-                                "Não foi possível carregar as gírias aprendidas.",
+                                context.l10n.errorLoadingLearnedSlangs,
                                 textAlign: TextAlign.center,
                                 style: AppText.subtitulo(1),
                               ),
                               const SizedBox(height: 12),
                               TextButton(
                                 onPressed: _recarregar,
-                                child: const Text(
-                                  "Tentar novamente",
-                                  style: TextStyle(color: _roxoAccent),
+                                child: Text(
+                                  context.l10n.tryAgain,
+                                  style: const TextStyle(color: _roxoAccent),
                                 ),
                               ),
                             ],
@@ -181,7 +182,7 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
                       if (girias.isEmpty) {
                         return Center(
                           child: Text(
-                            "Nenhuma gíria aprendida ainda.",
+                            context.l10n.noSlangsLearnedYet,
                             style: AppText.subtitulo(1),
                           ),
                         );
@@ -230,7 +231,10 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
               Text(widget.mundo.nome, style: AppText.titulo(0.85)),
               const SizedBox(height: 2),
               Text(
-                "${widget.mundo.girasAprendidas}/${widget.mundo.totalGirias} gírias aprendidas",
+                context.l10n.slangsLearnedProgress(
+                  widget.mundo.girasAprendidas,
+                  widget.mundo.totalGirias,
+                ),
                 style: AppText.subtitulo(0.9),
               ),
             ],
@@ -319,7 +323,7 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
                   children: [
                     Expanded(
                       child: Text(
-                        "IDENTIFIQUE O SIGNIFICADO",
+                        context.l10n.identifyMeaning.toUpperCase(),
                         style: AppText.subtitulo(0.72).copyWith(
                           color: _roxoAccent,
                           fontWeight: FontWeight.w700,
@@ -379,7 +383,7 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
                           style: AppText.subtitulo(1).copyWith(color: AppColors.textPrimary),
                           children: [
                             TextSpan(
-                              text: "Significado: ",
+                              text: context.l10n.meaningLabel,
                               style: const TextStyle(fontWeight: FontWeight.w700),
                             ),
                             TextSpan(text: giria.significado),
@@ -404,7 +408,7 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Exemplo de uso:",
+                          context.l10n.usageExampleLabel,
                           style: AppText.subtitulo(0.85).copyWith(
                             color: _roxoAccent,
                             fontWeight: FontWeight.w700,
@@ -435,9 +439,9 @@ class _GiriasMundoScreenState extends State<GiriasMundoScreen> {
                         borderRadius: BorderRadius.circular(30),
                       ),
                     ),
-                    child: const Text(
-                      "Entendi!",
-                      style: TextStyle(
+                    child: Text(
+                      context.l10n.gotIt,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w700,
                         fontSize: 15,
