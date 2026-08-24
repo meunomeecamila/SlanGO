@@ -552,4 +552,85 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get defaultAstronautName => 'Astronauta';
+
+  @override
+  String get noSlangsLearnedYet => 'Nenhuma gíria aprendida ainda.';
+
+  @override
+  String get errorLoadingLearnedSlangs =>
+      'Não foi possível carregar as gírias aprendidas.';
+
+  @override
+  String get defaultUserName => 'Usuário';
+
+  @override
+  String get noItemsAvailable => 'Nenhum item disponível ainda.';
+
+  @override
+  String get noWorldsAvailableYet => 'Nenhum mundo disponível ainda.';
+
+  @override
+  String get trackWorldsProgress => 'Acompanhe aqui o progresso dos mundos';
+
+  @override
+  String get noWorldsExploredYet =>
+      'Nenhum mundo explorado ainda. Comece a viagem! 🚀';
+
+  @override
+  String get worldLockedMessage => 'Quando o mundo chegar a 100%, volte aqui!';
+
+  @override
+  String get certificateUnlockedTapToOpen =>
+      'Certificado liberado — toque para abrir';
+
+  @override
+  String get certificateEarned => 'Certificado conquistado! 🎉';
+
+  @override
+  String get downloadOfficialCertificate => 'Baixar certificado oficial (PDF)';
+
+  @override
+  String get downloadEtMessage => 'Baixar recadinho do ETzinho (PDF)';
+
+  @override
+  String get pdfOpenError =>
+      'Não foi possível abrir o PDF. Confira se o arquivo existe em assets/pdfs/.';
+
+  @override
+  String get noRankingRecordsFound => 'Nenhum registro encontrado no ranking.';
+
+  @override
+  String get rankingIntro =>
+      'Aqui está o nosso ranking! Confira quem já aprendeu mais gírias e completou as rodadas com os melhores tempos.';
+
+  @override
+  String get noTimeRegisteredYet =>
+      'Você ainda não tem um tempo registrado no ranking.';
+
+  @override
+  String get noTimedRoundYet =>
+      'Você ainda não completou uma rodada cronometrada.';
+
+  @override
+  String get youLabel => 'VOCÊ';
+
+  @override
+  String percentExplored(int percent) {
+    return '$percent% explorado';
+  }
+
+  @override
+  String yourPosition(int position, int total) {
+    return 'Sua posição: $position° de $total';
+  }
+
+  @override
+  String yourBestTime(String time) {
+    return 'Seu melhor tempo: $time';
+  }
+
+  @override
+  String rankPositionBadge(int position) {
+    return '$position°';
+  }
 }

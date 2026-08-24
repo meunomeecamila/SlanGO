@@ -106,7 +106,7 @@ class _RankingScreenState extends State<RankingScreen> {
                     if (listaRanking.isEmpty) {
                       return Center(
                         child: Text(
-                          'Nenhum registro encontrado no ranking.',
+                          context.l10n.noRankingRecordsFound,
                           style: AppText.cardSubtitulo(scale),
                         ),
                       );
@@ -163,7 +163,7 @@ class _RankingScreenState extends State<RankingScreen> {
           ),
           Expanded(
             child: Text(
-              'Ranking',
+              context.l10n.ranking,
               textAlign: TextAlign.center,
               style: GoogleFonts.alfaSlabOne(
                 color: AppColors.textPrimary,
@@ -189,7 +189,7 @@ class _RankingScreenState extends State<RankingScreen> {
     return Padding(
       padding: EdgeInsets.fromLTRB(16 * scale, 0, 16 * scale, 12 * scale),
       child: Text(
-        'Aqui está o nosso ranking! Confira quem já aprendeu mais gírias e completou as rodadas com os melhores tempos.',
+        context.l10n.rankingIntro,
         textAlign: TextAlign.center,
         style: AppText.cardSubtitulo(scale),
       ),
@@ -240,7 +240,7 @@ class _RankingScreenState extends State<RankingScreen> {
                 border: Border.all(color: const Color(0xFF9D7FFF).withOpacity(0.4)),
               ),
               child: Text(
-                'Você ainda não tem um tempo registrado no ranking.',
+                context.l10n.noTimeRegisteredYet,
                 textAlign: TextAlign.center,
                 style: AppText.cardSubtitulo(scale),
               ),
@@ -270,7 +270,10 @@ class _RankingScreenState extends State<RankingScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Sua posição: ${minhaPosicao.posicao}° de ${minhaPosicao.totalJogadores}',
+                        context.l10n.yourPosition(
+                          minhaPosicao.posicao!,
+                          minhaPosicao.totalJogadores,
+                        ),
                         style: AppText.cardTitulo(scale).copyWith(
                           fontSize: 13 * scale,
                           color: AppColors.cyan,
@@ -279,8 +282,8 @@ class _RankingScreenState extends State<RankingScreen> {
                       SizedBox(height: 2 * scale),
                       Text(
                         minhaPosicao.melhorTempoMs != null
-                            ? 'Seu melhor tempo: ${formatarTempo(minhaPosicao.melhorTempoMs!)}'
-                            : 'Você ainda não completou uma rodada cronometrada.',
+                            ? context.l10n.yourBestTime(formatarTempo(minhaPosicao.melhorTempoMs!))
+                            : context.l10n.noTimedRoundYet,
                         style: AppText.cardSubtitulo(scale).copyWith(fontSize: 11 * scale),
                       ),
                     ],
@@ -364,7 +367,7 @@ class _RankingScreenState extends State<RankingScreen> {
           if (ehVoce) ...[
             SizedBox(height: 2 * scale),
             Text(
-              'VOCÊ',
+              context.l10n.youLabel,
               style: TextStyle(
                 fontSize: 10 * scale,
                 fontWeight: FontWeight.bold,
@@ -443,7 +446,7 @@ class _RankingScreenState extends State<RankingScreen> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
-                    '$posicao°',
+                    context.l10n.rankPositionBadge(posicao),
                     style: TextStyle(
                       fontSize: 11 * scale,
                       fontWeight: FontWeight.bold,
@@ -538,7 +541,7 @@ class _RankingScreenState extends State<RankingScreen> {
           SizedBox(
             width: 28 * scale,
             child: Text(
-              '$posicao°',
+              context.l10n.rankPositionBadge(posicao),
               style: AppText.cardSubtitulo(scale).copyWith(
                 fontWeight: FontWeight.bold,
                 color: ehVoce ? AppColors.cyan : AppColors.textSecondary,
@@ -572,7 +575,7 @@ class _RankingScreenState extends State<RankingScreen> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
-                      'VOCÊ',
+                      context.l10n.youLabel,
                       style: TextStyle(
                         fontSize: 9 * scale,
                         fontWeight: FontWeight.bold,

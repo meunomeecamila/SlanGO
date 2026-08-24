@@ -2,17 +2,10 @@
   {
     "id": 1,
     "nome": "esfumado",
-    "variacoes": [
-      "esfumar",
-      "efeito esfumado"
-    ],
+    "variacoes": ["esfumar", "efeito esfumado"],
     "classe_gramatical": "adjetivo",
     "significado": "Técnica de difuminar as sombras nos olhos para criar transição suave de cores, sem linhas marcadas.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "olhos", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um esfumado marrom bem suave pra ir no trabalho hoje.",
@@ -26,21 +19,15 @@
       "Aparência embaçada de vidros ou espelhos por acúmulo de vapor ou sujeira.",
       "Efeito de desfoque suave aplicado em fotografias para suavizar o fundo."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Esfumado é elogiado como uma técnica que garante um acabamento suave e profissional na maquiagem dos olhos."
   },
   {
     "id": 2,
     "nome": "boca de boneca",
-    "variacoes": [
-      "efeito boca de boneca"
-    ],
+    "variacoes": ["efeito boca de boneca"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de contorno labial que aumenta visualmente o volume dos lábios, deixando-os mais cheios.",
-    "tags": [
-      "maquiagem",
-      "boca",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "boca", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Usei o lápis um pouco fora da linha natural pra fazer boca de boneca.",
@@ -54,21 +41,15 @@
       "Expressão usada pra descrever alguém tímido, que fala pouco.",
       "Técnica de desenho usada por ilustradores pra dar expressão a personagens de animação."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Boca de boneca é usada de forma elogiosa para descrever um efeito de lábios mais volumosos e bem definidos."
   },
   {
     "id": 3,
     "nome": "pele de vidro",
-    "variacoes": [
-      "glass skin"
-    ],
+    "variacoes": ["glass skin"],
     "classe_gramatical": "expressão",
     "significado": "Efeito de pele extremamente hidratada, lisa e com brilho natural, como se fosse translúcida.",
-    "tags": [
-      "maquiagem",
-      "pele",
-      "tendencia"
-    ],
+    "tags": ["maquiagem", "pele", "tendencia"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Ela tem uma rotina de skincare incrível, sempre com aquela pele de vidro.",
@@ -82,21 +63,15 @@
       "Expressão usada pra pessoas muito sensíveis emocionalmente, que se magoam fácil.",
       "Efeito de brilho intenso aplicado digitalmente em fotos editadas pra simular pele perfeita."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Pele de vidro é admirada como o resultado máximo de uma rotina de skincare bem-sucedida."
   },
   {
     "id": 4,
     "nome": "postiço",
-    "variacoes": [
-      "cílios postiços"
-    ],
+    "variacoes": ["cílios postiços"],
     "classe_gramatical": "substantivo/adjetivo",
     "significado": "Cílios artificiais aplicados para dar mais volume e comprimento ao olhar.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "produto"
-    ],
+    "tags": ["maquiagem", "olhos", "produto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Coloquei um postiço fininho só nas pontas pra ficar mais natural.",
@@ -110,22 +85,15 @@
       "Qualquer peça artificial usada pra substituir algo natural no corpo, como unha ou dente.",
       "Acessório de cabelo usado pra dar volume extra, como aplique ou peruca."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Postiço é visto como um recurso positivo para realçar o olhar de forma prática e reversível."
   },
   {
     "id": 5,
     "nome": "glow up",
-    "variacoes": [
-      "deu um glow up",
-      "glow up de make"
-    ],
+    "variacoes": ["deu um glow up", "glow up de make"],
     "classe_gramatical": "expressão",
     "significado": "Transformação visual impressionante, geralmente mostrando o antes e depois de uma make ou cuidado com a pele.",
-    "tags": [
-      "maquiagem",
-      "transformacao",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "transformacao", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Depois que ela aprendeu a fazer contorno, foi um glow up total no rosto.",
@@ -139,22 +107,15 @@
       "Sensação de estar radiante e confiante depois de uma boa notícia, sem relação com aparência.",
       "Aumento de brilho e nitidez feito em fotos através de filtros e edição digital."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Glow up celebra uma transformação visual impressionante e é usado de forma animadora entre criadores de conteúdo."
   },
   {
     "id": 6,
     "nome": "clean girl",
-    "variacoes": [
-      "clean girl makeup",
-      "cara de clean girl"
-    ],
+    "variacoes": ["clean girl makeup", "cara de clean girl"],
     "classe_gramatical": "expressão",
     "significado": "Estética de maquiagem minimalista, com pele hidratada, sobrancelha escovada e make leve que parece 'sem make', bem popular entre influencers de beleza.",
-    "tags": [
-      "maquiagem",
-      "tendencia",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "tendencia", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Hoje eu quis um visual clean girl: só hidratante com cor, blush e gloss.",
@@ -168,21 +129,15 @@
       "Pessoa que segue um estilo de vida organizado e minimalista em casa.",
       "Estética de decoração com ambientes claros, neutros e poucos objetos, popular no design de interiores."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Clean girl é associado a uma estética leve e organizada, vista como aspiracional nas redes sociais."
   },
   {
     "id": 7,
     "nome": "soft glam",
-    "variacoes": [
-      "soft glam make"
-    ],
+    "variacoes": ["soft glam make"],
     "classe_gramatical": "expressão",
     "significado": "Estilo de maquiagem sofisticado mas suave, com tons neutros, acabamento glow e menos contraste que uma make 'glam' tradicional.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "tecnica", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz uma soft glam pra festa: sombra dourada, cílios naturais e batom nude.",
@@ -196,22 +151,15 @@
       "Estilo de decoração de ambientes com iluminação suave e tons neutros.",
       "Estilo fotográfico com iluminação suave e glamourosa usado em ensaios de moda."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Soft glam é elogiado por equilibrar sofisticação e suavidade num único visual."
   },
   {
     "id": 8,
     "nome": "borrada",
-    "variacoes": [
-      "make borrada",
-      "borrou toda"
-    ],
+    "variacoes": ["make borrada", "borrou toda"],
     "classe_gramatical": "adjetivo",
     "significado": "Quando a maquiagem sai do lugar, escorre ou se desfaz, geralmente por suor, choro ou chuva — virou meme quando acontece em público.",
-    "tags": [
-      "maquiagem",
-      "meme",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "meme", "tiktok"],
     "permissao": "todos",
     "impacto": "negativa",
     "exemplo_correto": "Chorei tanto no filme que minha make ficou toda borrada.",
@@ -225,21 +173,15 @@
       "Escrita difícil de ler porque a tinta da caneta espalhou no papel molhado.",
       "Efeito de desfoque em fotos tiradas com a câmera tremendo."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Borrada descreve uma falha indesejada na maquiagem, associada a frustração ou constrangimento."
   },
   {
     "id": 9,
     "nome": "cara lavada",
-    "variacoes": [
-      "ficar de cara lavada"
-    ],
+    "variacoes": ["ficar de cara lavada"],
     "classe_gramatical": "expressão",
     "significado": "Estar sem nenhuma maquiagem no rosto, com a pele natural à mostra.",
-    "tags": [
-      "maquiagem",
-      "cotidiano",
-      "pele"
-    ],
+    "tags": ["maquiagem", "cotidiano", "pele"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Hoje resolvi ficar de cara lavada, só um protetor solar.",
@@ -253,22 +195,15 @@
       "Expressão usada pra dizer que alguém foi honesto e direto sobre algo, sem rodeios.",
       "Resultado de um esfoliante facial que deixa a pele com sensação de limpeza profunda."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Cara lavada é usado de forma positiva para valorizar a beleza natural sem maquiagem."
   },
   {
     "id": 10,
     "nome": "full face",
-    "variacoes": [
-      "fazer a full face",
-      "look full face"
-    ],
+    "variacoes": ["fazer a full face", "look full face"],
     "classe_gramatical": "expressão",
     "significado": "Maquiagem completa, com todas as etapas: base, corretivo, pó, sobrancelha, olhos, blush, contorno e boca.",
-    "tags": [
-      "maquiagem",
-      "tutorial",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "tutorial", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Gravei um vídeo fazendo minha full face do zero pro casamento.",
@@ -282,22 +217,15 @@
       "Expressão usada em jogos de cartas pra indicar uma jogada completa.",
       "Termo de fotografia pra um enquadramento que mostra o rosto inteiro, sem cortes."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Full face é celebrado nos tutoriais como o processo completo e caprichado de uma maquiagem."
   },
   {
     "id": 11,
     "nome": "no makeup makeup",
-    "variacoes": [
-      "make de cara lavada",
-      "make natural"
-    ],
+    "variacoes": ["make de cara lavada", "make natural"],
     "classe_gramatical": "expressão",
     "significado": "Maquiagem feita com técnica e produtos, mas com resultado que parece pele natural, sem make aparente.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "tendencia"
-    ],
+    "tags": ["maquiagem", "tecnica", "tendencia"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Passei quase meia hora numa make no makeup makeup bem trabalhada.",
@@ -311,22 +239,15 @@
       "Filtro de celular que deixa a selfie parecendo sem edição nenhuma.",
       "Rotina de skincare que substitui completamente o uso de maquiagem no dia a dia."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "No makeup makeup é valorizado por unir técnica e naturalidade, um resultado muito desejado atualmente."
   },
   {
     "id": 12,
     "nome": "delineado gatinho",
-    "variacoes": [
-      "winged liner",
-      "gatinho"
-    ],
+    "variacoes": ["winged liner", "gatinho"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de delineado que puxa uma linha fina até a ponta externa do olho, criando um efeito alongado tipo 'olho de gato'.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "olhos", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Levei uns bons minutos, mas consegui fazer o delineado gatinho simétrico dos dois lados.",
@@ -340,22 +261,15 @@
       "Apelido carinhoso dado a alguém com olhos naturalmente puxados.",
       "Formato de óculos de sol com as pontas levantadas, estilo retrô."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Delineado gatinho é elogiado como uma técnica clássica que alonga e valoriza o olhar."
   },
   {
     "id": 13,
     "nome": "nose highlight",
-    "variacoes": [
-      "iluminar o nariz",
-      "coração no nariz"
-    ],
+    "variacoes": ["iluminar o nariz", "coração no nariz"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de aplicar um toque de iluminador em formato de coraçãozinho na ponta do nariz, deixando o visual mais fofo e brilhante.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "tecnica", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Terminei a make com um nose highlight bem discretinho pra dar um brilho fofo.",
@@ -369,22 +283,15 @@
       "Adesivo decorativo em formato de coração colado no rosto, sem uso de maquiagem.",
       "Piercing pequeno usado na ponta do nariz como acessório."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Nose highlight é usado de forma lúdica e fofa, associado a tutoriais divertidos de maquiagem."
   },
   {
     "id": 14,
     "nome": "baking",
-    "variacoes": [
-      "fazer baking",
-      "baking de pó"
-    ],
+    "variacoes": ["fazer baking", "baking de pó"],
     "classe_gramatical": "substantivo",
     "significado": "Técnica de deixar uma camada grossa de pó solto sobre áreas específicas do rosto por alguns minutos antes de remover o excesso, pra fixar a base e iluminar naturalmente.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "pele"
-    ],
+    "tags": ["maquiagem", "tecnica", "pele"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um baking embaixo dos olhos pra segurar o corretivo até de noite.",
@@ -398,22 +305,15 @@
       "Processo de assar pães, bolos e outras receitas no forno por tempo prolongado.",
       "Etapa do skincare em que se deixa um hidratante ou máscara agir no rosto antes de remover."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Baking é reconhecido como uma técnica eficaz para fixar a maquiagem e iluminar o rosto."
   },
   {
     "id": 15,
     "nome": "strobing",
-    "variacoes": [
-      "fazer strobing",
-      "efeito strobing"
-    ],
+    "variacoes": ["fazer strobing", "efeito strobing"],
     "classe_gramatical": "substantivo",
     "significado": "Técnica de iluminação pontual do rosto com produtos com brilho, criando um efeito de pele radiante sem precisar do contorno tradicional.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "tendencia"
-    ],
+    "tags": ["maquiagem", "tecnica", "tendencia"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Prefiro fazer strobing no verão, deixa a pele com brilho natural sem pesar.",
@@ -427,22 +327,15 @@
       "Recurso de iluminação usado em fotografia pra criar sombras dramáticas.",
       "Técnica de photoshop que realça pontos de luz numa foto editada digitalmente."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Strobing é elogiado por criar um efeito de pele radiante de forma prática."
   },
   {
     "id": 16,
     "nome": "contorno",
-    "variacoes": [
-      "fazer contorno",
-      "contornar o rosto"
-    ],
+    "variacoes": ["fazer contorno", "contornar o rosto"],
     "classe_gramatical": "substantivo",
     "significado": "Técnica de esculpir o rosto com produtos mais escuros nas áreas de sombra e mais claros nas áreas de luz, criando profundidade e definindo os traços.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "rosto"
-    ],
+    "tags": ["maquiagem", "tecnica", "rosto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um contorno bem leve só pra afinar o rosto na foto.",
@@ -456,22 +349,15 @@
       "Traçado usado por costureiras pra marcar o molde antes de cortar o tecido.",
       "Técnica de desenho artístico usada pra destacar as bordas de um rosto em ilustrações."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Contorno é valorizado como uma técnica que ajuda a esculpir e definir os traços do rosto."
   },
   {
     "id": 17,
     "nome": "blush draping",
-    "variacoes": [
-      "draping de blush",
-      "fazer draping"
-    ],
+    "variacoes": ["draping de blush", "fazer draping"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de aplicar blush estendendo da maçã do rosto até a têmpora, criando um efeito de lifting e mais definição na estrutura facial.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "tecnica", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Testei o blush draping hoje e amei como ele levantou meu rosto.",
@@ -485,21 +371,15 @@
       "Técnica de arrumar panos formando dobras elegantes em vitrines de loja.",
       "Estilo de vestido com tecido caindo em camadas suaves, usado em looks de festa."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Blush draping é celebrado por criar um efeito de lifting natural no rosto."
   },
   {
     "id": 18,
     "nome": "underpainting",
-    "variacoes": [
-      "fazer underpainting"
-    ],
+    "variacoes": ["fazer underpainting"],
     "classe_gramatical": "substantivo",
     "significado": "Técnica em que se desenha o contorno e a sombra do rosto direto na pele, antes da base, pra depois esfumar tudo junto e criar profundidade.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "tiktok"
-    ],
+    "tags": ["maquiagem", "tecnica", "tiktok"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Vi um tutorial de underpainting e o resultado ficou surpreendentemente natural.",
@@ -513,22 +393,15 @@
       "Técnica usada por restauradores pra identificar pinturas escondidas sob a tinta original.",
       "Rascunho de sombra feito em desenhos de retrato antes de finalizar com cores."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Underpainting é admirado como uma técnica avançada que gera resultados de contorno muito naturais."
   },
   {
     "id": 19,
     "nome": "siren eyes",
-    "variacoes": [
-      "olho de sereia",
-      "efeito siren eyes"
-    ],
+    "variacoes": ["olho de sereia", "efeito siren eyes"],
     "classe_gramatical": "expressão",
     "significado": "Tendência de maquiagem nos olhos que puxa a sombra e o delineado pra cima nas pontas externas, criando um olhar alongado e felino.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tendencia"
-    ],
+    "tags": ["maquiagem", "olhos", "tendencia"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz siren eyes com sombra marrom bem esfumada nas pontas.",
@@ -542,22 +415,15 @@
       "Apelido dado a pessoas com olhar marcante e penetrante.",
       "Efeito de olhos alongados conseguido através de lentes de contato especiais."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Siren eyes é elogiado como uma tendência moderna que alonga e intensifica o olhar."
   },
   {
     "id": 20,
     "nome": "lifting make",
-    "variacoes": [
-      "make de lifting",
-      "efeito lifting"
-    ],
+    "variacoes": ["make de lifting", "efeito lifting"],
     "classe_gramatical": "expressão",
     "significado": "Conjunto de técnicas de maquiagem (como contorno e blush draping) que criam a ilusão visual de um rosto mais levantado, sem procedimento estético.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "rosto"
-    ],
+    "tags": ["maquiagem", "tecnica", "rosto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Com essa lifting make, meu rosto ficou com aparência bem mais afinada.",
@@ -571,21 +437,15 @@
       "Exercício físico facial que promete firmar a pele sem procedimento cirúrgico.",
       "Efeito de photoshop que estica e levanta os traços do rosto em fotos editadas."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Lifting make é valorizado por oferecer um efeito de rosto mais levantado sem procedimentos invasivos."
   },
   {
     "id": 21,
     "nome": "cut crease",
-    "variacoes": [
-      "fazer cut crease"
-    ],
+    "variacoes": ["fazer cut crease"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de sombra que marca bem o vinco do olho com uma linha definida, criando contraste forte entre a pálpebra móvel e a área acima.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "olhos", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Levei quase uma hora, mas o cut crease ficou super simétrico.",
@@ -599,22 +459,15 @@
       "Técnica de corte de cabelo que cria uma linha bem definida entre camadas.",
       "Efeito gráfico usado em designs que cria contraste forte entre duas cores numa imagem."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Cut crease é admirado como uma técnica sofisticada que cria contraste e profundidade no olhar."
   },
   {
     "id": 22,
     "nome": "halo eye",
-    "variacoes": [
-      "olho halo",
-      "efeito halo eye"
-    ],
+    "variacoes": ["olho halo", "efeito halo eye"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de sombra que concentra a cor mais escura no centro da pálpebra móvel, deixando as bordas mais claras, criando um efeito de 'auréola' no olhar.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "olhos", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um halo eye dourado com marrom nas bordas pra festa.",
@@ -628,21 +481,15 @@
       "Efeito óptico causado pela luz do sol refletindo em nuvens de gelo no céu.",
       "Efeito de photoshop que cria um brilho circular ao redor dos olhos em fotos editadas."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Halo eye é elogiado por criar um efeito luminoso e delicado ao redor dos olhos."
   },
   {
     "id": 23,
     "nome": "draping de contorno",
-    "variacoes": [
-      "fazer o draping"
-    ],
+    "variacoes": ["fazer o draping"],
     "classe_gramatical": "expressão",
     "significado": "Técnica que aplica contorno em formato de faixa lateral no rosto, unindo sombra facial e blush numa transição só, comum em looks de festa.",
-    "tags": [
-      "maquiagem",
-      "tecnica",
-      "rosto"
-    ],
+    "tags": ["maquiagem", "tecnica", "rosto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz o draping de contorno com blush pêssego pro casamento da minha prima.",
@@ -656,22 +503,15 @@
       "Estilo de decoração que usa panos pendurados formando dobras nas paredes.",
       "Técnica de styling de roupas que cria a ilusão de silhueta mais definida usando camadas de tecido."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Draping de contorno é valorizado por unir definição facial e um acabamento harmonioso."
   },
   {
     "id": 24,
     "nome": "skin tint",
-    "variacoes": [
-      "base skin tint",
-      "efeito skin tint"
-    ],
+    "variacoes": ["base skin tint", "efeito skin tint"],
     "classe_gramatical": "substantivo",
     "significado": "Produto ou técnica de base bem leve, com cobertura mínima, que uniformiza o tom da pele mantendo a aparência natural, sem parecer maquiada.",
-    "tags": [
-      "maquiagem",
-      "pele",
-      "produto"
-    ],
+    "tags": ["maquiagem", "pele", "produto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Troquei minha base pesada por um skin tint pro dia a dia.",
@@ -685,21 +525,15 @@
       "Cor de acabamento metálico aplicada em pintura de carros.",
       "Filtro de câmera que ajusta o tom de pele em fotos, deixando a cor uniforme digitalmente."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Skin tint é apreciado por oferecer cobertura leve com aparência de pele natural."
   },
   {
     "id": 25,
     "nome": "morphing de sombra",
-    "variacoes": [
-      "fazer morphing"
-    ],
+    "variacoes": ["fazer morphing"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de transição de cores de sombra no olho, misturando tons diferentes de forma gradual pra não deixar linhas duras.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "olhos", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um morphing de laranja pro marrom, ficou perfeito pro concept quente.",
@@ -713,22 +547,15 @@
       "Recurso de edição digital que mistura duas imagens numa transição suave.",
       "Efeito de gradiente usado em designs gráficos pra misturar duas cores sem linhas visíveis."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Morphing de sombra é elogiado por resultar em transições de cor suaves e profissionais."
   },
   {
     "id": 26,
     "nome": "lip oil",
-    "variacoes": [
-      "óleo labial",
-      "usar lip oil"
-    ],
+    "variacoes": ["óleo labial", "usar lip oil"],
     "classe_gramatical": "substantivo",
     "significado": "Produto de tratamento e cor leve para os lábios, com textura oleosa e brilhante, muito popular como alternativa ao gloss tradicional.",
-    "tags": [
-      "maquiagem",
-      "boca",
-      "produto"
-    ],
+    "tags": ["maquiagem", "boca", "produto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Passei um lip oil rosado antes de sair, deixa a boca hidratada e com brilho.",
@@ -742,22 +569,15 @@
       "Produto culinário usado pra temperar saladas e pratos frios.",
       "Sérum labial usado no skincare noturno pra hidratar profundamente os lábios enquanto dorme."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Lip oil é valorizado por hidratar os lábios enquanto oferece um brilho sutil e agradável."
   },
   {
     "id": 27,
     "nome": "blurring",
-    "variacoes": [
-      "efeito blurring",
-      "pó blurring"
-    ],
+    "variacoes": ["efeito blurring", "pó blurring"],
     "classe_gramatical": "substantivo",
     "significado": "Efeito de suavização da textura da pele e disfarce de poros, geralmente causado por produtos com partículas que refletem a luz de forma difusa.",
-    "tags": [
-      "maquiagem",
-      "pele",
-      "produto"
-    ],
+    "tags": ["maquiagem", "pele", "produto"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Esse primer tem um efeito de blurring incrível, disfarça os poros na hora.",
@@ -771,22 +591,15 @@
       "Ferramenta de edição digital usada pra borrar rostos em vídeos e fotos.",
       "Efeito de filtro de celular que suaviza imperfeições na pele digitalmente."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Blurring é apreciado por suavizar a aparência da pele de forma instantânea."
   },
   {
     "id": 28,
     "nome": "fox eye",
-    "variacoes": [
-      "olho de raposa",
-      "efeito fox eye"
-    ],
+    "variacoes": ["olho de raposa", "efeito fox eye"],
     "classe_gramatical": "expressão",
     "significado": "Técnica de maquiagem e sobrancelha que puxa o canto externo dos olhos pra cima, criando um formato alongado e felino, inspirado em raposas.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tendencia"
-    ],
+    "tags": ["maquiagem", "olhos", "tendencia"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Usei fita adesiva discreta pra conseguir o efeito fox eye na make de hoje.",
@@ -800,22 +613,15 @@
       "Apelido dado a alguém com olhar esperto e maroto, sem relação com maquiagem.",
       "Procedimento estético não cirúrgico com fios que levanta o canto dos olhos."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Fox eye é uma tendência elogiada por criar um olhar alongado e marcante."
   },
   {
     "id": 29,
     "nome": "makeup hack",
-    "variacoes": [
-      "hack de make",
-      "truque de make"
-    ],
+    "variacoes": ["hack de make", "truque de make"],
     "classe_gramatical": "expressão",
     "significado": "Truque ou atalho criativo pra facilitar, acelerar ou melhorar o resultado de uma técnica de maquiagem, geralmente viral nas redes sociais.",
-    "tags": [
-      "maquiagem",
-      "tiktok",
-      "tutorial"
-    ],
+    "tags": ["maquiagem", "tiktok", "tutorial"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Vi um makeup hack de usar colher pra facilitar o delineado e funcionou muito bem.",
@@ -829,22 +635,15 @@
       "Atalho usado em jogos eletrônicos pra avançar de fase mais rápido.",
       "Truque de organização usado pra guardar produtos de beleza de forma mais prática."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Makeup hack é celebrado por facilitar e otimizar o processo de maquiagem de forma criativa."
   },
   {
     "id": 30,
     "nome": "tightlining",
-    "variacoes": [
-      "fazer tightlining",
-      "delineado invisível"
-    ],
+    "variacoes": ["fazer tightlining", "delineado invisível"],
     "classe_gramatical": "substantivo",
     "significado": "Técnica de aplicar delineado ou sombra bem rente à raiz dos cílios superiores, preenchendo o espaço entre os fios pra dar mais definição sem marcar uma linha visível.",
-    "tags": [
-      "maquiagem",
-      "olhos",
-      "tecnica"
-    ],
+    "tags": ["maquiagem", "olhos", "tecnica"],
     "permissao": "todos",
     "impacto": "positiva",
     "exemplo_correto": "Fiz um tightlining discreto hoje pra dar profundidade sem parecer que tô de make nos olhos.",
@@ -858,6 +657,446 @@
       "Instalação de cabos de rede esticados entre dois pontos de um imóvel.",
       "Técnica de amarrar bem apertado os cadarços do tênis pra melhor ajuste no pé."
     ],
-    "impacto_motivo": "vazio"
+    "impacto_motivo": "Tightlining é valorizado por definir o olhar de forma discreta e natural."
+  },
+  {
+    "id": 31,
+    "nome": "primer",
+    "variacoes": ["primer facial", "usar primer"],
+    "classe_gramatical": "substantivo",
+    "significado": "Produto aplicado antes da base pra uniformizar a textura da pele, preencher poros e prolongar a duração da maquiagem.",
+    "tags": ["maquiagem", "pele", "produto"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Passei o primer antes da base e ela durou o dia inteiro sem craquelar.",
+    "exemplos_incorretos": [
+      "O mecânico aplicou o primer antes de pintar o carro.",
+      "O pintor passou o primer na parede antes da tinta final.",
+      "Troquei o primer da impressora que estava sem tinta."
+    ],
+    "significados_incorretos": [
+      "Camada de tinta base aplicada em superfícies automotivas antes da pintura final.",
+      "Produto usado por pintores pra preparar paredes antes de pintar.",
+      "Cartucho de tinta usado em impressoras domésticas."
+    ],
+    "impacto_motivo": "Primer é visto de forma positiva por prolongar e melhorar o resultado da maquiagem."
+  },
+  {
+    "id": 32,
+    "nome": "setting spray",
+    "variacoes": ["spray fixador"],
+    "classe_gramatical": "substantivo",
+    "significado": "Borrifo aplicado ao final da maquiagem pra fixar todos os produtos e prolongar a duração do look.",
+    "tags": ["maquiagem", "produto", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Terminei a make com setting spray pra ela durar até de madrugada na festa.",
+    "exemplos_incorretos": [
+      "O jardineiro usou um setting spray pra regar as plantas.",
+      "Passei um setting spray no cabelo pra fixar o penteado.",
+      "O encanador aplicou um setting spray no cano pra vedar o vazamento."
+    ],
+    "significados_incorretos": [
+      "Borrifador usado pra regar plantas de jardim.",
+      "Spray fixador usado em penteados pra manter o cabelo no lugar.",
+      "Produto de vedação usado em reparos hidráulicos."
+    ],
+    "impacto_motivo": "Setting spray é valorizado por garantir que a maquiagem se mantenha intacta por mais tempo."
+  },
+  {
+    "id": 33,
+    "nome": "corretivo colorido",
+    "variacoes": ["color correcting", "corretivo verde/laranja"],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica de usar corretivos com cores complementares (verde, laranja, roxo) pra neutralizar olheiras, vermelhidão ou manchas antes da base.",
+    "tags": ["maquiagem", "pele", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Usei corretivo colorido verde pra disfarçar a vermelhidão da espinha.",
+    "exemplos_incorretos": [
+      "A pintora usou corretivo colorido pra ajustar o tom da parede.",
+      "O designer aplicou um corretivo colorido no logo da marca.",
+      "A costureira fez um corretivo colorido no tecido manchado."
+    ],
+    "significados_incorretos": [
+      "Ajuste de tom aplicado em pintura de parede residencial.",
+      "Correção de cores feita em designs gráficos e logotipos.",
+      "Técnica de remoção de manchas em tecidos coloridos."
+    ],
+    "impacto_motivo": "Corretivo colorido é apreciado por resolver problemas específicos de pele de forma eficaz antes da base."
+  },
+  {
+    "id": 34,
+    "nome": "spoolie",
+    "variacoes": ["escovinha de sobrancelha"],
+    "classe_gramatical": "substantivo",
+    "significado": "Escovinha pequena usada pra pentear e alinhar os fios da sobrancelha, geralmente antes ou depois de preenchê-la.",
+    "tags": ["maquiagem", "sobrancelha", "produto"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Usei o spoolie pra escovar a sobrancelha antes de preencher com lápis.",
+    "exemplos_incorretos": [
+      "O veterinário usou um spoolie pra escovar o pelo do cachorro.",
+      "Comprei um spoolie novo pra limpar as frestas do teclado.",
+      "A manicure usou um spoolie pra tirar o excesso de esmalte da cutícula."
+    ],
+    "significados_incorretos": [
+      "Escova pequena usada pra higiene de pets.",
+      "Ferramenta de limpeza usada pra tirar poeira de teclados e eletrônicos.",
+      "Instrumento usado em manicure pra remover excesso de esmalte."
+    ],
+    "impacto_motivo": "Spoolie é uma ferramenta simples mas essencial, associada a sobrancelhas bem alinhadas e naturais."
+  },
+  {
+    "id": 35,
+    "nome": "lash lift",
+    "variacoes": ["lifting de cílios"],
+    "classe_gramatical": "substantivo",
+    "significado": "Procedimento que curva os cílios naturais de dentro pra fora, dando efeito de curvatura duradoura sem precisar de curvex ou máscara.",
+    "tags": ["maquiagem", "olhos", "procedimento"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz lash lift semana passada e meus cílios ficaram curvados por semanas sem precisar de máscara.",
+    "exemplos_incorretos": [
+      "O guindaste fez o lash lift da carga pesada no canteiro de obras.",
+      "O personal trainer ensinou um lash lift pra fortalecer as pernas.",
+      "O mecânico usou um lash lift pra erguer o carro na oficina."
+    ],
+    "significados_incorretos": [
+      "Equipamento usado pra erguer cargas pesadas em canteiros de obras.",
+      "Exercício físico de fortalecimento muscular das pernas.",
+      "Elevador hidráulico usado em oficinas mecânicas pra erguer veículos."
+    ],
+    "impacto_motivo": "Lash lift é celebrado como uma solução prática e duradoura para curvar os cílios naturalmente."
+  },
+  {
+    "id": 36,
+    "nome": "sobrancelha laminada",
+    "variacoes": ["brow lamination", "laminação de sobrancelha"],
+    "classe_gramatical": "substantivo",
+    "significado": "Procedimento que alinha e fixa os fios da sobrancelha numa direção desejada, deixando-a com aparência mais cheia e uniforme por semanas.",
+    "tags": ["maquiagem", "sobrancelha", "procedimento"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz a sobrancelha laminada e não preciso mais pentear ela todo dia.",
+    "exemplos_incorretos": [
+      "A fábrica fez a laminação do vidro antes de instalar na janela.",
+      "O documento foi laminado pra durar mais tempo sem rasgar.",
+      "A empresa laminou o piso de madeira antes de vender."
+    ],
+    "significados_incorretos": [
+      "Processo industrial de reforço de vidros usados em construções.",
+      "Técnica de proteção de documentos usando plástico laminado.",
+      "Tratamento aplicado em pisos de madeira pra maior durabilidade."
+    ],
+    "impacto_motivo": "Sobrancelha laminada é vista como uma forma prática de deixar as sobrancelhas mais definidas por mais tempo."
+  },
+  {
+    "id": 37,
+    "nome": "soap brows",
+    "variacoes": ["sobrancelha de sabonete"],
+    "classe_gramatical": "substantivo",
+    "significado": "Técnica caseira de usar sabonete na escovinha pra fixar os fios da sobrancelha num efeito parecido com a laminação, sem procedimento profissional.",
+    "tags": ["maquiagem", "sobrancelha", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Não tinha dinheiro pra laminação, então fiz soap brows em casa mesmo.",
+    "exemplos_incorretos": [
+      "Usei soap brows pra lavar a louça depois do almoço.",
+      "Comprei soap brows artesanal pra presentear minha mãe.",
+      "A loja vende soap brows perfumado pras mãos."
+    ],
+    "significados_incorretos": [
+      "Sabonete usado pra lavar louça na cozinha.",
+      "Sabonete artesanal vendido como presente ou lembrancinha.",
+      "Sabonete líquido perfumado usado pra higienizar as mãos."
+    ],
+    "impacto_motivo": "Soap brows é apreciado como uma alternativa caseira e acessível pra fixar a sobrancelha."
+  },
+  {
+    "id": 38,
+    "nome": "dewy skin",
+    "variacoes": ["pele dewy", "efeito dewy"],
+    "classe_gramatical": "expressão",
+    "significado": "Efeito de pele com brilho natural e saudável, mais leve e sutil que a pele de vidro, sem parecer oleosa.",
+    "tags": ["maquiagem", "pele", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Usei um iluminador líquido pra deixar a pele dewy sem ficar brilhosa demais.",
+    "exemplos_incorretos": [
+      "A manhã estava dewy, com orvalho cobrindo a grama do jardim.",
+      "O carro ficou dewy de tanto orvalho durante a madrugada fria.",
+      "A janela amanheceu dewy por causa da umidade da noite."
+    ],
+    "significados_incorretos": [
+      "Camada de orvalho que cobre superfícies pela manhã.",
+      "Umidade acumulada em superfícies externas durante a madrugada.",
+      "Efeito de condensação formado em vidros por causa da diferença de temperatura."
+    ],
+    "impacto_motivo": "Dewy skin é associado a uma aparência de pele saudável e radiante, muito bem recebida pelos fãs de beleza."
+  },
+  {
+    "id": 39,
+    "nome": "glazed donut skin",
+    "variacoes": ["pele glazed", "efeito donut"],
+    "classe_gramatical": "expressão",
+    "significado": "Tendência de pele extremamente brilhante e translúcida, como se estivesse coberta por uma calda, mais intensa que o efeito dewy.",
+    "tags": ["maquiagem", "pele", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela apostou no glazed donut skin com muito iluminador líquido nas maçãs do rosto.",
+    "exemplos_incorretos": [
+      "A padaria vende um glazed donut fresquinho todo dia de manhã.",
+      "Comprei um glazed donut de chocolate pro café da manhã.",
+      "A confeitaria lançou um glazed donut recheado de doce de leite."
+    ],
+    "significados_incorretos": [
+      "Rosquinha doce coberta com uma calda brilhante, vendida em padarias.",
+      "Sobremesa tradicional americana feita com massa frita e cobertura doce.",
+      "Item de confeitaria recheado, popular em cafés da manhã."
+    ],
+    "impacto_motivo": "Glazed donut skin é celebrado nas redes como uma tendência estética de pele extremamente radiante e desejada."
+  },
+  {
+    "id": 40,
+    "nome": "jelly skin",
+    "variacoes": ["pele jelly", "efeito gelatina"],
+    "classe_gramatical": "expressão",
+    "significado": "Efeito de pele com aparência hidratada, rechonchuda e translúcida, como se fosse feita de gelatina, resultado de uma rotina intensa de skincare.",
+    "tags": ["maquiagem", "pele", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Depois de meses de skincare, finalmente cheguei perto do jelly skin que eu queria.",
+    "exemplos_incorretos": [
+      "Comi uma jelly skin de morango de sobremesa.",
+      "A criança adora brincar com jelly skin colorida de brinquedo.",
+      "A loja vende jelly skin artesanal em vários sabores."
+    ],
+    "significados_incorretos": [
+      "Sobremesa de gelatina servida em potinhos individuais.",
+      "Brinquedo de textura elástica e colorida popular entre crianças.",
+      "Doce artesanal de consistência gelatinosa vendido em lojas de guloseimas."
+    ],
+    "impacto_motivo": "Jelly skin é admirado como resultado de uma rotina de cuidados dedicada, trazendo uma sensação de pele saudável."
+  },
+  {
+    "id": 41,
+    "nome": "milky eyes",
+    "variacoes": ["olho leitoso", "efeito milky"],
+    "classe_gramatical": "expressão",
+    "significado": "Tendência de maquiagem nos olhos usando tons de sombra branca ou nude leitoso na pálpebra móvel, criando um efeito suave e etéreo.",
+    "tags": ["maquiagem", "olhos", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz milky eyes com sombra branca perolada só na pálpebra móvel.",
+    "exemplos_incorretos": [
+      "O leite ficou milky demais depois de bater no liquidificador com gelo.",
+      "O copo de vidro ficou milky depois de várias lavagens na máquina.",
+      "A janela do banheiro é milky pra não deixar ver o interior."
+    ],
+    "significados_incorretos": [
+      "Aparência leitosa de um líquido batido no liquidificador.",
+      "Efeito opaco que aparece em vidros depois de muitas lavagens.",
+      "Tipo de vidro fosco usado em janelas pra garantir privacidade."
+    ],
+    "impacto_motivo": "Milky eyes é uma tendência apreciada por criar um visual suave, etéreo e delicado nos olhos."
+  },
+  {
+    "id": 42,
+    "nome": "graphic liner",
+    "variacoes": ["delineado gráfico"],
+    "classe_gramatical": "expressão",
+    "significado": "Estilo de delineado que usa formas geométricas, cortes duplos ou traços ousados fora do contorno tradicional do olho, criando um visual artístico.",
+    "tags": ["maquiagem", "olhos", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um graphic liner com um traço duplo abaixo do olho pra arrasar na festa.",
+    "exemplos_incorretos": [
+      "O designer usou um graphic liner no projeto do cartaz.",
+      "A régua tem um graphic liner impresso pra facilitar a medição.",
+      "O caderno de desenho veio com um graphic liner nas margens."
+    ],
+    "significados_incorretos": [
+      "Elemento gráfico usado em designs de cartazes e materiais impressos.",
+      "Marcação impressa em réguas pra facilitar medições precisas.",
+      "Linha decorativa impressa nas margens de cadernos de desenho."
+    ],
+    "impacto_motivo": "Graphic liner é celebrado como uma forma criativa e artística de expressar personalidade através da make."
+  },
+  {
+    "id": 43,
+    "nome": "lágrima de glitter",
+    "variacoes": ["glitter tears", "efeito lágrima"],
+    "classe_gramatical": "expressão",
+    "significado": "Aplicação de glitter em formato de gotas descendo do canto do olho, imitando lágrimas brilhantes, popular em looks de festa ou editorial.",
+    "tags": ["maquiagem", "olhos", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Usei glitter tears pro show, ficou lindo sob a luz do palco.",
+    "exemplos_incorretos": [
+      "Ela chorou uma lágrima de glitter de tanta emoção no casamento.",
+      "A joalheria vende um pingente em formato de lágrima de glitter.",
+      "O artesão fez um enfeite de lágrima de glitter pra árvore de Natal."
+    ],
+    "significados_incorretos": [
+      "Expressão poética usada pra descrever uma lágrima emocionada e brilhante.",
+      "Peça de joia em formato de gota usada como pingente.",
+      "Enfeite decorativo usado em decorações natalinas."
+    ],
+    "impacto_motivo": "Lágrima de glitter é usada de forma lúdica e artística, valorizada em looks temáticos e de festa."
+  },
+  {
+    "id": 44,
+    "nome": "sunset eyes",
+    "variacoes": ["olho de pôr do sol", "efeito sunset"],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de sombra que mistura tons quentes como laranja, vermelho e dourado, imitando as cores de um pôr do sol no olhar.",
+    "tags": ["maquiagem", "olhos", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz sunset eyes com laranja e vinho pra combinar com o vestido da festa.",
+    "exemplos_incorretos": [
+      "Fomos na praia ver o sunset eyes de hoje, ficou lindo o céu.",
+      "Tirei uma foto do sunset eyes da janela do avião.",
+      "O quadro na parede retrata um sunset eyes clássico no oceano."
+    ],
+    "significados_incorretos": [
+      "Momento do dia em que o sol se põe no horizonte, admirado na praia.",
+      "Fenômeno natural fotografado durante viagens de avião ao entardecer.",
+      "Tema de pintura clássica que retrata o pôr do sol sobre o mar."
+    ],
+    "impacto_motivo": "Sunset eyes é celebrado como uma técnica vibrante e alegre, associada a looks de festa e verão."
+  },
+  {
+    "id": 45,
+    "nome": "tomato girl makeup",
+    "variacoes": ["make tomato girl"],
+    "classe_gramatical": "expressão",
+    "significado": "Estética de maquiagem com bochechas e nariz avermelhados, como se estivesse corada pelo sol, dando um ar saudável e fresco de verão.",
+    "tags": ["maquiagem", "tendencia", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um tomato girl makeup com blush vermelho nas bochechas e no nariz.",
+    "exemplos_incorretos": [
+      "Plantei tomato girl makeup na horta de casa esse ano.",
+      "Comprei tomato girl makeup fresquinho na feira do bairro.",
+      "A receita de molho pedia tomato girl makeup maduro pra ficar mais saboroso."
+    ],
+    "significados_incorretos": [
+      "Variedade de tomate cultivada em hortas domésticas.",
+      "Produto agrícola vendido fresco em feiras livres.",
+      "Ingrediente usado em receitas culinárias de molho de tomate."
+    ],
+    "impacto_motivo": "Tomato girl makeup é uma tendência divertida associada a um visual corado, jovem e saudável."
+  },
+  {
+    "id": 46,
+    "nome": "latte makeup",
+    "variacoes": ["make latte"],
+    "classe_gramatical": "expressão",
+    "significado": "Estética de maquiagem com tons quentes de marrom, bege e caramelo em toda a make, inspirada nas cores de um café com leite.",
+    "tags": ["maquiagem", "tendencia", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz latte makeup hoje: sombra caramelo, blush terroso e batom nude quente.",
+    "exemplos_incorretos": [
+      "Pedi um latte makeup pra tomar no café da esquina.",
+      "A cafeteria lançou um latte makeup sazonal de outono.",
+      "Aprendi a fazer latte makeup em casa com a máquina de espresso."
+    ],
+    "significados_incorretos": [
+      "Bebida quente feita de café espresso com leite vaporizado.",
+      "Item sazonal do cardápio de cafeterias em determinadas épocas do ano.",
+      "Receita de bebida quente preparada em máquinas domésticas de café."
+    ],
+    "impacto_motivo": "Latte makeup é apreciado pela paleta aconchegante e quente, associada a um visual elegante e outonal."
+  },
+  {
+    "id": 47,
+    "nome": "blush urso",
+    "variacoes": ["teddy bear blush", "blush difuso"],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica de aplicar blush difuso em várias áreas do rosto (bochechas, nariz, pálpebras) criando um efeito corado natural, como se fosse um filhote de urso.",
+    "tags": ["maquiagem", "tendencia", "tiktok"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Apliquei blush urso nas bochechas, no nariz e até na pálpebra pra um efeito bem corado.",
+    "exemplos_incorretos": [
+      "Meu filho dorme abraçado com o blush urso todas as noites.",
+      "Comprei um blush urso de pelúcia pra decorar o quarto do bebê.",
+      "A loja de brinquedos tinha um blush urso enorme na vitrine."
+    ],
+    "significados_incorretos": [
+      "Brinquedo de pelúcia em formato de urso usado por crianças.",
+      "Item decorativo infantil comum em quartos de bebê.",
+      "Produto vendido em lojas de brinquedos voltado ao público infantil."
+    ],
+    "impacto_motivo": "Blush urso é uma técnica associada a um visual fofo e corado, muito bem recebida como tendência de beleza."
+  },
+  {
+    "id": 48,
+    "nome": "pillow lips",
+    "variacoes": ["lábios de travesseiro", "efeito pillow lips"],
+    "classe_gramatical": "expressão",
+    "significado": "Técnica ou resultado de lábios volumosos e macios, com aparência acolchoada, seja por maquiagem ou procedimentos estéticos leves.",
+    "tags": ["maquiagem", "boca", "tendencia"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Ela contornou a boca com lápis nude pra criar o efeito pillow lips.",
+    "exemplos_incorretos": [
+      "Comprei um pillow lips novo pra cama do quarto de hóspedes.",
+      "A loja de decoração vende pillow lips em vários tamanhos e cores.",
+      "Troquei o pillow lips velho do sofá por um mais confortável."
+    ],
+    "significados_incorretos": [
+      "Almofada decorativa usada em camas e sofás.",
+      "Item de decoração vendido em lojas de utilidades domésticas.",
+      "Acessório usado pra deixar sofás mais confortáveis e aconchegantes."
+    ],
+    "impacto_motivo": "Pillow lips é celebrado como um visual de boca volumosa e macia, bastante desejado nas tendências de beleza."
+  },
+  {
+    "id": 49,
+    "nome": "wet look",
+    "variacoes": ["efeito molhado", "make wet look"],
+    "classe_gramatical": "expressão",
+    "significado": "Estética de make e pele com aparência intensamente brilhante e molhada, geralmente usando produtos com muito brilho no rosto e nos olhos.",
+    "tags": ["maquiagem", "tendencia", "pele"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Apostei no wet look com muito iluminador líquido pra um ensaio fotográfico.",
+    "exemplos_incorretos": [
+      "O carro ficou com wet look depois de passar pela lavagem automática.",
+      "A rua estava com wet look depois da chuva forte de ontem.",
+      "O piso da cozinha fica com wet look sempre que lavo com esse produto."
+    ],
+    "significados_incorretos": [
+      "Aparência molhada de uma superfície logo após ser lavada.",
+      "Efeito de piso ou rua molhada depois de chuva.",
+      "Resultado visual de limpeza de superfícies com produtos específicos."
+    ],
+    "impacto_motivo": "Wet look é uma tendência estética valorizada por criar um visual intenso, brilhante e moderno."
+  },
+  {
+    "id": 50,
+    "nome": "smokey eyes",
+    "variacoes": ["olho esfumaçado", "smoke eyes"],
+    "classe_gramatical": "expressão",
+    "significado": "Estilo clássico de maquiagem nos olhos que combina tons escuros esfumados criando um efeito dramático e intenso, tradicionalmente em preto ou cinza.",
+    "tags": ["maquiagem", "olhos", "tecnica"],
+    "permissao": "todos",
+    "impacto": "positiva",
+    "exemplo_correto": "Fiz um smokey eyes preto clássico pra noite de gala.",
+    "exemplos_incorretos": [
+      "O incêndio deixou o bairro inteiro com smokey eyes de fumaça.",
+      "A churrasqueira soltou tanto smokey eyes que atrapalhou a visão do quintal.",
+      "O detector de fumaça disparou por causa do smokey eyes da cozinha."
+    ],
+    "significados_incorretos": [
+      "Nuvem densa de fumaça proveniente de um incêndio.",
+      "Fumaça excessiva liberada por churrasqueiras ou fogueiras.",
+      "Alerta de segurança acionado por sensores de fumaça residenciais."
+    ],
+    "impacto_motivo": "Smokey eyes é um clássico atemporal da maquiagem, associado a elegância e intensidade no olhar."
   }
 ]

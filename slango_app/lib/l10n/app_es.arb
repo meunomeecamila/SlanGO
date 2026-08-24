@@ -231,7 +231,7 @@
   "confirmSecurityQuestionFirst": "Busca primero la pregunta de seguridad.",
   "profile": "Perfil",
   "dontHaveAccountYet": "¿Aún no tienes una cuenta? ",
-  "certificateCongratsMessage": "¡Felicidades, $name!",
+  "certificateCongratsMessage": "¡Felicidades, {name}!",
   "@certificateCongratsMessage": {
     "placeholders": {
       "name": {
@@ -239,7 +239,7 @@
       }
     }
   },
-  "certificateWorldConquered": "¡Conquistaste el Mundo $worldName!",
+  "certificateWorldConquered": "¡Conquistaste el Mundo {worldName}!",
   "@certificateWorldConquered": {
     "placeholders": {
       "worldName": {
@@ -249,5 +249,58 @@
   },
   "itemUnlocked": "Objeto desbloqueado:",
   "certificateOfCompletion": "CERTIFICADO DE FINALIZACIÓN",
-  "defaultAstronautName": "Astronauta"
+  "defaultAstronautName": "Astronauta",
+  "noSlangsLearnedYet": "Aún no has aprendido ninguna jerga.",
+  "errorLoadingLearnedSlangs": "No se pudieron cargar las jergas aprendidas.",
+  "defaultUserName": "Usuario",
+  "noItemsAvailable": "Aún no hay objetos disponibles.",
+  "noWorldsAvailableYet": "Aún no hay mundos disponibles.",
+  "trackWorldsProgress": "Aquí puedes seguir el progreso de los mundos",
+  "noWorldsExploredYet": "Aún no has explorado ningún mundo. ¡Comienza el viaje! 🚀",
+  "worldLockedMessage": "¡Cuando el mundo llegue al 100%, vuelve aquí!",
+  "certificateUnlockedTapToOpen": "Certificado desbloqueado: toca para abrir",
+  "certificateEarned": "¡Certificado obtenido! 🎉",
+  "downloadOfficialCertificate": "Descargar certificado oficial (PDF)",
+  "downloadEtMessage": "Descargar la notita de ETzinho (PDF)",
+  "pdfOpenError": "No se pudo abrir el PDF. Comprueba que el archivo exista en assets/pdfs/.",
+  "noRankingRecordsFound": "No se encontraron registros en la clasificación.",
+  "rankingIntro": "¡Aquí está nuestra clasificación! Descubre quién ha aprendido más jerga y completado las rondas con los mejores tiempos.",
+  "noTimeRegisteredYet": "Aún no tienes un tiempo registrado en la clasificación.",
+  "noTimedRoundYet": "Aún no has completado una ronda cronometrada.",
+  "youLabel": "TÚ",
+  "percentExplored": "{percent}% explorado",
+  "@percentExplored": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "yourPosition": "Tu posición: {position}.º de {total}",
+  "@yourPosition": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "yourBestTime": "Tu mejor tiempo: {time}",
+  "@yourBestTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rankPositionBadge": "{position}.º",
+  "@rankPositionBadge": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  }
 }

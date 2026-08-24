@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models.dart';
+import '../../l10n/l10n.dart';
 import '../texto.dart';
 import 'card_certificado_mundo.dart';
 import 'certificado_mundo_data.dart';
@@ -113,7 +114,7 @@ class _AbaCertificadosState extends State<AbaCertificados> {
         padding: const EdgeInsets.symmetric(vertical: 24),
         child: Center(
           child: Text(
-            'Nenhum mundo explorado ainda. Comece a viagem! 🚀',
+            context.l10n.noWorldsExploredYet,
             textAlign: TextAlign.center,
             style: AppText.subtitulo(1),
           ),

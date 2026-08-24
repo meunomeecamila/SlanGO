@@ -5,6 +5,7 @@ import 'texto.dart';
 import '../final/Particulas.dart';
 import 'models.dart';
 import 'giriasMundoScreen.dart';
+import '../l10n/l10n.dart';
 
 class ProgressoScreen extends StatelessWidget {
   final List<ProgressoMundo> mundos;
@@ -27,7 +28,7 @@ class ProgressoScreen extends StatelessWidget {
                   child: mundos.isEmpty
                       ? Center(
                           child: Text(
-                            "Nenhum mundo disponível ainda.",
+                            context.l10n.noWorldsAvailableYet,
                             style: AppText.subtitulo(1),
                           ),
                         )
@@ -58,10 +59,10 @@ class ProgressoScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Progresso", style: AppText.titulo(0.85)),
+              Text(context.l10n.progress, style: AppText.titulo(0.85)),
               const SizedBox(height: 2),
               Text(
-                "Acompanhe aqui o progresso dos mundos",
+                context.l10n.trackWorldsProgress,
                 style: AppText.subtitulo(0.9),
               ),
             ],

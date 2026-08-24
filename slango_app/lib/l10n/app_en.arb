@@ -231,7 +231,7 @@
   "confirmSecurityQuestionFirst": "Find the security question first.",
   "profile": "Profile",
   "dontHaveAccountYet": "Don't have an account yet? ",
-  "certificateCongratsMessage": "Congratulations, $name!",
+  "certificateCongratsMessage": "Congratulations, {name}!",
   "@certificateCongratsMessage": {
     "placeholders": {
       "name": {
@@ -239,7 +239,7 @@
       }
     }
   },
-  "certificateWorldConquered": "You conquered the $worldName World!",
+  "certificateWorldConquered": "You conquered the {worldName} World!",
   "@certificateWorldConquered": {
     "placeholders": {
       "worldName": {
@@ -249,5 +249,58 @@
   },
   "itemUnlocked": "Item unlocked:",
   "certificateOfCompletion": "CERTIFICATE OF COMPLETION",
-  "defaultAstronautName": "Astronaut"
+  "defaultAstronautName": "Astronaut",
+  "noSlangsLearnedYet": "No slang learned yet.",
+  "errorLoadingLearnedSlangs": "Could not load learned slang.",
+  "defaultUserName": "User",
+  "noItemsAvailable": "No items available yet.",
+  "noWorldsAvailableYet": "No worlds available yet.",
+  "trackWorldsProgress": "Track your worlds' progress here",
+  "noWorldsExploredYet": "You haven't explored any world yet. Start the journey! 🚀",
+  "worldLockedMessage": "Once the world reaches 100%, come back here!",
+  "certificateUnlockedTapToOpen": "Certificate unlocked — tap to open",
+  "certificateEarned": "Certificate earned! 🎉",
+  "downloadOfficialCertificate": "Download official certificate (PDF)",
+  "downloadEtMessage": "Download the ETzinho note (PDF)",
+  "pdfOpenError": "Could not open the PDF. Check that the file exists in assets/pdfs/.",
+  "percentExplored": "{percent}% explored",
+  "@percentExplored": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "rankingIntro": "See how you stack up against explorers from every corner of the galaxy!",
+  "noRankingRecordsFound": "No ranking records found.",
+  "noTimeRegisteredYet": "You haven't registered a time yet.",
+  "yourPosition": "You're #{position} of {total}",
+  "@yourPosition": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "yourBestTime": "Your best time: {time}",
+  "@yourBestTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "noTimedRoundYet": "No timed round completed yet.",
+  "youLabel": "YOU",
+  "rankPositionBadge": "{position}°",
+  "@rankPositionBadge": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  }
 }

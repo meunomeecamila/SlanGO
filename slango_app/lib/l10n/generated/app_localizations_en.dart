@@ -530,12 +530,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String certificateCongratsMessage(String name) {
-    return 'Congratulations, \$name!';
+    return 'Congratulations, $name!';
   }
 
   @override
   String certificateWorldConquered(String worldName) {
-    return 'You conquered the \$worldName World!';
+    return 'You conquered the $worldName World!';
   }
 
   @override
@@ -546,4 +546,84 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get defaultAstronautName => 'Astronaut';
+
+  @override
+  String get noSlangsLearnedYet => 'No slang learned yet.';
+
+  @override
+  String get errorLoadingLearnedSlangs => 'Could not load learned slang.';
+
+  @override
+  String get defaultUserName => 'User';
+
+  @override
+  String get noItemsAvailable => 'No items available yet.';
+
+  @override
+  String get noWorldsAvailableYet => 'No worlds available yet.';
+
+  @override
+  String get trackWorldsProgress => 'Track your worlds\' progress here';
+
+  @override
+  String get noWorldsExploredYet =>
+      'You haven\'t explored any world yet. Start the journey! 🚀';
+
+  @override
+  String get worldLockedMessage =>
+      'Once the world reaches 100%, come back here!';
+
+  @override
+  String get certificateUnlockedTapToOpen =>
+      'Certificate unlocked — tap to open';
+
+  @override
+  String get certificateEarned => 'Certificate earned! 🎉';
+
+  @override
+  String get downloadOfficialCertificate =>
+      'Download official certificate (PDF)';
+
+  @override
+  String get downloadEtMessage => 'Download the ETzinho note (PDF)';
+
+  @override
+  String get pdfOpenError =>
+      'Could not open the PDF. Check that the file exists in assets/pdfs/.';
+
+  @override
+  String get noRankingRecordsFound => 'No ranking records found.';
+
+  @override
+  String get rankingIntro =>
+      'See how you stack up against explorers from every corner of the galaxy!';
+
+  @override
+  String get noTimeRegisteredYet => 'You haven\'t registered a time yet.';
+
+  @override
+  String get noTimedRoundYet => 'No timed round completed yet.';
+
+  @override
+  String get youLabel => 'YOU';
+
+  @override
+  String percentExplored(int percent) {
+    return '$percent% explored';
+  }
+
+  @override
+  String yourPosition(int position, int total) {
+    return 'You\'re #$position of $total';
+  }
+
+  @override
+  String yourBestTime(String time) {
+    return 'Your best time: $time';
+  }
+
+  @override
+  String rankPositionBadge(int position) {
+    return '$position°';
+  }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../cores.dart';
 import '../texto.dart';
+import '../../l10n/l10n.dart';
 import 'certificado_mundo_data.dart';
 import 'certificado_pdf_service.dart';
 
@@ -94,7 +95,7 @@ class PainelCertificado extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'Certificado conquistado! 🎉',
+                context.l10n.certificateEarned,
                 textAlign: TextAlign.center,
                 style: AppText.subtitulo(0.95),
               ),
@@ -160,7 +161,7 @@ class PainelCertificado extends StatelessWidget {
               // ==========================================================
               _BotaoDownload(
                 icone: Icons.workspace_premium_rounded,
-                rotulo: 'Baixar certificado oficial (PDF)',
+                rotulo: context.l10n.downloadOfficialCertificate,
                 cor: certificado.corPrimaria,
                 aoTocar: () => _executar(
                   context,
@@ -179,7 +180,7 @@ class PainelCertificado extends StatelessWidget {
               // ==========================================================
               _BotaoDownload(
                 icone: Icons.favorite_rounded,
-                rotulo: 'Baixar recadinho do ETzinho (PDF)',
+                rotulo: context.l10n.downloadEtMessage,
                 cor: certificado.corSecundaria,
                 contorno: true,
                 aoTocar: () => _executar(
@@ -203,9 +204,9 @@ class PainelCertificado extends StatelessWidget {
       await acao();
     } catch (_) {
       messenger.showSnackBar(
-        const SnackBar(
+        SnackBar(
           content: Text(
-            'Não foi possível abrir o PDF. Confira se o arquivo existe em assets/pdfs/.',
+            context.l10n.pdfOpenError,
           ),
         ),
       );

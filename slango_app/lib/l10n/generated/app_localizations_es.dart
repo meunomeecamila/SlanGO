@@ -534,12 +534,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String certificateCongratsMessage(String name) {
-    return '¡Felicidades, \$name!';
+    return '¡Felicidades, $name!';
   }
 
   @override
   String certificateWorldConquered(String worldName) {
-    return '¡Conquistaste el Mundo \$worldName!';
+    return '¡Conquistaste el Mundo $worldName!';
   }
 
   @override
@@ -550,4 +550,88 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get defaultAstronautName => 'Astronauta';
+
+  @override
+  String get noSlangsLearnedYet => 'Aún no has aprendido ninguna jerga.';
+
+  @override
+  String get errorLoadingLearnedSlangs =>
+      'No se pudieron cargar las jergas aprendidas.';
+
+  @override
+  String get defaultUserName => 'Usuario';
+
+  @override
+  String get noItemsAvailable => 'Aún no hay objetos disponibles.';
+
+  @override
+  String get noWorldsAvailableYet => 'Aún no hay mundos disponibles.';
+
+  @override
+  String get trackWorldsProgress =>
+      'Aquí puedes seguir el progreso de los mundos';
+
+  @override
+  String get noWorldsExploredYet =>
+      'Aún no has explorado ningún mundo. ¡Comienza el viaje! 🚀';
+
+  @override
+  String get worldLockedMessage =>
+      '¡Cuando el mundo llegue al 100%, vuelve aquí!';
+
+  @override
+  String get certificateUnlockedTapToOpen =>
+      'Certificado desbloqueado: toca para abrir';
+
+  @override
+  String get certificateEarned => '¡Certificado obtenido! 🎉';
+
+  @override
+  String get downloadOfficialCertificate =>
+      'Descargar certificado oficial (PDF)';
+
+  @override
+  String get downloadEtMessage => 'Descargar la notita de ETzinho (PDF)';
+
+  @override
+  String get pdfOpenError =>
+      'No se pudo abrir el PDF. Comprueba que el archivo exista en assets/pdfs/.';
+
+  @override
+  String get noRankingRecordsFound =>
+      'No se encontraron registros en la clasificación.';
+
+  @override
+  String get rankingIntro =>
+      '¡Aquí está nuestra clasificación! Descubre quién ha aprendido más jerga y completado las rondas con los mejores tiempos.';
+
+  @override
+  String get noTimeRegisteredYet =>
+      'Aún no tienes un tiempo registrado en la clasificación.';
+
+  @override
+  String get noTimedRoundYet => 'Aún no has completado una ronda cronometrada.';
+
+  @override
+  String get youLabel => 'TÚ';
+
+  @override
+  String percentExplored(int percent) {
+    return '$percent% explorado';
+  }
+
+  @override
+  String yourPosition(int position, int total) {
+    return 'Tu posición: $position.º de $total';
+  }
+
+  @override
+  String yourBestTime(String time) {
+    return 'Tu mejor tiempo: $time';
+  }
+
+  @override
+  String rankPositionBadge(int position) {
+    return '$position.º';
+  }
 }
