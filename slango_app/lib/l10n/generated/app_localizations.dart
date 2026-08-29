@@ -180,6 +180,36 @@ abstract class AppLocalizations {
   /// **'Jovem'**
   String get youngPerson;
 
+  /// No description provided for @gender.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sexo'**
+  String get gender;
+
+  /// No description provided for @genderMale.
+  ///
+  /// In pt, this message translates to:
+  /// **'Masculino'**
+  String get genderMale;
+
+  /// No description provided for @genderFemale.
+  ///
+  /// In pt, this message translates to:
+  /// **'Feminino'**
+  String get genderFemale;
+
+  /// No description provided for @genderOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Outro'**
+  String get genderOther;
+
+  /// No description provided for @selectGenderError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selecione um sexo.'**
+  String get selectGenderError;
+
   /// No description provided for @dateOfBirth.
   ///
   /// In pt, this message translates to:

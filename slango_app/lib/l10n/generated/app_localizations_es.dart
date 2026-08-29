@@ -48,6 +48,21 @@ class AppLocalizationsEs extends AppLocalizations {
   String get youngPerson => 'Joven';
 
   @override
+  String get gender => 'Género';
+
+  @override
+  String get genderMale => 'Masculino';
+
+  @override
+  String get genderFemale => 'Femenino';
+
+  @override
+  String get genderOther => 'Otro';
+
+  @override
+  String get selectGenderError => 'Selecciona un género.';
+
+  @override
   String get dateOfBirth => 'Fecha de nacimiento';
 
   @override

@@ -52,7 +52,8 @@ class UsuarioService {
     String? dataNascimento,
     String? perguntaSeguranca,
     String? respostaSeguranca,
-    bool emailVerificado = false, 
+    bool emailVerificado = false,
+    String? sexo,
   }) async {
     final payload = <String, dynamic>{
       'nome': nome,
@@ -61,6 +62,7 @@ class UsuarioService {
       'confirmarSenha': confirmarSenha,
       'responsavel': responsavel,
       'email_verificado': emailVerificado,
+      if (sexo != null && sexo.isNotEmpty) 'sexo': sexo,
       if (dataNascimento != null) 'dataNascimento': dataNascimento,
       if (perguntaSeguranca != null && perguntaSeguranca.isNotEmpty)
         'perguntaSeguranca': perguntaSeguranca,
@@ -168,6 +170,7 @@ class UsuarioService {
     String? dataNascimento,
     String? perguntaSeguranca,
     String? respostaSeguranca,
+    String? sexo,
   }) async {
     final token = await _storage.read(key: _tokenKey);
 
@@ -181,6 +184,7 @@ class UsuarioService {
       corpo['perguntaSeguranca'] = perguntaSeguranca;
     if (respostaSeguranca != null)
       corpo['respostaSeguranca'] = respostaSeguranca;
+    if (sexo != null) corpo['sexo'] = sexo;
 
     final response = await http.put(
       Uri.parse('$_baseUrl/usuario/$id'),

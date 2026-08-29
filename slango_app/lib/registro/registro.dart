@@ -36,6 +36,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
 
   DateTime? dataNascimento;
   String? perguntaSeguranca;
+  Sexo? sexo;
 
   @override
   void dispose() {
@@ -189,6 +190,11 @@ class _RegistroScreenState extends State<RegistroScreen> {
       return;
     }
 
+    if (sexo == null) {
+      _mostrarErro(context.l10n.selectGenderError);
+      return;
+    }
+
     if (perguntaSeguranca == null) {
       _mostrarErro(context.l10n.selectSecurityQuestionError);
       return;
@@ -209,6 +215,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
         confirmarSenha: confirmarSenhaController.text,
         responsavel: ehPai,
         dataNascimento: dataNascimento?.toIso8601String().split('T').first,
+        sexo: sexo?.valor,
         perguntaSeguranca: perguntaSeguranca?.trim(),
         respostaSeguranca: respostaSegurancaController.text.trim(),
         emailVerificado: termosAceitos, 
@@ -327,6 +334,16 @@ class _RegistroScreenState extends State<RegistroScreen> {
                       ),
                       const SizedBox(height: 24),
 
+                      _SeletorSexo(
+                        sexoSelecionado: sexo,
+                        onChanged: (valor) {
+                          setState(() {
+                            sexo = valor;
+                          });
+                        },
+                      ),
+                      const SizedBox(height: 24),
+
                       SeletorPerguntaSeguranca(
                         perguntaSelecionada: perguntaSeguranca,
                         onChanged: (valor) {
@@ -422,6 +439,127 @@ class _RegistroScreenState extends State<RegistroScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Valores internos enviados para o backend (campo `sexo`).
+/// Mantidos fixos independentemente do idioma da interface — apenas o
+/// rótulo exibido é traduzido, mesmo padrão usado em
+/// seletor_pergunta_seguranca.dart. "outro" cobre qualquer identidade
+/// de gênero fora de masculino/feminino, não só não-binário.
+enum Sexo { masculino, feminino, outro }
+
+extension SexoValor on Sexo {
+  /// Valor de string enviado ao backend — apenas um caractere (M/F/O)
+  /// para facilitar a verificação no banco.
+  String get valor {
+    switch (this) {
+      case Sexo.masculino:
+        return 'M';
+      case Sexo.feminino:
+        return 'F';
+      case Sexo.outro:
+        return 'O';
+    }
+  }
+}
+
+class _SeletorSexo extends StatelessWidget {
+  final Sexo? sexoSelecionado;
+  final ValueChanged<Sexo> onChanged;
+
+  const _SeletorSexo({
+    required this.sexoSelecionado,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
+    final opcoes = <Sexo, String>{
+      Sexo.masculino: l10n.genderMale,
+      Sexo.feminino: l10n.genderFemale,
+      Sexo.outro: l10n.genderOther,
+    };
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          l10n.gender,
+          style: const TextStyle(
+            color: Colors.white70,
+            fontSize: 13,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: opcoes.entries.map((entrada) {
+            final selecionado = sexoSelecionado == entrada.key;
+            return Expanded(
+              child: Padding(
+                padding: EdgeInsets.only(
+                  right: entrada.key != Sexo.outro ? 10 : 0,
+                ),
+                child: _BotaoSexo(
+                  texto: entrada.value,
+                  selecionado: selecionado,
+                  onTap: () => onChanged(entrada.key),
+                ),
+              ),
+            );
+          }).toList(),
+        ),
+      ],
+    );
+  }
+}
+
+class _BotaoSexo extends StatelessWidget {
+  final String texto;
+  final bool selecionado;
+  final VoidCallback onTap;
+
+  const _BotaoSexo({
+    required this.texto,
+    required this.selecionado,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(18),
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        height: 52,
+        decoration: BoxDecoration(
+          color: selecionado
+              ? const Color(0xFF57E6D8)
+              : Colors.white.withOpacity(.08),
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(
+            color: selecionado ? const Color(0xFF57E6D8) : Colors.white24,
+          ),
+        ),
+        child: Center(
+          child: Text(
+            texto,
+            textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            style: TextStyle(
+              color: selecionado ? const Color(0xFF1F1035) : Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 13,
+            ),
+          ),
+        ),
       ),
     );
   }

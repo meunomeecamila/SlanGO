@@ -5,7 +5,7 @@ import { supabase } from '../dbConnection';
 const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca' | 'email_verificado'>;
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca' | 'email_verificado'| 'sexo' >;
 type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
@@ -71,7 +71,8 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 Data: dados.Data,
                 perguntaSeguranca: dados.perguntaSeguranca,
                 respostaSeguranca: dados.respostaSeguranca,
-                email_verificado: dados.email_verificado
+                email_verificado: dados.email_verificado,
+                Sexo: dados.sexo
             }
         ])
         .select()
