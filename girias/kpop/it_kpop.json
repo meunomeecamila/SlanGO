@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 1,
+    "nome": "bias",
+    "variacoes": ["ult bias", "bias wrecker"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il membro preferito di un fan all'interno di un gruppo K-pop.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il mio bias in quel gruppo è il vocalist principale, canta da paura.",
+    "exemplos_incorretos": [
+      "Il meccanico ha sostituito il bias del motore che era ormai consumato.",
+      "Il ricercatore ha individuato un bias nei dati del sondaggio d'opinione.",
+      "La sarta ha tagliato il tessuto in bias per far cadere meglio la gonna."
+    ],
+    "significados_incorretos": [
+      "Pezzo di ricambio usato nei motori delle automobili per regolare il numero di giri.",
+      "Tendenza statistica che distorce i risultati di una ricerca.",
+      "Taglio del tessuto in diagonale, molto usato in sartoria per dare movimento."
+    ],
+    "impacto_motivo": "Bias si usa in modo affettuoso per esprimere ammirazione e legame emotivo con il membro preferito, senza alcuna connotazione negativa."
+  },
+  {
+    "id": 2,
+    "nome": "maknae",
+    "variacoes": ["maknae line", "golden maknae"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il membro più giovane di un gruppo K-pop, di solito trattato con un affetto particolare dagli altri membri e dai fan.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il maknae del gruppo ha fatto aegyo sul palco e il pubblico è impazzito.",
+    "exemplos_incorretos": [
+      "L'idraulico ha sostituito il maknae che perdeva sotto il lavandino.",
+      "Il maknae dell'ufficio sta ancora imparando a usare il gestionale interno.",
+      "Tutta la classe si prendeva cura del maknae, il più piccolo del gruppo."
+    ],
+    "significados_incorretos": [
+      "Raccordo idraulico usato per collegare tubi di diametro diverso.",
+      "Dipendente assunto da poco in un'azienda.",
+      "Alunno più piccolo di una classe, coccolato dai compagni più grandi."
+    ],
+    "impacto_motivo": "Maknae ha un tono affettivo: riconosce il membro più giovane del gruppo con tenerezza e protezione da parte di fan e colleghi."
+  },
+  {
+    "id": 3,
+    "nome": "comeback",
+    "variacoes": ["comeback stage", "era del comeback"],
+    "classe_gramatical": "sostantivo",
+    "significado": "L'uscita di un nuovo album o singolo da parte di un gruppo o artista, di solito accompagnata da un ciclo promozionale completo con estetica e concept nuovi.",
+    "tags": ["kpop", "lancio", "fandom"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il gruppo ha confermato il comeback per il mese prossimo con un teaser nuovo.",
+    "exemplos_incorretos": [
+      "L'arbitro ha sistemato il comeback prima di iniziare il set successivo.",
+      "Dopo l'infortunio al ginocchio, l'atleta ha fatto un comeback sorprendente.",
+      "La squadra ha fatto un comeback incredibile e ha ribaltato la partita nel secondo tempo."
+    ],
+    "significados_incorretos": [
+      "Attrezzo usato nei campi da pallavolo per segnare la rotazione.",
+      "Ritorno di un atleta alle competizioni dopo un periodo di stop per infortunio.",
+      "Rimonta di una squadra sportiva durante una partita che stava perdendo."
+    ],
+    "impacto_motivo": "Comeback si usa per celebrare il ritorno di un gruppo con materiale nuovo, generando attesa ed entusiasmo tra i fan."
+  },
+  {
+    "id": 4,
+    "nome": "stan",
+    "variacoes": ["stannare", "sono stan di"],
+    "classe_gramatical": "verbo/sostantivo",
+    "significado": "Essere un fan devoto di un gruppo o di un artista, seguendone da vicino carriera, uscite e novità.",
+    "tags": ["kpop", "fandom", "quotidiano"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Sono stan di questo gruppo dal debut, seguo tutto quello che pubblicano.",
+    "exemplos_incorretos": [
+      "Ho comprato uno stan nuovo per reggere il vaso della felce.",
+      "Il medico ha chiesto uno stan del sangue prima di autorizzare l'intervento.",
+      "La fabbrica ha montato uno stan nuovo sul nastro per fissare i pezzi."
+    ],
+    "significados_incorretos": [
+      "Tipo di supporto metallico usato per sostenere le piante nei vasi grandi.",
+      "Esame preliminare svolto prima delle procedure mediche di routine.",
+      "Supporto usato nelle linee di produzione industriali per fissare i componenti."
+    ],
+    "impacto_motivo": "Stan esprime dedizione e interesse entusiasta per la carriera di un artista, senza carica negativa."
+  },
+  {
+    "id": 5,
+    "nome": "bias wrecker",
+    "variacoes": ["wrecker"],
+    "classe_gramatical": "espressione",
+    "significado": "Un membro che minaccia di 'rubare' il posto al tuo bias, di solito perché si mette in luce in modo inaspettato durante un comeback.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Non è mai stato il mio bias, ma dopo questo comeback è diventato il mio bias wrecker.",
+    "exemplos_incorretos": [
+      "Il meccanico ha usato il bias wrecker per allineare le ruote del camion.",
+      "Ho chiamato il bias wrecker dopo che l'auto si è rotta in autostrada.",
+      "Il bias wrecker è arrivato subito per rimorchiare la macchina in panne."
+    ],
+    "significados_incorretos": [
+      "Apparecchio usato in officina per allineare le ruote dei camion.",
+      "Servizio di assistenza stradale d'emergenza attivato in autostrada.",
+      "Carro attrezzi usato per rimorchiare le auto in avaria."
+    ],
+    "impacto_motivo": "Bias wrecker si usa in modo scherzoso per descrivere l'ammirazione crescente verso un altro membro, senza sminuire il bias originale."
+  },
+  {
+    "id": 6,
+    "nome": "sasaeng",
+    "variacoes": ["fan sasaeng"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Fan estremo e invadente che perseguita gli idol e ne viola la privacy, un comportamento condannato dalla comunità K-pop.",
+    "tags": ["kpop", "fandom", "comportamento"],
+    "permissao": "tutti",
+    "impacto": "negativo",
+    "exemplo_correto": "Quel fan che ha scoperto l'indirizzo dell'idol e si è presentato lì è un sasaeng.",
+    "exemplos_incorretos": [
+      "Il negozio vende un sasaeng bello leggero, ottimo da mettere col caldo.",
+      "Abbiamo ordinato un sasaeng come antipasto in quel ristorante coreano nuovo.",
+      "Il marchio ha lanciato la collezione sasaeng ispirata alla cultura urbana."
+    ],
+    "significados_incorretos": [
+      "Tessuto leggero usato negli abiti tradizionali coreani estivi.",
+      "Piatto tipico servito come antipasto nei ristoranti coreani.",
+      "Nome di una collezione di moda lanciata da un famoso marchio sudcoreano."
+    ],
+    "impacto_motivo": "Sasaeng descrive un comportamento invasivo e ossessivo che viola la privacy e la sicurezza degli idol, ed è condannato dalla comunità."
+  },
+  {
+    "id": 7,
+    "nome": "ult",
+    "variacoes": ["ultimate bias", "il mio ult"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il bias supremo di un fan tra tutti i gruppi e gli artisti che segue, il preferito in assoluto.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "È il mio ult dal 2018, nessuno gli toglie quel posto.",
+    "exemplos_incorretos": [
+      "Siamo arrivati all'ult della partita e mancava solo il mio ultimo tiro di dado.",
+      "Il giocatore ha attivato l'ult del personaggio per ribaltare il match all'ultimo secondo.",
+      "Ho comprato il modello ult più caro del negozio perché aveva più funzioni."
+    ],
+    "significados_incorretos": [
+      "Termine usato nei giochi da tavolo per indicare l'ultimo turno della partita.",
+      "Abilità speciale più potente che un personaggio può usare in un videogioco.",
+      "Versione top di gamma e più avanzata di un prodotto elettronico."
+    ],
+    "impacto_motivo": "Ult esprime il grado più alto di ammirazione di un fan verso un artista, rafforzando un legame positivo e duraturo."
+  },
+  {
+    "id": 8,
+    "nome": "daebak",
+    "variacoes": ["daebak!"],
+    "classe_gramatical": "interiezione",
+    "significado": "Espressione usata per augurare un enorme successo a un'uscita o per festeggiare un grande traguardo di un gruppo o di un artista.",
+    "tags": ["kpop", "elogio", "fandom"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Spero che questo comeback sia un daebak assoluto in classifica!",
+    "exemplos_incorretos": [
+      "Il gruppo folkloristico ha suonato il daebak durante l'esibizione al festival.",
+      "Ha urlato daebak appena ha vinto il primo premio alla lotteria.",
+      "Ha assaggiato il piatto nuovo e ha detto che era daebak da quanto era buono."
+    ],
+    "significados_incorretos": [
+      "Strumento a percussione tradizionale usato nei festival coreani.",
+      "Espressione usata nei giochi d'azzardo coreani per festeggiare una vincita grossa.",
+      "Termine coreano generico che significa 'incredibile' in qualsiasi contesto."
+    ],
+    "impacto_motivo": "Daebak è un'interiezione di tifo e festa, usata per augurare o celebrare un grande successo."
+  },
+  {
+    "id": 9,
+    "nome": "line",
+    "variacoes": ["vocal line", "maknae line", "95-line"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Sottogruppo di idol che condividono una caratteristica, come il ruolo nel gruppo (canto, ballo, rap) o l'anno di nascita.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "La vocal line del gruppo è stata pazzesca in questa esibizione dal vivo.",
+    "exemplos_incorretos": [
+      "Il cappotto ha una line morbida all'interno che protegge dal freddo.",
+      "Sono rimasto in line in banca quasi un'ora prima di essere servito.",
+      "La fabbrica ha installato una line di produzione nuova per aumentare la resa."
+    ],
+    "significados_incorretos": [
+      "Tessuto sottile usato come fodera interna dei cappotti invernali.",
+      "Fila d'attesa che si forma nei negozi negli orari di punta.",
+      "Catena di montaggio usata nei processi industriali."
+    ],
+    "impacto_motivo": "Line identifica sottogruppi interni in modo descrittivo e di solito elogiativo, mettendo in evidenza abilità specifiche."
+  },
+  {
+    "id": 10,
+    "nome": "all-kill",
+    "variacoes": ["ha fatto all-kill", "perfect all-kill"],
+    "classe_gramatical": "espressione",
+    "significado": "Quando una canzone arriva in cima a tutte le principali classifiche musicali sudcoreane contemporaneamente, uno dei traguardi più grandi nel K-pop.",
+    "tags": ["kpop", "successo", "musica"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "La canzone ha fatto all-kill in tutte le classifiche appena è uscita.",
+    "exemplos_incorretos": [
+      "Il lottatore ha piazzato un all-kill preciso contro i due avversari sul tatami.",
+      "La squadra ha fatto un all-kill nella partita e ha vinto senza perdere un round.",
+      "Il giocatore ha messo a segno un all-kill decisivo per il risultato del match."
+    ],
+    "significados_incorretos": [
+      "Mossa di difesa usata nelle arti marziali per neutralizzare due avversari.",
+      "Strategia usata negli esport per eliminare tutta la squadra avversaria.",
+      "Giocata decisiva che garantisce la vittoria totale in una competizione sportiva."
+    ],
+    "impacto_motivo": "All-kill celebra un risultato commerciale importante ed è usato in modo esclusivamente elogiativo."
+  },
+  {
+    "id": 11,
+    "nome": "selca",
+    "variacoes": ["farsi una selca"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Abbreviazione di 'self-camera', l'equivalente coreano di selfie: una foto scattata da sé e condivisa sui social.",
+    "tags": ["kpop", "fandom", "social"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "L'idol ha postato una selca bellissima prima del concerto di stasera.",
+    "exemplos_incorretos": [
+      "Il direttore della fotografia ha regolato il selca prima di girare la scena in esterni.",
+      "Ho comprato una selca nuova da portare nei viaggi del weekend.",
+      "Il fotografo ha cambiato il selca della macchina prima di iniziare il servizio."
+    ],
+    "significados_incorretos": [
+      "Componente del treppiede usato per stabilizzare le macchine fotografiche professionali.",
+      "Modello specifico di fotocamera compatta venduto nei negozi di elettronica.",
+      "Accessorio tecnico usato dai fotografi professionisti per regolare la messa a fuoco."
+    ],
+    "impacto_motivo": "Selca è un termine leggero e positivo, usato per condividere momenti spontanei e avvicinare idol e fan."
+  },
+  {
+    "id": 12,
+    "nome": "akgae",
+    "variacoes": ["fan akgae"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Fan che segue solo un membro specifico del gruppo e ignora o addirittura critica gli altri.",
+    "tags": ["kpop", "fandom", "comportamento"],
+    "permissao": "tutti",
+    "impacto": "negativo",
+    "exemplo_correto": "Commenta solo su un membro e attacca gli altri, è proprio akgae.",
+    "exemplos_incorretos": [
+      "Il ristorante coreano serve l'akgae come contorno del barbecue.",
+      "Abbiamo ordinato akgae come antipasto prima del piatto principale.",
+      "Il negozio ha lanciato la linea akgae di borse ispirate allo streetwear coreano."
+    ],
+    "significados_incorretos": [
+      "Salsa piccante coreana usata nei piatti di carne alla griglia.",
+      "Piatto tipico del menù coreano fatto con verdure fermentate.",
+      "Nome di una linea di accessori lanciata da un marchio di moda coreano."
+    ],
+    "impacto_motivo": "Akgae descrive un comportamento tossico all'interno del fandom, che danneggia l'armonia tra i fan dei vari membri."
+  },
+  {
+    "id": 13,
+    "nome": "era",
+    "variacoes": ["nuova era", "era dell'album"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il periodo di un comeback specifico, con la sua estetica, il suo concept e il suo suono, che i fan ricordano di solito col nome dell'album.",
+    "tags": ["kpop", "fandom", "musica"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Sono diventata fan del gruppo nell'era di quell'album, il concept era perfetto.",
+    "exemplos_incorretos": [
+      "La ricetta chiedeva un'era di salsa di soia per condire il piatto.",
+      "Viviamo in un'era di grande tecnologia digitale e connessione.",
+      "L'era dei dinosauri è durata milioni di anni, ha detto il professore."
+    ],
+    "significados_incorretos": [
+      "Unità di misura usata nelle ricette tradizionali coreane per i liquidi.",
+      "Ampia fase dello sviluppo tecnologico vissuta dalla società attuale.",
+      "Periodo storico dell'evoluzione geologica della Terra studiato in scienze."
+    ],
+    "impacto_motivo": "Era si usa in modo nostalgico e positivo per segnare i momenti memorabili nel percorso di un gruppo."
+  },
+  {
+    "id": 14,
+    "nome": "concept",
+    "variacoes": ["dark concept", "cute concept"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il tema visivo e sonoro complessivo di un'era, ad esempio dark, cute o retrò, che definisce l'estetica del comeback.",
+    "tags": ["kpop", "fandom", "estetica"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Questo comeback ha un concept retrò incredibile, ho adorato i costumi.",
+    "exemplos_incorretos": [
+      "La sposa indossava un concept ricamato a mano durante la cerimonia tradizionale.",
+      "L'architetto ha presentato il concept del nuovo palazzo per l'approvazione del cliente.",
+      "La casa automobilistica ha svelato il concept dell'auto elettrica al salone."
+    ],
+    "significados_incorretos": [
+      "Capo tradizionale indossato ai matrimoni coreani formali.",
+      "Proposta iniziale presentata da un architetto prima della costruzione di un edificio.",
+      "Modello sperimentale di automobile presentato ai saloni dell'auto."
+    ],
+    "impacto_motivo": "Concept si usa per commentare ed elogiare l'estetica creativa di un comeback, senza connotazione negativa."
+  },
+  {
+    "id": 15,
+    "nome": "OTP",
+    "variacoes": ["shippare", "il mio OTP"],
+    "classe_gramatical": "sigla/sostantivo",
+    "significado": "Sigla di 'one true pairing', la coppia di idol che un fan preferisce immaginare o vedere interagire come coppia.",
+    "tags": ["kpop", "fandom", "shipping"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Quei due sono il mio OTP dal primo reality che hanno fatto insieme.",
+    "exemplos_incorretos": [
+      "Il foglietto illustrativo indicava l'OTP consigliato per gli adulti.",
+      "Ho comprato un OTP in farmacia per il mal di testa.",
+      "Il meccanico ha sostituito l'OTP dell'auto durante il tagliando dei diecimila km."
+    ],
+    "significados_incorretos": [
+      "Sigla usata nei foglietti illustrativi per indicare la dose massima giornaliera.",
+      "Farmaco venduto senza obbligo di ricetta medica in farmacia.",
+      "Pezzo di ricambio usato nelle automobili durante i tagliandi."
+    ],
+    "impacto_motivo": "OTP esprime affetto ed entusiasmo dei fan per una coppia di idol, in un contesto di shipping ricreativo."
+  },
+  {
+    "id": 16,
+    "nome": "netizen",
+    "variacoes": ["commento di un netizen"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Utente di internet che commenta e interagisce molto con i contenuti online, molto usato nel contesto delle reazioni alle notizie K-pop.",
+    "tags": ["kpop", "fandom", "internet"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "I netizen stanno già commentando parecchio il nuovo video del gruppo.",
+    "exemplos_incorretos": [
+      "Il comune ha installato un netizen nuovo nella piazza centrale del quartiere.",
+      "Il netizen all'angolo vende cellulari e accessori importati.",
+      "Il comune ha ristrutturato il netizen della piazza per ospitare concerti gratuiti."
+    ],
+    "significados_incorretos": [
+      "Elemento di arredo urbano installato nelle piazze pubbliche ristrutturate.",
+      "Negozio specializzato in prodotti elettronici di quartiere.",
+      "Spazio pubblico gestito dal comune per eventi culturali."
+    ],
+    "impacto_motivo": "Netizen è un termine da neutro a positivo, usato per descrivere gli utenti attivi di internet senza giudizio implicito."
+  },
+  {
+    "id": 17,
+    "nome": "trainee",
+    "variacoes": ["fare il trainee", "periodo da trainee"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Artista in formazione presso un'agenzia prima del debutto ufficiale, che può passare anni a prepararsi in canto, ballo e performance.",
+    "tags": ["kpop", "industria", "carriera"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "È stato trainee per sette anni prima di debuttare con il gruppo.",
+    "exemplos_incorretos": [
+      "Il maratoneta ha indossato il trainee nuovo prima dell'allenamento.",
+      "Abbiamo preso un trainee per aiutare con l'inventario del magazzino questa settimana.",
+      "Il trainee dell'azienda ha iniziato il percorso di formazione questa settimana."
+    ],
+    "significados_incorretos": [
+      "Capo di abbigliamento indossato dagli atleti durante gli allenamenti di resistenza.",
+      "Lavoratore assunto da un'azienda per svolgere servizi generici temporanei.",
+      "Dipendente nella fase iniziale di assunzione e formazione in un'azienda."
+    ],
+    "impacto_motivo": "Trainee riconosce l'impegno e la dedizione di un artista in formazione prima del debut, con tono ammirato."
+  },
+  {
+    "id": 18,
+    "nome": "debut",
+    "variacoes": ["debuttare", "gruppo di debut"],
+    "classe_gramatical": "sostantivo/verbo",
+    "significado": "L'esordio ufficiale di un gruppo o artista sul mercato, quando l'agenzia annuncia i membri e pubblica la prima canzone o il primo album.",
+    "tags": ["kpop", "industria", "lancio"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il gruppo farà il debut il mese prossimo con uno showcase speciale.",
+    "exemplos_incorretos": [
+      "Lo scacchista ha studiato un debut classico prima dell'inizio del campionato.",
+      "Hanno fatto il debut della macchina al salone dell'auto della città.",
+      "L'attore ha fatto il suo debut in una commedia di un piccolo teatro."
+    ],
+    "significados_incorretos": [
+      "Apertura usata nelle partite di scacchi professionistiche.",
+      "Presentazione di un veicolo nuovo agli eventi e alle fiere del settore automotive.",
+      "Prima apparizione ufficiale di un attore in uno spettacolo teatrale."
+    ],
+    "impacto_motivo": "Debut segna un momento di festa e di conquista nella carriera di un artista o di un gruppo."
+  },
+  {
+    "id": 19,
+    "nome": "disband",
+    "variacoes": ["hanno fatto disband", "il gruppo ha avuto il disband"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Quando un gruppo si scioglie ufficialmente e smette di esistere in quella formazione, per decisione dell'agenzia o dei membri stessi.",
+    "tags": ["kpop", "industria", "fandom"],
+    "permissao": "tutti",
+    "impacto": "negativo",
+    "exemplo_correto": "I fan sono rimasti malissimo dopo l'annuncio del disband del gruppo.",
+    "exemplos_incorretos": [
+      "Ha usato un disband nuovo per legarsi i capelli prima della lezione di danza.",
+      "L'azienda ha fatto un disband dei reparti interni quest'anno.",
+      "Il meccanico ha fatto il disband del motore per sostituire i pezzi consumati."
+    ],
+    "significados_incorretos": [
+      "Elastico usato per legare i capelli durante l'attività fisica.",
+      "Riorganizzazione dei settori di un'azienda durante una ristrutturazione.",
+      "Processo di smontaggio dei pezzi meccanici svolto in officina."
+    ],
+    "impacto_motivo": "Disband è associato alla tristezza e alla fine di un gruppo, con un forte impatto emotivo negativo sui fan."
+  },
+  {
+    "id": 20,
+    "nome": "fancam",
+    "variacoes": ["fancam individuale"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Video girato dai fan concentrato su un solo idol durante un'esibizione, di solito dall'inizio alla fine della performance.",
+    "tags": ["kpop", "fandom", "contenuto"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il suo fancam di questa esibizione ha già milioni di visualizzazioni.",
+    "exemplos_incorretos": [
+      "Il fotografo ha montato un fancam nuovo per illuminare meglio il set.",
+      "Abbiamo installato un fancam alla porta di casa dopo il furto in zona.",
+      "L'auto è uscita di fabbrica con il fancam posteriore per facilitare le manovre."
+    ],
+    "significados_incorretos": [
+      "Tipo di lampada usata negli studi fotografici per una luce morbida.",
+      "Telecamera di sicurezza installata all'ingresso delle abitazioni.",
+      "Telecamera posteriore montata sui veicoli per aiutare nelle manovre di parcheggio."
+    ],
+    "impacto_motivo": "Fancam si usa per valorizzare e condividere la performance individuale di un idol durante le esibizioni."
+  },
+  {
+    "id": 21,
+    "nome": "fanwar",
+    "variacoes": ["è scoppiata una fanwar"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Litigio tra fandom diversi, di solito sui social, in difesa dei rispettivi gruppi o artisti preferiti.",
+    "tags": ["kpop", "fandom", "conflitto"],
+    "permissao": "tutti",
+    "impacto": "negativo",
+    "exemplo_correto": "È scoppiata una fanwar enorme su Twitter dopo il confronto sulle vendite.",
+    "exemplos_incorretos": [
+      "Il gioco da tavolo aveva una pedina chiamata fanwar che rappresentava l'esercito.",
+      "Il gioco di strategia simula una fanwar tra regni medievali rivali.",
+      "I due marchi sono entrati in una fanwar commerciale per dominare il mercato."
+    ],
+    "significados_incorretos": [
+      "Pedina che rappresenta un'armatura nei giochi da tavolo di strategia medievale.",
+      "Tema dei giochi di strategia ambientati nel Medioevo tra regni rivali.",
+      "Scontro commerciale acceso tra due aziende concorrenti dello stesso settore."
+    ],
+    "impacto_motivo": "Fanwar descrive conflitti ostili tra fandom, che creano un clima tossico sui social."
+  },
+  {
+    "id": 22,
+    "nome": "ace",
+    "variacoes": ["l'ace del gruppo"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il membro del gruppo che eccelle in più abilità contemporaneamente, come canto, ballo e presenza scenica.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Lei è l'ace del gruppo, spacca sia nel canto che nel ballo.",
+    "exemplos_incorretos": [
+      "Il tecnico ha sostituito l'ace della macchina da cucire che era consumato.",
+      "Il pilota ha eseguito una manovra di ace al simulatore durante l'addestramento.",
+      "L'ace del mazzo è caduto sul tavolo durante l'ultimo giro."
+    ],
+    "significados_incorretos": [
+      "Componente delle macchine da cucire industriali che tiene fermo il tessuto.",
+      "Manovra specifica praticata dai piloti esperti nei simulatori di volo.",
+      "Carta di maggior valore in un mazzo di carte comune."
+    ],
+    "impacto_motivo": "Ace riconosce ed elogia la versatilità e il talento di un membro in più ambiti."
+  },
+  {
+    "id": 23,
+    "nome": "visual",
+    "variacoes": ["il visual del gruppo", "the visual"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il membro riconosciuto dall'agenzia e dai fan come il volto più rappresentativo del gruppo, scelto di solito per l'aspetto.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "È il visual del gruppo, sta sempre in primo piano nei teaser e sulle copertine.",
+    "exemplos_incorretos": [
+      "Il tecnico ha sostituito il visual del proiettore che aveva la lente rigata.",
+      "Mi piace il visual nuovo dell'app dopo l'ultimo aggiornamento.",
+      "Il visual del negozio è cambiato del tutto dopo la ristrutturazione."
+    ],
+    "significados_incorretos": [
+      "Componente tecnico usato nei sistemi di proiezione dei vecchi cinema.",
+      "Design o interfaccia di un'applicazione dopo un aggiornamento.",
+      "Aspetto estetico rinnovato di un negozio dopo i lavori."
+    ],
+    "impacto_motivo": "Visual si usa per mettere in risalto ed elogiare l'aspetto di un membro, senza connotazione negativa."
+  },
+  {
+    "id": 24,
+    "nome": "leader",
+    "variacoes": ["leader-nim", "il leader"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il membro designato dall'agenzia per rappresentare ufficialmente il gruppo, di solito il più esperto o il più responsabile.",
+    "tags": ["kpop", "industria", "idol"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Da leader, è sempre lui a parlare per primo nelle interviste a nome del gruppo.",
+    "exemplos_incorretos": [
+      "Il personal trainer ha usato il leader durante l'allenamento di resistenza in palestra.",
+      "Sono stato eletto leader della squadra di calcio della scuola a inizio anno.",
+      "Il leader del progetto ha fissato una riunione per definire i prossimi passi."
+    ],
+    "significados_incorretos": [
+      "Attrezzo sportivo usato negli allenamenti di resistenza fisica.",
+      "Capitano eletto per votazione in una squadra sportiva scolastica.",
+      "Persona responsabile del coordinamento di un progetto aziendale."
+    ],
+    "impacto_motivo": "Leader riconosce con rispetto la responsabilità e la guida di un membro all'interno del gruppo."
+  },
+  {
+    "id": 25,
+    "nome": "rookie",
+    "variacoes": ["gruppo rookie", "rookie dell'anno"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Gruppo o artista che ha debuttato da poco e si sta ancora costruendo uno spazio nell'industria musicale.",
+    "tags": ["kpop", "industria", "carriera"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Questo gruppo rookie sta già avendo un successo enorme per essere al primo anno.",
+    "exemplos_incorretos": [
+      "Il pescatore ha comprato un rookie nuovo per iniziare a pescare nel fiume.",
+      "Abbiamo assunto un rookie come stagista nel reparto finanziario.",
+      "Il rookie della squadra di basket ha giocato benissimo all'esordio."
+    ],
+    "significados_incorretos": [
+      "Attrezzo da pesca usato dai principianti nei fiumi tranquilli.",
+      "Dipendente alle prime armi assunto da poco in un'azienda qualsiasi.",
+      "Giocatore esordiente in una squadra sportiva durante la prima stagione."
+    ],
+    "impacto_motivo": "Rookie si usa in modo incoraggiante per descrivere i gruppi nuovi che stanno costruendo la loro carriera."
+  },
+  {
+    "id": 26,
+    "nome": "aegyo",
+    "variacoes": ["fare aegyo"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Comportamento volutamente tenero, con vocina e gesti esagerati, usato dagli idol per conquistare i fan.",
+    "tags": ["kpop", "fandom", "comportamento"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Ha fatto un aegyo così dolce al fansign che i fan sono impazziti.",
+    "exemplos_incorretos": [
+      "La venditrice offriva aegyo fresco al banco del mercato coreano.",
+      "L'aegyo del bambino è durato per tutta la festa di compleanno.",
+      "Il negozio vende una linea di aegyo importata direttamente dalla Corea del Sud."
+    ],
+    "significados_incorretos": [
+      "Dolce tradizionale coreano fatto con riso e miele.",
+      "Comportamento generico e spontaneo dei bambini piccoli, senza alcun aspetto performativo.",
+      "Prodotto cosmetico importato per la cura della pelle del viso."
+    ],
+    "impacto_motivo": "Aegyo descrive un comportamento tenero e performativo, apprezzato e ben accolto dai fan."
+  },
+  {
+    "id": 27,
+    "nome": "sunbae",
+    "variacoes": ["sunbaenim", "sunbae-hoobae"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Artista o collega più esperto nell'industria, trattato con rispetto da chi è arrivato dopo (hoobae).",
+    "tags": ["kpop", "industria", "gerarchia"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il gruppo ha ringraziato il sunbae che li ha aiutati subito dopo il debut.",
+    "exemplos_incorretos": [
+      "Lo studente ha indossato il sunbae nuovo il primo giorno di scuola in Corea.",
+      "Il mio sunbae in tirocinio mi ha insegnato a usare il gestionale dell'azienda.",
+      "Il sunbae della squadra di pallavolo ha allenato le matricole prima del campionato."
+    ],
+    "significados_incorretos": [
+      "Capo della divisa indossata dagli studenti coreani delle superiori.",
+      "Collega più esperto in un contesto accademico o professionale qualsiasi.",
+      "Atleta veterano incaricato di allenare le matricole di una squadra."
+    ],
+    "impacto_motivo": "Sunbae esprime rispetto e una gerarchia positiva tra artisti più esperti e più giovani."
+  },
+  {
+    "id": 28,
+    "nome": "photocard",
+    "variacoes": ["pc", "photocard rara"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Card da collezione con la foto di un idol specifico, di solito inserita a caso all'interno degli album fisici.",
+    "tags": ["kpop", "collezionismo", "album"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Finalmente ho preso la photocard del mio bias dopo aver comprato tre album.",
+    "exemplos_incorretos": [
+      "Ho perso la mia photocard di accesso e ho dovuto chiederne un'altra alle risorse umane.",
+      "Il negozio stampa photocard personalizzate per gli invitati ai matrimoni.",
+      "La banca ha emesso una photocard nuova insieme alla mia carta di credito."
+    ],
+    "significados_incorretos": [
+      "Badge usato dai dipendenti per accedere alle aree riservate dell'azienda.",
+      "Cartoncino personalizzato stampato su ordinazione per eventi e feste.",
+      "Tessera bancaria con foto identificativa emessa insieme alla carta di credito."
+    ],
+    "impacto_motivo": "Photocard è legata al collezionismo e alla gioia di trovare un pezzo raro del proprio bias."
+  },
+  {
+    "id": 29,
+    "nome": "fansign",
+    "variacoes": ["evento di fansign"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Evento di incontro tra idol e fan selezionati, di solito per sorteggio legato all'acquisto degli album, con autografi e scambi di battute.",
+    "tags": ["kpop", "fandom", "evento"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Ho vinto il sorteggio e andrò al fansign del gruppo la settimana prossima.",
+    "exemplos_incorretos": [
+      "Il negozio ha montato un fansign nuovo sulla facciata per farsi notare di sera.",
+      "La libreria ha organizzato un fansign con l'autore per l'uscita del libro nuovo.",
+      "Il calciatore ha fatto un fansign con i tifosi dopo la partita."
+    ],
+    "significados_incorretos": [
+      "Insegna luminosa usata sulle facciate dei negozi coreani.",
+      "Sessione di autografi organizzata dalle case editrici per l'uscita dei libri.",
+      "Evento di autografi con gli atleti organizzato subito dopo le partite importanti."
+    ],
+    "impacto_motivo": "Fansign è celebrato come un'occasione rara e speciale di interazione diretta con gli idol."
+  },
+  {
+    "id": 30,
+    "nome": "hallyu",
+    "variacoes": ["onda hallyu", "hallyu wave"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Fenomeno della diffusione globale della cultura pop sudcoreana, che comprende musica, serie tv, moda e gastronomia.",
+    "tags": ["kpop", "cultura", "industria"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "L'hallyu ha aiutato il K-pop a conquistare fan in tutto il mondo negli ultimi anni.",
+    "exemplos_incorretos": [
+      "Il meteorologo ha avvisato che l'hallyu sarebbe arrivato sulla costa con venti forti.",
+      "L'azienda ha cavalcato l'hallyu dei mercati finanziari e ha avuto un utile record.",
+      "L'hallyu del fiume si è alzato parecchio dopo le piogge forti della settimana scorsa."
+    ],
+    "significados_incorretos": [
+      "Termine usato nelle previsioni meteo per indicare i fronti freddi provenienti dal mare.",
+      "Tendenza o rialzo improvviso osservato nei mercati finanziari.",
+      "Innalzamento del livello di un fiume provocato dalle piogge intense."
+    ],
+    "impacto_motivo": "Hallyu si usa per descrivere con orgoglio l'espansione globale della cultura coreana."
+  },
+  {
+    "id": 31,
+    "nome": "hi-touch",
+    "variacoes": ["hi-touch event"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Momento rapido di contatto tra le mani di idol e fan, di solito alla fine di un fansign o di un fanmeeting.",
+    "tags": ["kpop", "fandom", "evento"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "All'hi-touch mi ha sorriso e mi ha stretto la mano per un secondo intero.",
+    "exemplos_incorretos": [
+      "L'elettricista ha fatto un hi-touch sbagliato ed è saltato subito il differenziale.",
+      "Ho dovuto ripetere l'hi-touch del sensore per accendere la luce del corridoio.",
+      "Il tecnico ha regolato l'hi-touch dello schermo per renderlo più sensibile al tocco."
+    ],
+    "significados_incorretos": [
+      "Collegamento elettrico fatto male che provoca cortocircuiti negli impianti domestici.",
+      "Sensore di presenza usato per accendere automaticamente le luci nei corridoi.",
+      "Regolazione della sensibilità negli schermi touch di cellulari e tablet."
+    ],
+    "impacto_motivo": "Hi-touch è vissuto come un momento di contatto ravvicinato ed emozionante tra fan e idol."
+  },
+  {
+    "id": 32,
+    "nome": "daesang",
+    "variacoes": ["premio daesang", "portarsi a casa il daesang"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Il premio più importante consegnato durante una premiazione musicale, che riconosce il miglior artista o il miglior album dell'anno.",
+    "tags": ["kpop", "premiazione", "industria"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il gruppo ha finalmente vinto il daesang come album dell'anno a questa premiazione.",
+    "exemplos_incorretos": [
+      "Ho comprato un daesang nuovo per tenere gli attrezzi in garage.",
+      "Il daesang del ristorante portava in tavola vari piatti tipici coreani.",
+      "La pasticceria ha lanciato un daesang speciale di fine anno con gusti diversi."
+    ],
+    "significados_incorretos": [
+      "Tipo di armadio usato per organizzare gli attrezzi in garage.",
+      "Piatto combinato servito nei ristoranti coreani con diverse porzioni.",
+      "Prodotto stagionale lanciato dalle pasticcerie durante le feste."
+    ],
+    "impacto_motivo": "Daesang rappresenta il riconoscimento più alto nella carriera di un artista ed è motivo di orgoglio e festa."
+  },
+  {
+    "id": 33,
+    "nome": "bonsang",
+    "variacoes": ["premio bonsang"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Premio principale consegnato a più artisti di rilievo durante una premiazione musicale, nella categoria sotto il daesang.",
+    "tags": ["kpop", "premiazione", "industria"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il gruppo ha vinto il bonsang al primo anno di carriera, un traguardo enorme.",
+    "exemplos_incorretos": [
+      "Il professore ha consegnato il bonsang di partecipazione a tutta la classe.",
+      "La scuola ha istituito il bonsang per lo studente migliore del semestre.",
+      "Ho ricevuto un bonsang in azienda per i risultati di questo trimestre."
+    ],
+    "significados_incorretos": [
+      "Attestato simbolico di partecipazione consegnato durante gli eventi scolastici.",
+      "Riconoscimento interno assegnato ai dipendenti per gli obiettivi raggiunti.",
+      "Premio informale dato dagli insegnanti agli studenti più bravi."
+    ],
+    "impacto_motivo": "Bonsang celebra il riconoscimento dell'industria musicale per il lavoro di un artista, e rende orgogliosi i fan."
+  },
+  {
+    "id": 34,
+    "nome": "cypher",
+    "variacoes": ["fare un cypher"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Esibizione rap improvvisata o coreografata, che di solito riunisce i rapper del gruppo, ognuno con la propria strofa di rilievo.",
+    "tags": ["kpop", "musica", "rap"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il cypher della rap line è stato il momento migliore dello showcase.",
+    "exemplos_incorretos": [
+      "Il programmatore ha usato un cypher per criptare la password del sistema.",
+      "La ricetta chiedeva un cypher di erbe fresche per insaporire il pesce.",
+      "Il professore di matematica ha spiegato il cypher usato nella crittografia classica."
+    ],
+    "significados_incorretos": [
+      "Algoritmo usato per criptare i dati nei sistemi di sicurezza.",
+      "Misto di erbe fresche usato nelle ricette di cucina.",
+      "Metodo storico di codifica dei messaggi studiato in crittografia."
+    ],
+    "impacto_motivo": "Cypher è celebrato come un momento di rilievo tecnico e artistico per i rapper del gruppo."
+  },
+  {
+    "id": 35,
+    "nome": "sub-unit",
+    "variacoes": ["subunità"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Piccolo gruppo formato da alcuni membri di un gruppo più grande, di solito per esplorare un suono o un concept diverso.",
+    "tags": ["kpop", "industria", "musica"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "La sub-unit ha pubblicato un mini album molto diverso dal suono principale del gruppo.",
+    "exemplos_incorretos": [
+      "Il condominio ha diviso il palazzo in sub-unit per semplificare l'amministrazione.",
+      "L'azienda ha creato una sub-unit finanziaria che si occupa solo degli investimenti.",
+      "L'esercito ha organizzato una sub-unit speciale per l'operazione di quel giorno."
+    ],
+    "significados_incorretos": [
+      "Divisione amministrativa usata nei condomini per organizzare scale e palazzine.",
+      "Reparto specifico creato all'interno di un'azienda per una funzione isolata.",
+      "Piccolo reparto militare distaccato per una missione specifica."
+    ],
+    "impacto_motivo": "La sub-unit è vista positivamente dai fan perché mostra nuove sfaccettature artistiche dei membri."
+  },
+  {
+    "id": 36,
+    "nome": "lightstick",
+    "variacoes": ["bong", "portare il lightstick"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Oggetto luminoso ufficiale del fandom, acceso durante i concerti per formare un mare di luci in omaggio al gruppo.",
+    "tags": ["kpop", "fandom", "show"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Tutto lo stadio si è illuminato quando abbiamo alzato i lightstick per l'encore.",
+    "exemplos_incorretos": [
+      "L'elettricista ha sostituito il lightstick bruciato del lampione della strada.",
+      "Ho comprato un lightstick da usare durante i blackout in casa.",
+      "Il kit da campeggio aveva un lightstick per le camminate notturne."
+    ],
+    "significados_incorretos": [
+      "Lampada da palo usata nell'illuminazione pubblica urbana.",
+      "Torcia portatile usata nelle emergenze domestiche durante i blackout.",
+      "Attrezzatura da campeggio usata per illuminare i sentieri di notte."
+    ],
+    "impacto_motivo": "Il lightstick simboleggia l'unione e l'affetto del fandom verso il gruppo durante i concerti."
+  },
+  {
+    "id": 37,
+    "nome": "random play dance",
+    "variacoes": ["RPD", "kpop random dance"],
+    "classe_gramatical": "espressione",
+    "significado": "Evento o gioco in cui le canzoni K-pop partono a caso e i partecipanti ballano la coreografia corrispondente.",
+    "tags": ["kpop", "fandom", "danza"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Siamo andati al random play dance in centro e abbiamo ballato una ventina di canzoni.",
+    "exemplos_incorretos": [
+      "Il DJ ha organizzato un random play dance di musica elettronica in discoteca ieri.",
+      "La palestra offre un corso di random play dance come allenamento cardio generico.",
+      "Il professore di educazione fisica ha proposto un random play dance durante la lezione."
+    ],
+    "significados_incorretos": [
+      "Tipo di corso di danza aerobica offerto nelle palestre comuni.",
+      "Attività ricreativa di ballo libero usata nelle lezioni di educazione fisica.",
+      "Sequenza casuale di brani elettronici suonata nelle serate in discoteca."
+    ],
+    "impacto_motivo": "Il random play dance è un'attività divertente e collettiva che rafforza il legame tra i fan."
+  },
+  {
+    "id": 38,
+    "nome": "fanchant",
+    "variacoes": ["urlare il fanchant"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Sequenza di grida con i nomi dei membri, cantata dai fan all'unisono durante le canzoni ai concerti.",
+    "tags": ["kpop", "fandom", "show"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il fanchant è rimbombato in tutto lo stadio appena è partita la canzone.",
+    "exemplos_incorretos": [
+      "Il tifoso della curva ha provato un fanchant nuovo per la partita del weekend.",
+      "La curva ha creato un fanchant per provocare la squadra avversaria allo stadio.",
+      "Il gruppo di tifosi ha girato un video per insegnare il fanchant del club."
+    ],
+    "significados_incorretos": [
+      "Grido di battaglia usato dalle tifoserie organizzate delle squadre di calcio.",
+      "Coro intonato dai tifosi per sostenere la squadra durante le partite.",
+      "Sequenza di frasi create dalle curve per provocare gli avversari."
+    ],
+    "impacto_motivo": "Il fanchant rafforza l'energia collettiva e il senso di appartenenza del fandom durante i concerti."
+  },
+  {
+    "id": 39,
+    "nome": "title track",
+    "variacoes": ["traccia principale"],
+    "classe_gramatical": "sostantivo",
+    "significado": "La canzone principale di un album, scelta dall'agenzia per rappresentare ufficialmente il comeback.",
+    "tags": ["kpop", "musica", "album"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "La title track di questo album è già diventata un successo nelle radio coreane.",
+    "exemplos_incorretos": [
+      "Il documentario si apre con una title track che riassume tutta la storia.",
+      "La colonna sonora del film aveva una title track memorabile nella scena finale.",
+      "Il videogioco ha una title track che suona nella schermata iniziale del menù."
+    ],
+    "significados_incorretos": [
+      "Brano di apertura usato nei documentari per introdurre il tema.",
+      "Brano memorabile usato nella scena di chiusura di un film.",
+      "Tema musicale che suona nella schermata iniziale di un videogioco."
+    ],
+    "impacto_motivo": "La title track è celebrata come il brano di punta del comeback e genera attesa positiva tra i fan."
+  },
+  {
+    "id": 40,
+    "nome": "B-side",
+    "variacoes": ["traccia B", "B-side preferita"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Traccia dell'album che non è stata scelta come title track, ma che spesso diventa la preferita dei fan più affezionati.",
+    "tags": ["kpop", "musica", "album"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Questa B-side è persino meglio della title track, secondo me.",
+    "exemplos_incorretos": [
+      "Il disco in vinile aveva una B-side rara che ha fatto salire il valore della collezione.",
+      "L'etichetta ha ripubblicato la B-side classica di quell'artista degli anni 80.",
+      "Il collezionista cercava la B-side originale del singolo in vinile."
+    ],
+    "significados_incorretos": [
+      "Lato posteriore di un disco in vinile, di solito con i brani meno noti.",
+      "Traccia bonus inclusa nelle riedizioni di vecchi album.",
+      "Versione rara di un singolo ricercata dai collezionisti di vinile."
+    ],
+    "impacto_motivo": "La B-side è apprezzata dai fan come una scoperta speciale dentro l'album, che genera affetto in più."
+  },
+  {
+    "id": 41,
+    "nome": "unboxing",
+    "variacoes": ["unboxing dell'album"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Video o momento in cui un fan apre un album fisico nuovo, mostrandone il contenuto e la propria reazione in tempo reale.",
+    "tags": ["kpop", "fandom", "album"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Ho fatto l'unboxing dell'album nuovo e ho registrato la mia reazione alla photocard.",
+    "exemplos_incorretos": [
+      "L'addetto ha fatto l'unboxing delle attrezzature nuove arrivate in magazzino.",
+      "Il canale di tecnologia ha pubblicato l'unboxing del cellulare uscito questa settimana.",
+      "Il negozio ha registrato l'unboxing dei prodotti appena arrivati per promuoverli."
+    ],
+    "significados_incorretos": [
+      "Procedura di controllo della merce appena arrivata in magazzino.",
+      "Video di prima recensione di prodotti elettronici fatto dai canali di tecnologia.",
+      "Promozione di prodotti nuovi fatta dai negozi sui social."
+    ],
+    "impacto_motivo": "L'unboxing è un momento di attesa e gioia condiviso tra i fan quando si aprono gli album fisici."
+  },
+  {
+    "id": 42,
+    "nome": "photobook",
+    "variacoes": ["photobook dell'album"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Libro fotografico incluso nell'album fisico, con servizi fotografici dei membri legati al concept del comeback.",
+    "tags": ["kpop", "album", "collezionismo"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il photobook di questo album è bellissimo, le foto si abbinano benissimo al concept.",
+    "exemplos_incorretos": [
+      "L'editore ha realizzato un photobook di matrimonio personalizzato per gli sposi.",
+      "Il fotografo ha consegnato il photobook del servizio per la gravidanza questa settimana.",
+      "La tipografia stampa photobook su ordinazione per lauree e compleanni."
+    ],
+    "significados_incorretos": [
+      "Album fotografico personalizzato realizzato su ordinazione per i matrimoni.",
+      "Libro fotografico prodotto dai fotografi per servizi personali e di famiglia.",
+      "Prodotto tipografico stampato su ordinazione per eventi e ricorrenze."
+    ],
+    "impacto_motivo": "Il photobook è apprezzato dai fan come oggetto da collezione che avvicina all'estetica del comeback."
+  },
+  {
+    "id": 43,
+    "nome": "encore",
+    "variacoes": ["chiedere l'encore", "stage dell'encore"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Ritorno sul palco alla fine di un concerto, di solito chiesto dai fan, per esibizioni extra o un saluto speciale.",
+    "tags": ["kpop", "show", "fandom"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il pubblico ha urlato talmente tanto che il gruppo è tornato per l'encore con altre due canzoni.",
+    "exemplos_incorretos": [
+      "Il direttore d'orchestra ha fatto un encore a sorpresa dopo gli applausi.",
+      "La band rock ha suonato un encore classico alla fine del concerto di ieri.",
+      "Il pianista è tornato per l'encore dopo la standing ovation del pubblico."
+    ],
+    "significados_incorretos": [
+      "Ritorno sul palco richiesto dal pubblico nei concerti di musica classica.",
+      "Esibizione extra fatta dalle band rock alla fine dei concerti.",
+      "Rientro di un artista solista dopo applausi particolarmente intensi."
+    ],
+    "impacto_motivo": "L'encore è un momento emozionante che segna il legame finale tra gruppo e fan durante il concerto."
+  },
+  {
+    "id": 44,
+    "nome": "music show win",
+    "variacoes": ["1위", "portare a casa il 1위"],
+    "classe_gramatical": "espressione",
+    "significado": "Vittoria di una canzone in un programma musicale settimanale coreano, uno dei principali indicatori di popolarità di un comeback.",
+    "tags": ["kpop", "musica", "successo"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il gruppo ha festeggiato tantissimo il primo music show win della carriera.",
+    "exemplos_incorretos": [
+      "Il presentatore ha annunciato il music show win sbagliato durante la diretta.",
+      "La radio locale ha creato un music show win per eleggere la canzone più richiesta del mese.",
+      "Il programma d'intrattenimento ha fatto un music show win tra i partecipanti del pubblico."
+    ],
+    "significados_incorretos": [
+      "Sondaggio usato dalle radio locali per eleggere la canzone più trasmessa del mese.",
+      "Errore di trasmissione avvenuto durante le registrazioni dei programmi in diretta.",
+      "Gioco da studio usato nei programmi televisivi generici."
+    ],
+    "impacto_motivo": "Il music show win è celebrato come una conquista concreta di popolarità e successo del comeback."
+  },
+  {
+    "id": 45,
+    "nome": "world tour",
+    "variacoes": ["tour mondiale"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Serie di concerti tenuti dal gruppo in Paesi diversi, che permette un contatto diretto con i fan internazionali.",
+    "tags": ["kpop", "show", "fandom"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Sono riuscita a prendere il biglietto per il world tour e finalmente vedrò il gruppo dal vivo.",
+    "exemplos_incorretos": [
+      "L'orchestra sinfonica ha annunciato un world tour d'addio per il direttore.",
+      "La band rock storica ha confermato un world tour dopo vent'anni di stop.",
+      "Il circo internazionale ha organizzato un world tour attraverso vari continenti."
+    ],
+    "significados_incorretos": [
+      "Serie di concerti d'addio di un'orchestra sinfonica.",
+      "Tour di ritorno di una band rock dopo un lungo periodo di pausa.",
+      "Serie di spettacoli di un circo internazionale in Paesi diversi."
+    ],
+    "impacto_motivo": "Il world tour è atteso con entusiasmo dai fan perché permette di incontrare il gruppo dal vivo."
+  },
+  {
+    "id": 46,
+    "nome": "fan meeting",
+    "variacoes": ["fanmeeting"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Evento ufficiale in cui gli idol interagiscono direttamente con un grande gruppo di fan attraverso giochi, chiacchiere ed esibizioni.",
+    "tags": ["kpop", "fandom", "evento"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il fan meeting aveva giochi divertentissimi e il gruppo ha cantato dei pezzi acustici.",
+    "exemplos_incorretos": [
+      "La scuola ha organizzato un fan meeting tra studenti ed ex studenti diplomati.",
+      "Il circolo di scacchi ha promosso un fan meeting tra i giocatori della zona.",
+      "L'azienda ha fatto un fan meeting tra i dipendenti delle varie filiali."
+    ],
+    "significados_incorretos": [
+      "Incontro promosso dalle scuole tra studenti attuali ed ex studenti.",
+      "Riunione organizzata dai circoli amatoriali tra i soci della stessa zona.",
+      "Festa interna organizzata dalle aziende tra team diversi."
+    ],
+    "impacto_motivo": "Il fan meeting è celebrato come un'occasione unica e speciale di interazione ravvicinata con gli idol."
+  },
+  {
+    "id": 47,
+    "nome": "concept photo",
+    "variacoes": ["teaser photo"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Foto ufficiale pubblicata prima del comeback, che svela l'estetica visiva della nuova era del gruppo.",
+    "tags": ["kpop", "fandom", "estetica"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Le concept photo di questo comeback hanno già messo i fan in fibrillazione per l'album.",
+    "exemplos_incorretos": [
+      "Il fotografo di moda ha organizzato una concept photo per la rivista del mese.",
+      "L'agenzia pubblicitaria ha prodotto una concept photo per la campagna estiva.",
+      "Lo studio ha realizzato una concept photo a tema per il catalogo del marchio."
+    ],
+    "significados_incorretos": [
+      "Servizio fotografico a tema prodotto dalle riviste di moda.",
+      "Immagine prodotta dalle agenzie pubblicitarie per le campagne stagionali.",
+      "Fotografia a tema usata nei cataloghi dei marchi di abbigliamento."
+    ],
+    "impacto_motivo": "La concept photo genera attesa positiva perché svela poco a poco l'estetica del nuovo comeback."
+  },
+  {
+    "id": 48,
+    "nome": "teaser",
+    "variacoes": ["teaser image", "teaser video"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Contenuto breve pubblicato prima di un comeback per creare attesa: può essere una foto, un video o uno spezzone di canzone.",
+    "tags": ["kpop", "lancio", "fandom"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Il teaser del MV ha già mostrato un pezzetto della coreografia nuova.",
+    "exemplos_incorretos": [
+      "Il cinema ha fatto uscire il teaser del film quasi un anno prima dell'uscita.",
+      "La casa di produzione ha pubblicato il teaser della serie nuova sui social.",
+      "Il videogioco ha lanciato un teaser a sorpresa durante l'evento dell'azienda."
+    ],
+    "significados_incorretos": [
+      "Breve anteprima pubblicata prima dell'uscita dei film al cinema.",
+      "Contenuto promozionale pubblicato prima dell'uscita delle serie tv.",
+      "Video breve usato dalle case di videogiochi per annunciare le uscite future."
+    ],
+    "impacto_motivo": "Il teaser è accolto con entusiasmo dai fan perché anticipa i dettagli del comeback."
+  },
+  {
+    "id": 49,
+    "nome": "showcase",
+    "variacoes": ["showcase di debut", "showcase online"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Evento di presentazione ufficiale di un album, di solito con esibizione dal vivo e intervista subito dopo l'uscita.",
+    "tags": ["kpop", "evento", "lancio"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Lo showcase di debut ha avuto la prima esibizione dal vivo del gruppo nuovo.",
+    "exemplos_incorretos": [
+      "La casa automobilistica ha organizzato uno showcase per svelare l'auto elettrica nuova.",
+      "Il marchio di moda ha fatto uno showcase durante la settimana della moda.",
+      "L'azienda di tecnologia ha promosso uno showcase per lanciare il prodotto nuovo."
+    ],
+    "significados_incorretos": [
+      "Evento di presentazione usato dalle case automobilistiche per svelare i veicoli nuovi.",
+      "Sfilata di presentazione realizzata durante le settimane della moda.",
+      "Evento aziendale usato dalle società tecnologiche per lanciare i prodotti."
+    ],
+    "impacto_motivo": "Lo showcase segna un momento d'esordio celebrato dai fan, pieno di attesa positiva."
+  },
+  {
+    "id": 50,
+    "nome": "goods",
+    "variacoes": ["md", "official goods"],
+    "classe_gramatical": "sostantivo",
+    "significado": "Prodotti ufficiali su licenza di un gruppo, come magliette, portachiavi, poster e altri oggetti da collezione.",
+    "tags": ["kpop", "collezionismo", "fandom"],
+    "permissao": "tutti",
+    "impacto": "positivo",
+    "exemplo_correto": "Ho comprato dei goods nuovi del gruppo nello store ufficiale durante il tour.",
+    "exemplos_incorretos": [
+      "Il supermercato ha messo in offerta i goods deperibili questa settimana.",
+      "La fabbrica ha controllato i goods in magazzino prima dell'inventario mensile.",
+      "Il corriere ha consegnato i goods importati direttamente al porto."
+    ],
+    "significados_incorretos": [
+      "Termine generico inglese per indicare le merci deperibili.",
+      "Merci stoccate in magazzino in attesa dell'inventario di una fabbrica.",
+      "Prodotti importati trasportati e consegnati dalle aziende di logistica."
+    ],
+    "impacto_motivo": "I goods sono apprezzati dai fan come modo per sostenere il gruppo ed esprimere l'affetto per il fandom."
+  }
+]

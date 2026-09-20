@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 1,
+    "nome": "bias",
+    "variacoes": ["ult bias", "bias wrecker"],
+    "classe_gramatical": "noun",
+    "significado": "A fan's favorite member within a K-pop group.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "My bias in this group is the main vocalist, he sings so well.",
+    "exemplos_incorretos": [
+      "The mechanic replaced the bias on the engine that had worn out.",
+      "The researcher identified a bias in the opinion poll data.",
+      "The seamstress cut the fabric on the bias so the skirt would flow better."
+    ],
+    "significados_incorretos": [
+      "Replacement part used in car engines to regulate rotation speed.",
+      "Statistical tendency that distorts the results of a survey.",
+      "Diagonal fabric cut commonly used in sewing to give drape."
+    ],
+    "impacto_motivo": "Bias is used affectionately to express admiration and an emotional connection with a favorite member, with no negative connotation."
+  },
+  {
+    "id": 2,
+    "nome": "maknae",
+    "variacoes": ["maknae line", "golden maknae"],
+    "classe_gramatical": "noun",
+    "significado": "The youngest member of a K-pop group, usually treated with special affection by the other members and fans.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The maknae of the group did aegyo on stage and the crowd went wild.",
+    "exemplos_incorretos": [
+      "The plumber replaced the maknae that was leaking under the sink.",
+      "The office maknae is still learning the internal system.",
+      "The whole class looked after the classroom maknae, the youngest kid in the class."
+    ],
+    "significados_incorretos": [
+      "Plumbing part used to connect pipes of different diameters.",
+      "Newest employee recently hired at a company.",
+      "Youngest student in a class, treated with affection by older classmates."
+    ],
+    "impacto_motivo": "Maknae carries an affectionate tone, recognizing the youngest member of the group with care and protection from fans and groupmates."
+  },
+  {
+    "id": 3,
+    "nome": "comeback",
+    "variacoes": ["comeback stage", "comeback era"],
+    "classe_gramatical": "noun",
+    "significado": "The release of a new album or single by a group or artist, usually accompanied by a full promotional cycle with a new aesthetic and concept.",
+    "tags": ["kpop", "release", "fandom"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group confirmed their comeback for next month with a new teaser.",
+    "exemplos_incorretos": [
+      "The referee adjusted the comeback before starting the next set of the match.",
+      "After the knee injury, the athlete made a surprising comeback this season.",
+      "The team made an incredible comeback and turned the game around in the second half."
+    ],
+    "significados_incorretos": [
+      "Piece of equipment used on volleyball courts to mark the rotation order.",
+      "An athlete's return to competition after time away due to injury.",
+      "A sports team's recovery during a match in which it was losing."
+    ],
+    "impacto_motivo": "Comeback is used to celebrate a group's return with new material, building anticipation and excitement among fans."
+  },
+  {
+    "id": 4,
+    "nome": "stan",
+    "variacoes": ["stanning", "I'm a stan of"],
+    "classe_gramatical": "verb/noun",
+    "significado": "To be a dedicated fan of a group or artist, closely following their career, releases and news.",
+    "tags": ["kpop", "fandom", "everyday"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I've stanned this group since their debut, I keep up with everything they release.",
+    "exemplos_incorretos": [
+      "I bought a new stan to hold up my fern.",
+      "The doctor ordered a blood stan before clearing the surgery.",
+      "The factory installed a new stan on the conveyor belt to hold the parts."
+    ],
+    "significados_incorretos": [
+      "Type of metal support used to hold up plants in large pots.",
+      "Preliminary exam performed before routine medical procedures.",
+      "Part or support used on industrial production lines to fix components in place."
+    ],
+    "impacto_motivo": "Stan expresses dedication and enthusiastic support of an artist's career, with no negative connotation."
+  },
+  {
+    "id": 5,
+    "nome": "bias wrecker",
+    "variacoes": ["wrecker"],
+    "classe_gramatical": "expression",
+    "significado": "A member who threatens to 'steal' the spot of your favorite bias, usually by standing out unexpectedly during a comeback.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "He was never my bias, but he became my bias wrecker after this comeback.",
+    "exemplos_incorretos": [
+      "The mechanic used the bias wrecker to align the wheels of the heavy truck.",
+      "I called the bias wrecker after my car broke down in the middle of the highway.",
+      "The bias wrecker arrived quickly to tow the car that broke down on the road."
+    ],
+    "significados_incorretos": [
+      "Device used in auto repair shops to align truck wheels.",
+      "Emergency roadside assistance service called out on highways.",
+      "Tow vehicle used to haul broken-down cars."
+    ],
+    "impacto_motivo": "Bias wrecker is used humorously to describe growing admiration for another member, without diminishing the original bias."
+  },
+  {
+    "id": 6,
+    "nome": "sasaeng",
+    "variacoes": ["sasaeng fan"],
+    "classe_gramatical": "noun",
+    "significado": "An extreme, invasive fan who stalks idols and violates their privacy, a behavior condemned by the K-pop community.",
+    "tags": ["kpop", "fandom", "behavior"],
+    "permissao": "all",
+    "impacto": "negative",
+    "exemplo_correto": "That fan who found the idol's address and showed up there is a sasaeng.",
+    "exemplos_incorretos": [
+      "The store sells a really fresh sasaeng, great for wearing in the heat.",
+      "We ordered a sasaeng to start dinner at that new Korean restaurant.",
+      "The brand launched the sasaeng collection with pieces inspired by urban culture."
+    ],
+    "significados_incorretos": [
+      "Type of light fabric used in traditional Korean summer clothing.",
+      "Typical dish served as an appetizer in themed Korean restaurants.",
+      "Name of a fashion collection launched by a famous South Korean brand."
+    ],
+    "impacto_motivo": "Sasaeng describes invasive, obsessive behavior that violates idols' privacy and safety, and is condemned by the community."
+  },
+  {
+    "id": 7,
+    "nome": "ult",
+    "variacoes": ["ultimate bias", "my ult"],
+    "classe_gramatical": "noun",
+    "significado": "A fan's ultimate bias among all the groups and artists they follow, their favorite of all time.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "He's been my ult since 2018, nobody can take his spot.",
+    "exemplos_incorretos": [
+      "We reached the ult of the game and I only had to roll the final die.",
+      "The player activated the character's ult to turn the match around in the last second.",
+      "I bought the most expensive ult model in the store because it had more features."
+    ],
+    "significados_incorretos": [
+      "Term used in board games to indicate the last round of the match.",
+      "Character's most powerful special ability in a game.",
+      "Top-of-the-line, most advanced version of an electronic product."
+    ],
+    "impacto_motivo": "Ult expresses a fan's highest level of admiration for an artist, reinforcing a positive and lasting bond."
+  },
+  {
+    "id": 8,
+    "nome": "daebak",
+    "variacoes": ["daebak!"],
+    "classe_gramatical": "interjection",
+    "significado": "Expression used to wish great success for a release or to celebrate a big achievement by a group or artist.",
+    "tags": ["kpop", "praise", "fandom"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "Hoping this comeback is an absolute daebak on the charts!",
+    "exemplos_incorretos": [
+      "The folk group played the daebak during the festival performance.",
+      "He shouted daebak as soon as he won the top lottery prize.",
+      "She tried the new dish and said it was daebak because it was so tasty."
+    ],
+    "significados_incorretos": [
+      "Type of traditional percussion instrument used at Korean festivals.",
+      "Expression used in Korean gambling games to celebrate a big prize.",
+      "Generic Korean term meaning 'amazing' or 'awesome' in any context."
+    ],
+    "impacto_motivo": "Daebak is an interjection of cheering and celebration, used to wish for or celebrate great success."
+  },
+  {
+    "id": 9,
+    "nome": "line",
+    "variacoes": ["vocal line", "maknae line", "95-line"],
+    "classe_gramatical": "noun",
+    "significado": "Subgroup of idols who share a characteristic, such as role in the group (vocal, dance, rap) or birth year.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group's vocal line shined so much in this live performance.",
+    "exemplos_incorretos": [
+      "The coat has a soft line on the inside to protect from the cold.",
+      "I stood in the bank line for almost an hour waiting to be served.",
+      "The factory installed a new production line to increase productivity."
+    ],
+    "significados_incorretos": [
+      "Thin fabric piece used as an inner lining in winter coats.",
+      "Waiting queue formed at commercial establishments during peak hours.",
+      "Assembly line used in industrial factory processes."
+    ],
+    "impacto_motivo": "Line identifies subgroups within the group in a descriptive and usually complimentary way, highlighting specific skills."
+  },
+  {
+    "id": 10,
+    "nome": "all-kill",
+    "variacoes": ["got an all-kill", "perfect all-kill"],
+    "classe_gramatical": "expression",
+    "significado": "When a song reaches the top of all the major South Korean music charts at the same time, one of the biggest milestones of success in K-pop.",
+    "tags": ["kpop", "success", "music"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The song got an all-kill on all the charts as soon as it was released.",
+    "exemplos_incorretos": [
+      "The fighter landed a precise all-kill against both opponents on the mat.",
+      "The team pulled off an all-kill in the match and won without losing a single round.",
+      "The player pulled off a decisive all-kill that settled the result of the match."
+    ],
+    "significados_incorretos": [
+      "Defensive move used in martial arts to neutralize two opponents.",
+      "Strategy used in competitive video games to eliminate the entire opposing team.",
+      "Decisive play that guarantees total victory in a sports competition."
+    ],
+    "impacto_motivo": "All-kill celebrates a major commercial success and is used exclusively in a complimentary way."
+  },
+  {
+    "id": 11,
+    "nome": "selca",
+    "variacoes": ["take a selca"],
+    "classe_gramatical": "noun",
+    "significado": "Short for 'self-camera', the Korean equivalent of a selfie: a photo you take of yourself and share on social media.",
+    "tags": ["kpop", "fandom", "social-media"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The idol posted a beautiful selca before today's concert.",
+    "exemplos_incorretos": [
+      "The director of photography adjusted the selca before shooting the outdoor scene.",
+      "I bought a new selca to take on weekend trips.",
+      "The photographer changed the camera's selca before starting the shoot."
+    ],
+    "significados_incorretos": [
+      "Tripod part used to stabilize professional cameras in cinema stills.",
+      "Specific compact camera model sold in electronics stores.",
+      "Technical accessory used by professional photographers to adjust focus."
+    ],
+    "impacto_motivo": "Selca is a light, positive term, used to share spontaneous moments and bring idols and fans closer."
+  },
+  {
+    "id": 12,
+    "nome": "akgae",
+    "variacoes": ["akgae fan"],
+    "classe_gramatical": "noun",
+    "significado": "A fan who only likes one specific member of the group and ignores or even criticizes the other members.",
+    "tags": ["kpop", "fandom", "behavior"],
+    "permissao": "all",
+    "impacto": "negative",
+    "exemplo_correto": "She only talks about one member and bashes the others, she's such an akgae.",
+    "exemplos_incorretos": [
+      "The Korean restaurant serves akgae as a side dish with the barbecue.",
+      "We ordered akgae as an appetizer before the main course arrived at the table.",
+      "The store launched the akgae line of bags inspired by Korean streetwear."
+    ],
+    "significados_incorretos": [
+      "Type of spicy Korean sauce used in grilled meat dishes.",
+      "Typical dish on a Korean menu made with fermented vegetables.",
+      "Name of an accessories line launched by a Korean fashion brand."
+    ],
+    "impacto_motivo": "Akgae describes toxic behavior within the fandom, harming harmony among fans of different members."
+  },
+  {
+    "id": 13,
+    "nome": "era",
+    "variacoes": ["new era", "album era"],
+    "classe_gramatical": "noun",
+    "significado": "The period of a specific comeback, with its own aesthetic, concept and sound, which fans usually remember by the album's name.",
+    "tags": ["kpop", "fandom", "music"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I became a fan of the group during this album's era, the concept was perfect.",
+    "exemplos_incorretos": [
+      "The recipe called for one era of soy sauce to season the dish.",
+      "We live in an era of lots of digital technology and connectivity.",
+      "The era of the dinosaurs lasted millions of years, according to the teacher."
+    ],
+    "significados_incorretos": [
+      "Unit of measurement used in traditional Korean recipes for liquids.",
+      "Broad phase of technological development experienced by today's society.",
+      "Historical period of the Earth's geological evolution studied in science."
+    ],
+    "impacto_motivo": "Era is used nostalgically and positively to mark memorable moments in a group's trajectory."
+  },
+  {
+    "id": 14,
+    "nome": "concept",
+    "variacoes": ["dark concept", "cute concept"],
+    "classe_gramatical": "noun",
+    "significado": "The overall visual and sonic theme of an era, such as a dark, cute or retro concept, which defines the comeback's aesthetic.",
+    "tags": ["kpop", "fandom", "aesthetics"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This comeback has an incredible retro concept, I loved the outfits.",
+    "exemplos_incorretos": [
+      "The bride wore a hand-embroidered concept during the traditional ceremony.",
+      "The architect presented the concept for the new building for client approval.",
+      "The automaker unveiled the electric car concept at the auto show."
+    ],
+    "significados_incorretos": [
+      "Traditional clothing item worn at formal Korean weddings.",
+      "Initial proposal presented by an architect before a building is constructed.",
+      "Experimental car model presented at auto shows."
+    ],
+    "impacto_motivo": "Concept is used to praise and discuss the creative aesthetic of a comeback, with no negative connotation."
+  },
+  {
+    "id": 15,
+    "nome": "OTP",
+    "variacoes": ["ship", "my OTP"],
+    "classe_gramatical": "acronym/noun",
+    "significado": "Acronym for 'one true pairing', the pair of idols a fan most enjoys imagining or watching interact as a couple.",
+    "tags": ["kpop", "fandom", "shipping"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "These two have been my OTP since the first reality show they did together.",
+    "exemplos_incorretos": [
+      "The medicine leaflet listed the OTP recommended for adults.",
+      "I bought an OTP at the pharmacy to relieve my headache.",
+      "The mechanic replaced the car's OTP during the ten-thousand-km service."
+    ],
+    "significados_incorretos": [
+      "Acronym used on medicine leaflets to indicate the maximum daily dose.",
+      "Medication sold without a prescription at pharmacies.",
+      "Replacement part used in motor vehicles during services."
+    ],
+    "impacto_motivo": "OTP expresses fans' affection and enthusiasm for a pair of idols, within a context of recreational shipping."
+  },
+  {
+    "id": 16,
+    "nome": "netizen",
+    "variacoes": ["netizen comment"],
+    "classe_gramatical": "noun",
+    "significado": "An internet user who comments and interacts a lot with online posts, widely used in the context of reactions to K-pop news.",
+    "tags": ["kpop", "fandom", "internet"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "Netizens are already commenting a lot about the group's new music video.",
+    "exemplos_incorretos": [
+      "The city hall installed a new netizen in the central square of the neighborhood.",
+      "The netizen on the corner sells cell phones and imported accessories.",
+      "The city hall renovated the square's netizen to host free concerts."
+    ],
+    "significados_incorretos": [
+      "Type of street furniture installed in renovated public squares.",
+      "Commercial establishment specializing in a neighborhood's electronics.",
+      "Public space managed by municipal agencies for cultural events."
+    ],
+    "impacto_motivo": "Netizen is a neutral-to-positive term, used to describe active internet users without built-in judgment."
+  },
+  {
+    "id": 17,
+    "nome": "trainee",
+    "variacoes": ["become a trainee", "trainee period"],
+    "classe_gramatical": "noun",
+    "significado": "An artist in training at an agency before officially debuting, who may spend years preparing in singing, dancing and performance.",
+    "tags": ["kpop", "industry", "career"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "He was a trainee for seven years before debuting with the group.",
+    "exemplos_incorretos": [
+      "The runner put on the new trainee before starting the marathon workout.",
+      "We hired a trainee to help organize the stockroom this week.",
+      "The company trainee started the training program this week."
+    ],
+    "significados_incorretos": [
+      "Clothing item worn by athletes during endurance workouts.",
+      "Professional hired by a company to do temporary general services.",
+      "Employee in the early phase of hiring and training at a company."
+    ],
+    "impacto_motivo": "Trainee recognizes the effort and dedication of an artist in training before debut, with a tone of admiration."
+  },
+  {
+    "id": 18,
+    "nome": "debut",
+    "variacoes": ["to debut", "debut group"],
+    "classe_gramatical": "noun/verb",
+    "significado": "The official launch of a group or artist in the market, when the agency announces the members and releases the first song or album.",
+    "tags": ["kpop", "industry", "release"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group will debut next month with a special showcase.",
+    "exemplos_incorretos": [
+      "The chess player studied a classic debut before the championship started.",
+      "They made the car's debut at the city's auto show this month.",
+      "The actor made his debut in the theater play last night."
+    ],
+    "significados_incorretos": [
+      "Opening piece used in professional chess matches.",
+      "Presentation of a new vehicle at events and trade shows in the auto industry.",
+      "An actor's first official performance in a theater play."
+    ],
+    "impacto_motivo": "Debut marks a moment of celebration and achievement in an artist's or group's career."
+  },
+  {
+    "id": 19,
+    "nome": "disband",
+    "variacoes": ["disband announcement", "the group disbanded"],
+    "classe_gramatical": "noun",
+    "significado": "When a group officially breaks up and stops existing as a lineup, whether by the agency's decision or the members' own.",
+    "tags": ["kpop", "industry", "fandom"],
+    "permissao": "all",
+    "impacto": "negative",
+    "exemplo_correto": "The fans were sad about the announcement of the group's disband.",
+    "exemplos_incorretos": [
+      "She used a new disband to hold her hair back before dance class.",
+      "The company went through a disband of its internal departments this year.",
+      "The mechanic did the disband of the engine to replace the worn parts."
+    ],
+    "significados_incorretos": [
+      "Stretchy fabric piece used to hold hair back during exercise.",
+      "Reorganization of sectors within a company during a restructuring.",
+      "Process of taking mechanical parts apart carried out in repair shops."
+    ],
+    "impacto_motivo": "Disband is associated with sadness and the end of a group, creating a negative emotional impact among fans."
+  },
+  {
+    "id": 20,
+    "nome": "fancam",
+    "variacoes": ["individual fancam"],
+    "classe_gramatical": "noun",
+    "significado": "A fan-recorded video focused on a single idol during a performance, usually from the start to the end of the stage.",
+    "tags": ["kpop", "fandom", "content"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "His fancam from this performance already has millions of views.",
+    "exemplos_incorretos": [
+      "The photographer installed a new fancam to make the shoot brighter.",
+      "We installed a fancam at the front door after the burglary in the neighborhood.",
+      "The car came from the factory with a rear fancam to make maneuvering easier."
+    ],
+    "significados_incorretos": [
+      "Type of lamp used in photo studios for soft lighting.",
+      "Security camera installed at home entrances for monitoring.",
+      "Backup camera installed in vehicles to assist with parking maneuvers."
+    ],
+    "impacto_motivo": "Fancam is used to highlight and share an idol's individual performance during stages."
+  },
+  {
+    "id": 21,
+    "nome": "fanwar",
+    "variacoes": ["fan war", "fanwar broke out"],
+    "classe_gramatical": "noun",
+    "significado": "A fight between different fandoms, usually on social media, defending their favorite groups or artists.",
+    "tags": ["kpop", "fandom", "conflict"],
+    "permissao": "all",
+    "impacto": "negative",
+    "exemplo_correto": "A huge fanwar broke out on Twitter after the sales comparison.",
+    "exemplos_incorretos": [
+      "The board game included a piece called fanwar to represent the army.",
+      "The strategy game simulates a fanwar between rival medieval kingdoms.",
+      "The two brands got into a commercial fanwar to dominate the market."
+    ],
+    "significados_incorretos": [
+      "Armor piece used in medieval strategy board games.",
+      "Theme of strategy games set in the Middle Ages between kingdoms.",
+      "Fierce commercial dispute between two competing companies in the same sector."
+    ],
+    "impacto_motivo": "Fanwar describes hostile conflicts between fandoms, creating a toxic environment on social media."
+  },
+  {
+    "id": 22,
+    "nome": "ace",
+    "variacoes": ["the group's ace"],
+    "classe_gramatical": "noun",
+    "significado": "The member of the group who stands out in more than one skill at once, such as singing, dancing and stage performance.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "She's the group's ace, she excels at both singing and dancing.",
+    "exemplos_incorretos": [
+      "The technician replaced the ace on the sewing machine that had worn out.",
+      "The pilot pulled off an ace maneuver in the simulator during training.",
+      "The ace of the deck landed on the table during the last round of the game."
+    ],
+    "significados_incorretos": [
+      "Part used in industrial sewing machines to hold the fabric.",
+      "Specific maneuver practiced in aviation simulators by experienced pilots.",
+      "Highest-value card in a regular deck of playing cards."
+    ],
+    "impacto_motivo": "Ace recognizes and praises a member's versatility and talent across multiple areas."
+  },
+  {
+    "id": 23,
+    "nome": "visual",
+    "variacoes": ["group visual", "the visual"],
+    "classe_gramatical": "noun",
+    "significado": "The member recognized by the agency and fans as the group's most striking face, usually chosen for their looks.",
+    "tags": ["kpop", "fandom", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "He's the group's visual, always highlighted in teasers and album covers.",
+    "exemplos_incorretos": [
+      "The technician replaced the visual on the projector that had a scratched lens.",
+      "I liked the app's new visual after the latest update.",
+      "The store's visual looks completely different after this month's renovation."
+    ],
+    "significados_incorretos": [
+      "Technical part used in projection systems of old movie theaters.",
+      "Design or interface of an app after an update.",
+      "Renewed aesthetic appearance of a commercial establishment after a renovation."
+    ],
+    "impacto_motivo": "Visual is used to highlight and praise a member's striking looks, with no negative connotation."
+  },
+  {
+    "id": 24,
+    "nome": "leader",
+    "variacoes": ["leader-nim", "the leader"],
+    "classe_gramatical": "noun",
+    "significado": "The member designated by the agency to officially represent the group, usually the most experienced or responsible.",
+    "tags": ["kpop", "industry", "idol"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "As the leader, he always speaks first in interviews on behalf of the group.",
+    "exemplos_incorretos": [
+      "The personal trainer used the leader during the endurance workout at the gym.",
+      "I was elected leader of the school soccer team at the start of the year.",
+      "The project leader scheduled a meeting to align the next steps."
+    ],
+    "significados_incorretos": [
+      "Piece of sports equipment used in physical endurance training.",
+      "Captain elected by vote for a school sports team.",
+      "Person responsible for coordinating a work project at a company."
+    ],
+    "impacto_motivo": "Leader recognizes a member's responsibility and leadership within the group, with respect."
+  },
+  {
+    "id": 25,
+    "nome": "rookie",
+    "variacoes": ["rookie group", "rookie of the year"],
+    "classe_gramatical": "noun",
+    "significado": "A group or artist that debuted recently and is still building their place in the music industry.",
+    "tags": ["kpop", "industry", "career"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This rookie group is already having huge success in their first year.",
+    "exemplos_incorretos": [
+      "The fisherman bought a new rookie to start fishing in the river.",
+      "We hired a rookie for the intern position in the finance department.",
+      "The basketball team's rookie played really well in his season debut."
+    ],
+    "significados_incorretos": [
+      "Piece of fishing gear used by beginners in calm rivers.",
+      "Newly hired beginner employee at any company.",
+      "Newcomer player on a sports team during their first season."
+    ],
+    "impacto_motivo": "Rookie is used encouragingly to describe new groups that are building their careers."
+  },
+  {
+    "id": 26,
+    "nome": "aegyo",
+    "variacoes": ["do aegyo"],
+    "classe_gramatical": "noun",
+    "significado": "Purposely cute behavior, with a cutesy voice and exaggerated gestures, used by idols to charm fans.",
+    "tags": ["kpop", "fandom", "behavior"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "She did such cute aegyo at the fansign that the fans lost it.",
+    "exemplos_incorretos": [
+      "The saleswoman was offering fresh aegyo at the Korean market stall.",
+      "The child's aegyo lasted the whole birthday party without stopping.",
+      "The store sells a line of aegyo imported straight from South Korea."
+    ],
+    "significados_incorretos": [
+      "Type of traditional Korean sweet made with rice and honey.",
+      "Generic, spontaneous behavior of small children unrelated to performance.",
+      "Imported cosmetic product aimed at facial skin care."
+    ],
+    "impacto_motivo": "Aegyo is used to describe cute, performative behavior that fans appreciate and welcome."
+  },
+  {
+    "id": 27,
+    "nome": "sunbae",
+    "variacoes": ["sunbaenim", "sunbae-hoobae"],
+    "classe_gramatical": "noun",
+    "significado": "A more experienced artist or colleague in the industry, usually treated with respect by juniors (hoobae).",
+    "tags": ["kpop", "industry", "hierarchy"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group thanked the sunbae who helped them right after their debut.",
+    "exemplos_incorretos": [
+      "The student put on his new sunbae on the first day of school in Korea.",
+      "My sunbae at my internship taught me how to use the company system.",
+      "The volleyball team's sunbae trained the newcomers before the championship."
+    ],
+    "significados_incorretos": [
+      "Uniform piece worn by Korean high school students.",
+      "More experienced colleague in any academic or professional setting.",
+      "Veteran athlete in charge of training a sports team's newcomers."
+    ],
+    "impacto_motivo": "Sunbae expresses respect and positive hierarchy between more experienced artists and newer ones."
+  },
+  {
+    "id": 28,
+    "nome": "photocard",
+    "variacoes": ["PC", "rare photocard"],
+    "classe_gramatical": "noun",
+    "significado": "A collectible card with the photo of a specific idol, usually randomly included inside physical albums.",
+    "tags": ["kpop", "collecting", "album"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I finally got my bias's photocard after buying three albums.",
+    "exemplos_incorretos": [
+      "I lost my access photocard and had to ask the HR department for another one.",
+      "The store prints custom photocards for wedding guests.",
+      "The bank issued a new photocard along with my credit card."
+    ],
+    "significados_incorretos": [
+      "Identification piece used by employees to access restricted areas of companies.",
+      "Custom card printed to order for events and parties.",
+      "Bank card with photo ID issued together with the credit card."
+    ],
+    "impacto_motivo": "Photocard is associated with collecting and the joy of getting a rare item of one's bias."
+  },
+  {
+    "id": 29,
+    "nome": "fansign",
+    "variacoes": ["fansign event"],
+    "classe_gramatical": "noun",
+    "significado": "An event where idols meet selected fans, usually via a raffle tied to album purchases, with autographs and quick chats.",
+    "tags": ["kpop", "fandom", "event"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I won the raffle and I'm going to the group's fansign next week.",
+    "exemplos_incorretos": [
+      "The store installed a new fansign on its facade to attract attention at night.",
+      "The bookstore organized a fansign with the author for the launch of the new book.",
+      "The soccer player held a fansign with fans after the match."
+    ],
+    "significados_incorretos": [
+      "Type of illuminated sign used on Korean storefronts.",
+      "Autograph session organized by publishers at book launches.",
+      "Autograph event with athletes held right after important matches."
+    ],
+    "impacto_motivo": "Fansign is celebrated as a rare and special opportunity for direct interaction with idols."
+  },
+  {
+    "id": 30,
+    "nome": "hallyu",
+    "variacoes": ["hallyu wave", "Korean wave"],
+    "classe_gramatical": "noun",
+    "significado": "The phenomenon of the global expansion of South Korean pop culture, including music, dramas, fashion and food.",
+    "tags": ["kpop", "culture", "industry"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "Hallyu helped K-pop win fans all over the world in recent years.",
+    "exemplos_incorretos": [
+      "The meteorologist warned that the hallyu would arrive with strong winds on the coast.",
+      "The company rode the financial market hallyu and made record profits.",
+      "The river's hallyu rose a lot after last week's heavy rain."
+    ],
+    "significados_incorretos": [
+      "Term used in weather forecasts to indicate cold fronts coming from the sea.",
+      "Sudden upward trend or movement observed in the financial market.",
+      "Rise in a river's level caused by heavy rains in the region."
+    ],
+    "impacto_motivo": "Hallyu is used to proudly describe the global expansion of Korean culture."
+  },
+  {
+    "id": 31,
+    "nome": "hi-touch",
+    "variacoes": ["hi-touch event"],
+    "classe_gramatical": "noun",
+    "significado": "A quick moment of hand contact between idols and fans, usually at the end of a fansign or fan meeting.",
+    "tags": ["kpop", "fandom", "event"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "At the hi-touch, he smiled and held my hand for a whole second.",
+    "exemplos_incorretos": [
+      "The electrician did the hi-touch wrong and the breaker tripped right away.",
+      "I had to repeat the sensor's hi-touch to turn on the hallway light.",
+      "The technician adjusted the screen's hi-touch to make it more touch-sensitive."
+    ],
+    "significados_incorretos": [
+      "Poorly made electrical connection that causes a short circuit in home installations.",
+      "Presence sensor used to automatically turn on lights in hallways.",
+      "Sensitivity adjustment on touchscreens of phones and tablets."
+    ],
+    "impacto_motivo": "Hi-touch is celebrated as a moment of close and exciting contact between fan and idol."
+  },
+  {
+    "id": 32,
+    "nome": "daesang",
+    "variacoes": ["daesang award", "win the daesang"],
+    "classe_gramatical": "noun",
+    "significado": "The most important award given at a music awards show, recognizing the best artist or album of the year.",
+    "tags": ["kpop", "awards", "industry"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group finally won the album of the year daesang at this awards show.",
+    "exemplos_incorretos": [
+      "I bought a new daesang to store my tools in the garage.",
+      "The restaurant's daesang came with a variety of traditional Korean dishes.",
+      "The bakery launched a special end-of-year daesang with different flavors."
+    ],
+    "significados_incorretos": [
+      "Type of cabinet used to organize tools in garages.",
+      "Combo dish served at Korean restaurants with several portions.",
+      "Seasonal product launched by bakeries during holiday periods."
+    ],
+    "impacto_motivo": "Daesang represents the highest recognition of an artist's career, a source of pride and celebration."
+  },
+  {
+    "id": 33,
+    "nome": "bonsang",
+    "variacoes": ["bonsang award"],
+    "classe_gramatical": "noun",
+    "significado": "A main award given to several standout artists at a music awards show, a category below the daesang.",
+    "tags": ["kpop", "awards", "industry"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group won the bonsang in their first year of career, a huge achievement.",
+    "exemplos_incorretos": [
+      "The teacher handed out the participation bonsang to the whole class.",
+      "The school created the outstanding student bonsang of the semester.",
+      "I got a bonsang at work for my good performance this quarter."
+    ],
+    "significados_incorretos": [
+      "Symbolic participation certificate given at school events.",
+      "Internal recognition given to employees for hitting targets.",
+      "Informal prize given by teachers to standout students."
+    ],
+    "impacto_motivo": "Bonsang celebrates the music industry's recognition of an artist's work, creating pride among fans."
+  },
+  {
+    "id": 34,
+    "nome": "cypher",
+    "variacoes": ["do a cypher"],
+    "classe_gramatical": "noun",
+    "significado": "An improvised or choreographed rap performance, usually gathering the group's rappers for a standout verse of their own.",
+    "tags": ["kpop", "music", "rap"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The rap line's cypher was the highlight of the showcase.",
+    "exemplos_incorretos": [
+      "The programmer used a cypher to encrypt the system password.",
+      "The recipe called for a cypher of fresh herbs to season the fish.",
+      "The math teacher explained the cypher used in classical cryptography."
+    ],
+    "significados_incorretos": [
+      "Algorithm used to encrypt data in security systems.",
+      "Mix of fresh seasonings used in cooking recipes.",
+      "Historical message-encoding method studied in cryptography."
+    ],
+    "impacto_motivo": "Cypher is celebrated as a moment of technical and artistic highlight for the group's rappers."
+  },
+  {
+    "id": 35,
+    "nome": "sub-unit",
+    "variacoes": ["subunit"],
+    "classe_gramatical": "noun",
+    "significado": "A small group formed by some members of a larger group, usually to explore a different sound or concept.",
+    "tags": ["kpop", "industry", "music"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The sub-unit released a mini album very different from the group's main sound.",
+    "exemplos_incorretos": [
+      "The condo divided the building into sub-units to make administration easier.",
+      "The company created a financial sub-unit to handle only investments.",
+      "The army organized a special sub-unit for that day's operation."
+    ],
+    "significados_incorretos": [
+      "Administrative division used in condos to organize blocks and towers.",
+      "Specific department created within a company for an isolated function.",
+      "Small military group assigned to a specific mission."
+    ],
+    "impacto_motivo": "Sub-unit is seen positively by fans for bringing out new artistic facets of the members."
+  },
+  {
+    "id": 36,
+    "nome": "lightstick",
+    "variacoes": ["bong", "bring the lightstick"],
+    "classe_gramatical": "noun",
+    "significado": "The fandom's official light-up object, lit during concerts to form a sea of lights in honor of the group.",
+    "tags": ["kpop", "fandom", "concert"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The whole stadium glowed when everyone raised their lightstick at the encore.",
+    "exemplos_incorretos": [
+      "The electrician replaced the burned-out lightstick on the street pole.",
+      "I bought a lightstick to use during the power outage at home.",
+      "The camping kit came with a lightstick to make night hikes easier."
+    ],
+    "significados_incorretos": [
+      "Lamp used on street poles for urban public lighting.",
+      "Portable flashlight used in emergencies at home during power outages.",
+      "Camping equipment used to light trails at night."
+    ],
+    "impacto_motivo": "The lightstick symbolizes the unity and affection of the fandom for the group during concerts."
+  },
+  {
+    "id": 37,
+    "nome": "random play dance",
+    "variacoes": ["RPD", "kpop random dance"],
+    "classe_gramatical": "expression",
+    "significado": "An event or game where K-pop songs play at random and participants dance to the matching choreography.",
+    "tags": ["kpop", "fandom", "dance"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "We went to the random play dance downtown and danced to about twenty songs.",
+    "exemplos_incorretos": [
+      "The DJ organized an electronic music random play dance at the club yesterday.",
+      "The gym offers random play dance classes as a generic cardio workout.",
+      "The physical education teacher proposed a random play dance in today's class."
+    ],
+    "significados_incorretos": [
+      "Aerobic dance class modality offered at regular gyms.",
+      "Recreational free-dance activity used in physical education classes.",
+      "Random sequence of electronic songs played at night parties."
+    ],
+    "impacto_motivo": "Random play dance is a fun, communal activity that strengthens the connection between fans."
+  },
+  {
+    "id": 38,
+    "nome": "fanchant",
+    "variacoes": ["shout the fanchant"],
+    "classe_gramatical": "noun",
+    "significado": "A sequence of shouts of the members' names, chanted by fans in unison during songs at concerts.",
+    "tags": ["kpop", "fandom", "concert"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The fanchant echoed through the entire stadium as soon as the song started.",
+    "exemplos_incorretos": [
+      "The organized supporter rehearsed a new fanchant for the weekend game.",
+      "The fans created a fanchant to taunt the opposing team at the stadium.",
+      "The group of supporters recorded a video teaching the club's fanchant."
+    ],
+    "significados_incorretos": [
+      "War cry used by organized supporter groups of soccer teams.",
+      "Chant sung by fans to support the team during matches.",
+      "Sequence of phrases created by supporters to taunt opponents."
+    ],
+    "impacto_motivo": "The fanchant strengthens the collective energy and sense of belonging of the fandom during concerts."
+  },
+  {
+    "id": 39,
+    "nome": "title track",
+    "variacoes": ["title song", "focus track"],
+    "classe_gramatical": "noun",
+    "significado": "The main song of an album, chosen by the agency to officially represent the comeback.",
+    "tags": ["kpop", "music", "album"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This album's title track has already become a hit on Korean radio.",
+    "exemplos_incorretos": [
+      "The documentary opens with a title track that sums up the whole story.",
+      "The movie soundtrack featured a memorable title track in the final scene.",
+      "The video game has a title track playing on the main menu screen."
+    ],
+    "significados_incorretos": [
+      "Opening song used in documentaries to introduce the theme.",
+      "Memorable soundtrack piece used in a movie's closing scene.",
+      "Theme song that plays on a video game's title screen."
+    ],
+    "impacto_motivo": "Title track is celebrated as the flagship of the comeback, building positive anticipation among fans."
+  },
+  {
+    "id": 40,
+    "nome": "B-side",
+    "variacoes": ["B-side track", "favorite B-side"],
+    "classe_gramatical": "noun",
+    "significado": "An album track that wasn't chosen as the title track but often becomes a favorite of the most dedicated fans.",
+    "tags": ["kpop", "music", "album"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This B-side is even better than the title track, in my opinion.",
+    "exemplos_incorretos": [
+      "The vinyl record had a rare B-side that greatly increased the collection's value.",
+      "The label reissued the classic B-side from that 80s artist.",
+      "The collector was looking for the single's original B-side on vinyl."
+    ],
+    "significados_incorretos": [
+      "Reverse side of a vinyl record, usually with lesser-known tracks.",
+      "Bonus track included in reissues of old albums.",
+      "Rare version of a single sought by vinyl collectors."
+    ],
+    "impacto_motivo": "B-side is valued by fans as a special discovery within the album, creating extra affection."
+  },
+  {
+    "id": 41,
+    "nome": "unboxing",
+    "variacoes": ["album unboxing"],
+    "classe_gramatical": "noun",
+    "significado": "A video or moment where a fan opens a new physical album, showing the contents and their reaction in real time.",
+    "tags": ["kpop", "fandom", "album"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did an unboxing of the new album and recorded my reaction to seeing the photocard.",
+    "exemplos_incorretos": [
+      "The employee did the unboxing of the new equipment that arrived at the warehouse.",
+      "The tech channel posted the unboxing of the phone released this week.",
+      "The store filmed the unboxing of the newly arrived products for promotion."
+    ],
+    "significados_incorretos": [
+      "Process of checking goods newly arrived at a warehouse.",
+      "Initial review video of electronic products made by tech channels.",
+      "Promotion of new products done by stores on social media."
+    ],
+    "impacto_motivo": "Unboxing is a moment of anticipation and joy shared among fans when opening physical albums."
+  },
+  {
+    "id": 42,
+    "nome": "photobook",
+    "variacoes": ["album photobook"],
+    "classe_gramatical": "noun",
+    "significado": "A photo book included in the physical album, with photo shoots of the members tied to the comeback's concept.",
+    "tags": ["kpop", "album", "collecting"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This album's photobook turned out beautiful, the photos match the concept so well.",
+    "exemplos_incorretos": [
+      "The publisher launched a custom wedding photobook for the couple.",
+      "The photographer delivered the maternity shoot photobook this week.",
+      "The print shop prints photobooks to order for graduations and birthdays."
+    ],
+    "significados_incorretos": [
+      "Custom photo album made to order for weddings.",
+      "Photo book produced by photographers for personal and family shoots.",
+      "Printed product made to order for commemorative events."
+    ],
+    "impacto_motivo": "The photobook is valued by fans as a collectible item that brings them closer to the comeback's aesthetic."
+  },
+  {
+    "id": 43,
+    "nome": "encore",
+    "variacoes": ["ask for an encore", "encore stage"],
+    "classe_gramatical": "noun",
+    "significado": "A return to the stage at the end of a concert, usually requested by fans, for extra performances or a special goodbye.",
+    "tags": ["kpop", "concert", "fandom"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The audience screamed so loud that the group came back for the encore with two more songs.",
+    "exemplos_incorretos": [
+      "The conductor did a surprise encore after the orchestra's applause.",
+      "The rock band played a classic encore at the end of last night's show.",
+      "The pianist returned for the encore after the audience's standing ovation."
+    ],
+    "significados_incorretos": [
+      "Return to the stage requested by the audience at classical music concerts.",
+      "Extra performance given by rock bands at the end of shows.",
+      "Moment when a solo artist comes back after intense applause."
+    ],
+    "impacto_motivo": "The encore is an emotional moment that marks the final connection between the group and fans at the concert."
+  },
+  {
+    "id": 44,
+    "nome": "music show win",
+    "variacoes": ["first win", "getting a win"],
+    "classe_gramatical": "expression",
+    "significado": "A song's victory on a weekly Korean music show, one of the main indicators of a comeback's popularity.",
+    "tags": ["kpop", "music", "success"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The group celebrated a lot when they got their first music show win of their career.",
+    "exemplos_incorretos": [
+      "The host announced the wrong music show win during the live recording.",
+      "The local radio created a music show win to pick the month's most requested song.",
+      "The daytime TV show ran a music show win among the audience members."
+    ],
+    "significados_incorretos": [
+      "Poll used by local radio stations to pick the month's most played song.",
+      "Broadcast error that happens during live show recordings.",
+      "Audience game used on generic TV shows."
+    ],
+    "impacto_motivo": "Music show win is celebrated as a concrete achievement of popularity and comeback success."
+  },
+  {
+    "id": 45,
+    "nome": "world tour",
+    "variacoes": ["global tour"],
+    "classe_gramatical": "noun",
+    "significado": "A series of concerts performed by the group in different countries, allowing direct contact with international fans.",
+    "tags": ["kpop", "concert", "fandom"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I got a ticket for the world tour and I'll finally see the group live.",
+    "exemplos_incorretos": [
+      "The symphony orchestra announced a farewell world tour for the conductor.",
+      "The classic rock band confirmed a world tour after twenty years of inactivity.",
+      "The international circus organized a world tour across several continents."
+    ],
+    "significados_incorretos": [
+      "Series of farewell performances by a symphony orchestra.",
+      "Comeback tour of a rock band after a long hiatus.",
+      "Series of performances by an international circus in different countries."
+    ],
+    "impacto_motivo": "The world tour is eagerly awaited by fans because it allows in-person contact with the group."
+  },
+  {
+    "id": 46,
+    "nome": "fan meeting",
+    "variacoes": ["fanmeeting"],
+    "classe_gramatical": "noun",
+    "significado": "An official event where idols interact directly with a large group of fans through games, conversations and performances.",
+    "tags": ["kpop", "fandom", "event"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The fan meeting had super fun games and the group sang acoustic songs.",
+    "exemplos_incorretos": [
+      "The school organized a fan meeting between students and graduated alumni.",
+      "The chess club held a fan meeting among players from the region.",
+      "The company held a fan meeting among employees from different branches."
+    ],
+    "significados_incorretos": [
+      "Meetup promoted by schools between current students and alumni.",
+      "Gathering organized by hobby clubs among members of the same region.",
+      "Internal get-together organized by companies between different teams."
+    ],
+    "impacto_motivo": "The fan meeting is celebrated as a unique and special opportunity for close interaction with idols."
+  },
+  {
+    "id": 47,
+    "nome": "concept photo",
+    "variacoes": ["teaser photo"],
+    "classe_gramatical": "noun",
+    "significado": "An official photo released before the comeback, revealing the visual aesthetic of the group's new era.",
+    "tags": ["kpop", "fandom", "aesthetics"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This comeback's concept photos already have fans anxious for the album.",
+    "exemplos_incorretos": [
+      "The fashion photographer organized a concept photo for the month's magazine.",
+      "The advertising agency produced a concept photo for the summer campaign.",
+      "The studio did a themed concept photo for the brand's catalog."
+    ],
+    "significados_incorretos": [
+      "Themed photo shoot produced by fashion magazines.",
+      "Image produced by advertising agencies for seasonal campaigns.",
+      "Themed photograph used in clothing brand catalogs."
+    ],
+    "impacto_motivo": "Concept photo builds positive anticipation by gradually revealing the aesthetic of the new comeback."
+  },
+  {
+    "id": 48,
+    "nome": "teaser",
+    "variacoes": ["teaser image", "teaser video"],
+    "classe_gramatical": "noun",
+    "significado": "Short content released before a comeback to build anticipation, which can be a photo, video or song snippet.",
+    "tags": ["kpop", "release", "fandom"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The MV teaser already showed a little bit of the new choreography.",
+    "exemplos_incorretos": [
+      "The movie theater released the film's teaser almost a year before its premiere.",
+      "The production company released the new series' teaser on social media.",
+      "The video game company released a surprise teaser during the company event."
+    ],
+    "significados_incorretos": [
+      "Short preview released before movies premiere in theaters.",
+      "Promotional content released before TV series launch.",
+      "Short video used by game companies to announce upcoming releases."
+    ],
+    "impacto_motivo": "The teaser is welcomed with excitement by fans for previewing details of the comeback."
+  },
+  {
+    "id": 49,
+    "nome": "showcase",
+    "variacoes": ["debut showcase", "online showcase"],
+    "classe_gramatical": "noun",
+    "significado": "An official album presentation event, usually with live performance and an interview right after the release.",
+    "tags": ["kpop", "event", "release"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "The debut showcase had the new group's first live performance.",
+    "exemplos_incorretos": [
+      "The automaker organized a showcase to reveal the new electric car.",
+      "The fashion brand held a showcase during the city's fashion week.",
+      "The tech company held a showcase to launch the new product."
+    ],
+    "significados_incorretos": [
+      "Presentation event used by automakers to reveal new vehicles.",
+      "Presentation show held during fashion weeks.",
+      "Corporate event used by tech companies to launch products."
+    ],
+    "impacto_motivo": "The showcase marks a debut moment celebrated by fans, full of positive anticipation."
+  },
+  {
+    "id": 50,
+    "nome": "goods",
+    "variacoes": ["MD", "official goods"],
+    "classe_gramatical": "noun",
+    "significado": "Official licensed products of a group, such as T-shirts, keychains, posters and other collectible items.",
+    "tags": ["kpop", "collecting", "fandom"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I bought some new goods from the group at the official store during the tour.",
+    "exemplos_incorretos": [
+      "The supermarket put the perishable goods on sale this week.",
+      "The factory reviewed the stored goods before the monthly inventory.",
+      "The carrier delivered the imported goods straight at the port."
+    ],
+    "significados_incorretos": [
+      "Generic term used to refer to perishable merchandise.",
+      "Merchandise stored in stock awaiting inventory at a factory.",
+      "Imported products transported and delivered by logistics companies."
+    ],
+    "impacto_motivo": "Goods are valued by fans as a way to support the group and express their affection for the fandom."
+  }
+]
