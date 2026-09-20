@@ -1,0 +1,948 @@
+[
+  {
+    "id": 1,
+    "nome": "ate",
+    "variacoes": ["ate that", "ate and left no crumbs"],
+    "classe_gramatical": "verb",
+    "significado": "To crush it, give an excellent response, or come out on top in a conversation in an undeniable way.",
+    "tags": ["Pop", "Social media", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She ate during the project presentation with flawless arguments.",
+    "exemplos_incorretos": [
+      "I'm going to ate a ham sandwich for lunch.",
+      "I need to ate the front door with the new key.",
+      "The sky is going to ate heavy rain tonight."
+    ],
+    "significados_incorretos": [
+      "Sealing a plastic package with tape.",
+      "Painting an entire wall blue.",
+      "Writing a long science fiction novel."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 2,
+    "nome": "slay",
+    "variacoes": ["slayed", "slaying"],
+    "classe_gramatical": "interjection",
+    "significado": "An expression used to praise or approve when someone nails a look, style, or performance.",
+    "tags": ["Pop", "Social media", "Makeup"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "That new dress looked amazing on you, slay!",
+    "exemplos_incorretos": [
+      "I'm going to eat a slay of cheese at the bakery.",
+      "My dog likes to slay in the backyard.",
+      "I bought a very powerful slay for the computer."
+    ],
+    "significados_incorretos": [
+      "A very fast sports car model.",
+      "A furry domestic cat breed.",
+      "A type of men's haircut."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 3,
+    "nome": "cringe",
+    "variacoes": ["cringy", "cringed"],
+    "classe_gramatical": "adjective",
+    "significado": "Something considered embarrassing, tacky, outdated, or awkward.",
+    "tags": ["Social media", "Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "I found it really cringe how he tried to make a joke in the serious meeting.",
+    "exemplos_incorretos": [
+      "I bought a new cringe for my room.",
+      "I'm going to cook a delicious cringe for dinner.",
+      "The blue sky is very cringe this morning."
+    ],
+    "significados_incorretos": [
+      "A sweet made of strawberry and chocolate.",
+      "A heavy construction tool.",
+      "A wild animal native to Africa."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 4,
+    "nome": "flop",
+    "variacoes": ["flopped", "flopping"],
+    "classe_gramatical": "verb",
+    "significado": "To fail, not achieve the expected success, or get low engagement on social media.",
+    "tags": ["Social media", "Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "The video I posted last night just flopped and got no likes.",
+    "exemplos_incorretos": [
+      "I'm going to flop a carrot cake in the oven.",
+      "The neighbor's dog won't stop flopping at the gate.",
+      "I bought a new tire to flop my car."
+    ],
+    "significados_incorretos": [
+      "Making sweet pancakes for breakfast.",
+      "Swimming in the open sea during summer.",
+      "Cleaning the house using lots of water and soap."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 5,
+    "nome": "preach",
+    "variacoes": ["preached", "preaching"],
+    "classe_gramatical": "verb",
+    "significado": "To say truths firmly and directly, with no beating around the bush, or to state an undeniable opinion.",
+    "tags": ["Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She grabbed the mic and started to preach every truth right to his face.",
+    "exemplos_incorretos": [
+      "I'm going to buy a fresh preach at the farmers market.",
+      "My cat loves to preach when it sees a little bird.",
+      "I need to preach the living room floor before the guests arrive."
+    ],
+    "significados_incorretos": [
+      "Eating too many sweets late at night.",
+      "Sleeping the whole afternoon on the couch.",
+      "Riding a bike really fast."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 6,
+    "nome": "delulu",
+    "variacoes": ["delusional", "delulu era"],
+    "classe_gramatical": "adjective",
+    "significado": "A person who is extremely deluded or creates unrealistic romantic or fan fantasies in their own head.",
+    "tags": ["Relationships", "Kpop", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "depends on context",
+    "exemplo_correto": "She's so delulu thinking the movie actor is going to reply to her message.",
+    "exemplos_incorretos": [
+      "I'm going to eat a really tasty delulu for dessert.",
+      "The weather is pretty delulu today with this strong sun.",
+      "I bought a delulu car that goes really fast on the highway."
+    ],
+    "significados_incorretos": [
+      "A type of traditional Arab sweet.",
+      "A brand of gentle baby shampoo.",
+      "A species of deep-sea fish."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 7,
+    "nome": "ship",
+    "variacoes": ["shipping", "shipped"],
+    "classe_gramatical": "verb",
+    "significado": "To root for the romantic union of two people, whether real, celebrities, or fictional characters.",
+    "tags": ["Relationships", "Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "I can't help it, I started to ship the two leads of the new series so hard.",
+    "exemplos_incorretos": [
+      "I'm going to ship a box of fruit at the supermarket.",
+      "The sky is going to ship a lot of ice tonight before dawn.",
+      "I need to ship my dog in the backyard."
+    ],
+    "significados_incorretos": [
+      "Sending a large package through international mail.",
+      "Peeling potatoes to make mashed potatoes.",
+      "Cutting paper with dull scissors."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 8,
+    "nome": "gagged",
+    "variacoes": ["gag", "so gagged"],
+    "classe_gramatical": "adjective",
+    "significado": "To be in shock, extremely stunned, or speechless in front of a flawless look or surprising news.",
+    "tags": ["Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "When she walked into the party in that sparkly dress, I was completely gagged.",
+    "exemplos_incorretos": [
+      "I'm going to paint my house gagged today.",
+      "My kitten won't stop doing gagged on the couch.",
+      "I bought a wrapped gagged as a Christmas present."
+    ],
+    "significados_incorretos": [
+      "A tool used to dig holes.",
+      "A dangerous choking incident with a piece of hard food.",
+      "A chew toy for small animals."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 9,
+    "nome": "mic drop",
+    "variacoes": ["dropped the mic", "iconic mic drop"],
+    "classe_gramatical": "noun",
+    "significado": "The perfect comeback or brilliant move that closes a discussion in a memorable way.",
+    "tags": ["Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "The speech she gave at the end of the meeting was a real mic drop.",
+    "exemplos_incorretos": [
+      "I'm going to eat a chocolate mic drop after lunch.",
+      "The storm gave a loud mic drop on the roof.",
+      "I bought a motorized mic drop to ride on the beach."
+    ],
+    "significados_incorretos": [
+      "The metal piece that opens aluminum cans.",
+      "A clear liquid glue for crafts.",
+      "A thick fabric used to make rugs."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 10,
+    "nome": "aesthetic",
+    "variacoes": ["aesthetics"],
+    "classe_gramatical": "noun",
+    "significado": "A harmonious, curated, visually pleasing look or style on social media.",
+    "tags": ["Makeup", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "The way she set up her desk has such an aesthetic and relaxing vibe.",
+    "exemplos_incorretos": [
+      "I made an aesthetic plate mixing beans, rice, and pasta.",
+      "My car broke down in a really aesthetic way on the highway.",
+      "The neighbor's dog is a rare pure aesthetic breed."
+    ],
+    "significados_incorretos": [
+      "A pill medication to cure stomachache.",
+      "An extreme sport practiced in high mountains.",
+      "A waterproof synthetic fabric for camping tents."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 11,
+    "nome": "baddie",
+    "variacoes": ["baddies"],
+    "classe_gramatical": "noun",
+    "significado": "A style or person who exudes confidence, striking beauty, and a lot of attitude in clothes and makeup.",
+    "tags": ["Makeup", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She put on leather boots and sunglasses and instantly turned into a baddie.",
+    "exemplos_incorretos": [
+      "I'm going to baddie my bedroom wall yellow tomorrow.",
+      "I bought a baddie remote control for my nephew.",
+      "The weather in the city is super baddie cold today."
+    ],
+    "significados_incorretos": [
+      "A villain from a classic horror movie.",
+      "A poisonous insect found in the Amazon rainforest.",
+      "A type of savory pastry sold at bakeries."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 12,
+    "nome": "drop",
+    "variacoes": ["dropped", "dropping"],
+    "classe_gramatical": "verb",
+    "significado": "To abandon or give up on something like shows and songs, or to release a new product on the market.",
+    "tags": ["Pop", "Geek", "Social media", "Games"],
+    "permissao": "everyone",
+    "impacto": "depends on context",
+    "exemplo_correto": "The show got really boring in the second season, so I decided to drop it for good.",
+    "exemplos_incorretos": [
+      "I'm going to drop a nice cold orange juice right now.",
+      "The dog really likes to drop the ball in the backyard.",
+      "Tomorrow the sun is going to drop really hot on the beach."
+    ],
+    "significados_incorretos": [
+      "Pouring a drop of medicine into dry eyes.",
+      "Kicking a soccer ball over the goal.",
+      "Sleeping deeply after a long day of work."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 13,
+    "nome": "fanfic",
+    "variacoes": ["fic", "fanfic writer"],
+    "classe_gramatical": "noun",
+    "significado": "A made-up story, rumor, dramatic exaggeration, or romantic fantasy created in someone's head.",
+    "tags": ["Relationships", "Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "depends on context",
+    "exemplo_correto": "They never actually dated in real life, this whole thing is just a big fanfic.",
+    "exemplos_incorretos": [
+      "I'm going to cook a fanfic for Sunday family lunch.",
+      "I bought a new sports fanfic to play basketball.",
+      "The starry sky is very fanfic to look at tonight."
+    ],
+    "significados_incorretos": [
+      "An electronic device used to ventilate a hot room.",
+      "An authenticity seal placed on notary documents.",
+      "A small migratory bird that is blue."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 14,
+    "nome": "lowkey",
+    "variacoes": ["low-key"],
+    "classe_gramatical": "adverb",
+    "significado": "In a discreet, contained, secretive, or moderate way.",
+    "tags": ["Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "I'm lowkey obsessed with that new song, but I didn't tell anyone.",
+    "exemplos_incorretos": [
+      "The sports car I bought is extremely lowkey and loud.",
+      "I'm going to have a giant lowkey feast with dozens of guests.",
+      "The lightning storm outside is lowkey destructive."
+    ],
+    "significados_incorretos": [
+      "A small key used to open locked personal diaries.",
+      "A type of very slow musical rhythm played on pianos.",
+      "The lowest brightness setting on a smartphone."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 15,
+    "nome": "highkey",
+    "variacoes": ["high-key"],
+    "classe_gramatical": "adverb",
+    "significado": "In an open, clear way, without hiding anything, or with a lot of intensity.",
+    "tags": ["Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "I'm highkey obsessed with the singer's new album, I can't stop playing it at full volume.",
+    "exemplos_incorretos": [
+      "I bought a highkey secret and hid it at the bottom of a locked drawer.",
+      "I'm going to whisper really highkey so no one hears what I'm saying.",
+      "The turtle walks highkey across the fine sand of the deserted beach."
+    ],
+    "significados_incorretos": [
+      "A photographic style that uses a lot of bright artificial lighting.",
+      "A giant key used as door decoration.",
+      "A type of tall, formal hat worn at luxurious weddings."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 16,
+    "nome": "blow up",
+    "variacoes": ["blew up", "blowing up"],
+    "classe_gramatical": "verb",
+    "significado": "To become a huge success, go viral, or gain massive popularity quickly.",
+    "tags": ["Pop", "Social media", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Her new song just blew up and is already number one on the global charts.",
+    "exemplos_incorretos": [
+      "I'm going to blow up a nail into the living room wall.",
+      "The cat likes to blow up its paw in the bowl of dry food.",
+      "I need to blow up the red emergency button on the stopped elevator."
+    ],
+    "significados_incorretos": [
+      "Hitting an object violently with a hammer.",
+      "Dancing clumsily in a crowded club.",
+      "Typing a long text quickly on a computer keyboard."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 17,
+    "nome": "thirst trap",
+    "variacoes": ["thirst trapping", "thirst-trapped"],
+    "classe_gramatical": "noun",
+    "significado": "Seeking attention, compliments, or likes on social media through posts that show off one's own appearance.",
+    "tags": ["Social media", "Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "She posted that gorgeous mirror selfie at the gym just to thirst trap a little in the comments.",
+    "exemplos_incorretos": [
+      "I'm going to thirst trap a delicious, soft chocolate cake this weekend.",
+      "My dad's car needs to thirst trap its old engine at the mechanic's shop.",
+      "The dark clouds are going to thirst trap heavy hail in the afternoon."
+    ],
+    "significados_incorretos": [
+      "Baking small, dry, crunchy cookies in a wood-fired oven.",
+      "Riding a bike slowly through the city's tree-lined parks.",
+      "Sleeping on cold tile floors during hot summer days."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 18,
+    "nome": "cooked",
+    "variacoes": ["cooked him", "got cooked"],
+    "classe_gramatical": "verb",
+    "significado": "Said when someone shuts down another's criticism or arguments with absolute mastery in a discussion.",
+    "tags": ["Social media", "Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Wow, he went in there and just cooked the hater with facts and arguments that left no doubt.",
+    "exemplos_incorretos": [
+      "He cooked his phone screen by dropping it from the glass table.",
+      "I'm going to cook my new yellow blouse in the dark back of the closet.",
+      "The rain cooked the house roof and broke several clay tiles."
+    ],
+    "significados_incorretos": [
+      "Eating a very heavy, greasy meal right before bed.",
+      "Sleeping deeply after eating at the corner restaurant.",
+      "The act of feeding a stray, hungry animal on an empty street."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 19,
+    "nome": "served",
+    "variacoes": ["serving", "served it all"],
+    "classe_gramatical": "verb",
+    "significado": "To deliver an excellent performance, flawless look, or an attitude worthy of applause.",
+    "tags": ["Pop", "Social media", "Makeup"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She got on stage in that stunning outfit and simply served everything the fans wanted.",
+    "exemplos_incorretos": [
+      "She served the volleyball to the opposing team on the concrete court.",
+      "The bricklayer served the cement brick to build the backyard wall.",
+      "The broken faucet served a lot of cold water onto the clean kitchen floor."
+    ],
+    "significados_incorretos": [
+      "Pouring cold juice or soda into a small glass cup.",
+      "Working hard as a waiter at an expensive luxury restaurant.",
+      "Doing mandatory military service in the army for many years."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 20,
+    "nome": "werk",
+    "variacoes": ["werking", "werked"],
+    "classe_gramatical": "verb",
+    "significado": "To crush it, stand out in a glamorous way, or act with great confidence and shine.",
+    "tags": ["Pop", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She did her hair, put on makeup, and went to the party ready to werk it all night long.",
+    "exemplos_incorretos": [
+      "I'm going to werk my bedroom wall with white paint and a foam roller.",
+      "My parrot won't stop werking in its cage asking for sunflower seeds.",
+      "Tomorrow I need to werk through all the household bills on the living room table."
+    ],
+    "significados_incorretos": [
+      "Diving deep into a crystal-clear pool.",
+      "Walking barefoot on the green grass of a huge blooming garden.",
+      "Singing classic opera in a grand old theater."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 21,
+    "nome": "iconic",
+    "variacoes": [],
+    "classe_gramatical": "adjective",
+    "significado": "Something extremely memorable, striking, historic, or emblematic in the entertainment world.",
+    "tags": ["Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "That dance performance of hers at the music awards was a totally iconic pop culture moment.",
+    "exemplos_incorretos": [
+      "I made an iconic dish of plain beans for tonight's home dinner.",
+      "I bought an iconic metal to hang the frame on the white wall.",
+      "The weather is super iconic with this dark, scary thunderstorm."
+    ],
+    "significados_incorretos": [
+      "A small clickable computer symbol shown on digital screens.",
+      "A religious statue carved in gold inside an ancient church.",
+      "A rare, valuable coin collected by numismatists."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 22,
+    "nome": "stan",
+    "variacoes": ["stanning", "stan account"],
+    "classe_gramatical": "noun",
+    "significado": "An obsessive fan, extremely dedicated or fervent about an artist, celebrity, or group.",
+    "tags": ["Pop", "Kpop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "As a true stan of the band, I bought all the physical albums and waited in line for hours for the show.",
+    "exemplos_incorretos": [
+      "I ate a really tasty stan sandwich with fries and a drink.",
+      "The blue sky is going to stan a nice hailstorm tonight.",
+      "I'm going to stan my new house with blue furniture and decorative frames."
+    ],
+    "significados_incorretos": [
+      "A common short male nickname used in English-speaking countries.",
+      "A small, sturdy wooden stand used to hold sheet music at concerts.",
+      "A stubborn dirt stain that's hard to remove from fine white fabrics."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 23,
+    "nome": "fandom",
+    "variacoes": ["fandoms"],
+    "classe_gramatical": "noun",
+    "significado": "A community or group of fans extremely dedicated to an artist, show, movie, or character.",
+    "tags": ["Pop", "Kpop", "Geek"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "That pop singer's fandom is so strong they pushed ten hashtags to trending topics today.",
+    "exemplos_incorretos": [
+      "I'm going to cook a big fandom dish with vegetables in melted butter.",
+      "My dad's broken-down fandom has been sitting at the mechanic's shop since yesterday afternoon.",
+      "I bought a new, soft, fluffy fandom to sleep comfortably at night."
+    ],
+    "significados_incorretos": [
+      "A type of friendly ghost portrayed in illustrated children's comics.",
+      "A big outdoor farmers market focused on organic products.",
+      "A large, loud wind instrument used in marching bands."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 24,
+    "nome": "comeback",
+    "variacoes": ["comebacks"],
+    "classe_gramatical": "noun",
+    "significado": "The triumphant return of an artist or musical group after a period of inactivity or hiatus.",
+    "tags": ["Pop", "Kpop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "After two years without new music, the girl group announced an incredible comeback for this summer.",
+    "exemplos_incorretos": [
+      "I'm going to order a double-cheese comeback at the diner on the corner tomorrow.",
+      "I bought a shiny black comeback-style shoe to wear at graduation.",
+      "The rain cloud is going to give a heavy comeback on the neighborhood roof soon."
+    ],
+    "significados_incorretos": [
+      "An exercise movement focused exclusively on strengthening the wide back muscles.",
+      "A children's back-and-forth game played with balls tied to elastic cords.",
+      "A haircut style that pulls the hair fully back using hair gel."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 25,
+    "nome": "trend",
+    "variacoes": ["trends", "trending"],
+    "classe_gramatical": "noun",
+    "significado": "The current thing, a video format, audio, or behavior widely reproduced on social media.",
+    "tags": ["Social media", "Pop", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "I filmed that hard dance that's popular right now because it's the biggest trend on the app at the moment.",
+    "exemplos_incorretos": [
+      "I caught the eight a.m. trend to get to my job far away downtown.",
+      "I made a really tasty, spicy trend lunch with plenty of beans in the broth.",
+      "The tree in the square dropped a heavy trend onto the red car parked there."
+    ],
+    "significados_incorretos": [
+      "A public transit vehicle that runs on metal rails in big cities.",
+      "A small dry, twisted twig fallen from centuries-old tree branches.",
+      "A piece of heavy agricultural machinery used to plow and prepare rural soil."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 26,
+    "nome": "exposed",
+    "variacoes": ["exposé", "exposing"],
+    "classe_gramatical": "noun",
+    "significado": "The act of publicly revealing someone's secrets, lies, or bad behavior, usually backed by screenshots or online proof.",
+    "tags": ["Social media", "Pop", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "They did an exposed on that famous influencer, proving with screenshots that he lied about his expensive trips.",
+    "exemplos_incorretos": [
+      "I'm going to eat a juicy, well-done exposed steak with rustic potatoes and barbecue sauce.",
+      "I bought a very fragrant, soft exposed perfume at the imported cosmetics store yesterday.",
+      "The clear sky is going to exposed the bright sun and light up the whole city with scorching heat today."
+    ],
+    "significados_incorretos": [
+      "An analog photography technique that leaves film burned by strong natural light.",
+      "A type of modern art exhibition in sophisticated conceptual galleries.",
+      "A rare ornamental plant that grows hanging exposed to direct sun with no protection."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 27,
+    "nome": "main character",
+    "variacoes": ["main character energy"],
+    "classe_gramatical": "noun",
+    "significado": "A person who behaves or feels like the main character of a movie, radiating style and self-confidence.",
+    "tags": ["Pop", "Social media", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Walking through the city streets in sunglasses and headphones with music blasting, I feel total main character energy.",
+    "exemplos_incorretos": [
+      "I'm going to eat a main character with a double burger and melted cheddar cheese on a soft bun.",
+      "My main character's tire got a flat in the middle of the dark, deserted road at dawn.",
+      "I went fishing in the river and caught a giant, really heavy main character with my fishing rod."
+    ],
+    "significados_incorretos": [
+      "The person responsible for writing the long dialogue in scripts for big Hollywood movies.",
+      "The background extra actor who only appears in the back of scenes in big dramatic productions.",
+      "The creative director who arranges the cameras and bright lights of local independent theaters."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 28,
+    "nome": "glow up",
+    "variacoes": ["glow-up"],
+    "classe_gramatical": "noun",
+    "significado": "A noticeable process of positive transformation and drastic improvement in physical appearance, style, or mental health.",
+    "tags": ["Social media", "Pop", "Everyday", "Makeup"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "After years in high school, she found her own style and had an absurd, inspiring glow up.",
+    "exemplos_incorretos": [
+      "I turned on the glow up light in the dark room so we could see the old furniture.",
+      "I went for a wonderful glow up lunch at the bakery with ice-cold, sweet orange juice.",
+      "My furry dog sheds a lot of glow up all over the house when the weather gets really hot."
+    ],
+    "significados_incorretos": [
+      "A dangerous fluorescent chemical powder that glows intensely in the dark of a party night.",
+      "A painful laser treatment done to remove old tattoos on a scarred arm.",
+      "A disposable glowing toy handed out at nighttime music festivals."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 29,
+    "nome": "drama",
+    "variacoes": ["so much drama", "drama alert"],
+    "classe_gramatical": "noun",
+    "significado": "A shocking situation, hot gossip, or event that causes a huge social stir.",
+    "tags": ["Pop", "Social media", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "depends on context",
+    "exemplo_correto": "Girl, you can't imagine the drama that went down at last night's party, I need to tell you everything right now.",
+    "exemplos_incorretos": [
+      "I'm going to cook a meat drama with stewed potatoes and lots of gravy for dinner.",
+      "My dad brushed his teeth because he woke up with a strong bad drama smell in his mouth.",
+      "I bought a big pink stuffed drama as a birthday present for the girl."
+    ],
+    "significados_incorretos": [
+      "The strong odor coming from the mouths of people who don't take care of their morning oral hygiene.",
+      "A children's stuffed toy shaped like a cute bear imported from a distant country.",
+      "A famous brand of thick fabric used to make comfortable living room sofas."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 30,
+    "nome": "cancel",
+    "variacoes": ["cancelled", "cancel culture"],
+    "classe_gramatical": "verb",
+    "significado": "To socially and publicly boycott or reject a person, usually online, due to objectionable behavior.",
+    "tags": ["Social media", "Pop", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "The influencer posted a prejudiced video and followers immediately started to cancel him across every platform.",
+    "exemplos_incorretos": [
+      "I went to the restaurant to cancel a juicy steak on the high flame of the wood-fired grill.",
+      "I'm going to cancel my clock to the wall with strong nails so it doesn't fall and break the glass.",
+      "The dark, heavy cloud in the sky decided to cancel lightning bolts over the isolated mountain."
+    ],
+    "significados_incorretos": [
+      "Firing a corporate employee from their executive position without cause at a bank.",
+      "Putting out giant fires in dense forests using hoses and water-filled helicopters.",
+      "Erasing badly written pencil letters in a school notebook using a worn white eraser."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 31,
+    "nome": "situationship",
+    "variacoes": ["situationships"],
+    "classe_gramatical": "noun",
+    "significado": "A romantic or emotional relationship with no formal labels, where people act like a couple but never make it official.",
+    "tags": ["Relationships", "Pop", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "depends on context",
+    "exemplo_correto": "They've been going out for months and treat each other like a couple, but they're stuck in a confusing, nameless situationship.",
+    "exemplos_incorretos": [
+      "The navy captain sailed his giant situationship through the rough seas full of dangerous waves.",
+      "I ate an excellent, spicy seafood situationship at the fancy restaurant by the coast.",
+      "I need to fix the gear on my situationship before it stops working in the middle of the empty street."
+    ],
+    "significados_incorretos": [
+      "A huge, luxurious international cargo ship that sails around unknown continents.",
+      "A state of mental confusion induced by too much complicated studying in old libraries.",
+      "An embarrassing situation that happens during an important, stressful corporate job interview."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 32,
+    "nome": "drip",
+    "variacoes": ["dripped out", "dripping"],
+    "classe_gramatical": "adjective",
+    "significado": "A person or style that is extremely put-together, stylish, good-looking, and striking, common in urban culture.",
+    "tags": ["Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "He got that famous haircut, put on the designer sunglasses, and had major drip for the dance.",
+    "exemplos_incorretos": [
+      "I lost my drip to the living room door and got locked out of the house at dawn waiting for the handyman.",
+      "I'm going to eat a wonderful stuffed cheese drip with melted beef for a fancy Sunday lunch.",
+      "The furious lightning and thunder storm was very drip on the red tile roof early in the morning."
+    ],
+    "significados_incorretos": [
+      "A specific mechanical manual tool for tightening and loosening very thick, hard car wheel bolts.",
+      "A heavy decorative handmade keychain full of old keys hung and tied to closed doors.",
+      "A mysterious, smart person with brilliant advanced skills for cracking huge modern safes."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 33,
+    "nome": "turn up",
+    "variacoes": ["turned up", "turnt"],
+    "classe_gramatical": "verb",
+    "significado": "To get really excited, have intense fun, or get into the mood of a party with high energy.",
+    "tags": ["Pop", "Everyday"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "It's Friday night, now we're heading to the festival and we're going to turn up until the sun rises on the horizon.",
+    "exemplos_incorretos": [
+      "I'm going to turn up the whole seasoned free-range chicken on the new grill in the backyard.",
+      "The weather with heavy dark clouds is going to turn up violent hailstorms onto the hood of the brand-new red car.",
+      "I bought a thick, fuzzy pure wool coat to turn up against the biting winter cold out on the city streets."
+    ],
+    "significados_incorretos": [
+      "Burning old wood to make bright red, hot embers for seasoned grilling.",
+      "Giving a long, tight, affectionate hug to a dear childhood friend.",
+      "Dyeing a white cotton shirt with boiling hot water mixed with fire-red dye."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 34,
+    "nome": "hype",
+    "variacoes": ["hyped", "hyping"],
+    "classe_gramatical": "noun",
+    "significado": "Huge anticipation, general excitement, or high popularity surrounding a release or trend.",
+    "tags": ["Everyday", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "There's so much hype around that new superhero movie that theater tickets have been sold out for weeks.",
+    "exemplos_incorretos": [
+      "I'm going to take a good long, hot, relaxing shower with foamy hype soap in the white-tiled bathroom.",
+      "I made a beautiful, fluffy, giant hype cake filled with shiny chocolate cream for a happy afternoon dessert.",
+      "The car's big tire went flat in the mud on the old dirt hype road full of dusty potholes."
+    ],
+    "significados_incorretos": [
+      "A smooth, yellowish exotic tropical fish found in large calm schools in deep, clean, salty oceans.",
+      "A sleepy, slow, quiet behavior of soft-spoken people during boring tired mornings.",
+      "A cold sweet drink mixed with sparkling water and lots of colorful chopped fruit slices."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 35,
+    "nome": "trigger",
+    "variacoes": ["triggered", "triggering"],
+    "classe_gramatical": "noun",
+    "significado": "Something that provokes a strong emotional reaction, a vivid memory, or deep personal identification.",
+    "tags": ["Everyday", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "depends on context",
+    "exemplo_correto": "Reading that sad romantic poem about goodbyes and grief was a huge emotional trigger for me and made me cry with longing yesterday.",
+    "exemplos_incorretos": [
+      "I'm going to eat a juicy steak with a trigger sauce made of melted white cheese hot in the heavy cast-iron pan.",
+      "I pulled the sharp trigger of the serrated bread knife to slice the soft, sweet dough without crushing it or making crumbs.",
+      "The big, closed, dark trigger cloud in the sky is surely going to bring long, loud storms lit up by lightning tonight."
+    ],
+    "significados_incorretos": [
+      "The curved cold metal part of a powerful firearm activated by a small finger pressing gently.",
+      "A tiny mammal feline with varied soft fur raised and loved inside small, cozy, warm human houses.",
+      "A cutting farming tool used in the past to separate green, ripe, stacked pods and leaves."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 36,
+    "nome": "mood",
+    "variacoes": ["moods", "big mood"],
+    "classe_gramatical": "noun",
+    "significado": "The state of mind of the moment, or something the person emotionally identifies with right now.",
+    "tags": ["Social media", "Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "Staying home in a cozy bed drinking hot chocolate on this gray rainy day and reading a good book is such a mood.",
+    "exemplos_incorretos": [
+      "I'm going to make on the hot stove a plate of Italian pasta with a wonderful homemade seasoned mood sauce from my big family.",
+      "The huge, heavy, stuck wooden door on the smooth living room wall needs a strong mood lubricant on its old hinges.",
+      "I bought a modern, fast, tech mood smartphone for many long installment payments that are financially tight."
+    ],
+    "significados_incorretos": [
+      "A rustic, handmade construction technique made just by joining raw mud and dry straw mixed firmly in the hot sun.",
+      "A thin, rough, fuzzy fabric used in thick white sacks to carry sharp, heavy raw stones.",
+      "A big, slow herd of cows and bulls grazing freely and chewing tall, damp, overgrown weeds."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 37,
+    "nome": "tea",
+    "variacoes": ["spill the tea", "tea time"],
+    "classe_gramatical": "noun",
+    "significado": "Gossip, hot info, or the reveal of behind-the-scenes secrets about celebrities or acquaintances.",
+    "tags": ["Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "We really need to talk privately so you can spill all the tea about that shocking, sudden dramatic breakup of that lovely couple.",
+    "exemplos_incorretos": [
+      "I drank at breakfast a big beautiful cup of aromatic, sweet, steaming tea for elegant dessert this morning.",
+      "My slow, friendly old dog took a long walk through the whole quiet green neighborhood sniffing every neighbor's mowed lawn tea.",
+      "I quickly sewed a tight small torn hole in my exposed knee using a fine, sharp, long steel tea needle."
+    ],
+    "significados_incorretos": [
+      "A perfumed, traditional, relaxing chamomile drink slowly boiled in enamel pots with clean filtered purified hot water.",
+      "A heavy metal sports weightlifting piece of equipment used intensely with heavy weights for shoulders and pure human muscular strength.",
+      "A big luxurious, shiny store of exquisite imported liquid perfumes, floral sweet woody bitter French exclusive rare small fine red white."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 38,
+    "nome": "cunty",
+    "variacoes": ["cuntiness"],
+    "classe_gramatical": "adjective",
+    "significado": "A trait of someone or a look that is extremely stylish, bold, confident, and full of attitude.",
+    "tags": ["Pop", "Makeup", "Social media"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She strutted down the halls in loud sky-high heels, dark bold lipstick, and an amazing coat, giving a totally cunty look.",
+    "exemplos_incorretos": [
+      "I'm going to clean the whole grimy, greasy sink in the big kitchen of the old country house using a rough, hard, thick cunty scrubbing pad.",
+      "I ate today at a lovely, happy lunch a giant golden fried chicken with plenty of fluffy cunty well-seasoned green, tasty, fresh, hot, soft rice.",
+      "I really need to run quickly to the store to buy a clean cunty striped black-and-white loose new soft shiny torn shirt before dark bright nightfall."
+    ],
+    "significados_incorretos": [
+      "A crude, small, dull, manual cutting tool with a hollow small green handle for quick, shallow, slow, round, dry pruning of dead white wilted flowers.",
+      "A soft, aerated, cloying pasty candy sold only exclusively at big fine candy shops in old noisy colonial public squares full of sunlight.",
+      "An old way of greeting an unknown neighbor friend with an affectionate hug, swaying strong heads tilted to the left and right, slow and unhurried."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 39,
+    "nome": "wig",
+    "variacoes": ["wig snatched", "my wig"],
+    "classe_gramatical": "interjection",
+    "significado": "An expression used to indicate extreme shock or admiration when something is so good it seems to snatch the wig off your head.",
+    "tags": ["Pop", "Social media"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "When she hit that impossibly high, sad final note of the long, difficult song beautifully with her strong, angelic voice, I screamed: wig!",
+    "exemplos_incorretos": [
+      "I'm going to wig and cook tonight a hearty, big, salty dinner for all my old distant relatives, cousins, tired uncles close to my huge family of siblings.",
+      "The cute, sleepy, newborn little fluffy kitten loves nothing more than to watch focused and alert the fast little birds flying far off jumping through thick, fragile, thin branches doing happy, bouncy, meowing wig.",
+      "I desperately need to quickly paint my dirty white bedroom wall in a closed room using that beautiful, famous, high-quality, expensive wig pink paint sold in the huge, distant, cold city store."
+    ],
+    "significados_incorretos": [
+      "The artisanal plastic artificial human hair wig or synthetic false hair sewn, tied, fixed onto thick black colorful long strands with thin bald clips.",
+      "A dynamic, fast precision sport fiercely competed with small heavy shiny white flying balls hit using long pointed fiber black soft flexible very hard heavy dangerous sticks.",
+      "The happy traditional rural European peasant folk dance danced in wide big long closed fast open circles to loud vibrant deep intense soft light booming sound."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 40,
+    "nome": "ijbol",
+    "variacoes": ["ijbols"],
+    "classe_gramatical": "interjection",
+    "significado": "An English acronym ('I just broke out laughing') used to indicate uncontrollable laughter at something really funny.",
+    "tags": ["Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "He tripped clumsily over his own feet and shoelaces and suddenly fell over laughing hard right there, and I sent a huge ijbol with nonstop laughing crying tears.",
+    "exemplos_incorretos": [
+      "I'm going to quickly drink an ice-cold, thirst-quenching glass of strong, thick, bitter ijbol mixed with lime juice and tropical fruits, mango, ice, sugar and cold filtered water on this hot early morning.",
+      "The big, majestic, soaring hawk did an ijbol flapping its wings in a fast dive into the air and caught its prey, a shiny silver river fish, in the wild open green nature.",
+      "I bought a cheap ijbol at the corner market, warm bread with wheat, for a long, sweet afternoon snack with ham and salted bread and good coffee."
+    ],
+    "significados_incorretos": [
+      "A secret, giant, powerful, rich international federation of influential billionaires who control and run the global financial markets of rich and poor countries around the world.",
+      "An advanced, safe, quiet, autonomous, eco-friendly electric car model, Asian, Korean, Japanese, European, German, French, modern, fast, red, strong, clean, with a beautiful digital dashboard and a new expensive V8 engine.",
+      "An outdated, old, small, large compressed digital audio MP3 file format, pirated, free, heavy with viruses, for long electronic rock jazz disco classical music to listen to on an old phone or MP4 player with headphones."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 41,
+    "nome": "soft launch",
+    "variacoes": ["soft-launched"],
+    "classe_gramatical": "noun",
+    "significado": "The act of subtly and indirectly hinting at a romantic relationship on social media without revealing the partner's face.",
+    "tags": ["Relationships", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "She posted a photo of just two wine glasses and someone's mysterious hand on the table, doing a classic subtle, enigmatic romantic soft launch.",
+    "exemplos_incorretos": [
+      "I'm going to throw the heavy, smelly, dirty accumulated trash into the big closed green plastic sidewalk bin with a beautiful incredible soft, long, green soft launch.",
+      "My dog did a loud, fast, destructive, fierce, cute, affectionate soft launch with its favorite big soft chew toy bone.",
+      "I drank a hot, bitter, watery, soft, thin, ice-cold, dark, thick juice with tea, vitamin powder, water, milk, ice, and lime through a straw in a lukewarm glass."
+    ],
+    "significados_incorretos": [
+      "A cautious, strategic, initial, gradual, small, slow corporate business launch of a new expensive product in a test market and beta app.",
+      "A mixed drink, non-alcoholic or light, sweet, smooth, fresh, carbonated, colorful, fruity, kid-friendly canned soda.",
+      "A soft, fluffy, small, smooth, light, firm, high pillow for a comfortable bed rest."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 42,
+    "nome": "clean girl",
+    "variacoes": ["clean girls", "clean girl aesthetic"],
+    "classe_gramatical": "noun",
+    "significado": "A minimalist aesthetic marked by a fresh look, light makeup, hydrated skin, sleek hair, and a healthy routine.",
+    "tags": ["Makeup", "Social media", "Everyday", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She embraced the clean girl routine wearing light, neutral, elegant, clean, soft, simple clothes and sheer, natural, minimal glowy makeup every single day.",
+    "exemplos_incorretos": [
+      "I went fishing for big river fish far away, using a bamboo rod and a small net, in the clean girl river far off.",
+      "The mechanic cleaned the grease and oil off his dirty hands, scrubbing off the clean girl grease and oil from his mechanic's hands.",
+      "The big rain cloud washed the blue sky, washing everything clean girl in heavy clean rain."
+    ],
+    "significados_incorretos": [
+      "A hired cleaning staff member in charge of organizing and maintaining a tidy, clean household.",
+      "A powerful, heavy industrial detergent soap, liquid, blue, pink, green, powder or bar, used for washing clothes, floors, and dishes.",
+      "A surgical sterilization technique used in medical and laboratory settings."
+    ],
+    "impacto_motivo": "empty"
+  },
+  {
+    "id": 43,
+    "nome": "rich mom energy",
+    "variacoes": ["rich mom brunch"],
+    "classe_gramatical": "noun",
+    "significado": "A sophisticated, minimalist, effortlessly luxurious and chic look, commonly associated with beige tones and sunglasses.",
+    "tags": ["Everyday", "Social media", "Pop"],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She put on that fine beige linen blouse, light neutral expensive loose pantalona pants, big sunglasses, an expensive black bag, and stepped out with total rich mom energy.",
+    "exemplos_incorretos": [
+      "I'm going to eat a fried pastel and sugarcane juice snack at the street stand with total rich mom energy.",
+      "The rusty, heavy hammer and nail on the crooked rich mom energy wall crack needed hitting to fix the wall.",
+      "My team wore its strong green rich mom energy jersey in the tough, long championship game."
+    ],
+    "significados_incorretos": [
+      "A generous, friendly, humble millionaire woman who funds and sponsors charity donations to an orphanage.",
+      "A long, rich, sophisticated, varied buffet menu at an expensive fancy restaurant.",
+      "The sole heiress and only daughter of an empire's business fortune."
+    ],
+    "impacto_motivo": "empty"
+  }
+]
