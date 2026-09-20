@@ -1,0 +1,1104 @@
+{
+  "girias_antigas": [
+    {
+      "id": 1,
+      "nome": "bochinche",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Confusión o gran alboroto.",
+      "tags": ["cotidiano", "informal"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Se armó el bochinche más grande en la reunión del edificio anoche.",
+      "exemplos_incorretos": [
+        "Compré un bochinche de chocolate delicioso en la panadería.",
+        "Necesito llenar el tanque con diez litros de bochinche.",
+        "Voy a ponerme mi bochinche azul para ir a la boda."
+      ],
+      "significados_incorretos": [
+        "Un tipo de dulce tradicional a base de maní.",
+        "Un combustible fósil muy usado en motores antiguos.",
+        "Una prenda formal usada en fiestas de gala."
+      ],
+      "impacto_motivo": "Se refiere a situaciones de desorden, discusiones, peleas o confusión, con una connotación indeseada o desagradable."
+    },
+    {
+      "id": 3,
+      "nome": "hacer antesala",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Esperar durante mucho tiempo.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El médico se atrasó dos horas y me tocó hacer una antesala eterna en recepción.",
+      "exemplos_incorretos": [
+        "Puse una antesala en la sala para decorar el ambiente.",
+        "Tomé una antesala caliente antes de dormir para relajarme.",
+        "Se me rompió el pantalón porque me senté sobre una antesala filosa."
+      ],
+      "significados_incorretos": [
+        "Un mueble de madera tapizado usado en comedores.",
+        "Una infusión de hierbas medicinales que ayuda a combatir el insomnio.",
+        "Una herramienta puntiaguda usada por carpinteros."
+      ],
+      "impacto_motivo": "Expresa la molestia, el cansancio y la pérdida de tiempo asociados a una espera larga e imprevista."
+    },
+    {
+      "id": 4,
+      "nome": "irse todo al tacho",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Que algo salga mal o sea muy malo.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Si llueve el día de nuestro evento al aire libre, se va todo al tacho.",
+      "exemplos_incorretos": [
+        "Voy a irme al tacho para poder colgar este cuadro en la pared.",
+        "Me gusta irme al tacho todas las mañanas en el parque para hacer ejercicio.",
+        "Me olvidé de irme al tacho y terminé perdiendo el plazo de inscripción."
+      ],
+      "significados_incorretos": [
+        "La acción de fijar objetos pesados usando tornillos.",
+        "Una práctica deportiva enfocada en caminatas de larga distancia.",
+        "Llenar un formulario oficial con datos personales."
+      ],
+      "impacto_motivo": "Denota fracaso, complicación o perjuicio inminente en cierta situación."
+    },
+    {
+      "id": 5,
+      "nome": "perder el tren",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Perder una oportunidad por distracción.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Se quedó pensando en las nubes y las entradas para el show se agotaron justo en su turno, perdió el tren.",
+      "exemplos_incorretos": [
+        "Voy a perder el tren en la agenda para no olvidarme del día del examen.",
+        "Necesito perder el tren en la cocina para que la comida no se queme.",
+        "Le encanta perder el tren en la pileta para entrenar natación profesional."
+      ],
+      "significados_incorretos": [
+        "Anotar un compromiso importante en un calendario.",
+        "Ajustar la temperatura interna de electrodomésticos.",
+        "Usar equipos de protección personal en el agua."
+      ],
+      "impacto_motivo": "Indica un error personal por falta de atención o distracción, lo que resulta en la pérdida de algo ventajoso."
+    },
+    {
+      "id": 6,
+      "nome": "buen mozo",
+      "variacoes": ["buena moza"],
+      "classe_gramatical": "locución sustantiva",
+      "significado": "Persona linda o de buena apariencia.",
+      "tags": ["apariencia", "informal"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El nuevo actor de la novela es un chico muy buen mozo.",
+      "exemplos_incorretos": [
+        "Compré un buen mozo para pintar las paredes de mi cuarto.",
+        "Tengo un dolor de cabeza horrible, necesito tomar un buen mozo.",
+        "El buen mozo se rompió cuando intenté abrir la puerta con fuerza."
+      ],
+      "significados_incorretos": [
+        "Un pincel de cerdas suaves usado en la construcción.",
+        "Un analgésico vendido sin receta en farmacias.",
+        "Un mecanismo de metal que compone las cerraduras modernas."
+      ],
+      "impacto_motivo": "Se trata de un elogio a la estética o presencia personal de alguien."
+    },
+    {
+      "id": 7,
+      "nome": "chispa",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Encanto o atractivo especial de una persona.",
+      "tags": ["apariencia", "comportamiento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Esa cantante tiene una chispa que conquista a todos en el escenario.",
+      "exemplos_incorretos": [
+        "Le voy a poner un poco de chispa a los frijoles para darles más sabor.",
+        "Se me pinchó la rueda del auto porque pasé por encima de una chispa.",
+        "Escribí todo el texto usando la fuente chispa en la computadora."
+      ],
+      "significados_incorretos": [
+        "Un condimento típico hecho a base de hierbas secas y ají.",
+        "Un pedazo de hierro puntiagudo encontrado en caminos de tierra.",
+        "Un estilo de formato de texto usado en periódicos antiguos."
+      ],
+      "impacto_motivo": "Atribuye una cualidad atractiva, encantadora y magnética a una persona."
+    },
+    {
+      "id": 8,
+      "nome": "mina",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Chica linda o atractiva.",
+      "tags": ["apariencia", "informal"],
+      "permissao": "adolescentes",
+      "impacto": "positiva",
+      "exemplo_correto": "Ese chico del salón de al lado está saliendo con una mina bárbara.",
+      "exemplos_incorretos": [
+        "La cañería de la cocina explotó y causó una mina enorme.",
+        "Voy a ponerme mi mina nueva para ir a caminar al parque.",
+        "Compré una mina de tres pisos para festejar mi cumpleaños."
+      ],
+      "significados_incorretos": [
+        "Una pérdida grave de agua en tuberías residenciales.",
+        "Un calzado deportivo con amortiguadores en las suelas.",
+        "Una torta festiva decorada con fondant."
+      ],
+      "impacto_motivo": "Es una forma afectuosa y elogiosa de referirse a la belleza de una joven."
+    },
+    {
+      "id": 9,
+      "nome": "ni michi",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Nada o ninguna cosa.",
+      "tags": ["cotidiano", "informal"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "El profesor explicó el tema de física tres veces, pero no entendí ni michi.",
+      "exemplos_incorretos": [
+        "Guardé mi ropa dentro de dos ni michi de plástico.",
+        "El pajarito hizo un ni michi muy lindo en la rama del árbol.",
+        "Voy a prender los ni michi de la tele para poder ver la película."
+      ],
+      "significados_incorretos": [
+        "Una bolsa o recipiente flexible usado para transporte.",
+        "Un nido construido por aves pequeñas usando ramitas secas.",
+        "Un componente electrónico responsable de sintonizar canales."
+      ],
+      "impacto_motivo": "Solo indica la ausencia de algo o falta de comprensión, sin un juicio de valor moral o afectivo intrínseco."
+    },
+    {
+      "id": 10,
+      "nome": "pasado de moda",
+      "variacoes": ["ordinario"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Fuera de moda o considerado de mal gusto.",
+      "tags": ["apariencia", "moda"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Me pareció muy pasado de moda esa combinación de traje verde con camisa amarilla.",
+      "exemplos_incorretos": [
+        "Comí un pasado de moda delicioso en el almuerzo del domingo.",
+        "El motor del auto está haciendo un ruido pasado de moda muy fuerte.",
+        "Voy a usar el pasado de moda para limpiar el vidrio de la ventana que está sucio."
+      ],
+      "significados_incorretos": [
+        "Un plato típico hecho con masa hojaldrada y relleno de carne.",
+        "Una pieza mecánica instalada cerca del caño de escape del motor.",
+        "Una franela de microfibra usada para limpiar superficies delicadas."
+      ],
+      "impacto_motivo": "Expresa una crítica desfavorable respecto al gusto, estilo o elegancia de alguien o algo."
+    },
+    {
+      "id": 11,
+      "nome": "estar rayado",
+      "variacoes": [],
+      "classe_gramatical": "locución adjetiva",
+      "significado": "Persona considerada loca o muy distraída.",
+      "tags": ["comportamiento", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ese tipo está medio rayado, salió bajo la lluvia sin paraguas y en pantalón corto.",
+      "exemplos_incorretos": [
+        "Compré un zapato rayado que brilla en la oscuridad.",
+        "La cena estaba rayada, todos repitieron el plato.",
+        "Necesito arreglar el rayado de mi computadora para que vuelva a prender."
+      ],
+      "significados_incorretos": [
+        "Un modelo de calzado infantil con luces incorporadas.",
+        "Un alimento bien condimentado que gusta a paladares exigentes.",
+        "Un botón de encendido de sistemas operativos de escritorio."
+      ],
+      "impacto_motivo": "Señala un comportamiento desequilibrado, insensato o extravagante de una persona."
+    },
+    {
+      "id": 12,
+      "nome": "poner pilas",
+      "variacoes": [],
+      "classe_gramatical": "locución interjectiva",
+      "significado": "Expresión usada para incentivar a alguien a apurarse o correr.",
+      "tags": ["acción", "expresión"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "El colectivo ya está pasando por la esquina, ¡poné pilas!",
+      "exemplos_incorretos": [
+        "Le puse pilas al pan para comer en el desayuno.",
+        "Compré unas pilas nuevas para iluminar mi cuarto.",
+        "El médico me recetó poner pilas para curar la gripe."
+      ],
+      "significados_incorretos": [
+        "Un dulce cremoso derivado de la grasa de la leche de vaca.",
+        "Una lámpara de mesa antigua que funciona a base de querosén.",
+        "Un compuesto vitamínico en gotas usado para aumentar la inmunidad."
+      ],
+      "impacto_motivo": "Se trata de una orden coloquial de apuro sin carga despectiva ni de elogio."
+    },
+    {
+      "id": 13,
+      "nome": "verso",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Conversación sin fundamento o que no lleva a nada.",
+      "tags": ["conversación", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Eso de que van a regalar cosas a todo el mundo es puro verso.",
+      "exemplos_incorretos": [
+        "Usé un verso para coser el botón de mi camisa.",
+        "El plomero cambió el verso que estaba goteando en el baño.",
+        "Puse el verso en la pared para colgar el abrigo."
+      ],
+      "significados_incorretos": [
+        "Una aguja fina usada en trabajos manuales de sastrería.",
+        "Una conexión de PVC usada en sistemas de cloacas residenciales.",
+        "Un soporte metálico fijado en superficies verticales."
+      ],
+      "impacto_motivo": "Clasifica el discurso ajeno como mentiroso, inútil o manipulador."
+    },
+    {
+      "id": 14,
+      "nome": "zona brava",
+      "variacoes": [],
+      "classe_gramatical": "locución adjetiva",
+      "significado": "Situación difícil o complicada.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Ese barrio de madrugada es medio zona brava, mejor evitarlo.",
+      "exemplos_incorretos": [
+        "Comí una zona brava de chocolate en la merienda.",
+        "Compré una zona brava para atarme el pelo en el entrenamiento.",
+        "El técnico usó una zona brava para medir el tamaño de la mesa."
+      ],
+      "significados_incorretos": [
+        "Un dulce industrializado rico en calorías y azúcares.",
+        "Un accesorio elástico usado en peinados deportivos.",
+        "Un instrumento de metal usado para medir longitudes exactas."
+      ],
+      "impacto_motivo": "Describe un ambiente peligroso o un momento tenso y desfavorable."
+    },
+    {
+      "id": 15,
+      "nome": "piola",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Persona astuta o inteligente.",
+      "tags": ["comportamiento", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ese chico es piola, resolvió el acertijo del juego en dos minutos.",
+      "exemplos_incorretos": [
+        "Me voy a poner mi piola para ir a jugar al fútbol con los amigos.",
+        "Corté el pan usando una piola bien afilada en la cocina.",
+        "El cielo está lleno de piola hoy, creo que va a llover pronto."
+      ],
+      "significados_incorretos": [
+        "Un tipo de botín de fútbol con tapones de goma.",
+        "Un utensilio doméstico dentado usado para cortar alimentos.",
+        "Formaciones gaseosas oscuras que anteceden a las tormentas."
+      ],
+      "impacto_motivo": "Enaltece la perspicacia, agilidad mental y astucia de alguien."
+    },
+    {
+      "id": 16,
+      "nome": "careta",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Persona conservadora o que evita las novedades.",
+      "tags": ["comportamiento", "informal"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Mis tíos son muy caretas, no dejan que sus hijos usen redes sociales.",
+      "exemplos_incorretos": [
+        "Voy a prender la careta para iluminar el camino oscuro.",
+        "Compré una careta de cuero para guardar mis documentos.",
+        "Tomé una careta helada después de correr en la playa."
+      ],
+      "significados_incorretos": [
+        "Un objeto cilíndrico de cera que produce una llama estable.",
+        "Un accesorio de bolsillo usado para organizar tarjetas de crédito.",
+        "Una bebida gaseosa refrescante hecha a base de frutas cítricas."
+      ],
+      "impacto_motivo": "Usada generalmente como crítica a la rigidez de actitud, falta de apertura a novedades o perfil anticuado."
+    },
+    {
+      "id": 17,
+      "nome": "todo joya",
+      "variacoes": ["todo piola"],
+      "classe_gramatical": "interjección",
+      "significado": "Expresión usada para indicar que todo está bien.",
+      "tags": ["saludo", "expresión"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Quedate tranquilo que ya hice las compras y está todo joya por acá.",
+      "exemplos_incorretos": [
+        "Gasté mucha plata comprando un todo joya de corrida.",
+        "El todo joya se rompió en el medio de la ruta y tuve que llamar a la grúa.",
+        "Me voy a poner todo joya en la cara para hidratar la piel antes de dormir."
+      ],
+      "significados_incorretos": [
+        "Zapatillas de alto rendimiento usadas por maratonistas.",
+        "Un vehículo utilitario de tracción integral usado en el campo.",
+        "Una crema cosmética importada con propiedades rejuvenecedoras."
+      ],
+      "impacto_motivo": "Demuestra satisfacción y confirma que cierto estado de cosas está funcionando perfectamente o en orden."
+    },
+    {
+      "id": 18,
+      "nome": "estar picado",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Desconfiado, preocupado o inquieto.",
+      "tags": ["emoción", "comportamiento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Quedé medio picado con esa historia que me contó sobre la desaparición de la plata.",
+      "exemplos_incorretos": [
+        "El saco quedó picado después de lavarlo en la máquina con agua caliente.",
+        "Comí una empanada picada en la feria que estaba deliciosa.",
+        "La rueda del auto está picada, tengo que cambiarla urgente."
+      ],
+      "significados_incorretos": [
+        "Una tela que sufrió encogimiento debido al calor excesivo.",
+        "Un alimento frito en aceite hirviendo con relleno salado.",
+        "Un objeto inflable que presenta pérdida de presión interna."
+      ],
+      "impacto_motivo": "Refleja un estado emocional de aprensión, desconfianza o perturbación interna."
+    },
+    {
+      "id": 19,
+      "nome": "barra",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Grupo de amigos o pandilla.",
+      "tags": ["amistad", "social"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Mi barra se juntaba en la plaza todos los sábados a la tarde.",
+      "exemplos_incorretos": [
+        "Pelé la barra para hacer una sopa de verduras.",
+        "Escribí la nota usando una barra de tinta azul.",
+        "El pajarito se rompió la barra cuando intentó volar contra el vidrio."
+      ],
+      "significados_incorretos": [
+        "Un tubérculo comestible rico en almidón cocido en las comidas.",
+        "Una lapicera recargable usada en oficinas.",
+        "El miembro superior de las aves usado para sostener el vuelo."
+      ],
+      "impacto_motivo": "Designa de manera descriptiva un grupo social o círculo de amigos, sin connotación inherentemente buena o mala."
+    },
+    {
+      "id": 20,
+      "nome": "guita",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Dinero.",
+      "tags": ["dinero", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Me gustó mucho esa campera, pero no tengo guita para comprarla ahora.",
+      "exemplos_incorretos": [
+        "Necesito atarme la guita del zapato que se soltó en la calle.",
+        "La guita cantó bien fuerte en el árbol al comienzo de la mañana.",
+        "Voy a usar la guita para borrar el error que hice en el cuaderno."
+      ],
+      "significados_incorretos": [
+        "Un cordón de algodón o nylon usado en calzados.",
+        "Un pájaro silvestre conocido por su canto matutino estridente.",
+        "Una goma sintética maleable usada para corregir escritura a lápiz."
+      ],
+      "impacto_motivo": "Representa un recurso financiero o poder adquisitivo, generalmente percibido de forma favorable."
+    },
+    {
+      "id": 21,
+      "nome": "quedar de mal humor",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Quedar de mal humor o irritado.",
+      "tags": ["emoción", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Se quedó de mal humor porque no pudo ir al partido de fútbol con los amigos.",
+      "exemplos_incorretos": [
+        "Voy a quedar de mal humor en el sofá esperando que el almuerzo esté listo.",
+        "Le encanta quedar de mal humor para ahorrar el sueldo del mes.",
+        "Tuvimos que quedar de mal humor para poder cruzar el río caudaloso."
+      ],
+      "significados_incorretos": [
+        "El acto de descansar en superficies tapizadas durante la tarde.",
+        "La práctica de guardar ahorros en cuentas bancarias.",
+        "Navegar en embarcaciones pequeñas usando remos."
+      ],
+      "impacto_motivo": "Expresa disgusto, insatisfacción o mal humor de la persona."
+    },
+    {
+      "id": 22,
+      "nome": "estar en la luna",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Imaginar cosas absurdas o perder el foco de la realidad.",
+      "tags": ["imaginación", "expresión"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Estás en la luna si pensás que vas a sacarte un diez sin estudiar nada.",
+      "exemplos_incorretos": [
+        "Puse las valijas en el auto para estar en la luna con la familia.",
+        "Voy a estar en la luna para condimentar la ensalada de papas.",
+        "Tuvo que estar en la luna para renovar el pasaporte en la comisaría."
+      ],
+      "significados_incorretos": [
+        "Trasladarse a otras ciudades usando rutas provinciales.",
+        "Agregar salsas condimentadas en platos de comida fría.",
+        "Presentarse en reparticiones públicas para la emisión de visas."
+      ],
+      "impacto_motivo": "Indica una ensoñación, pensamiento fuera de contexto o distracción sin necesariamente cargar un peso ofensivo o elogioso."
+    },
+    {
+      "id": 23,
+      "nome": "hincha pelotas",
+      "variacoes": [],
+      "classe_gramatical": "adjetivo",
+      "significado": "Persona muy molesta o inoportuna.",
+      "tags": ["comportamiento", "insulto"],
+      "permissao": "adolescentes",
+      "impacto": "negativa",
+      "exemplo_correto": "Ese chico es un hincha pelotas, le tira del pelo a la hermana todo el día.",
+      "exemplos_incorretos": [
+        "Compré un hincha pelotas nuevo en la farmacia.",
+        "Usé el hincha pelotas para peinarme el pelo a la mañana.",
+        "El llavero tiene un hincha pelotas de metal para engancharse al pantalón."
+      ],
+      "significados_incorretos": [
+        "Un cepillo de plástico usado para la higiene bucal diaria.",
+        "Un objeto con dientes finos usado para alinear el cabello.",
+        "Una argolla flexible usada para agrupar llaves de casa."
+      ],
+      "impacto_motivo": "Es una palabra despectiva y ofensiva usada para molestar o etiquetar a alguien como desagradable."
+    },
+    {
+      "id": 24,
+      "nome": "cagarse de risa",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Reírse mucho.",
+      "tags": ["humor", "expresión"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Fuimos a ver esa comedia al cine y nos cagamos de risa de principio a fin.",
+      "exemplos_incorretos": [
+        "El pajarito chocó contra la pared y terminó por cagarse de risa de verdad.",
+        "Me voy a cagar de risa del helado para compartirlo con mi hermano.",
+        "Necesito cagarme de risa de la lapicera para que vuelva a escribir."
+      ],
+      "significados_incorretos": [
+        "Causar una fractura en la estructura queratinosa de aves silvestres.",
+        "Fraccionar porciones de alimentos congelados usando cuchillos.",
+        "Presionar la punta esferográfica de instrumentos de escritura."
+      ],
+      "impacto_motivo": "Se asocia a un momento de alegría, diversión intensa y descontracción."
+    },
+    {
+      "id": 25,
+      "nome": "estar al tanto",
+      "variacoes": [],
+      "classe_gramatical": "locución adjetiva",
+      "significado": "Bien informado o que entiende de las cosas.",
+      "tags": ["conocimiento", "comportamiento"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ella está súper al tanto en tecnología, sabe todo sobre los nuevos lanzamientos.",
+      "exemplos_incorretos": [
+        "La radio está al tanto en la pared del living con cinta adhesiva.",
+        "Quedé al tanto en el tránsito por un accidente en la ruta.",
+        "El saco está al tanto, hay que coserle el cierre que se rompió."
+      ],
+      "significados_incorretos": [
+        "Un objeto fijado en superficies verticales por medio de pegamento.",
+        "Quedar retenido en embotellamientos de vehículos automotores.",
+        "Una prenda de vestir que presenta averías en sus cierres."
+      ],
+      "impacto_motivo": "Elogia la atención, actualización y capacidad de alguien de estar bien informado sobre ciertos temas."
+    },
+    {
+      "id": 26,
+      "nome": "levantar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Coquetear o intentar conquistar a alguien.",
+      "tags": ["relaciones", "social"],
+      "permissao": "adolescentes",
+      "impacto": "positiva",
+      "exemplo_correto": "Antes los jóvenes iban al baile del pueblo solo para levantar.",
+      "exemplos_incorretos": [
+        "Fue a levantar el juego tirando los dados en la mesa redonda.",
+        "Voy a levantar toda la casa usando escoba y plumero.",
+        "El mecánico intentó levantar el motor para descubrir la falla eléctrica."
+      ],
+      "significados_incorretos": [
+        "Participar en actividades lúdicas que involucran apuestas financieras.",
+        "Realizar la limpieza pesada de ambientes residenciales internos.",
+        "Hacer mantenimiento preventivo en componentes electromecánicos."
+      ],
+      "impacto_motivo": "Se relaciona con el juego de atracción, coqueteo e interacción afectiva divertida entre personas."
+    },
+    {
+      "id": 27,
+      "nome": "espantajo",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Persona considerada fea o de mal gusto.",
+      "tags": ["apariencia", "insulto"],
+      "permissao": "adolescentes",
+      "impacto": "negativa",
+      "exemplo_correto": "Esa ropa vieja de la foto la hacía parecer un espantajo completo.",
+      "exemplos_incorretos": [
+        "Comí un espantajo al horno con papas en el restaurante de la esquina.",
+        "El barco se hundió porque chocó contra un espantajo de hielo.",
+        "Voy a colgar el espantajo en la pared para decorar mi cuarto."
+      ],
+      "significados_incorretos": [
+        "Una especie de pez de aguas profundas muy consumido en la costa.",
+        "Un bloque sólido de agua congelada flotante en regiones polares.",
+        "Un objeto artístico enmarcado que sirve como adorno residencial."
+      ],
+      "impacto_motivo": "Es una expresión insultante usada para menospreciar la estética o el estilo de alguien."
+    },
+    {
+      "id": 28,
+      "nome": "enojado",
+      "variacoes": ["hinchado"],
+      "classe_gramatical": "adjetivo",
+      "significado": "Molesto, enojado o incómodo.",
+      "tags": ["emoción", "comportamiento"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Quedé enojado porque mi mejor amigo no me invitó a su fiesta.",
+      "exemplos_incorretos": [
+        "Comí un dulce enojado hecho con leche condensada y coco.",
+        "La rueda enojada del camión reventó en medio de la ruta principal.",
+        "Escribí la nota en un papel enojado que encontré en el cajón."
+      ],
+      "significados_incorretos": [
+        "Un alimento esférico confitado muy servido en fiestas infantiles.",
+        "Un objeto neumático que presenta deformaciones estructurales en la goma.",
+        "Una hoja de papel con texturas circulares usada para dibujar."
+      ],
+      "impacto_motivo": "Expresa descontento, disgusto o contrariedad respecto a algún hecho."
+    },
+    {
+      "id": 29,
+      "nome": "chamuyar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Coquetear o intentar conquistar a alguien.",
+      "tags": ["relaciones", "social"],
+      "permissao": "adolescentes",
+      "impacto": "positiva",
+      "exemplo_correto": "Intentó chamuyar a la chica de la panadería, pero terminó llevándose un calabazo.",
+      "exemplos_incorretos": [
+        "Voy a chamuyar la cerradura de la entrada porque perdí el control remoto.",
+        "El carpintero tuvo que chamuyar la madera para darle un acabado liso.",
+        "Empezó a chamuyar fuerte por el micrófono durante la transmisión."
+      ],
+      "significados_incorretos": [
+        "La acción de abrir picaportes o trabas usando llaves físicas.",
+        "Desgastar superficies rústicas mediante lijado mecánico.",
+        "Emitir sonidos vocales agudos que causan distorsión en equipos de audio."
+      ],
+      "impacto_motivo": "Se refiere a intentos amorosos o coqueteos que buscan demostrar interés afectivo por alguien."
+    },
+    {
+      "id": 30,
+      "nome": "de ley",
+      "variacoes": [],
+      "classe_gramatical": "locución adjetiva",
+      "significado": "Algo que siempre sucede o está garantizado.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ese fútbol de los miércoles a la noche con la gente del trabajo es de ley.",
+      "exemplos_incorretos": [
+        "El juez leyó el libro de ley para detener al criminal in fraganti.",
+        "Compré una mesa hecha de ley que va a durar muchos años en el living.",
+        "Escribí una de ley en el papel para mandarle a mi primo."
+      ],
+      "significados_incorretos": [
+        "Un código legal o compilación de artículos constitucionales impresos.",
+        "Un material de alta densidad extraído de árboles nativos nobles.",
+        "Una correspondencia formal redactada a mano para parientes lejanos."
+      ],
+      "impacto_motivo": "Describe hábitos, rutinas o tradiciones habituales sin implicar un valor positivo o negativo."
+    },
+    {
+      "id": 31,
+      "nome": "conseguir",
+      "variacoes": ["rebuscarse"],
+      "classe_gramatical": "verbo",
+      "significado": "Lograr u obtener algo.",
+      "tags": ["cotidiano", "acción"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Voy a ver si consigo dos entradas VIP para el festival de este fin de semana.",
+      "exemplos_incorretos": [
+        "Voy a conseguir el adhesivo de la pared para pegarlo en otro cuaderno.",
+        "El barrilete empezó a conseguir en el cielo en cuanto paró el viento fuerte.",
+        "Necesito conseguir el hueso del brazo para enyesarlo en el hospital."
+      ],
+      "significados_incorretos": [
+        "Remover películas adhesivas de superficies por tracción manual.",
+        "Perder altitud de forma abrupta debido a la falta de corrientes de aire.",
+        "Un procedimiento ortopédico de realineación de articulaciones fracturadas."
+      ],
+      "impacto_motivo": "Se asocia con tener éxito al obtener recursos, oportunidades u objetos deseados."
+    },
+    {
+      "id": 32,
+      "nome": "cheto",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Chico bien arreglado, correcto o asociado a una condición financiera privilegiada.",
+      "tags": ["comportamiento", "estereotipo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ese chico es un cheto, solo anda con camisa de marca y el pelo perfectamente peinado.",
+      "exemplos_incorretos": [
+        "Comí un cheto de pollo delicioso en el bar.",
+        "El mecánico cambió el cheto del motor que estaba roto.",
+        "Voy a usar el cheto para limpiar la suciedad acumulada en la alfombra."
+      ],
+      "significados_incorretos": [
+        "Una fritura hecha con masa de papa y relleno proteico.",
+        "Un componente hidráulico fijado cerca del radiador de los autos.",
+        "Un electrodoméstico que hace la aspiración de residuos sólidos."
+      ],
+      "impacto_motivo": "A pesar de describir un estereotipo social o estilo de vida, se usa principalmente como etiqueta descriptiva sin un tono estrictamente ofensivo o elogioso."
+    },
+    {
+      "id": 33,
+      "nome": "cheta",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Chica considerada muy vanidosa, rica o mimada.",
+      "tags": ["comportamiento", "estereotipo"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Ella hace el estilo cheta, le encanta ir al shopping y solo usa ropa color rosa.",
+      "exemplos_incorretos": [
+        "Planté una cheta en el jardín que da flores amarillas.",
+        "Compré una cheta de herramientas para arreglar la pileta de la cocina.",
+        "La cheta del barco se rompió al chocar contra el muelle de cemento."
+      ],
+      "significados_incorretos": [
+        "Una especie de arbusto ornamental originario de regiones subtropicales.",
+        "Un estuche de plástico rígido usado para guardar llaves inglesas.",
+        "Una estructura de madera usada para el anclaje de embarcaciones grandes."
+      ],
+      "impacto_motivo": "Funciona como etiqueta descriptiva de estilo y perfil social, pudiendo tener variaciones contextuales sin ser necesariamente un insulto grave."
+    },
+    {
+      "id": 34,
+      "nome": "quemarse",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Perjudicar la propia imagen o reputación.",
+      "tags": ["comportamiento", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "No llegues tarde a la entrevista para no quemarte con el jefe.",
+      "exemplos_incorretos": [
+        "Voy a quemarme en la cocina para calentar la casa.",
+        "Me olvidé de la película al sol y terminó por quemarse de la cámara.",
+        "Usó un fósforo para quemarse que estaba en el DVD de plástico."
+      ],
+      "significados_incorretos": [
+        "Incinerar rollos de celulosa para producción de energía térmica.",
+        "Causar sobreexposición a la luz en películas fotográficas analógicas.",
+        "Derretir medios digitales de almacenamiento usando calor directo."
+      ],
+      "impacto_motivo": "Implica daños a la reputación, pérdida de credibilidad o juicio desfavorable por parte de terceros."
+    },
+    {
+      "id": 35,
+      "nome": "cana",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Prisión o cárcel.",
+      "tags": ["seguridad", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Al ladrón lo agarraron robando la tienda y terminó directo en la cana.",
+      "exemplos_incorretos": [
+        "Tomé un vaso de cana bien helado con sabor a frutilla.",
+        "Toqué la cana de metal en la clase de música de la escuela.",
+        "Voy a usar la cana para medirle la fiebre a mi hermano menor."
+      ],
+      "significados_incorretos": [
+        "Un jarabe dulce mezclado con agua con gas y esencias artificiales.",
+        "Un instrumento de percusión compuesto por pequeñas barras de hierro.",
+        "Un dispositivo clínico de vidrio usado para medir la temperatura corporal."
+      ],
+      "impacto_motivo": "Se refiere al encarcelamiento y a la privación de libertad derivada de delitos."
+    },
+    {
+      "id": 36,
+      "nome": "joder",
+      "variacoes": ["cargada"],
+      "classe_gramatical": "verbo",
+      "significado": "Bromear, hacer lío o burlarse de alguien.",
+      "tags": ["humor", "social"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Nos encanta joder a nuestro amigo cuando su equipo pierde el clásico.",
+      "exemplos_incorretos": [
+        "Voy a joder la torta de cumpleaños usando velitas de colores.",
+        "El avión empezó a joder fuerte en el cielo antes de aterrizar en la pista.",
+        "Necesito joder las plantas del jardín para que no se sequen en verano."
+      ],
+      "significados_incorretos": [
+        "Decorar dulces festivos usando coberturas comestibles.",
+        "Producir ondas sonoras graves causadas por propulsores.",
+        "Regar especies vegetales para el mantenimiento hídrico."
+      ],
+      "impacto_motivo": "Puede representar una broma sana entre amigos o una provocación, variando según el contexto sin tener un impacto estrictamente positivo o negativo por defecto."
+    },
+    {
+      "id": 37,
+      "nome": "amigo de la cara",
+      "variacoes": ["falso amigo"],
+      "classe_gramatical": "locución sustantiva",
+      "significado": "Persona que finge ser amiga pero en realidad perjudica o traiciona.",
+      "tags": ["amistad", "insulto"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Me enteré de que le contó mi secreto a todo el mundo, es un amigo de la cara.",
+      "exemplos_incorretos": [
+        "Fui al zoológico y vi un amigo de la cara durmiendo a la sombra.",
+        "Compré una estampa de amigo de la cara para la remera de mi hijo.",
+        "El documental mostraba un amigo de la cara cazando de noche en la sabana."
+      ],
+      "significados_incorretos": [
+        "Un felino salvaje de gran tamaño encontrado en bosques tropicales.",
+        "Un patrón textil que imita el pelaje de animales salvajes.",
+        "Un registro fotográfico de vida silvestre hecho por investigadores."
+      ],
+      "impacto_motivo": "Denuncia falsedad y traición por parte de alguien que se presenta como amigo, pero actúa contra los intereses del otro."
+    },
+    {
+      "id": 38,
+      "nome": "chupamedias",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Elogiar o adular a alguien de forma excesiva e interesada.",
+      "tags": ["comportamiento", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Vive de chupamedias con el jefe solo para conseguir un ascenso.",
+      "exemplos_incorretos": [
+        "Voy a hacer de chupamedias para preparar una omelette en el desayuno.",
+        "El bebé quedó de chupamedias después de comer la papilla.",
+        "Necesito hacer de chupamedias en la receta de la torta de cumpleaños."
+      ],
+      "significados_incorretos": [
+        "El proceso culinario de batir huevos para preparar recetas.",
+        "Salivar excesivamente durante la alimentación infantil.",
+        "Mezclar ingredientes líquidos en un bol de cocina."
+      ],
+      "impacto_motivo": "Critica la adulación exagerada y falsa, generalmente motivada por interés propio."
+    },
+    {
+      "id": 39,
+      "nome": "loco",
+      "variacoes": ["che loco"],
+      "classe_gramatical": "sustantivo",
+      "significado": "Forma cariñosa e informal de referirse a un amigo.",
+      "tags": ["amistad", "saludo"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Che loco, ¿vamos a tomar una cerveza esta noche?",
+      "exemplos_incorretos": [
+        "Vi un loco raro caminando por el patio de madrugada.",
+        "Compré comida para el loco de mi vecina.",
+        "El veterinario revisó al loco que se había lastimado la pata."
+      ],
+      "significados_incorretos": [
+        "Un animal doméstico o salvaje de cualquier especie.",
+        "Una criatura desconocida avistada en zonas rurales.",
+        "Un ser vivo no humano que necesita cuidados veterinarios."
+      ],
+      "impacto_motivo": "Usada de forma afectuosa entre amigos cercanos, reforzando el vínculo y la camaradería."
+    },
+    {
+      "id": 40,
+      "nome": "estirar la pata",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Morir.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Mi abuelo estiró la pata el año pasado, a los noventa y dos años.",
+      "exemplos_incorretos": [
+        "Voy a estirar la pata en la puerta para sacarme el barro antes de entrar.",
+        "Compré un par de botas nuevas para estirar la pata en la nieve.",
+        "Le gusta estirar la pata al ritmo de la música durante el show."
+      ],
+      "significados_incorretos": [
+        "Limpiar la suela del calzado golpeándolo contra el piso.",
+        "Bailar marcando el ritmo con los pies calzados.",
+        "Adquirir un par de calzado nuevo para usar en invierno."
+      ],
+      "impacto_motivo": "Se refiere al fallecimiento de alguien, un tema asociado a la pérdida y al duelo."
+    },
+    {
+      "id": 41,
+      "nome": "quedar en el aire",
+      "variacoes": ["no entender ni jota"],
+      "classe_gramatical": "verbo",
+      "significado": "No entender nada de lo que está pasando o siendo dicho.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El profesor explicó el tema tan rápido que quedé en el aire de principio a fin.",
+      "exemplos_incorretos": [
+        "El barquito quedó en el aire tranquilamente en medio del lago.",
+        "Voy a quedar en el aire en la pileta para relajarme después del trabajo.",
+        "La boya amarilla estaba en el aire cerca de la playa para señalar peligro."
+      ],
+      "significados_incorretos": [
+        "Flotar en la superficie del agua sin hundirse.",
+        "Permanecer a la deriva sobre un cuerpo líquido.",
+        "Una actividad recreativa de flotación en piletas o el mar."
+      ],
+      "impacto_motivo": "Indica confusión, falta de comprensión o estar desactualizado respecto a un tema, generando incomodidad para quien queda en el aire."
+    },
+    {
+      "id": 42,
+      "nome": "mango",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Dinero.",
+      "tags": ["dinero", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Guardé unos mangos este mes para comprar un regalo lindo de cumpleaños.",
+      "exemplos_incorretos": [
+        "Voy a ponerme mango en el pelo para dejarlo más brillante.",
+        "Comí un mango delicioso en el restaurante japonés ayer.",
+        "El auto hizo un ruido de mango raro al encender el motor."
+      ],
+      "significados_incorretos": [
+        "Un producto cosmético usado para tratamiento capilar.",
+        "Un plato típico de la cocina asiática servido con salsa especial.",
+        "Un ruido mecánico asociado a fallas en el motor de vehículos."
+      ],
+      "impacto_motivo": "Representa un recurso financiero, generalmente percibido de forma favorable cuando se tiene en posesión."
+    },
+    {
+      "id": 43,
+      "nome": "verso",
+      "variacoes": ["cuento chino"],
+      "classe_gramatical": "sustantivo",
+      "significado": "Mentira o charla vacía usada para engañar a alguien.",
+      "tags": ["conversación", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "No le creas ese verso que te contó sobre el auto nuevo, es todo mentira.",
+      "exemplos_incorretos": [
+        "Voy a versear la puerta que está trabada hace días.",
+        "Compré un verso nuevo para decorar la biblioteca del living.",
+        "El verso de la radio estaba prendido bien fuerte durante el viaje."
+      ],
+      "significados_incorretos": [
+        "Un objeto decorativo usado en ambientes residenciales.",
+        "Un aparato electrónico responsable de la reproducción de audio.",
+        "Un mecanismo de fijación usado en puertas y ventanas trabadas."
+      ],
+      "impacto_motivo": "Clasifica un discurso como engañoso, falso o manipulador, generando desconfianza en quien escucha."
+    },
+    {
+      "id": 44,
+      "nome": "estar en la lona",
+      "variacoes": [],
+      "classe_gramatical": "locución verbal",
+      "significado": "Estar sin dinero o pasando por dificultades financieras.",
+      "tags": ["dinero", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "No puedo salir este mes, estoy en la lona después de pagar todas las cuentas.",
+      "exemplos_incorretos": [
+        "Voy a plantar lona en el patio para hacer un cerco vivo.",
+        "Comí una lona deliciosa en el mercado municipal ayer.",
+        "El río estaba lleno de lona después de la fuerte lluvia de verano."
+      ],
+      "significados_incorretos": [
+        "Una planta arbustiva usada para cercos y delimitación de terrenos.",
+        "Una fruta regional consumida en ferias y mercados populares.",
+        "Vegetación característica de márgenes de ríos después de crecidas."
+      ],
+      "impacto_motivo": "Describe una situación financiera difícil, asociada a la falta de recursos y la preocupación."
+    },
+    {
+      "id": 45,
+      "nome": "flashear",
+      "variacoes": ["engancharse"],
+      "classe_gramatical": "verbo",
+      "significado": "Enamorarse o quedar encantado por alguien o algo.",
+      "tags": ["relaciones", "emoción"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Apenas la vio en la fiesta, flasheó en el momento y fue a sacarle charla.",
+      "exemplos_incorretos": [
+        "Voy a flashear el motor del auto que está haciendo un ruido raro.",
+        "Necesito flashear esta pared antes de pintar el cuarto nuevo.",
+        "Llamaron al electricista para flashear la instalación de la cocina."
+      ],
+      "significados_incorretos": [
+        "Arreglar o ajustar piezas mecánicas defectuosas.",
+        "Preparar superficies para recibir pintura o revestimiento.",
+        "Reparar instalaciones eléctricas residenciales con problemas."
+      ],
+      "impacto_motivo": "Expresa encanto, pasión o fascinación intensa por alguien o algo, siendo un sentimiento generalmente bien recibido."
+    },
+    {
+      "id": 46,
+      "nome": "yuta",
+      "variacoes": ["cana"],
+      "classe_gramatical": "sustantivo",
+      "significado": "Policía.",
+      "tags": ["seguridad", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Corré que viene la yuta, alguien debe haber llamado por el ruido.",
+      "exemplos_incorretos": [
+        "Compré una yuta de peluche para mi sobrino de regalo.",
+        "La yuta del zoológico estaba durmiendo dentro del recinto.",
+        "Vi una yuta cruzando la ruta durante el viaje de noche."
+      ],
+      "significados_incorretos": [
+        "Un pequeño mamífero marsupial nocturno encontrado en zonas rurales.",
+        "Un animal de peluche disecado usado como adorno.",
+        "Una especie silvestre común en regiones de monte y selva."
+      ],
+      "impacto_motivo": "Usada en tono despectivo o de alerta para referirse a policías, generalmente en contextos de huida o desconfianza de la autoridad."
+    },
+    {
+      "id": 47,
+      "nome": "cargar",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Burlarse o mofarse de alguien.",
+      "tags": ["comportamiento", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Dejá de cargarlo por cómo habla, no tiene ninguna gracia.",
+      "exemplos_incorretos": [
+        "Voy a cargar la fruta que se cayó del árbol en el patio.",
+        "Compré una cargar madura para hacer jugo en el desayuno.",
+        "El huerto estaba lleno de cargar listas para la cosecha."
+      ],
+      "significados_incorretos": [
+        "Una fruta tropical de pulpa dulce muy consumida en verano.",
+        "Un árbol frutal común en regiones de clima cálido.",
+        "Un alimento rico en vitaminas cosechado en huertos domésticos."
+      ],
+      "impacto_motivo": "Indica burla o mofa respecto a alguien, lo que puede causar vergüenza o disgusto."
+    },
+    {
+      "id": 48,
+      "nome": "juntar tierra",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Esperar mucho tiempo o quedar de lado sin uso.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Estuve juntando tierra en la fila del banco por más de una hora esta mañana.",
+      "exemplos_incorretos": [
+        "El pan empezó a juntar tierra después de una semana fuera de la heladera.",
+        "Voy a juntar tierra el queso para hacer esa receta especial.",
+        "La fruta juntó tierra rápido porque quedó expuesta al calor."
+      ],
+      "significados_incorretos": [
+        "Desarrollar hongos en alimentos por exposición a la humedad.",
+        "El proceso de deterioro de productos perecederos.",
+        "Una alteración química que ocurre en alimentos mal conservados."
+      ],
+      "impacto_motivo": "Expresa la molestia de quedar detenido, olvidado o esperando mucho tiempo sin necesidad."
+    },
+    {
+      "id": 49,
+      "nome": "quilombo",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Confusión, lío o problema.",
+      "tags": ["cotidiano", "expresión"],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Mejor no ir a esa fiesta, dicen que siempre termina en un quilombo al final de la noche.",
+      "exemplos_incorretos": [
+        "Compré un quilombo nuevo para guardar mis documentos importantes.",
+        "Voy a poner el quilombo en la mesa para decorar la cena de hoy.",
+        "El quilombo se rompió apenas intenté prender la computadora esta mañana."
+      ],
+      "significados_incorretos": [
+        "Un objeto de almacenamiento usado para organizar papeles.",
+        "Un objeto decorativo usado en mesas de comedor formales.",
+        "Un componente electrónico responsable del inicio de aparatos."
+      ],
+      "impacto_motivo": "Se refiere a situaciones problemáticas o confusas, generalmente indeseadas por quien se ve involucrado en ellas."
+    },
+    {
+      "id": 50,
+      "nome": "onda",
+      "variacoes": [],
+      "classe_gramatical": "sustantivo",
+      "significado": "Encanto, sensualidad o un toque especial que llama la atención.",
+      "tags": ["apariencia", "elogio"],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Esa ropa nueva te quedó con una onda toda especial.",
+      "exemplos_incorretos": [
+        "Le voy a poner onda al motor para que funcione mejor.",
+        "Compré una onda de tornillos para arreglar la silla.",
+        "El electricista cambió la onda del enchufe que estaba quemado."
+      ],
+      "significados_incorretos": [
+        "Una pieza mecánica usada en reparaciones automotrices.",
+        "Una herramienta de fijación usada en carpintería y montaje.",
+        "Un componente eléctrico responsable de la conducción de energía."
+      ],
+      "impacto_motivo": "Elogia la presencia marcada, el carisma o el toque especial de una persona o cosa que se destaca."
+    },
+    {
+      "id": 51,
+      "nome": "viejo",
+      "variacoes": ["vieja"],
+      "classe_gramatical": "sustantivo",
+      "significado": "Persona mayor, generalmente usada para referirse a los padres o a adultos de mediana edad.",
+      "tags": ["familia", "cotidiano"],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Le voy a pedir plata prestada a mi viejo para comprar la entrada del show.",
+      "exemplos_incorretos": [
+        "El rey usaba un viejo de oro cubierto de piedras preciosas.",
+        "Compré un viejo de flores para decorar la mesa del casamiento.",
+        "El dentista me puso un viejo nuevo en el diente roto."
+      ],
+      "significados_incorretos": [
+        "Un adorno real usado por monarcas en ceremonias oficiales.",
+        "Un arreglo floral circular usado en decoraciones festivas.",
+        "Una prótesis dental usada para restaurar dientes dañados."
+      ],
+      "impacto_motivo": "Término informal y generalmente afectuoso para referirse a personas mayores, sin carga emocional fija positiva o negativa."
+    }
+  ]
+}
