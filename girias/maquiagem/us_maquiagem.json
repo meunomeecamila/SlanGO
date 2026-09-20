@@ -1,0 +1,1036 @@
+[
+  {
+    "id": 3,
+    "nome": "glass skin",
+    "variacoes": ["glass skin look", "glassy skin"],
+    "classe_gramatical": "expression",
+    "significado": "Effect of extremely hydrated, smooth skin with a natural glow, as if it were translucent.",
+    "tags": ["makeup", "skin", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "She has an amazing skincare routine, always with that glass skin.",
+    "exemplos_incorretos": [
+      "The builder used reinforced glass skin on the building's facade.",
+      "He has glass skin, so any criticism hurts him.",
+      "I edited my selfie and applied a glass skin filter that makes everything glow artificially."
+    ],
+    "significados_incorretos": [
+      "Type of glass cladding used on modern building exteriors and resistant to impact.",
+      "Expression used for people who are very emotionally sensitive and get hurt easily.",
+      "Intense glow effect applied digitally to edited photos to simulate perfect skin."
+    ],
+    "impacto_motivo": "Glass skin is admired as the ultimate result of a successful skincare routine."
+  },
+  {
+    "id": 5,
+    "nome": "glow up",
+    "variacoes": ["glow-up", "glow up moment", "makeup glow up"],
+    "classe_gramatical": "expression",
+    "significado": "Impressive visual transformation, usually showing the before and after of a makeup look or skincare routine.",
+    "tags": ["makeup", "transformation", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "After she learned to contour, it was a total glow up for her face.",
+    "exemplos_incorretos": [
+      "The firefly did a glow up in the garden at night.",
+      "I got some good news today and felt a glow up inside.",
+      "I put a filter on the photo and she got a glow up just from the brightness edit."
+    ],
+    "significados_incorretos": [
+      "Natural bioluminescence emitted by certain insects at night.",
+      "Feeling radiant and confident after good news, unrelated to appearance.",
+      "Increase in brightness and sharpness in photos through filters and digital editing."
+    ],
+    "impacto_motivo": "Glow up celebrates an impressive visual transformation and is used in an encouraging way among content creators."
+  },
+  {
+    "id": 6,
+    "nome": "clean girl",
+    "variacoes": ["clean girl makeup", "clean girl look", "clean girl aesthetic"],
+    "classe_gramatical": "expression",
+    "significado": "Minimalist makeup aesthetic with hydrated skin, brushed-up brows and light makeup that looks like 'no makeup', very popular among beauty influencers.",
+    "tags": ["makeup", "trend", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "Today I wanted a clean girl look: just tinted moisturizer, blush and lip gloss.",
+    "exemplos_incorretos": [
+      "I took my car to the clean girl in my neighborhood to get it washed.",
+      "She's so clean girl at home, everything is organized and tidy.",
+      "I decorated my room in a clean girl style, with light tones and very little furniture."
+    ],
+    "significados_incorretos": [
+      "Quick car wash service found at gas stations.",
+      "Person who follows an organized and minimalist lifestyle at home.",
+      "Decor aesthetic with bright, neutral rooms and few objects, popular in interior design."
+    ],
+    "impacto_motivo": "Clean girl is associated with a light, tidy aesthetic seen as aspirational on social media."
+  },
+  {
+    "id": 7,
+    "nome": "soft glam",
+    "variacoes": ["soft glam makeup", "soft glam look"],
+    "classe_gramatical": "expression",
+    "significado": "Sophisticated but soft makeup style with neutral tones, a glowy finish and less contrast than a traditional 'full glam' look.",
+    "tags": ["makeup", "technique", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did a soft glam for the party: golden shadow, natural lashes and a nude lipstick.",
+    "exemplos_incorretos": [
+      "The living room sofa has a soft glam fabric.",
+      "The bedroom turned out soft glam after the remodel, with very gentle lighting.",
+      "The photographer set up soft glam lighting for the fashion shoot."
+    ],
+    "significados_incorretos": [
+      "Type of soft fabric used in upholstery and pillows.",
+      "Interior decor style with soft lighting and neutral tones.",
+      "Photography style with soft, glamorous lighting used in fashion shoots."
+    ],
+    "impacto_motivo": "Soft glam is praised for balancing sophistication and softness in a single look."
+  },
+  {
+    "id": 10,
+    "nome": "full face",
+    "variacoes": ["full face of makeup", "full-face look", "do a full face"],
+    "classe_gramatical": "expression",
+    "significado": "Complete makeup with all the steps: foundation, concealer, powder, brows, eyes, blush, contour and lips.",
+    "tags": ["makeup", "tutorial", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I filmed myself doing my full face from scratch for the wedding.",
+    "exemplos_incorretos": [
+      "I ordered a full face plate of Japanese food.",
+      "We got a full face in the card game and won the whole round.",
+      "The photographer asked for a full face shot for my ID photo."
+    ],
+    "significados_incorretos": [
+      "Complete portion of a dish at a Japanese restaurant.",
+      "Expression used in card games to indicate a complete play.",
+      "Photography term for a framing that shows the entire face, without cropping."
+    ],
+    "impacto_motivo": "Full face is celebrated in tutorials as the complete and careful process of doing makeup."
+  },
+  {
+    "id": 11,
+    "nome": "no makeup makeup",
+    "variacoes": ["no-makeup makeup", "natural makeup", "makeup-free makeup look"],
+    "classe_gramatical": "expression",
+    "significado": "Makeup done with technique and products, but with a result that looks like natural skin, with no visible makeup.",
+    "tags": ["makeup", "technique", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I spent almost half an hour on a really well-done no makeup makeup look.",
+    "exemplos_incorretos": [
+      "The restaurant has a no makeup makeup dish on the vegan menu.",
+      "I downloaded a no makeup makeup filter that makes selfies look unedited.",
+      "She swapped all her makeup for a no makeup makeup skincare routine."
+    ],
+    "significados_incorretos": [
+      "Dish on a vegan restaurant's menu.",
+      "Phone filter that makes selfies look like they have no editing at all.",
+      "Skincare routine that completely replaces the use of makeup in daily life."
+    ],
+    "impacto_motivo": "No makeup makeup is valued for combining technique and naturalness, a highly desired result nowadays."
+  },
+  {
+    "id": 12,
+    "nome": "winged liner",
+    "variacoes": ["winged eyeliner", "cat eye", "cat eye liner"],
+    "classe_gramatical": "expression",
+    "significado": "Eyeliner technique that draws a thin line out to the outer tip of the eye, creating an elongated 'cat eye' effect.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "It took me a good few minutes, but I got a symmetrical winged liner on both sides.",
+    "exemplos_incorretos": [
+      "I bought sunglasses with winged liner frames, with upturned tips.",
+      "He has such a winged liner look, his eyes are naturally slanted.",
+      "The designer added a winged liner detail to the brand logo."
+    ],
+    "significados_incorretos": [
+      "Retro sunglasses shape with upturned tips.",
+      "Affectionate nickname for someone with naturally upturned eyes.",
+      "Wing-shaped graphic element used in logos and branding."
+    ],
+    "impacto_motivo": "Winged liner is praised as a classic technique that elongates and enhances the eyes."
+  },
+  {
+    "id": 13,
+    "nome": "nose highlight",
+    "variacoes": ["heart nose highlight", "nose heart", "highlighting the nose"],
+    "classe_gramatical": "expression",
+    "significado": "Technique of applying a touch of highlighter in a little heart shape on the tip of the nose, making the look cuter and glowier.",
+    "tags": ["makeup", "technique", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I finished the makeup with a very subtle nose highlight to add a cute glow.",
+    "exemplos_incorretos": [
+      "The car's nose highlight stopped working at night.",
+      "I stuck on a heart-shaped nose highlight sticker for the costume party.",
+      "She got a nose highlight, a very discreet piercing on the tip of her nose."
+    ],
+    "significados_incorretos": [
+      "Front headlight of a motor vehicle.",
+      "Decorative heart-shaped sticker placed on the face, without any makeup.",
+      "Small piercing worn on the tip of the nose as an accessory."
+    ],
+    "impacto_motivo": "Nose highlight is used in a playful, cute way, associated with fun makeup tutorials."
+  },
+  {
+    "id": 14,
+    "nome": "baking",
+    "variacoes": ["baking technique", "face baking", "powder baking"],
+    "classe_gramatical": "noun",
+    "significado": "Technique of leaving a thick layer of loose powder on specific areas of the face for a few minutes before removing the excess, to set foundation and brighten naturally.",
+    "tags": ["makeup", "technique", "skin"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did some baking under my eyes to hold my concealer in place until night.",
+    "exemplos_incorretos": [
+      "I hung the clothes out for baking on the line all day.",
+      "I learned how to do the baking for my grandma's carrot cake.",
+      "I left the face mask baking on my skin for ten minutes before taking it off."
+    ],
+    "significados_incorretos": [
+      "Practice of leaving clothes to dry on a line for hours in the sun.",
+      "Process of cooking breads, cakes and other recipes in the oven for an extended time.",
+      "Skincare step in which a moisturizer or mask is left on the face before removal."
+    ],
+    "impacto_motivo": "Baking is recognized as an effective technique to set makeup and brighten the face."
+  },
+  {
+    "id": 15,
+    "nome": "strobing",
+    "variacoes": ["do strobing", "strobing effect"],
+    "classe_gramatical": "noun",
+    "significado": "Technique of highlighting specific spots on the face with shimmery products, creating a radiant skin effect without traditional contouring.",
+    "tags": ["makeup", "technique", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I prefer strobing in the summer, it gives my skin a natural glow without feeling heavy.",
+    "exemplos_incorretos": [
+      "The strobing light at the club made everyone dizzy.",
+      "The photographer used strobing light to create dramatic shadows on the model's face.",
+      "I edited the photo and applied digital strobing to the cheekbones to make them pop."
+    ],
+    "significados_incorretos": [
+      "Flashing light effect used at parties and nightclubs.",
+      "Lighting technique used in photography to create dramatic shadows.",
+      "Photoshop technique that enhances highlights in an edited photo."
+    ],
+    "impacto_motivo": "Strobing is praised for creating a radiant skin effect in a practical way."
+  },
+  {
+    "id": 17,
+    "nome": "blush draping",
+    "variacoes": ["draping blush", "do blush draping"],
+    "classe_gramatical": "expression",
+    "significado": "Technique of applying blush extending from the cheekbone to the temple, creating a lifting effect and more definition in the facial structure.",
+    "tags": ["makeup", "technique", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I tried blush draping today and loved how it lifted my face.",
+    "exemplos_incorretos": [
+      "I bought draping fabric for the patio sofa.",
+      "The store window used draping on the cloths to look more elegant.",
+      "The party dress had a beautiful draping falling in layers."
+    ],
+    "significados_incorretos": [
+      "Draped fabric used in curtain and sofa decor.",
+      "Technique of arranging cloth in elegant folds for store displays.",
+      "Dress style with fabric falling in soft layers, used in party looks."
+    ],
+    "impacto_motivo": "Blush draping is celebrated for creating a natural lifting effect on the face."
+  },
+  {
+    "id": 18,
+    "nome": "underpainting",
+    "variacoes": ["do underpainting", "makeup underpainting"],
+    "classe_gramatical": "noun",
+    "significado": "Technique in which the contour and shadow of the face are drawn directly on the skin, before foundation, and then blended together to create depth.",
+    "tags": ["makeup", "technique", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I watched an underpainting tutorial and the result looked surprisingly natural.",
+    "exemplos_incorretos": [
+      "The artist did an underpainting before painting the final picture.",
+      "The restorer noticed a hidden underpainting beneath the layer of paint.",
+      "In my drawing class, I learned to do the underpainting of the shadows before coloring the portrait."
+    ],
+    "significados_incorretos": [
+      "Initial layer of paint used in oil paintings.",
+      "Technique used by restorers to identify paintings hidden under the original paint.",
+      "Shadow sketch made in portrait drawings before finishing with colors."
+    ],
+    "impacto_motivo": "Underpainting is admired as an advanced technique that produces very natural contour results."
+  },
+  {
+    "id": 19,
+    "nome": "siren eyes",
+    "variacoes": ["siren eye makeup", "siren eye look"],
+    "classe_gramatical": "expression",
+    "significado": "Eye makeup trend that pulls the shadow and liner upward at the outer corners, creating an elongated, feline look.",
+    "tags": ["makeup", "eyes", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did siren eyes with brown shadow well blended at the tips.",
+    "exemplos_incorretos": [
+      "The ambulance siren eyes startled everyone on the street.",
+      "She has natural siren eyes, a really striking gaze.",
+      "I wore siren eyes contact lenses to elongate my look at the costume party."
+    ],
+    "significados_incorretos": [
+      "Warning sound emitted by emergency vehicles.",
+      "Nickname given to people with a striking, penetrating gaze.",
+      "Elongated eye effect achieved with special contact lenses."
+    ],
+    "impacto_motivo": "Siren eyes is praised as a modern trend that elongates and intensifies the eyes."
+  },
+  {
+    "id": 21,
+    "nome": "cut crease",
+    "variacoes": ["cut crease look", "do a cut crease"],
+    "classe_gramatical": "expression",
+    "significado": "Eyeshadow technique that sharply marks the eye crease with a defined line, creating strong contrast between the mobile lid and the area above.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "It took almost an hour, but the cut crease came out super symmetrical.",
+    "exemplos_incorretos": [
+      "The fabric tore and left an ugly cut crease in the seam.",
+      "The hairstylist gave me a cut crease in my haircut, with well-defined layers.",
+      "The designer used a cut crease of colors on the banner to add contrast."
+    ],
+    "significados_incorretos": [
+      "Mark or crease left on incorrectly cut fabric.",
+      "Haircutting technique that creates a well-defined line between layers.",
+      "Graphic effect used in designs that creates strong contrast between two colors in an image."
+    ],
+    "impacto_motivo": "Cut crease is admired as a sophisticated technique that creates contrast and depth in the eyes."
+  },
+  {
+    "id": 22,
+    "nome": "halo eye",
+    "variacoes": ["halo eyes", "halo eyeshadow", "halo eye look"],
+    "classe_gramatical": "expression",
+    "significado": "Eyeshadow technique that concentrates the darkest color in the center of the mobile lid, leaving the edges lighter, creating a 'halo' effect on the eyes.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did a golden halo eye with brown on the edges for the party.",
+    "exemplos_incorretos": [
+      "The statue had a golden halo eye sculpted on its head.",
+      "We saw a halo eye in the sky from the sun reflecting off the clouds.",
+      "I edited the photo and added a halo eye of sparkle around her eyes."
+    ],
+    "significados_incorretos": [
+      "Circle of light shown around the heads of saints in religious images.",
+      "Optical effect caused by sunlight reflecting off ice clouds in the sky.",
+      "Photoshop effect that creates a circular glow around the eyes in edited photos."
+    ],
+    "impacto_motivo": "Halo eye is praised for creating a luminous, delicate effect around the eyes."
+  },
+  {
+    "id": 24,
+    "nome": "skin tint",
+    "variacoes": ["skin tint foundation", "skin tint effect"],
+    "classe_gramatical": "noun",
+    "significado": "Very light foundation product or technique with minimal coverage that evens out skin tone while keeping a natural look, without looking made up.",
+    "tags": ["makeup", "skin", "product"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I swapped my heavy foundation for a skin tint for everyday wear.",
+    "exemplos_incorretos": [
+      "The skin tint on the wall needs a second coat.",
+      "The car paint has a beautiful metallic skin tint.",
+      "I turned on a skin tint filter in the app to even out my skin in the photo."
+    ],
+    "significados_incorretos": [
+      "Paint shade used in residential wall painting.",
+      "Metallic finish color applied in car painting.",
+      "Camera filter that adjusts skin tone in photos, evening out the color digitally."
+    ],
+    "impacto_motivo": "Skin tint is appreciated for offering light coverage with a natural skin look."
+  },
+  {
+    "id": 26,
+    "nome": "lip oil",
+    "variacoes": ["lip oils", "use lip oil"],
+    "classe_gramatical": "noun",
+    "significado": "Lip treatment and light color product with an oily, shiny texture, very popular as an alternative to traditional lip gloss.",
+    "tags": ["makeup", "lips", "product"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I put on a pink lip oil before leaving, it keeps my lips hydrated and shiny.",
+    "exemplos_incorretos": [
+      "The mechanic checked the lip oil level in the engine.",
+      "I bought a cooking lip oil to dress the salad.",
+      "I use a skincare lip oil at night just to hydrate, with no shine or color."
+    ],
+    "significados_incorretos": [
+      "Lubricating oil used in vehicle engines.",
+      "Culinary product used to dress salads and cold dishes.",
+      "Lip serum used in nighttime skincare to deeply hydrate the lips while sleeping."
+    ],
+    "impacto_motivo": "Lip oil is valued for hydrating the lips while offering a subtle, pleasant shine."
+  },
+  {
+    "id": 27,
+    "nome": "blurring",
+    "variacoes": ["blurring effect", "blurring powder", "blurring primer"],
+    "classe_gramatical": "noun",
+    "significado": "Effect of smoothing skin texture and disguising pores, usually caused by products with particles that reflect light diffusely.",
+    "tags": ["makeup", "skin", "product"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "This primer has an incredible blurring effect, it hides pores instantly.",
+    "exemplos_incorretos": [
+      "The photo came out with blurring because of camera movement.",
+      "The editor applied blurring to hide the face in the video.",
+      "I turned on my phone's blurring filter to hide the pimple in my selfie."
+    ],
+    "significados_incorretos": [
+      "Blur effect in photography caused by camera movement.",
+      "Digital editing tool used to blur faces in videos and photos.",
+      "Phone filter effect that digitally smooths skin imperfections."
+    ],
+    "impacto_motivo": "Blurring is appreciated for smoothing the appearance of skin instantly."
+  },
+  {
+    "id": 28,
+    "nome": "fox eye",
+    "variacoes": ["fox eyes", "fox eye effect", "fox eye look"],
+    "classe_gramatical": "expression",
+    "significado": "Makeup and brow technique that lifts the outer corners of the eyes upward, creating an elongated, feline shape inspired by foxes.",
+    "tags": ["makeup", "eyes", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I used discreet tape to get the fox eye effect in today's makeup.",
+    "exemplos_incorretos": [
+      "We saw a fox eye running near the forest.",
+      "He has such a fox eye, always with that mischievous look.",
+      "She got a fox eye procedure with support threads at the aesthetics clinic."
+    ],
+    "significados_incorretos": [
+      "Wild animal of the canine family found in forests.",
+      "Nickname for someone with a clever, mischievous look, unrelated to makeup.",
+      "Non-surgical aesthetic procedure with threads that lifts the corners of the eyes."
+    ],
+    "impacto_motivo": "Fox eye is a praised trend for creating an elongated, striking look."
+  },
+  {
+    "id": 29,
+    "nome": "makeup hack",
+    "variacoes": ["makeup hacks", "beauty hack", "makeup trick"],
+    "classe_gramatical": "expression",
+    "significado": "Creative trick or shortcut to make a makeup technique easier, faster or better, usually viral on social media.",
+    "tags": ["makeup", "tiktok", "tutorial"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I saw a makeup hack using a spoon to make eyeliner easier and it worked really well.",
+    "exemplos_incorretos": [
+      "The hacker pulled off a hack on the company's system.",
+      "I found a hack in the game to beat the level faster.",
+      "I saw an organization hack for storing my lipsticks in the drawer."
+    ],
+    "significados_incorretos": [
+      "Criminal break-in of computer systems.",
+      "Shortcut used in video games to advance levels faster.",
+      "Organization trick used to store beauty products more practically."
+    ],
+    "impacto_motivo": "Makeup hack is celebrated for making the makeup process easier and more efficient in creative ways."
+  },
+  {
+    "id": 30,
+    "nome": "tightlining",
+    "variacoes": ["tightline", "do tightlining", "invisible eyeliner"],
+    "classe_gramatical": "noun",
+    "significado": "Technique of applying liner or shadow very close to the root of the upper lashes, filling the space between the lashes for more definition without a visible line.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did a subtle tightlining today to add depth without looking like I'm wearing eye makeup.",
+    "exemplos_incorretos": [
+      "The electrician did the tightlining of the wires for the new installation.",
+      "The internet company did the tightlining of the network cables in the building.",
+      "I learned a tightlining technique for tying my shoelaces tight so they don't loosen during workouts."
+    ],
+    "significados_incorretos": [
+      "Process of adjusting or securing wiring in a home electrical installation.",
+      "Installation of network cables stretched taut between two points in a building.",
+      "Technique of tying shoelaces very tightly for a better fit on the foot."
+    ],
+    "impacto_motivo": "Tightlining is valued for defining the eyes in a discreet, natural way."
+  },
+  {
+    "id": 31,
+    "nome": "primer",
+    "variacoes": ["face primer", "use primer"],
+    "classe_gramatical": "noun",
+    "significado": "Product applied before foundation to even out skin texture, fill in pores and extend the wear time of makeup.",
+    "tags": ["makeup", "skin", "product"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I applied primer before foundation and it lasted all day without creasing.",
+    "exemplos_incorretos": [
+      "The mechanic applied primer before painting the car.",
+      "The painter put primer on the wall before the final paint.",
+      "I replaced the printer primer that had run out of ink."
+    ],
+    "significados_incorretos": [
+      "Base paint layer applied to automotive surfaces before the final paint job.",
+      "Product used by painters to prepare walls before painting.",
+      "Ink cartridge used in home printers."
+    ],
+    "impacto_motivo": "Primer is viewed positively for extending and improving the results of makeup."
+  },
+  {
+    "id": 32,
+    "nome": "setting spray",
+    "variacoes": ["makeup setting spray", "fixing spray"],
+    "classe_gramatical": "noun",
+    "significado": "Mist applied at the end of makeup to lock in all the products and extend the wear time of the look.",
+    "tags": ["makeup", "product", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I finished the makeup with setting spray so it would last until late at the party.",
+    "exemplos_incorretos": [
+      "The gardener used a setting spray to water the plants.",
+      "I put setting spray on my hair to hold the hairstyle.",
+      "The plumber applied a setting spray to the pipe to seal the leak."
+    ],
+    "significados_incorretos": [
+      "Spray bottle used to water garden plants.",
+      "Hairspray used on hairstyles to keep hair in place.",
+      "Sealing product used in plumbing repairs."
+    ],
+    "impacto_motivo": "Setting spray is valued for keeping makeup intact for longer."
+  },
+  {
+    "id": 33,
+    "nome": "color correcting",
+    "variacoes": ["color corrector", "color correcting concealer", "green/orange corrector"],
+    "classe_gramatical": "noun",
+    "significado": "Technique of using concealers in complementary colors (green, orange, purple) to neutralize dark circles, redness or blemishes before foundation.",
+    "tags": ["makeup", "skin", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I used a green color corrector to hide the redness of my pimple.",
+    "exemplos_incorretos": [
+      "The painter used color correcting to adjust the wall tone.",
+      "The designer applied color correcting to the brand's logo.",
+      "The seamstress did color correcting on the stained fabric."
+    ],
+    "significados_incorretos": [
+      "Tone adjustment applied to residential wall painting.",
+      "Color correction done in graphic designs and logos.",
+      "Stain removal technique for colored fabrics."
+    ],
+    "impacto_motivo": "Color correcting is appreciated for effectively solving specific skin concerns before foundation."
+  },
+  {
+    "id": 34,
+    "nome": "spoolie",
+    "variacoes": ["brow spoolie", "brow brush"],
+    "classe_gramatical": "noun",
+    "significado": "Small brush used to comb and align the eyebrow hairs, usually before or after filling them in.",
+    "tags": ["makeup", "brows", "product"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I used the spoolie to brush my brows before filling them in with pencil.",
+    "exemplos_incorretos": [
+      "The vet used a spoolie to brush the dog's fur.",
+      "I bought a new spoolie to clean the gaps in my keyboard.",
+      "The manicurist used a spoolie to remove excess polish from the cuticle."
+    ],
+    "significados_incorretos": [
+      "Small brush used for pet grooming.",
+      "Cleaning tool used to remove dust from keyboards and electronics.",
+      "Tool used in manicures to remove excess nail polish."
+    ],
+    "impacto_motivo": "Spoolie is a simple but essential tool, associated with well-groomed, natural-looking brows."
+  },
+  {
+    "id": 35,
+    "nome": "lash lift",
+    "variacoes": ["lash lifting", "lash lift treatment"],
+    "classe_gramatical": "noun",
+    "significado": "Procedure that curls the natural lashes from the root, giving a long-lasting curl without needing an eyelash curler or mascara.",
+    "tags": ["makeup", "eyes", "procedure"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I got a lash lift last week and my lashes stayed curled for weeks without mascara.",
+    "exemplos_incorretos": [
+      "The crane did the lash lift of the heavy load at the construction site.",
+      "The personal trainer taught me a lash lift to strengthen my legs.",
+      "The mechanic used a lash lift to raise the car in the shop."
+    ],
+    "significados_incorretos": [
+      "Equipment used to lift heavy loads at construction sites.",
+      "Physical exercise for strengthening leg muscles.",
+      "Hydraulic lift used in mechanic shops to raise vehicles."
+    ],
+    "impacto_motivo": "Lash lift is celebrated as a practical, long-lasting solution to naturally curl the lashes."
+  },
+  {
+    "id": 36,
+    "nome": "brow lamination",
+    "variacoes": ["laminated brows", "laminated eyebrows", "brow lamination treatment"],
+    "classe_gramatical": "noun",
+    "significado": "Procedure that aligns and sets the eyebrow hairs in a desired direction, leaving them looking fuller and more uniform for weeks.",
+    "tags": ["makeup", "brows", "procedure"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I got brow lamination and now I don't have to brush my brows every day.",
+    "exemplos_incorretos": [
+      "The factory did the brow lamination of the glass before installing it in the window.",
+      "The document went through brow lamination so it would last longer without tearing.",
+      "The company did a brow lamination on the wood floor before selling it."
+    ],
+    "significados_incorretos": [
+      "Industrial process of reinforcing glass used in construction.",
+      "Document protection technique using laminated plastic.",
+      "Treatment applied to wood floors for greater durability."
+    ],
+    "impacto_motivo": "Brow lamination is seen as a practical way to keep brows more defined for longer."
+  },
+  {
+    "id": 37,
+    "nome": "soap brows",
+    "variacoes": ["soap brow trick", "soaped brows"],
+    "classe_gramatical": "noun",
+    "significado": "DIY technique of using soap on a spoolie to set the eyebrow hairs in an effect similar to lamination, without a professional procedure.",
+    "tags": ["makeup", "brows", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I didn't have the money for lamination, so I just did soap brows at home.",
+    "exemplos_incorretos": [
+      "I used soap brows to wash the dishes after lunch.",
+      "I bought handmade soap brows as a gift for my mom.",
+      "The store sells scented soap brows for the hands."
+    ],
+    "significados_incorretos": [
+      "Soap used to wash dishes in the kitchen.",
+      "Handmade soap sold as a gift or party favor.",
+      "Scented liquid soap used to sanitize hands."
+    ],
+    "impacto_motivo": "Soap brows is appreciated as an affordable DIY alternative for setting the brows."
+  },
+  {
+    "id": 38,
+    "nome": "dewy skin",
+    "variacoes": ["dewy look", "dewy finish"],
+    "classe_gramatical": "expression",
+    "significado": "Effect of skin with a natural, healthy glow, lighter and subtler than glass skin, without looking oily.",
+    "tags": ["makeup", "skin", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I used a liquid highlighter to make my skin dewy without getting too shiny.",
+    "exemplos_incorretos": [
+      "The morning was dewy, with dew covering the garden grass.",
+      "The car was dewy from so much dew during the cold night.",
+      "The window looked dewy in the morning because of the night's humidity."
+    ],
+    "significados_incorretos": [
+      "Layer of dew that covers surfaces in the morning.",
+      "Moisture that accumulates on outdoor surfaces overnight.",
+      "Condensation effect formed on glass because of a temperature difference."
+    ],
+    "impacto_motivo": "Dewy skin is associated with a healthy, radiant look, very well received by beauty fans."
+  },
+  {
+    "id": 39,
+    "nome": "glazed donut skin",
+    "variacoes": ["glazed skin", "donut skin", "glazed donut effect"],
+    "classe_gramatical": "expression",
+    "significado": "Trend of extremely shiny, translucent skin, as if covered in a glaze, more intense than the dewy effect.",
+    "tags": ["makeup", "skin", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "She went for glazed donut skin with lots of liquid highlighter on her cheekbones.",
+    "exemplos_incorretos": [
+      "The bakery sells a fresh glazed donut every morning.",
+      "I bought a chocolate glazed donut for breakfast.",
+      "The pastry shop launched a glazed donut filled with dulce de leche."
+    ],
+    "significados_incorretos": [
+      "Sweet ring-shaped pastry covered in a shiny glaze, sold in bakeries.",
+      "Traditional American dessert made of fried dough and sweet topping.",
+      "Filled pastry item, popular at breakfast."
+    ],
+    "impacto_motivo": "Glazed donut skin is celebrated online as an extremely radiant and desired beauty trend."
+  },
+  {
+    "id": 40,
+    "nome": "jelly skin",
+    "variacoes": ["jelly skin look", "jelly effect"],
+    "classe_gramatical": "expression",
+    "significado": "Effect of hydrated, plump, translucent-looking skin, as if made of jelly, resulting from an intense skincare routine.",
+    "tags": ["makeup", "skin", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "After months of skincare, I finally got close to the jelly skin I wanted.",
+    "exemplos_incorretos": [
+      "I ate a strawberry jelly skin for dessert.",
+      "The kid loves playing with colorful jelly skin toys.",
+      "The store sells handmade jelly skin in several flavors."
+    ],
+    "significados_incorretos": [
+      "Gelatin dessert served in individual cups.",
+      "Stretchy, colorful textured toy popular among children.",
+      "Handmade candy with a gelatinous consistency sold in candy shops."
+    ],
+    "impacto_motivo": "Jelly skin is admired as the result of a dedicated care routine, bringing a feeling of healthy skin."
+  },
+  {
+    "id": 41,
+    "nome": "milky eyes",
+    "variacoes": ["milky eye makeup", "milky eyeshadow"],
+    "classe_gramatical": "expression",
+    "significado": "Eye makeup trend using white or milky nude shadow tones on the mobile lid, creating a soft, ethereal effect.",
+    "tags": ["makeup", "eyes", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did milky eyes with pearly white shadow only on the mobile lid.",
+    "exemplos_incorretos": [
+      "The milk turned milky eyes after I blended it with ice.",
+      "The glass turned milky eyes after so many washes in the dishwasher.",
+      "The bathroom window is milky eyes so nobody can see inside."
+    ],
+    "significados_incorretos": [
+      "Cloudy look of a liquid after blending it in a blender.",
+      "Opaque effect that appears on glass after many washes.",
+      "Type of frosted glass used in windows to ensure privacy."
+    ],
+    "impacto_motivo": "Milky eyes is an appreciated trend for creating a soft, ethereal and delicate look on the eyes."
+  },
+  {
+    "id": 42,
+    "nome": "graphic liner",
+    "variacoes": ["graphic eyeliner"],
+    "classe_gramatical": "expression",
+    "significado": "Eyeliner style that uses geometric shapes, double cuts or bold lines outside the traditional eye contour, creating an artistic look.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did a graphic liner with a double line under the eye to stand out at the party.",
+    "exemplos_incorretos": [
+      "The designer used a graphic liner in the poster project.",
+      "The ruler has a graphic liner printed on it to make measuring easier.",
+      "The sketchbook came with a graphic liner on the margins."
+    ],
+    "significados_incorretos": [
+      "Graphic element used in poster designs and printed materials.",
+      "Printed marking on rulers to make precise measuring easier.",
+      "Decorative line printed on the margins of sketchbooks."
+    ],
+    "impacto_motivo": "Graphic liner is celebrated as a creative, artistic way to express personality through makeup."
+  },
+  {
+    "id": 43,
+    "nome": "glitter tears",
+    "variacoes": ["glitter tear makeup", "glitter teardrops"],
+    "classe_gramatical": "expression",
+    "significado": "Application of glitter in teardrop shapes running down from the corner of the eye, imitating shiny tears, popular in party or editorial looks.",
+    "tags": ["makeup", "eyes", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I wore glitter tears to the concert, they looked beautiful under the stage lights.",
+    "exemplos_incorretos": [
+      "She cried glitter tears from pure emotion at the wedding.",
+      "The jeweler sells a glitter tears pendant.",
+      "The craftsman made a glitter tears ornament for the Christmas tree."
+    ],
+    "significados_incorretos": [
+      "Poetic expression used to describe an emotional, shimmering tear.",
+      "Teardrop-shaped jewelry piece worn as a pendant.",
+      "Decorative ornament used in Christmas decorations."
+    ],
+    "impacto_motivo": "Glitter tears is used in a playful, artistic way, valued in themed and party looks."
+  },
+  {
+    "id": 44,
+    "nome": "sunset eyes",
+    "variacoes": ["sunset eye makeup", "sunset eyeshadow"],
+    "classe_gramatical": "expression",
+    "significado": "Eyeshadow technique that blends warm tones such as orange, red and gold, imitating the colors of a sunset on the eyes.",
+    "tags": ["makeup", "eyes", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did sunset eyes with orange and burgundy to match my party dress.",
+    "exemplos_incorretos": [
+      "We went to the beach to watch today's sunset eyes, the sky was gorgeous.",
+      "I took a photo of the sunset eyes from the airplane window.",
+      "The painting on the wall shows a classic sunset eyes over the ocean."
+    ],
+    "significados_incorretos": [
+      "Time of day when the sun sets on the horizon, admired at the beach.",
+      "Natural phenomenon photographed during airplane trips at dusk.",
+      "Classic painting theme depicting the sunset over the sea."
+    ],
+    "impacto_motivo": "Sunset eyes is celebrated as a vibrant, joyful technique, associated with party and summer looks."
+  },
+  {
+    "id": 45,
+    "nome": "tomato girl makeup",
+    "variacoes": ["tomato girl look", "tomato girl makeup look"],
+    "classe_gramatical": "expression",
+    "significado": "Makeup aesthetic with reddened cheeks and nose, as if flushed from the sun, giving a healthy, fresh summer look.",
+    "tags": ["makeup", "trend", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did tomato girl makeup with red blush on my cheeks and nose.",
+    "exemplos_incorretos": [
+      "I planted tomato girl makeup in my backyard garden this year.",
+      "I bought fresh tomato girl makeup at the neighborhood farmers market.",
+      "The sauce recipe called for ripe tomato girl makeup to be more flavorful."
+    ],
+    "significados_incorretos": [
+      "Tomato variety grown in home gardens.",
+      "Agricultural product sold fresh at farmers markets.",
+      "Ingredient used in tomato sauce recipes."
+    ],
+    "impacto_motivo": "Tomato girl makeup is a fun trend associated with a flushed, youthful and healthy look."
+  },
+  {
+    "id": 46,
+    "nome": "latte makeup",
+    "variacoes": ["latte makeup look", "latte look"],
+    "classe_gramatical": "expression",
+    "significado": "Makeup aesthetic with warm shades of brown, beige and caramel across the whole look, inspired by the colors of a latte.",
+    "tags": ["makeup", "trend", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did latte makeup today: caramel shadow, earthy blush and a warm nude lipstick.",
+    "exemplos_incorretos": [
+      "I ordered a latte makeup to drink at the corner cafe.",
+      "The coffee shop launched a seasonal fall latte makeup.",
+      "I learned to make latte makeup at home with my espresso machine."
+    ],
+    "significados_incorretos": [
+      "Hot drink made of espresso coffee with steamed milk.",
+      "Seasonal menu item at coffee shops during certain times of the year.",
+      "Hot drink recipe prepared with home coffee machines."
+    ],
+    "impacto_motivo": "Latte makeup is appreciated for its cozy, warm palette, associated with an elegant, autumnal look."
+  },
+  {
+    "id": 47,
+    "nome": "teddy bear blush",
+    "variacoes": ["teddy bear blush look", "diffused blush"],
+    "classe_gramatical": "expression",
+    "significado": "Technique of applying diffused blush on several areas of the face (cheeks, nose, eyelids), creating a natural flushed effect, as if you were a teddy bear cub.",
+    "tags": ["makeup", "trend", "tiktok"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I applied teddy bear blush on my cheeks, nose and even my eyelids for a really flushed effect.",
+    "exemplos_incorretos": [
+      "My son sleeps hugging his teddy bear blush every night.",
+      "I bought a plush teddy bear blush to decorate the baby's room.",
+      "The toy store had a huge teddy bear blush in the window."
+    ],
+    "significados_incorretos": [
+      "Plush toy shaped like a bear, used by children.",
+      "Decorative children's item common in baby rooms.",
+      "Product sold in toy stores aimed at children."
+    ],
+    "impacto_motivo": "Teddy bear blush is a technique associated with a cute, flushed look, well received as a beauty trend."
+  },
+  {
+    "id": 48,
+    "nome": "pillow lips",
+    "variacoes": ["pillowy lips", "pillow lip effect"],
+    "classe_gramatical": "expression",
+    "significado": "Technique or result of full, soft lips with a cushioned look, achieved through makeup or light aesthetic procedures.",
+    "tags": ["makeup", "lips", "trend"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "She lined her lips with a nude pencil to create the pillow lips effect.",
+    "exemplos_incorretos": [
+      "I bought new pillow lips for the guest bedroom bed.",
+      "The home decor store sells pillow lips in several sizes and colors.",
+      "I swapped the old pillow lips on the couch for more comfortable ones."
+    ],
+    "significados_incorretos": [
+      "Decorative cushion used on beds and sofas.",
+      "Decor item sold in home goods stores.",
+      "Accessory used to make sofas more comfortable and cozy."
+    ],
+    "impacto_motivo": "Pillow lips is celebrated as a full, soft lip look, very desired in beauty trends."
+  },
+  {
+    "id": 49,
+    "nome": "wet look",
+    "variacoes": ["wet look makeup", "wet effect"],
+    "classe_gramatical": "expression",
+    "significado": "Makeup and skin aesthetic with an intensely shiny, wet appearance, usually using very glossy products on the face and eyes.",
+    "tags": ["makeup", "trend", "skin"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I went for the wet look with lots of liquid highlighter for a photo shoot.",
+    "exemplos_incorretos": [
+      "The car had a wet look after going through the car wash.",
+      "The street had a wet look after yesterday's heavy rain.",
+      "The kitchen floor has a wet look whenever I mop it with this product."
+    ],
+    "significados_incorretos": [
+      "Wet appearance of a surface right after it has been washed.",
+      "Effect of a wet floor or street after rain.",
+      "Visual result of cleaning surfaces with specific products."
+    ],
+    "impacto_motivo": "Wet look is a valued aesthetic trend for creating an intense, shiny and modern look."
+  },
+  {
+    "id": 50,
+    "nome": "smokey eyes",
+    "variacoes": ["smoky eyes", "smoky eye", "smoke eyes"],
+    "classe_gramatical": "expression",
+    "significado": "Classic eye makeup style that blends dark, smudged tones to create a dramatic, intense effect, traditionally in black or gray.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did a classic black smokey eyes for the gala night.",
+    "exemplos_incorretos": [
+      "The fire left the whole neighborhood with smokey eyes from the smoke.",
+      "The grill gave off so much smokey eyes that it blocked the view of the backyard.",
+      "The smoke detector went off because of the smokey eyes in the kitchen."
+    ],
+    "significados_incorretos": [
+      "Dense cloud of smoke coming from a fire.",
+      "Excessive smoke released by grills or bonfires.",
+      "Safety alert triggered by home smoke sensors."
+    ],
+    "impacto_motivo": "Smokey eyes is a timeless makeup classic, associated with elegance and intensity in the eyes."
+  },
+  {
+    "id": 51,
+    "nome": "blended out",
+    "variacoes": ["blend out", "blended eyeshadow", "seamless blend"],
+    "classe_gramatical": "adjective",
+    "significado": "Technique of softly blending eyeshadow on the eyes to create a smooth color transition with no harsh lines.",
+    "tags": ["makeup", "eyes", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did a soft, blended out brown look to wear to work today.",
+    "exemplos_incorretos": [
+      "We made a blended out smoothie with frozen fruit for breakfast.",
+      "I edited the wedding photo and left the background all blended out.",
+      "The paint on the wall looked blended out after the rain."
+    ],
+    "significados_incorretos": [
+      "Food or drink mixed in a blender until completely smooth.",
+      "Soft blur effect applied to photographs to soften the background.",
+      "Paint colors that ran together and mixed on a surface."
+    ],
+    "impacto_motivo": "Blended out is praised as a technique that gives eye makeup a smooth, professional finish."
+  },
+  {
+    "id": 52,
+    "nome": "overlined lips",
+    "variacoes": ["overlining", "overlined lip", "lip overlining"],
+    "classe_gramatical": "expression",
+    "significado": "Lip liner technique that draws slightly outside the natural lip line to visually make the lips look fuller.",
+    "tags": ["makeup", "lips", "technique"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I drew just outside my natural lip line to get overlined lips.",
+    "exemplos_incorretos": [
+      "The tailor stitched overlined lips onto the plush toy.",
+      "The cartoonist drew the character's overlined lips with a thick outline.",
+      "The dermatologist said my overlined lips are a sign of dryness."
+    ],
+    "significados_incorretos": [
+      "Stitched mouth detail on stuffed toys or dolls.",
+      "Bold outline technique used to draw mouths in cartoons and comics.",
+      "Vertical lines or cracks on the lips caused by dryness."
+    ],
+    "impacto_motivo": "Overlined lips is used in a complimentary way to describe a fuller, well-defined lip effect."
+  },
+  {
+    "id": 53,
+    "nome": "falsies",
+    "variacoes": ["false lashes", "fake lashes", "strip lashes"],
+    "classe_gramatical": "noun",
+    "significado": "Artificial lashes applied to add volume and length to the eyes.",
+    "tags": ["makeup", "eyes", "product"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I put on thin falsies just at the outer corners to look more natural.",
+    "exemplos_incorretos": [
+      "She wore falsies under her dress for the costume party.",
+      "He wears falsies since he lost his real teeth.",
+      "I bought falsies for my nails, they just stick on."
+    ],
+    "significados_incorretos": [
+      "Padding or inserts worn in a bra to enlarge the bustline.",
+      "Artificial teeth or dentures used to replace lost natural teeth.",
+      "Artificial press-on nails applied over the natural ones."
+    ],
+    "impacto_motivo": "Falsies are seen as a positive resource to enhance the eyes in a practical and reversible way."
+  },
+  {
+    "id": 54,
+    "nome": "smudged",
+    "variacoes": ["smudged makeup", "smeared makeup", "makeup ran"],
+    "classe_gramatical": "adjective",
+    "significado": "When makeup moves out of place, runs or wears off, usually from sweat, crying or rain. It became a meme when it happens in public.",
+    "tags": ["makeup", "meme", "tiktok"],
+    "permissao": "all",
+    "impacto": "negative",
+    "exemplo_correto": "I cried so hard at the movie that my makeup got totally smudged.",
+    "exemplos_incorretos": [
+      "The paint on the wall got smudged after the rain.",
+      "The writing in my notebook got all smudged when I spilled water on it.",
+      "The photo came out smudged because I shook the camera when taking it."
+    ],
+    "significados_incorretos": [
+      "Paint smeared across a freshly painted wall.",
+      "Writing that is hard to read because the ink spread on wet paper.",
+      "Blur effect in photos taken with a shaky camera."
+    ],
+    "impacto_motivo": "Smudged describes an unwanted makeup failure, associated with frustration or embarrassment."
+  },
+  {
+    "id": 55,
+    "nome": "bare-faced",
+    "variacoes": ["barefaced", "going bare-faced", "fresh-faced"],
+    "classe_gramatical": "adjective",
+    "significado": "Having no makeup on the face, with natural skin on display.",
+    "tags": ["makeup", "everyday", "skin"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "Today I decided to go bare-faced, just sunscreen.",
+    "exemplos_incorretos": [
+      "He told a bare-faced lie to my face about what happened.",
+      "The mannequin in the window was bare-faced, with no features painted on.",
+      "After the exfoliating scrub, my skin felt bare-faced and squeaky clean."
+    ],
+    "significados_incorretos": [
+      "Brazen or shameless, done openly with no attempt to hide it.",
+      "Doll or display mannequin with a blank, unpainted face.",
+      "Result of a facial exfoliant that leaves skin with a deep-clean feeling."
+    ],
+    "impacto_motivo": "Bare-faced is used positively to value natural beauty without makeup."
+  },
+  {
+    "id": 56,
+    "nome": "contouring",
+    "variacoes": ["contour", "contour the face", "face sculpting"],
+    "classe_gramatical": "noun",
+    "significado": "Technique of sculpting the face with darker products in shadow areas and lighter ones in highlight areas, creating depth and defining features.",
+    "tags": ["makeup", "technique", "face"],
+    "permissao": "all",
+    "impacto": "positive",
+    "exemplo_correto": "I did some very light contouring just to slim my face in photos.",
+    "exemplos_incorretos": [
+      "The surveyor marked the contouring of the hill on the map before construction.",
+      "The seamstress traced the contouring of the pattern before cutting the fabric.",
+      "The illustrator did the contouring of the character's face before coloring."
+    ],
+    "significados_incorretos": [
+      "Line that outlines the shape of terrain in a construction or mapping project.",
+      "Outline used by seamstresses to mark a pattern before cutting the fabric.",
+      "Artistic drawing technique used to emphasize the edges of a face in illustrations."
+    ],
+    "impacto_motivo": "Contouring is valued as a technique that helps sculpt and define facial features."
+  }
+]
