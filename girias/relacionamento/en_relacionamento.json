@@ -1,0 +1,1639 @@
+{
+  "relacionamentos": [
+    {
+      "id": 1,
+      "nome": "crush",
+      "variacoes": [
+        "infatuation",
+        "puppy love"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A person you have a strong romantic attraction to, an interest in, or a platonic infatuation with.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "I saw my crush at school today and got too shy to talk to him.",
+      "exemplos_incorretos": [
+        "My crush is my childhood best friend's nickname.",
+        "We text flirty messages every night, but he's just my crush.",
+        "We've hooked up three times, but he's still just my crush, nothing serious."
+      ],
+      "significados_incorretos": [
+        "An affectionate nickname used between close friends.",
+        "Someone you exchange flirty texts with, no strings attached.",
+        "Someone you've hooked up with a few times without committing to anything."
+      ],
+      "impacto_motivo": "Neutral because it just names a spontaneous feeling of attraction, without carrying moral judgment or offensive connotation."
+    },
+    {
+      "id": 2,
+      "nome": "talking stage",
+      "variacoes": [
+        "we're talking",
+        "talking phase"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Someone you have frequent conversations or casual, flirty meetups with, with no formal commitment.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "I'm not going out with the group today, I'm meeting up with my talking stage.",
+      "exemplos_incorretos": [
+        "I ran into my childhood talking stage at the neighborhood fair.",
+        "He's just my talking stage on Instagram, we've never actually talked.",
+        "My talking stage from years ago turned into a serious relationship, we just broke up recently."
+      ],
+      "significados_incorretos": [
+        "A childhood friend you ran into again recently.",
+        "Someone you follow on social media but have never spoken to.",
+        "Someone you had a serious relationship with in the past."
+      ],
+      "impacto_motivo": "Classified as neutral because it describes a common type of casual involvement, without assigning blame or credit to whoever is in that situation."
+    },
+    {
+      "id": 3,
+      "nome": "date",
+      "variacoes": [
+        "going out"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A romantic or social meetup between two people, usually meant to get to know each other better or build a romantic relationship.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I went on a date last night and we went to a great restaurant.",
+      "exemplos_incorretos": [
+        "I set up a date with my boss to discuss the project at seven at night.",
+        "We all went on a date with the whole crew from work, no romantic vibe at all.",
+        "We set up a date just to check in on the relationship, it was pretty serious."
+      ],
+      "significados_incorretos": [
+        "A work meeting scheduled at an unusual time.",
+        "A group outing with several friends with no romantic intention.",
+        "A quick meeting just to decide the status of the relationship."
+      ],
+      "impacto_motivo": "Positive impact because it names a moment of connection and care between two people, associated with good expectations and attention to appearance/behavior."
+    },
+    {
+      "id": 4,
+      "nome": "get stood up",
+      "variacoes": [
+        "stood up",
+        "stand someone up"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To be left waiting for someone who never shows up to a date, or to be ignored on social media.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I waited for her at the movies for two hours, I ended up getting stood up.",
+      "exemplos_incorretos": [
+        "I stood up from the couch to answer the door.",
+        "Stand-up is a genre of comedy where a person tells jokes on stage.",
+        "I waited for his reply all afternoon, I thought I'd get stood up."
+      ],
+      "significados_incorretos": [
+        "Physically rising from a seated position.",
+        "A comedy performance style done on stage.",
+        "Waiting a long time for a text reply without the date being canceled."
+      ],
+      "impacto_motivo": "Negative because it describes an attitude of disrespect and disregard for the time and feelings of the person who was waiting."
+    },
+    {
+      "id": 5,
+      "nome": "DTR",
+      "variacoes": [
+        "define the relationship",
+        "the talk"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Short for 'Define The Relationship.' The moment a couple has a serious conversation to resolve conflicts, align expectations, or check the status of the relationship.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "We had a heavy DTR last night, but we managed to work things out.",
+      "exemplos_incorretos": [
+        "I went to the doctor for a check-up because I wasn't feeling well.",
+        "We had a chill DTR just to plan the weekend trip.",
+        "We had a serious DTR about how we'd split the apartment bills."
+      ],
+      "significados_incorretos": [
+        "An abbreviation used to refer to an on-call doctor.",
+        "A light conversation about weekend plans with your partner.",
+        "A discussion about splitting bills and finances as a couple."
+      ],
+      "impacto_motivo": "Negative because, although it's a necessary conversation, the term tends to come up associated with tension, wear-and-tear, and the risk of the relationship ending."
+    },
+    {
+      "id": 6,
+      "nome": "snake",
+      "variacoes": [
+        "snaking",
+        "friend stealer"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Someone who shows romantic interest in, or deliberately gets involved with, a friend's partner.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He hit on his best friend's girlfriend, he was being such a snake.",
+      "exemplos_incorretos": [
+        "The snake planned my cousin's entire wedding.",
+        "He's a snake, he's always introducing his single friends to each other.",
+        "That snake keeps flirting with random strangers at the party."
+      ],
+      "significados_incorretos": [
+        "Someone who plans weddings professionally.",
+        "A friend who's always setting single people up with each other.",
+        "Someone who flirts openly with strangers at parties, with no tie to any friend."
+      ],
+      "impacto_motivo": "Negative because it describes someone acting disloyally, trying to get involved with a friend's partner, hurting trust and loyalty."
+    },
+    {
+      "id": 7,
+      "nome": "secret admirer",
+      "variacoes": [
+        "admirer",
+        "watching from afar"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Someone who watches or admires another person from a distance, without getting directly involved or openly declaring their feelings.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "Maria, your secret admirer Pedro is right there.",
+      "exemplos_incorretos": [
+        "The building's secret admirer watches the security cameras all night.",
+        "She's a secret admirer, she only follows celebrities on Instagram and never comments.",
+        "He sent a sneaky text asking if I was single, what a secret admirer."
+      ],
+      "significados_incorretos": [
+        "A professional who works watching security cameras.",
+        "Someone who follows celebrity profiles on social media.",
+        "Someone who texts to discreetly find out if you're single."
+      ],
+      "impacto_motivo": "Neutral because it describes a discreet, admiring stance from a distance, with no intention to harm anyone nor any invasive action."
+    },
+    {
+      "id": 8,
+      "nome": "hookup",
+      "variacoes": [
+        "hooking up",
+        "seeing someone"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Someone you have a recurring physical and emotional involvement with, that hasn't turned into an official relationship yet.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "We're not seriously dating, he's just my hookup.",
+      "exemplos_incorretos": [
+        "I hired a hookup to be my plus-one at my cousin's wedding.",
+        "We met last week on the app, he's my new hookup.",
+        "He used to be my boyfriend, now he's just my old hookup, we broke up a while ago."
+      ],
+      "significados_incorretos": [
+        "Someone hired to accompany you to formal events.",
+        "Someone you recently met on a dating app.",
+        "Someone you used to date but broke up with."
+      ],
+      "impacto_motivo": "Neutral since it names a common intermediate stage of romantic involvement among young people, without passing judgment on whether it's right or wrong."
+    },
+    {
+      "id": 9,
+      "nome": "third wheel",
+      "variacoes": [
+        "holding the candle"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A single person who tags along with a couple on an outing or social event, feeling out of place or like they don't belong.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I went to the movies with my friend and his girlfriend and was a third wheel the whole film.",
+      "exemplos_incorretos": [
+        "The third wheel organized a surprise romantic dinner for the couple.",
+        "That third wheel always cancels plans last minute, nobody trusts them.",
+        "I just went to give the couple advice, I became like a consultant third wheel."
+      ],
+      "significados_incorretos": [
+        "Someone who organizes romantic dinners for couples.",
+        "A friend who always cancels plans at the last minute.",
+        "Someone who tags along with a couple just to give relationship advice."
+      ],
+      "impacto_motivo": "Negative because it portrays a situation of awkwardness and social exclusion, highlighting the discomfort of feeling unwanted."
+    },
+    {
+      "id": 10,
+      "nome": "ship",
+      "variacoes": [
+        "shipping",
+        "shipper"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To root for or support a couple, whether in real life or fiction, wanting them to get together.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I started shipping those two characters hard in the show.",
+      "exemplos_incorretos": [
+        "We shipped a surprise engagement party for our friends.",
+        "After the fight, they shipped and made up quickly.",
+        "I kept trying to ship my two single friends, I introduced them at a party."
+      ],
+      "significados_incorretos": [
+        "Organizing a surprise engagement party for friends.",
+        "Making up with your partner after a fight.",
+        "Introducing two single people hoping they'll get together."
+      ],
+      "impacto_motivo": "Positive because it expresses genuine support and rooting for a couple's happiness, whether in real life or fiction."
+    },
+    {
+      "id": 11,
+      "nome": "ghosting",
+      "variacoes": [
+        "ghost",
+        "disappearing"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To suddenly cut off contact in a romantic or social relationship, with no warning or explanation.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "We were talking every day and, out of nowhere, he ghosted me.",
+      "exemplos_incorretos": [
+        "He ghosts me, he only answers messages in the middle of the night.",
+        "We ghosted, we ended things in a clear and calm conversation.",
+        "After vanishing for three months, he ghosted his way back into my life like nothing happened."
+      ],
+      "significados_incorretos": [
+        "The behavior of only replying to messages late at night.",
+        "Ending a relationship in person, with a clear conversation.",
+        "Suddenly reappearing after months of silence, like nothing happened."
+      ],
+      "impacto_motivo": "Negative because it describes cutting off contact abruptly and without explanation, causing confusion and emotional distress in the person left behind."
+    },
+    {
+      "id": 12,
+      "nome": "love bombing",
+      "variacoes": [
+        "bombing with affection"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To shower someone with intense, exaggerated affection and attention early in a relationship in order to manipulate or keep them interested, often without healthy intentions.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He sent me flowers every day the first week, but later I realized it was just love bombing.",
+      "exemplos_incorretos": [
+        "He did a love bombing on the stadium jumbotron to propose to her.",
+        "We exchanged love bombing gifts on our one-year anniversary.",
+        "At first he was affectionate in a balanced way, no exaggerated love bombing."
+      ],
+      "significados_incorretos": [
+        "A public declaration of love made in a football stadium.",
+        "Exchanging symbolic gifts on a dating anniversary.",
+        "Showing genuine, balanced affection early in a relationship."
+      ],
+      "impacto_motivo": "Negative because it describes emotional manipulation, where an excess of early attention is used as a tool to emotionally trap the other person."
+    },
+    {
+      "id": 13,
+      "nome": "cutie",
+      "variacoes": [
+        "cute guy"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A male considered attractive, stylish, or interesting in a romantic sense.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "Did you see that cutie who just joined our class?",
+      "exemplos_incorretos": [
+        "My cousin's cutie was born last week, seven pounds.",
+        "She's dating a cutie much younger than her.",
+        "That cutie doesn't work or study, he still lives with his parents."
+      ],
+      "significados_incorretos": [
+        "A nickname used for newborn baby boys.",
+        "A younger guy that someone is dating.",
+        "An immature guy who still lives with his parents and doesn't work."
+      ],
+      "impacto_motivo": "Positive since it lightly compliments a guy's looks or style, without any offensive intent."
+    },
+    {
+      "id": 14,
+      "nome": "lovebirds",
+      "variacoes": [
+        "love birds"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "An affectionate term for a couple that shows a lot of affection and closeness in public or in an exaggerated way.",
+      "tags": [
+        "relationship",
+        "everyday",
+        "old-fashioned"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "There go the lovebirds holding hands again, so cute.",
+      "exemplos_incorretos": [
+        "The lovebirds are twins, nobody can tell them apart.",
+        "The lovebirds are honeymooning in Fernando de Noronha this week.",
+        "Those two are lovebirds, they're always together but swear it's just friendship."
+      ],
+      "significados_incorretos": [
+        "A nickname for identical twins.",
+        "A newlywed couple on their honeymoon.",
+        "Inseparable friends who are always together with no romance involved."
+      ],
+      "impacto_motivo": "Positive because it fondly and humorously describes a couple's public display of affection."
+    },
+    {
+      "id": 15,
+      "nome": "toyboy",
+      "variacoes": [
+        "baby",
+        "cradle robbed"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Slang used to describe someone significantly younger than their partner in a relationship, as a humorous metaphor for their young age.",
+      "tags": [
+        "everyday",
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "I didn't know Juliana was into a toyboy, now she's living with that 19-year-old.",
+      "exemplos_incorretos": [
+        "The family's toyboy was born last year, he's already walking.",
+        "He's a toyboy, still in college and living with his parents.",
+        "Her toyboy seems much older based on how he acts."
+      ],
+      "significados_incorretos": [
+        "An affectionate nickname the family gives to a baby.",
+        "Someone still in college who lives with their parents.",
+        "A younger person who seems more mature than their actual age."
+      ],
+      "impacto_motivo": "Depends on context because it can be a light joke among friends about an age gap, but it can also sound demeaning depending on tone and intent."
+    },
+    {
+      "id": 16,
+      "nome": "friends with benefits",
+      "variacoes": [
+        "FWB"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A relationship where two people are friends but also keep a physical or sexual intimacy without romantic commitment.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "They're not dating, they've just been friends with benefits for years.",
+      "exemplos_incorretos": [
+        "The group's friends with benefits thing is always wearing matching outfits to parties.",
+        "Our friends with benefits goes back to kindergarten.",
+        "It's a serious relationship disguised as friends with benefits so her parents don't find out."
+      ],
+      "significados_incorretos": [
+        "A group of friends who wear matching colorful outfits.",
+        "A long friendship that dates back to childhood.",
+        "A serious relationship disguised as a friendship so parents don't suspect."
+      ],
+      "impacto_motivo": "Positive because it describes a consensual arrangement between two people who understand and respect agreed-upon boundaries, with no broken promises."
+    },
+    {
+      "id": 17,
+      "nome": "shacking up",
+      "variacoes": [
+        "shack up"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Blend used to describe a couple who are dating but live together and have a married-like routine, even without making it official on paper.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "We've lived together for five years, we're basically shacking up like a married couple.",
+      "exemplos_incorretos": [
+        "They called the groom 'shacking up' throughout the whole wedding ceremony.",
+        "My partner and I are shacking up, but we each still have our own apartment.",
+        "We're officially shacking up now, we got married at the courthouse last month."
+      ],
+      "significados_incorretos": [
+        "A nickname given to the groom during a wedding ceremony.",
+        "A partner who lives alone, without sharing a home with anyone.",
+        "An officially married spouse, legally wed."
+      ],
+      "impacto_motivo": "Positive because it fondly describes the day-to-day closeness and routine typical of a committed couple, even without making it official."
+    },
+    {
+      "id": 18,
+      "nome": "catching feelings",
+      "variacoes": [
+        "catching feels"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Someone who gets attached very quickly, shows intense feelings, or plans the future early on in a flirtation or relationship.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "I met him yesterday and he already wants to introduce me to his parents, he's really catching feelings.",
+      "exemplos_incorretos": [
+        "She's catching feelings, she cries at any romantic movie we watch.",
+        "I was catching feelings before the first date, super nervous.",
+        "He was catching feelings in the right way, at the right pace, no rush at all."
+      ],
+      "significados_incorretos": [
+        "Someone who cries easily watching romantic movies.",
+        "Someone who's nervous before a first date.",
+        "Someone who shows genuine interest at the right pace from the start."
+      ],
+      "impacto_motivo": "Depends on context because it can be used to criticize someone rushing their feelings, but also understandingly, simply acknowledging emotional intensity."
+    },
+    {
+      "id": 19,
+      "nome": "sweet-talk",
+      "variacoes": [
+        "smooth-talk",
+        "sweet-talking"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To make small talk with the intention of flirting, seducing, or winning someone over using charm.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "He spent the whole party trying to sweet-talk me, but I didn't fall for it.",
+      "exemplos_incorretos": [
+        "The mechanic sweet-talked the engine to get it started.",
+        "I just sweet-talked him with a sincere compliment, no romantic intention.",
+        "He sweet-talked her straight up, asked her out with no hesitation."
+      ],
+      "significados_incorretos": [
+        "Getting a car engine to start through mechanical work.",
+        "Giving a sincere compliment to a friend with no romantic intention.",
+        "Asking someone out directly, with no hesitation."
+      ],
+      "impacto_motivo": "Neutral because it describes a common flirting tactic based on smooth talking, without necessarily indicating bad intentions."
+    },
+    {
+      "id": 20,
+      "nome": "get shot down",
+      "variacoes": [
+        "shot down"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To be directly rejected by someone you were romantically interested in.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I went to ask the girl out and ended up getting shot down.",
+      "exemplos_incorretos": [
+        "I got shot down by paintballs at the arena last weekend.",
+        "I got shot down an hour late, so I missed the date.",
+        "I texted her and got shot down, she still hasn't even seen it."
+      ],
+      "significados_incorretos": [
+        "Being hit by paintballs during a game.",
+        "Arriving an hour late to a scheduled date.",
+        "Being ignored on social media after sending a message."
+      ],
+      "impacto_motivo": "Negative because it describes the experience of direct rejection, an uncomfortable and emotionally frustrating moment for the person turned down."
+    },
+    {
+      "id": 21,
+      "nome": "step out (on someone)",
+      "variacoes": [
+        "stepping out",
+        "cheat"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Slang for cheating on a romantic partner with someone else.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The marriage ended after they found out he kept stepping out on her.",
+      "exemplos_incorretos": [
+        "He stepped out to cheer for the rival team after the loss.",
+        "They stepped out of the relationship out of nowhere, broke up without warning.",
+        "He didn't really cheat, he just stepped out flirting with others on Instagram."
+      ],
+      "significados_incorretos": [
+        "Switching to support a rival sports team mid-season.",
+        "Suddenly ending a relationship.",
+        "Flirting with other people without physically cheating."
+      ],
+      "impacto_motivo": "Negative because it directly names an act of betrayal, breaking trust and commitment within a relationship."
+    },
+    {
+      "id": 22,
+      "nome": "red flag",
+      "variacoes": [
+        "warning sign"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A warning sign in someone's behavior indicating that person may be toxic, manipulative, or untrustworthy in a relationship.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "She talks trash about every single ex, that's a huge red flag to me.",
+      "exemplos_incorretos": [
+        "The driver saw the red flag and stopped the car on the racetrack.",
+        "I found it odd, but it's not really a red flag, just a funny habit of his.",
+        "To me that was a good red flag, it shows he's super stable."
+      ],
+      "significados_incorretos": [
+        "A flag used to signal danger in Formula 1 races.",
+        "A strange but harmless habit of a partner.",
+        "A positive sign that shows someone is reliable and stable."
+      ],
+      "impacto_motivo": "Negative because it warns about toxic or harmful behaviors, working as a risk signal to avoid in a relationship."
+    },
+    {
+      "id": 23,
+      "nome": "have sauce",
+      "variacoes": [
+        "sauce",
+        "saucy"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To have style, attitude, charm, or a lot of confidence, making someone very attractive or 'cool.'",
+      "tags": [
+        "relationship",
+        "style",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "No doubt about it, that guy knows how to dress and talk, he's got sauce.",
+      "exemplos_incorretos": [
+        "I went to the kitchen to make sauce for dinner's pasta.",
+        "He only wears expensive brand-name clothes, he thinks that means he's got sauce.",
+        "He's got sauce because he always picks up the whole check on dates."
+      ],
+      "significados_incorretos": [
+        "Preparing a pasta dish with a special sauce.",
+        "Wearing expensive, brand-name clothes on any occasion.",
+        "Having enough money to pay for everything on a date."
+      ],
+      "impacto_motivo": "Positive because it compliments someone's confidence, style, and charisma, used as recognition and admiration."
+    },
+    {
+      "id": 24,
+      "nome": "ex-hookup",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Someone you had a casual involvement with in the past, but no longer have any romantic or physical relationship with.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I ran into my ex-hookup at the club and pretended I didn't even know him.",
+      "exemplos_incorretos": [
+        "My ex-hookup from the flea market is an old piece of furniture I finally sold.",
+        "My ex-hookup is a childhood friend I haven't seen in ten years.",
+        "That was my ex-hookup, we dated seriously for two years before breaking up."
+      ],
+      "significados_incorretos": [
+        "An old piece of furniture stored away for years.",
+        "A longtime friend you haven't seen in years.",
+        "Someone you seriously dated in the past."
+      ],
+      "impacto_motivo": "Negative because it refers to a connection that ended, often carrying memories of frustration or emotional wear."
+    },
+    {
+      "id": 25,
+      "nome": "exclusive",
+      "variacoes": [
+        "exclusively seeing"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A hookup you have an almost exclusive relationship with, who acts like a boyfriend/girlfriend (going out, being affectionate, meeting friends), but still without the official label.",
+      "tags": [
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "We travel together and talk every day, he's not just a hookup, we're exclusive.",
+      "exemplos_incorretos": [
+        "I signed up for the exclusive plan on the app to get more features.",
+        "We're exclusive, but he only sees me on special occasions like birthdays.",
+        "He's already my boyfriend, we're exclusive, I just haven't introduced him to my parents yet."
+      ],
+      "significados_incorretos": [
+        "A paid subscription plan on a dating app.",
+        "Someone who only meets you on special occasions.",
+        "An official boyfriend you haven't introduced to your parents yet."
+      ],
+      "impacto_motivo": "Positive because it describes a close, high-quality emotional involvement, with attention and affection similar to an official relationship."
+    },
+    {
+      "id": 26,
+      "nome": "catfishing",
+      "variacoes": [
+        "catfish",
+        "fake profile"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Creating a fake identity online, using other people's photos and information, usually to romantically deceive someone.",
+      "tags": [
+        "internet",
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "She thought she was dating a European model, but it was all catfishing.",
+      "exemplos_incorretos": [
+        "I went fishing with colorful catfishing bait at the river this weekend.",
+        "She just uses a filter on her profile photos, but it's really her, is that catfishing?",
+        "He only lied about his age on his profile, is that already catfishing?"
+      ],
+      "significados_incorretos": [
+        "A fishing technique using colorful artificial bait.",
+        "Using a camera filter on profile photos.",
+        "Lying about small personal details, like age or height, on a profile."
+      ],
+      "impacto_motivo": "Negative because it describes an identity scam used to emotionally deceive another person, involving bad faith."
+    },
+    {
+      "id": 27,
+      "nome": "orbiting",
+      "variacoes": [
+        "orbit",
+        "ghost liking"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "When things cool off or someone ghosts you, but they keep orbiting your online life: viewing stories, liking and reacting to posts, but never actually messaging.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He disappeared from texting, but he's still orbiting my Instagram stories every day.",
+      "exemplos_incorretos": [
+        "In physics class, we learned about the planets orbiting the sun.",
+        "He was orbiting by liking all my old photos at once.",
+        "After disappearing for three months, he suddenly reappeared, orbiting."
+      ],
+      "significados_incorretos": [
+        "An astronomical phenomenon studied in physics class.",
+        "Liking all of someone's old profile photos at once.",
+        "Suddenly reappearing after months of total silence."
+      ],
+      "impacto_motivo": "Negative because it describes an ambiguous, uncomfortable attitude of someone who disappears from direct contact but keeps watching from a distance, causing confusion."
+    },
+    {
+      "id": 28,
+      "nome": "zombieing",
+      "variacoes": [
+        "haunting"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "When the person who ghosted you (disappeared) suddenly reappears acting like nothing happened, with needy messages or reacting to posts.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Three months after disappearing, he texted me 'I miss you.' That's zombieing, and I ignored it.",
+      "exemplos_incorretos": [
+        "We learned a new zombieing dance move at the electronic music party yesterday.",
+        "He's zombieing me, he just likes my stories, never actually messages.",
+        "He disappeared for good, is that zombieing? I thought that was just ghosting."
+      ],
+      "significados_incorretos": [
+        "A popular dance style at electronic music parties.",
+        "Liking someone's stories without ever sending a message.",
+        "Disappearing for good and never giving any sign of life again."
+      ],
+      "impacto_motivo": "Negative because it describes the sudden reappearance of someone who abandoned contact without explanation, which tends to cause discomfort and distrust."
+    },
+    {
+      "id": 29,
+      "nome": "deadbeat",
+      "variacoes": [
+        "deadbeat boyfriend"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Used to describe a man who has no standout qualities, puts in little effort, and doesn't add value to the relationship.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I don't know what Maria sees in him, the guy doesn't work or study, he's a total deadbeat.",
+      "exemplos_incorretos": [
+        "The deadbeat showed up in a bank commercial on TV yesterday.",
+        "He's a deadbeat, super sweet, just doesn't have any money.",
+        "He's a deadbeat because he works too much and never has time for her."
+      ],
+      "significados_incorretos": [
+        "A fictional character used in bank commercials.",
+        "A sweet man who just doesn't have much money.",
+        "A man who works a lot and never has time for the relationship."
+      ],
+      "impacto_motivo": "Negative because the term is used pejoratively to call out a lack of effort, merit, or value from a partner in a relationship."
+    },
+    {
+      "id": 30,
+      "nome": "simp",
+      "variacoes": [
+        "simping"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Someone who does everything to please someone romantically in an exaggerated, submissive way, losing their dignity in exchange for the desired person's attention.",
+      "tags": [
+        "internet",
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "She doesn't even look at him, but he keeps buying her lunch, such a simp.",
+      "exemplos_incorretos": [
+        "The team's simp went to the stadium with face paint, screaming the whole game.",
+        "He's a simp, he agrees with everything his girlfriend says, even after ten years together.",
+        "He's just polite and treats her well, that's not simping, that's just respect."
+      ],
+      "significados_incorretos": [
+        "A nickname for a die-hard sports fan.",
+        "Someone who always agrees with what their partner says, even in a serious relationship.",
+        "Someone who treats their partner well out of politeness and respect, with no excess."
+      ],
+      "impacto_motivo": "Negative because it describes excessive submission and a loss of self-respect in trying to please someone, seen as harmful to self-esteem."
+    },
+    {
+      "id": 31,
+      "nome": "delulu",
+      "variacoes": [
+        "delusional"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Short for 'delusional.' Describes someone who builds unrealistic romantic fantasies in their head, believing in a relationship that has no real chance of happening.",
+      "tags": [
+        "internet",
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "He liked my photo, we're definitely getting married, I'm so delulu today.",
+      "exemplos_incorretos": [
+        "I downloaded delulu to edit my photos before posting.",
+        "She believed every empty promise he made, so delulu of her.",
+        "It's not delulu, he's already introduced me to his family, it's the real deal."
+      ],
+      "significados_incorretos": [
+        "A photo-editing app for social media.",
+        "Believing too much in someone's empty promises.",
+        "Being sure of a serious relationship based on real, clear signs."
+      ],
+      "impacto_motivo": "Depends on context because it can be a fond joke between friends or a criticism of someone deluding themselves about a situation with no real chance."
+    },
+    {
+      "id": 32,
+      "nome": "gold digger",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Older slang (still in use) for someone who shows romantic interest in another person only because of their vehicle or material possessions.",
+      "tags": [
+        "relationship",
+        "everyday",
+        "old-fashioned"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The moment he bought a fancy car she started paying attention to him, total gold digger.",
+      "exemplos_incorretos": [
+        "The gold digger was a famous dancer who was a hit in the 90s.",
+        "She only goes out with guys who have a car, she's kind of a gold digger about that.",
+        "She just looks for financial stability in a partner, that's not really being a gold digger."
+      ],
+      "significados_incorretos": [
+        "A famous dancer's nickname from the 90s.",
+        "Someone who only dates people who own a car.",
+        "Someone who values financial stability in a partner."
+      ],
+      "impacto_motivo": "Negative because it accuses the person of only being interested in material things, reducing the relationship to financial interest."
+    },
+    {
+      "id": 33,
+      "nome": "green flag",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A sign of good behavior or a positive trait in someone's character that shows maturity and potential for a healthy relationship.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "He always listens closely and supports my projects, that's a huge green flag.",
+      "exemplos_incorretos": [
+        "The referee raised the green flag to stop the soccer match.",
+        "She's super jealous and checks all my messages, huge green flag.",
+        "I bought a green flag to put on the flagpole in the backyard."
+      ],
+      "significados_incorretos": [
+        "A signal used by referees in sports matches.",
+        "Possessive, controlling behavior in a relationship.",
+        "A fabric flag used to decorate outdoor areas."
+      ],
+      "impacto_motivo": "Positive because it signals healthy, desirable qualities in a partner, encouraging more mature relationships."
+    },
+    {
+      "id": 34,
+      "nome": "situationship",
+      "variacoes": [
+        "undefined relationship"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A romantic or sexual involvement with no clear definition or formal commitment, somewhere between a friendship and a relationship.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "We've been seeing each other for six months but nobody's labeled it, we're in a real situationship.",
+      "exemplos_incorretos": [
+        "I signed a situationship at the bank to get a loan.",
+        "They got legally married last week, they're living a situationship.",
+        "I bought a new situationship to fix the car's flat tire."
+      ],
+      "significados_incorretos": [
+        "A financial contract to obtain a bank loan.",
+        "A legally registered civil marriage.",
+        "An automotive tool for tire repair."
+      ],
+      "impacto_motivo": "Depends on context because it can be experienced as something light and pressure-free, but can also cause frustration from the lack of definition and commitment."
+    },
+    {
+      "id": 35,
+      "nome": "breadcrumbing",
+      "variacoes": [
+        "crumbs of affection",
+        "stringing along"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Sending sporadic, minimal signs of interest (likes, short texts) just to keep someone interested with no intention of building anything serious.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He only texts every once in a while so I don't forget him, he's breadcrumbing me.",
+      "exemplos_incorretos": [
+        "I did some breadcrumbing on the chicken before frying it in the kitchen.",
+        "She proposed to me with a ring, pure breadcrumbing.",
+        "He disappeared and never replied again, that's a classic case of breadcrumbing."
+      ],
+      "significados_incorretos": [
+        "A cooking technique for coating food before frying.",
+        "A formal marriage proposal with an exchange of rings.",
+        "Disappearing and completely cutting off contact."
+      ],
+      "impacto_motivo": "Negative because it describes subtly manipulating someone into staying interested with minimal effort, with no intention of real commitment."
+    },
+    {
+      "id": 36,
+      "nome": "soft launch",
+      "variacoes": [
+        "subtle reveal",
+        "low-key post"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Posting a photo with a new partner on social media in a subtle, mysterious way (like just a hand or a back view), without revealing their identity.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "She posted a photo of two wine glasses and his hand, that was her boyfriend's soft launch.",
+      "exemplos_incorretos": [
+        "The rocket did a soft launch on its way to space.",
+        "She posted a clear photo of his face and tagged his profile, quite the soft launch.",
+        "A soft launch is when you break up with someone over social media."
+      ],
+      "significados_incorretos": [
+        "Launching space rockets.",
+        "Posting an explicit photo tagging a partner's profile.",
+        "Ending a romantic relationship through social media."
+      ],
+      "impacto_motivo": "Positive because it describes a gentle, subtle way of sharing romantic news, respecting the couple's own pace."
+    },
+    {
+      "id": 37,
+      "nome": "hard launch",
+      "variacoes": [
+        "going public",
+        "official reveal"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Openly and directly making a relationship public on social media, posting a clear photo of the couple and tagging their profile.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "After months of hiding it, she did the hard launch, posting a photo of them kissing.",
+      "exemplos_incorretos": [
+        "The ship did a hard launch at the city's port.",
+        "She did a hard launch posting just a mysterious shadow on the ground.",
+        "A hard launch is when two people decide to just be friends."
+      ],
+      "significados_incorretos": [
+        "Ships docking at seaports.",
+        "Posting only mysterious clues or shadows without showing the person.",
+        "Transitioning from a romantic relationship to a friendship."
+      ],
+      "impacto_motivo": "Positive because it marks the moment of publicly and confidently committing to a relationship in a transparent way."
+    },
+    {
+      "id": 38,
+      "nome": "benching",
+      "variacoes": [
+        "on the bench",
+        "backup option"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Keeping someone as a backup option, maintaining just enough contact so they don't walk away while you look for other options.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I feel like I'm being benched, he only calls me when all his other plans fall through.",
+      "exemplos_incorretos": [
+        "I did some benching at the gym, lifting a hundred kilos on the bench press.",
+        "He made things official with me in the first month, a perfect benching.",
+        "I put a wooden bench on the porch to sit on."
+      ],
+      "significados_incorretos": [
+        "A weightlifting exercise done on a bench.",
+        "Making a serious romantic commitment in the first month.",
+        "A wooden bench used as garden furniture."
+      ],
+      "impacto_motivo": "Negative because it describes the practice of keeping someone as a backup plan, which disregards and disrespects the other person."
+    },
+    {
+      "id": 39,
+      "nome": "cushioning",
+      "variacoes": [
+        "backup contacts",
+        "softening the fall"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Keeping casual hookups active while already in a relationship, to guarantee options in case the current relationship ends.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He keeps texting and flirting with an ex while dating someone else, that's cushioning.",
+      "exemplos_incorretos": [
+        "I bought a feather cushioning for the couch.",
+        "Cushioning is when you devote 100% of yourself to your partner and talk to no one else.",
+        "I adjusted the cushioning in my shoe to walk more comfortably."
+      ],
+      "significados_incorretos": [
+        "A feather pillow used to decorate a living room.",
+        "Being fully loyal and devoted only to your current partner.",
+        "Padding or insoles used in athletic shoes."
+      ],
+      "impacto_motivo": "Negative because it describes keeping parallel options open during a committed relationship, which amounts to disloyalty."
+    },
+    {
+      "id": 40,
+      "nome": "throuple",
+      "variacoes": [
+        "three-way relationship"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A consensual romantic relationship established between three people at the same time.",
+      "tags": [
+        "relationship",
+        "diversity"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "They're a very well-adjusted throuple and all three of them live together.",
+      "exemplos_incorretos": [
+        "I bought a throuple to cut the grass in the yard.",
+        "Throuple is the name given to a dating couple with a child.",
+        "The throuple competed in the car race."
+      ],
+      "significados_incorretos": [
+        "A gardening tool used for lawn care.",
+        "A monogamous couple who has a child.",
+        "A team of drivers in a car racing competition."
+      ],
+      "impacto_motivo": "Neutral because it describes a consensual arrangement between three people, without any moral judgment on the relationship's configuration."
+    },
+    {
+      "id": 41,
+      "nome": "gaslighting",
+      "variacoes": [
+        "psychological manipulation",
+        "gaslight"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A form of psychological abuse in a relationship in which someone distorts the facts to make their partner doubt their own memory or sanity.",
+      "tags": [
+        "relationship",
+        "psychology"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He kept saying I was making up things he'd actually said himself, gaslighting me.",
+      "exemplos_incorretos": [
+        "I turned on the gaslighting on the stove to heat up water for coffee.",
+        "She gaslit him by preparing a surprise dinner for her boyfriend.",
+        "Gaslighting is a sincere compliment about someone's intelligence."
+      ],
+      "significados_incorretos": [
+        "Lighting a gas stove burner.",
+        "Organizing a surprise romantic dinner.",
+        "A genuine compliment about a partner's intellect."
+      ],
+      "impacto_motivo": "Negative because it names a serious form of psychological abuse, capable of causing real harm to the mental health of whoever experiences it."
+    },
+    {
+      "id": 42,
+      "nome": "pocketing",
+      "variacoes": [
+        "hiding a partner",
+        "secret relationship"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Keeping a partner hidden from your social life, avoiding introducing them to friends or family and ignoring them on social media.",
+      "tags": [
+        "relationship",
+        "behavior"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "We've been together for a year and I've never met his friends, I'm being pocketed.",
+      "exemplos_incorretos": [
+        "I kept my wallet in the pocketing of my jeans.",
+        "I did some pocketing introducing her to my whole family on Sunday.",
+        "Pocketing is the art of taking professional photos on dates."
+      ],
+      "significados_incorretos": [
+        "A pocket on a piece of clothing.",
+        "Formally introducing a partner to family and friends.",
+        "A professional photography technique for couples."
+      ],
+      "impacto_motivo": "Negative because it describes the act of hiding a partner from your social life, which usually causes embarrassment and insecurity in the person being hidden."
+    },
+    {
+      "id": 43,
+      "nome": "back on the market",
+      "variacoes": [
+        "on the market"
+      ],
+      "classe_gramatical": "expression",
+      "significado": "To be single, available, and open to new romantic encounters and relationships.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I ended my relationship last month, now I'm back on the market.",
+      "exemplos_incorretos": [
+        "I waited at the market for the bus to pass by the stop.",
+        "Being on the market means being married for over ten years.",
+        "The company put its new product on the market this year."
+      ],
+      "significados_incorretos": [
+        "Waiting for public transportation at a bus stop.",
+        "Being married or in a long-term, stable relationship.",
+        "A company releasing a new product for sale."
+      ],
+      "impacto_motivo": "Positive because it describes the freedom and availability of someone single and open to new romantic possibilities."
+    },
+    {
+      "id": 44,
+      "nome": "dump",
+      "variacoes": [
+        "get dumped",
+        "dump someone"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To end a romantic relationship directly, breaking off the commitment with the other person.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "She got tired of his lies and decided to dump him over the weekend.",
+      "exemplos_incorretos": [
+        "I dumped the ball into the goal during the game.",
+        "To dump someone means to propose marriage to them.",
+        "He got dumped and got a promotion at work."
+      ],
+      "significados_incorretos": [
+        "Kicking a ball during a sports match.",
+        "Making a formal marriage proposal.",
+        "Receiving a job promotion at work."
+      ],
+      "impacto_motivo": "Negative because it describes ending a relationship abruptly, often associated with the frustration of the person being dumped."
+    },
+    {
+      "id": 45,
+      "nome": "friendzone",
+      "variacoes": [
+        "friendzoned",
+        "friend zone"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A situation where a person wants a romantic relationship, but is seen by the other only as a friend.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I tried to confess my feelings, but she said she sees me like a brother, I got friendzoned.",
+      "exemplos_incorretos": [
+        "Go play on the friendzone swings at the park.",
+        "I got friendzoned and we started dating that same week.",
+        "I bought a friendzone ticket for the concert."
+      ],
+      "significados_incorretos": [
+        "A children's play area in public parks.",
+        "Starting a successful relationship right after confessing feelings.",
+        "A ticket section at a music concert."
+      ],
+      "impacto_motivo": "Negative because it describes the frustration of having unrequited romantic feelings, being seen only as a friend."
+    },
+    {
+      "id": 46,
+      "nome": "flake",
+      "variacoes": [
+        "flake on someone",
+        "flaking"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To make up an excuse or disappear without warning to avoid meeting a partner or hookup at a certain moment.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He said he was going to bed early, but he went out partying and flaked on his girlfriend.",
+      "exemplos_incorretos": [
+        "I flaked while checking the map to find the right street.",
+        "To flake on someone means to plan a surprise romantic date.",
+        "I lost my house keys, I flaked with the keychain."
+      ],
+      "significados_incorretos": [
+        "Checking directions on a map.",
+        "Planning a surprise romantic date.",
+        "Losing personal items like keys."
+      ],
+      "impacto_motivo": "Negative because it describes an avoidant attitude and lack of commitment, leaving the other person without an answer or explanation."
+    },
+    {
+      "id": 47,
+      "nome": "trash",
+      "variacoes": [
+        "garbage"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A dishonest, toxic, or bad-natured person you had a frustrating romantic involvement with.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I finally broke up with that trash, he only ever made me angry.",
+      "exemplos_incorretos": [
+        "I bought some chocolate trash to eat for dessert.",
+        "He's trash, the most attentive and loyal partner in the world.",
+        "I fixed the trash under the wobbly table."
+      ],
+      "significados_incorretos": [
+        "A tasty dessert or sweet treat.",
+        "An extremely dedicated and attentive romantic partner.",
+        "A shim used to level out furniture."
+      ],
+      "impacto_motivo": "Negative because it labels someone based on dishonest, harmful behavior experienced in a past relationship."
+    },
+    {
+      "id": 48,
+      "nome": "forever alone",
+      "variacoes": [
+        "on the shelf"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "A humorous or derogatory term for someone who's been single for a long time and can't seem to land a relationship.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "I've been forever alone for three years, I can't even get a hookup to talk to.",
+      "exemplos_incorretos": [
+        "The ship ran aground on the beach after the storm.",
+        "She's forever alone, she got married yesterday at church with a big party.",
+        "I bought a fish at the seafood market that had washed ashore."
+      ],
+      "significados_incorretos": [
+        "A boat stuck on a sandbank.",
+        "A recently married person with a big wedding ceremony.",
+        "Fresh fish sold at a seafood market."
+      ],
+      "impacto_motivo": "Depends on context because it can be used as a lighthearted joke among friends or in a derogatory, offensive way, depending on who says it and their intent."
+    },
+    {
+      "id": 49,
+      "nome": "bail",
+      "variacoes": [
+        "bail on someone",
+        "bailing"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To use a flimsy excuse or made-up story to get out of a romantic commitment.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "She bailed on the date, saying her grandma got sick just to cancel.",
+      "exemplos_incorretos": [
+        "I bailed the car's engine out to get it to start.",
+        "To bail on someone means to formally propose marriage.",
+        "I prepared a seasoned dish to bail for lunch."
+      ],
+      "significados_incorretos": [
+        "Jump-starting a car's engine.",
+        "Making a formal marriage proposal.",
+        "A seasoned recipe or dish."
+      ],
+      "impacto_motivo": "Negative because it describes using lies to avoid a commitment, which involves a lack of honesty with a partner."
+    },
+    {
+      "id": 50,
+      "nome": "pickup line",
+      "variacoes": [
+        "pick-up line"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A flirty phrase, compliment, or approach used to show romantic interest in someone.",
+      "tags": [
+        "relationship",
+        "flirting"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "He used a funny pickup line and managed to get a smile out of her at the party.",
+      "exemplos_incorretos": [
+        "The pickup line was performed by the soprano at the opera house.",
+        "I gave him a pickup line by firing him from the company.",
+        "The tire's pickup line made a loud noise on the asphalt."
+      ],
+      "significados_incorretos": [
+        "A vocal performance in an opera show.",
+        "Firing an employee from a job.",
+        "The noise produced by tires skidding on the road."
+      ],
+      "impacto_motivo": "Neutral because it describes a common, socially accepted way of expressing romantic interest in someone."
+    },
+    {
+      "id": 51,
+      "nome": "cuddle",
+      "variacoes": [
+        "cuddling",
+        "cuddles"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A display of affection, tenderness, hugs, and closeness between a couple.",
+      "tags": [
+        "relationship",
+        "affection"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "We love staying on the couch on Sundays enjoying a cuddle.",
+      "exemplos_incorretos": [
+        "I bought a cuddle at the bakery for breakfast.",
+        "They had a rough cuddle and ended up shouting at each other.",
+        "I adjusted the car's wheel cuddle at the mechanic's."
+      ],
+      "significados_incorretos": [
+        "A bakery item for breakfast.",
+        "A heated argument accompanied by yelling.",
+        "A wheel alignment service at an auto shop."
+      ],
+      "impacto_motivo": "Positive because it describes gestures of affection and tenderness that strengthen the bond between a couple."
+    },
+    {
+      "id": 52,
+      "nome": "settle down",
+      "variacoes": [
+        "settling down"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To leave behind a lifestyle of partying and casual outings to commit to a stable relationship.",
+      "tags": [
+        "relationship",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "Once he started dating her, he settled down and doesn't go out partying anymore.",
+      "exemplos_incorretos": [
+        "I settled down the campfire by adding more wood.",
+        "To settle down means to go out with five different hookups in the same weekend.",
+        "Let's settle down to turn the air conditioning up to max."
+      ],
+      "significados_incorretos": [
+        "Feeding a campfire with more wood.",
+        "Keeping several casual relationships going at the same time.",
+        "Adjusting the temperature setting on an air conditioner."
+      ],
+      "impacto_motivo": "Positive because it describes someone maturing and choosing to prioritize stability and commitment in a relationship."
+    },
+    {
+      "id": 53,
+      "nome": "cupid",
+      "variacoes": [
+        "play cupid",
+        "matchmaker"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Someone who acts as a go-between to bring two friends together into a romantic relationship.",
+      "tags": [
+        "relationship",
+        "friendship"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "My friend played cupid and introduced me to my now-husband.",
+      "exemplos_incorretos": [
+        "I bought a cupid to measure my blood pressure.",
+        "The cupid split the couple up and made them fight.",
+        "Cupid is the rideshare driver who gave me a ride."
+      ],
+      "significados_incorretos": [
+        "A medical device for measuring blood pressure.",
+        "Someone responsible for causing a couple to break up.",
+        "A private rideshare driver."
+      ],
+      "impacto_motivo": "Positive because it describes the role of someone who helps bring two people together with good intentions, encouraging a couple to form."
+    },
+    {
+      "id": 54,
+      "nome": "vibe",
+      "variacoes": [
+        "vibing",
+        "vibe with"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To chat in a relaxed way with someone, often with the intention of getting closer or flirting.",
+      "tags": [
+        "relationship",
+        "conversation"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "I was vibing with her the whole party before asking for her number.",
+      "exemplos_incorretos": [
+        "I went to the mechanic to vibe about the engine oil.",
+        "Vibing means arguing aggressively at the top of your lungs.",
+        "I vibed with the burnt-out light bulb in the living room."
+      ],
+      "significados_incorretos": [
+        "Replacing engine lubricant fluid.",
+        "Getting into a violent verbal conflict.",
+        "Replacing residential light fixtures."
+      ],
+      "impacto_motivo": "Neutral because it describes a relaxed conversation, which may or may not have romantic intent, with no negative connotation."
+    },
+    {
+      "id": 55,
+      "nome": "stalk",
+      "variacoes": [
+        "stalking",
+        "stalker"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To dig through and snoop on someone's social media profile to find out more about their life.",
+      "tags": [
+        "internet",
+        "relationship"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "I went to stalk my new crush on Instagram and even found out his zodiac sign.",
+      "exemplos_incorretos": [
+        "I went to stalk the car's flat tire.",
+        "Stalking means hiring a private investigator in real life.",
+        "She stalked me by sending a certified letter in the mail."
+      ],
+      "significados_incorretos": [
+        "Inspecting damage on car tires.",
+        "Hiring professional in-person private investigation services.",
+        "Sending certified physical mail."
+      ],
+      "impacto_motivo": "Neutral because it describes a common curiosity on social media, without necessarily involving bad intent, although it can become excessive depending on the degree."
+    },
+    {
+      "id": 56,
+      "nome": "cape for",
+      "variacoes": [
+        "caping",
+        "capping for"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To defend or make excuses for a partner's wrong or toxic behavior because you're in love.",
+      "tags": [
+        "relationship",
+        "internet"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He messes up with her constantly and she keeps caping for his behavior.",
+      "exemplos_incorretos": [
+        "I mopped the kitchen floor to clean up the dust.",
+        "Caping for someone means ending the relationship immediately.",
+        "He caped for his suit to get rid of the wrinkles."
+      ],
+      "significados_incorretos": [
+        "Physically cleaning surfaces with a damp cloth.",
+        "Immediately ending a romantic bond.",
+        "Ironing formal clothing."
+      ],
+      "impacto_motivo": "Negative because it describes the attitude of justifying a partner's toxic behavior, which perpetuates harmful cycles in the relationship."
+    },
+    {
+      "id": 57,
+      "nome": "pet name",
+      "variacoes": [
+        "sweet nothings"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Affectionate treatment, sweet cuddling, or a nickname given to a loved one.",
+      "tags": [
+        "relationship",
+        "affection"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "She loves getting a pet name before falling asleep.",
+      "exemplos_incorretos": [
+        "The doctor prescribed a pet name to cure the flu.",
+        "Pet name is a violent road-rage fight.",
+        "I bought a rubber pet name to seal the window."
+      ],
+      "significados_incorretos": [
+        "Medication for treating cold or flu symptoms.",
+        "A confrontation in traffic.",
+        "A rubber accessory for thermal insulation."
+      ],
+      "impacto_motivo": "Positive because it describes an affectionate, tender gesture between people who are close or in love."
+    },
+    {
+      "id": 58,
+      "nome": "play hard to get",
+      "variacoes": [
+        "playing hard to get"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To fake disinterest or act coy in the face of a romantic move, to seem harder to win over.",
+      "tags": [
+        "relationship",
+        "flirting"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "She wants to go out with him, but she keeps playing hard to get just so he'll insist.",
+      "exemplos_incorretos": [
+        "I used scissors to play hard to get with the gift wrap tape.",
+        "Playing hard to get means filming an old movie.",
+        "He played hard to get by paying the entire restaurant bill without saying anything."
+      ],
+      "significados_incorretos": [
+        "Crafting adhesive tape by hand.",
+        "Analog film recording for old movies.",
+        "Quietly paying for a meal."
+      ],
+      "impacto_motivo": "Neutral because it describes a common seduction tactic based on disguising interest, without necessarily hurting anyone."
+    },
+    {
+      "id": 59,
+      "nome": "break the ice",
+      "variacoes": [
+        "breaking the ice"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To start a conversation with the goal of breaking the ice and showing interest in someone.",
+      "tags": [
+        "relationship",
+        "conversation"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I sent a meme to break the ice with the guy from college.",
+      "exemplos_incorretos": [
+        "I broke the ice with a rope to lift the box.",
+        "Breaking the ice means ignoring someone's texts on WhatsApp.",
+        "I broke the ice on the lever to open the trunk."
+      ],
+      "significados_incorretos": [
+        "Pulling ropes to hoist objects.",
+        "The act of actively ignoring received text messages.",
+        "Operating automotive mechanical controls."
+      ],
+      "impacto_motivo": "Positive because it describes the initiative of genuinely approaching someone, showing interest and social courage."
+    },
+    {
+      "id": 60,
+      "nome": "make out",
+      "variacoes": [
+        "making out"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To exchange passionate kisses and intense affection with someone, without necessarily having full sexual intercourse.",
+      "tags": [
+        "relationship",
+        "intimacy"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "They went to the back of the party just to make out.",
+      "exemplos_incorretos": [
+        "I made out the car's dented bodywork after the crash.",
+        "To make out means to sign a marriage certificate.",
+        "I made out the paper to throw it in the trash."
+      ],
+      "significados_incorretos": [
+        "Damaging a vehicle's bodywork.",
+        "Signing an official marriage certificate.",
+        "Crumpling paper for recycling disposal."
+      ],
+      "impacto_motivo": "Positive because it describes a moment of consensual intimacy and affection between two people."
+    }
+  ]
+}

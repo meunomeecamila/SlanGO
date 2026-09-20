@@ -1,0 +1,1402 @@
+{
+  "esportes": [
+    {
+      "id": 1,
+      "nome": "tuffatore",
+      "variacoes": [
+        "fare il tuffatore",
+        "tuffarsi"
+      ],
+      "classe_gramatical": "aggettivo / sostantivo",
+      "significado": "Giocatore che si inventa scuse, finge un infortunio o simula una situazione per evitare allenamenti, marcature pesanti o responsabilità.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Fa sempre finta di avere male alla coscia quando deve marcare gli avversari, è proprio un tuffatore.",
+      "exemplos_incorretos": [
+        "La riserva è rimasta tuffatore per tutta la partita seduta in panchina senza essere chiamata.",
+        "Ha esultato per il gol in modo molto da tuffatore, togliendosi la maglia e correndo per il campo.",
+        "Al momento di battere il rigore decisivo, è diventato tuffatore e ha calciato fuori."
+      ],
+      "significados_incorretos": [
+        "Giocatore di riserva che il tecnico non fa mai scendere in campo.",
+        "Giocatore che esagera nelle esultanze dopo aver segnato.",
+        "Giocatore che sbaglia sempre nei momenti decisivi per il nervosismo, come calciare un rigore."
+      ],
+      "impacto_motivo": "Attribuisce all'atleta una condotta antisportiva e poco professionale, che si inventa scuse per sottrarsi ai doveri e all'impegno di squadra."
+    },
+    {
+      "id": 2,
+      "nome": "gigionata",
+      "variacoes": [
+        "gigione",
+        "fare gigionate",
+        "gigioneggiare"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Espressione usata quando un giocatore fa dribbling o giocate di effetto inutili, di solito per mettersi in mostra, senza concretezza verso la porta.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Smettila di fare gigionate in difesa e tira subito quel pallone lontano!",
+      "exemplos_incorretos": [
+        "L'attaccante ha fatto una gigionata pazzesca ed è esploso in un'esultanza acrobatica sul prato.",
+        "I due giocatori hanno iniziato una bella gigionata dopo l'entrata cattiva.",
+        "La sua gigionata si è trasformata direttamente in gol, il tifoso ha applaudito in piedi."
+      ],
+      "significados_incorretos": [
+        "Esultanza esagerata per un gol con più capriole.",
+        "Discussione accesa tra giocatori durante la partita.",
+        "Giocata di effetto riuscita che porta direttamente al gol."
+      ],
+      "impacto_motivo": "Critica l'eccesso di esibizionismo e la mancanza di concretezza del giocatore, che privilegia lo spettacolo individuale a discapito dell'efficienza collettiva."
+    },
+    {
+      "id": 3,
+      "nome": "mani di ricotta",
+      "variacoes": [
+        "mani di burro"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Portiere che ha poca sicurezza nelle mani, lasciandosi sfuggire facilmente il pallone, o che sbaglia parate teoricamente semplici.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il tiro è arrivato debole al centro della porta, ma il portiere mani di ricotta se l'è fatto scappare.",
+      "exemplos_incorretos": [
+        "Il difensore mani di ricotta ha causato un rigore stupido in area un'altra volta.",
+        "È mancino e ha un tiro mani di ricotta, calcia sempre piano.",
+        "Il portiere mani di ricotta si è posizionato male e ha preso gol da lontano."
+      ],
+      "significados_incorretos": [
+        "Difensore che commette spesso rigori stupidi.",
+        "Giocatore mancino con poca potenza di tiro.",
+        "Portiere che si posiziona male e viene battuto da lontano."
+      ],
+      "impacto_motivo": "Evidenzia l'insicurezza tecnica del portiere, associandolo a errori gravi su parate facili che danneggiano il risultato."
+    },
+    {
+      "id": 5,
+      "nome": "a mani basse",
+      "variacoes": [],
+      "classe_gramatical": "espressione avverbiale",
+      "significado": "Vincere o perdere una partita con una differenza di punti o gol enorme, come in una goleada schiacciante.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "La nostra squadra ha giocato benissimo, li abbiamo battuti a mani basse, è finita 6 a 0!",
+      "exemplos_incorretos": [
+        "La squadra è andata in città a festeggiare a mani basse dopo il titolo.",
+        "Abbiamo vinto a mani basse ai rigori, è stata una partita molto equilibrata.",
+        "La partita è finita a mani basse, 0 a 0, senza gol da entrambe le parti."
+      ],
+      "significados_incorretos": [
+        "Festeggiamento della squadra dopo aver vinto un campionato.",
+        "Vittoria sofferta decisa ai rigori.",
+        "Pareggio senza gol in una partita bloccata."
+      ],
+      "impacto_motivo": "Indica una vittoria schiacciante e incontestabile, sottolineando il dominio e la prestazione superiore della squadra vincitrice."
+    },
+    {
+      "id": 6,
+      "nome": "appendere gli scarpini al chiodo",
+      "variacoes": [
+        "appendere le scarpette al chiodo"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Ritirarsi dalla carriera nel calcio o, per estensione, decidere di smettere di praticare qualsiasi attività o professione abituale.",
+      "tags": [
+        "sport",
+        "calcio",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Dopo vent'anni nel mondo aziendale, il direttore ha deciso di appendere gli scarpini al chiodo e andare a vivere al mare.",
+      "exemplos_incorretos": [
+        "Ha appeso gli scarpini al chiodo direttamente sulla rete dopo aver segnato il gol della vittoria.",
+        "L'attaccante ha appeso gli scarpini al chiodo e ha firmato con la rivale a metà anno.",
+        "Dopo l'infortunio grave, ha dovuto appendere gli scarpini al chiodo temporaneamente."
+      ],
+      "significados_incorretos": [
+        "Festeggiare un gol restando appesi alla rete della porta.",
+        "Cambiare squadra a metà stagione.",
+        "Restare fuori dalla squadra titolare per un infortunio grave."
+      ],
+      "impacto_motivo": "Descrive un fatto naturale di chiusura di un ciclo o di pensionamento, senza attribuire di per sé un tono positivo o negativo."
+    },
+    {
+      "id": 7,
+      "nome": "brocco",
+      "variacoes": [
+        "scarpone"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Giocatore di calcio di pessima qualità tecnica, senza alcuna abilità o con un rendimento molto scarso in campo.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "L'attaccante nuovo ha sbagliato quattro gol a porta vuota, è un brocco completo.",
+      "exemplos_incorretos": [
+        "Quel brocco in tribuna ha iniziato a litigare con un tifoso della squadra avversaria.",
+        "La riserva è un brocco, non si allena mai bene e resta solo in panchina.",
+        "È un brocco che sbaglia un passaggio dopo l'altro, ma corre moltissimo in campo."
+      ],
+      "significados_incorretos": [
+        "Tifoso che va allo stadio solo per litigare.",
+        "Giocatore di riserva che non si allena mai con impegno.",
+        "Giocatore che sbaglia molti passaggi ma si sforza tantissimo."
+      ],
+      "impacto_motivo": "Si tratta di una critica dispregiativa che squalifica apertamente la capacità tecnica e l'abilità dell'atleta."
+    },
+    {
+      "id": 8,
+      "nome": "papera",
+      "variacoes": [
+        "fare una papera"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Errore grave o grottesco del portiere che non riesce a trattenere il pallone e provoca un gol facilmente parabile.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il tiro era rasoterra e debole, ma il portiere è scivolato e ha fatto una papera clamorosa.",
+      "exemplos_incorretos": [
+        "Il capocannoniere, soprannominato papera dai tifosi, ha segnato tre gol in partita.",
+        "Il difensore ha fatto una papera in area e l'arbitro ha fischiato rigore.",
+        "È stato un tiro papera, senza nessuna forza, ma è entrato lo stesso."
+      ],
+      "significados_incorretos": [
+        "Soprannome affettuoso del capocannoniere della squadra.",
+        "Errore del difensore che provoca un calcio di rigore.",
+        "Tiro debole che comunque si trasforma in gol per fortuna."
+      ],
+      "impacto_motivo": "Associa la prestazione del portiere a un errore imbarazzante e banale, che causa direttamente il danno del gol subito."
+    },
+    {
+      "id": 10,
+      "nome": "fumino",
+      "variacoes": [
+        "essere fumino"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Giocatore individualista che tiene troppo il pallone ed evita di passarlo ai compagni di squadra, volendo risolvere tutto da solo.",
+      "tags": [
+        "sport",
+        "calcio",
+        "videogiochi"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Ha preferito tirare da lontano e ha sbagliato, mentre io ero libero in area, che fumino.",
+      "exemplos_incorretos": [
+        "Il fumino della squadra arriva sempre in ritardo all'allenamento del venerdì.",
+        "Quel fumino si è divorato un gol clamoroso da solo davanti alla porta.",
+        "È fumino, preferisce sempre rischiare il tiro da fuori area invece di passare."
+      ],
+      "significados_incorretos": [
+        "Giocatore che arriva sempre in ritardo agli allenamenti.",
+        "Attaccante che sbaglia molti gol facili.",
+        "Giocatore che preferisce tirare da fuori area invece di toccare palla per un compagno."
+      ],
+      "impacto_motivo": "Critica la condotta egoista del giocatore, che non rispetta il lavoro collettivo nel tentativo di mettersi in mostra da solo."
+    },
+    {
+      "id": 11,
+      "nome": "tunnel",
+      "variacoes": [
+        "rullino"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Dribbling molto abile in cui il giocatore fa passare il pallone esattamente tra le gambe dell'avversario e lo recupera dall'altro lato.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "L'attaccante ha fatto un tunnel umiliante al difensore ed è partito da solo verso la porta.",
+      "exemplos_incorretos": [
+        "Dopo il gol ha fatto il gesto del tunnel, l'esultanza di scrivere in aria.",
+        "Il terzino ha servito un tunnel meraviglioso in area per il colpo di testa del centravanti.",
+        "Ha fatto un tunnel di tacco sorprendente tra i due difensori centrali."
+      ],
+      "significados_incorretos": [
+        "Esultanza di un gol che imita il gesto di scrivere in aria.",
+        "Cross preciso del terzino verso l'area di rigore.",
+        "Passaggio di tacco sorprendente tra due avversari."
+      ],
+      "impacto_motivo": "Esalta la raffinatezza tecnica e la creatività del dribbling, creando spettacolo e superando il marcatore con eleganza."
+    },
+    {
+      "id": 12,
+      "nome": "sombrero",
+      "variacoes": [
+        "lenzuolo"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Dribbling che consiste nel calciare il pallone sopra la testa dell'avversario e riprenderne il controllo alle sue spalle.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il numero dieci ha fatto un sombrero meraviglioso al centrocampista prima di crossare in area.",
+      "exemplos_incorretos": [
+        "Ha fatto il gesto del sombrero con la mano sulla testa per esultare.",
+        "È saltato più in alto di tutti e ha fatto un sombrero di testa all'incrocio dei pali.",
+        "Ha rischiato un sombrero in rovesciata spettacolare che è morto in fondo alla rete."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta mettendo la mano sulla testa a forma di cappello.",
+        "Colpo di testa preciso all'incrocio dei pali.",
+        "Rovesciata spettacolare che si trasforma in un gol di grande effetto."
+      ],
+      "impacto_motivo": "Sottolinea la genialità e la plasticità della giocata individuale, applaudita per aver superato l'avversario per vie aeree con maestria."
+    },
+    {
+      "id": 13,
+      "nome": "cucchiaio",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Stile di conclusione di grande classe, spesso sui rigori, in cui il giocatore tocca il pallone da sotto perché salga lentamente, scavalcando il portiere già caduto.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ha battuto il rigore a cucchiaio nel mezzo della porta mentre il portiere si tuffava a destra.",
+      "exemplos_incorretos": [
+        "Dopo il gol ha finto di scavare il prato in esultanza, come fosse un cucchiaio.",
+        "Ha calciato un cucchiaio fortissimo di collo pieno che si è insaccato sotto la traversa.",
+        "Il cucchiaio sulla punizione è passato sopra la barriera ed è entrato."
+      ],
+      "significados_incorretos": [
+        "Esultanza in cui si finge di scavare un buco simbolico nel prato.",
+        "Tiro potente di collo pieno sotto la traversa.",
+        "Punizione che scavalca la barriera ed entra in porta."
+      ],
+      "impacto_motivo": "Elogia la freddezza, la classe e la precisione tecnica necessarie per eseguire un tiro delicato e ad alto rischio."
+    },
+    {
+      "id": 15,
+      "nome": "ace",
+      "variacoes": [
+        "ace al servizio"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Nella pallavolo e nel tennis, è un servizio talmente potente e preciso che entra direttamente nel campo avversario senza essere ricevuto, valendo il punto immediato.",
+      "tags": [
+        "pallavolo",
+        "tennis",
+        "sport"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "La partita era tesa, ma il tennista ha piazzato un ace imprendibile e ha vinto il match.",
+      "exemplos_incorretos": [
+        "Dopo il punto ha fatto il gesto dell'ace alzando il dito verso il pubblico.",
+        "Il muro è stato un vero ace, ha fermato l'attacco sulla faccia dell'avversario.",
+        "Ha piazzato una schiacciata tipo ace, imprendibile, dritta nel campo avversario."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta alzando il dito indice.",
+        "Muro perfetto che ferma l'attacco avversario.",
+        "Schiacciata potente che l'avversario non riesce a difendere."
+      ],
+      "impacto_motivo": "Rappresenta la perfezione nell'esecuzione del servizio, garantendo un punto diretto e dimostrando superiorità tecnica."
+    },
+    {
+      "id": 17,
+      "nome": "hail mary",
+      "variacoes": [
+        "passaggio hail mary"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Giocata disperata del Football Americano in cui il quarterback lancia un passaggio lungo verso l'area di meta, sperando in un miracolo all'ultimo secondo della partita.",
+      "tags": [
+        "sport",
+        "football americano"
+      ],
+      "permissao": "tutti",
+      "impacto": "dipende dal contesto",
+      "exemplo_correto": "Mancavano solo cinque secondi sul cronometro e ha tentato un hail mary eroico per vincere la partita.",
+      "exemplos_incorretos": [
+        "Dopo il touchdown, il giocatore ha fatto l'hail mary inginocchiandosi sul prato.",
+        "La difesa ha fatto un hail mary intercettando il passaggio nell'ultima azione.",
+        "Mancavano pochi secondi e la squadra ha tentato un hail mary di field goal da lunghissima distanza."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta inginocchiandosi sul prato dopo il touchdown.",
+        "Giocata difensiva che intercetta il passaggio avversario.",
+        "Field goal decisivo calciato allo scadere della partita."
+      ],
+      "impacto_motivo": "Se riesce, diventa un gesto miracoloso ed eroico; se fallisce, evidenzia la disperazione e l'insuccesso della squadra."
+    },
+    {
+      "id": 18,
+      "nome": "portafortuna",
+      "variacoes": [
+        "essere un portafortuna"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Persona molto fortunata o che presumibilmente porta buona sorte alla squadra o al gruppo di amici quando guarda la partita.",
+      "tags": [
+        "sport",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Chiamo sempre mio cugino a vedere la finale con noi, quel ragazzo è un portafortuna incredibile.",
+      "exemplos_incorretos": [
+        "Quel portafortuna della squadra segna sempre di testa sui calci d'angolo.",
+        "È un portafortuna, viaggia per vedere ogni partita in trasferta.",
+        "Guardo solo le partite decisive, sono un portafortuna in quei momenti."
+      ],
+      "significados_incorretos": [
+        "Giocatore che segna sempre gol di testa.",
+        "Tifoso che va a vedere tutte le partite in trasferta.",
+        "Persona che guarda solo le partite decisive della squadra."
+      ],
+      "impacto_motivo": "Associa la presenza della persona alla fortuna e ai risultati vincenti, rendendola una presenza amata e richiesta nel gruppo."
+    },
+    {
+      "id": 19,
+      "nome": "carrista",
+      "variacoes": [
+        "salire sul carro del vincitore",
+        "voltagabbana"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Tifoso sleale che cambia squadra a seconda di chi sta vincendo più titoli in quel momento, abbandonando la squadra di sempre.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Giurava amore eterno alla sua squadra, ma appena l'altra ha iniziato a vincere tutto è diventato subito un carrista.",
+      "exemplos_incorretos": [
+        "Il terzino è stato un carrista e ha giocato da attaccante nel secondo tempo.",
+        "Quel commentatore fa il carrista ogni settimana su chi dovrebbe essere l'allenatore.",
+        "Si presenta allo stadio solo quando la squadra è in lotta per il titolo, è un carrista."
+      ],
+      "significados_incorretos": [
+        "Giocatore che cambia posizione a metà partita.",
+        "Commentatore che cambia idea sull'allenatore ogni settimana.",
+        "Tifoso che va allo stadio solo quando la squadra sta vincendo titoli."
+      ],
+      "impacto_motivo": "Condanna la mancanza di lealtà e l'opportunismo della persona, che abbandona la propria passione sportiva in cambio di vittorie facili."
+    },
+    {
+      "id": 20,
+      "nome": "passaggio di guardia",
+      "variacoes": [
+        "passare la guardia"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Tecnica fondamentale nel Ju-Jitsu in cui il lottatore supera le gambe dell'avversario a terra, raggiungendo il controllo laterale del suo corpo.",
+      "tags": [
+        "sport",
+        "arti marziali",
+        "jiu-jitsu"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ha usato molta pressione e peso per fare il passaggio di guardia dell'avversario e finalizzare con una leva al braccio.",
+      "exemplos_incorretos": [
+        "Dopo la vittoria, ha esultato facendo il gesto del passaggio di guardia con le braccia.",
+        "Ha fatto il passaggio di guardia con uno strangolamento perfetto da dietro.",
+        "Ha fatto il passaggio di guardia con una raspata veloce, ribaltando la posizione sul tatami."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta alzando le braccia a forma di croce.",
+        "Finalizzazione per strangolamento eseguita da dietro.",
+        "Applicare una raspata per ribaltare la posizione a terra."
+      ],
+      "impacto_motivo": "Riconosce l'avanzamento tattico e la conquista di una posizione di dominio nel combattimento, fondamentale per fare punti o finalizzare."
+    },
+    {
+      "id": 21,
+      "nome": "iellato",
+      "variacoes": [
+        "essere iellato"
+      ],
+      "classe_gramatical": "aggettivo",
+      "significado": "Persona molto sfortunata o che ha la fama di portare sempre male alla propria squadra del cuore o agli eventi a cui partecipa.",
+      "tags": [
+        "sport",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Non invitatelo più al bar a vedere la partita, ogni volta che viene lui la nostra squadra prende gol, è troppo iellato.",
+      "exemplos_incorretos": [
+        "È iellato, sbaglia sempre il rigore decisivo negli allenamenti.",
+        "Quell'iellato non va mai allo stadio, preferisce guardare da casa.",
+        "Solo nelle partite decisive è iellato, in quelle normali la squadra vince tranquillamente."
+      ],
+      "significados_incorretos": [
+        "Giocatore che sbaglia sempre i rigori in allenamento.",
+        "Tifoso che non va mai allo stadio a vedere la squadra.",
+        "Persona che porta sfortuna solo nelle partite decisive, ma non in quelle normali."
+      ],
+      "impacto_motivo": "Etichetta la persona come un portatore di sfortuna, generando distanza e scherzi pungenti tra i compagni di tifo."
+    },
+    {
+      "id": 22,
+      "nome": "tryhard",
+      "variacoes": [
+        "fare il tryhard",
+        "tryhardare"
+      ],
+      "classe_gramatical": "sostantivo / aggettivo",
+      "significado": "Termine che viene dall'inglese. Persona che si impegna in modo esagerato e competitivo in un gioco casual o in uno sport amatoriale, volendo vincere a ogni costo.",
+      "tags": [
+        "sport",
+        "videogiochi",
+        "esports"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Stavamo solo palleggiando nel weekend per sudare un po' e quello è arrivato scivolando con l'entrata, proprio un tryhard.",
+      "exemplos_incorretos": [
+        "Il giocatore professionista è tryhard, si allena il doppio del resto della rosa.",
+        "Gioca ai videogiochi solo in modalità competitiva seria, mai casual, è tryhard.",
+        "Fa finta di essere tryhard ma in realtà non gliene importa niente del risultato della partita."
+      ],
+      "significados_incorretos": [
+        "Giocatore professionista che si allena il doppio dei compagni.",
+        "Persona che gioca ai videogiochi solo in modalità competitiva seria.",
+        "Giocatore che finge di impegnarsi ma in realtà non si preoccupa del risultato."
+      ],
+      "impacto_motivo": "Critica la mancanza di buon senso in contesti ricreativi, dove l'ossessione per la vittoria rovina il divertimento e il clima rilassato."
+    },
+    {
+      "id": 23,
+      "nome": "shape",
+      "variacoes": [
+        "mettere shape",
+        "essere in shape"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Gergo del mondo del bodybuilding per riferirsi al condizionamento fisico, specialmente quando il corpo è muscoloso, definito e attraente.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il ragazzo ha seguito una dieta rigorosa e si è messo in uno shape incredibile per l'estate.",
+      "exemplos_incorretos": [
+        "Ho comprato uno shape nuovo per allenarmi con più compressione sulle braccia.",
+        "Ho preso lo shape prima dell'allenamento per avere più energia in palestra.",
+        "Ha raggiunto quello shape troppo in fretta, deve usare qualcosa."
+      ],
+      "significados_incorretos": [
+        "Indumento a compressione usato per allenarsi in palestra.",
+        "Integratore in polvere assunto prima dell'allenamento.",
+        "Corpo definito ottenuto rapidamente con l'uso di anabolizzanti."
+      ],
+      "impacto_motivo": "Elogia la cura estetica e la disciplina dell'atleta, riconoscendo l'impegno negli allenamenti e la buona forma fisica raggiunta."
+    },
+    {
+      "id": 24,
+      "nome": "gambetto",
+      "variacoes": [
+        "fare un gambetto",
+        "gambetto di donna"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Manovra degli scacchi in cui il giocatore sacrifica intenzionalmente un pedone o un pezzo all'inizio della partita, per ottenere un vantaggio strategico sulla scacchiera.",
+      "tags": [
+        "sport",
+        "scacchi",
+        "giochi da tavolo"
+      ],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Per demolire la sua difesa, il maestro russo ha deciso di usare il gambetto di re alla terza mossa.",
+      "exemplos_incorretos": [
+        "Dopo aver vinto, ha fatto il gesto del gambetto imitando un cavallo con la mano.",
+        "Ha applicato un gambetto perfetto concludendo con uno scacco matto.",
+        "La sua strategia era un gambetto difensivo, per evitare di perdere pezzi fin dall'inizio."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta muovendo la mano come se fosse un cavallo degli scacchi.",
+        "Mossa finale che porta direttamente allo scacco matto.",
+        "Strategia difensiva che evita di perdere pezzi all'inizio della partita."
+      ],
+      "impacto_motivo": "Classifica una strategia tecnica e neutra degli scacchi, il cui valore dipende esclusivamente dallo sviluppo tattico della partita."
+    },
+    {
+      "id": 25,
+      "nome": "baciare il tappeto",
+      "variacoes": [
+        "baciare la tela",
+        "andare al tappeto"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Essere messo KO in modo brutale negli sport da combattimento (Boxe, MMA), cadendo di pancia o di faccia direttamente sul pavimento del ring.",
+      "tags": [
+        "sport",
+        "combattimento",
+        "boxe"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Ha abbassato la guardia per un secondo, ha preso un diretto perfetto al mento ed è andato a baciare il tappeto all'istante.",
+      "exemplos_incorretos": [
+        "Dopo la vittoria, ha baciato il tappeto alzando le braccia sul ring.",
+        "Ha incassato un colpo del genere e ha quasi baciato il tappeto, ma è rimasto in piedi.",
+        "Ha baciato il tappeto apposta, simulando una caduta per guadagnare tempo."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta alzando le braccia sopra il ring.",
+        "Colpo potente che fa cadere l'avversario senza metterlo KO.",
+        "Cadere a terra di proposito per simulare una caduta."
+      ],
+      "impacto_motivo": "Descrive una sconfitta netta per KO, evidenziando la fragilità e la perdita di conoscenza nel combattimento."
+    },
+    {
+      "id": 26,
+      "nome": "roba",
+      "variacoes": [
+        "essere sulla roba",
+        "prendere la roba"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Gergo del mondo della palestra e del bodybuilding per riferirsi all'uso frequente di steroidi anabolizzanti, in modo discreto o scherzoso.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "genitori",
+      "impacto": "dipende dal contesto",
+      "exemplo_correto": "Impossibile che uno metta su 15 chili di massa in due mesi mangiando solo pollo, di sicuro è sulla roba.",
+      "exemplos_incorretos": [
+        "Ho bevuto una bevanda energetica prima di andare in palestra oggi.",
+        "L'integratore proteico post-allenamento aiuta il recupero muscolare.",
+        "Quel suo shape è tutto naturale, solo dieta e allenamento, niente anabolizzanti."
+      ],
+      "significados_incorretos": [
+        "Bevanda energetica bevuta prima dell'allenamento pesante.",
+        "Integratore proteico consumato dopo l'allenamento.",
+        "Corpo definito in modo naturale ottenuto solo con dieta e allenamento."
+      ],
+      "impacto_motivo": "Può avere un tono scherzoso o ammirato per il grande aumento di massa, oppure un tono dispregiativo che indica inganno e rischi per la salute."
+    },
+    {
+      "id": 27,
+      "nome": "iella",
+      "variacoes": [
+        "portare iella",
+        "iellato",
+        "iellare"
+      ],
+      "classe_gramatical": "sostantivo / verbo",
+      "significado": "Sfortuna ripetuta, malocchio prolungato o energia negativa in cui tutto va storto, molto usata quando le squadre inanellano serie di sconfitte o infortuni.",
+      "tags": [
+        "sport",
+        "calcio",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Questa squadra non vince da dieci giornate, qualcuno deve togliere questa iella dallo spogliatoio.",
+      "exemplos_incorretos": [
+        "Ha battuto i piedi per terra tre volte per togliersi l'iella prima di battere il rigore.",
+        "La squadra è in una bella iella, cinque vittorie di fila senza perdere.",
+        "Quel giocatore vive di iella, finge sempre un piccolo infortunio per uscire dal campo."
+      ],
+      "significados_incorretos": [
+        "Esultanza per un gol fatta battendo i piedi per terra tre volte.",
+        "Serie di vittorie consecutive di una squadra.",
+        "Piccolo infortunio che il giocatore finge di avere durante la partita."
+      ],
+      "impacto_motivo": "Esprime un periodo persistente di sfortuna, disgrazie o energia negativa che danneggia il rendimento dell'atleta o della squadra."
+    },
+    {
+      "id": 29,
+      "nome": "clutch",
+      "variacoes": [
+        "clutch player",
+        "essere clutch",
+        "clutchare"
+      ],
+      "classe_gramatical": "aggettivo / verbo",
+      "significado": "Giocatore estremamente decisivo e freddo, che non sente la pressione del pubblico avversario e riesce a salvare la partita o chiudere il punto all'ultimo secondo.",
+      "tags": [
+        "sport",
+        "videogiochi",
+        "basket",
+        "esports"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Stavamo perdendo di due punti alla fine dell'ultimo quarto, ma lui è troppo clutch e ha segnato da tre allo scadere.",
+      "exemplos_incorretos": [
+        "Dopo il canestro ha fatto il gesto clutch portando la mano al petto.",
+        "Quella riserva è clutch, entra in campo solo negli ultimi minuti della partita.",
+        "È fortissimo in allenamento ma si blocca nelle partite vere, niente affatto clutch."
+      ],
+      "significados_incorretos": [
+        "Esultanza fatta portando la mano al petto dopo il canestro.",
+        "Giocatore di riserva che entra solo negli ultimi minuti della partita.",
+        "Giocatore che si esalta solo in allenamento ma si blocca nelle partite ufficiali."
+      ],
+      "impacto_motivo": "Esalta il controllo emotivo supremo e la capacità di chiudere le partite nei momenti più tesi e decisivi."
+    },
+    {
+      "id": 30,
+      "nome": "gymbro",
+      "variacoes": [
+        "gym bro",
+        "compagno di allenamento"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Unione delle parole inglesi 'gym' (palestra) e 'bro' (fratello). L'amico di palestra quasi inseparabile che si allena insieme ogni giorno e motiva a caricare più peso.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ho scritto al mio gymbro per avvisarlo che oggi è giorno di gambe ed è già lì che aspetta al tornello.",
+      "exemplos_incorretos": [
+        "Ho assunto un gymbro privato per aiutarmi in palestra questo mese.",
+        "Ho scaricato un'app gymbro per creare la mia scheda di allenamento da solo.",
+        "È un gymbro solitario, preferisce allenarsi da solo al proprio ritmo, senza compagno."
+      ],
+      "significados_incorretos": [
+        "Istruttore assunto dalla palestra per lezioni private.",
+        "Applicazione di allenamento che crea la scheda degli esercizi.",
+        "Persona che si allena sempre da sola, senza compagno, concentrata sul proprio ritmo."
+      ],
+      "impacto_motivo": "Valorizza il cameratismo, l'amicizia e l'incoraggiamento reciproco per mantenere costanza e progressi nel bodybuilding."
+    },
+    {
+      "id": 31,
+      "nome": "allenamento moscio",
+      "variacoes": [
+        "allenarsi moscio"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Andare in palestra senza voglia, sollevando pochissimo peso, fermandosi ogni momento per guardare il telefono o chiacchierare, senza alcuno sforzo o intensità reale.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Si lamenta sempre che la palestra non dà risultati, ma passa un'ora sulla macchina a guardare TikTok, fa solo allenamento moscio.",
+      "exemplos_incorretos": [
+        "La lezione di allenamento moscio, tipo yoga leggero, è il martedì mattina.",
+        "Ho fatto un allenamento moscio di recupero il giorno dopo la gamba pesante.",
+        "Quell'allenamento è stato tutto tranne che moscio, HIIT intenso in venti minuti."
+      ],
+      "significados_incorretos": [
+        "Corso di yoga leggero praticato in palestra.",
+        "Allenamento di recupero fatto un giorno dopo uno sforzo intenso.",
+        "Allenamento a intervalli ad alta intensità in poco tempo."
+      ],
+      "impacto_motivo": "Rimprovera la mancanza di dedizione e concentrazione in palestra, prendendo in giro chi non mette abbastanza intensità per ottenere risultati."
+    },
+    {
+      "id": 32,
+      "nome": "malato immaginario",
+      "variacoes": [
+        "giocatore malato immaginario"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Giocatore che vive nell'infermeria, fingendo infortuni o prolungando i recuperi per non dover giocare o allenarsi.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il centrocampista della squadra è un vero malato immaginario, sente una fitta alla coscia e chiede già tre mesi di infermeria.",
+      "exemplos_incorretos": [
+        "L'attaccante ha calciato con precisione da malato immaginario per battere il rigore decisivo.",
+        "L'allenatore malato immaginario ha fatto una lezione di tattica nel derby del fine settimana.",
+        "Ha segnato un gol da malato immaginario battendo la punizione sopra la barriera."
+      ],
+      "significados_incorretos": [
+        "Scarpino speciale usato dai giocatori per avere più precisione nei rigori.",
+        "Allenatore esperto che usa strategie difensive semplici.",
+        "Stile di battuta di punizione morbida sopra la barriera."
+      ],
+      "impacto_motivo": "Dimostra mancanza di impegno professionale verso la squadra, criticando l'atleta che evita di scendere in campo con il pretesto di un infortunio."
+    },
+    {
+      "id": 33,
+      "nome": "harakiri",
+      "variacoes": [
+        "fare harakiri",
+        "regalare la partita"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Commettere un errore infantile e imperdonabile durante la partita, regalando la vittoria o il vantaggio all'avversario.",
+      "tags": [
+        "sport",
+        "calcio",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il difensore ha provato a rinviare senza guardare, l'attaccante avversario ha intercettato e la squadra ha fatto harakiri nei minuti di recupero.",
+      "exemplos_incorretos": [
+        "L'attaccante ha fatto harakiri all'incrocio con un tiro da fuori area.",
+        "I tifosi hanno fatto harakiri cantando dall'inizio alla fine della partita.",
+        "La dirigenza ha fatto harakiri e ha ingaggiato tre rinforzi dall'Europa."
+      ],
+      "significados_incorretos": [
+        "Calciare il pallone con precisione all'incrocio dei pali.",
+        "Tifare in modo appassionato e ininterrotto allo stadio.",
+        "Annunciare grandi acquisti economici per la squadra."
+      ],
+      "impacto_motivo": "Attribuisce all'atleta o alla squadra la responsabilità di un errore banale e decisivo che porta a una sconfitta frustrante."
+    },
+    {
+      "id": 35,
+      "nome": "cappotto",
+      "variacoes": [
+        "prendere un cappotto",
+        "dare un cappotto"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Nel tennis, termine usato quando un giocatore vince un set per 6 a 0, senza cedere nemmeno un game all'avversario.",
+      "tags": [
+        "sport",
+        "tennis"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il numero uno del mondo ha dominato il primo set e ha rifilato un cappotto indiscutibile.",
+      "exemplos_incorretos": [
+        "Il tennista ha cambiato le corde della racchetta a metà del secondo set.",
+        "Il battitore ha fatto un cappotto al centro del campo con uno smash perfetto.",
+        "La partita è andata a un cappotto di spareggio super equilibrato nel terzo set."
+      ],
+      "significados_incorretos": [
+        "Accessorio di protezione per l'impugnatura della racchetta da tennis.",
+        "Colpo di smash piazzato al centro del campo avversario.",
+        "Tie-break combattuto ed equilibrato per decidere il vincitore del set."
+      ],
+      "impacto_motivo": "Indica una vittoria schiacciante e impeccabile nel tennis, dimostrando totale superiorità tecnica sull'avversario."
+    },
+    {
+      "id": 36,
+      "nome": "il sette",
+      "variacoes": [
+        "angolo della porta"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "L'angolo superiore della porta (l'incontro tra il palo e la traversa), considerato il punto più difficile da parare per il portiere.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ha battuto la punizione con maestria e ha messo il pallone nel sette, senza scampo per il portiere.",
+      "exemplos_incorretos": [
+        "Il sette della squadra ha parato tre rigori nella serie finale.",
+        "L'attaccante ha calciato debole nel sette e il portiere ha bloccato in due tempi.",
+        "L'arbitro ha fischiato il sette indicando un tocco di mano in area."
+      ],
+      "significados_incorretos": [
+        "Soprannome affettuoso del portiere specialista nel parare i rigori.",
+        "Tiro debole e senza direzione nel mezzo della porta.",
+        "Gesto dell'arbitro che indica un'infrazione con le mani."
+      ],
+      "impacto_motivo": "Valorizza l'estrema precisione e mira del tiro, che si traduce in un gol esteticamente bellissimo e imparabile."
+    },
+    {
+      "id": 39,
+      "nome": "airball",
+      "variacoes": [
+        "fare un airball",
+        "air ball"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Nel basket, un tiro talmente sbagliato che passa lontano e non tocca né il ferro, né il tabellone né la rete.",
+      "tags": [
+        "sport",
+        "basket"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "La guardia ha provato un tiro da tre senza equilibrio e ha combinato un airball imbarazzante.",
+      "exemplos_incorretos": [
+        "Ha fatto una schiacciata spettacolare inchiodando il pallone con due mani.",
+        "Il centro ha preso il rimbalzo offensivo e ha passato il pallone al compagno libero.",
+        "La squadra ha festeggiato il canestro da tre punti all'ultimo secondo della partita."
+      ],
+      "significados_incorretos": [
+        "Schiacciata potente eseguita con entrambe le mani.",
+        "Rimbalzo offensivo preso dal centro sotto canestro.",
+        "Canestro decisivo da tre punti segnato alla fine della partita."
+      ],
+      "impacto_motivo": "Mette in evidenza la mancanza di mira del giocatore nel tiro, provocando un errore grottesco e i fischi del pubblico."
+    },
+    {
+      "id": 40,
+      "nome": "muro",
+      "variacoes": [
+        "diventare un muro"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Portiere o sistema difensivo (come il muro nella pallavolo) che dimostra un'efficienza estrema e impedisce qualsiasi gol o punto avversario.",
+      "tags": [
+        "sport",
+        "calcio",
+        "pallavolo"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il portiere oggi è diventato un muro, ha parato un rigore e tre tiri a tu per tu.",
+      "exemplos_incorretos": [
+        "L'attaccante muro ha sbagliato tutti i tiri che ha provato in partita.",
+        "L'arbitro è diventato un muro e ha concesso cinque minuti di recupero.",
+        "La squadra ha fatto un muro e ha preso quattro gol già nel primo tempo."
+      ],
+      "significados_incorretos": [
+        "Attaccante che sbaglia tiri consecutivi verso la porta.",
+        "Arbitro che concede un recupero molto lungo alla fine del tempo regolamentare.",
+        "Reparto difensivo disorganizzato che subisce molti gol."
+      ],
+      "impacto_motivo": "Esalta la solidità, i riflessi e l'invulnerabilità di un giocatore difensivo o di un muro durante la competizione."
+    },
+    {
+      "id": 42,
+      "nome": "bustarella",
+      "variacoes": [
+        "pagare la bustarella"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Pagamento illecito e corrotto offerto ad atleti o arbitri affinché facilitino la vittoria dell'avversario o manipolino il risultato.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "genitori",
+      "impacto": "negativa",
+      "exemplo_correto": "Due giocatori sono stati radiati dallo sport dopo che è stato provato che avevano accettato una bustarella per svendere la partita.",
+      "exemplos_incorretos": [
+        "La squadra ha festeggiato il titolo ricevendo la bustarella sul podio.",
+        "La bustarella del terzino ha aiutato l'esterno a crossare al volo.",
+        "Ha segnato un gol di bustarella con un tiro potente nell'angolo destro."
+      ],
+      "significados_incorretos": [
+        "Trofeo consegnato alla squadra campione durante la premiazione ufficiale.",
+        "Assistenza precisa fatta dal terzino per l'attaccante.",
+        "Tiro forte e ben piazzato nell'angolo della porta."
+      ],
+      "impacto_motivo": "Rappresenta la corruzione e la frode nello sport, distruggendo l'integrità e la credibilità dello spettacolo sportivo."
+    },
+    {
+      "id": 43,
+      "nome": "manina",
+      "variacoes": [
+        "favorito dalla manina"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Gergo usato per insinuare che la squadra arbitrale abbia favorito deliberatamente, o per incompetenza, una determinata squadra.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Con due rigori inesistenti fischiati a favore, la squadra avversaria ha vinto con un chiaro aiuto della manina.",
+      "exemplos_incorretos": [
+        "L'allenatore ha usato la manina per sistemare la barriera sulla punizione.",
+        "La manina dei tifosi non ha smesso di suonare per novanta minuti.",
+        "Ha segnato il gol di manina calciando dal centrocampo."
+      ],
+      "significados_incorretos": [
+        "Segnale usato dall'allenatore per organizzare la barriera.",
+        "Rumore di strumenti musicali prodotto dai tifosi.",
+        "Gol segnato con un tiro da grande distanza dal centrocampo."
+      ],
+      "impacto_motivo": "Mette in dubbio l'imparzialità della partita, insinuando ingiustizia e favoritismo indebito da parte dell'arbitraggio."
+    },
+    {
+      "id": 44,
+      "nome": "bomber",
+      "variacoes": [
+        "attaccante bomber",
+        "cannoniere bomber"
+      ],
+      "classe_gramatical": "sostantivo / aggettivo",
+      "significado": "Attaccante estremamente efficiente, freddo e letale che ha bisogno di poche occasioni in area per trasformarle in gol.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il pallone è arrivato pulito al numero nove e lui non ha perdonato, dimostrando perché è il bomber della squadra.",
+      "exemplos_incorretos": [
+        "Il difensore bomber ha commesso un fallo duro ed è stato espulso.",
+        "Il bomber dello stadio ha venduto tutti i biglietti per la grande finale.",
+        "Ha fatto una parata da bomber respingendo il pallone sopra la traversa."
+      ],
+      "significados_incorretos": [
+        "Difensore violento espulso per falli consecutivi.",
+        "Addetto alla biglietteria e alle vendite dello stadio.",
+        "Parata spettacolare del portiere respinta in angolo."
+      ],
+      "impacto_motivo": "Elogia l'alta capacità realizzativa, la precisione e il fiuto del gol di un centravanti decisivo."
+    },
+    {
+      "id": 45,
+      "nome": "prendere una fifa blu",
+      "variacoes": [
+        "avere la fifa blu",
+        "fifa blu"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Dimostrare codardia, paura o mancanza di polso fermo davanti a un momento decisivo, perdendo rendimento per la pura pressione.",
+      "tags": [
+        "sport",
+        "calcio",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "La squadra stava giocando benissimo, ma in finale ha preso una fifa blu e ha subito la pressione dell'avversario dall'inizio alla fine.",
+      "exemplos_incorretos": [
+        "La maglia della squadra è blu, per questo tutti erano vestiti in fifa blu in campo.",
+        "L'arbitro ha preso una fifa blu e ha annullato il gol perché fatto con la mano.",
+        "Ha preso una fifa blu sul tiro all'incrocio e ha segnato un gol pazzesco."
+      ],
+      "significados_incorretos": [
+        "Scendere in campo indossando la maglia ufficiale di colore blu.",
+        "Annullare un gol irregolare per un'infrazione commessa nell'azione.",
+        "Realizzare un tiro di grande precisione all'incrocio dei pali."
+      ],
+      "impacto_motivo": "Evidenzia la debolezza psicologica dell'atleta o della squadra nel cedere al nervosismo nei momenti cruciali."
+    },
+    {
+      "id": 46,
+      "nome": "tirato",
+      "variacoes": [
+        "muscoli tirati",
+        "essere tirato"
+      ],
+      "classe_gramatical": "aggettivo",
+      "significado": "Persona o atleta con una percentuale di grasso corporeo estremamente bassa e una muscolatura nettamente visibile e definita.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "L'atleta si è preparato per sei mesi con una dieta ferrea ed è salito sul palco completamente tirato.",
+      "exemplos_incorretos": [
+        "Il giocatore è rimasto tirato dalla rabbia per essere stato sostituito nel primo tempo.",
+        "Ha fatto un passaggio tirato di quaranta metri per l'esterno sinistro.",
+        "I pantaloncini dell'atleta sono rimasti tirati dopo l'entrata del difensore avversario."
+      ],
+      "significados_incorretos": [
+        "Diventare estremamente irritato dopo essere stato sostituito dall'allenatore.",
+        "Passaggio lungo di alta precisione fatto in profondità.",
+        "Strappo nei pantaloncini causato da un contrasto con l'avversario."
+      ],
+      "impacto_motivo": "Acclama la rigorosa disciplina fisica e il raggiungimento di una definizione muscolare di altissimo livello."
+    },
+    {
+      "id": 47,
+      "nome": "overtraining",
+      "variacoes": [
+        "sintomo di overtraining",
+        "entrare in overtraining"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Stato di esaurimento fisico e mentale causato da allenamenti eccessivi senza il riposo e la nutrizione adeguati, che porta a un calo del rendimento.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Si allenava pesante tutti i giorni della settimana senza riposare, è entrato in overtraining e i suoi carichi sono crollati.",
+      "exemplos_incorretos": [
+        "L'overtraining della squadra ha aiutato a conquistare la vittoria ai tempi supplementari.",
+        "Ho fatto un overtraining leggero di dieci minuti di tapis roulant per riscaldarmi.",
+        "Ha assunto un overtraining personale per aiutarlo con gli esercizi."
+      ],
+      "significados_incorretos": [
+        "Condizione fisica privilegiata che garantisce fiato fino alla fine della partita.",
+        "Riscaldamento cardiovascolare leggero fatto prima dei pesi.",
+        "Personal trainer specializzato in allenamenti ad alte prestazioni."
+      ],
+      "impacto_motivo": "Avverte sui danni alla salute, gli infortuni e il calo di rendimento provocati dall'eccesso di allenamento senza il giusto riposo ed equilibrio."
+    },
+    {
+      "id": 48,
+      "nome": "ciabattata",
+      "variacoes": [
+        "tirare di ciabatta"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Calciare il pallone direttamente con la punta del piede, senza raffinatezza tecnica, privilegiando la forza bruta sulla precisione.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "dipende dal contesto",
+      "exemplo_correto": "Nel momento di panico, il difensore non ci ha pensato due volte e ha tirato una ciabattata lontano dall'area.",
+      "exemplos_incorretos": [
+        "L'attaccante ha fatto una ciabattata di trivela che ha scavalcato il portiere con classe.",
+        "L'allenatore ha elogiato la ciabattata perfetta nella costruzione dal basso.",
+        "Ha battuto il corner con una ciabattata a giro stretta sul primo palo."
+      ],
+      "significados_incorretos": [
+        "Conclusione piena di effetto fatta con l'esterno del piede.",
+        "Passaggio corto di alta precisione nella costruzione della manovra offensiva.",
+        "Battuta d'angolo con una curva pronunciata verso il primo palo."
+      ],
+      "impacto_motivo": "Può essere criticata per l'assenza di tecnica nelle giocate normali, ma è accettata e apprezzata come soluzione difensiva di emergenza."
+    },
+    {
+      "id": 50,
+      "nome": "scivolata",
+      "variacoes": [
+        "fare una scivolata",
+        "scivolata da dietro"
+      ],
+      "classe_gramatical": "sostantivo",
+      "significado": "Manovra difensiva in cui il giocatore scivola sull'erba allungando le gambe per rubare il pallone o intercettare un passaggio.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "dipende dal contesto",
+      "exemplo_correto": "Il mediano ha fatto una scivolata pulita sul pallone e ha salvato il contropiede avversario con maestria.",
+      "exemplos_incorretos": [
+        "Il portiere ha fatto una scivolata di testa per parare il tiro alto.",
+        "L'attaccante ha festeggiato il gol facendo la scivolata sulla barella con i medici.",
+        "Ha battuto il rigore con una scivolata rasoterra nel mezzo della porta."
+      ],
+      "significados_incorretos": [
+        "Salto acrobatico del portiere che allontana il pallone con la testa.",
+        "Esultanza dell'atleta usando la barella medica di trasporto.",
+        "Battuta di rigore debole e rasoterra al centro della porta."
+      ],
+      "impacto_motivo": "Se eseguita in modo pulito sul pallone, è una giocata di grinta apprezzata; se è violenta o colpisce l'avversario, provoca fallo ed espulsione."
+    },
+    {
+      "id": 51,
+      "nome": "fare il peso",
+      "variacoes": [
+        "ha fatto il peso",
+        "taglio del peso"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Raggiungere esattamente la categoria di peso richiesta al momento della pesatura ufficiale prima di un incontro di arti marziali.",
+      "tags": [
+        "sport",
+        "arti marziali",
+        "combattimento"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Dopo settimane di disidratazione e dieta ferrea, il lottatore ha fatto il peso e ha confermato la sfida per il titolo.",
+      "exemplos_incorretos": [
+        "Il difensore ha fatto il peso del pallone verso il centro dell'area con forza.",
+        "Il lottatore ha fatto il peso dell'avversario e ha vinto per KO tecnico.",
+        "Ha fatto il peso al fischio finale festeggiando la vittoria della sua squadra."
+      ],
+      "significados_incorretos": [
+        "Colpire di testa il pallone con vigore verso il centro dell'area di rigore.",
+        "Colpire l'avversario fino a ottenere il KO tecnico nell'incontro.",
+        "Gesticolare con entusiasmo al fischio finale della partita."
+      ],
+      "impacto_motivo": "Riflette il professionismo, la disciplina e l'impegno etico dell'atleta verso le regole della sua disciplina."
+    },
+    {
+      "id": 52,
+      "nome": "rollare",
+      "variacoes": [
+        "fare rolling",
+        "allenamento di rolling"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Nel Ju-Jitsu e nelle arti marziali a terra, significa fare l'allenamento pratico di combattimento con un compagno, applicando tecniche senza l'intenzione di fare male.",
+      "tags": [
+        "sport",
+        "arti marziali",
+        "jiu-jitsu"
+      ],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Alla fine della lezione di Ju-Jitsu, il maestro ha chiamato tutti a rollare per dieci minuti.",
+      "exemplos_incorretos": [
+        "L'attaccante ha fatto rollare il palo con un tiro dal centro della strada.",
+        "Il portiere ha fatto rollare ed ha subito un gol tra le gambe.",
+        "I tifosi hanno fatto rollare invasivo sul prato dopo il fischio dell'arbitro."
+      ],
+      "significados_incorretos": [
+        "Tiro forte che colpisce il palo della porta avversaria.",
+        "Errore tecnico del portiere che subisce gol tra le gambe.",
+        "Invasione collettiva fatta dai tifosi al termine della partita."
+      ],
+      "impacto_motivo": "Si tratta di un termine tecnico quotidiano della routine di allenamento delle arti marziali, senza connotazione positiva o negativa."
+    },
+    {
+      "id": 53,
+      "nome": "portare la squadra sulle spalle",
+      "variacoes": [
+        "portare la squadra",
+        "portarsela sulle spalle"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Situazione in cui un singolo giocatore ha una prestazione talmente brillante da superare le carenze dei compagni e garantire da solo la vittoria.",
+      "tags": [
+        "sport",
+        "calcio",
+        "esports"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il numero dieci ha portato la squadra sulle spalle per tutto il campionato, segnando gol e fornendo assist decisivi.",
+      "exemplos_incorretos": [
+        "Il preparatore atletico ha dovuto portare sulle spalle tutti i coni dell'allenamento.",
+        "Il difensore ha commesso un fallo violento portandosi sulle spalle l'attaccante avversario.",
+        "I tifosi hanno portato sulle spalle gli striscioni fino alla curva superiore."
+      ],
+      "significados_incorretos": [
+        "Trasportare l'attrezzatura di allenamento alla fine dell'attività.",
+        "Commettere un fallo spingendo l'avversario da dietro durante l'azione.",
+        "Trasportare bandiere e materiali fino ai settori dello stadio."
+      ],
+      "impacto_motivo": "Sottolinea il protagonismo individuale di eccellenza e la capacità straordinaria di trascinare la squadra al successo."
+    },
+    {
+      "id": 54,
+      "nome": "mostro",
+      "variacoes": [
+        "mostro sacro",
+        "essere un mostro"
+      ],
+      "classe_gramatical": "sostantivo / aggettivo",
+      "significado": "Elogio usato per definire un atleta dalle prestazioni altissime, una forza fisica impressionante o un'abilità fuori dal comune.",
+      "tags": [
+        "sport",
+        "calcio",
+        "palestra"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il difensore ha giocato benissimo oggi, ha anticipato tutti i palloni aerei, è un vero mostro in difesa.",
+      "exemplos_incorretos": [
+        "La squadra ha giocato così male che la stampa ha definito la prestazione un mostro.",
+        "L'arbitro è stato un mostro e ha dato un cartellino rosso ingiusto al primo minuto.",
+        "Ha commesso un gol mostro sbagliando il tiro a porta vuota."
+      ],
+      "significados_incorretos": [
+        "Prestazione scadente e disastrosa di una squadra in campo.",
+        "Arbitro severo che prende decisioni controverse e ingiuste.",
+        "Errore grossolano nel perdere una chiara occasione da gol."
+      ],
+      "impacto_motivo": "Consacra il vigore, l'imponenza e l'altissimo livello di prestazione dello sportivo nel suo ruolo."
+    },
+    {
+      "id": 55,
+      "nome": "pollo da palestra",
+      "variacoes": [
+        "pollastro",
+        "pollo in sala pesi"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Principiante nel bodybuilding che ha poca massa muscolare ma si comporta con arroganza, esegue gli esercizi male o vuole caricare più peso di quanto riesca a sostenere.",
+      "tags": [
+        "sport",
+        "palestra",
+        "fitness"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il pollo da palestra ha messo 100 kg sulla panca, non è riuscito a sollevarla e ha avuto bisogno di aiuto per non farsi male.",
+      "exemplos_incorretos": [
+        "Il personal trainer ha assunto un pollo da palestra come suo assistente.",
+        "È un pollo da palestra esperto, con dieci anni di allenamento costante.",
+        "Ho mangiato un pollo da palestra con patate dolci dopo l'allenamento."
+      ],
+      "significados_incorretos": [
+        "Assistente tecnico responsabile dell'organizzazione dello spazio della palestra.",
+        "Praticante veterano con vasta esperienza e conoscenza nel bodybuilding.",
+        "Pasto proteico consumato dopo le sessioni di allenamento."
+      ],
+      "impacto_motivo": "Deride l'inesperienza unita a una vanità eccessiva, che genera esecuzioni scorrette degli esercizi e comportamenti motivo di scherno."
+    },
+    {
+      "id": 56,
+      "nome": "eurogol",
+      "variacoes": [
+        "fare un eurogol"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Un gol straordinario, di rara bellezza e perfezione tecnica, degno di essere immortalato con un omaggio ufficiale.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "L'attaccante ha dribblato quattro difensori, ha scavalcato il portiere con un pallonetto e ha segnato un eurogol indimenticabile.",
+      "exemplos_incorretos": [
+        "L'arbitro ha convalidato un eurogol dopo aver consultato le immagini del guardalinee.",
+        "Il difensore ha segnato un eurogol nella propria porta di testa.",
+        "La partita è finita in pareggio con un eurogol anonimo e senza emozioni."
+      ],
+      "significados_incorretos": [
+        "Convalida di un gol dopo la verifica delle immagini da parte dell'arbitraggio.",
+        "Autogol segnato accidentalmente dallo stesso difensore.",
+        "Gol semplice e senza rilievo estetico in una partita tiepida."
+      ],
+      "impacto_motivo": "Esalta la bellezza suprema di una giocata indimenticabile che entra nella storia dello sport."
+    },
+    {
+      "id": 57,
+      "nome": "partita all'acqua di rose",
+      "variacoes": [],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Partita tiepida e senza competitività in cui entrambe le squadre si accontentano del risultato (di solito un pareggio) ed evitano di rischiare.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Dato che il pareggio qualificava entrambi i club, il secondo tempo è diventato una partita all'acqua di rose senza nemmeno un tiro in porta.",
+      "exemplos_incorretos": [
+        "Il derby è stato una partita all'acqua di rose movimentata, con otto gol e tre espulsioni.",
+        "I tifosi hanno fatto una partita all'acqua di rose sugli spalti cantando senza sosta.",
+        "L'attaccante ha fatto una partita all'acqua di rose segnando tre gol nel primo tempo."
+      ],
+      "significados_incorretos": [
+        "Scontro intenso e nervoso pieno di gol ed espulsioni.",
+        "Duello di cori promosso dai tifosi organizzati allo stadio.",
+        "Prestazione brillante di un atleta con più gol segnati."
+      ],
+      "impacto_motivo": "Critica l'antigioco, l'accontentarsi e l'assenza di spirito competitivo, deludendo i tifosi che si aspettavano una buona sfida."
+    },
+    {
+      "id": 58,
+      "nome": "fare melina",
+      "variacoes": [
+        "fare una melina"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Rallentare intenzionalmente il ritmo della partita (impiegando tempo per battere i rinvii, fingendo dolori) per far scorrere il cronometro.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il portiere continuava a cadere a terra dopo ogni parata per fare melina e portare a casa il risultato minimo fino alla fine.",
+      "exemplos_incorretos": [
+        "L'esterno ha fatto melina crossando il pallone sui piedi dell'attaccante per segnare il gol.",
+        "I tifosi hanno fatto melina accendendo i fumogeni per festeggiare il titolo.",
+        "L'attaccante ha fatto melina e ha battuto il rigore con tantissima forza all'incrocio."
+      ],
+      "significados_incorretos": [
+        "Effettuare un cross millimetrico sulla testa del compagno.",
+        "Fare festa usando fumogeni sugli spalti.",
+        "Battere un calcio di rigore con forza nell'angolo superiore della porta."
+      ],
+      "impacto_motivo": "Condanna la furbizia e l'atteggiamento antisportivo di rallentare la partita per danneggiare il ritmo dell'avversario."
+    },
+    {
+      "id": 59,
+      "nome": "vittoria a tavolino",
+      "variacoes": [
+        "vincere a tavolino"
+      ],
+      "classe_gramatical": "espressione sostantivale",
+      "significado": "Decisione presa dietro le quinte, spesso dopo la fine della competizione, che modifica il risultato o il regolamento per salvare un club dalla retrocessione o favorirlo indebitamente.",
+      "tags": [
+        "sport",
+        "calcio"
+      ],
+      "permissao": "genitori",
+      "impacto": "negativa",
+      "exemplo_correto": "Il club era finito in zona retrocessione, ma la dirigenza ha fatto ricorso ai tribunali e ha ottenuto una vittoria a tavolino.",
+      "exemplos_incorretos": [
+        "L'attaccante ha fatto una vittoria a tavolino spettacolare calciando in rovesciata.",
+        "La vittoria a tavolino è arrivata quando la squadra, sotto di due gol, ha rimontato fino al tre a due.",
+        "Il portiere ha ottenuto la vittoria a tavolino respingendo il fallo verso il fondo campo."
+      ],
+      "significados_incorretos": [
+        "Conclusione in rovesciata eseguita con maestria dall'attaccante.",
+        "Ribaltamento del risultato in campo ottenuto nel secondo tempo della partita.",
+        "Parata salvifica del portiere che respinge il pallone in angolo."
+      ],
+      "impacto_motivo": "Evidenzia la mancanza di rispetto per il merito sportivo conquistato in campo, ricorrendo a manovre burocratiche e politiche."
+    },
+    {
+      "id": 60,
+      "nome": "spaccare il gioco",
+      "variacoes": [
+        "spaccare lo sport",
+        "ha spaccato il gioco"
+      ],
+      "classe_gramatical": "espressione verbale",
+      "significado": "Raggiungere l'apice della carriera, conquistare tutti i titoli possibili nella disciplina o realizzare un'impresa perfetta e incontestabile.",
+      "tags": [
+        "sport",
+        "esports",
+        "calcio",
+        "quotidiano"
+      ],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Vincendo il Mondiale dopo aver conquistato la Champions e il Pallone d'Oro, il campione ha semplicemente spaccato il gioco.",
+      "exemplos_incorretos": [
+        "La squadra ha spaccato il gioco perdendo con un pesante passivo all'esordio del campionato.",
+        "L'arbitro ha spaccato il gioco espellendo tre giocatori della stessa squadra.",
+        "Ha spaccato il gioco sbagliando il rigore decisivo nella contesa."
+      ],
+      "significados_incorretos": [
+        "Avere una prestazione disastrosa venendo travolti nella prima giornata.",
+        "Prestazione controversa dell'arbitro nell'applicare più cartellini rossi.",
+        "Commettere un errore cruciale sbagliando un calcio di rigore decisivo."
+      ],
+      "impacto_motivo": "Esalta il traguardo massimo dello sport, riconoscendo che l'atleta ha raggiunto la perfezione e il tetto della disciplina."
+    }
+  ]
+}

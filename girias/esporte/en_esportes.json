@@ -1,0 +1,1661 @@
+{
+  "esportes": [
+    {
+      "id": 1,
+      "nome": "flopper",
+      "variacoes": [
+        "flop",
+        "flopping"
+      ],
+      "classe_gramatical": "adjective / noun",
+      "significado": "A player who fakes excuses, feigns injury, or exaggerates a situation to get out of training, tough marking, or responsibilities.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He always pretends his thigh hurts whenever it's time to mark the opponents, such a flopper.",
+      "exemplos_incorretos": [
+        "The backup was flopping the whole game sitting on the bench without being called up.",
+        "He celebrated the goal in a very flop way, taking off his shirt and running across the field.",
+        "When it was time to take the decisive penalty, he flopped and kicked it wide."
+      ],
+      "significados_incorretos": [
+        "A backup player who never gets picked by the coach.",
+        "A player who overdoes his celebrations after scoring.",
+        "A player who always fails at decisive moments out of nerves, like taking a penalty."
+      ],
+      "impacto_motivo": "It attributes unsportsmanlike, uncommitted conduct to the athlete, who invents excuses to dodge duties and team effort."
+    },
+    {
+      "id": 2,
+      "nome": "showboating",
+      "variacoes": [
+        "showboat",
+        "showboater"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "Used when a player does unnecessary flashy dribbles or tricks, usually to show off, with no real purpose toward the goal.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Stop showboating in the back and just clear that ball already!",
+      "exemplos_incorretos": [
+        "The forward pulled off amazing showboating and celebrated with a cartwheel on the pitch.",
+        "The two players started showboating right after the nasty tackle.",
+        "His showboating led directly to the goal, the fans gave him a standing ovation."
+      ],
+      "significados_incorretos": [
+        "An over-the-top goal celebration with multiple flips.",
+        "A heated argument between players during the match.",
+        "A successful flashy play that results directly in a goal."
+      ],
+      "impacto_motivo": "It criticizes the excess of showing off and the player's lack of purpose, prioritizing individual spectacle over team efficiency."
+    },
+    {
+      "id": 3,
+      "nome": "butterfingers",
+      "variacoes": [
+        "stone hands"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "A goalkeeper with shaky hands who lets the ball slip easily, or who fails at theoretically simple saves.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The shot came in weak, right down the middle, but the butterfingers keeper let it go through.",
+      "exemplos_incorretos": [
+        "The butterfingers defender gave away a silly penalty in the box again.",
+        "He's left-footed and has butterfingers on his shot, always kicks it weak.",
+        "The butterfingers keeper was out of position and got beat from long range."
+      ],
+      "significados_incorretos": [
+        "A defender who tends to commit silly penalties.",
+        "A left-footed player with little kicking power.",
+        "A goalkeeper who's poorly positioned and gets beaten from distance."
+      ],
+      "impacto_motivo": "It highlights the goalkeeper's technical insecurity, tying him to serious mistakes on easy saves that hurt the scoreline."
+    },
+    {
+      "id": 4,
+      "nome": "chest it down",
+      "variacoes": [
+        "take it on the chest"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To cushion the ball on your chest; by extension, to take charge of a tough situation and handle it calmly.",
+      "tags": [
+        "sports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "Don't worry about that project issue, I'll chest it down and get it sorted by tomorrow.",
+      "exemplos_incorretos": [
+        "In jiu-jitsu, he landed a perfect chest it down on his opponent.",
+        "After the goal, he went to chest it down, hitting his chest hard in celebration.",
+        "The ball came in high and he chested it down with his foot before laying it off to a teammate."
+      ],
+      "significados_incorretos": [
+        "A martial arts strike applied to the opponent's chest.",
+        "Celebrating a goal by pounding your chest.",
+        "Cushioning the ball with your foot before continuing the play."
+      ],
+      "impacto_motivo": "It praises flawless ball control on the pitch and, more broadly, the leadership and courage of taking charge to solve problems."
+    },
+    {
+      "id": 5,
+      "nome": "blowout",
+      "variacoes": [
+        "landslide win"
+      ],
+      "classe_gramatical": "adverbial expression",
+      "significado": "To win or lose a match by a very large margin of points or goals, like a lopsided rout.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "Our team played amazingly, we beat them in a total blowout, it was 6-0!",
+      "exemplos_incorretos": [
+        "The team went downtown for a blowout celebration after winning the title.",
+        "We won in a blowout on penalties, it was a super tight match.",
+        "The game ended in a blowout, 0-0, no goals from either side."
+      ],
+      "significados_incorretos": [
+        "A team celebration after winning a championship.",
+        "A tight win decided on penalties.",
+        "A scoreless draw in a tightly contested match."
+      ],
+      "impacto_motivo": "It indicates an overwhelming, undisputed victory, highlighting the dominance and superior performance of the winning team."
+    },
+    {
+      "id": 6,
+      "nome": "hang up the boots",
+      "variacoes": [
+        "hang up the cleats"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To retire from a soccer career, or, by extension, to decide to stop doing any regular activity or profession.",
+      "tags": [
+        "sports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "After twenty years in the corporate world, the director decided to hang up the boots and go live at the beach.",
+      "exemplos_incorretos": [
+        "He hung up the boots on the net after scoring the winning goal.",
+        "The forward hung up the boots and signed with the rival team midseason.",
+        "After the severe injury, he had to hang up the boots temporarily."
+      ],
+      "significados_incorretos": [
+        "Celebrating a goal by hanging off the net.",
+        "Switching teams in the middle of the season.",
+        "Being out of the starting lineup due to a severe injury."
+      ],
+      "impacto_motivo": "It describes the natural act of ending a cycle or retiring, without attributing a positive or negative tone by itself."
+    },
+    {
+      "id": 7,
+      "nome": "scrub",
+      "variacoes": [
+        "stiff"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A soccer player of terrible technical quality, with no skill or who performs very poorly on the field.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The new striker missed four open-net goals, he's a complete scrub.",
+      "exemplos_incorretos": [
+        "That scrub in the stands started fighting with a fan from the other team.",
+        "The backup is a scrub, never trains properly and just sits on the bench.",
+        "He's a scrub, misses pass after pass, but he does run a lot on the field."
+      ],
+      "significados_incorretos": [
+        "A fan who only goes to the stadium to pick fights.",
+        "A backup player who never trains hard.",
+        "A player who misses a lot of passes but hustles a lot."
+      ],
+      "impacto_motivo": "It's a derogatory criticism that openly disqualifies the athlete's technical ability and skill."
+    },
+    {
+      "id": 8,
+      "nome": "howler",
+      "variacoes": [
+        "blunder"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A serious mistake or grotesque error by the goalkeeper who fails to hold the ball, resulting in an easily savable goal.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The shot was weak and along the ground, but the keeper slipped and let in a howler.",
+      "exemplos_incorretos": [
+        "The top scorer, nicknamed 'howler' by the fans, scored three goals in the match.",
+        "The defender gave away a howler in the box and the ref called a penalty.",
+        "It was a howler of a shot, no power at all, but it still went in."
+      ],
+      "significados_incorretos": [
+        "An affectionate nickname for the team's top scorer.",
+        "A defender's mistake that results in a penalty.",
+        "A weak shot that still turns into a goal by luck."
+      ],
+      "impacto_motivo": "It ties the goalkeeper's performance to an embarrassing, basic error that directly costs a goal."
+    },
+    {
+      "id": 9,
+      "nome": "choker",
+      "variacoes": [
+        "choke"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A player who doesn't perform as expected, disappears from the game, or dodges responsibility in high-pressure, decisive moments.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "When it was time to take the decisive penalty, he faked an injury, a real choker.",
+      "exemplos_incorretos": [
+        "He's a choker, he's gotten injured three times this month.",
+        "The choker in the stands wouldn't stop screaming at the team.",
+        "In the final stretch of the game, he choked and faked pain to leave the field."
+      ],
+      "significados_incorretos": [
+        "A player who gets injured frequently during the season.",
+        "A loud fan who screams a lot during the game.",
+        "A player who fakes an injury to leave the game early."
+      ],
+      "impacto_motivo": "It accuses the athlete of mental fragility and dodging responsibility in the most important moments of the match."
+    },
+    {
+      "id": 10,
+      "nome": "ball hog",
+      "variacoes": [
+        "hog"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A selfish player who holds onto the ball too much and avoids passing to teammates, trying to solve everything alone.",
+      "tags": [
+        "sports",
+        "soccer",
+        "games"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He chose to shoot from way out and missed, when I was wide open in the box, such a ball hog.",
+      "exemplos_incorretos": [
+        "The team's ball hog always shows up late to Friday practice.",
+        "That ball hog missed an incredible goal alone in the six-yard box.",
+        "He's a ball hog, always prefers to risk a shot from outside rather than pass."
+      ],
+      "significados_incorretos": [
+        "A player who always arrives late to practice.",
+        "A forward who misses a lot of easy goals.",
+        "A player who prefers shooting from outside the box instead of passing."
+      ],
+      "impacto_motivo": "It criticizes the player's selfish conduct, disrespecting teamwork in an attempt to stand out alone."
+    },
+    {
+      "id": 11,
+      "nome": "nutmeg",
+      "variacoes": [
+        "meg"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A very skillful dribble where the player passes the ball exactly between the opponent's legs and picks it up on the other side.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The forward hit the defender with a humiliating nutmeg and went through alone on goal.",
+      "exemplos_incorretos": [
+        "After the goal, he did the nutmeg, a celebration of writing in the air.",
+        "The fullback delivered a perfect nutmeg into the box for the center forward to head in.",
+        "He pulled off a surprising back-heel nutmeg between the two center backs."
+      ],
+      "significados_incorretos": [
+        "A goal celebration mimicking writing in the air.",
+        "A precise cross from the fullback into the box.",
+        "A surprising back-heel pass between two opponents."
+      ],
+      "impacto_motivo": "It exalts the dribble's technical refinement and creativity, generating spectacle and beating the marker with elegance."
+    },
+    {
+      "id": 12,
+      "nome": "sombrero",
+      "variacoes": [
+        "hat trick flick"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A trick that consists of kicking the ball over the opponent's head and regaining control of it behind them.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The number ten pulled off a beautiful sombrero on the midfielder before crossing into the box.",
+      "exemplos_incorretos": [
+        "He made the sombrero gesture with his hand on his head to celebrate.",
+        "He jumped higher than everyone and scored a sombrero header in the top corner.",
+        "He attempted a spectacular bicycle-kick sombrero that died in the back of the net."
+      ],
+      "significados_incorretos": [
+        "A celebration putting a hand on your head like a hat.",
+        "A well-placed header in the corner of the goal.",
+        "A spectacular bicycle kick that turns into a stylish goal."
+      ],
+      "impacto_motivo": "It highlights the individual play's brilliance and flair, applauded for beating the opponent through the air with mastery."
+    },
+    {
+      "id": 13,
+      "nome": "Panenka",
+      "variacoes": [
+        "chip penalty"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A very classy finishing style, often on penalties, where the player touches under the ball so it rises slowly, chipping the diving goalkeeper.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "He took the penalty with a Panenka down the middle while the keeper dove to the right.",
+      "exemplos_incorretos": [
+        "After the goal, he pretended to dig up the pitch in celebration.",
+        "He hit a powerful toe-poke Panenka that rattled the top corner.",
+        "The Panenka on the free kick sailed over the wall and went in."
+      ],
+      "significados_incorretos": [
+        "A celebration pretending to dig a symbolic hole in the pitch.",
+        "A hard toe-poke shot into the top corner.",
+        "A free kick that goes over the wall and in."
+      ],
+      "impacto_motivo": "It praises the composure, class, and technical precision needed to pull off such a subtle, high-risk shot."
+    },
+    {
+      "id": 14,
+      "nome": "hater",
+      "variacoes": [
+        "moaner"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A fan, journalist, or critic who's very annoying, constantly complains and only focuses on mistakes, never giving credit to their own team.",
+      "tags": [
+        "sports",
+        "soccer",
+        "fans"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "That guy is such a hater, the team won 3-0 and he still cussed out the fullback.",
+      "exemplos_incorretos": [
+        "The hater backup asked to be transferred after sitting on the bench.",
+        "That commentator is such a hater, he only praises his own team, never criticizes.",
+        "That hater only roots for whichever team is winning trophies."
+      ],
+      "significados_incorretos": [
+        "A dissatisfied backup player who asks to leave the team.",
+        "A sports commentator who always over-praises his own team.",
+        "A fan who switches teams depending on who's winning."
+      ],
+      "impacto_motivo": "It describes toxic, excessive-complaint behavior that devalues the team's achievements and spreads negativity."
+    },
+    {
+      "id": 15,
+      "nome": "ace",
+      "variacoes": [
+        "service ace"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "In volleyball and tennis, a serve so good and powerful it lands directly in the opponent's court with no defense, resulting in an immediate point.",
+      "tags": [
+        "volleyball",
+        "tennis",
+        "sports"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The match was tense, but the tennis player landed an unreturnable ace and won the match.",
+      "exemplos_incorretos": [
+        "After the point, he made the ace gesture, raising his finger to the crowd.",
+        "The block was an ace, it stopped the attack right in the opponent's face.",
+        "He hit an ace-like spike, unreturnable, straight into the opponent's court."
+      ],
+      "significados_incorretos": [
+        "A celebration made by raising the index finger.",
+        "A perfect block that stops the opponent's attack.",
+        "A powerful spike the opponent can't return."
+      ],
+      "impacto_motivo": "It represents perfection in serve execution, guaranteeing a direct point and showing technical dominance."
+    },
+    {
+      "id": 16,
+      "nome": "mush",
+      "variacoes": [
+        "mushy waves"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "In surfing, it refers to small, weak waves. In everyday use, it means chilling out, relaxing, and avoiding effort.",
+      "tags": [
+        "sports",
+        "surfing",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "The sea's all mush today, we won't even get to put the board in the water.",
+      "exemplos_incorretos": [
+        "He celebrated the goal doing the mush gesture with his arms.",
+        "I bought a small mush to practice surfing with my kid.",
+        "It's mush out there today, only advanced surfers can catch anything."
+      ],
+      "significados_incorretos": [
+        "A celebration mimicking a wave motion with your arms.",
+        "A small surfboard used by beginners.",
+        "A big, dangerous wave, ideal for experienced surfers."
+      ],
+      "impacto_motivo": "It merely describes a calm sea state with little swell or an everyday moment of rest, without moral judgment."
+    },
+    {
+      "id": 17,
+      "nome": "hail mary",
+      "variacoes": [
+        "hail mary pass"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A desperate play in American Football where the quarterback throws a long pass into the end zone, hoping for a last-second miracle.",
+      "tags": [
+        "sports",
+        "american football"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "There were only five seconds left on the clock and he threw a heroic hail mary to win the game.",
+      "exemplos_incorretos": [
+        "After the touchdown, the player did the hail mary, kneeling on the field.",
+        "The defense pulled off a hail mary by intercepting the pass on the final play.",
+        "With seconds left, the team attempted a hail mary long-distance field goal."
+      ],
+      "significados_incorretos": [
+        "A celebration kneeling on the field after the touchdown.",
+        "A defensive play that intercepts the opponent's pass.",
+        "A decisive field goal kicked at the end of the game."
+      ],
+      "impacto_motivo": "If successful, it becomes a miraculous, heroic act; if it fails, it highlights the team's desperation and failure."
+    },
+    {
+      "id": 18,
+      "nome": "lucky charm",
+      "variacoes": [
+        "good luck charm"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "A very lucky person, or someone supposedly bringing good luck to the team or group of friends while watching the game.",
+      "tags": [
+        "sports",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I always invite my cousin to watch the final with us, the kid is such a lucky charm.",
+      "exemplos_incorretos": [
+        "That lucky charm on the team always scores headers off corners.",
+        "He's a lucky charm, travels to watch every away game.",
+        "I only watch the decisive games, I'm a lucky charm at those moments."
+      ],
+      "significados_incorretos": [
+        "A player who always scores headers.",
+        "A fan who goes to every away game.",
+        "A person who only watches the team's decisive games."
+      ],
+      "impacto_motivo": "It ties the person's presence to luck and winning results, making them a beloved, sought-after presence in the group."
+    },
+    {
+      "id": 19,
+      "nome": "bandwagoner",
+      "variacoes": [
+        "glory hunter"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A disloyal fan who switches teams depending on who's winning more titles at the moment, abandoning their old team.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The guy swore his love for the old club, but the rivals started winning everything and he jumped on the bandwagon in no time.",
+      "exemplos_incorretos": [
+        "The fullback is a bandwagoner and played as a forward in the second half.",
+        "That commentator is a bandwagoner every week about who should be the coach.",
+        "He only shows up at the stadium when the team's in title contention, such a bandwagoner."
+      ],
+      "significados_incorretos": [
+        "A player who switches positions mid-match.",
+        "A commentator who changes his opinion about the coach every week.",
+        "A fan who only goes to the stadium when the team is winning titles."
+      ],
+      "impacto_motivo": "It condemns the person's lack of loyalty and opportunism, abandoning their sports passion in exchange for easy wins."
+    },
+    {
+      "id": 20,
+      "nome": "guard pass",
+      "variacoes": [
+        "passing the guard"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "A very important move in Jiu-Jitsu where the fighter goes over or around the fallen opponent's legs, reaching side control of their body.",
+      "tags": [
+        "sports",
+        "martial arts",
+        "jiu-jitsu"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "He used a lot of pressure and weight to get the guard pass and finish with an armlock.",
+      "exemplos_incorretos": [
+        "After the win, he celebrated by making the guard pass gesture with his arms.",
+        "He got the guard pass with a clean rear-naked choke from behind.",
+        "He got the guard pass with a quick sweep, flipping the position on the mat."
+      ],
+      "significados_incorretos": [
+        "A celebration raising your arms in a cross shape.",
+        "A submission by choke from behind.",
+        "Applying a sweep to reverse the position on the ground."
+      ],
+      "impacto_motivo": "It recognizes the tactical advance and the conquest of a dominant position in the fight, key to scoring or finishing."
+    },
+    {
+      "id": 21,
+      "nome": "jinx",
+      "variacoes": [
+        "bad luck charm"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "A very unlucky person, known for always bringing bad luck to their favorite team or the events they attend.",
+      "tags": [
+        "sports",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Don't even invite him to the bar to watch the game, every time he shows up our team gets scored on, such a jinx.",
+      "exemplos_incorretos": [
+        "He's a jinx, always misses the decisive penalty in practice.",
+        "That jinx never goes to the stadium, prefers to watch from home.",
+        "He's only a jinx in decisive games, in normal ones the team wins easily."
+      ],
+      "significados_incorretos": [
+        "A player who always misses penalty kicks.",
+        "A fan who never goes to the stadium to watch the team.",
+        "A person who only brings bad luck in decisive games, but not in normal ones."
+      ],
+      "impacto_motivo": "It labels the person as a bad-luck charm, causing them to be avoided and teased by fellow fans."
+    },
+    {
+      "id": 22,
+      "nome": "tryhard",
+      "variacoes": [
+        "try-hard",
+        "tryharding"
+      ],
+      "classe_gramatical": "noun / adjective",
+      "significado": "A term from English. A person who tries in an exaggeratedly competitive way in a casual game or amateur sport, wanting to win at all costs.",
+      "tags": [
+        "sports",
+        "games",
+        "esports"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "We were just kicking the ball around on the weekend to sweat a bit and the guy showed up sliding into tackles, such a tryhard.",
+      "exemplos_incorretos": [
+        "The pro player is a tryhard, trains twice as much as the rest of the squad.",
+        "He only plays video games in serious competitive mode, never casual, such a tryhard.",
+        "He pretends to be a tryhard but deep down doesn't even care about the match result."
+      ],
+      "significados_incorretos": [
+        "A pro player who trains twice as much as his teammates.",
+        "A person who only plays video games in serious competitive mode.",
+        "A player who pretends to try hard but actually doesn't care about the result."
+      ],
+      "impacto_motivo": "It criticizes the lack of common sense in recreational settings, where the obsession with winning ruins the fun and relaxed atmosphere."
+    },
+    {
+      "id": 23,
+      "nome": "jacked",
+      "variacoes": [
+        "meathead physique"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Gym slang referring to physical conditioning and shape, especially when the body is muscular, defined, and attractive.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The guy did a strict diet and got jacked in time for summer.",
+      "exemplos_incorretos": [
+        "I bought new jacked gear to train with more compression on my arms.",
+        "I drank jacked before training for more energy at the gym.",
+        "He got that jacked physique way too fast, he must be on something."
+      ],
+      "significados_incorretos": [
+        "Compression clothing used for training at the gym.",
+        "A powder supplement taken before training.",
+        "A defined body achieved quickly through steroid use."
+      ],
+      "impacto_motivo": "It praises the athlete's aesthetic refinement and discipline, recognizing the effort in training and the good shape achieved."
+    },
+    {
+      "id": 24,
+      "nome": "gambit",
+      "variacoes": [
+        "queen's gambit"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A chess move where the player intentionally sacrifices a pawn or piece early in the game, aiming to gain a strategic advantage on the board.",
+      "tags": [
+        "sports",
+        "chess",
+        "board games"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "To break down his defense, the Russian grandmaster decided to use the king's gambit on the third move.",
+      "exemplos_incorretos": [
+        "After winning, he made the gambit gesture, mimicking a horse with his hand.",
+        "He landed a perfect gambit ending in checkmate.",
+        "His strategy was a defensive gambit, avoiding losing pieces right from the start."
+      ],
+      "significados_incorretos": [
+        "A celebration moving your hand like a chess knight.",
+        "A final move that results directly in checkmate.",
+        "A defensive strategy that avoids losing pieces early in the match."
+      ],
+      "impacto_motivo": "It classifies a neutral, technical chess strategy, whose value depends entirely on how the tactics unfold in the game."
+    },
+    {
+      "id": 25,
+      "nome": "kiss the canvas",
+      "variacoes": [
+        "hit the canvas"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To be brutally knocked out in combat sports (Boxing, MMA), falling face or stomach first straight onto the ring floor.",
+      "tags": [
+        "sports",
+        "fighting",
+        "boxing"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He dropped his guard for a second, took a perfect cross to the chin, and went to kiss the canvas instantly.",
+      "exemplos_incorretos": [
+        "After the win, he kissed the canvas raising his arms in the ring.",
+        "He took a huge shot and nearly kissed the canvas, but stayed on his feet.",
+        "He kissed the canvas on purpose, faking a fall to buy some time."
+      ],
+      "significados_incorretos": [
+        "A celebration raising your arms inside the ring.",
+        "A powerful blow that drops the opponent without knocking them out.",
+        "Falling on purpose to fake a knockdown."
+      ],
+      "impacto_motivo": "It portrays a crushing defeat by knockout, highlighting fragility and loss of consciousness in the fight."
+    },
+    {
+      "id": 26,
+      "nome": "juice",
+      "variacoes": [
+        "juicing",
+        "on the juice"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Bodybuilding and gym slang referring to the frequent use of anabolic steroids, said discreetly or jokingly.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "parental",
+      "impacto": "depends on context",
+      "exemplo_correto": "There's no way a guy gains 30 pounds of muscle in two months just eating chicken, he's definitely on the juice.",
+      "exemplos_incorretos": [
+        "I had an energy juice before going to the gym today.",
+        "The post-workout protein juice helps with muscle recovery.",
+        "His physique is all natural, just diet and training, no juice at all."
+      ],
+      "significados_incorretos": [
+        "An energy drink taken before an intense workout.",
+        "A protein supplement consumed after training.",
+        "A naturally defined body achieved only through diet and training."
+      ],
+      "impacto_motivo": "It can carry a humorous/admiring tone about big muscle gains, or a derogatory tone pointing to cheating and health risks."
+    },
+    {
+      "id": 27,
+      "nome": "curse",
+      "variacoes": [
+        "cursed"
+      ],
+      "classe_gramatical": "noun / verb",
+      "significado": "Repetitive bad luck, a prolonged jinx, or bad energy where everything goes wrong, often used when teams string together losing streaks or injuries.",
+      "tags": [
+        "sports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "This team hasn't beaten anyone in ten rounds, someone needs to lift that curse from the locker room.",
+      "exemplos_incorretos": [
+        "He tapped his feet on the ground three times to lift the curse before taking the penalty.",
+        "The team is on a great curse, five straight wins without losing.",
+        "That player lives under a curse, always faking a little injury to leave the field."
+      ],
+      "significados_incorretos": [
+        "A goal celebration tapping your feet on the ground three times.",
+        "A consecutive winning streak for a team.",
+        "A minor injury the player fakes during the game."
+      ],
+      "impacto_motivo": "It expresses a persistent stretch of bad luck, misfortune, or negative energy that hurts the athlete's or team's performance."
+    },
+    {
+      "id": 28,
+      "nome": "jersey chaser",
+      "variacoes": [
+        "cleat chaser"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A woman whose main focus is meeting, flirting with, and dating soccer players specifically, chasing status and money.",
+      "tags": [
+        "sports",
+        "soccer",
+        "relationship"
+      ],
+      "permissao": "parental",
+      "impacto": "depends on context",
+      "exemplo_correto": "As soon as the fullback signed his first million-dollar contract, jersey chasers started popping up all over his social media.",
+      "exemplos_incorretos": [
+        "The jersey chaser spent ninety minutes on the bench without playing.",
+        "That jersey chaser never misses a game from the team, she's always there in the stands.",
+        "She's a jersey chaser, manages the careers and contracts of players."
+      ],
+      "significados_incorretos": [
+        "A backup women's soccer player sitting on the bench.",
+        "A die-hard fan who never misses a team game.",
+        "An agent who manages the careers of soccer players."
+      ],
+      "impacto_motivo": "It's usually used pejoratively to criticize financial interest, but can also come up in a neutral or informal way in sports circles."
+    },
+    {
+      "id": 29,
+      "nome": "clutch",
+      "variacoes": [
+        "clutch player",
+        "clutch it"
+      ],
+      "classe_gramatical": "adjective / verb",
+      "significado": "A highly decisive, ice-cold player who doesn't feel the pressure of the opposing crowd and manages to save the game or seal the point at the last second.",
+      "tags": [
+        "sports",
+        "games",
+        "basketball",
+        "esports"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "We were down by two points at the end of the last quarter, but he's so clutch he hit a three at the buzzer.",
+      "exemplos_incorretos": [
+        "After the basket, he made the clutch gesture, putting his hand on his chest.",
+        "That backup player is clutch, only comes onto the court in the final minutes of the game.",
+        "He's great in practice but freezes in real games, nothing clutch about him."
+      ],
+      "significados_incorretos": [
+        "A celebration putting your hand on your chest after a basket.",
+        "A backup player who only enters the game in the final minutes.",
+        "A player who stands out only in practice but freezes in official games."
+      ],
+      "impacto_motivo": "It exalts supreme emotional control and the ability to close out games in the tensest, most decisive moments."
+    },
+    {
+      "id": 30,
+      "nome": "gymbro",
+      "variacoes": [
+        "gym bro",
+        "training partner"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A blend of 'gym' and 'bro.' The nearly inseparable gym friend who trains together every day and pushes you to lift heavier.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I texted my gymbro letting him know today's leg day and he's already waiting at the turnstile.",
+      "exemplos_incorretos": [
+        "I hired a private gymbro to help me at the gym this month.",
+        "I downloaded a gymbro app to build my own workout plan by myself.",
+        "He's a solo gymbro, prefers to train alone at his own pace, no partner."
+      ],
+      "significados_incorretos": [
+        "An instructor hired by the gym to give private lessons.",
+        "A workout app that builds your exercise plan.",
+        "A person who only trains alone, without a partner, focused on their own pace."
+      ],
+      "impacto_motivo": "It values companionship, friendship, and mutual encouragement to stay consistent and progress in weightlifting."
+    },
+    {
+      "id": 31,
+      "nome": "phone it in",
+      "variacoes": [
+        "mail it in"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "Going to the gym with no real motivation, lifting very little weight, stopping constantly to check your phone or chat, with no real effort or intensity.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "She's always complaining the gym gives no results, but spends an hour on the machine scrolling TikTok, totally phoning it in.",
+      "exemplos_incorretos": [
+        "The phone-it-in class, like light yoga, is on Tuesday mornings.",
+        "I phoned it in with a recovery session the day after leg day.",
+        "That workout was really phoning it in, an intense twenty-minute HIIT session."
+      ],
+      "significados_incorretos": [
+        "A light yoga class offered at gyms.",
+        "A recovery workout done the day after an intense session.",
+        "A high-intensity interval workout done in a short time."
+      ],
+      "impacto_motivo": "It scolds the lack of dedication and focus at the gym, mocking those who don't put in enough intensity to get results."
+    },
+    {
+      "id": 32,
+      "nome": "glass",
+      "variacoes": [
+        "made of glass"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A player who lives in the medical department, faking injuries or dragging out recoveries so they don't have to play or train.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The team's midfielder is made of glass, feels a twinge in his thigh and already asks for three months in the medical department.",
+      "exemplos_incorretos": [
+        "The forward put on his glass shoes to take the decisive penalty.",
+        "The glass coach gave a tactics lesson in the weekend derby.",
+        "He scored a glass goal, chipping the free kick over the wall."
+      ],
+      "significados_incorretos": [
+        "Special shoes worn by players for better penalty accuracy.",
+        "An experienced coach who uses simple defensive strategies.",
+        "A soft free-kick style chipped over the wall."
+      ],
+      "impacto_motivo": "It shows a lack of professional commitment to the team, criticizing the athlete who avoids playing under the pretext of injury."
+    },
+    {
+      "id": 33,
+      "nome": "hand it on a platter",
+      "variacoes": [
+        "gift-wrap the win"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To make a childish, unforgivable mistake in the match, handing the win or the advantage straight to the opponent.",
+      "tags": [
+        "sports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The defender tried to pass it back without looking, the rival forward intercepted it, and the team handed it on a platter in stoppage time.",
+      "exemplos_incorretos": [
+        "The forward handed it on a platter into the top corner with a shot from outside the box.",
+        "The fans handed it on a platter, singing from start to finish of the game.",
+        "The board handed it on a platter and signed three reinforcements from Europe."
+      ],
+      "significados_incorretos": [
+        "Kicking the ball precisely into the top corner of the goal.",
+        "Cheering passionately and nonstop at the stadium.",
+        "Announcing major financial signings for the team."
+      ],
+      "impacto_motivo": "It holds the athlete or team responsible for a basic, decisive mistake that results in a frustrating loss."
+    },
+    {
+      "id": 34,
+      "nome": "rainbow flick",
+      "variacoes": [
+        "the rainbow"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A flashy dribble where the player traps the ball between their ankles and flicks it up behind them, going over the marker.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The winger pulled off a stunning rainbow flick on the fullback and burst clean through on goal.",
+      "exemplos_incorretos": [
+        "The goalkeeper did a rainbow flick to save the shot in the top left corner.",
+        "The referee gave a yellow-card rainbow flick after the violent foul.",
+        "He took the penalty with a rainbow flick, hitting it hard down the middle."
+      ],
+      "significados_incorretos": [
+        "An acrobatic save made by a goalkeeper using both hands.",
+        "A caution card given by the referee for unsportsmanlike conduct.",
+        "A hard, unspectacular penalty kick aimed at the center."
+      ],
+      "impacto_motivo": "It exalts the individual skill, boldness, and technical polish of the player pulling off one of soccer's hardest dribbles."
+    },
+    {
+      "id": 35,
+      "nome": "bagel",
+      "variacoes": [
+        "bagel a set"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "In tennis, the term used when a player wins a set 6-0, without conceding a single game to the opponent.",
+      "tags": [
+        "sports",
+        "tennis"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The world number one ran over the first set and served up an unquestionable bagel.",
+      "exemplos_incorretos": [
+        "The tennis player swapped his racket's bagel in the middle of the second set.",
+        "The server hit a bagel in the middle of the court with a perfect smash.",
+        "The match went to a bagel tiebreak, super tight, in the third set."
+      ],
+      "significados_incorretos": [
+        "A rubber accessory that protects the tennis racket's handle.",
+        "A smash hit into the center of the opponent's court.",
+        "A close, evenly matched tiebreak to decide the winner of the set."
+      ],
+      "impacto_motivo": "It indicates an overwhelming, flawless win in tennis, showing total technical superiority over the opponent."
+    },
+    {
+      "id": 36,
+      "nome": "top bins",
+      "variacoes": [
+        "postage stamp"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "The top corner of the goal (where the post meets the crossbar), considered the hardest spot for the goalkeeper to defend.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "He struck the free kick with total mastery and put the ball in the top bins, no chance for the keeper.",
+      "exemplos_incorretos": [
+        "The top bins of the team saved three penalties in the final shootout.",
+        "The forward shot weakly toward the top bins and the keeper gathered it in two motions.",
+        "The referee whistled top bins, signaling a handball in the box."
+      ],
+      "significados_incorretos": [
+        "An affectionate nickname for a goalkeeper who specializes in saving penalties.",
+        "A weak, off-target shot toward the middle of the goal.",
+        "A referee's hand gesture signaling a foul."
+      ],
+      "impacto_motivo": "It values the extreme precision and aim of the shot, resulting in a visually stunning, unstoppable goal."
+    },
+    {
+      "id": 37,
+      "nome": "push and run",
+      "variacoes": [
+        "nutmeg run"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A dribble where the player pushes the ball past one side of the opponent and sprints past the other side to collect it ahead.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The winger pulled off a push and run on the defender by the byline and crossed into the middle of the box.",
+      "exemplos_incorretos": [
+        "The goalkeeper pulled off a push and run to gather the ball in the air.",
+        "The fullback took the throw-in with a push and run into the box.",
+        "He scored the winning goal with a push and run header."
+      ],
+      "significados_incorretos": [
+        "A vertical jump by the goalkeeper to grab the ball out of the air.",
+        "A throw-in taken with both hands above the head.",
+        "A powerful header aimed at the back of the net."
+      ],
+      "impacto_motivo": "It praises the player's speed, quick thinking, and intelligence in using the space on the field against the marking."
+    },
+    {
+      "id": 38,
+      "nome": "tactical masterclass",
+      "variacoes": [
+        "tactical schooling"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A situation where a coach completely outsmarts the rival coach's setup and strategies during a match.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "With three changes at halftime, the coach gave the opponent a tactical masterclass and turned the game around.",
+      "exemplos_incorretos": [
+        "The defender gave a tactical masterclass and committed a violent foul to stop the attack.",
+        "The fans put on a tactical masterclass with a beautiful mosaic in the stands.",
+        "The fitness coach gave a tactical masterclass training the athletes' running."
+      ],
+      "significados_incorretos": [
+        "A violent foul committed by a defender to stop the play.",
+        "A paper mosaic put together by fans in the stadium.",
+        "An intensive running exercise coordinated by the fitness staff."
+      ],
+      "impacto_motivo": "It recognizes the coach's strategic brilliance in reading the game and completely neutralizing the opponent's plan."
+    },
+    {
+      "id": 39,
+      "nome": "airball",
+      "variacoes": [
+        "air ball"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "In basketball, a shot so badly missed that it flies well wide, not touching the rim, backboard, or net.",
+      "tags": [
+        "sports",
+        "basketball"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The point guard tried a three without any balance and ended up throwing up an embarrassing airball.",
+      "exemplos_incorretos": [
+        "He threw up a spectacular airball, slamming the ball through the rim with both hands.",
+        "The center grabbed the offensive airball and passed it to his open teammate.",
+        "The team celebrated the three-point airball at the final buzzer."
+      ],
+      "significados_incorretos": [
+        "A powerful dunk made with both hands.",
+        "An offensive rebound grabbed by the center under the basket.",
+        "A decisive three-pointer made at the end of the game."
+      ],
+      "impacto_motivo": "It exposes the player's lack of accuracy on the shot, resulting in a glaring error and boos from the crowd."
+    },
+    {
+      "id": 40,
+      "nome": "brick wall",
+      "variacoes": [
+        "a wall"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A goalkeeper or defensive system (like a block in volleyball) that shows extreme efficiency and stops any opposing goal or point.",
+      "tags": [
+        "sports",
+        "soccer",
+        "volleyball"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The keeper was a brick wall today, saved a penalty and three one-on-ones.",
+      "exemplos_incorretos": [
+        "The brick wall forward missed every shot he attempted in the game.",
+        "The referee turned into a brick wall and added five minutes of stoppage time.",
+        "The team turned into a brick wall and conceded four goals in the first half alone."
+      ],
+      "significados_incorretos": [
+        "A forward who misses shot after shot on goal.",
+        "A referee who adds a long stoppage time at the end of the half.",
+        "A disorganized defensive unit that concedes many goals."
+      ],
+      "impacto_motivo": "It exalts the solidity, reflexes, and invulnerability of a defensive player or block during the competition."
+    },
+    {
+      "id": 41,
+      "nome": "bounty",
+      "variacoes": [
+        "bounty payment"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "A financial incentive paid by third parties to a team so they beat a direct rival in the standings, without breaking the rules of the game.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "parental",
+      "impacto": "depends on context",
+      "exemplo_correto": "The press speculated that the already-relegated team got a bounty to play with extra fight against the league leader.",
+      "exemplos_incorretos": [
+        "The goalkeeper carried the bounty to store his training gloves.",
+        "The fans brought a huge bounty banner to support the club.",
+        "The referee used the bounty to stop the match for rain."
+      ],
+      "significados_incorretos": [
+        "A sports bag used by goalkeepers to store equipment.",
+        "A giant banner or flag used by organized fan groups.",
+        "The referee's protocol for stopping matches during storms."
+      ],
+      "impacto_motivo": "It's seen by some as a legitimate incentive for competitiveness, but by others as a questionable ethical interference in the competition."
+    },
+    {
+      "id": 42,
+      "nome": "bribe",
+      "variacoes": [
+        "match-fixing payment"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "An illicit, corrupt payment offered to athletes or referees so they help the opponent win or manipulate the result.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "parental",
+      "impacto": "negative",
+      "exemplo_correto": "Two players were banned from the sport after it was proven they took a bribe to throw the match.",
+      "exemplos_incorretos": [
+        "The team celebrated the title by receiving the bribe on the podium.",
+        "The fullback's bribe helped the winger cross it first-time.",
+        "He scored a bribe of a goal, a screamer into the right corner."
+      ],
+      "significados_incorretos": [
+        "A trophy handed to the champion team during the official ceremony.",
+        "A precise assist made by the fullback for the forward.",
+        "A powerful, well-placed shot into the corner of the goal."
+      ],
+      "impacto_motivo": "It represents corruption and fraud in sport, destroying the integrity and credibility of the competition."
+    },
+    {
+      "id": 43,
+      "nome": "home cooking",
+      "variacoes": [
+        "home cooking ref"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "Slang used to imply the officiating crew deliberately or incompetently favored a particular team.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "With two nonexistent penalties called in their favor, the rival team won with clear help from the home cooking.",
+      "exemplos_incorretos": [
+        "The coach used home cooking to set up the wall for the free kick.",
+        "The home cooking from the fans didn't stop for the full ninety minutes.",
+        "He scored the home cooking goal with a shot from midfield."
+      ],
+      "significados_incorretos": [
+        "A signal used by the coach to organize the defensive wall.",
+        "Noise from musical instruments produced by the fans.",
+        "A goal scored from a long-range shot from midfield."
+      ],
+      "impacto_motivo": "It questions the fairness of the match, suggesting injustice and improper favoritism promoted by the officiating."
+    },
+    {
+      "id": 44,
+      "nome": "poacher",
+      "variacoes": [
+        "fox in the box"
+      ],
+      "classe_gramatical": "noun / adjective",
+      "significado": "An extremely efficient, cold-blooded, lethal forward who needs few chances in the box to convert into a goal.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The ball fell clean to the number nine and he didn't forgive it, showing exactly why he's the team's poacher.",
+      "exemplos_incorretos": [
+        "The poacher defender committed a hard foul and got a red card.",
+        "The stadium's poacher sold out every ticket for the big final.",
+        "He made a poacher's save, palming the ball over the crossbar."
+      ],
+      "significados_incorretos": [
+        "A violent defender sent off for repeated fouls.",
+        "A staff member in charge of stadium box office and ticket sales.",
+        "A spectacular goalkeeper save, tipping the ball over the bar."
+      ],
+      "impacto_motivo": "It praises the high conversion rate, precision, and goal-scoring instinct of a decisive center forward."
+    },
+    {
+      "id": 45,
+      "nome": "bottle it",
+      "variacoes": [
+        "bottle job"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To show cowardice, fear, or lack of resolve in a decisive moment, losing performance purely from pressure.",
+      "tags": [
+        "sports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The team had been playing so well, but they bottled it in the final and caved to the opponent's pressure from start to finish.",
+      "exemplos_incorretos": [
+        "The team's kit is yellow, so everyone went to bottle it on the field.",
+        "The referee bottled the goal for being scored with a hand.",
+        "He bottled the shot into the top corner and scored an unforgettable screamer."
+      ],
+      "significados_incorretos": [
+        "Taking the field wearing the official yellow jersey.",
+        "Disallowing a goal for a handball offense on the play.",
+        "Landing a highly precise shot into the top corner."
+      ],
+      "impacto_motivo": "It highlights the athlete's or team's psychological weakness in caving to nerves at crucial moments."
+    },
+    {
+      "id": 46,
+      "nome": "shredded",
+      "variacoes": [
+        "ripped"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "A person or athlete with an extremely low body fat percentage and clearly visible, well-defined muscles.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The athlete prepared for six months on a strict diet and stepped on stage completely shredded.",
+      "exemplos_incorretos": [
+        "The player got shredded with rage after being subbed off in the first half.",
+        "He made a shredded forty-yard pass to the left winger.",
+        "The athlete's shorts got shredded after the opposing defender's tackle."
+      ],
+      "significados_incorretos": [
+        "Getting extremely angry after being taken off by the coach.",
+        "A long, highly precise pass played in depth.",
+        "A physical tear in the shorts caused by a tackle with the opponent."
+      ],
+      "impacto_motivo": "It acclaims the rigorous physical discipline and the achievement of a top-level muscle definition."
+    },
+    {
+      "id": 47,
+      "nome": "overtraining",
+      "variacoes": [
+        "overtrained"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A state of physical and mental exhaustion caused by excessive training without proper rest and nutrition, leading to a drop in performance.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He trained hard seven days a week without resting, went into overtraining, and his lifts dropped off a cliff.",
+      "exemplos_incorretos": [
+        "The team's overtraining helped them win in overtime.",
+        "I did a light overtraining, ten minutes on the treadmill to warm up.",
+        "He hired a personal overtraining to help him with the exercises."
+      ],
+      "significados_incorretos": [
+        "Superior physical conditioning that ensures stamina late in the game.",
+        "A light cardio warm-up done before weightlifting.",
+        "A personal trainer specialized in high-performance workouts."
+      ],
+      "impacto_motivo": "It warns of the health damage, injuries, and performance drop caused by excessive training without proper rest and balance."
+    },
+    {
+      "id": 48,
+      "nome": "toe poke",
+      "variacoes": [
+        "poke it"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "To kick the ball straight with the tip of your foot, with no technical finesse, prioritizing brute force over precision.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "In a moment of panic, the defender didn't think twice and toe poked it away from the box.",
+      "exemplos_incorretos": [
+        "The forward hit a curling toe poke that chipped the keeper with class.",
+        "The coach praised the perfect toe poke in the well-worked build-up play.",
+        "He took the corner with a sharply curving toe poke to the near post."
+      ],
+      "significados_incorretos": [
+        "A stylish finish struck with the outside of the foot.",
+        "A short, highly precise pass in building up an attacking play.",
+        "A corner kick with a pronounced curve toward the near post."
+      ],
+      "impacto_motivo": "It can be criticized for lacking technique in normal plays, but it's accepted and valued as an emergency defensive relief."
+    },
+    {
+      "id": 49,
+      "nome": "shit the bed",
+      "variacoes": [
+        "choke hard"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To fail miserably or give up out of fear at the most crucial moment of the game or competition.",
+      "tags": [
+        "sports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "parental",
+      "impacto": "negative",
+      "exemplo_correto": "When it was time to take the penalty that would win the title, he shit the bed and skied the ball over the bar.",
+      "exemplos_incorretos": [
+        "The forward shit the bed celebrating the goal with the organized fan group.",
+        "The team shit the bed and pulled off a historic 5-0 rout.",
+        "The coach shit the bed and made a perfect substitution in the second half."
+      ],
+      "significados_incorretos": [
+        "Celebrating warmly with fans in the stands.",
+        "Dominating the game and winning by a wide scoreline.",
+        "Making a precise tactical substitution that secures the win."
+      ],
+      "impacto_motivo": "It uses a crude/humorous tone to mock an athlete's failure or nerves at the crucial moment."
+    },
+    {
+      "id": 50,
+      "nome": "slide tackle",
+      "variacoes": [
+        "sliding tackle"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A defensive move where the player slides across the pitch with their legs extended to steal the ball or intercept a pass.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "depends on context",
+      "exemplo_correto": "The midfielder pulled off a clean slide tackle on the ball and masterfully stopped the opponent's counterattack.",
+      "exemplos_incorretos": [
+        "The goalkeeper made a slide tackle with his head to save the high shot.",
+        "The forward celebrated the goal by sliding into the medical stretcher with the doctors.",
+        "He took the penalty with a soft slide tackle straight down the middle."
+      ],
+      "significados_incorretos": [
+        "An acrobatic jump by the goalkeeper clearing the ball with his head.",
+        "An athlete celebrating by using the medical transport stretcher.",
+        "A weak, low penalty kick straight through the center of the goal."
+      ],
+      "impacto_motivo": "If executed cleanly on the ball, it's a praised show of grit; if it's reckless or hits the opponent, it draws a foul and a card."
+    },
+    {
+      "id": 51,
+      "nome": "make weight",
+      "variacoes": [
+        "weigh-in success"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To hit exactly the required weight class at the official weigh-in before a martial arts fight.",
+      "tags": [
+        "sports",
+        "martial arts",
+        "fighting"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "After weeks of dehydration and a strict diet, the fighter made weight and confirmed the title bout.",
+      "exemplos_incorretos": [
+        "The defender made weight on the ball, sending it hard into the box.",
+        "The fighter made weight on his opponent and won by technical knockout.",
+        "He made weight at the final whistle, celebrating his team's win."
+      ],
+      "significados_incorretos": [
+        "Heading the ball forcefully toward the middle of the box.",
+        "Beating the opponent until getting a technical knockout in the fight.",
+        "Celebrating enthusiastically at the final whistle of the game."
+      ],
+      "impacto_motivo": "It reflects the athlete's professionalism, discipline, and ethical commitment to the rules of their sport."
+    },
+    {
+      "id": 52,
+      "nome": "roll",
+      "variacoes": [
+        "rolling"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "In Jiu-Jitsu and ground martial arts, it means doing practical sparring with a partner, applying techniques without intent to hurt.",
+      "tags": [
+        "sports",
+        "martial arts",
+        "jiu-jitsu"
+      ],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "At the end of Jiu-Jitsu class, the instructor called everyone to roll for ten minutes.",
+      "exemplos_incorretos": [
+        "The forward hit a roll off the post with a shot from way out.",
+        "The goalkeeper rolled and conceded a goal through his legs.",
+        "The fans rolled onto the pitch after the referee's final whistle."
+      ],
+      "significados_incorretos": [
+        "A hard shot that hits the goalpost.",
+        "A technical error by the goalkeeper letting in a goal through his legs.",
+        "A pitch invasion by fans after the match."
+      ],
+      "impacto_motivo": "It's an everyday technical term from the routine of fight training, carrying neither a positive nor negative bias."
+    },
+    {
+      "id": 53,
+      "nome": "carry",
+      "variacoes": [
+        "carry the team"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "A situation where a single player performs so brilliantly that they make up for their teammates' shortcomings and secure the win on their own.",
+      "tags": [
+        "sports",
+        "soccer",
+        "esports"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The number ten carried the team all season, scoring goals and providing decisive assists.",
+      "exemplos_incorretos": [
+        "The fitness coach had to carry every training cone on his back.",
+        "The defender committed a hard foul carrying the rival forward on his back.",
+        "The fans carried the banners on their backs up to the upper stands."
+      ],
+      "significados_incorretos": [
+        "Transporting training equipment at the end of a session.",
+        "Committing a foul by shoving the opponent from behind.",
+        "Carrying flags and props up to the stadium sections."
+      ],
+      "impacto_motivo": "It highlights standout individual leadership and the extraordinary ability to carry the team to success."
+    },
+    {
+      "id": 54,
+      "nome": "beast",
+      "variacoes": [
+        "absolute beast"
+      ],
+      "classe_gramatical": "noun / adjective",
+      "significado": "A compliment used to describe a top-performing athlete, someone with impressive physical strength or extraordinary skill.",
+      "tags": [
+        "sports",
+        "soccer",
+        "gym"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The center back played out of his mind today, cleared every aerial ball, he's an absolute beast at the back.",
+      "exemplos_incorretos": [
+        "The team played so badly the press called the performance a beast.",
+        "The referee was a beast and gave an unfair red card in the first minute.",
+        "He committed a beast of an own goal, missing an open net."
+      ],
+      "significados_incorretos": [
+        "A dismal, disastrous performance by a team.",
+        "A strict referee who makes controversial, unfair decisions.",
+        "A glaring mistake missing a clear chance to score."
+      ],
+      "impacto_motivo": "It enshrines the athlete's vigor, presence, and extremely high standard of performance in their position."
+    },
+    {
+      "id": 55,
+      "nome": "ego lifter",
+      "variacoes": [
+        "gym newbie"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "A gym beginner with little muscle mass who acts arrogant, performs exercises incorrectly, or wants to lift more than they can handle.",
+      "tags": [
+        "sports",
+        "gym",
+        "fitness"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The ego lifter loaded 220 pounds on the bench press, couldn't lift it, and needed help so he wouldn't get hurt.",
+      "exemplos_incorretos": [
+        "The personal trainer hired an ego lifter to be his assistant.",
+        "He's an experienced ego lifter, with ten years of steady training.",
+        "I had an ego lifter with sweet potato after my workout."
+      ],
+      "significados_incorretos": [
+        "A technical assistant responsible for organizing the gym space.",
+        "A veteran practitioner with extensive experience and knowledge in weightlifting.",
+        "A protein meal eaten after training sessions."
+      ],
+      "impacto_motivo": "It mocks inexperience combined with excessive vanity, leading to incorrect exercise form and behavior that becomes a laughingstock."
+    },
+    {
+      "id": 56,
+      "nome": "screamer",
+      "variacoes": [
+        "worldie"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "An extraordinary goal, of rare beauty and technical perfection, worthy of being immortalized with an official tribute.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The forward dribbled past four defenders, chipped the keeper with a Panenka, and scored an unforgettable screamer.",
+      "exemplos_incorretos": [
+        "The referee awarded a screamer after consulting the linesman's video.",
+        "The defender scored a screamer own goal, heading it into his own net.",
+        "The game ended in a screamer draw, dull and with no excitement."
+      ],
+      "significados_incorretos": [
+        "A goal confirmed after checking the footage with the officiating team.",
+        "An own goal accidentally scored by the team's own defender.",
+        "A plain, unremarkable goal in a lackluster match."
+      ],
+      "impacto_motivo": "It exalts the supreme beauty of an unforgettable play that goes down in the sport's history."
+    },
+    {
+      "id": 57,
+      "nome": "borefest",
+      "variacoes": [
+        "snoozefest"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "A dull, uncompetitive match where both teams settle for the result (usually a draw) and avoid taking risks.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Since the draw would qualify both clubs, the second half turned into a total borefest with not a single shot on target.",
+      "exemplos_incorretos": [
+        "The derby was an eventful borefest, with eight goals and three red cards.",
+        "The fans put on a borefest in the stands, singing nonstop.",
+        "The forward had a borefest, scoring three goals in the first half."
+      ],
+      "significados_incorretos": [
+        "An intense, chaotic match packed with goals and red cards.",
+        "A chant duel put on by organized fan groups.",
+        "A brilliant performance by an athlete with multiple goals scored."
+      ],
+      "impacto_motivo": "It criticizes anti-football, complacency, and the lack of competitive spirit, frustrating fans who expected a good contest."
+    },
+    {
+      "id": 58,
+      "nome": "time-wasting",
+      "variacoes": [
+        "running down the clock"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To intentionally slow down the pace of the game (taking forever on goal kicks, faking injuries) to burn time off the clock.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The keeper kept going down on the pitch after every save to waste time and hold onto the slim lead until the end.",
+      "exemplos_incorretos": [
+        "The winger wasted time crossing the ball onto the forward's foot to score.",
+        "The fans wasted time lighting flares to celebrate the title.",
+        "The forward wasted time and blasted the penalty into the top corner."
+      ],
+      "significados_incorretos": [
+        "Delivering a pinpoint cross onto a teammate's head.",
+        "Putting on a show with flares in the stands.",
+        "Taking a penalty hard into the top corner of the goal."
+      ],
+      "impacto_motivo": "It condemns time-wasting and the anti-sporting tactic of dragging out the match to disrupt the opponent's rhythm."
+    },
+    {
+      "id": 59,
+      "nome": "backroom deal",
+      "variacoes": [
+        "boardroom rescue"
+      ],
+      "classe_gramatical": "noun expression",
+      "significado": "A behind-the-scenes change to the rules after the competition ends to save a club from relegation or benefit it improperly.",
+      "tags": [
+        "sports",
+        "soccer"
+      ],
+      "permissao": "parental",
+      "impacto": "negative",
+      "exemplo_correto": "The club finished in the relegation zone, but the board went to court and pulled off a backroom deal.",
+      "exemplos_incorretos": [
+        "The forward pulled off a spectacular backroom deal with a bicycle kick.",
+        "The backroom deal happened when the team came back from two goals down to win three.",
+        "The keeper pulled off the backroom deal, palming the free kick out for a corner."
+      ],
+      "significados_incorretos": [
+        "A masterfully executed bicycle-kick finish by the forward.",
+        "A comeback on the scoreboard achieved in the second half of the match.",
+        "A crucial goalkeeper save, tipping the ball out for a corner."
+      ],
+      "impacto_motivo": "It highlights the disrespect toward merit earned on the field, resorting to bureaucratic and political maneuvers instead."
+    },
+    {
+      "id": 60,
+      "nome": "clean sweep",
+      "variacoes": [
+        "run the table"
+      ],
+      "classe_gramatical": "verbal expression",
+      "significado": "To reach the peak of a career, win every possible title in the sport, or pull off a perfect, undisputed achievement.",
+      "tags": [
+        "sports",
+        "esports",
+        "soccer",
+        "everyday"
+      ],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "By winning the World Cup after already winning the Champions League and the Ballon d'Or, the star simply completed a clean sweep.",
+      "exemplos_incorretos": [
+        "The team completed a clean sweep by getting routed in the tournament opener.",
+        "The referee completed a clean sweep by sending off three players from the same team.",
+        "He completed a clean sweep by missing the decisive penalty in the shootout."
+      ],
+      "significados_incorretos": [
+        "Putting in a disastrous performance and getting thrashed in the first round.",
+        "A controversial referee performance handing out multiple red cards.",
+        "Making a crucial mistake by missing a decisive penalty."
+      ],
+      "impacto_motivo": "It exalts the ultimate achievement in the sport, recognizing that the athlete reached perfection and the ceiling of the discipline."
+    }
+  ]
+}
