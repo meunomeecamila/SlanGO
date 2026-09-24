@@ -7,6 +7,7 @@ class Usuario {
   final int? idade;
   final int? idAstronauta;
   final bool administrador;
+  final String idioma;
 
   Usuario({
     required this.id,
@@ -17,6 +18,7 @@ class Usuario {
     this.idade,
     this.idAstronauta,
     this.administrador = false,
+    this.idioma = 'pt',
   });
 
   factory Usuario.fromJson(Map<String, dynamic> json) {
@@ -32,8 +34,23 @@ class Usuario {
       idade: idade,
       idAstronauta: json['idAstronauta'] ?? json['id_Astronauta'],
       administrador: json['administrador'] ?? json['Administrador'] ?? false,
+      idioma: json['idioma'] is String && const {'pt', 'en', 'es', 'it'}.contains(json['idioma'])
+          ? json['idioma'] as String
+          : 'pt',
     );
   }
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'nome': nome,
+        'email': email,
+        'responsavel': responsavel,
+        'dataNascimento': dataNascimento,
+        'idade': idade,
+        'idAstronauta': idAstronauta,
+        'administrador': administrador,
+        'idioma': idioma,
+      };
 }
 
 int? _calcularIdade(Object? dataNascimento) {

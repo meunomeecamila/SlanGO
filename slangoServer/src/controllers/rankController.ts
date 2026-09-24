@@ -6,7 +6,16 @@ import {
     buscarPosicaoGlobalDoUsuario
 } from '../services/rankService';
 import { buscarIdMundoPorNome } from '../services/preogressoService';
-import { obterNomeUsuarioOuNull } from '../services/usuarioService';
+import { obterIdiomaDoUsuario, obterNomeUsuarioOuNull } from '../services/usuarioService';
+import { idiomaValido } from '../utils/girias/dicionarioGirias';
+
+async function idiomaDoRanking(req: RequisicaoAutenticada): Promise<string> {
+    const solicitado = typeof req.query.idioma === 'string'
+        ? req.query.idioma.toLowerCase()
+        : '';
+    if (idiomaValido(solicitado)) return solicitado;
+    return obterIdiomaDoUsuario(req.usuario!.id!);
+}
 
 export const registrarRanking = async (req: RequisicaoAutenticada, res: Response) => {
     try {
@@ -27,7 +36,17 @@ export const registrarRanking = async (req: RequisicaoAutenticada, res: Response
             return res.status(404).json({ error: 'Usuário não encontrado.' });
         }
 
-        const resultado = await registrarTempoRankeado(idUsuario, idMundo, nomeUsuario, tempoMs, pontuacaoFinal);
+        const idioma = idiomaValido(req.body?.idioma ?? '')
+            ? req.body.idioma
+            : await obterIdiomaDoUsuario(idUsuario);
+        const resultado = await registrarTempoRankeado(
+            idUsuario,
+            idMundo,
+            nomeUsuario,
+            tempoMs,
+            pontuacaoFinal,
+            idioma,
+        );
 
         res.status(200).json({
             sucesso: true,
@@ -44,7 +63,8 @@ export const registrarRanking = async (req: RequisicaoAutenticada, res: Response
 export const getRankingGlobal = async (req: RequisicaoAutenticada, res: Response) => {
     try {
         const limite = req.query.limite ? Number(req.query.limite) : 500;
-        const ranking = await buscarRankingGlobal(limite);
+        const idioma = await idiomaDoRanking(req);
+        const ranking = await buscarRankingGlobal(idioma, limite);
         res.status(200).json({ sucesso: true, ranking });
     } catch (error: any) {
         res.status(500).json({ error: error.message });
@@ -54,7 +74,8 @@ export const getRankingGlobal = async (req: RequisicaoAutenticada, res: Response
 export const getMinhaPosicaoGlobal = async (req: RequisicaoAutenticada, res: Response) => {
     try {
         const idUsuario = req.usuario!.id!;
-        const posicao = await buscarPosicaoGlobalDoUsuario(idUsuario);
+        const idioma = await idiomaDoRanking(req);
+        const posicao = await buscarPosicaoGlobalDoUsuario(idUsuario, idioma);
         res.status(200).json({ sucesso: true, ...posicao });
     } catch (error: any) {
         res.status(500).json({ error: error.message });

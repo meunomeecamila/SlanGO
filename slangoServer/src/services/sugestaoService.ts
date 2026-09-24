@@ -18,6 +18,7 @@ export interface SugestaoGiria {
     criado_em: string;
     descricao_adm: string | null;
     quem_aceitou: string | null;
+    pais: string | null;
 }
 
 /** Payload aceito na criação de uma sugestão pelo usuário. */
@@ -28,6 +29,7 @@ export interface NovaSugestao {
     impacto: string;
     impacto_motivo: string;
     classe_gramatical: string;
+    pais: string;
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -64,6 +66,7 @@ export async function criarSugestao(
         impacto: dados.impacto.trim(),
         impacto_motivo: dados.impacto_motivo.trim(),
         classe_gramatical: dados.classe_gramatical.trim(),
+        pais: dados.pais.trim(),
         status: 'PENDENTE' as StatusSugestao,
         descricao_adm: null,
         quem_aceitou: null,

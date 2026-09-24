@@ -11,6 +11,7 @@ import '../data/mundo_slug.dart';
 import '../../service/usuarioService.dart';
 import 'package:slango_app/mapa/mapa.dart';
 import '../../l10n/l10n.dart';
+import '../../l10n/locale_controller.dart';
 
 // O campo de estrelas agora mora em shared/widgets/fundo_espacial.dart
 // (com metade das partículas) e é reexportado para não quebrar imports antigos.
@@ -94,6 +95,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
 
   // ─── MÉTODO DO MODAL INSERIDO AQUI ───
   void _mostrarModalDeEscolhaDeModo(BuildContext context, String nomeMundo) {
+    final idioma = LocaleControllerScope.of(context).locale.languageCode;
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
@@ -137,6 +139,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                     MaterialPageRoute(
                       builder: (_) => LicaoPage(
                         nomeMundo: nomeMundo,
+                        idioma: idioma,
                         modo: ModoQuiz.normal, // MODO CASUAL
                       ),
                     ),
@@ -176,6 +179,7 @@ class _TelaMundoDosJogosState extends State<TelaMundoDosJogos> {
                     MaterialPageRoute(
                       builder: (_) => LicaoPage(
                         nomeMundo: nomeMundo,
+                        idioma: idioma,
                         modo: ModoQuiz.rankeado, // MODO RANKEADO
                       ),
                     ),

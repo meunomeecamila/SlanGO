@@ -22,6 +22,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       'Aquí los gamers hablan un idioma propio: MVP, clutch, feed, noob...',
       '¡Échale un vistazo a la jerga de abajo y luego solo queda iniciar la misión! 🚀',
     ],
+    'it': [
+      'Ciao, {nome}! Benvenuto nel Mondo dei Giochi! 🎮',
+      'Qui i gamer parlano una lingua tutta loro: MVP, clutch, feed, noob...',
+      'Dai un’occhiata allo slang e poi inizia la missione! 🚀',
+    ],
   },
   'kpop': {
     'pt': [
@@ -38,6 +43,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       '¡Annyeong {nome}! ¡Llegaste al planeta del K-Pop! 🎤',
       'Aquí hay bias, comeback, fanchant y mucho más.',
       '¡Apréndete esta jerga y arrasa en la misión, stan! 💜',
+    ],
+    'it': [
+      'Annyeong {nome}! Sei arrivato sul pianeta del K-Pop! 🎤',
+      'Qui trovi bias, comeback, fanchant e molto altro.',
+      'Impara questo slang e spacca nella missione, stan! 💜',
     ],
   },
   'maquiagem': {
@@ -56,6 +66,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       'Aquí se habla de blush, contorno, glow y piel de cristal.',
       '¡Échale un vistazo a la jerga y luego solo queda brillar en la misión! ✨',
     ],
+    'it': [
+      'Benvenuto, {nome}! Sei arrivato sul pianeta della bellezza! 💄',
+      'Qui si parla di blush, contouring, glow e pelle di vetro.',
+      'Dai un’occhiata allo slang e poi brilla nella missione! ✨',
+    ],
   },
   'pop': {
     'pt': [
@@ -72,6 +87,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       '¡Llegamos al planeta de la cultura pop, {nome}! 🌎',
       'Películas, series, memes y celebridades tienen un vocabulario propio.',
       '¡Estudia la jerga de abajo y vamos a la misión! 🍿',
+    ],
+    'it': [
+      'Siamo arrivati sul pianeta della cultura pop, {nome}! 🌎',
+      'Film, serie, meme e celebrità hanno un vocabolario tutto loro.',
+      'Studia lo slang qui sotto e partiamo per la missione! 🍿',
     ],
   },
   'antigo': {
@@ -90,6 +110,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       'Aquí circula la jerga que usaban tus padres y todavía les encanta.',
       '¡Practícala un poco antes de encarar la misión! 🕰️',
     ],
+    'it': [
+      'Tieniti forte, {nome}: benvenuto nel Mondo Antico! 📼',
+      'Qui trovi lo slang che usavano i tuoi genitori e che amano ancora.',
+      'Allenati un po’ prima di affrontare la missione! 🕰️',
+    ],
   },
   'cotidiano': {
     'pt': [
@@ -106,6 +131,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       '¿Qué tal, {nome}, todo bien? ¡Bienvenido al Mundo Cotidiano! ☕',
       'Son esas jergas del día a día que soltamos sin pensar.',
       '¡Revisa la lista y vamos a la misión! 🚀',
+    ],
+    'it': [
+      'Ciao {nome}, tutto bene? Benvenuto nel Mondo Quotidiano! ☕',
+      'Sono le parole dello slang di ogni giorno che usiamo senza pensarci.',
+      'Controlla la lista e parti per la missione! 🚀',
     ],
   },
   'esportes': {
@@ -124,6 +154,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       'Aquí es caño, colgar los botines, golazo y mucho más.',
       '¡Calienta con la jerga de abajo y entra a la cancha en la misión! 🏆',
     ],
+    'it': [
+      'Si parte, {nome}! Sei entrato nel Mondo dello Sport! ⚽',
+      'Qui trovi tunnel, appendere gli scarpini, gol spettacolari e molto altro.',
+      'Riscaldati con lo slang e scendi in campo nella missione! 🏆',
+    ],
   },
   'geek': {
     'pt': [
@@ -140,6 +175,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       '¡Saludos, {nome}! ¡Bienvenido al Mundo Geek! 🛸',
       'Animes, cómics, RPG y tecnología tienen su propio dialecto.',
       '¡Estudia el grimorio de jerga y vamos a la misión! 🧙',
+    ],
+    'it': [
+      'Salve, {nome}! Benvenuto nel Mondo Geek! 🛸',
+      'Anime, fumetti, RPG e tecnologia hanno un dialetto tutto loro.',
+      'Studia il grimorio dello slang e parti per la missione! 🧙',
     ],
   },
   'redessociais': {
@@ -158,6 +198,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       'Aquí se habla de mutual, crush, trend, POV y shippear.',
       '¡Haz scroll en la jerga de abajo y comienza la misión! 💬',
     ],
+    'it': [
+      'Benvenuto sul pianeta delle timeline, {nome}! 📱',
+      'Qui si parla di mutual, crush, trend, POV e ship.',
+      'Scorri lo slang qui sotto e inizia la missione! 💬',
+    ],
   },
   'relacionamentos': {
     'pt': [
@@ -174,6 +219,11 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       '¡Llegaste al planeta de los corazones, {nome}! 💜',
       'Rollo, ligue, amor, red flag... aquí hay jerga para todo.',
       '¡Aprende estas expresiones y ve con todo a la misión! 💘',
+    ],
+    'it': [
+      'Sei arrivato sul pianeta dei cuori, {nome}! 💜',
+      'Flirt, storia, amore, red flag... qui c’è slang per tutto.',
+      'Impara queste espressioni e affronta la missione con grinta! 💘',
     ],
   },
   // Mundo Comunidade — feito pela galera. Ainda sem gírias cadastradas,
@@ -196,6 +246,12 @@ const Map<String, Map<String, List<String>>> falasPorMundo = {
       '¡Este mundo lo construyen ustedes! ¿Qué tal enviar tu propia jerga? ✍️',
       'Todavía estamos reuniendo la jerga más hablada de la galaxia... ¡Mantente atento! 👀',
       '¡Conectando mentes y jergas de todos los rincones del universo! 🚀',
+    ],
+    'it': [
+      'Benvenuto nel Mondo della Comunità, {nome}! Qui la voce di tutti prende vita! 🌍',
+      'Questo mondo lo costruite voi! Perché non inviare il tuo slang? ✍️',
+      'Stiamo ancora raccogliendo lo slang più usato della galassia... resta sintonizzato! 👀',
+      'Colleghiamo menti e slang da ogni angolo dell’universo! 🚀',
     ],
   },
 };

@@ -1,0 +1,1415 @@
+{
+  "esportes": [
+    {
+      "id": 1,
+      "nome": "teatrero",
+      "variacoes": [
+        "hacer teatro",
+        "tirarse"
+      ],
+      "classe_gramatical": "adjetivo / sustantivo",
+      "significado": "Jugador que se inventa excusas, finge una lesión o simula una situación para evitar entrenamientos, marcas fuertes o responsabilidades.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Siempre se hace el dolorido de la pierna cuando le toca marcar a los rivales, es un teatrero total.",
+      "exemplos_incorretos": [
+        "El suplente se quedó de teatrero todo el partido sentado en el banco sin ser llamado.",
+        "Festejó el gol como todo un teatrero, se quitó la camiseta y corrió por toda la cancha.",
+        "A la hora de patear el penal decisivo, se puso de teatrero y la mandó afuera."
+      ],
+      "significados_incorretos": [
+        "Jugador suplente al que el técnico nunca hace entrar al campo.",
+        "Jugador que exagera los festejos después de anotar un gol.",
+        "Jugador que falla siempre en los momentos decisivos por los nervios, como al patear un penal."
+      ],
+      "impacto_motivo": "Le atribuye al deportista una conducta antideportiva y poco profesional, que se inventa excusas para escapar de sus deberes con el equipo."
+    },
+    {
+      "id": 2,
+      "nome": "firula",
+      "variacoes": [
+        "hacer firuletes",
+        "firulear"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Expresión usada cuando un jugador hace gambetas o jugadas de efecto innecesarias, generalmente para lucirse, sin resultados concretos hacia el arco.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "¡Dejate de firulas en tu propia área y sacate la pelota de encima de una vez!",
+      "exemplos_incorretos": [
+        "El delantero hizo una firula increíble y estalló en un festejo acrobático en el pasto.",
+        "Los dos jugadores empezaron una firula después de la entrada dura.",
+        "Su firula terminó directamente en gol, el hincha aplaudió de pie."
+      ],
+      "significados_incorretos": [
+        "Festejo exagerado de un gol con varias piruetas.",
+        "Discusión acalorada entre jugadores durante el partido.",
+        "Jugada de efecto que resulta directamente en gol."
+      ],
+      "impacto_motivo": "Critica el exceso de exhibicionismo y la falta de eficacia del jugador, que prioriza el lucimiento individual por encima del juego colectivo."
+    },
+    {
+      "id": 3,
+      "nome": "manos de manteca",
+      "variacoes": [
+        "manos de mantequilla"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Arquero que tiene poca seguridad con las manos, dejando que la pelota se le escape fácilmente o fallando atajadas en teoría sencillas.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El remate llegó flojo al medio del arco, pero el arquero manos de manteca se lo dejó pasar.",
+      "exemplos_incorretos": [
+        "El defensor manos de manteca provocó un penal tonto en el área otra vez.",
+        "Es zurdo y tiene un remate manos de manteca, siempre patea flojo.",
+        "El arquero manos de manteca se ubicó mal y le hicieron un gol de lejos."
+      ],
+      "significados_incorretos": [
+        "Defensor que suele cometer penales tontos.",
+        "Jugador zurdo con poca potencia de disparo.",
+        "Arquero que se ubica mal y recibe goles de larga distancia."
+      ],
+      "impacto_motivo": "Evidencia la inseguridad técnica del arquero, asociándolo a errores graves en atajadas sencillas que perjudican el resultado."
+    },
+    {
+      "id": 5,
+      "nome": "dar un baile",
+      "variacoes": [
+        "meter un baile",
+        "ganar de goleada"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Ganar o perder un partido con una diferencia de puntos o goles enorme, como en una goleada aplastante.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Jugamos increíble, les dimos un baile, terminó 6 a 0!",
+      "exemplos_incorretos": [
+        "El equipo salió a festejar por la ciudad dando un baile después del título.",
+        "Ganamos por penales dando un baile, fue un partido muy parejo.",
+        "El partido terminó dando un baile, 0 a 0, sin goles de ningún lado."
+      ],
+      "significados_incorretos": [
+        "Festejo del equipo después de ganar un campeonato.",
+        "Victoria sufrida definida por penales.",
+        "Empate sin goles en un partido trabado."
+      ],
+      "impacto_motivo": "Indica una victoria aplastante e indiscutible, resaltando el dominio y el rendimiento superior del equipo ganador."
+    },
+    {
+      "id": 6,
+      "nome": "colgar los botines",
+      "variacoes": [
+        "colgar las botas"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Retirarse de la carrera futbolística o, por extensión, decidir dejar de practicar cualquier actividad o profesión habitual.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Después de veinte años en el mundo corporativo, el director decidió colgar los botines e irse a vivir a la playa.",
+      "exemplos_incorretos": [
+        "Colgó los botines directo en la red después de anotar el gol de la victoria.",
+        "El delantero colgó los botines y firmó con el rival a mitad de año.",
+        "Después de la lesión grave, tuvo que colgar los botines temporalmente."
+      ],
+      "significados_incorretos": [
+        "Festejar un gol quedándose colgado de la red del arco.",
+        "Cambiar de equipo a mitad de temporada.",
+        "Quedar fuera del equipo titular por una lesión grave."
+      ],
+      "impacto_motivo": "Describe un hecho natural de cierre de una etapa o jubilación, sin atribuir por sí mismo un tono positivo o negativo."
+    },
+    {
+      "id": 7,
+      "nome": "burro",
+      "variacoes": [
+        "paquete"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Jugador de futbol de pésima calidad técnica, sin ninguna habilidad o con un rendimiento muy pobre en la cancha.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El delantero nuevo falló cuatro goles con el arco vacío, es un burro total.",
+      "exemplos_incorretos": [
+        "Ese burro en la tribuna se puso a pelear con un hincha del equipo rival.",
+        "El suplente es un burro, nunca entrena con ganas y se la pasa en el banco.",
+        "Es un burro que erra un pase tras otro, pero corre muchísimo en la cancha."
+      ],
+      "significados_incorretos": [
+        "Hincha que va al estadio solo a pelearse.",
+        "Jugador suplente que nunca entrena con compromiso.",
+        "Jugador que falla muchos pases pero se esfuerza al máximo."
+      ],
+      "impacto_motivo": "Se trata de una crítica despectiva que descalifica abiertamente la capacidad técnica y la habilidad del deportista."
+    },
+    {
+      "id": 8,
+      "nome": "pollo",
+      "variacoes": [
+        "hacer un pollo"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Error grave o grotesco del arquero que no logra retener la pelota y provoca un gol fácilmente evitable.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El remate venía flojo y a media altura, pero el arquero resbaló y se mandó un pollo tremendo.",
+      "exemplos_incorretos": [
+        "Al goleador, apodado pollo por los hinchas, le anotó tres goles al equipo.",
+        "El defensor hizo un pollo dentro del área y el árbitro cobró penal.",
+        "Fue un remate pollo, sin nada de fuerza, pero igual entró."
+      ],
+      "significados_incorretos": [
+        "Apodo cariñoso del goleador del equipo.",
+        "Error del defensor que provoca un penal.",
+        "Remate flojo que igual termina siendo gol por suerte."
+      ],
+      "impacto_motivo": "Asocia el rendimiento del arquero con un error vergonzoso y elemental, que provoca directamente el daño del gol recibido."
+    },
+    {
+      "id": 9,
+      "nome": "achicarse",
+      "variacoes": [
+        "quedar achicado"
+      ],
+      "classe_gramatical": "sustantivo / verbo",
+      "significado": "Jugador que no rinde lo esperado, desaparece del partido o se achica ante la presión en los momentos decisivos.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "A la hora de patear el penal decisivo, se achicó y fingió una molestia para salir de la cancha.",
+      "exemplos_incorretos": [
+        "Se achicó, se lesionó tres veces este mes.",
+        "El que se achica en la tribuna no paraba de gritarle al equipo.",
+        "En la recta final del partido se achicó y fingió dolor para salir de la cancha."
+      ],
+      "significados_incorretos": [
+        "Jugador que se lesiona con frecuencia durante la temporada.",
+        "Hincha ruidoso que grita mucho durante el partido.",
+        "Jugador que finge una lesión para salir del partido antes de tiempo."
+      ],
+      "impacto_motivo": "Acusa al deportista de tener fragilidad mental y de escapar de sus responsabilidades en los momentos de mayor relevancia del partido."
+    },
+    {
+      "id": 10,
+      "nome": "tragón",
+      "variacoes": [
+        "ser un tragón"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Jugador individualista que retiene demasiado la pelota y evita pasarla a sus compañeros, queriendo resolverlo todo por su cuenta.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "videojuegos"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Prefirió patear de lejos y falló, mientras yo estaba solo dentro del área, qué tragón.",
+      "exemplos_incorretos": [
+        "El tragón del equipo siempre llega tarde al entrenamiento de los viernes.",
+        "Ese tragón se comió un gol increíble solo frente al arco.",
+        "Es un tragón, siempre prefiere arriesgar el remate de lejos en vez de dar el pase."
+      ],
+      "significados_incorretos": [
+        "Jugador que siempre llega tarde a los entrenamientos.",
+        "Delantero que falla muchos goles fáciles.",
+        "Jugador que prefiere rematar de lejos en vez de tocarla para un compañero."
+      ],
+      "impacto_motivo": "Critica la conducta egoísta del jugador, que no respeta el trabajo colectivo en su intento de lucirse solo."
+    },
+    {
+      "id": 11,
+      "nome": "túnel",
+      "variacoes": [
+        "caño"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Gambeta muy habilidosa en la que el jugador hace pasar la pelota exactamente entre las piernas del rival y la recupera del otro lado.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El delantero le hizo un túnel humillante al defensor y salió solo hacia el arco.",
+      "exemplos_incorretos": [
+        "Después del gol hizo el gesto del túnel, el festejo de escribir en el aire.",
+        "El lateral metió un túnel espectacular al área para el cabezazo del delantero.",
+        "Hizo un túnel de taco sorprendente entre los dos centrales."
+      ],
+      "significados_incorretos": [
+        "Festejo de un gol que imita el gesto de escribir en el aire.",
+        "Centro preciso del lateral hacia el área rival.",
+        "Pase de taco sorprendente entre dos rivales."
+      ],
+      "impacto_motivo": "Exalta el refinamiento técnico y la creatividad de la gambeta, generando espectáculo al superar al marcador con elegancia."
+    },
+    {
+      "id": 12,
+      "nome": "sombrero",
+      "variacoes": [
+        "caño de aire"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Gambeta que consiste en pasar la pelota por encima de la cabeza del rival y recuperar el control detrás de él.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El número diez le hizo un sombrero espectacular al mediocampista antes de centrar al área.",
+      "exemplos_incorretos": [
+        "Hizo el gesto del sombrero con la mano sobre la cabeza para festejar.",
+        "Saltó más alto que todos y metió un sombrero de cabeza al ángulo.",
+        "Arriesgó un sombrero en chilena espectacular que terminó adentro del arco."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho poniendo la mano sobre la cabeza con forma de sombrero.",
+        "Cabezazo preciso al ángulo del arco.",
+        "Chilena espectacular que se convierte en un gol de gran efecto."
+      ],
+      "impacto_motivo": "Resalta el genio y la plasticidad de la jugada individual, aplaudida por superar al rival por el aire con maestría."
+    },
+    {
+      "id": 13,
+      "nome": "la cuchara",
+      "variacoes": [
+        "gol de cuchara"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Estilo de definición de mucha clase, generalmente en penales, en el que el jugador toca la pelota por abajo para que suba lento, superando al arquero ya caído.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Pateó el penal a la cuchara justo por el medio del arco mientras el arquero se tiraba a la derecha.",
+      "exemplos_incorretos": [
+        "Después del gol simuló cavar el pasto en su festejo, como si fuera una cuchara.",
+        "Pateó una cuchara fortísima de empeine que se clavó bajo el travesaño.",
+        "La cuchara en el tiro libre pasó por arriba de la barrera y entró."
+      ],
+      "significados_incorretos": [
+        "Festejo en el que se finge cavar un pozo simbólico en el pasto.",
+        "Remate potente de empeine bajo el travesaño.",
+        "Tiro libre que supera la barrera y entra al arco."
+      ],
+      "impacto_motivo": "Elogia la frialdad, la clase y la precisión técnica necesarias para ejecutar un remate delicado y de alto riesgo."
+    },
+    {
+      "id": 15,
+      "nome": "ace",
+      "variacoes": [
+        "ace de saque"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "En el voleibol y el tenis, es un saque tan potente y preciso que entra directamente en la cancha rival sin ser recibido, valiendo el punto de inmediato.",
+      "tags": [
+        "voleibol",
+        "tenis",
+        "deportes"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El partido estaba tenso, pero el tenista metió un ace imposible de devolver y ganó el partido.",
+      "exemplos_incorretos": [
+        "Después del punto hizo el gesto del ace levantando el dedo hacia el público.",
+        "El bloqueo fue un verdadero ace, frenó el ataque en la cara del rival.",
+        "Metió un remate tipo ace, imposible de defender, directo a la cancha rival."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho levantando el dedo índice.",
+        "Bloqueo perfecto que frena el ataque rival.",
+        "Remate potente que el rival no logra defender."
+      ],
+      "impacto_motivo": "Representa la perfección en la ejecución del saque, garantizando un punto directo y demostrando superioridad técnica."
+    },
+    {
+      "id": 17,
+      "nome": "hail mary",
+      "variacoes": [
+        "pase hail mary"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Jugada desesperada del Futbol Americano en la que el quarterback lanza un pase largo hacia la zona de anotación, esperando un milagro en el último segundo del partido.",
+      "tags": [
+        "deportes",
+        "futbol americano"
+      ],
+      "permissao": "todos",
+      "impacto": "depende del contexto",
+      "exemplo_correto": "Quedaban solo cinco segundos en el reloj e intentó un hail mary heroico para ganar el partido.",
+      "exemplos_incorretos": [
+        "Después del touchdown, el jugador hizo el hail mary arrodillándose en el campo.",
+        "La defensa hizo un hail mary interceptando el pase en la última jugada.",
+        "Quedaban pocos segundos y el equipo intentó un hail mary de gol de campo desde muy lejos."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho arrodillándose en el campo después del touchdown.",
+        "Jugada defensiva que intercepta el pase rival.",
+        "Gol de campo decisivo pateado al final del partido."
+      ],
+      "impacto_motivo": "Si sale bien, se convierte en un gesto milagroso y heroico; si falla, evidencia la desesperación y el fracaso del equipo."
+    },
+    {
+      "id": 18,
+      "nome": "amuleto",
+      "variacoes": [
+        "ser un amuleto"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Persona muy afortunada o que se cree que trae buena suerte al equipo o al grupo de amigos cuando mira el partido.",
+      "tags": [
+        "deportes",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Siempre invito a mi primo a ver la final con nosotros, ese chico es un amuleto increíble.",
+      "exemplos_incorretos": [
+        "Ese amuleto del equipo siempre anota de cabeza en los córners.",
+        "Es un amuleto, viaja a ver todos los partidos de visitante.",
+        "Solo miro los partidos decisivos, soy un amuleto en esos momentos."
+      ],
+      "significados_incorretos": [
+        "Jugador que siempre anota goles de cabeza.",
+        "Hincha que va a ver todos los partidos de visitante.",
+        "Persona que solo mira los partidos decisivos del equipo."
+      ],
+      "impacto_motivo": "Asocia la presencia de la persona con la suerte y los resultados positivos, convirtiéndola en alguien querido y buscado por el grupo."
+    },
+    {
+      "id": 19,
+      "nome": "trepador",
+      "variacoes": [
+        "hincha del ganador"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Hincha desleal que cambia de equipo según quién esté ganando más títulos en ese momento, abandonando al equipo de siempre.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Juraba amor eterno a su equipo, pero apenas el otro empezó a ganar todo se volvió un trepador de inmediato.",
+      "exemplos_incorretos": [
+        "El lateral fue un trepador y jugó de delantero en el segundo tiempo.",
+        "Ese comentarista hace de trepador cada semana sobre quién debería ser el técnico.",
+        "Se aparece en el estadio solo cuando el equipo está peleando el título, es un trepador."
+      ],
+      "significados_incorretos": [
+        "Jugador que cambia de posición a mitad de partido.",
+        "Comentarista que cambia de opinión sobre el técnico cada semana.",
+        "Hincha que va al estadio solo cuando el equipo está ganando títulos."
+      ],
+      "impacto_motivo": "Condena la falta de lealtad y el oportunismo de la persona, que abandona su pasión deportiva a cambio de victorias fáciles."
+    },
+    {
+      "id": 20,
+      "nome": "pasar la guardia",
+      "variacoes": [
+        "pase de guardia"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Técnica fundamental del Jiu-Jitsu en la que el luchador supera las piernas del rival en el suelo, alcanzando el control lateral de su cuerpo.",
+      "tags": [
+        "deportes",
+        "artes marciales",
+        "jiu-jitsu"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Usó mucha presión y peso para pasar la guardia del rival y finalizar con una llave de brazo.",
+      "exemplos_incorretos": [
+        "Después de la victoria, festejó haciendo el gesto de pasar la guardia con los brazos.",
+        "Pasó la guardia con un estrangulamiento perfecto por la espalda.",
+        "Pasó la guardia con una raspada rápida, dando vuelta la posición en el tatami."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho levantando los brazos en forma de cruz.",
+        "Finalización por estrangulamiento ejecutada por la espalda.",
+        "Aplicar una raspada para dar vuelta la posición en el suelo."
+      ],
+      "impacto_motivo": "Reconoce el avance táctico y la conquista de una posición de dominio en el combate, fundamental para sumar puntos o finalizar."
+    },
+    {
+      "id": 21,
+      "nome": "salado",
+      "variacoes": [
+        "yeta",
+        "yetatore"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Persona muy desafortunada o que tiene fama de traer siempre mala suerte a su equipo del corazón o a los eventos en los que participa.",
+      "tags": [
+        "deportes",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "No lo inviten más al bar a ver el partido, cada vez que viene le hacen un gol a nuestro equipo, es demasiado salado.",
+      "exemplos_incorretos": [
+        "Es salado, siempre falla el penal decisivo en los entrenamientos.",
+        "Ese salado nunca va al estadio, prefiere ver el partido desde su casa.",
+        "Solo en los partidos decisivos es salado, en los normales el equipo gana tranquilo."
+      ],
+      "significados_incorretos": [
+        "Jugador que siempre falla los penales en el entrenamiento.",
+        "Hincha que nunca va al estadio a ver al equipo.",
+        "Persona que trae mala suerte solo en los partidos decisivos, pero no en los normales."
+      ],
+      "impacto_motivo": "Etiqueta a la persona como portadora de mala suerte, generando distancia y bromas pesadas entre los compañeros de hinchada."
+    },
+    {
+      "id": 22,
+      "nome": "tryhard",
+      "variacoes": [
+        "hacer el tryhard"
+      ],
+      "classe_gramatical": "sustantivo / adjetivo",
+      "significado": "Término que viene del inglés. Persona que se esfuerza de manera exagerada y competitiva en un juego casual o en un deporte amateur, queriendo ganar a toda costa.",
+      "tags": [
+        "deportes",
+        "videojuegos",
+        "esports"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Solo estábamos jugando un picadito el fin de semana para sudar un poco y ese llegó a barrer con todo, un tryhard total.",
+      "exemplos_incorretos": [
+        "El jugador profesional es tryhard, entrena el doble que el resto del plantel.",
+        "Solo juega videojuegos en modo competitivo serio, nunca casual, es tryhard.",
+        "Se hace el tryhard pero en realidad no le importa nada el resultado del partido."
+      ],
+      "significados_incorretos": [
+        "Jugador profesional que entrena el doble que sus compañeros.",
+        "Persona que juega videojuegos solo en modo competitivo serio.",
+        "Jugador que finge esforzarse pero en realidad no le importa el resultado."
+      ],
+      "impacto_motivo": "Critica la falta de sentido común en contextos recreativos, donde la obsesión por ganar arruina la diversión y el clima relajado."
+    },
+    {
+      "id": 23,
+      "nome": "shape",
+      "variacoes": [
+        "estar en shape",
+        "ponerse en shape"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Jerga del mundo del fisicoculturismo para referirse al estado físico, especialmente cuando el cuerpo está musculoso, definido y atractivo.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El chico siguió una dieta estricta y se puso en un shape increíble para el verano.",
+      "exemplos_incorretos": [
+        "Me compré un shape nuevo para entrenar con más compresión en los brazos.",
+        "Tomé el shape antes del entrenamiento para tener más energía en el gimnasio.",
+        "Llegó a ese shape demasiado rápido, seguro usa algo."
+      ],
+      "significados_incorretos": [
+        "Prenda de compresión usada para entrenar en el gimnasio.",
+        "Suplemento en polvo que se toma antes del entrenamiento.",
+        "Cuerpo definido logrado rápidamente con el uso de anabólicos."
+      ],
+      "impacto_motivo": "Elogia el cuidado estético y la disciplina del deportista, reconociendo el esfuerzo en los entrenamientos y la buena forma física alcanzada."
+    },
+    {
+      "id": 24,
+      "nome": "gambito",
+      "variacoes": [
+        "gambito de dama"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Maniobra del ajedrez en la que el jugador sacrifica intencionalmente un peón o una pieza al inicio de la partida, para obtener una ventaja estratégica en el tablero.",
+      "tags": [
+        "deportes",
+        "ajedrez",
+        "juegos de mesa"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Para demoler su defensa, el maestro ruso decidió usar el gambito de rey en el tercer movimiento.",
+      "exemplos_incorretos": [
+        "Después de ganar, hizo el gesto del gambito imitando un caballo con la mano.",
+        "Aplicó un gambito perfecto y terminó con un jaque mate.",
+        "Su estrategia era un gambito defensivo, para evitar perder piezas desde el principio."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho moviendo la mano como si fuera un caballo de ajedrez.",
+        "Jugada final que lleva directamente al jaque mate.",
+        "Estrategia defensiva que evita perder piezas al inicio de la partida."
+      ],
+      "impacto_motivo": "Clasifica una estrategia técnica y neutra del ajedrez, cuyo valor depende exclusivamente del desarrollo táctico de la partida."
+    },
+    {
+      "id": 25,
+      "nome": "besar la lona",
+      "variacoes": [
+        "ir a la lona"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Ser noqueado de manera brutal en los deportes de combate (Boxeo, MMA), cayendo de panza o de cara directamente sobre el piso del ring.",
+      "tags": [
+        "deportes",
+        "artes marciales",
+        "boxeo"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Bajó la guardia por un segundo, recibió un derechazo perfecto al mentón y fue a besar la lona al instante.",
+      "exemplos_incorretos": [
+        "Después de la victoria, besó la lona levantando los brazos en el ring.",
+        "Recibió un golpe así y casi besa la lona, pero se mantuvo de pie.",
+        "Besó la lona a propósito, simulando una caída para ganar tiempo."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho levantando los brazos sobre el ring.",
+        "Golpe potente que tira al rival sin dejarlo noqueado.",
+        "Caer al piso a propósito para simular una caída."
+      ],
+      "impacto_motivo": "Describe una derrota contundente por nocaut, evidenciando la fragilidad y la pérdida de conocimiento en el combate."
+    },
+    {
+      "id": 26,
+      "nome": "estar en ciclo",
+      "variacoes": [
+        "el ciclo"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Jerga del mundo del gimnasio y el fisicoculturismo para referirse al uso frecuente de esteroides anabólicos, de forma discreta o en broma.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "padres",
+      "impacto": "depende del contexto",
+      "exemplo_correto": "Es imposible ganar 15 kilos de masa muscular en dos meses comiendo solo pollo, seguro está en ciclo.",
+      "exemplos_incorretos": [
+        "Tomé una bebida energética antes de ir al gimnasio hoy.",
+        "El suplemento de proteína después del entrenamiento ayuda a la recuperación muscular.",
+        "Ese shape suyo es todo natural, solo dieta y entrenamiento, nada de anabólicos."
+      ],
+      "significados_incorretos": [
+        "Bebida energética tomada antes de un entrenamiento pesado.",
+        "Suplemento de proteína consumido después del entrenamiento.",
+        "Cuerpo definido de forma natural logrado solo con dieta y entrenamiento."
+      ],
+      "impacto_motivo": "Puede tener un tono de broma o de admiración por el gran aumento de masa muscular, o un tono despectivo que señala engaño y riesgos para la salud."
+    },
+    {
+      "id": 27,
+      "nome": "yeta",
+      "variacoes": [
+        "tener yeta",
+        "yetar"
+      ],
+      "classe_gramatical": "sustantivo / verbo",
+      "significado": "Mala suerte repetida, ojo negro prolongado o energía negativa en la que todo sale mal, muy usada cuando los equipos encadenan derrotas o lesiones.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Este equipo no gana hace diez fechas, alguien tiene que sacar esta yeta del vestuario.",
+      "exemplos_incorretos": [
+        "Pateó el piso tres veces para sacarse la yeta antes de patear el penal.",
+        "El equipo está en una linda yeta, cinco victorias seguidas sin perder.",
+        "Ese jugador vive de yeta, siempre finge una lesión chica para salir de la cancha."
+      ],
+      "significados_incorretos": [
+        "Festejo de un gol hecho pateando el piso tres veces.",
+        "Racha de victorias consecutivas de un equipo.",
+        "Lesión leve que el jugador finge tener durante el partido."
+      ],
+      "impacto_motivo": "Expresa un período persistente de mala suerte, desgracias o energía negativa que perjudica el rendimiento del deportista o del equipo."
+    },
+    {
+      "id": 29,
+      "nome": "clutch",
+      "variacoes": [
+        "ser clutch",
+        "jugador clutch"
+      ],
+      "classe_gramatical": "adjetivo / verbo",
+      "significado": "Jugador extremadamente decisivo y frío, que no siente la presión del público rival y logra salvar el partido o cerrar el punto en el último segundo.",
+      "tags": [
+        "deportes",
+        "videojuegos",
+        "basquet",
+        "esports"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Estábamos perdiendo por dos puntos al final del último cuarto, pero él es demasiado clutch y anotó de tres sobre la hora.",
+      "exemplos_incorretos": [
+        "Después del triple hizo el gesto clutch llevándose la mano al pecho.",
+        "Ese suplente es clutch, entra a la cancha solo en los últimos minutos del partido.",
+        "Es una fiera en los entrenamientos pero se paraliza en los partidos de verdad, nada clutch."
+      ],
+      "significados_incorretos": [
+        "Festejo hecho llevándose la mano al pecho después del triple.",
+        "Jugador suplente que entra solo en los últimos minutos del partido.",
+        "Jugador que brilla solo en los entrenamientos pero se paraliza en los partidos oficiales."
+      ],
+      "impacto_motivo": "Exalta el control emocional supremo y la capacidad de definir los partidos en los momentos más tensos y decisivos."
+    },
+    {
+      "id": 30,
+      "nome": "gymbro",
+      "variacoes": [
+        "gym bro",
+        "compañero de gimnasio"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Unión de las palabras en inglés 'gym' (gimnasio) y 'bro' (hermano). El amigo de gimnasio casi inseparable que entrena junto todos los días y motiva a subir el peso.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Le escribí a mi gymbro para avisarle que hoy es día de pierna y ya está esperando en la puerta.",
+      "exemplos_incorretos": [
+        "Contraté un gymbro privado para que me ayude en el gimnasio este mes.",
+        "Descargué una app gymbro para armar mi rutina de entrenamiento solo.",
+        "Es un gymbro solitario, prefiere entrenar solo a su propio ritmo, sin compañero."
+      ],
+      "significados_incorretos": [
+        "Instructor contratado por el gimnasio para clases privadas.",
+        "Aplicación de entrenamiento que arma la rutina de ejercicios.",
+        "Persona que siempre entrena sola, sin compañero, concentrada en su propio ritmo."
+      ],
+      "impacto_motivo": "Valora el compañerismo, la amistad y el aliento mutuo para mantener la constancia y el progreso en el fisicoculturismo."
+    },
+    {
+      "id": 31,
+      "nome": "entrenar flojo",
+      "variacoes": [
+        "entrenamiento flojo"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Ir al gimnasio sin ganas, levantando muy poco peso, parando a cada rato para mirar el celular o charlar, sin ningún esfuerzo o intensidad real.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Siempre se queja de que el gimnasio no le da resultados, pero se pasa una hora en la máquina mirando TikTok, solo entrena flojo.",
+      "exemplos_incorretos": [
+        "La clase de entrenar flojo, tipo yoga suave, es el martes a la mañana.",
+        "Hice un entrenamiento flojo de recuperación al día siguiente de pierna pesada.",
+        "Ese entrenamiento fue todo menos flojo, HIIT intenso en veinte minutos."
+      ],
+      "significados_incorretos": [
+        "Clase de yoga suave que se practica en el gimnasio.",
+        "Entrenamiento de recuperación hecho un día después de un esfuerzo intenso.",
+        "Entrenamiento por intervalos de alta intensidad en poco tiempo."
+      ],
+      "impacto_motivo": "Reprocha la falta de dedicación y concentración en el gimnasio, burlándose de quien no pone suficiente intensidad para obtener resultados."
+    },
+    {
+      "id": 32,
+      "nome": "jugador de cristal",
+      "variacoes": [
+        "ser de cristal"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Jugador que vive en la enfermería, fingiendo lesiones o alargando las recuperaciones para no tener que jugar ni entrenar.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El mediocampista del equipo es un verdadero jugador de cristal, siente una molestia en la pierna y ya pide tres meses de enfermería.",
+      "exemplos_incorretos": [
+        "El delantero pateó con precisión de jugador de cristal para convertir el penal decisivo.",
+        "El técnico jugador de cristal dio una clase de táctica en el clásico del fin de semana.",
+        "Anotó un gol de jugador de cristal pateando el tiro libre por arriba de la barrera."
+      ],
+      "significados_incorretos": [
+        "Botín especial usado por los jugadores para tener más precisión en los penales.",
+        "Técnico experto que usa estrategias defensivas sencillas.",
+        "Estilo de tiro libre suave por arriba de la barrera."
+      ],
+      "impacto_motivo": "Demuestra falta de compromiso profesional con el equipo, criticando al deportista que evita jugar con la excusa de una lesión."
+    },
+    {
+      "id": 33,
+      "nome": "harakiri",
+      "variacoes": [
+        "hacer un harakiri",
+        "regalar el partido"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Cometer un error infantil e imperdonable durante el partido, regalando la victoria o la ventaja al rival.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El defensor intentó despejar sin mirar, el delantero rival interceptó y el equipo hizo un harakiri en el tiempo de descuento.",
+      "exemplos_incorretos": [
+        "El delantero hizo un harakiri al ángulo con un remate de afuera del área.",
+        "Los hinchas hicieron un harakiri cantando de principio a fin del partido.",
+        "La dirigencia hizo un harakiri y contrató tres refuerzos desde Europa."
+      ],
+      "significados_incorretos": [
+        "Patear la pelota con precisión al ángulo del arco.",
+        "Alentar de forma apasionada e ininterrumpida en el estadio.",
+        "Anunciar grandes contrataciones económicas para el equipo."
+      ],
+      "impacto_motivo": "Le atribuye al deportista o al equipo la responsabilidad de un error elemental y decisivo que termina en una derrota frustrante."
+    },
+    {
+      "id": 35,
+      "nome": "rosco",
+      "variacoes": [
+        "bagel"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "En el tenis, término usado cuando un jugador gana un set por 6 a 0, sin ceder ni un solo juego al rival.",
+      "tags": [
+        "deportes",
+        "tenis"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El número uno del mundo dominó el primer set y le metió un rosco indiscutible.",
+      "exemplos_incorretos": [
+        "El tenista cambió las cuerdas de la raqueta a mitad del segundo set.",
+        "El sacador hizo un rosco desde el medio de la cancha con un smash perfecto.",
+        "El partido terminó en un rosco de desempate súper parejo en el tercer set."
+      ],
+      "significados_incorretos": [
+        "Accesorio de protección para la empuñadura de la raqueta de tenis.",
+        "Golpe de smash colocado en el medio de la cancha rival.",
+        "Tie-break muy disputado y parejo para decidir el ganador del set."
+      ],
+      "impacto_motivo": "Indica una victoria aplastante e impecable en el tenis, demostrando total superioridad técnica sobre el rival."
+    },
+    {
+      "id": 36,
+      "nome": "la escuadra",
+      "variacoes": [
+        "ángulo del arco"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "El ángulo superior del arco (el encuentro entre el palo y el travesaño), considerado el punto más difícil de atajar para el arquero.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Pateó el tiro libre con maestría y clavó la pelota en la escuadra, sin ninguna chance para el arquero.",
+      "exemplos_incorretos": [
+        "La escuadra del equipo atajó tres penales en la serie final.",
+        "El delantero remató flojo a la escuadra y el arquero contuvo en dos tiempos.",
+        "El árbitro cobró la escuadra señalando una mano dentro del área."
+      ],
+      "significados_incorretos": [
+        "Apodo cariñoso del arquero especialista en atajar penales.",
+        "Remate flojo y sin dirección al medio del arco.",
+        "Gesto del árbitro que señala una infracción con las manos."
+      ],
+      "impacto_motivo": "Valora la extrema precisión y puntería del remate, que se traduce en un gol estéticamente hermoso e imposible de atajar."
+    },
+    {
+      "id": 39,
+      "nome": "airball",
+      "variacoes": [
+        "hacer un airball"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "En el basquet, un tiro tan errado que pasa lejos y no toca ni el aro, ni el tablero ni la red.",
+      "tags": [
+        "deportes",
+        "basquet"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El base intentó un triple sin equilibrio y se mandó un airball vergonzoso.",
+      "exemplos_incorretos": [
+        "Metió una volcada espectacular clavando la pelota con las dos manos.",
+        "El pivot tomó el rebote ofensivo y le pasó la pelota al compañero libre.",
+        "El equipo festejó el triple sobre la hora que definió el partido."
+      ],
+      "significados_incorretos": [
+        "Volcada potente ejecutada con ambas manos.",
+        "Rebote ofensivo tomado por el pivot debajo del aro.",
+        "Triple decisivo anotado al final del partido."
+      ],
+      "impacto_motivo": "Pone en evidencia la falta de puntería del jugador en el tiro, provocando un error grotesco y los abucheos del público."
+    },
+    {
+      "id": 40,
+      "nome": "muro",
+      "variacoes": [
+        "convertirse en un muro"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Arquero o sistema defensivo (como el bloqueo en el voleibol) que demuestra una eficiencia extrema e impide cualquier gol o punto rival.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "voleibol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El arquero hoy se convirtió en un muro, atajó un penal y tres remates mano a mano.",
+      "exemplos_incorretos": [
+        "El delantero muro falló todos los remates que intentó en el partido.",
+        "El árbitro se convirtió en un muro y dio cinco minutos de descuento.",
+        "El equipo hizo un muro y recibió cuatro goles ya en el primer tiempo."
+      ],
+      "significados_incorretos": [
+        "Delantero que falla tiros consecutivos hacia el arco.",
+        "Árbitro que da un descuento muy largo al final del tiempo reglamentario.",
+        "Línea defensiva desorganizada que recibe muchos goles."
+      ],
+      "impacto_motivo": "Exalta la solidez, los reflejos y la invulnerabilidad de un jugador defensivo o de un bloqueo durante la competencia."
+    },
+    {
+      "id": 42,
+      "nome": "coima",
+      "variacoes": [
+        "pagar una coima"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Pago ilícito y corrupto ofrecido a deportistas o árbitros para que faciliten la victoria del rival o manipulen el resultado.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "padres",
+      "impacto": "negativa",
+      "exemplo_correto": "Dos jugadores fueron expulsados del deporte después de comprobarse que habían aceptado una coima para vender el partido.",
+      "exemplos_incorretos": [
+        "El equipo festejó el título recibiendo la coima en el podio.",
+        "La coima del lateral ayudó a que el extremo centrara de primera.",
+        "Anotó un gol de coima con un remate potente al ángulo derecho."
+      ],
+      "significados_incorretos": [
+        "Trofeo entregado al equipo campeón durante la premiación oficial.",
+        "Asistencia precisa hecha por el lateral para el delantero.",
+        "Remate fuerte y bien colocado al ángulo del arco."
+      ],
+      "impacto_motivo": "Representa la corrupción y el fraude en el deporte, destruyendo la integridad y la credibilidad del espectáculo deportivo."
+    },
+    {
+      "id": 43,
+      "nome": "mano negra",
+      "variacoes": [
+        "favorecido por la mano negra"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Jerga usada para insinuar que el cuerpo arbitral favoreció deliberadamente, o por incompetencia, a un equipo determinado.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Con dos penales inexistentes cobrados a favor, el equipo rival ganó con la clara ayuda de la mano negra.",
+      "exemplos_incorretos": [
+        "El técnico usó la mano negra para acomodar la barrera en el tiro libre.",
+        "La mano negra de los hinchas no paró de sonar durante noventa minutos.",
+        "Anotó el gol de mano negra pateando desde la mitad de cancha."
+      ],
+      "significados_incorretos": [
+        "Señal usada por el técnico para organizar la barrera.",
+        "Ruido de instrumentos musicales hecho por los hinchas.",
+        "Gol anotado con un remate de gran distancia desde la mitad de cancha."
+      ],
+      "impacto_motivo": "Pone en duda la imparcialidad del partido, insinuando injusticia y favoritismo indebido por parte del arbitraje."
+    },
+    {
+      "id": 44,
+      "nome": "matador",
+      "variacoes": [
+        "delantero matador"
+      ],
+      "classe_gramatical": "sustantivo / adjetivo",
+      "significado": "Delantero extremadamente eficiente, frío y letal que necesita pocas ocasiones dentro del área para transformarlas en goles.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "La pelota le llegó limpia al número nueve y no perdonó, demostrando por qué es el matador del equipo.",
+      "exemplos_incorretos": [
+        "El defensor matador cometió una falta dura y fue expulsado.",
+        "El matador del estadio vendió todas las entradas para la gran final.",
+        "Hizo una atajada de matador mandando la pelota arriba del travesaño."
+      ],
+      "significados_incorretos": [
+        "Defensor violento expulsado por faltas consecutivas.",
+        "Encargado de la boletería y las ventas del estadio.",
+        "Atajada espectacular del arquero desviada al córner."
+      ],
+      "impacto_motivo": "Elogia la alta capacidad goleadora, la precisión y el olfato de gol de un delantero decisivo."
+    },
+    {
+      "id": 45,
+      "nome": "cagarse",
+      "variacoes": [
+        "cagarla de miedo"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Demostrar cobardía, miedo o falta de temple frente a un momento decisivo, perdiendo el rendimiento por la pura presión.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "cotidiano"
+      ],
+      "permissao": "padres",
+      "impacto": "negativa",
+      "exemplo_correto": "El equipo venía jugando muy bien, pero en la final se cagó y sufrió la presión del rival de principio a fin.",
+      "exemplos_incorretos": [
+        "La camiseta del equipo es negra, por eso todos estaban vestidos igual en la cancha.",
+        "El árbitro se cagó y anuló el gol porque fue hecho con la mano.",
+        "Se cagó en el remate al ángulo y metió un golazo impresionante."
+      ],
+      "significados_incorretos": [
+        "Salir a la cancha usando la camiseta oficial de color negro.",
+        "Anular un gol irregular por una infracción cometida en la jugada.",
+        "Convertir un remate de gran precisión al ángulo del arco."
+      ],
+      "impacto_motivo": "Evidencia la debilidad psicológica del deportista o del equipo al ceder al nerviosismo en los momentos cruciales."
+    },
+    {
+      "id": 46,
+      "nome": "marcado",
+      "variacoes": [
+        "estar bien marcado",
+        "definido"
+      ],
+      "classe_gramatical": "adjetivo",
+      "significado": "Persona o deportista con un porcentaje de grasa corporal extremadamente bajo y una musculatura claramente visible y definida.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El atleta se preparó durante seis meses con una dieta estricta y subió al escenario completamente marcado.",
+      "exemplos_incorretos": [
+        "El jugador quedó marcado por la bronca de haber sido cambiado en el primer tiempo.",
+        "Dio un pase marcado de cuarenta metros para el extremo izquierdo.",
+        "El short del atleta quedó marcado después de la entrada del defensor rival."
+      ],
+      "significados_incorretos": [
+        "Ponerse extremadamente irritado después de ser reemplazado por el técnico.",
+        "Pase largo de alta precisión hecho en profundidad.",
+        "Rotura en el short causada por un contacto con el rival."
+      ],
+      "impacto_motivo": "Reconoce la rigurosa disciplina física y el logro de una definición muscular de altísimo nivel."
+    },
+    {
+      "id": 47,
+      "nome": "sobreentrenamiento",
+      "variacoes": [
+        "entrar en sobreentrenamiento"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Estado de agotamiento físico y mental causado por entrenamientos excesivos sin el descanso y la nutrición adecuados, que provoca una caída en el rendimiento.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Entrenaba pesado todos los días de la semana sin descansar, entró en sobreentrenamiento y sus cargas se derrumbaron.",
+      "exemplos_incorretos": [
+        "El sobreentrenamiento del equipo ayudó a conseguir la victoria en el alargue.",
+        "Hice un sobreentrenamiento liviano de diez minutos de cinta para entrar en calor.",
+        "Contrató un sobreentrenamiento personal para que lo ayude con los ejercicios."
+      ],
+      "significados_incorretos": [
+        "Condición física privilegiada que garantiza aire hasta el final del partido.",
+        "Entrada en calor cardiovascular liviana hecha antes de los pesos.",
+        "Entrenador personal especializado en entrenamientos de alto rendimiento."
+      ],
+      "impacto_motivo": "Advierte sobre los daños a la salud, las lesiones y la caída de rendimiento provocados por el exceso de entrenamiento sin el descanso y equilibrio adecuados."
+    },
+    {
+      "id": 48,
+      "nome": "puntazo",
+      "variacoes": [
+        "patear de puntín"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Patear la pelota directamente con la punta del botín, sin ninguna sutileza técnica, priorizando la fuerza bruta por sobre la precisión.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "depende del contexto",
+      "exemplo_correto": "En el momento de pánico, el defensor no lo pensó dos veces y sacó la pelota con un puntazo bien lejos del área.",
+      "exemplos_incorretos": [
+        "El delantero metió un puntazo de rabona que superó al arquero con mucha clase.",
+        "El técnico elogió el puntazo perfecto en la salida desde el fondo.",
+        "Ejecutó el córner con un puntazo cerrado al primer palo."
+      ],
+      "significados_incorretos": [
+        "Definición con efecto hecha con el borde externo del pie.",
+        "Pase corto de alta precisión en la construcción de la jugada ofensiva.",
+        "Tiro de esquina con una curva pronunciada hacia el primer palo."
+      ],
+      "impacto_motivo": "Puede criticarse por la falta de técnica en jugadas normales, pero se acepta y se valora como solución defensiva de emergencia."
+    },
+    {
+      "id": 50,
+      "nome": "barrida",
+      "variacoes": [
+        "hacer una barrida"
+      ],
+      "classe_gramatical": "sustantivo",
+      "significado": "Maniobra defensiva en la que el jugador se desliza por el pasto estirando las piernas para robar la pelota o interceptar un pase.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "depende del contexto",
+      "exemplo_correto": "El volante hizo una barrida limpia sobre la pelota y salvó el contraataque rival con maestría.",
+      "exemplos_incorretos": [
+        "El arquero hizo una barrida de cabeza para atajar el remate alto.",
+        "El delantero festejó el gol haciendo la barrida sobre la camilla con los médicos.",
+        "Pateó el penal con una barrida al ras del piso por el medio del arco."
+      ],
+      "significados_incorretos": [
+        "Salto acrobático del arquero que aleja la pelota con la cabeza.",
+        "Festejo del deportista usando la camilla médica de traslado.",
+        "Ejecución de penal floja y al ras del piso al medio del arco."
+      ],
+      "impacto_motivo": "Si se ejecuta de forma limpia sobre la pelota, es una jugada de garra valorada; si es violenta o golpea al rival, provoca falta y expulsión."
+    },
+    {
+      "id": 51,
+      "nome": "dar el peso",
+      "variacoes": [
+        "hacer el peso"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Alcanzar exactamente la categoría de peso exigida en el momento del pesaje oficial antes de una pelea de artes marciales.",
+      "tags": [
+        "deportes",
+        "artes marciales",
+        "combate"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Después de semanas de deshidratación y dieta estricta, el peleador dio el peso y confirmó la pelea por el título.",
+      "exemplos_incorretos": [
+        "El defensor dio el peso a la pelota hacia el medio del área con fuerza.",
+        "El peleador dio el peso del rival y ganó por nocaut técnico.",
+        "Dio el peso al silbatazo final festejando la victoria de su equipo."
+      ],
+      "significados_incorretos": [
+        "Golpear de cabeza la pelota con vigor hacia el medio del área.",
+        "Golpear al rival hasta conseguir el nocaut técnico en la pelea.",
+        "Festejar con entusiasmo en el pitazo final del partido."
+      ],
+      "impacto_motivo": "Refleja el profesionalismo, la disciplina y el compromiso ético del deportista con las reglas de su disciplina."
+    },
+    {
+      "id": 52,
+      "nome": "rolear",
+      "variacoes": [
+        "hacer rolling"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "En el Jiu-Jitsu y las artes marciales de suelo, significa hacer el entrenamiento práctico de combate con un compañero, aplicando técnicas sin intención de lastimar.",
+      "tags": [
+        "deportes",
+        "artes marciales",
+        "jiu-jitsu"
+      ],
+      "permissao": "todos",
+      "impacto": "neutra",
+      "exemplo_correto": "Al final de la clase de Jiu-Jitsu, el profesor llamó a todos a rolear durante diez minutos.",
+      "exemplos_incorretos": [
+        "El delantero hizo rolear el palo con un remate desde el medio de la cancha.",
+        "El arquero se puso a rolear y recibió un gol entre las piernas.",
+        "Los hinchas hicieron rolear una invasión al campo después del pitazo del árbitro."
+      ],
+      "significados_incorretos": [
+        "Remate fuerte que golpea el palo del arco rival.",
+        "Error técnico del arquero que recibe un gol entre las piernas.",
+        "Invasión colectiva hecha por los hinchas al finalizar el partido."
+      ],
+      "impacto_motivo": "Se trata de un término técnico y cotidiano de la rutina de entrenamiento en las artes marciales, sin connotación positiva ni negativa."
+    },
+    {
+      "id": 53,
+      "nome": "cargar al equipo sobre los hombros",
+      "variacoes": [
+        "llevarse el equipo a cuestas"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Situación en la que un solo jugador tiene un rendimiento tan brillante que compensa las carencias de sus compañeros y garantiza por sí solo la victoria.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "esports"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El número diez cargó al equipo sobre los hombros durante todo el campeonato, anotando goles y dando asistencias decisivas.",
+      "exemplos_incorretos": [
+        "El preparador físico tuvo que cargar sobre los hombros todos los conos del entrenamiento.",
+        "El defensor cometió una falta violenta cargándose al delantero rival sobre los hombros.",
+        "Los hinchas cargaron sobre los hombros las banderas hasta la tribuna alta."
+      ],
+      "significados_incorretos": [
+        "Transportar el equipamiento de entrenamiento al final de la actividad.",
+        "Cometer una falta empujando al rival por detrás durante la jugada.",
+        "Transportar banderas y materiales hasta los sectores del estadio."
+      ],
+      "impacto_motivo": "Resalta el protagonismo individual de excelencia y la capacidad extraordinaria de llevar al equipo hacia el éxito."
+    },
+    {
+      "id": 54,
+      "nome": "monstruo",
+      "variacoes": [
+        "ser un monstruo"
+      ],
+      "classe_gramatical": "sustantivo / adjetivo",
+      "significado": "Elogio usado para definir a un deportista de rendimiento altísimo, una fuerza física impresionante o una habilidad fuera de lo común.",
+      "tags": [
+        "deportes",
+        "futbol",
+        "gimnasio"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El defensor jugó increíble hoy, ganó todas las pelotas por arriba, es un verdadero monstruo en defensa.",
+      "exemplos_incorretos": [
+        "El equipo jugó tan mal que la prensa calificó la actuación de monstruo.",
+        "El árbitro fue un monstruo y sacó una tarjeta roja injusta al primer minuto.",
+        "Hizo un gol monstruo fallando el remate con el arco vacío."
+      ],
+      "significados_incorretos": [
+        "Rendimiento pobre y desastroso de un equipo en la cancha.",
+        "Árbitro severo que toma decisiones controvertidas e injustas.",
+        "Error grosero al perder una clara ocasión de gol."
+      ],
+      "impacto_motivo": "Consagra el vigor, la imponencia y el altísimo nivel de rendimiento del deportista en su rol."
+    },
+    {
+      "id": 55,
+      "nome": "pollo de gimnasio",
+      "variacoes": [
+        "pollito de gimnasio"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Principiante en el fisicoculturismo que tiene poca masa muscular pero se comporta con arrogancia, ejecuta mal los ejercicios o quiere cargar más peso del que puede levantar.",
+      "tags": [
+        "deportes",
+        "gimnasio",
+        "fitness"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El pollo de gimnasio puso 100 kilos en el press de banca, no pudo levantarla y necesitó ayuda para no lastimarse.",
+      "exemplos_incorretos": [
+        "El entrenador personal contrató a un pollo de gimnasio como asistente.",
+        "Es un pollo de gimnasio experimentado, con diez años de entrenamiento constante.",
+        "Comí un pollo de gimnasio con batata después del entrenamiento."
+      ],
+      "significados_incorretos": [
+        "Asistente técnico responsable de la organización del espacio del gimnasio.",
+        "Practicante veterano con amplia experiencia y conocimiento en fisicoculturismo.",
+        "Comida proteica consumida después de las sesiones de entrenamiento."
+      ],
+      "impacto_motivo": "Se burla de la inexperiencia combinada con una vanidad excesiva, que genera ejecuciones incorrectas de los ejercicios y comportamientos motivo de burla."
+    },
+    {
+      "id": 56,
+      "nome": "golazo",
+      "variacoes": [
+        "hacer un golazo"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Un gol extraordinario, de una belleza y perfección técnica poco comunes, digno de ser recordado por mucho tiempo.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "El delantero gambeteó a cuatro defensores, superó al arquero con un sombrero y anotó un golazo inolvidable.",
+      "exemplos_incorretos": [
+        "El árbitro convalidó un golazo después de consultar las imágenes del línea.",
+        "El defensor anotó un golazo en contra de cabeza.",
+        "El partido terminó empatado con un golazo anónimo y sin ninguna emoción."
+      ],
+      "significados_incorretos": [
+        "Validación de un gol después de la revisión de imágenes por parte del arbitraje.",
+        "Autogol anotado accidentalmente por el propio defensor.",
+        "Gol sencillo y sin relevancia estética en un partido sin brillo."
+      ],
+      "impacto_motivo": "Exalta la belleza suprema de una jugada inolvidable que queda en la historia del deporte."
+    },
+    {
+      "id": 57,
+      "nome": "partido de trámite",
+      "variacoes": [],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Partido tibio y sin competitividad en el que ambos equipos se conforman con el resultado (generalmente un empate) y evitan arriesgar.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "Como el empate clasificaba a los dos equipos, el segundo tiempo se convirtió en un partido de trámite sin un solo remate al arco.",
+      "exemplos_incorretos": [
+        "El clásico fue un partido de trámite movidísimo, con ocho goles y tres expulsiones.",
+        "Los hinchas hicieron un partido de trámite en la tribuna cantando sin parar.",
+        "El delantero hizo un partido de trámite anotando tres goles en el primer tiempo."
+      ],
+      "significados_incorretos": [
+        "Enfrentamiento intenso y nervioso lleno de goles y expulsiones.",
+        "Duelo de cánticos organizado por los hinchas en el estadio.",
+        "Actuación brillante de un jugador con varios goles convertidos."
+      ],
+      "impacto_motivo": "Critica el antijuego, el conformismo y la ausencia de espíritu competitivo, decepcionando a los hinchas que esperaban un buen partido."
+    },
+    {
+      "id": 58,
+      "nome": "hacer tiempo",
+      "variacoes": [
+        "perder tiempo a propósito"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Ralentizar intencionalmente el ritmo del partido (demorando los saques, fingiendo dolores) para hacer correr el reloj.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "todos",
+      "impacto": "negativa",
+      "exemplo_correto": "El arquero se seguía tirando al piso después de cada atajada para hacer tiempo y llevarse el resultado mínimo hasta el final.",
+      "exemplos_incorretos": [
+        "El extremo hizo tiempo centrando la pelota a los pies del delantero para anotar el gol.",
+        "Los hinchas hicieron tiempo prendiendo bengalas para festejar el título.",
+        "El delantero hizo tiempo y pateó el penal con muchísima fuerza al ángulo."
+      ],
+      "significados_incorretos": [
+        "Ejecutar un centro milimétrico a la cabeza del compañero.",
+        "Festejar usando bengalas en la tribuna.",
+        "Patear un penal con fuerza al ángulo superior del arco."
+      ],
+      "impacto_motivo": "Condena la viveza y la actitud antideportiva de ralentizar el partido para perjudicar el ritmo del rival."
+    },
+    {
+      "id": 59,
+      "nome": "ganar en los despachos",
+      "variacoes": [
+        "victoria de escritorio"
+      ],
+      "classe_gramatical": "expresión sustantiva",
+      "significado": "Decisión tomada entre bambalinas, muchas veces después de terminada la competencia, que modifica el resultado o el reglamento para salvar a un club del descenso o favorecerlo indebidamente.",
+      "tags": [
+        "deportes",
+        "futbol"
+      ],
+      "permissao": "padres",
+      "impacto": "negativa",
+      "exemplo_correto": "El club había terminado en zona de descenso, pero la dirigencia apeló ante los tribunales y logró ganar en los despachos.",
+      "exemplos_incorretos": [
+        "El delantero ganó en los despachos con una chilena espectacular.",
+        "Ganó en los despachos cuando el equipo, perdiendo por dos goles, remontó hasta el tres a dos.",
+        "El arquero ganó en los despachos rechazando el remate hacia el fondo de la cancha."
+      ],
+      "significados_incorretos": [
+        "Definición en chilena ejecutada con maestría por el delantero.",
+        "Remontada del resultado en cancha lograda en el segundo tiempo del partido.",
+        "Atajada salvadora del arquero que despeja la pelota al córner."
+      ],
+      "impacto_motivo": "Evidencia la falta de respeto por el mérito deportivo conquistado en la cancha, recurriendo a maniobras burocráticas y políticas."
+    },
+    {
+      "id": 60,
+      "nome": "romperla",
+      "variacoes": [
+        "la rompió"
+      ],
+      "classe_gramatical": "expresión verbal",
+      "significado": "Alcanzar el punto más alto de la carrera, conquistar todos los títulos posibles en la disciplina o lograr una hazaña perfecta e indiscutible.",
+      "tags": [
+        "deportes",
+        "esports",
+        "futbol",
+        "cotidiano"
+      ],
+      "permissao": "todos",
+      "impacto": "positiva",
+      "exemplo_correto": "Ganando el Mundial después de conquistar la Champions y el Balón de Oro, el campeón simplemente la rompió.",
+      "exemplos_incorretos": [
+        "El equipo la rompió perdiendo con un resultado abultado en el debut del campeonato.",
+        "El árbitro la rompió expulsando a tres jugadores del mismo equipo.",
+        "La rompió fallando el penal decisivo en la definición."
+      ],
+      "significados_incorretos": [
+        "Tener una actuación desastrosa siendo goleados en la primera fecha.",
+        "Actuación polémica del árbitro al mostrar varias tarjetas rojas.",
+        "Cometer un error crucial fallando un penal decisivo."
+      ],
+      "impacto_motivo": "Exalta el logro máximo del deporte, reconociendo que el deportista alcanzó la perfección y el techo de la disciplina."
+    }
+  ]
+}

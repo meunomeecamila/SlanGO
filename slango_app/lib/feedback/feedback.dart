@@ -145,6 +145,7 @@ class _FormularioSugestaoCardState extends State<_FormularioSugestaoCard> {
   final _exemplo = TextEditingController();
   final _impactoMotivo = TextEditingController();
   final _classe = TextEditingController();
+  final _pais = TextEditingController();
 
   String _impacto = 'positiva';
   bool _enviando = false;
@@ -163,6 +164,7 @@ class _FormularioSugestaoCardState extends State<_FormularioSugestaoCard> {
     _exemplo.dispose();
     _impactoMotivo.dispose();
     _classe.dispose();
+    _pais.dispose();
     super.dispose();
   }
 
@@ -178,6 +180,7 @@ class _FormularioSugestaoCardState extends State<_FormularioSugestaoCard> {
         impacto: _impacto,
         impactoMotivo: _impactoMotivo.text.trim(),
         classeGramatical: _classe.text.trim(),
+        pais: _pais.text.trim(),
       );
 
       if (!mounted) return;
@@ -187,6 +190,7 @@ class _FormularioSugestaoCardState extends State<_FormularioSugestaoCard> {
       _exemplo.clear();
       _impactoMotivo.clear();
       _classe.clear();
+      _pais.clear();
       setState(() => _impacto = 'positiva');
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -248,6 +252,13 @@ class _FormularioSugestaoCardState extends State<_FormularioSugestaoCard> {
               controller: _classe,
               rotulo: 'Classe gramatical',
               dica: 'ex: substantivo, verbo, adjetivo',
+              validador: _obrigatorio,
+            ),
+            const SizedBox(height: 12),
+            _CampoTexto(
+              controller: _pais,
+              rotulo: 'País / Região de origem',
+              dica: 'ex: Brasil, Portugal, EUA, México',
               validador: _obrigatorio,
             ),
             const SizedBox(height: 12),
@@ -733,6 +744,10 @@ class _CardModeracaoState extends State<_CardModeracao> {
           _LinhaCampoLeitura(rotulo: 'Classe', valor: s.classeGramatical),
           _LinhaCampoLeitura(rotulo: 'Impacto', valor: s.impacto),
           _LinhaCampoLeitura(
+            rotulo: 'País',
+            valor: s.pais ?? 'Não informado',
+          ),
+          _LinhaCampoLeitura(
               rotulo: 'Por que esse impacto?', valor: s.impactoMotivo),
           const SizedBox(height: 12),
           TextField(
@@ -1079,6 +1094,11 @@ class _CardHistoricoModeracao extends StatelessWidget {
               rotulo: 'Enviado por',
               valor: s.proponenteNome!,
             ),
+          _LinhaInfoModeracao(
+            icone: Icons.public,
+            rotulo: 'País',
+            valor: s.pais ?? 'Não informado',
+          ),
           // Quem avaliou (admin).
           if ((s.quemAceitou ?? '').isNotEmpty)
             _LinhaInfoModeracao(

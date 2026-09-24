@@ -18,7 +18,12 @@ export const login = async (req: Request, res: Response) => {
 
         res.status(200).json({
             token,
-            usuario: { id: usuario.id, nome: usuario.Nome, email: usuario.Email }
+            usuario: {
+                id: usuario.id,
+                nome: usuario.Nome,
+                email: usuario.Email,
+                idioma: usuario.idioma ?? 'pt',
+            }
         });
     } catch (error: any) {
         res.status(500).json({ erro: error.message });

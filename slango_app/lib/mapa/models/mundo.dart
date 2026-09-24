@@ -18,6 +18,13 @@ class Mundo {
   final double progresso;
   final bool desbloqueado;
 
+  /// Melhor progresso já atingido neste mundo em QUALQUER idioma.
+  /// O diploma usa este valor, então trocar de idioma nunca o remove.
+  final double progressoMaximo;
+
+  /// Diploma do mundo já conquistado (100% em algum idioma).
+  final bool diplomaDesbloqueado;
+
   const Mundo({
     required this.id,
     required this.nome,
@@ -28,6 +35,8 @@ class Mundo {
     this.giriasAprendidas = 0,
     this.progresso = 0.0,
     this.desbloqueado = false,
+    this.progressoMaximo = 0.0,
+    this.diplomaDesbloqueado = false,
   });
 
   /// Deriva o [id] (slug) a partir do nome capitalizado retornado pelo

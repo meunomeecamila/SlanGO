@@ -1,0 +1,1366 @@
+[
+  {
+    "id": 1,
+    "nome": "cringe",
+    "variacoes": [
+      "cringed",
+      "cringey"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "Something considered embarrassing, tacky, or awkward.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "It was so cringe watching the teacher try to copy TikTok dances in class.",
+    "exemplos_incorretos": [
+      "Grandma decorated the wedding dress with delicate cringe lace along the hem.",
+      "We felt an instant cringe when the neighbor opened the bag of rotten trash.",
+      "I hit my elbow on the table corner and felt a sharp cringe shoot up my arm."
+    ],
+    "significados_incorretos": [
+      "A type of ornamental lace used to finish the hems of old dresses.",
+      "A physical reaction of pulling the body back sharply when smelling something strong.",
+      "A sudden sharp pain caused by a light knock to a joint."
+    ],
+    "impacto_motivo": "Cringe describes something embarrassing or awkward, causing discomfort or secondhand embarrassment in whoever is watching."
+  },
+  {
+    "id": 2,
+    "nome": "rizz",
+    "variacoes": [
+      "silent rizz"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "Charisma or a natural talent and pulling power when flirting.",
+    "tags": [
+      "Relationships",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "He showed up to the party with so much rizz that he got the girl's number in five minutes.",
+    "exemplos_incorretos": [
+      "The Japanese restaurant serves a sweet-and-sour rizz that's ready in minutes.",
+      "The TV made a strange rizz before the picture appeared on screen.",
+      "I need to replace the rizz on this jacket because it jammed halfway up."
+    ],
+    "significados_incorretos": [
+      "A rice-based dish, common in some Asian cuisines.",
+      "A short hissing sound some electronics make when turning on.",
+      "A metal or plastic fastener used to quickly open and close clothes and bags."
+    ],
+    "impacto_motivo": "Rizz describes charisma and the ability to attract people, an admired and desirable quality."
+  },
+  {
+    "id": 3,
+    "nome": "sigma",
+    "variacoes": [
+      "sigma male"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "An independent person, focused on themselves and unconcerned with group norms; often used ironically or as a meme.",
+    "tags": [
+      "Geek",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "He acts like a true sigma, always training alone and ignoring the gossip.",
+    "exemplos_incorretos": [
+      "The fisherman said he hooked an enormous sigma near the riverbank.",
+      "The instructor taught us to tie the sigma knot before starting the climb.",
+      "On the statistics test, I had to calculate the sigma of a list of numbers."
+    ],
+    "significados_incorretos": [
+      "A species of freshwater fish found in Amazonian rivers.",
+      "The popular name for a specific type of knot used in rock climbing.",
+      "A Greek letter used in math formulas to represent the sum of values."
+    ],
+    "impacto_motivo": "Sigma describes independence and self-sufficiency, but it's used so ironically and in so many ways that it doesn't carry a fixed judgment."
+  },
+  {
+    "id": 4,
+    "nome": "thirst trap",
+    "variacoes": [
+      "thirst-trapping",
+      "thirst trapper"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To seek attention, compliments, or likes on social media through posts that highlight your own looks or achievements.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "depends",
+    "exemplo_correto": "She posted that gym photo again just to thirst trap and rack up compliments.",
+    "exemplos_incorretos": [
+      "The builder spent the whole afternoon thirst-trapping the new roof tiles into place.",
+      "I dropped the plate and ended up thirst-trapping it all over the kitchen floor.",
+      "My grandma loves thirst-trapping the buttery dough on Sunday afternoons."
+    ],
+    "significados_incorretos": [
+      "A technique for fitting clay roof tiles into each other during a renovation.",
+      "The act of accidentally breaking a fragile object into small pieces.",
+      "Baking small portions of sweet dough until crispy in the oven."
+    ],
+    "impacto_motivo": "Thirst trapping can be seen as positive when it's just confidence, or negative when it comes across as excessive craving for validation, so the impact depends on context."
+  },
+  {
+    "id": 5,
+    "nome": "nail it",
+    "variacoes": [
+      "nailed it",
+      "nailing it"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To crush it, deliver an excellent comeback, or come out on top in a conversation in a decisive, undeniable way.",
+    "tags": [
+      "Pop culture",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She really nailed it in the debate by bringing up data nobody else knew.",
+    "exemplos_incorretos": [
+      "I had to nail the cat in the carrier before taking it to the vet.",
+      "In winter, I always nail the bedroom windows shut so cold air doesn't get in.",
+      "The mailman had to nail the cardboard box with plenty of tape."
+    ],
+    "significados_incorretos": [
+      "Trapping a pet inside a travel crate.",
+      "Sealing gaps in doors and windows with caulk to avoid drafts.",
+      "Hermetically closing a package or envelope using tape or wax."
+    ],
+    "impacto_motivo": "Nail it refers to a verbal win or a flawless performance, and is a source of admiration and praise."
+  },
+  {
+    "id": 7,
+    "nome": "slay",
+    "variacoes": [
+      "slayed",
+      "slaying"
+    ],
+    "classe_gramatical": "interjection",
+    "significado": "An expression used to praise or approve when someone crushes it in looks, style, or performance.",
+    "tags": [
+      "Pop culture",
+      "Social media",
+      "Makeup",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Girl, you look amazing in that new dress, total slay!",
+    "exemplos_incorretos": [
+      "The blacksmith put on a thick slay before gripping the red-hot bar.",
+      "The warrior in the game landed the slay on the dragon after hours of battle.",
+      "We rode down the snowy mountain on a slay pulled by three dogs."
+    ],
+    "significados_incorretos": [
+      "A piece of leather used to protect the hands when handling hot tools.",
+      "A final, decisive blow struck against an enemy in fantasy games.",
+      "A wheel-less wooden vehicle pulled by dogs to glide over snow."
+    ],
+    "impacto_motivo": "Slay is a compliment used to celebrate when someone stands out in looks or performance."
+  },
+  {
+    "id": 11,
+    "nome": "trigger",
+    "variacoes": [
+      "triggered",
+      "triggers"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "Something that provokes a strong emotional reaction, a vivid memory, or a personal sense of recognition.",
+    "tags": [
+      "Everyday life",
+      "Social media"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "Watching that movie about child abandonment gave me a really strong trigger.",
+    "exemplos_incorretos": [
+      "The teacher grabbed the glass trigger to measure the amount of reagent.",
+      "The drill broke because the internal trigger jammed for good.",
+      "The shooter trained at the range, squeezing the trigger very slowly."
+    ],
+    "significados_incorretos": [
+      "A small piece of glass used in chemistry lab experiments.",
+      "The switch button on power tools that activates the motor's rotation.",
+      "A metal part pressed by the finger to fire a gun."
+    ],
+    "impacto_motivo": "Trigger is tied to painful memories or negative emotional reactions linked to trauma or discomfort."
+  },
+  {
+    "id": 12,
+    "nome": "hyped",
+    "variacoes": [
+      "hype",
+      "hyping",
+      "hyped up"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "Something that's trending, highly valued, or surrounded by huge anticipation.",
+    "tags": [
+      "Everyday life",
+      "Geek",
+      "Gaming"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "That new game is so hyped the servers crashed right on launch day.",
+    "exemplos_incorretos": [
+      "The sailor tied the hyped knot to hold the sail against the strong wind.",
+      "The doctor said my grandpa is hyped and needs to cut back on salt.",
+      "She found out she's hyped after getting her thyroid tests done."
+    ],
+    "significados_incorretos": [
+      "The name of a type of knot sailors use to secure sails.",
+      "A clinical condition associated with elevated blood pressure.",
+      "A thyroid disease in which metabolism runs very fast."
+    ],
+    "impacto_motivo": "Hyped signals big anticipation and positive excitement around something popular or wanted."
+  },
+  {
+    "id": 13,
+    "nome": "goated",
+    "variacoes": [
+      "goat",
+      "goated with the sauce"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To do something brilliant, surprising, or high-impact that earns admiration and praise.",
+    "tags": [
+      "Everyday life",
+      "Sports"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "He went goated in the job interview, answering every question in fluent English.",
+    "exemplos_incorretos": [
+      "My aunt went goated on the country dress with colorful patches.",
+      "The tabloid press loves to goat the facts to sell more papers.",
+      "The history teacher loves to goat about the gods of Olympus in class."
+    ],
+    "significados_incorretos": [
+      "Sewing decorative patches onto festival clothing.",
+      "Inventing unreal details to exaggerate parts of a true story.",
+      "Telling popular stories based on Greek or Norse mythology."
+    ],
+    "impacto_motivo": "Goated celebrates a brilliant or impressive move that earns admiration from onlookers."
+  },
+  {
+    "id": 14,
+    "nome": "bit the dust",
+    "variacoes": [
+      "bite the dust",
+      "totally bit the dust"
+    ],
+    "classe_gramatical": "verbal phrase",
+    "significado": "A good-humored expression to say that something or someone broke, went bad, ended, or passed away.",
+    "tags": [
+      "Gaming",
+      "Geek",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "My phone fell off the balcony and bit the dust, now I'll have to buy another one.",
+    "exemplos_incorretos": [
+      "At the competition, the couple bit the dust during the tango and stunned the judges.",
+      "The runner sprinted and bit the dust as soon as he hit the ball.",
+      "Before heading out, she bit the dust and then put on lipstick over it."
+    ],
+    "significados_incorretos": [
+      "A ballroom dance move where the couple swaps positions mid-step.",
+      "Safely reaching the first marked spot on the field during a baseball game.",
+      "Applying the first layer of liquid makeup to even out the skin."
+    ],
+    "impacto_motivo": "Bit the dust signals that something broke, went wrong, or fell apart, pointing to a loss or setback."
+  },
+  {
+    "id": 15,
+    "nome": "delulu",
+    "variacoes": [
+      "delulu-ness"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "A person who is extremely delusional or builds unrealistic romantic fantasies in their own head.",
+    "tags": [
+      "Relationships",
+      "Kpop",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "She's so delulu she thinks the famous actor liked her photo on purpose.",
+    "exemplos_incorretos": [
+      "My grandma made a delicious delulu for Sunday lunch dessert.",
+      "The kid always slept hugging her favorite delulu.",
+      "She bought the delulu edition of the perfume, pricier and with special packaging."
+    ],
+    "significados_incorretos": [
+      "A type of sweet made with condensed milk and shredded coconut.",
+      "A childish term used to refer to soft stuffed animals.",
+      "A category of exclusive, pricier, luxury products, known as 'deluxe'."
+    ],
+    "impacto_motivo": "Delulu points to an exaggerated, unhealthy illusion about an unreal romantic situation."
+  },
+  {
+    "id": 16,
+    "nome": "gagged",
+    "variacoes": [
+      "gag",
+      "gagging"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "To be in shock, utterly stunned, or speechless in front of a flawless look or surprising news.",
+    "tags": [
+      "Pop culture",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "I was completely gagged when I saw that outfit reveal on the red carpet.",
+    "exemplos_incorretos": [
+      "The gardener used the gag to trim the dry branches off the tree.",
+      "That silent film was famous for the gag with the slip on the banana peel.",
+      "I ate too fast and got a bad gag in my throat."
+    ],
+    "significados_incorretos": [
+      "A gardening tool used to prune thicker branches.",
+      "A quick slapstick comedy bit in old movies or the circus.",
+      "The reflex act of gagging lightly on a piece of food."
+    ],
+    "impacto_motivo": "Gagged expresses a pleasant, positive shock in front of something impressive or visually flawless."
+  },
+  {
+    "id": 17,
+    "nome": "mic drop",
+    "variacoes": [
+      "mic-drop moment",
+      "mic dropped"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "A perfect comeback or brilliant move that ends a discussion in a memorable way.",
+    "tags": [
+      "Social media",
+      "Pop culture",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Her closing speech was a total mic drop that left everyone in silence.",
+    "exemplos_incorretos": [
+      "The actor wore an embroidered mic drop to complete the play's costume.",
+      "I pulled the mic drop off the can and soda sprayed all over the table.",
+      "I didn't open the jar of hearts of palm because the mic drop was still intact."
+    ],
+    "significados_incorretos": [
+      "A piece of fabric used to decorate the neckline of medieval costumes.",
+      "A folding metal ring used to open cans of drinks.",
+      "A plastic seal glued to the lid of packaging to ensure it's tamper-proof."
+    ],
+    "impacto_motivo": "Mic drop celebrates a brilliant response or move that ends a discussion memorably and is widely admired."
+  },
+  {
+    "id": 18,
+    "nome": "F",
+    "variacoes": [
+      "F in the chat"
+    ],
+    "classe_gramatical": "interjection",
+    "significado": "A sign of mourning, respect, or lament for something that went wrong, inspired by a video game command.",
+    "tags": [
+      "Gaming",
+      "Geek",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "The team got knocked out in the first round of the tournament, F in the comments.",
+    "exemplos_incorretos": [
+      "The swimmer landed in category F after breaking the event record.",
+      "In music class, we learned to play the note F on guitar.",
+      "The student barely studied and got a big F on the final exam."
+    ],
+    "significados_incorretos": [
+      "A classification category used in Olympic swimming events.",
+      "A musical note played on guitar during beginner music lessons.",
+      "A letter symbolizing academic failure in American school systems."
+    ],
+    "impacto_motivo": "F expresses grief or mourning over a bad situation, carrying a tone of regret."
+  },
+  {
+    "id": 19,
+    "nome": "aesthetic",
+    "variacoes": [
+      "core"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "A harmonious, coordinated, visually pleasing look or style, especially on social media.",
+    "tags": [
+      "Makeup",
+      "Social media",
+      "Pop culture",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She organizes her whole room in pastel tones just to keep her aesthetic flawless.",
+    "exemplos_incorretos": [
+      "The dentist applied the aesthetic before pulling the wisdom tooth.",
+      "The dermatologist put the aesthetic on my face before the facial cleanse.",
+      "I booked a slot at the aesthetic for a relaxing massage tomorrow."
+    ],
+    "significados_incorretos": [
+      "A type of local anesthesia used in minor dental procedures.",
+      "An industrial cosmetic lotion recommended for exfoliating deep blackheads.",
+      "A clinic specializing in body treatments and relaxing massages."
+    ],
+    "impacto_motivo": "Aesthetic refers to a carefully curated, harmonious look, associated with something pretty and desirable."
+  },
+  {
+    "id": 20,
+    "nome": "baddie",
+    "variacoes": [],
+    "classe_gramatical": "noun",
+    "significado": "A style or person who exudes confidence, striking beauty, and a lot of attitude in their clothes and makeup.",
+    "tags": [
+      "Makeup",
+      "Social media",
+      "Pop culture",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "With that bold eyeliner and leather boots, she was a total baddie at the party.",
+    "exemplos_incorretos": [
+      "The technician replaced the baddie on the sewing machine that was worn out.",
+      "Eating that spoiled fish gave me a nasty baddie that night.",
+      "The baddie in the movie wore a dark mask and scared everyone."
+    ],
+    "significados_incorretos": [
+      "A replacement part used in industrial sewing machines.",
+      "A sudden stomach upset caused by food poisoning.",
+      "The villain or main antagonist in a movie or comic book plot."
+    ],
+    "impacto_motivo": "Baddie points to confidence and a striking style, used as a compliment for looks and attitude."
+  },
+  {
+    "id": 21,
+    "nome": "bed rot",
+    "variacoes": [
+      "bed rotting"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "The habit of spending the whole day lying in bed procrastinating, watching videos, or resting.",
+    "tags": [
+      "Everyday life",
+      "Social media"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "I was so tired from work that my whole weekend was pure bed rot, binging shows.",
+    "exemplos_incorretos": [
+      "The office ferns got bed rot from the humidity.",
+      "The old bed frame developed bed rot after years of damp in the room.",
+      "I had to throw out the mattress because it already had an ugly bed rot in the foam."
+    ],
+    "significados_incorretos": [
+      "A pest that attacks the roots of plants grown in indoor pots.",
+      "The biological decay process of the wood used in bed frames.",
+      "A condition of mold and fungus growth found in wet mattresses."
+    ],
+    "impacto_motivo": "Bed rot is linked to procrastination and a lack of productivity, and can reflect burnout or low motivation."
+  },
+  {
+    "id": 24,
+    "nome": "crash out",
+    "variacoes": [
+      "crashed out",
+      "crashing out"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To lose it with rage, have an emotional blowup, or completely lose your cool in a stressful situation.",
+    "tags": [
+      "Everyday life",
+      "Social media"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He'd been holding in so much frustration that he ended up crashing out in the middle of the meeting.",
+    "exemplos_incorretos": [
+      "The pilot had to make a controlled crash out on the wet runway.",
+      "The server crashed out overnight and we were left without internet for hours.",
+      "The wet track made the car skid and crash out badly into the wall."
+    ],
+    "significados_incorretos": [
+      "A forced landing technique used by pilots in emergency situations.",
+      "A structural failure where a computer system freezes and shuts down on its own.",
+      "A road accident involving a head-on collision between two vehicles."
+    ],
+    "impacto_motivo": "Crash out points to an uncontrolled emotional explosion, tied to anger and loss of control."
+  },
+  {
+    "id": 25,
+    "nome": "let him cook",
+    "variacoes": [
+      "let her cook",
+      "let them cook"
+    ],
+    "classe_gramatical": "verbal phrase",
+    "significado": "An expression used to suggest letting someone develop their own idea, even if it seems odd at first.",
+    "tags": [
+      "Everyday life",
+      "Social media",
+      "Gaming"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "That strategy in the game looks bad, but don't judge too soon, let him cook.",
+    "exemplos_incorretos": [
+      "The manual said to let him cook by programming the oven for thirty minutes.",
+      "I can't talk to the chef right now mid-service, let him cook in peace.",
+      "Turn the heat down and let it cook a bit longer before turning off the oven."
+    ],
+    "significados_incorretos": [
+      "An instruction found in appliance manuals for setting the oven timer.",
+      "Allowing a kitchen professional to work without interruptions while cooking.",
+      "The act of heating raw food over a flame until it's edible."
+    ],
+    "impacto_motivo": "Let him cook encourages patience and trust so someone can develop their own idea without being judged too soon."
+  },
+  {
+    "id": 26,
+    "nome": "dump",
+    "variacoes": [
+      "photo dump"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "A varied, random, low-effort sequence or carousel of photos posted all at once on social media.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "The end of the month rolled around and she posted a dump on her feed with all the fun outings.",
+    "exemplos_incorretos": [
+      "The mechanic replaced the dump on the truck that was leaking air.",
+      "The plumber cleared the dump under the sink because it was clogged with grease.",
+      "The garbage truck emptied everything at the city dump early in the morning."
+    ],
+    "significados_incorretos": [
+      "A mechanical part used to regulate truck tire pressure.",
+      "A plumbing trap responsible for blocking bad odors from drains.",
+      "A landfill site where urban solid waste is dumped."
+    ],
+    "impacto_motivo": "Dump is just a low-effort way of sharing photos, with no emotional charge of its own."
+  },
+  {
+    "id": 27,
+    "nome": "fanfic",
+    "variacoes": [
+      "fic",
+      "fanfic writer"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "A made-up story, rumor, dramatic exaggeration, or romantic fantasy someone cooked up in their head.",
+    "tags": [
+      "Relationships",
+      "Pop culture",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "depends",
+    "exemplo_correto": "She told me she hooked up with that actor at the club, but I'm pretty sure it's fanfic.",
+    "exemplos_incorretos": [
+      "The craftswoman taught us to make the fanfic to bind the sketchbook.",
+      "The fan club handed out a monthly fanfic with news about the favorite band.",
+      "He spent the night reading a fanfic set in that sci-fi show's universe."
+    ],
+    "significados_incorretos": [
+      "A type of handmade binding used for sketchbooks.",
+      "An amateur printed magazine put together by fan clubs for internal circulation.",
+      "An unofficial short story written by fans set in the world of an existing work."
+    ],
+    "impacto_motivo": "Fanfic can be harmless as a fun fantasy or hurtful when used to mock someone's lie, so the impact depends on context."
+  },
+  {
+    "id": 28,
+    "nome": "fomo",
+    "variacoes": [],
+    "classe_gramatical": "noun",
+    "significado": "The anxiety caused by the fear of missing out on events, trends, or fun moments others are part of.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "Seeing all my friends at the show on Instagram gave me huge fomo since I stayed home.",
+    "exemplos_incorretos": [
+      "The recipe called for a pinch of fomo to season the tomato sauce.",
+      "The electrician filled the wall hole with spray fomo.",
+      "I beat the egg whites until they formed a thick fomo for the cake."
+    ],
+    "significados_incorretos": [
+      "A type of herb-based seasoning used in Italian dishes.",
+      "Expanding polyurethane foam used for sealing gaps in construction.",
+      "Compacted air bubbles formed when protein-based liquids are whipped hard."
+    ],
+    "impacto_motivo": "Fomo is tied to anxiety and the discomfort of feeling like you're missing out on something important."
+  },
+  {
+    "id": 29,
+    "nome": "cooked",
+    "variacoes": [
+      "got cooked",
+      "cooked them"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "Said when someone destroys another person's criticism or arguments with total mastery in a discussion.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "The journalist cooked the arrogant politician live on air and brought receipts for everything.",
+    "exemplos_incorretos": [
+      "The event planner went and cooked the head table at the wedding with great care.",
+      "He got so cooked at that restaurant he felt sick all night.",
+      "My dad got home tired from work and got cooked real quick before bed."
+    ],
+    "significados_incorretos": [
+      "A table-setting technique used at formal dinners and ceremonies.",
+      "Digesting large portions of food after six in the evening.",
+      "The literal act of eating food at night."
+    ],
+    "impacto_motivo": "Cooked celebrates when someone destroys an argument with total mastery, seen as an impressive win."
+  },
+  {
+    "id": 30,
+    "nome": "lowkey",
+    "variacoes": [],
+    "classe_gramatical": "adverb",
+    "significado": "In a discreet, low-profile, secretive, or restrained way.",
+    "tags": [
+      "Social media",
+      "Pop culture",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "I said I don't care about the gossip, but lowkey I'm dying of curiosity.",
+    "exemplos_incorretos": [
+      "The building manager lost the lowkey to the gate and had to call a locksmith.",
+      "With a sore throat, the singer got through the whole chorus in a pretty lowkey pitch.",
+      "The photographer asked to turn off the flash and use more lowkey lighting."
+    ],
+    "significados_incorretos": [
+      "A metal piece used to unlock electric gates in buildings.",
+      "A musical note or low tone produced by tired vocal cords.",
+      "A photography technique where shadows dominate the image's composition."
+    ],
+    "impacto_motivo": "Lowkey just signals discretion or restraint about something, with no positive or negative charge."
+  },
+  {
+    "id": 31,
+    "nome": "mogged",
+    "variacoes": [
+      "mog",
+      "mogging"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To massively outshine someone else in style, looks, or presence in a room.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He walked into the meeting room in a tailored suit and completely mogged every other manager.",
+    "exemplos_incorretos": [
+      "The carpenter went and mogged the two boards before gluing the table together.",
+      "I love mogging a hot chocolate by the fireplace on cold days.",
+      "The calf kept mogging for its morning milk in the corral."
+    ],
+    "significados_incorretos": [
+      "A joinery technique carpenters use to fit wood pieces together without nails.",
+      "Serving hot drinks in thick ceramic mugs, like a 'mug'.",
+      "A loud sound made by cattle in the pasture during the day."
+    ],
+    "impacto_motivo": "Mogged describes someone outshining another person's looks, which can come across as a hurtful comparison to whoever got outshone."
+  },
+  {
+    "id": 32,
+    "nome": "POV",
+    "variacoes": [],
+    "classe_gramatical": "noun",
+    "significado": "Short for 'Point of View'; a video format filmed from the viewer's own perspective.",
+    "tags": [
+      "Social media",
+      "Geek",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "The video was a hilarious POV simulating a kitten's view trying to catch a bug flying around the room.",
+    "exemplos_incorretos": [
+      "The electrician followed the POV diagram to install the new outlet.",
+      "The bus stopped at the downtown POV so passengers could get off.",
+      "The pilot checked the POV before takeoff to review the flight plan."
+    ],
+    "significados_incorretos": [
+      "An abbreviation used in installation manuals for home electrical outlets.",
+      "A term used at bus terminals to mark a stop.",
+      "An instrument panel located in an airplane cockpit during flight."
+    ],
+    "impacto_motivo": "POV just describes a video format shot from a certain perspective, with no emotional charge."
+  },
+  {
+    "id": 33,
+    "nome": "red flag",
+    "variacoes": [
+      "red flags"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "A behavioral warning sign that points to compatibility problems or potential toxicity.",
+    "tags": [
+      "Relationships",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "Him badmouthing every ex on the first date is already a huge red flag for me.",
+    "exemplos_incorretos": [
+      "We put a red flag on the barbecue table to protect the tablecloth.",
+      "The lifeguard put up the red flag on the sand because the sea was dangerous.",
+      "After the bad crash, the officials raised the red flag in Formula 1."
+    ],
+    "significados_incorretos": [
+      "A fabric used to line barbecue trays at outdoor events.",
+      "A flag placed on the beach to warn of drowning risk due to rough seas.",
+      "A motorsport code ordering a race to stop immediately."
+    ],
+    "impacto_motivo": "Red flag warns about problematic behaviors that signal risks in a relationship."
+  },
+  {
+    "id": 34,
+    "nome": "skibidi",
+    "variacoes": [
+      "skibidi toilet"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "An ironic term with all kinds of meanings, from bizarre to cool to nonsensical, hugely popular in kids' internet culture.",
+    "tags": [
+      "Geek",
+      "Social media",
+      "Gaming",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "depends",
+    "exemplo_correto": "My little nephew won't stop yelling skibidi while running around the house all day.",
+    "exemplos_incorretos": [
+      "The cook added skibidi to the marinade to make the chicken spicier.",
+      "The skibidi boot clips onto thin boards to glide on snow.",
+      "We went to Aspen last week to ride skibidi on the fresh snow."
+    ],
+    "significados_incorretos": [
+      "A type of spicy seasoning used in Caribbean dishes.",
+      "A piece of plastic gear strapped to the feet in winter sports.",
+      "An extreme winter sport that involves sliding down snowy slopes."
+    ],
+    "impacto_motivo": "Skibidi has all kinds of meanings and is used so loosely and ironically that its impact shifts depending on context."
+  },
+  {
+    "id": 35,
+    "nome": "we solid",
+    "variacoes": [
+      "solid",
+      "we're solid"
+    ],
+    "classe_gramatical": "interjection",
+    "significado": "An expression showing partnership, solidarity, agreement, or strong friendship.",
+    "tags": [
+      "Everyday life",
+      "Relationships"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Call me if you need a hand with the move tomorrow morning, we solid!",
+    "exemplos_incorretos": [
+      "The wardrobe manual said to fit the pieces we solid onto the base.",
+      "The sailor tied the ropes we solid so the boat wouldn't come loose from the dock.",
+      "The subway was so packed we ended up we solid against the glass door."
+    ],
+    "significados_incorretos": [
+      "An assembly instruction found in flat-pack furniture manuals.",
+      "A sailor's knot where two ropes overlap to strengthen a hitch.",
+      "Being physically pressed and squeezed by a lack of space on transit."
+    ],
+    "impacto_motivo": "We solid expresses support, solidarity, and partnership between people, a warm and welcoming phrase."
+  },
+  {
+    "id": 37,
+    "nome": "sick",
+    "variacoes": [],
+    "classe_gramatical": "adjective",
+    "significado": "Something considered really cool, excellent, fun, or impressive.",
+    "tags": [
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "The horror movie we watched at the theater last night was so sick.",
+    "exemplos_incorretos": [
+      "The recipe called for an exact sick of two hundred milliliters of milk.",
+      "The builder spread the sick over the brick so the wall would hold up.",
+      "In physics class, we calculated the sick of the steel block to find gravity."
+    ],
+    "significados_incorretos": [
+      "A unit of measurement used in recipes to calculate liquid amounts.",
+      "Wet cement-and-sand mortar used to fix tiles in masonry work.",
+      "A physical quantity that measures the amount of matter in a body in the lab."
+    ],
+    "impacto_motivo": "Sick expresses approval and excitement about something considered fun or excellent."
+  },
+  {
+    "id": 39,
+    "nome": "turn up",
+    "variacoes": [
+      "turnt up",
+      "turning up"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To get really hyped, have an intense good time, or get into the vibe of a party with high energy.",
+    "tags": [
+      "Pop culture",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "The music was way too loud and we hit the dance floor to turn up until sunrise on the beach.",
+    "exemplos_incorretos": [
+      "The craftswoman went to turn up the cloth with annatto dye so the rug would come out red.",
+      "Be careful not to turn up your fingers taking the lid off the hot pot.",
+      "My grandpa fanned the grill to turn up the coals fast under the meat."
+    ],
+    "significados_incorretos": [
+      "A technique for dyeing fabric using natural reddish dyes.",
+      "Causing light burns to the skin by touching hot surfaces.",
+      "Blowing on or lighting charcoal until it's glowing."
+    ],
+    "impacto_motivo": "Turn up refers to having an intense good time and getting into a party's energy, associated with joy."
+  },
+  {
+    "id": 40,
+    "nome": "pull up",
+    "variacoes": [
+      "pulled up",
+      "pulling up"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To show up or suddenly appear at a place, party, or hangout with friends.",
+    "tags": [
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "We're having a barbecue at my place on Sunday, pull up so we can catch up.",
+    "exemplos_incorretos": [
+      "The farmer went to pull up the flooded field before planting the new rice.",
+      "The teenager woke up and saw two pimples that pulled up on his forehead.",
+      "After lots of rain, the beans started to pull up in the wet cotton pot."
+    ],
+    "significados_incorretos": [
+      "An irrigation technique used on rice plantations in flooded fields.",
+      "A sudden skin breakout caused by inflamed skin glands.",
+      "The biological process where the first stem sprouts from a seed."
+    ],
+    "impacto_motivo": "Pull up means showing up to a social gathering, a friendly and welcome invitation."
+  },
+  {
+    "id": 41,
+    "nome": "we good",
+    "variacoes": [
+      "it's all good"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "A situation that's favorable, calm, comfortable, or completely relaxed.",
+    "tags": [
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Don't worry about this month's bills, bro, we good here.",
+    "exemplos_incorretos": [
+      "The we good sign on the corner warned that the street was one-way.",
+      "The car made a weird engine noise, so I took it straight to get checked, we good style.",
+      "The school sent the new teachers' paperwork over to get validated, we good."
+    ],
+    "significados_incorretos": [
+      "An abbreviation used on traffic signs to indicate a one-way street.",
+      "A shortened way to refer to the mechanic responsible for car maintenance.",
+      "An official abbreviation for the federal Ministry of Education."
+    ],
+    "impacto_motivo": "We good signals that a situation is calm and under control, bringing a sense of comfort."
+  },
+  {
+    "id": 42,
+    "nome": "dripped out",
+    "variacoes": [
+      "drip",
+      "dripping"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "Someone or something extremely well put-together, stylish, or good-looking, common in urban street slang.",
+    "tags": [
+      "Everyday life",
+      "Pop culture"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "With that new jacket and clean white sneakers, you were so dripped out for tonight's hangout.",
+    "exemplos_incorretos": [
+      "The conductor asked to change the drip of the song before rehearsal started.",
+      "The plumber asked for the drip wrench to tighten the loose nuts on the sink.",
+      "I got home and realized I left the drip hanging in the doorknob."
+    ],
+    "significados_incorretos": [
+      "A technical term used in sheet music to indicate the song's key.",
+      "A heavy-duty wrench used in mechanical nut maintenance.",
+      "A grooved metal object used to open household locks."
+    ],
+    "impacto_motivo": "Dripped out compliments someone's great look and style, used as a positive nod of recognition."
+  },
+  {
+    "id": 43,
+    "nome": "caught up",
+    "variacoes": [
+      "caught up fast",
+      "catching feelings"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "Someone who rushes in or shows feelings in an exaggerated, fast way right at the start of a relationship.",
+    "tags": [
+      "Relationships",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "They only hung out once and he already bought a gift for her mom, so caught up.",
+    "exemplos_incorretos": [
+      "The test showed the patient got caught up during the stress test.",
+      "I got so caught up watching that documentary about nature.",
+      "My uncle got so caught up at his daughter's wedding and cried a lot."
+    ],
+    "significados_incorretos": [
+      "A technical term used in medical reports to indicate a fast heart rate.",
+      "A sensitive, empathetic reaction triggered by scenes of triumph in movies.",
+      "The act of shedding tears prompted by intense joy or hard goodbyes."
+    ],
+    "impacto_motivo": "Caught up, in this relationship context, calls out someone who gets emotionally invested too fast, which can scare the other person off or come across as unbalanced."
+  },
+  {
+    "id": 44,
+    "nome": "snake",
+    "variacoes": [
+      "snaking",
+      "total snake"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "A person who tries to get romantically involved with a friend or acquaintance's partner or ex.",
+    "tags": [
+      "Relationships",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He pretended to be the couple's best friend, but deep down he was always a snake trying to split them up.",
+    "exemplos_incorretos": [
+      "The seamstress grabbed the snake to trim the loose threads from the hem.",
+      "The bank teller filed the snake away after tearing off the check.",
+      "I finely sliced the snake off the broccoli to add to today's salad."
+    ],
+    "significados_incorretos": [
+      "A cutting tool seamstresses use to trim loose threads.",
+      "The little stub left attached to a checkbook after tearing out a check.",
+      "The crunchier central part of leafy greens and vegetables."
+    ],
+    "impacto_motivo": "Snake describes someone acting disloyally by trying to get with a friend's partner, an attitude that's socially condemned."
+  },
+  {
+    "id": 45,
+    "nome": "simp",
+    "variacoes": [
+      "simping",
+      "such a simp"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "A person who's extremely submissive to someone else out of romantic interest, accepting being treated as secondary just to please them.",
+    "tags": [
+      "Relationships",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He's such a simp that he stayed up all night doing his crush's college assignment for her.",
+    "exemplos_incorretos": [
+      "The farmer used the new simp to prepare the land before planting.",
+      "The trucking company bought big trucks to haul simp down the highways.",
+      "The farmer woke up early to take the simp to pasture on the other side of the hill."
+    ],
+    "significados_incorretos": [
+      "A type of farm tool used to plow large, hard fields.",
+      "Live heavy cargo hauled in open trucks by cattle drivers.",
+      "A herd of beef cattle and cows raised on rural land."
+    ],
+    "impacto_motivo": "Simp calls out excessive submission for romantic interest, pointing to a lack of self-respect."
+  },
+  {
+    "id": 46,
+    "nome": "clout chaser",
+    "variacoes": [
+      "clout chasing"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "A person who loves to show off, act in an exaggerated way, or pull stunts and reckless moves for attention.",
+    "tags": [
+      "Everyday life",
+      "Social media"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He popped a wheelie on the street just because he saw a camera filming, such a clout chaser.",
+    "exemplos_incorretos": [
+      "The lab technician set aside a clout chaser of reagent for the test.",
+      "The seamstress handed over the clout chaser of fabric for me to approve before buying.",
+      "The salesperson gave me a clout chaser of the new hydrating lavender cream."
+    ],
+    "significados_incorretos": [
+      "A small container used in labs to store chemical reagents.",
+      "A swatch cut from a larger fabric roll to show customers the pattern.",
+      "A small free cosmetic sample given away to test products before buying."
+    ],
+    "impacto_motivo": "Clout chaser calls out people who show off in exaggerated or reckless ways just to grab attention, which tends to be looked down on."
+  },
+  {
+    "id": 47,
+    "nome": "flop",
+    "variacoes": [
+      "flopped",
+      "flopping"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To fail, not catch on, or not achieve the expected result.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "The video she posted yesterday flopped, it barely hit a hundred likes.",
+    "exemplos_incorretos": [
+      "The fisherman watched the fish flop on the riverbank before it got away.",
+      "The pancake flopped straight onto the pan when he tried to flip it.",
+      "The inflatable mattress flopped the moment I leaned on it in the pool."
+    ],
+    "significados_incorretos": [
+      "A sharp, uncontrolled movement of a fish out of water.",
+      "The act of flipping food in the air while cooking.",
+      "An inflatable object suddenly losing air and deflating."
+    ],
+    "impacto_motivo": "Flop signals failure or a lack of success in something that was expected to work out, causing frustration."
+  },
+  {
+    "id": 48,
+    "nome": "ghosting",
+    "variacoes": [
+      "ghosted",
+      "disappeared like a ghost"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "The act of suddenly cutting off contact with someone without explanation, usually in a relationship or a fling.",
+    "tags": [
+      "Relationships",
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "We were talking so well on the app and out of nowhere he vanished, total ghosting.",
+    "exemplos_incorretos": [
+      "The amusement park had a pretty scary ghosting ride.",
+      "The horror movie showed ghosting coming out of the house's basement.",
+      "We put up white cloth ghosting to decorate the Halloween party."
+    ],
+    "significados_incorretos": [
+      "A themed costume or decoration used at horror-themed parties.",
+      "A supernatural character typical of haunted house movies.",
+      "A visual effect used in nighttime theme park attractions."
+    ],
+    "impacto_motivo": "Ghosting describes the sudden, unexplained abandonment of contact, causing hurt and confusion for whoever was left hanging."
+  },
+  {
+    "id": 49,
+    "nome": "old",
+    "variacoes": [
+      "so old",
+      "that's old news"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "Something outdated, played out, or no longer new.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He told that joke thinking it was funny, but it's so old, everyone's already seen it.",
+    "exemplos_incorretos": [
+      "My grandpa keeps an old watch that belonged to his great-grandfather.",
+      "The store sells well-kept old clothes from the eighties.",
+      "My uncle's old car still runs perfectly to this day."
+    ],
+    "significados_incorretos": [
+      "An antique object with sentimental or family historical value.",
+      "A vintage clothing item sold at specialty thrift shops.",
+      "A vehicle built many years ago but still in good condition."
+    ],
+    "impacto_motivo": "Old points out that a piece of content, joke, or meme is played out, which usually comes across as a jab in internet contexts."
+  },
+  {
+    "id": 50,
+    "nome": "serve",
+    "variacoes": [
+      "served",
+      "serving"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To crush it visually, deliver a flawless look or performance.",
+    "tags": [
+      "Social media",
+      "Pop culture",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "She showed up to the event in that gold dress and served so hard.",
+    "exemplos_incorretos": [
+      "The waiter went to serve the table as soon as the dishes were ready.",
+      "My mom asked me to serve the water before lunch.",
+      "The restaurant usually serves dinner starting at seven at night."
+    ],
+    "significados_incorretos": [
+      "Bringing and distributing food or drinks to a table.",
+      "The act of making food or liquids available for someone to consume.",
+      "Offering a dish or meal at an establishment."
+    ],
+    "impacto_motivo": "Serve, in this sense, celebrates a flawless look or performance, and is a source of admiration and praise."
+  },
+  {
+    "id": 51,
+    "nome": "jomo",
+    "variacoes": [
+      "joy of missing out"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "The feeling of relief and satisfaction from skipping events, commitments, or trends.",
+    "tags": [
+      "Everyday life",
+      "Social media"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Everyone went out clubbing, but I stayed home watching a show, pure jomo.",
+    "exemplos_incorretos": [
+      "The recipe called for a pinch of jomo to flavor the sauce.",
+      "The electrician replaced the burnt-out jomo in the kitchen outlet.",
+      "I bought a new jomo to decorate the living room shelf."
+    ],
+    "significados_incorretos": [
+      "A seasoning or spice used in regional dishes.",
+      "An electrical component used in home wiring.",
+      "A decorative object used indoors."
+    ],
+    "impacto_motivo": "Jomo refers to the calm pleasure of skipping obligations, associated with well-being and self-care."
+  },
+  {
+    "id": 52,
+    "nome": "tank",
+    "variacoes": [
+      "tanked",
+      "tanking"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To power through a tough situation, holding up under criticism, pressure, or problems without falling apart.",
+    "tags": [
+      "Everyday life",
+      "Social media"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "Exam week was brutal, but I tanked through it all without giving up.",
+    "exemplos_incorretos": [
+      "The truck carried a full tank of fuel on its bed.",
+      "The soldier kept drinking water inside the metal tank.",
+      "The gas station got a new tank this week."
+    ],
+    "significados_incorretos": [
+      "A large container used to store liquids.",
+      "A metal compartment used to transport fuel.",
+      "An industrial reservoir used at gas stations."
+    ],
+    "impacto_motivo": "Tank, in everyday use, points to resilience, holding up through tough situations without giving up, and is seen as a positive trait."
+  },
+  {
+    "id": 53,
+    "nome": "alpha",
+    "variacoes": [
+      "alpha male"
+    ],
+    "classe_gramatical": "adjective",
+    "significado": "A dominant, confident person who naturally stands out as a leader in a group.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "He always takes charge of the group's decisions, the classic alpha of the crew.",
+    "exemplos_incorretos": [
+      "The lab tested the alpha version of the app before launch.",
+      "The brain's alpha wave shows up during deep states of relaxation.",
+      "The dev team fixed the bugs in the game's alpha phase."
+    ],
+    "significados_incorretos": [
+      "The first test version of software before its official release.",
+      "A type of brain electrical activity associated with calm states.",
+      "The early development stage of a digital product."
+    ],
+    "impacto_motivo": "Alpha describes a leadership, confident posture, but it's used so variably and sometimes ironically that it doesn't carry a fixed judgment."
+  },
+  {
+    "id": 54,
+    "nome": "beta",
+    "variacoes": [],
+    "classe_gramatical": "adjective",
+    "significado": "A person seen as submissive, insecure, or lacking initiative, usually used as a criticism.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "negative",
+    "exemplo_correto": "He never decides anything on his own, always asks everyone first, so beta.",
+    "exemplos_incorretos": [
+      "I tested the beta version of the app before it officially launched.",
+      "The company opened beta access to the game to a small group of players.",
+      "The scientist studied the beta particle emitted during the experiment."
+    ],
+    "significados_incorretos": [
+      "A test version of software before its final release.",
+      "An evaluation phase of a digital product with limited access.",
+      "A type of radiation studied in nuclear physics experiments."
+    ],
+    "impacto_motivo": "Beta is used disparagingly to criticize a lack of initiative or submissiveness, working almost like an insult."
+  },
+  {
+    "id": 55,
+    "nome": "farm",
+    "variacoes": [
+      "farmed",
+      "farming"
+    ],
+    "classe_gramatical": "verb",
+    "significado": "To repeatedly rack up likes, followers, compliments, or engagement on social media.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "She posts several photos a day just to farm likes on her profile.",
+    "exemplos_incorretos": [
+      "My grandpa loves farming vegetables in the backyard.",
+      "The farmer went to farm the corn field before the rain came.",
+      "We spent the weekend helping farm grandma's vegetable garden."
+    ],
+    "significados_incorretos": [
+      "Growing plants and vegetables on rural land.",
+      "Tending to a family farm plot.",
+      "Working in activities related to cultivating the land."
+    ],
+    "impacto_motivo": "Farm, in a social media context, describes the repeated buildup of engagement, and can be seen neutrally depending on the intent behind it."
+  },
+  {
+    "id": 56,
+    "nome": "aura",
+    "variacoes": [
+      "aura points"
+    ],
+    "classe_gramatical": "noun",
+    "significado": "Someone's charisma, standout presence, or reputation, playfully measured as if it were points earned or lost.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "positive",
+    "exemplo_correto": "He helped the old lady cross the street and instantly earned some aura points.",
+    "exemplos_incorretos": [
+      "The holistic therapist talked about cleansing your aura before the meditation session.",
+      "The psychic said she could see people's purple aura.",
+      "We did a breathing exercise to balance our aura during the retreat."
+    ],
+    "significados_incorretos": [
+      "A spiritual energy field associated with mystical practices.",
+      "A supposed energetic emanation studied in alternative therapies.",
+      "A concept tied to spiritual beliefs about personal energy."
+    ],
+    "impacto_motivo": "Aura, in internet slang, playfully celebrates charisma and good moves, associated with positive recognition."
+  },
+  {
+    "id": 57,
+    "nome": "67",
+    "variacoes": [
+      "six seven"
+    ],
+    "classe_gramatical": "interjection",
+    "significado": "An expression with no fixed meaning, used as a random, ironic, or purely mocking reaction to everyday situations.",
+    "tags": [
+      "Social media",
+      "Everyday life"
+    ],
+    "permissao": "everyone",
+    "impacto": "neutral",
+    "exemplo_correto": "I asked what time it was and he just said '67' laughing nonstop.",
+    "exemplos_incorretos": [
+      "The 67 bus passes by the corner of my house every twenty minutes.",
+      "She lives in apartment 67 in the new building down the block.",
+      "The player wore jersey number 67 at today's practice."
+    ],
+    "significados_incorretos": [
+      "An ID number for a public transit route.",
+      "A numbering used to identify a residential unit.",
+      "A number printed on an athlete or player's jersey."
+    ],
+    "impacto_motivo": "67 is used as a random reaction with no fixed meaning, functioning as an internet inside joke with no set emotional charge."
+  }
+]

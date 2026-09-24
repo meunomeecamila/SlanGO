@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'MundoService.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -37,6 +38,7 @@ class UsuarioService {
   }
 
   static Future<void> _clearSession() async {
+    MundoService.limparCacheProgresso();
     await _storage.delete(key: _tokenKey);
     await _storage.delete(key: _userIdKey);
     await _storage.delete(key: _isGuestKey);
@@ -54,12 +56,14 @@ class UsuarioService {
     String? respostaSeguranca,
     bool emailVerificado = false,
     String? sexo,
+    String idioma = 'pt',
   }) async {
     final payload = <String, dynamic>{
       'nome': nome,
       'email': email,
       'senha': senha,
       'confirmarSenha': confirmarSenha,
+      'idioma': const {'pt', 'en', 'es', 'it'}.contains(idioma) ? idioma : 'pt',
       'responsavel': responsavel,
       'email_verificado': emailVerificado,
       if (sexo != null && sexo.isNotEmpty) 'sexo': sexo,
@@ -86,6 +90,32 @@ class UsuarioService {
 
     throw Exception(dados['erro'] ?? 'Erro ao cadastrar usuário');
   }
+
+  static Future<Usuario> atualizarIdioma(String idioma) async {
+    if (!const {'pt', 'en', 'es', 'it'}.contains(idioma)) {
+      throw Exception('Idioma não suportado.');
+    }
+
+    final token = await _storage.read(key: _tokenKey);
+    final response = await http.patch(
+      Uri.parse('$_baseUrl/usuario/idioma'),
+      headers: {
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: jsonEncode({'idioma': idioma}),
+    );
+
+    final dados = jsonDecode(response.body);
+    if (response.statusCode == 200) {
+      return Usuario.fromJson(dados['usuario']);
+    }
+    if (response.statusCode == 401) {
+      await _clearSession();
+      throw Exception('Sessão expirada. Faça login novamente.');
+    }
+    throw Exception(dados['erro'] ?? 'Erro ao atualizar idioma.');
+  }
   // ── Login ──
   static Future<Usuario> login(String email, String senha) async {
     final response = await http.post(
@@ -100,6 +130,7 @@ class UsuarioService {
       // Login de verdade sempre substitui uma sessão de convidado anterior
       await _storage.delete(key: _isGuestKey);
       await _storage.write(key: _tokenKey, value: dados['token']);
+      MundoService.limparCacheProgresso();
       await _storeUserId(dados['usuario']['id']);
       return Usuario.fromJson(dados['usuario']);
     }

@@ -19,6 +19,8 @@ enum ModoQuiz { normal, rankeado }
 class QuizPage extends StatefulWidget {
   final String nomeMundo;
   final ModoQuiz modo;
+  final String idioma;
+
   /// Perguntas já carregadas pela LicaoPage. Quando fornecidas, o QuizPage
   /// usa esses dados diretamente sem fazer uma nova chamada ao endpoint,
   /// garantindo que lição e quiz usem as mesmas gírias sorteadas.
@@ -32,6 +34,7 @@ class QuizPage extends StatefulWidget {
     super.key,
     required this.nomeMundo,
     this.modo = ModoQuiz.normal,
+    this.idioma = 'pt',
     this.perguntasPrecarregadas,
     this.explicacoesPrecarregadas,
   });
@@ -75,15 +78,18 @@ class _QuizPageState extends State<QuizPage> {
     super.initState();
     _explicacoes = widget.explicacoesPrecarregadas ?? const [];
     if (widget.perguntasPrecarregadas != null) {
-      _futurePerguntas =
-          Future.value(_ordenarPorGiria(widget.perguntasPrecarregadas!));
-    } else {
-      _futurePerguntas = MundoService.buscarRodada(widget.nomeMundo).then(
-        (rodada) {
-          _explicacoes = rodada.fases;
-          return _ordenarPorGiria(rodada.todasAsPerguntas);
-        },
+      _futurePerguntas = Future.value(
+        _ordenarPorGiria(widget.perguntasPrecarregadas!),
       );
+    } else {
+      _futurePerguntas =
+          MundoService.buscarRodada(
+            widget.nomeMundo,
+            idioma: widget.idioma,
+          ).then((rodada) {
+            _explicacoes = rodada.fases;
+            return _ordenarPorGiria(rodada.todasAsPerguntas);
+          });
     }
   }
 
@@ -136,6 +142,7 @@ class _QuizPageState extends State<QuizPage> {
           nomeMundo: widget.nomeMundo,
           modo: widget.modo,
           explicacoes: _explicacoes,
+          idioma: widget.idioma,
         );
       },
     );
@@ -152,6 +159,7 @@ class _QuizRunner extends StatefulWidget {
   final String nomeMundo;
   final ModoQuiz modo;
   final List<Fase> explicacoes;
+  final String idioma;
 
   const _QuizRunner({
     super.key,
@@ -159,6 +167,7 @@ class _QuizRunner extends StatefulWidget {
     required this.nomeMundo,
     required this.modo,
     this.explicacoes = const [],
+    required this.idioma,
   });
 
   @override
@@ -209,7 +218,9 @@ class _QuizRunnerState extends State<_QuizRunner>
       duration: const Duration(milliseconds: 280),
     );
     _feedbackSlide = Tween<Offset>(begin: const Offset(0, 1), end: Offset.zero)
-        .animate(CurvedAnimation(parent: _feedbackController, curve: Curves.easeOut));
+        .animate(
+          CurvedAnimation(parent: _feedbackController, curve: Curves.easeOut),
+        );
     _alternativasController = ScrollController();
 
     _giriaBounceController = AnimationController(
@@ -219,14 +230,18 @@ class _QuizRunnerState extends State<_QuizRunner>
     _giriaBounceAnim = TweenSequence<double>([
       // Sobe rápido
       TweenSequenceItem(
-        tween: Tween(begin: 0.0, end: -16.0)
-            .chain(CurveTween(curve: Curves.easeOut)),
+        tween: Tween(
+          begin: 0.0,
+          end: -16.0,
+        ).chain(CurveTween(curve: Curves.easeOut)),
         weight: 40,
       ),
       // Desce e quica levemente ao "aterrissar"
       TweenSequenceItem(
-        tween: Tween(begin: -16.0, end: 0.0)
-            .chain(CurveTween(curve: Curves.bounceOut)),
+        tween: Tween(
+          begin: -16.0,
+          end: 0.0,
+        ).chain(CurveTween(curve: Curves.bounceOut)),
         weight: 60,
       ),
     ]).animate(_giriaBounceController);
@@ -244,13 +259,20 @@ class _QuizRunnerState extends State<_QuizRunner>
     super.dispose();
   }
 
+  /// Texto da alternativa correta, sem quebrar se nenhuma vier marcada.
+  String _textoCorreto(Fase fase) {
+    for (final a in fase.alternativas) {
+      if (a.correta) return a.texto;
+    }
+    return fase.respostaCorreta;
+  }
+
   void _responder(String textoSelecionado) {
     if (_estado == _EstadoResposta.respondido) return;
 
     final fasAtual = widget.perguntas[_indice];
     final correta = fasAtual.alternativas
-        .firstWhere((a) => a.texto == textoSelecionado)
-        .correta;
+        .any((a) => a.texto == textoSelecionado && a.correta);
 
     // Toca o som de acerto ou erro assim que a resposta é registrada.
     _sfxPlayer.play(
@@ -296,7 +318,7 @@ class _QuizRunnerState extends State<_QuizRunner>
 
   Fase? _explicacaoDeErroPendente() {
     final atual = widget.perguntas[_indice];
-    final correta = atual.alternativas.firstWhere((a) => a.correta).texto;
+    final correta = _textoCorreto(atual);
     if (_selecionada == correta) return null;
 
     final idGiria = atual.giriaId.toString();
@@ -342,13 +364,17 @@ class _QuizRunnerState extends State<_QuizRunner>
     // Toca o som de finalização assim que a sequência de quizes termina.
     _sfxPlayer.play(AssetSource('sons/som_final_mundo.mp3'));
 
-    final idsUnicos = widget.perguntas.map((fase) => fase.giriaId).toSet().toList();
+    final idsUnicos = widget.perguntas
+        .map((fase) => fase.giriaId)
+        .toSet()
+        .toList();
 
     try {
       await MundoService.validarResultado(
         nomeDoMundo: widget.nomeMundo,
         pontuacaoFinal: _acertos,
         girias: idsUnicos,
+        idioma: widget.idioma,
       );
     } catch (e) {
       if (mounted) {
@@ -369,6 +395,7 @@ class _QuizRunnerState extends State<_QuizRunner>
           nomeDoMundo: widget.nomeMundo,
           pontuacaoFinal: _acertos,
           tempoMs: _cronometro.elapsedMilliseconds,
+          idioma: widget.idioma,
         );
       } catch (e) {
         if (mounted) {
@@ -434,14 +461,12 @@ class _QuizRunnerState extends State<_QuizRunner>
         ),
       );
     }
-    
+
     final fase = widget.perguntas[_indice];
     final total = widget.perguntas.length;
     final progresso = (_indice + 1) / total;
 
-    final respostaCorreta = fase.alternativas
-        .firstWhere((a) => a.correta)
-        .texto;
+    final respostaCorreta = _textoCorreto(fase);
     final acertou = _selecionada == respostaCorreta;
 
     return PopScope(
@@ -540,7 +565,9 @@ class _QuizRunnerState extends State<_QuizRunner>
                       decoration: BoxDecoration(
                         color: cardColor,
                         borderRadius: BorderRadius.circular(18),
-                        border: Border.all(color: Colors.white.withOpacity(0.06)),
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.06),
+                        ),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(0.25),
@@ -575,9 +602,11 @@ class _QuizRunnerState extends State<_QuizRunner>
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            for (int i = 0;
-                                i < fase.alternativas.length;
-                                i++) ...[
+                            for (
+                              int i = 0;
+                              i < fase.alternativas.length;
+                              i++
+                            ) ...[
                               if (i > 0) SizedBox(height: 12 * scale),
                               _buildAlternativa(
                                 fase.alternativas[i],
@@ -675,7 +704,7 @@ class _QuizRunnerState extends State<_QuizRunner>
           ),
         ),
         SizedBox(width: 14 * scale),
-        
+
         if (_ehRankeado) ...[
           _buildCronometroBadge(scale),
           SizedBox(width: 10 * scale),
@@ -718,7 +747,10 @@ class _QuizRunnerState extends State<_QuizRunner>
         final segTexto = seg.toString().padLeft(2, '0');
 
         return Container(
-          padding: EdgeInsets.symmetric(horizontal: 10 * scale, vertical: 6 * scale),
+          padding: EdgeInsets.symmetric(
+            horizontal: 10 * scale,
+            vertical: 6 * scale,
+          ),
           decoration: BoxDecoration(
             color: const Color(0xFFFFD166).withOpacity(0.15),
             borderRadius: BorderRadius.circular(20),
@@ -727,7 +759,11 @@ class _QuizRunnerState extends State<_QuizRunner>
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Icon(Icons.timer_rounded, color: Color(0xFFFFD166), size: 14),
+              const Icon(
+                Icons.timer_rounded,
+                color: Color(0xFFFFD166),
+                size: 14,
+              ),
               SizedBox(width: 4 * scale),
               Text(
                 '$minTexto:$segTexto',
@@ -808,10 +844,7 @@ class _QuizRunnerState extends State<_QuizRunner>
               width: 28 * scale,
               height: 28 * scale,
               alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: letraBg,
-                shape: BoxShape.circle,
-              ),
+              decoration: BoxDecoration(color: letraBg, shape: BoxShape.circle),
               child: Text(
                 letra,
                 style: TextStyle(
@@ -845,7 +878,11 @@ class _QuizRunnerState extends State<_QuizRunner>
     return botao;
   }
 
-  Widget _buildImpactoMotivoCard(BuildContext context, String motivo, double scale) {
+  Widget _buildImpactoMotivoCard(
+    BuildContext context,
+    String motivo,
+    double scale,
+  ) {
     return Container(
       width: double.infinity,
       padding: EdgeInsets.all(14 * scale),
@@ -907,8 +944,9 @@ class _QuizRunnerState extends State<_QuizRunner>
     final Color bg = acertou
         ? const Color(0xFF0F3D25)
         : const Color(0xFF3D0F15);
-    final String titulo =
-        acertou ? context.l10n.correctFeedback : context.l10n.incorrectFeedback;
+    final String titulo = acertou
+        ? context.l10n.correctFeedback
+        : context.l10n.incorrectFeedback;
     final String sub = acertou
         ? context.l10n.keepGoingFeedback
         : context.l10n.correctAnswerWas(respostaCorreta);
@@ -1064,10 +1102,10 @@ class _ResultadoScreen extends StatelessWidget {
   String get _tempoFormatado {
     final min = tempoSegundos ~/ 60;
     final seg = tempoSegundos % 60;
-    
+
     final minTexto = min.toString().padLeft(2, '0');
     final segTexto = seg.toString().padLeft(2, '0');
-    
+
     return '$minTexto:$segTexto';
   }
 
@@ -1253,7 +1291,9 @@ class _ResultadoScreen extends StatelessWidget {
                                       ),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: _corResultado.withOpacity(0.18),
+                                          color: _corResultado.withOpacity(
+                                            0.18,
+                                          ),
                                           blurRadius: 26,
                                           spreadRadius: 2,
                                         ),
@@ -1262,13 +1302,16 @@ class _ResultadoScreen extends StatelessWidget {
                                     child: Column(
                                       children: [
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
                                           children: [
                                             _buildPlacarItem(
                                               icon: Icons.check_circle_rounded,
                                               cor: verde,
                                               valor: '$acertos',
-                                              label: context.l10n.correctAnswersLabel,
+                                              label: context
+                                                  .l10n
+                                                  .correctAnswersLabel,
                                               scale: scale,
                                             ),
                                             SizedBox(width: 18 * scale),
@@ -1282,10 +1325,12 @@ class _ResultadoScreen extends StatelessWidget {
                                               icon: Icons.cancel_rounded,
                                               cor: vermelho,
                                               valor: '$_erros',
-                                              label: context.l10n.wrongAnswersLabel,
+                                              label: context
+                                                  .l10n
+                                                  .wrongAnswersLabel,
                                               scale: scale,
                                             ),
-                                            
+
                                             // AQUI APARECE O TEMPO SE FOR RANKEADO
                                             if (ehRankeado) ...[
                                               SizedBox(width: 18 * scale),
@@ -1298,7 +1343,8 @@ class _ResultadoScreen extends StatelessWidget {
                                               _buildPlacarItem(
                                                 icon: Icons.timer_rounded,
                                                 cor: amareloTempo,
-                                                valor: _tempoFormatado, // Usando 00:00
+                                                valor:
+                                                    _tempoFormatado, // Usando 00:00
                                                 label: context.l10n.timeLabel,
                                                 scale: scale,
                                               ),
@@ -1309,20 +1355,24 @@ class _ResultadoScreen extends StatelessWidget {
                                         SizedBox(height: 16 * scale),
 
                                         ClipRRect(
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius: BorderRadius.circular(
+                                            10,
+                                          ),
                                           child: LinearProgressIndicator(
                                             value: _pct,
                                             minHeight: 8,
                                             backgroundColor: Colors.white10,
-                                            valueColor: AlwaysStoppedAnimation<Color>(
-                                              _corResultado,
-                                            ),
+                                            valueColor:
+                                                AlwaysStoppedAnimation<Color>(
+                                                  _corResultado,
+                                                ),
                                           ),
                                         ),
                                         SizedBox(height: 8 * scale),
                                         Text(
                                           context.l10n.performancePercentage(
-                                              (_pct * 100).round()),
+                                            (_pct * 100).round(),
+                                          ),
                                           style: TextStyle(
                                             color: Colors.white54,
                                             fontSize: 12 * scale,
@@ -1332,7 +1382,8 @@ class _ResultadoScreen extends StatelessWidget {
                                         SizedBox(height: 14 * scale),
 
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
                                           children: List.generate(5, (i) {
                                             final preenchida = i < _estrelas;
                                             return Padding(

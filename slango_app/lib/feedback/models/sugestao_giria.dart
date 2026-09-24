@@ -53,6 +53,7 @@ class SugestaoGiria {
   final String? descricaoAdm;
   final String? quemAceitou;
   final String? proponenteNome;
+  final String? pais;
 
   const SugestaoGiria({
     required this.id,
@@ -68,6 +69,7 @@ class SugestaoGiria {
     this.descricaoAdm,
     this.quemAceitou,
     this.proponenteNome,
+    this.pais,
   });
 
   bool get foiAvaliada => status != StatusSugestao.pendente;
@@ -89,6 +91,7 @@ class SugestaoGiria {
       descricaoAdm: json['descricao_adm']?.toString(),
       quemAceitou: json['quem_aceitou']?.toString(),
       proponenteNome: json['proponente_nome']?.toString(),
+      pais: json['pais']?.toString(),
     );
   }
 }

@@ -57,8 +57,50 @@ class MundoService {
     return [];
   }
 
-  static Future<List<Map<String, dynamic>>> obterProgressoMundos() async {
-    final uri = Uri.parse('$_baseUrl/mundos/progresso');
+  // Cache curto do progresso por idioma, evitando repetir a mesma requisição
+  // toda vez que o mapa/perfil é reconstruído. Limpo ao salvar um resultado.
+  static final Map<String, List<Map<String, dynamic>>> _cacheProgresso = {};
+  static final Map<String, DateTime> _cacheProgressoHora = {};
+  static final Map<String, Future<List<Map<String, dynamic>>>> _emAndamento = {};
+  static const _validadeCache = Duration(minutes: 2);
+
+  static void limparCacheProgresso() {
+    _cacheProgresso.clear();
+    _cacheProgressoHora.clear();
+  }
+
+  static Future<List<Map<String, dynamic>>> obterProgressoMundos({
+    String idioma = 'pt',
+    bool forcar = false,
+  }) async {
+    final hora = _cacheProgressoHora[idioma];
+    if (!forcar &&
+        hora != null &&
+        DateTime.now().difference(hora) < _validadeCache) {
+      return _cacheProgresso[idioma]!;
+    }
+    // Se já existe a mesma requisição rodando, reaproveita.
+    final pendente = _emAndamento[idioma];
+    if (pendente != null) return pendente;
+
+    final futuro = _buscarProgressoMundos(idioma);
+    _emAndamento[idioma] = futuro;
+    try {
+      final dados = await futuro;
+      _cacheProgresso[idioma] = dados;
+      _cacheProgressoHora[idioma] = DateTime.now();
+      return dados;
+    } finally {
+      _emAndamento.remove(idioma);
+    }
+  }
+
+  static Future<List<Map<String, dynamic>>> _buscarProgressoMundos(
+    String idioma,
+  ) async {
+    final uri = Uri.parse('$_baseUrl/mundos/progresso').replace(
+      queryParameters: {'idioma': idioma},
+    );
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);
@@ -80,8 +122,13 @@ class MundoService {
     return [];
   }
 
-  static Future<RodadaMundo> buscarRodada(String nomeMundo) async {
-    final uri = Uri.parse('$_baseUrl/mundos/$nomeMundo/fases');
+  static Future<RodadaMundo> buscarRodada(
+    String nomeMundo, {
+    String idioma = 'pt',
+  }) async {
+    final uri = Uri.parse('$_baseUrl/mundos/$nomeMundo/fases').replace(
+      queryParameters: {'idioma': idioma},
+    );
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);
@@ -99,6 +146,7 @@ class MundoService {
     required String nomeDoMundo,
     required int pontuacaoFinal,
     required List<dynamic> girias, // Agora recebe a lista de IDs
+    String idioma = 'pt',
   }) async {
     final uri = Uri.parse('$_baseUrl/mundos/resultado');
 
@@ -110,10 +158,12 @@ class MundoService {
         'nomeDoMundo': nomeDoMundo,
         'pontuacaoFinal': pontuacaoFinal,
         'girias': girias, 
+        'idioma': idioma,
       }),
     );
 
     _verificarResposta(response);
+    limparCacheProgresso();
 
     if (response.statusCode != 200) {
       throw Exception('Falha ao validar resultado: ${response.body}');
@@ -124,8 +174,11 @@ class MundoService {
 
   static Future<List<Map<String, dynamic>>> buscarGiriasAprendidas(
     String nomeMundo,
+    {String idioma = 'pt'}
   ) async {
-    final uri = Uri.parse('$_baseUrl/mundos/$nomeMundo/aprendidas');
+    final uri = Uri.parse('$_baseUrl/mundos/$nomeMundo/aprendidas').replace(
+      queryParameters: {'idioma': idioma},
+    );
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);
@@ -149,8 +202,13 @@ class MundoService {
     return [];
   }
 
-  static Future<Map<String, dynamic>> progressoMundo(String nomeDoMundo) async {
-    final uri = Uri.parse('$_baseUrl/mundos/$nomeDoMundo/progresso');
+  static Future<Map<String, dynamic>> progressoMundo(
+    String nomeDoMundo, {
+    String idioma = 'pt',
+  }) async {
+    final uri = Uri.parse('$_baseUrl/mundos/$nomeDoMundo/progresso').replace(
+      queryParameters: {'idioma': idioma},
+    );
 
     final headers = await _getHeaders();
     final response = await http.get(uri, headers: headers);

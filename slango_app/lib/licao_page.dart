@@ -15,12 +15,14 @@ class LicaoPage extends StatefulWidget {
 
   /// Define se o quiz será Rankeado ou Casual. Padrão: Casual (normal).
   final ModoQuiz modo; 
+  final String idioma;
 
   const LicaoPage({
     super.key,
     required this.nomeMundo,
     this.rodadaPrecarregada,
     this.modo = ModoQuiz.normal, 
+    this.idioma = 'pt',
   });
 
   @override
@@ -36,7 +38,10 @@ class _LicaoPageState extends State<LicaoPage> {
     if (widget.rodadaPrecarregada != null) {
       _futureRodada = Future.value(widget.rodadaPrecarregada!);
     } else {
-      _futureRodada = MundoService.buscarRodada(widget.nomeMundo);
+      _futureRodada = MundoService.buscarRodada(
+        widget.nomeMundo,
+        idioma: widget.idioma,
+      );
     }
   }
 
@@ -85,6 +90,7 @@ class _LicaoPageState extends State<LicaoPage> {
         return QuizPage(
           nomeMundo: widget.nomeMundo,
           modo: widget.modo, 
+          idioma: widget.idioma,
           perguntasPrecarregadas: rodada.todasAsPerguntas,
           explicacoesPrecarregadas: rodada.fases,
         );

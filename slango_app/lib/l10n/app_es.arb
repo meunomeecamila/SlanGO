@@ -80,7 +80,7 @@
   "guestLogin": "Entrar sin cuenta",
   "loggingIn": "Entrando...",
   "welcomeMessage": "¡Aprende jerga de diversas comunidades y acércate a las personas que amas!",
-  "questionProgress": "Pregunta $current de $total",
+  "questionProgress": "Pregunta {current} de {total}",
   "@questionProgress": {
     "placeholders": {
       "current": {
@@ -92,7 +92,7 @@
     }
   },
   "noQuestionsFound": "No se encontraron preguntas.",
-  "errorLoadingQuiz": "Error al cargar el quiz:\\n$error",
+  "errorLoadingQuiz": "Error al cargar el quiz:\\n{error}",
   "@errorLoadingQuiz": {
     "placeholders": {
       "error": {
@@ -101,7 +101,7 @@
     }
   },
   "noPhasesFound": "No se encontraron fases.",
-  "errorLoadingPhases": "Error al cargar las fases: $error",
+  "errorLoadingPhases": "Error al cargar las fases: {error}",
   "@errorLoadingPhases": {
     "placeholders": {
       "error": {
@@ -113,7 +113,7 @@
   "correctFeedback": "¡Correcto! 🎉",
   "incorrectFeedback": "¡Incorrecto!",
   "keepGoingFeedback": "¡Bien! Sigue así.",
-  "correctAnswerWas": "Respuesta: $answer",
+  "correctAnswerWas": "Respuesta: {answer}",
   "@correctAnswerWas": {
     "placeholders": {
       "answer": {
@@ -129,7 +129,7 @@
   "resultGreatMessage": "¡Te fue muy bien en este viaje!",
   "resultGoodEffortMessage": "¡Buen esfuerzo! Repasa la jerga que fallaste e inténtalo de nuevo.",
   "resultTryAgainMessage": "Todo viaje comienza con un paso. ¿Qué tal repasar la lección e intentarlo de nuevo?",
-  "worldName": "Mundo $world",
+  "worldName": "Mundo {world}",
   "@worldName": {
     "placeholders": {
       "world": {
@@ -140,7 +140,7 @@
   "correctAnswersLabel": "Aciertos",
   "wrongAnswersLabel": "Errores",
   "timeLabel": "Tiempo",
-  "performancePercentage": "$percent% de rendimiento",
+  "performancePercentage": "{percent}% de rendimiento",
   "@performancePercentage": {
     "placeholders": {
       "percent": {
@@ -198,7 +198,7 @@
   "worldRelationshipsDescription": "Cómo la gente habla de conquistas, amistades y rupturas en las conversaciones de hoy.",
   "worldCommunityName": "Mundo De La Comunidad",
   "worldCommunityDescription": "El universo de la comunidad: términos, expresiones y conversaciones que unen a sus miembros.",
-  "slangsLearnedProgress": "$learned/$total jergas aprendidas",
+  "slangsLearnedProgress": "{learned}/{total} jergas aprendidas",
   "@slangsLearnedProgress": {
     "placeholders": {
       "learned": {
@@ -209,7 +209,7 @@
       }
     }
   },
-  "slangsToLearn": "$total jergas por aprender",
+  "slangsToLearn": "{total} jergas por aprender",
   "@slangsToLearn": {
     "placeholders": {
       "total": {
@@ -217,7 +217,7 @@
       }
     }
   },
-  "learnedOfTotal": "$learned/$total aprendidas",
+  "learnedOfTotal": "{learned}/{total} aprendidas",
   "@learnedOfTotal": {
     "placeholders": {
       "learned": {

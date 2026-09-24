@@ -9,6 +9,20 @@ import {
     listarGiriasAprendidasPorTodosMundos
 } from '../services/mundoService';
 import { salvarProgressoUsuario } from '../services/preogressoService';
+import { obterIdiomaDoUsuario } from '../services/usuarioService';
+import {
+    IDIOMAS_SUPORTADOS,
+    idiomaValido,
+} from '../utils/girias/dicionarioGirias';
+
+async function idiomaDaRequisicao(req: RequisicaoAutenticada): Promise<string> {
+    const solicitado = typeof req.query.idioma === 'string'
+        ? req.query.idioma.toLowerCase()
+        : '';
+    if (idiomaValido(solicitado)) return solicitado;
+    if (req.usuario?.id) return obterIdiomaDoUsuario(req.usuario.id);
+    return IDIOMAS_SUPORTADOS[0];
+}
 
 export function getMundos(req: RequisicaoAutenticada, res: Response) {
     try {
@@ -28,8 +42,9 @@ export function getMundos(req: RequisicaoAutenticada, res: Response) {
 
 export const getMundosComProgresso = async (req: RequisicaoAutenticada, res: Response) => {
     try {
-        const idUsuario = req.usuario!.id!;
-        const mundosComProgresso = await listarMundosComProgresso(idUsuario);
+        const idUsuario = req.usuario?.id ?? null;
+        const idioma = await idiomaDaRequisicao(req);
+        const mundosComProgresso = await listarMundosComProgresso(idUsuario, idioma);
 
         res.status(200).json({
             sucesso: true,
@@ -45,9 +60,10 @@ export const buscarMundo = async (req: RequisicaoAutenticada, res: Response) => 
     try {
 
         const { nome } = req.params as { nome: string };
-        const idUsuario = req.usuario!.id!; // garantido pelo middleware `autenticar`
+        const idUsuario = req.usuario?.id ?? null;
+        const idioma = await idiomaDaRequisicao(req);
 
-        const rodada = await prepararRodadaAleatoria(nome, idUsuario);
+        const rodada = await prepararRodadaAleatoria(nome, idUsuario, idioma);
 
         res.status(200).json(rodada);
 
@@ -65,8 +81,9 @@ export const getFasesDoMundo = async (req: RequisicaoAutenticada, res: Response)
     try {
         const nomeDoMundoRequisitado = req.params.nomeMundo as string;
         const idUsuario = req.usuario!.id!;
+        const idioma = await idiomaDaRequisicao(req);
 
-        const rodadaPronta = await prepararRodadaAleatoria(nomeDoMundoRequisitado, idUsuario);
+        const rodadaPronta = await prepararRodadaAleatoria(nomeDoMundoRequisitado, idUsuario, idioma);
 
         res.status(200).json(rodadaPronta);
     } catch (error: any) {
@@ -83,6 +100,7 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
     try {
         const { nomeDoMundo, girias, pontuacaoFinal } = req.body;
         const idUsuario = req.usuario!.id!;
+        const idioma = await idiomaDaRequisicao(req);
 
         if (pontuacaoFinal === undefined) {
             return res.status(400).json({ error: "A pontuação final é obrigatória." });
@@ -94,9 +112,6 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             });
         }
 
-        const contagemMundos = contarGiriasPorMundos();
-        const totalGiriasMundo = contagemMundos[nomeDoMundo] || 1;
-
         const ganhouPremio = verificarPremioCustomizavel(pontuacaoFinal);
 
         const { salvou, percentualAcerto, progressoMundo } = await salvarProgressoUsuario(
@@ -104,7 +119,7 @@ export const validarResultadoJogo = async (req: RequisicaoAutenticada, res: Resp
             idUsuario,
             girias,
             pontuacaoFinal,
-            totalGiriasMundo
+            idioma
         );
 
         res.status(200).json({
@@ -129,8 +144,9 @@ export const getGiriasAprendidasDoMundo = async (req: RequisicaoAutenticada, res
     try {
         const { nome } = req.params as { nome: string };
         const idUsuario = req.usuario!.id!;
+        const idioma = await idiomaDaRequisicao(req);
 
-        const girias = await listarTodasGiriasComStatusDoMundo(nome, idUsuario);
+        const girias = await listarTodasGiriasComStatusDoMundo(nome, idUsuario, idioma);
 
         res.status(200).json({
             sucesso: true,
@@ -146,8 +162,9 @@ export const getGiriasAprendidasDoMundo = async (req: RequisicaoAutenticada, res
 export const getGiriasAprendidasTodosMundos = async (req: RequisicaoAutenticada, res: Response) => {
     try {
         const idUsuario = req.usuario!.id!;
+        const idioma = await idiomaDaRequisicao(req);
 
-        const mundos = await listarGiriasAprendidasPorTodosMundos(idUsuario);
+        const mundos = await listarGiriasAprendidasPorTodosMundos(idUsuario, idioma);
 
         res.status(200).json({
             sucesso: true,
@@ -158,9 +175,10 @@ export const getGiriasAprendidasTodosMundos = async (req: RequisicaoAutenticada,
     }
 };
 
-export function contarGiriasPorMundo(req: RequisicaoAutenticada, res: Response) {
+export async function contarGiriasPorMundo(req: RequisicaoAutenticada, res: Response) {
     try {
-        const contagem = contarGiriasPorMundos();
+        const idioma = await idiomaDaRequisicao(req);
+        const contagem = contarGiriasPorMundos(idioma);
         res.status(200).json(contagem);
     } catch (error: any) {
         res.status(500).json({ error: error.message });

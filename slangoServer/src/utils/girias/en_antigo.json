@@ -1,0 +1,1104 @@
+{
+  "girias_antigas": [
+    {
+      "id": 1,
+      "nome": "ruckus",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Confusion or a big uproar.",
+      "tags": ["everyday", "informal"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "There was a huge ruckus at the condo meeting last night.",
+      "exemplos_incorretos": [
+        "I bought a delicious chocolate ruckus at the bakery.",
+        "I need to fill the car with ten liters of ruckus.",
+        "I'm going to wear my blue ruckus to the wedding."
+      ],
+      "significados_incorretos": [
+        "A type of traditional peanut-based candy.",
+        "A fossil fuel widely used in old engines.",
+        "A formal garment worn at gala parties."
+      ],
+      "impacto_motivo": "Refers to situations of disorder, disagreement, fighting, or confusion, carrying an unwanted or unpleasant connotation."
+    },
+    {
+      "id": 3,
+      "nome": "cool your heels",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To wait for a long time.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The doctor was two hours late and I had to cool my heels in the waiting room.",
+      "exemplos_incorretos": [
+        "I put a cool-your-heels in the living room to decorate the space.",
+        "I drank a hot cool-your-heels before bed to relax.",
+        "My pants ripped because I sat on a sharp cool-your-heels."
+      ],
+      "significados_incorretos": [
+        "An upholstered wooden piece of furniture used in dining rooms.",
+        "A medicinal herbal infusion that helps fight insomnia.",
+        "A pointed tool used by carpenters."
+      ],
+      "impacto_motivo": "Expresses the annoyance, tiredness, and wasted time associated with a long, unexpected wait."
+    },
+    {
+      "id": 4,
+      "nome": "go down the drain",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "Something going wrong or turning out very badly.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "If it rains on the day of our outdoor event, it's all going to go down the drain.",
+      "exemplos_incorretos": [
+        "I'm going to go down the drain to hang this picture on the wall.",
+        "I like to go down the drain every morning in the park to exercise.",
+        "I forgot to go down the drain and ended up missing the registration deadline."
+      ],
+      "significados_incorretos": [
+        "The act of fixing heavy objects using screws.",
+        "A sport focused on long-distance walking.",
+        "Filling out an official form with personal information."
+      ],
+      "impacto_motivo": "Denotes failure, complication, or looming trouble in a given situation."
+    },
+    {
+      "id": 5,
+      "nome": "miss the boat",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To miss an opportunity due to being distracted.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He was busy missing the boat and the concert tickets sold out right before his turn.",
+      "exemplos_incorretos": [
+        "I'm going to miss the boat on my calendar so I don't forget the exam date.",
+        "I need to miss the boat on the stove so the food doesn't burn.",
+        "He loves to miss the boat in the pool to train for professional swimming."
+      ],
+      "significados_incorretos": [
+        "Writing down an important appointment on a calendar.",
+        "Adjusting the internal temperature of appliances.",
+        "Using personal protective equipment in the water."
+      ],
+      "impacto_motivo": "Indicates a personal failure due to lack of attention or carelessness, resulting in the loss of something advantageous."
+    },
+    {
+      "id": 6,
+      "nome": "looker",
+      "variacoes": [],
+      "classe_gramatical": "noun phrase",
+      "significado": "A good-looking or attractive person.",
+      "tags": ["appearance", "informal"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The new soap opera actor is a real looker.",
+      "exemplos_incorretos": [
+        "I bought a looker to paint the walls of my room.",
+        "I have a horrible headache, I need to take a looker.",
+        "The looker broke when I tried to force the door open."
+      ],
+      "significados_incorretos": [
+        "A soft-bristled brush used in construction.",
+        "An over-the-counter painkiller sold at pharmacies.",
+        "A metal mechanism found in modern locks."
+      ],
+      "impacto_motivo": "It's a compliment about someone's looks or personal appearance."
+    },
+    {
+      "id": 7,
+      "nome": "oomph",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Charm or special appeal a person has.",
+      "tags": ["appearance", "behavior"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "That singer has an oomph that wins everyone over on stage.",
+      "exemplos_incorretos": [
+        "I'm going to add a bit of oomph to the beans to give them more flavor.",
+        "My car tire went flat because I ran over some oomph.",
+        "I wrote the whole text using the oomph font on the computer."
+      ],
+      "significados_incorretos": [
+        "A northeastern Brazilian seasoning made from dried herbs and pepper.",
+        "A pointed piece of iron found on dirt roads.",
+        "A text formatting style used in old newspapers."
+      ],
+      "impacto_motivo": "Attributes an attractive, charming, and magnetic quality to a person."
+    },
+    {
+      "id": 8,
+      "nome": "babe",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A pretty or attractive girl.",
+      "tags": ["appearance", "informal"],
+      "permissao": "teenagers",
+      "impacto": "positive",
+      "exemplo_correto": "That guy from the class next door is dating a total babe.",
+      "exemplos_incorretos": [
+        "The kitchen pipe burst and caused a huge babe.",
+        "I'm going to put on my new babe to go for a walk in the park.",
+        "I bought a three-tier babe to celebrate my birthday."
+      ],
+      "significados_incorretos": [
+        "A severe water leak in residential plumbing.",
+        "An athletic shoe with cushioned soles.",
+        "A festive cake decorated with fondant."
+      ],
+      "impacto_motivo": "It's an affectionate, complimentary way to refer to a young woman's beauty."
+    },
+    {
+      "id": 9,
+      "nome": "diddly-squat",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Nothing at all.",
+      "tags": ["everyday", "informal"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "He explained the physics lesson three times, but I didn't understand diddly-squat.",
+      "exemplos_incorretos": [
+        "I stored my clothes inside two plastic diddly-squats.",
+        "The little bird made a really pretty diddly-squat on the tree branch.",
+        "I'm going to turn on the TV's diddly-squats so I can watch the movie."
+      ],
+      "significados_incorretos": [
+        "A flexible bag or container used for transport.",
+        "A nest built by small birds using dry twigs.",
+        "An electronic component responsible for tuning channels."
+      ],
+      "impacto_motivo": "Just indicates the absence of something or lack of understanding, with no inherent moral or emotional judgment."
+    },
+    {
+      "id": 10,
+      "nome": "tacky",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "Out of fashion or considered tasteless.",
+      "tags": ["appearance", "fashion"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I thought that green suit with a yellow shirt combo was really tacky.",
+      "exemplos_incorretos": [
+        "I ate a delicious tacky for Sunday lunch.",
+        "The car engine is making a really loud tacky noise.",
+        "I'm going to use the tacky to clean the dirty window glass."
+      ],
+      "significados_incorretos": [
+        "A traditional dish made with puff pastry and meat filling.",
+        "A mechanical part installed near the engine's exhaust.",
+        "A microfiber cloth used to clean delicate surfaces."
+      ],
+      "impacto_motivo": "Expresses unfavorable criticism regarding someone's or something's taste, style, or elegance."
+    },
+    {
+      "id": 11,
+      "nome": "loopy",
+      "variacoes": [],
+      "classe_gramatical": "adjective phrase",
+      "significado": "A person considered crazy or very absent-minded.",
+      "tags": ["behavior", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "That guy is kind of loopy, he went out in the rain without an umbrella and wearing shorts.",
+      "exemplos_incorretos": [
+        "I bought a loopy pair of shoes that glow in the dark.",
+        "Dinner was loopy, everyone went back for seconds.",
+        "I need to fix the loopy on my computer so it turns back on."
+      ],
+      "significados_incorretos": [
+        "A children's shoe model with built-in lights.",
+        "A well-seasoned dish that pleases picky eaters.",
+        "A power button on desktop operating systems."
+      ],
+      "impacto_motivo": "Points to unbalanced, reckless, or eccentric behavior in a person."
+    },
+    {
+      "id": 12,
+      "nome": "hightail it",
+      "variacoes": [],
+      "classe_gramatical": "interjection phrase",
+      "significado": "An expression used to encourage someone to run or hurry up.",
+      "tags": ["action", "expression"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "The bus is already coming around the corner, hightail it!",
+      "exemplos_incorretos": [
+        "I spread hightail it on the bread to eat for breakfast.",
+        "I bought a new hightail it to light up my room.",
+        "The doctor prescribed hightail it to cure my flu."
+      ],
+      "significados_incorretos": [
+        "A creamy sweet made from cow's milk fat.",
+        "An old desk lamp that runs on kerosene.",
+        "A vitamin compound in drops used to boost immunity."
+      ],
+      "impacto_motivo": "It's a colloquial command to hurry, with no derogatory or complimentary weight."
+    },
+    {
+      "id": 13,
+      "nome": "hot air",
+      "variacoes": [],
+      "classe_gramatical": "noun phrase",
+      "significado": "A conversation with no substance that leads nowhere.",
+      "tags": ["conversation", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "That thing about giving everyone free gifts is pure hot air.",
+      "exemplos_incorretos": [
+        "I used some hot air to sew the button on my shirt.",
+        "The plumber replaced the hot air that was leaking in the bathroom.",
+        "I put the hot air on the wall to hang my coat."
+      ],
+      "significados_incorretos": [
+        "A thin needle used in tailoring handwork.",
+        "A PVC connector used in residential sewage systems.",
+        "A metal bracket fixed to vertical surfaces."
+      ],
+      "impacto_motivo": "Labels someone else's talk as dishonest, useless, or manipulative."
+    },
+    {
+      "id": 14,
+      "nome": "rough",
+      "variacoes": [],
+      "classe_gramatical": "adjective phrase",
+      "significado": "A difficult or dangerous situation.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "That neighborhood gets pretty rough late at night, better to avoid it.",
+      "exemplos_incorretos": [
+        "I ate a rough chocolate bar for my afternoon snack.",
+        "I bought a rough hair tie to wear during my workout.",
+        "The technician used a rough to measure the size of the table."
+      ],
+      "significados_incorretos": [
+        "A mass-produced sweet high in calories and sugar.",
+        "An elastic accessory used in sporty hairstyles.",
+        "A metal instrument used to measure exact lengths."
+      ],
+      "impacto_motivo": "Describes a dangerous environment or a tense, unfavorable moment."
+    },
+    {
+      "id": 15,
+      "nome": "sharp",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "A clever or smart person.",
+      "tags": ["behavior", "compliment"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "That kid is sharp, he solved the game's puzzle in two minutes.",
+      "exemplos_incorretos": [
+        "I'm going to put on my sharp to go play soccer with my friends.",
+        "I cut the bread using a really sharp in the kitchen.",
+        "The sky is full of sharp today, I think it's going to rain soon."
+      ],
+      "significados_incorretos": [
+        "A type of turf shoe with rubber studs.",
+        "A serrated household utensil used to slice food.",
+        "Dark gas formations that precede storms."
+      ],
+      "impacto_motivo": "Praises someone's cleverness, quick thinking, and wit."
+    },
+    {
+      "id": 16,
+      "nome": "square",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "A conservative person who avoids new things.",
+      "tags": ["behavior", "informal"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "My aunts and uncles are so square, they won't let their kids use social media.",
+      "exemplos_incorretos": [
+        "I'm going to light the square to light up the dark path.",
+        "I bought a leather square to keep my documents.",
+        "I drank a cold square after running on the beach."
+      ],
+      "significados_incorretos": [
+        "A cylindrical wax object that produces a steady flame.",
+        "A pocket accessory used to organize credit cards.",
+        "A refreshing carbonated drink made from citrus fruits."
+      ],
+      "impacto_motivo": "Generally used as criticism of someone's rigid attitude, lack of openness to new things, or old-fashioned outlook."
+    },
+    {
+      "id": 17,
+      "nome": "hunky-dory",
+      "variacoes": [],
+      "classe_gramatical": "interjection",
+      "significado": "An expression used to indicate that everything is fine.",
+      "tags": ["greeting", "expression"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "Don't worry, I already did the shopping and everything's hunky-dory here.",
+      "exemplos_incorretos": [
+        "I spent a lot of money buying a hunky-dory for running.",
+        "The hunky-dory broke down in the middle of the road and I had to call a tow truck.",
+        "I'm going to put some hunky-dory on my face to moisturize my skin before bed."
+      ],
+      "significados_incorretos": [
+        "High-performance sneakers used by marathon runners.",
+        "An all-wheel-drive utility vehicle used on farms.",
+        "An imported cosmetic cream with anti-aging properties."
+      ],
+      "impacto_motivo": "Shows satisfaction and confirms that a given state of affairs is working perfectly or in order."
+    },
+    {
+      "id": 18,
+      "nome": "on edge",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "Suspicious, worried, or uneasy.",
+      "tags": ["emotion", "behavior"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I got a little on edge about that story he told me about the missing money.",
+      "exemplos_incorretos": [
+        "The coat got on edge after I washed it on a hot cycle.",
+        "I ate an on edge pastry at the fair that was delicious.",
+        "The car tire is on edge, I need to change it urgently."
+      ],
+      "significados_incorretos": [
+        "Fabric that has shrunk due to excessive heat.",
+        "Fried food with a savory filling.",
+        "An inflatable object that is losing internal pressure."
+      ],
+      "impacto_motivo": "Reflects an emotional state of apprehension, suspicion, or inner unease."
+    },
+    {
+      "id": 19,
+      "nome": "crew",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A group of friends or gang.",
+      "tags": ["friendship", "social"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "My crew used to meet at the little square every Saturday afternoon.",
+      "exemplos_incorretos": [
+        "I peeled the crew to make a vegetable soup.",
+        "I wrote the note using a blue crew of ink.",
+        "The little bird broke its crew trying to fly into the glass."
+      ],
+      "significados_incorretos": [
+        "An edible starchy tuber cooked in meals.",
+        "A refillable ballpoint pen used in offices.",
+        "A bird's upper limb used for flight support."
+      ],
+      "impacto_motivo": "Descriptively refers to a social group or circle of friends, with no inherently good or bad connotation."
+    },
+    {
+      "id": 20,
+      "nome": "dough",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Money.",
+      "tags": ["money", "everyday"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I really liked that jacket, but I don't have the dough to buy it right now.",
+      "exemplos_incorretos": [
+        "I need to tie the dough on my shoe that came loose outside.",
+        "The dough sang really loudly in the tree early in the morning.",
+        "I'm going to use the dough to erase the mistake I made in my notebook."
+      ],
+      "significados_incorretos": [
+        "A cotton or nylon lace used in shoes.",
+        "A wild bird known for its loud morning song.",
+        "A soft synthetic rubber used to correct pencil writing."
+      ],
+      "impacto_motivo": "Represents financial resources or purchasing power, generally seen in a favorable light."
+    },
+    {
+      "id": 21,
+      "nome": "sulk",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To be in a bad mood or irritated.",
+      "tags": ["emotion", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He sulked because he couldn't go to the soccer game with everyone.",
+      "exemplos_incorretos": [
+        "I'm going to sulk on the couch waiting for lunch to be ready.",
+        "He loves to sulk to save his monthly paycheck.",
+        "We had to sulk to be able to cross the raging river."
+      ],
+      "significados_incorretos": [
+        "The act of resting on upholstered surfaces in the afternoon.",
+        "The practice of keeping savings in bank accounts.",
+        "Navigating small boats using oars."
+      ],
+      "impacto_motivo": "Expresses the person's annoyance, dissatisfaction, or bad mood."
+    },
+    {
+      "id": 22,
+      "nome": "off in la-la land",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To imagine absurd things or lose touch with reality.",
+      "tags": ["imagination", "expression"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "You're off in la-la land if you think you're going to ace the test without studying at all.",
+      "exemplos_incorretos": [
+        "I loaded the suitcases into the car to go off in la-la land with the family.",
+        "I'm going to go off in la-la land to season the potato salad.",
+        "He had to go off in la-la land to renew his passport at the police station."
+      ],
+      "significados_incorretos": [
+        "Traveling to other cities using state highways.",
+        "Adding seasoned sauces to cold dishes.",
+        "Going to government offices to get visas issued."
+      ],
+      "impacto_motivo": "Indicates daydreaming, an out-of-context thought, or distraction, without necessarily carrying an offensive or complimentary weight."
+    },
+    {
+      "id": 23,
+      "nome": "pain in the neck",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "A very annoying or bothersome person.",
+      "tags": ["behavior", "insult"],
+      "permissao": "teenagers",
+      "impacto": "negative",
+      "exemplo_correto": "That kid is such a pain in the neck, he pulls his sister's hair all day long.",
+      "exemplos_incorretos": [
+        "I bought a new pain in the neck at the pharmacy.",
+        "I used the pain in the neck to comb my hair this morning.",
+        "The keychain has a metal pain in the neck to attach to your pants."
+      ],
+      "significados_incorretos": [
+        "A plastic brush used for daily oral hygiene.",
+        "An object with fine teeth used to align hair strands.",
+        "A flexible ring used to group household keys."
+      ],
+      "impacto_motivo": "It's a derogatory, offensive word used to bother or label someone as unpleasant."
+    },
+    {
+      "id": 24,
+      "nome": "crack up",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To laugh a lot.",
+      "tags": ["humor", "expression"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "We went to see that comedy at the movies and cracked up from start to finish.",
+      "exemplos_incorretos": [
+        "The little bird hit the wall and actually cracked up its beak.",
+        "I'm going to crack up the ice cream to share with my brother.",
+        "I need to crack up the pen so it starts writing again."
+      ],
+      "significados_incorretos": [
+        "Causing a fracture in the keratin structure of wild birds.",
+        "Splitting portions of frozen food using knives.",
+        "Pressing down the ballpoint tip of writing instruments."
+      ],
+      "impacto_motivo": "Associated with a moment of joy, intense fun, and lightheartedness."
+    },
+    {
+      "id": 25,
+      "nome": "plugged in",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "Well informed or knowledgeable about things.",
+      "tags": ["knowledge", "behavior"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "She's super plugged in when it comes to tech, she knows everything about the new releases.",
+      "exemplos_incorretos": [
+        "The radio is plugged in to the living room wall with tape.",
+        "I got plugged in traffic because of an accident on the road.",
+        "The coat is plugged in, I need to sew the zipper that broke."
+      ],
+      "significados_incorretos": [
+        "An object fixed to vertical surfaces by gluing.",
+        "Being stuck in traffic jams of motor vehicles.",
+        "A piece of clothing that shows damage to its fasteners."
+      ],
+      "impacto_motivo": "Praises someone's attentiveness, being up to date, and ability to stay well informed on certain topics."
+    },
+    {
+      "id": 26,
+      "nome": "hit on",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To flirt with someone.",
+      "tags": ["relationships", "social"],
+      "permissao": "teenagers",
+      "impacto": "positive",
+      "exemplo_correto": "Back in the day, young people used to go to the town dance just to hit on people.",
+      "exemplos_incorretos": [
+        "He went to hit on the game by rolling the dice on the round table.",
+        "I'm going to hit on the whole house using a broom and a duster.",
+        "The mechanic tried to hit on the engine to figure out the electrical problem."
+      ],
+      "significados_incorretos": [
+        "Taking part in games of chance involving money bets.",
+        "Doing heavy cleaning of indoor residential spaces.",
+        "Performing preventive maintenance on electromechanical parts."
+      ],
+      "impacto_motivo": "Relates to the playful game of attraction, flirting, and fun romantic interaction between people."
+    },
+    {
+      "id": 27,
+      "nome": "minger",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A person considered ugly or tacky-looking.",
+      "tags": ["appearance", "insult"],
+      "permissao": "teenagers",
+      "impacto": "negative",
+      "exemplo_correto": "Those old clothes in the photo made her look like a total minger.",
+      "exemplos_incorretos": [
+        "I ate a roasted minger with potatoes at the corner restaurant.",
+        "The boat sank because it hit a minger of ice.",
+        "I'm going to hang the minger on the wall to decorate my room."
+      ],
+      "significados_incorretos": [
+        "A species of deep-water fish widely eaten along the coast.",
+        "A solid block of floating ice found in polar regions.",
+        "A framed piece of art used as home decor."
+      ],
+      "impacto_motivo": "It's an insulting expression used to belittle someone's looks or style."
+    },
+    {
+      "id": 28,
+      "nome": "ticked off",
+      "variacoes": [],
+      "classe_gramatical": "adjective",
+      "significado": "Upset, angry, or bothered.",
+      "tags": ["emotion", "behavior"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I got ticked off because my best friend didn't invite me to his party.",
+      "exemplos_incorretos": [
+        "I ate a ticked off sweet made with condensed milk and coconut.",
+        "The truck's ticked off tire blew out in the middle of the highway.",
+        "I wrote the note on a ticked off piece of paper I found in the drawer."
+      ],
+      "significados_incorretos": [
+        "A round confectionery treat often served at kids' parties.",
+        "A pneumatic object with structural deformities in the rubber.",
+        "A sheet of paper with circular textures used for drawing."
+      ],
+      "impacto_motivo": "Expresses discontent, annoyance, or displeasure about something."
+    },
+    {
+      "id": 29,
+      "nome": "chat up",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To flirt with or try to win someone over.",
+      "tags": ["relationships", "social"],
+      "permissao": "teenagers",
+      "impacto": "positive",
+      "exemplo_correto": "He tried to chat up the girl from the bakery, but ended up getting turned down.",
+      "exemplos_incorretos": [
+        "I'm going to chat up the front door lock because I lost the remote.",
+        "The carpenter had to chat up the wood to get a smooth finish.",
+        "He started to chat up loudly into the mic during the broadcast."
+      ],
+      "significados_incorretos": [
+        "The action of opening latches or locks using physical keys.",
+        "Wearing down rustic surfaces through mechanical sanding.",
+        "Emitting high-pitched vocal sounds that distort audio equipment."
+      ],
+      "impacto_motivo": "Refers to romantic advances or flirting meant to show romantic interest in someone."
+    },
+    {
+      "id": 30,
+      "nome": "a sure thing",
+      "variacoes": [],
+      "classe_gramatical": "adjective phrase",
+      "significado": "Something that always happens or is guaranteed.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "That Wednesday night soccer game with the work crew is a sure thing.",
+      "exemplos_incorretos": [
+        "The judge read the sure thing book to arrest the criminal red-handed.",
+        "I bought a table made of sure thing that will last many years in the living room.",
+        "I wrote a sure thing on paper to send to my cousin."
+      ],
+      "significados_incorretos": [
+        "A legal code or compilation of printed constitutional articles.",
+        "A high-density material extracted from noble native trees.",
+        "A formal letter handwritten to distant relatives."
+      ],
+      "impacto_motivo": "Describes habits, routines, or regular traditions without implying a positive or negative value."
+    },
+    {
+      "id": 31,
+      "nome": "score",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To get or obtain something.",
+      "tags": ["everyday", "action"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I'm going to see if I can score two VIP tickets for the festival this weekend.",
+      "exemplos_incorretos": [
+        "I'm going to score the sticker off the wall to stick it in another notebook.",
+        "The kite started to score in the sky as soon as the strong wind stopped.",
+        "I need to score the bone in my arm to get it put in a cast at the hospital."
+      ],
+      "significados_incorretos": [
+        "Removing adhesive films from surfaces by hand-pulling.",
+        "Losing altitude abruptly due to lack of air currents.",
+        "An orthopedic procedure for realigning fractured joints."
+      ],
+      "impacto_motivo": "Associated with succeeding in getting resources, opportunities, or desired items."
+    },
+    {
+      "id": 32,
+      "nome": "preppy",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A well put-together, proper guy, often associated with a privileged financial background.",
+      "tags": ["behavior", "stereotype"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "That kid is such a preppy, he only wears brand-name shirts and always has his hair perfectly done.",
+      "exemplos_incorretos": [
+        "I ate a delicious chicken preppy at the diner.",
+        "The mechanic replaced the engine's preppy that was broken.",
+        "I'm going to use the preppy to clean the dirt built up on the rug."
+      ],
+      "significados_incorretos": [
+        "A fried snack made with potato dough and a protein filling.",
+        "A hydraulic component fixed near a car's radiator.",
+        "An appliance used to vacuum up solid debris."
+      ],
+      "impacto_motivo": "Although it describes a social stereotype or lifestyle, it's used primarily as a descriptive label without a strictly offensive or complimentary tone."
+    },
+    {
+      "id": 33,
+      "nome": "princess",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A girl considered very vain, rich, or spoiled.",
+      "tags": ["behavior", "stereotype"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "She's totally the princess type, loves going to the mall and only wears pink clothes.",
+      "exemplos_incorretos": [
+        "I planted a princess in the garden that grows yellow flowers.",
+        "I bought a princess toolkit to fix the sink.",
+        "The ship's princess broke when it hit the concrete dock."
+      ],
+      "significados_incorretos": [
+        "A type of ornamental shrub native to subtropical regions.",
+        "A hard plastic case used to store wrenches.",
+        "A wooden structure used to anchor large vessels."
+      ],
+      "impacto_motivo": "Acts as a descriptive label for a style and social profile, which can vary by context without necessarily being a harsh insult."
+    },
+    {
+      "id": 34,
+      "nome": "torch your reputation",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To damage one's own image or reputation.",
+      "tags": ["behavior", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Don't show up late to the interview or you'll torch your reputation with the boss.",
+      "exemplos_incorretos": [
+        "I'm going to torch my reputation on the stove to warm up the house.",
+        "I forgot the reputation in the sun and it ended up torching the camera's reputation.",
+        "He used a match to torch his reputation that was on the plastic DVD."
+      ],
+      "significados_incorretos": [
+        "Incinerating cellulose rolls to produce thermal energy.",
+        "Causing overexposure to light on analog photographic film.",
+        "Melting digital storage media using direct heat."
+      ],
+      "impacto_motivo": "Involves damage to one's reputation, loss of standing, or unfavorable judgment from others."
+    },
+    {
+      "id": 35,
+      "nome": "the slammer",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Jail or prison.",
+      "tags": ["safety", "everyday"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The thief got caught robbing the store and went straight to the slammer.",
+      "exemplos_incorretos": [
+        "I drank a nice cold glass of the slammer with strawberry flavor.",
+        "I played the slammer made of metal in music class at school.",
+        "I'm going to use the slammer to take my little brother's temperature."
+      ],
+      "significados_incorretos": [
+        "A sweet syrup mixed with sparkling water and artificial flavoring.",
+        "A percussion instrument made of small iron bars.",
+        "A clinical glass device used to measure body temperature."
+      ],
+      "impacto_motivo": "Refers to incarceration and the loss of freedom resulting from crimes."
+    },
+    {
+      "id": 36,
+      "nome": "mess around",
+      "variacoes": ["goofing around"],
+      "classe_gramatical": "verb",
+      "significado": "To joke around, cause a ruckus, or tease someone.",
+      "tags": ["humor", "social"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "We love to mess with our friend whenever his team loses the big match.",
+      "exemplos_incorretos": [
+        "I'm going to mess around the birthday cake using colorful candles.",
+        "The airplane started to mess around loudly in the sky before landing on the runway.",
+        "I need to mess around the garden plants so they don't dry out in summer."
+      ],
+      "significados_incorretos": [
+        "Decorating festive sweets using edible toppings.",
+        "Producing low sound waves caused by propellers.",
+        "Watering plant species to maintain hydration."
+      ],
+      "impacto_motivo": "Can represent healthy teasing between friends or a jab, varying by context without a fixed positive or negative impact by default."
+    },
+    {
+      "id": 37,
+      "nome": "frenemy",
+      "variacoes": [],
+      "classe_gramatical": "noun phrase",
+      "significado": "A person who pretends to be a friend but actually harms or betrays you.",
+      "tags": ["friendship", "insult"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I found out he told my secret to everyone, what a frenemy.",
+      "exemplos_incorretos": [
+        "I went to the zoo and saw a frenemy sleeping in the shade.",
+        "I bought a frenemy print for my son's t-shirt.",
+        "The documentary showed a frenemy hunting at night in the savanna."
+      ],
+      "significados_incorretos": [
+        "A large wild feline found in tropical forests.",
+        "A textile pattern that mimics wild animal fur.",
+        "Wildlife photography taken by researchers."
+      ],
+      "impacto_motivo": "Calls out the falseness and betrayal of someone who presents themselves as a friend but acts against the other person's interests."
+    },
+    {
+      "id": 38,
+      "nome": "kiss up",
+      "variacoes": ["brown-nosing"],
+      "classe_gramatical": "verb phrase",
+      "significado": "To excessively and self-servingly flatter or suck up to someone.",
+      "tags": ["behavior", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "He's always kissing up to the boss just to get a promotion.",
+      "exemplos_incorretos": [
+        "I'm going to kiss up to make an omelet for breakfast.",
+        "The baby was kissing up after eating the baby food.",
+        "I need to kiss up in the birthday cake recipe."
+      ],
+      "significados_incorretos": [
+        "The culinary process of beating eggs to prepare recipes.",
+        "Drooling excessively during infant feeding.",
+        "Mixing liquid ingredients in a kitchen bowl."
+      ],
+      "impacto_motivo": "Criticizes exaggerated, insincere flattery, usually driven by self-interest."
+    },
+    {
+      "id": 39,
+      "nome": "dude",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "An affectionate, informal way to refer to a friend.",
+      "tags": ["friendship", "greeting"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "Hey dude, want to go grab a beer tonight?",
+      "exemplos_incorretos": [
+        "I saw a strange dude wandering around the backyard at dawn.",
+        "I bought food for my neighbor's pet dude.",
+        "The vet examined the dude that had hurt its paw."
+      ],
+      "significados_incorretos": [
+        "A domestic or wild animal of any species.",
+        "An unknown creature spotted in rural areas.",
+        "A non-human living being that needs veterinary care."
+      ],
+      "impacto_motivo": "Used affectionately among close friends, reinforcing bond and camaraderie."
+    },
+    {
+      "id": 40,
+      "nome": "kick the bucket",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To die.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "My grandfather kicked the bucket last year, at ninety-two years old.",
+      "exemplos_incorretos": [
+        "I'm going to kick the bucket at the door to get the mud off before coming in.",
+        "I bought a new pair of boots to kick the bucket in the snow.",
+        "He likes to kick the bucket to the beat of the music during the show."
+      ],
+      "significados_incorretos": [
+        "Cleaning shoe soles by tapping them on the ground.",
+        "Dancing by tapping your feet to the beat.",
+        "Buying a new pair of shoes for winter use."
+      ],
+      "impacto_motivo": "Refers to someone's passing, a topic associated with loss and mourning."
+    },
+    {
+      "id": 41,
+      "nome": "be lost",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To not understand anything that's happening or being said.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "The teacher explained the material so fast that I was totally lost from start to finish.",
+      "exemplos_incorretos": [
+        "The little boat was calmly lost in the middle of the lake.",
+        "I'm going to get lost in the pool to relax after work.",
+        "The yellow buoy was lost near the beach to signal danger."
+      ],
+      "significados_incorretos": [
+        "Floating on the surface of the water without sinking.",
+        "Remaining adrift on a body of liquid.",
+        "A recreational floating activity in pools or the sea."
+      ],
+      "impacto_motivo": "Indicates confusion, lack of understanding, or being out of the loop on a subject, causing discomfort for whoever is lost."
+    },
+    {
+      "id": 42,
+      "nome": "cash",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Money.",
+      "tags": ["money", "everyday"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "I saved up some cash this month to buy a cool birthday present.",
+      "exemplos_incorretos": [
+        "I'm going to put cash on my hair to make it shinier.",
+        "I ate a delicious cash at the Japanese restaurant yesterday.",
+        "The car made a weird cash noise when I started the engine."
+      ],
+      "significados_incorretos": [
+        "A cosmetic product used for hair treatment.",
+        "A typical Asian dish served with a special sauce.",
+        "A mechanical noise associated with engine failures in vehicles."
+      ],
+      "impacto_motivo": "Represents financial resources, generally seen favorably when you have it."
+    },
+    {
+      "id": 43,
+      "nome": "a line",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "A lie or empty talk used to deceive someone.",
+      "tags": ["conversation", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Don't believe that line he fed you about the new car, it's all made up.",
+      "exemplos_incorretos": [
+        "I'm going to line the door that's been stuck for days.",
+        "I bought a new line to decorate the living room shelf.",
+        "The radio's line was on really loud during the trip."
+      ],
+      "significados_incorretos": [
+        "A decorative object used in residential spaces.",
+        "An electronic device responsible for playing audio.",
+        "A fastening mechanism used on stuck doors and windows."
+      ],
+      "impacto_motivo": "Labels someone's speech as deceptive, false, or manipulative, generating distrust in the listener."
+    },
+    {
+      "id": 44,
+      "nome": "be flat broke",
+      "variacoes": [],
+      "classe_gramatical": "verb phrase",
+      "significado": "To be out of money or going through financial hardship.",
+      "tags": ["money", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I can't go out this month, I'm flat broke after paying all my bills.",
+      "exemplos_incorretos": [
+        "I'm going to plant flat broke in the backyard to make a living fence.",
+        "I ate a delicious flat broke at the farmers market yesterday.",
+        "The river was full of flat broke after the heavy summer rain."
+      ],
+      "significados_incorretos": [
+        "A shrub plant used for fences and marking land boundaries.",
+        "A regional fruit sold at markets and street fairs.",
+        "Vegetation typical of riverbanks after flooding."
+      ],
+      "impacto_motivo": "Describes a tough financial situation, associated with lack of resources and worry."
+    },
+    {
+      "id": 45,
+      "nome": "be smitten",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To fall in love with or become enchanted by someone or something.",
+      "tags": ["relationships", "emotion"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "The moment he saw her at the party, he was smitten and went to strike up a conversation.",
+      "exemplos_incorretos": [
+        "I'm going to be smitten with the car engine that's making a weird noise.",
+        "I need to be smitten with this wall before painting the new room.",
+        "The electrician was called to be smitten with the kitchen wiring."
+      ],
+      "significados_incorretos": [
+        "Fixing or adjusting faulty mechanical parts.",
+        "Preparing surfaces to receive paint or coating.",
+        "Repairing residential electrical installations with issues."
+      ],
+      "impacto_motivo": "Expresses enchantment, passion, or intense fascination with someone or something, generally a welcome feeling."
+    },
+    {
+      "id": 46,
+      "nome": "the fuzz",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Police.",
+      "tags": ["safety", "everyday"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Run, the fuzz is coming this way, someone must have called because of the noise.",
+      "exemplos_incorretos": [
+        "I bought a stuffed fuzz for my nephew as a gift.",
+        "The zoo's fuzz was sleeping inside its enclosure.",
+        "I saw a fuzz crossing the road during the night drive."
+      ],
+      "significados_incorretos": [
+        "A small nocturnal marsupial found in rural areas.",
+        "A stuffed pet used as decoration.",
+        "A wild species common in forest and savanna regions."
+      ],
+      "impacto_motivo": "Used in a derogatory or alerting tone to refer to police officers, usually in contexts of running away or distrust of authority."
+    },
+    {
+      "id": 47,
+      "nome": "rib",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To mock or tease someone.",
+      "tags": ["behavior", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Stop ribbing him about the way he talks, it's not funny at all.",
+      "exemplos_incorretos": [
+        "I'm going to rib the fruit that fell from the tree in the backyard.",
+        "I bought a ripe rib to make juice for breakfast.",
+        "The orchard was full of rib ready for harvest."
+      ],
+      "significados_incorretos": [
+        "A tropical fruit with sweet pulp widely eaten in summer.",
+        "A fruit tree common in warm climate regions.",
+        "A vitamin-rich food harvested from home orchards."
+      ],
+      "impacto_motivo": "Indicates mockery or teasing directed at someone, which can cause embarrassment or hurt feelings."
+    },
+    {
+      "id": 48,
+      "nome": "twiddle your thumbs",
+      "variacoes": [],
+      "classe_gramatical": "verb",
+      "significado": "To wait for a long time or be left unused.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "I was twiddling my thumbs in line at the bank for over an hour this morning.",
+      "exemplos_incorretos": [
+        "The bread started to twiddle its thumbs after a week outside the fridge.",
+        "I'm going to twiddle my thumbs with the cheese to make that special recipe.",
+        "The fruit twiddled its thumbs quickly because it was left out in the heat."
+      ],
+      "significados_incorretos": [
+        "Developing mold on food due to exposure to moisture.",
+        "The deterioration process of perishable products.",
+        "A chemical change that occurs in poorly stored food."
+      ],
+      "impacto_motivo": "Expresses the annoyance of being stuck, forgotten, or waiting around for a long time unnecessarily."
+    },
+    {
+      "id": 49,
+      "nome": "drama",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Confusion, trouble, or a problem.",
+      "tags": ["everyday", "expression"],
+      "permissao": "everyone",
+      "impacto": "negative",
+      "exemplo_correto": "Better not go to that party, they say there's always drama by the end of the night.",
+      "exemplos_incorretos": [
+        "I bought a new drama to store my important documents.",
+        "I'm going to put the drama on the table to decorate tonight's dinner.",
+        "The drama broke as soon as I tried to turn on the computer this morning."
+      ],
+      "significados_incorretos": [
+        "A storage item used to organize papers.",
+        "A decorative item used on formal dining tables.",
+        "An electronic component responsible for powering up devices."
+      ],
+      "impacto_motivo": "Refers to problematic or confusing situations, usually unwanted by those involved."
+    },
+    {
+      "id": 50,
+      "nome": "spark",
+      "variacoes": [],
+      "classe_gramatical": "noun",
+      "significado": "Charm, sensuality, or a special touch that draws attention.",
+      "tags": ["appearance", "compliment"],
+      "permissao": "everyone",
+      "impacto": "positive",
+      "exemplo_correto": "That new outfit has a real spark to it on you.",
+      "exemplos_incorretos": [
+        "I'm going to put spark in the engine so it runs better.",
+        "I bought a spark of screws to fix the chair.",
+        "The electrician replaced the spark in the outlet that had burned out."
+      ],
+      "significados_incorretos": [
+        "A mechanical part used in auto repairs.",
+        "A fastening tool used in carpentry and assembly.",
+        "An electrical component responsible for conducting energy."
+      ],
+      "impacto_motivo": "Compliments the striking presence, charisma, or special touch of a person or thing that stands out."
+    },
+    {
+      "id": 51,
+      "nome": "old man",
+      "variacoes": ["old lady"],
+      "classe_gramatical": "noun",
+      "significado": "An older person, usually used to refer to one's parents or middle-aged adults.",
+      "tags": ["family", "everyday"],
+      "permissao": "everyone",
+      "impacto": "neutral",
+      "exemplo_correto": "I'm going to ask my old man to lend me money to buy the concert ticket.",
+      "exemplos_incorretos": [
+        "The king wore a gold old man studded with precious stones.",
+        "I bought a flower old man to decorate the wedding table.",
+        "The dentist put a new old man on my broken tooth."
+      ],
+      "significados_incorretos": [
+        "A royal ornament worn by monarchs at official ceremonies.",
+        "A circular flower arrangement used in festive decorations.",
+        "A dental prosthesis used to restore damaged teeth."
+      ],
+      "impacto_motivo": "An informal and generally affectionate term for older people, with no fixed positive or negative emotional weight."
+    }
+  ]
+}

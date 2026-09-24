@@ -1,0 +1,1360 @@
+{
+  "redessociais": [
+    {
+      "id": 1,
+      "nome": "10/10",
+      "variacoes": [
+        "ten out of ten"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Slang used to say that something or someone is perfect, excellent or very good-looking, reaching the maximum score.",
+      "tags": [
+        "appearance",
+        "internet",
+        "gamers",
+        "praise"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "The new season of that series is 10/10, I highly recommend it!",
+      "exemplos_incorretos": [
+        "I put 10/10 of flour in the cake recipe.",
+        "The movie was so-so, I give it a 10/10 without exaggeration.",
+        "I liked the restaurant quite a lot, I'll easily give it a 10/10."
+      ],
+      "significados_incorretos": [
+        "A measurement used in cooking recipes.",
+        "A mediocre score, neither good nor bad, given to a product.",
+        "Any compliment given to something, even if it isn't the maximum."
+      ],
+      "impacto_motivo": "Positive because it expresses approval, satisfaction or admiration toward something or someone, conveying a highly favorable evaluation."
+    },
+    {
+      "id": 2,
+      "nome": "LOL",
+      "variacoes": [
+        "lol"
+      ],
+      "classe_gramatical": "acronym",
+      "significado": "Acronym for 'Laughing Out Loud'. It is used to show that you found something very funny.",
+      "tags": [
+        "humor",
+        "laughter",
+        "english",
+        "games"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "The meme you sent to the group chat was so good, LOL!",
+      "exemplos_incorretos": [
+        "The medicine leaflet said to take LOL times a day.",
+        "I saw the news and just thought LOL, I didn't even care.",
+        "I'm going to play LOL tonight with my friends."
+      ],
+      "significados_incorretos": [
+        "An acronym used on medicine leaflets to indicate dosage.",
+        "An expression used to show indifference about something.",
+        "An acronym for a popular video game."
+      ],
+      "impacto_motivo": "Positive because it expresses approval, satisfaction or admiration toward something or someone, conveying a highly favorable evaluation."
+    },
+    {
+      "id": 3,
+      "nome": "stalk",
+      "variacoes": [
+        "stalking",
+        "stalker",
+        "stalked"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To thoroughly investigate or follow someone's routine on social media, looking at their old photos, likes and comments.",
+      "tags": [
+        "social-media",
+        "behavior",
+        "investigation"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "I went to stalk my crush's Instagram and accidentally liked a photo from 2018.",
+      "exemplos_incorretos": [
+        "I called the plumber to stalk the pipe in the kitchen.",
+        "I keep stalking and liking everything she posts, without hiding it.",
+        "I looked at his profile just once, I guess that already counts as stalking."
+      ],
+      "significados_incorretos": [
+        "To fix a leaking pipe under the sink.",
+        "To publicly follow someone while praising all their posts.",
+        "To view someone's profile a single time out of curiosity."
+      ],
+      "impacto_motivo": "Negative because it can be used in an invasive or disturbing way."
+    },
+    {
+      "id": 4,
+      "nome": "crush",
+      "variacoes": [
+        "my crush"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A person you have a romantic or platonic attraction to, that famous 'love interest' or 'thing' for someone.",
+      "tags": [
+        "relationship",
+        "love",
+        "internet"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "Yesterday I finally got up the courage and started a conversation with my crush.",
+      "exemplos_incorretos": [
+        "I replaced the crush of the washing machine that was broken.",
+        "My crush is my best friend since childhood, no romantic vibes at all.",
+        "I thought he looked good at the party, I guess he became my crush."
+      ],
+      "significados_incorretos": [
+        "A spare part used in washing machines.",
+        "A close, long-time friend with no romantic involvement.",
+        "Anyone you think is good-looking, even without feeling anything more."
+      ],
+      "impacto_motivo": "Positive because it describes a spontaneous feeling of attraction or admiration, commonly mentioned in a light and humorous way."
+    },
+    {
+      "id": 5,
+      "nome": "OMG",
+      "variacoes": [
+        "omg",
+        "oh my god"
+      ],
+      "classe_gramatical": "acronym",
+      "significado": "Quick abbreviation for 'Oh My God', widely used in messages to express fright, joy, amazement or shock at some gossip.",
+      "tags": [
+        "reaction",
+        "gossip",
+        "emotion"
+      ],
+      "permissao": "all",
+      "impacto": "depends on context",
+      "exemplo_correto": "OMG, you won't believe what happened at the party last night!",
+      "exemplos_incorretos": [
+        "The device manual mentioned the acronym OMG on page three.",
+        "OMG, okay, that works, it can be like that.",
+        "OMG, I felt very sad about that news."
+      ],
+      "significados_incorretos": [
+        "An acronym used in technical electronics manuals.",
+        "An expression used to calmly agree with something.",
+        "An abbreviation to show deep sadness."
+      ],
+      "impacto_motivo": "Depends on context because the expression can indicate both positive shock (pleasant surprise) and negative shock (fright or outrage), varying according to the situation."
+    },
+    {
+      "id": 6,
+      "nome": "peak",
+      "variacoes": [
+        "the peak",
+        "peak cringe"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Often used as mockery to say that something is the limit of ridiculousness or, positively, to say that a person is at their best moment.",
+      "tags": [
+        "reaction",
+        "twitter",
+        "mockery"
+      ],
+      "permissao": "all",
+      "impacto": "depends on context",
+      "exemplo_correto": "He got mad at me because I liked an old photo. Wow, that was the peak of immaturity.",
+      "exemplos_incorretos": [
+        "I tightened the peak of the shelf that was loose.",
+        "He tripped in front of everyone, that was the exact peak moment when he messed up in public.",
+        "It was an ordinary day, nothing special, the peak of routine."
+      ],
+      "significados_incorretos": [
+        "A type of screw used in metal structures.",
+        "The exact moment when someone messes up badly in public.",
+        "Any normal, boring situation of everyday life."
+      ],
+      "impacto_motivo": "Depends on context because it can be used both as critical mockery and as genuine praise for someone's best moment."
+    },
+    {
+      "id": 7,
+      "nome": "ship",
+      "variacoes": [
+        "shipping",
+        "shipped",
+        "I ship it"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "The act of rooting for two people (real or fictional characters) to get together and form a romantic couple.",
+      "tags": [
+        "relationship",
+        "fandom",
+        "series"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "I can't stop shipping those two actors, their chemistry is perfect.",
+      "exemplos_incorretos": [
+        "I called the electrician to ship the shower that wouldn't heat up.",
+        "I can't stand those two together in the series, I hate to ship them.",
+        "Those two characters are enemies in the story, and I ship them because I want them to keep fighting."
+      ],
+      "significados_incorretos": [
+        "To fix the wiring of an electric shower.",
+        "To hate the relationship between two characters in a series.",
+        "To root for two characters to stay enemies and keep fighting."
+      ],
+      "impacto_motivo": "Positive because it expresses sincere rooting for two people to end up together."
+    },
+    {
+      "id": 8,
+      "nome": "troll",
+      "variacoes": [
+        "trolling",
+        "trolled",
+        "trollface"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "The act of tricking, pulling a prank, joking around or making fun of someone on the internet or in real life.",
+      "tags": [
+        "prank",
+        "humor",
+        "joke"
+      ],
+      "permissao": "all",
+      "impacto": "depends on context",
+      "exemplo_correto": "I put salt in the sugar bowl just to troll my brother at breakfast.",
+      "exemplos_incorretos": [
+        "I took the bike to the shop to troll the brakes.",
+        "He got really angry and went to troll the guy with insults.",
+        "I made an innocent little joke with him, I guess that was trolling too."
+      ],
+      "significados_incorretos": [
+        "To repair the brakes of a bicycle.",
+        "To insult someone with truly offensive words.",
+        "To make any joke, even without the intention of tricking anyone."
+      ],
+      "impacto_motivo": "Depends on context because it can be a light joke between friends or a mean-spirited mockery, depending on the intent of the person trolling."
+    },
+    {
+      "id": 9,
+      "nome": "flop",
+      "variacoes": [
+        "flopped",
+        "flopping",
+        "a flop"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "It means to fail, to not have the expected success or to generate low engagement (like a post with no likes).",
+      "tags": [
+        "situation",
+        "social-media",
+        "disappointment"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "That singer's new music video didn't please the fans and ended up flopping in views.",
+      "exemplos_incorretos": [
+        "I bought some very comfortable sandals with a flop sole.",
+        "The movie had a huge opening weekend and broke records, so it flopped.",
+        "The post got a lot of likes but almost nobody commented, so it kind of flopped."
+      ],
+      "significados_incorretos": [
+        "A type of shoe sole used in sandals.",
+        "A huge success that breaks records.",
+        "A post that gets few comments even when it has many likes."
+      ],
+      "impacto_motivo": "Negative because it describes failure or lack of success, a clearly unfavorable connotation."
+    },
+    {
+      "id": 10,
+      "nome": "poser",
+      "variacoes": [
+        "posers"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A person who pretends to be a fan of something (a band, a game, a culture) just to be trendy or fit in, without really knowing the subject.",
+      "tags": [
+        "behavior",
+        "fandom",
+        "judgment"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "He wears that rock band's shirt but doesn't know the name of a single song. Total poser.",
+      "exemplos_incorretos": [
+        "I used poser to glue back the sole of my sneaker that came off.",
+        "He knows everything about the band but never says anything, a quiet poser.",
+        "She's new to the fandom and is still learning, she must be a poser."
+      ],
+      "significados_incorretos": [
+        "A type of glue used on shoes.",
+        "Someone who knows a subject very well but doesn't talk about it.",
+        "A newcomer to a group who is still learning about the subject."
+      ],
+      "impacto_motivo": "Negative because it accuses someone of being fake and superficial about an interest that isn't genuine."
+    },
+    {
+      "id": 11,
+      "nome": "hype",
+      "variacoes": [
+        "hyped",
+        "hyped up",
+        "the hype"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "The extreme level of expectation, excitement and attention that something (a game release, movie or trend) receives on the internet.",
+      "tags": [
+        "trend",
+        "fashion",
+        "anticipation"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "The hype for the premiere of the new Spider-Man movie is insane, tickets are already sold out.",
+      "exemplos_incorretos": [
+        "The new backpack has a very sturdy hype buckle.",
+        "Everybody criticized the trailer before it came out, it created negative hype.",
+        "I liked the game announcement, I think it became hype for me."
+      ],
+      "significados_incorretos": [
+        "A type of buckle used on school backpacks.",
+        "A negative criticism made about a release before it comes out.",
+        "Any positive comment about a product, even without high expectations."
+      ],
+      "impacto_motivo": "Positive because it expresses genuine expectation and excitement around something eagerly awaited."
+    },
+    {
+      "id": 12,
+      "nome": "slay",
+      "variacoes": [
+        "slayed",
+        "slaying"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To act like a true diva, showing off beauty, glamour and self-confidence and drawing attention in a positive way.",
+      "tags": [
+        "beauty",
+        "attitude",
+        "praise"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "The birthday girl arrived at the party in a flawless dress, absolutely slaying!",
+      "exemplos_incorretos": [
+        "I called the plumber to slay the faucet that was dripping.",
+        "He showed up sloppy at the party, far from slaying.",
+        "I dressed up nicely to go to the market today, I was slaying a little."
+      ],
+      "significados_incorretos": [
+        "To fix a dripping faucet.",
+        "To be badly dressed and sloppy at an important event.",
+        "To dress up for any ordinary everyday occasion."
+      ],
+      "impacto_motivo": "Positive because it praises the confidence and glamour of someone who stands out in a positive way."
+    },
+    {
+      "id": 13,
+      "nome": "trigger",
+      "variacoes": [
+        "triggered",
+        "triggers",
+        "trigger warning"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Reference to a word, image or situation that brings up a bad memory, discomfort, sadness or psychological trauma in a person.",
+      "tags": [
+        "mental-health",
+        "feeling",
+        "warning"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "I can't watch that documentary about car accidents, the footage is a huge trigger for me.",
+      "exemplos_incorretos": [
+        "I used the trigger to hold my work papers together.",
+        "That song was a happy trigger, it reminded me of my joyful childhood.",
+        "I don't like talking about that subject, it's kind of a trigger for me."
+      ],
+      "significados_incorretos": [
+        "A type of clip used to hold papers together.",
+        "A good memory that brings sudden happiness.",
+        "Any uncomfortable topic to talk about, even without trauma."
+      ],
+      "impacto_motivo": "Negative because it refers to a stimulus that causes real psychological suffering in the person affected."
+    },
+    {
+      "id": 14,
+      "nome": "cancel",
+      "variacoes": [
+        "cancelled",
+        "canceled",
+        "cancel culture"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To promote a severe boycott on social media against a person or company that said or did something the public considers unacceptable.",
+      "tags": [
+        "internet",
+        "judgment",
+        "celebrities"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "That influencer made a very offensive joke and Twitter decided to cancel him right away.",
+      "exemplos_incorretos": [
+        "The cancel clasp on my bag broke yesterday.",
+        "People praised the influencer and decided to cancel him because he's so good.",
+        "I criticized something he did once, I guess I cancelled him."
+      ],
+      "significados_incorretos": [
+        "A type of clasp used on bags.",
+        "To publicly praise a famous person for something they did.",
+        "To criticize a famous person's action just once on social media."
+      ],
+      "impacto_motivo": "Negative because it describes a severe public boycott, which can have serious consequences for the target."
+    },
+    {
+      "id": 15,
+      "nome": "cringe",
+      "variacoes": [
+        "so cringe",
+        "cringe moment"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Slang describing a situation, attitude or person so shameful and embarrassing that it causes discomfort and 'secondhand embarrassment' in those watching.",
+      "tags": [
+        "embarrassment",
+        "behavior",
+        "generation"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "My dad trying to use teenage slang in front of my friends was the most cringe thing I've ever seen.",
+      "exemplos_incorretos": [
+        "I used cringe glue to put together the school poster.",
+        "His presentation was so good it was cringe because it was so impressive.",
+        "I felt a little bothered by the joke, I thought it was kind of cringe."
+      ],
+      "significados_incorretos": [
+        "A type of glue used in school projects.",
+        "An impressive situation that leaves everyone amazed.",
+        "Anything that causes a little discomfort, even without embarrassment."
+      ],
+      "impacto_motivo": "Negative because it describes a feeling of shame and discomfort when witnessing an embarrassing situation."
+    },
+    {
+      "id": 16,
+      "nome": "based",
+      "variacoes": [
+        "so based"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "The opposite of cringe. Refers to someone or something cool and authentic that expresses firm opinions without caring about others' judgment.",
+      "tags": [
+        "attitude",
+        "opinion",
+        "internet"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "He said the truth nobody had the courage to say in the meeting, totally based attitude.",
+      "exemplos_incorretos": [
+        "The mason used based to grout the floor.",
+        "He changes his opinion all the time just to please everybody, not based at all.",
+        "He gave his opinion, but still tried not to upset anyone, kind of based."
+      ],
+      "significados_incorretos": [
+        "A type of mortar used in construction.",
+        "Someone who changes opinions all the time to please everyone.",
+        "Anyone who gives an opinion, even while trying to please everybody."
+      ],
+      "impacto_motivo": "Positive because it praises authenticity and a firm stance in the face of others' opinions and judgment."
+    },
+    {
+      "id": 17,
+      "nome": "blow up",
+      "variacoes": [
+        "blew up",
+        "blowing up",
+        "blown up"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "It means that a song, video, post or person became hugely and quickly popular on the internet, going viral and reaching many people.",
+      "tags": [
+        "success",
+        "music",
+        "viral"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "The video she posted dancing on TikTok blew up and already has two million views.",
+      "exemplos_incorretos": [
+        "I used blow up to glue the sole of my shoe.",
+        "Nobody knows that song and it got zero plays, so I'd say it blew up.",
+        "The video got a decent number of views, I guess it blew up."
+      ],
+      "significados_incorretos": [
+        "A type of glue used to repair shoes.",
+        "A song that nobody knows and that goes unnoticed.",
+        "Any video that gets a reasonable number of views."
+      ],
+      "impacto_motivo": "Positive because it celebrates the success and viral reach of something or someone."
+    },
+    {
+      "id": 18,
+      "nome": "aesthetic",
+      "variacoes": [
+        "aesthetics",
+        "so aesthetic"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Aesthetics – a beautiful or stylized look.",
+      "tags": [
+        "visual",
+        "style",
+        "photos"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "That new café downtown has a very aesthetic decor.",
+      "exemplos_incorretos": [
+        "I used a strong aesthetic to remove the stain from the living room rug.",
+        "He ran so much that he got an aesthetic in his leg muscle.",
+        "The food was good, but I thought it lacked a bit of aesthetic in the seasoning."
+      ],
+      "significados_incorretos": [
+        "A powerful chemical cleaning product.",
+        "A cramp or sharp muscle pain.",
+        "A type of seasoning used in hot dishes."
+      ],
+      "impacto_motivo": "Positive because it praises a pleasant, well-cared-for look."
+    },
+    {
+      "id": 19,
+      "nome": "ate",
+      "variacoes": [
+        "she ate",
+        "ate that"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "Slang meaning that the person nailed it, did an amazing job.",
+      "tags": [
+        "praise",
+        "success",
+        "performance"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "She literally ate at the dance performance yesterday.",
+      "exemplos_incorretos": [
+        "I used an ate to fasten the tent to the ground.",
+        "I felt an ate in my back after carrying that heavy box.",
+        "The mechanic replaced the ate in the car's engine."
+      ],
+      "significados_incorretos": [
+        "A type of stake or peg used to secure tents.",
+        "A back pain caused by excessive weight.",
+        "A cylindrical part of automotive engines."
+      ],
+      "impacto_motivo": "Positive because it celebrates someone's successful performance or attitude."
+    },
+    {
+      "id": 20,
+      "nome": "aura",
+      "variacoes": [
+        "aura points",
+        "negative aura"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A person's energy or charisma.",
+      "tags": [
+        "presence",
+        "energy",
+        "charisma"
+      ],
+      "permissao": "all",
+      "impacto": "depends on context",
+      "exemplo_correto": "Her aura is incredible and lights up any place she walks into.",
+      "exemplos_incorretos": [
+        "I bought a wonderful chocolate aura for afternoon coffee.",
+        "The aura of my bicycle tire got punctured halfway there.",
+        "He put on the aura and went to play soccer with his friends on the field."
+      ],
+      "significados_incorretos": [
+        "A type of filled sweet bread from the bakery.",
+        "The inner tube of a tire.",
+        "A specific model of soccer cleats."
+      ],
+      "impacto_motivo": "Depends on context because it can be used both to praise someone's charisma and to describe a bad or strange energy."
+    },
+    {
+      "id": 21,
+      "nome": "banger",
+      "variacoes": [
+        "bangers",
+        "it's a banger"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Something very good, usually a song.",
+      "tags": [
+        "music",
+        "praise",
+        "success"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "This new song they released today is a real banger!",
+      "exemplos_incorretos": [
+        "I felt a banger in my stomach after eating that fried food.",
+        "The carpenter used a banger to level the wooden table.",
+        "She wore a shiny banger to the prom."
+      ],
+      "significados_incorretos": [
+        "A stomach ache or severe indigestion.",
+        "A carpentry leveling tool.",
+        "A type of formal gala dress."
+      ],
+      "impacto_motivo": "Positive because it praises the quality of something, usually a really good song."
+    },
+    {
+      "id": 22,
+      "nome": "big yikes",
+      "variacoes": [
+        "yikes"
+      ],
+      "classe_gramatical": "expression",
+      "significado": "Intense disapproval or embarrassment at an unfortunate attitude.",
+      "tags": [
+        "reaction",
+        "embarrassment",
+        "disapproval"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "He made that comment in front of everybody? Big yikes.",
+      "exemplos_incorretos": [
+        "I ordered a chicken big yikes at the snack bar last night.",
+        "The kids went to play on the big yikes at the amusement park.",
+        "I poured the big yikes liquid into the pool to clean the water."
+      ],
+      "significados_incorretos": [
+        "A big, well-stuffed sandwich from a snack bar.",
+        "An extreme ride at an amusement park.",
+        "A purifying chemical product for swimming pools."
+      ],
+      "impacto_motivo": "Negative because it expresses strong disapproval and embarrassment at an attitude considered wrong."
+    },
+    {
+      "id": 23,
+      "nome": "bio",
+      "variacoes": [
+        "in the bio",
+        "link in bio"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Biography – the 'about me' section on social media.",
+      "tags": [
+        "profile",
+        "instagram",
+        "information"
+      ],
+      "permissao": "all",
+      "impacto": "neutral",
+      "exemplo_correto": "I put the link to my professional website in my bio.",
+      "exemplos_incorretos": [
+        "I bought a bio of fresh apples at the market this morning.",
+        "The boy kicked the ball hard and broke the window's bio.",
+        "The mechanic checked the engine and said the car was leaking bio."
+      ],
+      "significados_incorretos": [
+        "A wooden crate used to carry fruit.",
+        "The main glass pane of a residential window.",
+        "An essential lubricating fluid for a car engine."
+      ],
+      "impacto_motivo": "Neutral because it just describes an informational section of a profile, with no value judgment."
+    },
+    {
+      "id": 24,
+      "nome": "camp",
+      "variacoes": [
+        "so camp",
+        "camp aesthetic"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "An exaggerated and extravagant aesthetic, deliberately theatrical.",
+      "tags": [
+        "aesthetic",
+        "fashion",
+        "exaggerated"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "The outfit she chose to wear on the red carpet was so camp.",
+      "exemplos_incorretos": [
+        "I drank a glass of ice-cold orange camp after running.",
+        "The technicians installed a new camp in the room to improve the internet.",
+        "I added two spoons of camp powder so the cake dough would rise."
+      ],
+      "significados_incorretos": [
+        "A refreshing, natural juice or drink.",
+        "A Wi-Fi signal router device.",
+        "A type of chemical leavening used in cooking."
+      ],
+      "impacto_motivo": "Positive because it celebrates an exaggerated and theatrical style as a form of creative expression."
+    },
+    {
+      "id": 25,
+      "nome": "caught in 4K",
+      "variacoes": [
+        "caught in 4k"
+      ],
+      "classe_gramatical": "expression",
+      "significado": "Caught red-handed, with clear proof of the situation.",
+      "tags": [
+        "caught-red-handed",
+        "proof",
+        "judgment"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "He said he was going to bed early, but he got caught in 4K at the club.",
+      "exemplos_incorretos": [
+        "I bought a brand-new, giant caught in 4K to put in my living room.",
+        "The fisherman celebrated a lot when he caught a caught in 4K in the river.",
+        "The seamstress used high-quality caught in 4K to hem the dress."
+      ],
+      "significados_incorretos": [
+        "An advanced flat-screen television model.",
+        "A rare and highly sought-after freshwater fish.",
+        "A type of thick sewing thread for heavy fabrics."
+      ],
+      "impacto_motivo": "Negative because it exposes someone in an embarrassing situation, with implications of unwanted exposure."
+    },
+    {
+      "id": 26,
+      "nome": "CEO",
+      "variacoes": [
+        "CEO of this"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "The best at something, completely dominating a subject or behavior.",
+      "tags": [
+        "reference",
+        "humor",
+        "skill"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "She's the CEO of the best artistic makeup on the internet.",
+      "exemplos_incorretos": [
+        "I ate a huge slice of strawberry CEO at the birthday party.",
+        "The crash of the two trucks caused a huge CEO on the main avenue.",
+        "They adopted a newborn CEO puppy from the animal shelter."
+      ],
+      "significados_incorretos": [
+        "A type of cake filled with fruit.",
+        "A miles-long traffic jam.",
+        "A small dog breed."
+      ],
+      "impacto_motivo": "Positive because it praises someone's mastery and excellence in a certain subject."
+    },
+    {
+      "id": 27,
+      "nome": "cheugy",
+      "variacoes": [
+        "so cheugy"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Out of style, tacky or trying too hard to follow outdated trends.",
+      "tags": [
+        "fashion",
+        "criticism",
+        "outdated"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "Those decorations with motivational quotes on the wall are so cheugy.",
+      "exemplos_incorretos": [
+        "I had some piping hot cheugy soup to cure my cold in winter.",
+        "He saved up money and bought a wonderful red sports cheugy.",
+        "We rented a cheugy to sail on the lake during the long holiday weekend."
+      ],
+      "significados_incorretos": [
+        "A type of rustic vegetable soup.",
+        "A model of imported sports car.",
+        "A small sailboat."
+      ],
+      "impacto_motivo": "Negative because it criticizes something or someone as outdated or in bad taste for trying to follow old trends."
+    },
+    {
+      "id": 28,
+      "nome": "clap back",
+      "variacoes": [
+        "clapped back"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "To respond to criticism or insults in a sharp and clever way.",
+      "tags": [
+        "response",
+        "argument",
+        "internet"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "She gave an epic clap back in the interview after hearing that comment.",
+      "exemplos_incorretos": [
+        "The doctor prescribed a strong clap back to relieve the constant back pain.",
+        "I ate a sweet clap back with honey and butter for breakfast.",
+        "I had to replace my bicycle's clap back because it was too rusty."
+      ],
+      "significados_incorretos": [
+        "A prescription painkiller medication.",
+        "A kind of sweet American pancake.",
+        "A key part of a bicycle's gear system."
+      ],
+      "impacto_motivo": "Positive because it celebrates the intelligence and quickness of a response to criticism."
+    },
+    {
+      "id": 29,
+      "nome": "clout",
+      "variacoes": [
+        "for clout",
+        "chasing clout"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Influence or power on social media, often sought at any cost.",
+      "tags": [
+        "fame",
+        "followers",
+        "influence"
+      ],
+      "permissao": "all",
+      "impacto": "depends on context",
+      "exemplo_correto": "He pretended to fight with his friend just to gain clout on the internet.",
+      "exemplos_incorretos": [
+        "I went for a walk and bought a clout of clothes at the thrift store downtown.",
+        "The baker said the recipe takes exactly one clout of melted butter.",
+        "I went to the bank teller to deposit a very high clout into my checking account."
+      ],
+      "significados_incorretos": [
+        "A pack or bundle of tied-up clothes.",
+        "An old unit of weight used in cooking.",
+        "A high-value bank check."
+      ],
+      "impacto_motivo": "Depends on context because the pursuit of influence can be seen positively (deserved recognition) or negatively (opportunistic pursuit at any cost)."
+    },
+    {
+      "id": 30,
+      "nome": "coded",
+      "variacoes": [
+        "so coded"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Having characteristics of something or someone, strongly reminiscent of a character's aesthetic.",
+      "tags": [
+        "personality",
+        "reference",
+        "behavior"
+      ],
+      "permissao": "all",
+      "impacto": "neutral",
+      "exemplo_correto": "Her room, all pink and organized, is so Barbie-coded.",
+      "exemplos_incorretos": [
+        "I took a coded pill recommended by the doctor to be able to sleep at night.",
+        "The fisherman cast the net and caught a huge coded in the depths of the Amazon river.",
+        "We ordered a coded prime cut of beef at the butcher's for Sunday's barbecue."
+      ],
+      "significados_incorretos": [
+        "A strong medication used against insomnia.",
+        "A type of fish native to forest rivers.",
+        "A specific and tasty cut of beef."
+      ],
+      "impacto_motivo": "Neutral because it just describes an aesthetic resemblance to a character or style, with no value judgment."
+    },
+    {
+      "id": 31,
+      "nome": "deinfluencing",
+      "variacoes": [
+        "do deinfluencing"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To discourage unnecessary purchases, showing that a viral product isn't worth it.",
+      "tags": [
+        "consumption",
+        "criticism",
+        "products"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "I watched a deinfluencing video about that super expensive cream and decided not to buy it.",
+      "exemplos_incorretos": [
+        "The dentist had to do a painful deinfluencing on my inflamed tooth.",
+        "The old car failed the strict deinfluencing inspection.",
+        "This year my grandfather's farm had a great deinfluencing harvest."
+      ],
+      "significados_incorretos": [
+        "A surgical procedure performed at dental clinics.",
+        "A mandatory test of gas and pollutant emissions.",
+        "A type of nutritious grain grown in the field."
+      ],
+      "impacto_motivo": "Positive because it encourages conscious consumption and warns against unnecessary purchases."
+    },
+    {
+      "id": 32,
+      "nome": "delulu",
+      "variacoes": [
+        "go delulu",
+        "delulu era"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "Delusional, self-deceived. Believing in unrealistic romantic or professional situations.",
+      "tags": [
+        "illusion",
+        "love",
+        "fandom"
+      ],
+      "permissao": "all",
+      "impacto": "depends on context",
+      "exemplo_correto": "She's completely delulu if she thinks the famous singer will notice her comment.",
+      "exemplos_incorretos": [
+        "I added a spoonful of delulu to the batter so the cake would be nice and fluffy.",
+        "He caught a strong delulu infection with the change in weather and stayed in bed.",
+        "For the snow trip, I bought a coat lined with resistant delulu fabric."
+      ],
+      "significados_incorretos": [
+        "A magical ingredient that makes cakes rise.",
+        "A serious respiratory illness common in winter.",
+        "A technological fabric with thermal insulation."
+      ],
+      "impacto_motivo": "Depends on context because it can be used humorously among friends or as criticism of someone who deludes themselves in a harmful way."
+    },
+    {
+      "id": 33,
+      "nome": "doomscrolling",
+      "variacoes": [
+        "doomscroll"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Compulsively scrolling the feed, looking at bad news and tragedies on the internet.",
+      "tags": [
+        "mental-health",
+        "anxiety",
+        "news"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "I spent the whole night doomscrolling through the news and woke up super anxious.",
+      "exemplos_incorretos": [
+        "I fastened the heavy shelf to the wall using a sturdy steel doomscrolling screw.",
+        "The high school team practiced doomscrolling all day on the muddy field for the final.",
+        "To keep from slipping on the ice, my shoe has a rubber doomscrolling sole."
+      ],
+      "significados_incorretos": [
+        "A type of thick, strong screw for fastening.",
+        "A violent extreme contact sport.",
+        "A non-slip shoe sole technology."
+      ],
+      "impacto_motivo": "Negative because it describes a compulsive habit associated with anxiety and emotional exhaustion from consuming negative content."
+    },
+    {
+      "id": 34,
+      "nome": "doxxing",
+      "variacoes": [
+        "dox",
+        "doxxed"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Exposing someone's personal information on the internet without their consent.",
+      "tags": [
+        "crime",
+        "privacy",
+        "internet"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "After the forum fight, he was doxxed and had his home address published.",
+      "exemplos_incorretos": [
+        "I ate a filled bread roll with a wonderful doxxing spread at yesterday's party.",
+        "The painter did a great job and made a doxxing texture on the living room wall.",
+        "The dog dug all afternoon and made a doxxing hole in the middle of the yard."
+      ],
+      "significados_incorretos": [
+        "A sweet, creamy spread made from nuts.",
+        "A type of decorative wall texture.",
+        "The act of digging deep holes in the ground."
+      ],
+      "impacto_motivo": "Negative because it describes a serious privacy violation, with the potential to cause real harm to the victim."
+    },
+    {
+      "id": 35,
+      "nome": "era",
+      "variacoes": [
+        "in my era"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A specific phase of a person's life, marked by a certain behavior or style.",
+      "tags": [
+        "phase",
+        "style",
+        "behavior"
+      ],
+      "permissao": "all",
+      "impacto": "neutral",
+      "exemplo_correto": "I cancelled my plans, I'm focused on work and enjoying my productive era.",
+      "exemplos_incorretos": [
+        "I stopped by the Italian market and bought half a kilo of era to cook for lunch.",
+        "I hit my era hard on the corner of the glass table and it turned purple.",
+        "The carpenter bought top-quality era planks to build the roof."
+      ],
+      "significados_incorretos": [
+        "A type of long handmade pasta.",
+        "A sensitive bone located in the shin of the leg.",
+        "A rustic, heavy and very durable wood."
+      ],
+      "impacto_motivo": "Neutral because it just describes a phase of someone's life, with no value judgment about that phase."
+    },
+    {
+      "id": 36,
+      "nome": "face card",
+      "variacoes": [
+        "my face card",
+        "face card never declines"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Your face/facial beauty, where 'never declines' means you always look good in photos.",
+      "tags": [
+        "beauty",
+        "appearance",
+        "praise"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "In the photos from yesterday's event, her face card shined and never declined once.",
+      "exemplos_incorretos": [
+        "The face card in my computer burned out after the sudden power outage.",
+        "I had to use a large cardboard face card to pack the books for the move.",
+        "I swiped my face card at the electronic turnstile to get into the office building."
+      ],
+      "significados_incorretos": [
+        "An internal circuit board of computers.",
+        "A reinforced cardboard box for transport.",
+        "An electronic access card for employees."
+      ],
+      "impacto_motivo": "Positive because it praises someone's good looks, especially in photos."
+    },
+    {
+      "id": 37,
+      "nome": "fandom",
+      "variacoes": [
+        "fandoms"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "A group of extremely dedicated fans of a work, series, game or celebrity.",
+      "tags": [
+        "fans",
+        "groups",
+        "internet"
+      ],
+      "permissao": "all",
+      "impacto": "neutral",
+      "exemplo_correto": "That series' fandom ran a huge campaign on Twitter to get the season renewed.",
+      "exemplos_incorretos": [
+        "To celebrate Sunday with the family, I roasted a very juicy fandom with potatoes.",
+        "After the bad fall, the doctor took an X-ray and saw that the bone in my fandom was cracked.",
+        "I spent the afternoon fishing in the farm's river and caught a huge silver fandom."
+      ],
+      "significados_incorretos": [
+        "A generous cut of meat roasted in the oven.",
+        "A sensitive bone or joint of the human body.",
+        "A species of fish with highly coveted scales."
+      ],
+      "impacto_motivo": "Neutral because it describes a community of dedicated fans, with no value judgment about the group."
+    },
+    {
+      "id": 38,
+      "nome": "flex",
+      "variacoes": [
+        "flexing",
+        "to flex"
+      ],
+      "classe_gramatical": "verb",
+      "significado": "To show off, to flaunt luxury items or achievements.",
+      "tags": [
+        "flaunting",
+        "money",
+        "behavior"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "He posted a photo of his imported car key just to flex on his followers.",
+      "exemplos_incorretos": [
+        "I went lifting at the gym and ended up straining the flex of my left arm.",
+        "To cut the bitterness, I added three level spoons of flex to my breakfast coffee.",
+        "The painter put a good coat of flex on the wall to fix the cracks."
+      ],
+      "significados_incorretos": [
+        "A specific muscle located in the arm.",
+        "A type of sweetener or crystal sugar.",
+        "A wall filler compound used in construction."
+      ],
+      "impacto_motivo": "Negative because it describes excessive showing off, socially seen as arrogance or disguised insecurity."
+    },
+    {
+      "id": 39,
+      "nome": "FOMO",
+      "variacoes": [
+        "fomo",
+        "got fomo"
+      ],
+      "classe_gramatical": "acronym",
+      "significado": "Fear Of Missing Out, the anxiety of missing a cool event.",
+      "tags": [
+        "anxiety",
+        "events",
+        "social-media"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "I went to that boring party yesterday only because I had massive FOMO about missing something important.",
+      "exemplos_incorretos": [
+        "I cleaned the whole house and vacuumed all the thick FOMO that had built up on the living room rug.",
+        "In spring, they planted FOMO seedlings in the yard and the leaves have already started to grow.",
+        "My phone slipped out of my hand, hit the hard floor and cracked the FOMO screen."
+      ],
+      "significados_incorretos": [
+        "Accumulated dust or thick dirt.",
+        "A species of ornamental garden plant.",
+        "The tempered glass protector for phone screens."
+      ],
+      "impacto_motivo": "Negative because it describes real anxiety generated by the fear of missing out on something."
+    },
+    {
+      "id": 40,
+      "nome": "ghosting",
+      "variacoes": [
+        "ghosted",
+        "get ghosted"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "To disappear, to suddenly stop responding to someone without giving any explanation.",
+      "tags": [
+        "relationship",
+        "left-on-read",
+        "communication"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "We went out three times, everything seemed fine, but then he ghosted me and disappeared.",
+      "exemplos_incorretos": [
+        "We went to the movies over the weekend to watch a classic ghosting film that was really scary.",
+        "The photographer complained that the camera broke and was ghosting all the images.",
+        "For Halloween, I went to the store and bought a pack of ghosting to decorate the table."
+      ],
+      "significados_incorretos": [
+        "A horror film genre.",
+        "A mechanical defect in camera lenses.",
+        "A decorative themed party accessory."
+      ],
+      "impacto_motivo": "Negative because it describes an abrupt cut-off of contact without explanation, causing frustration in the person affected."
+    },
+    {
+      "id": 41,
+      "nome": "glow up",
+      "variacoes": [
+        "glowed up",
+        "had a glow up"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "To improve your appearance, mature and change your style in a very positive way over time.",
+      "tags": [
+        "beauty",
+        "transformation",
+        "self-esteem"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "Wow, did you see his old photos? He had an insane glow up after college.",
+      "exemplos_incorretos": [
+        "To finish the model's makeup, the makeup artist applied a soft glow up on her cheeks.",
+        "I showered in the dark because the glow up bulb in the main bathroom burned out this morning.",
+        "I took advantage of the holiday to wrap a very long glow up string around the Christmas tree on the porch."
+      ],
+      "significados_incorretos": [
+        "A type of illuminating makeup powder or blush.",
+        "A common fluorescent ceiling lamp.",
+        "Twinkle lights used in festive decorations."
+      ],
+      "impacto_motivo": "Positive because it celebrates a personal transformation seen as a positive evolution."
+    },
+    {
+      "id": 42,
+      "nome": "GOAT",
+      "variacoes": [
+        "the GOAT",
+        "he's the GOAT"
+      ],
+      "classe_gramatical": "acronym",
+      "significado": "The Greatest Of All Time, used for legends of sports or music.",
+      "tags": [
+        "praise",
+        "success",
+        "sports"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "With that many broken records, there's no doubt he's the GOAT of tennis.",
+      "exemplos_incorretos": [
+        "I used the GOAT to tighten the bolt on my bike wheel.",
+        "He came dead last in every race this season, so everyone calls him the GOAT.",
+        "He won a single local tournament once, so he's officially the GOAT of the sport."
+      ],
+      "significados_incorretos": [
+        "A wrench used to tighten bicycle parts.",
+        "The worst performer of all time in a given field.",
+        "Anyone who wins a single match or a small competition."
+      ],
+      "impacto_motivo": "Positive because it celebrates someone's exceptional achievement or performance."
+    },
+    {
+      "id": 43,
+      "nome": "gucci",
+      "variacoes": [
+        "all gucci",
+        "we're gucci"
+      ],
+      "classe_gramatical": "adjective",
+      "significado": "All good, fine. It indicates that everything is calm and under control.",
+      "tags": [
+        "state",
+        "calm",
+        "conversation"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "No need to apologize for being late, it's all gucci, we'll wait for you to arrive.",
+      "exemplos_incorretos": [
+        "For my birthday present, I saved up and bought an original gucci bag at the store.",
+        "The mechanic listened to the noise and said the engine's gucci belt snapped on the highway.",
+        "For Sunday family lunch, my aunt prepared a delicious traditional gucci with bolognese sauce."
+      ],
+      "significados_incorretos": [
+        "A literal use referring to a luxury brand accessory.",
+        "A rubber part of a car engine.",
+        "A type of pasta cooked with tomato sauce."
+      ],
+      "impacto_motivo": "Positive because it expresses calm and satisfaction with the current situation."
+    },
+    {
+      "id": 44,
+      "nome": "gyat",
+      "variacoes": [
+        "gyatt"
+      ],
+      "classe_gramatical": "interjection",
+      "significado": "An expression of strong admiration for someone who is physically very attractive.",
+      "tags": [
+        "reaction",
+        "praise",
+        "surprise"
+      ],
+      "permissao": "all",
+      "impacto": "positive",
+      "exemplo_correto": "When he took off his shirt during the beach game, the crowd could only let out a GYAT!",
+      "exemplos_incorretos": [
+        "Arriving at the gym, I went straight to use the heavy GYAT weight-plate machine to work out my legs.",
+        "My car started leaking oil and stopped at the red light because the brake GYAT blew out.",
+        "At snack time, we chopped the fruit and made a cold smoothie with strawberry and gyat."
+      ],
+      "significados_incorretos": [
+        "A complex weightlifting exercise machine.",
+        "A hydraulic part of automotive brake systems.",
+        "A tropical fruit with a sweet and citrusy flavor."
+      ],
+      "impacto_motivo": "Positive because it expresses strong admiration for someone's physical attractiveness."
+    },
+    {
+      "id": 45,
+      "nome": "hard launch",
+      "variacoes": [
+        "hard launched",
+        "relationship hard launch"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "To officially reveal, without any mystery, a new relationship or product on social media.",
+      "tags": [
+        "relationship",
+        "announcement",
+        "photos"
+      ],
+      "permissao": "all",
+      "impacto": "neutral",
+      "exemplo_correto": "They stopped posting just their held hands and did the hard launch by posting a photo of them kissing.",
+      "exemplos_incorretos": [
+        "We watched on television as the incredible hard launch of the rocket happened at the space base.",
+        "I was almost winning the match, but my video game gave a hard launch error and froze the screen.",
+        "The captain revved the engines of the huge hard launch to reach the island before the storm."
+      ],
+      "significados_incorretos": [
+        "The literal event of launching a rocket into space.",
+        "A type of fatal software error or crash.",
+        "A fast motorboat equipped with a powerful engine."
+      ],
+      "impacto_motivo": "Neutral because it just describes the act of officially revealing something, with no specific value judgment."
+    },
+    {
+      "id": 46,
+      "nome": "ick",
+      "variacoes": [
+        "gave me the ick",
+        "got the ick"
+      ],
+      "classe_gramatical": "noun",
+      "significado": "Something that causes disgust, a sudden loss of attraction or total disinterest in a person.",
+      "tags": [
+        "rejection",
+        "behavior",
+        "relationship"
+      ],
+      "permissao": "all",
+      "impacto": "negative",
+      "exemplo_correto": "He was gorgeous, but he was rude to the waitress, which gave me an instant ick.",
+      "exemplos_incorretos": [
+        "Since I went out without a coat in yesterday's heavy rain, I ended up catching a terrible ick that left me bedridden.",
+        "I went to the pharmacy to buy a bottle of strong syrup because I have an ick in my throat that won't go away.",
+        "I took it to the repair shop and the technician charged me a lot, saying my brand-new phone's screen had an ick."
+      ],
+      "significados_incorretos": [
+        "A bad cold, flu or sudden high fever.",
+        "A dry, allergic and irritating cough.",
+        "A dead pixel, scratch or physical defect on an LED screen."
+      ],
+      "impacto_motivo": "Negative because it describes a feeling of disgust or sudden loss of interest in someone."
+    },
+    {
+      "id": 47,
+      "nome": "IYKYK",
+      "variacoes": [
+        "iykyk"
+      ],
+      "classe_gramatical": "acronym",
+      "significado": "If You Know, You Know. Used for inside jokes or obscure references.",
+      "tags": [
+        "reference",
+        "secret",
+        "conversation"
+      ],
+      "permissao": "all",
+      "impacto": "neutral",
+      "exemplo_correto": "I posted that photo at the corner bar with the caption: the night of 2019... IYKYK.",
+      "exemplos_incorretos": [
+        "My accountant sent me the complicated IYKYK form to fill out before filing my taxes.",
+        "I went to the clinic fasting and the doctor asked me to take a specific blood test of the IYKYK type.",
+        "I had to go to the computer store downtown to buy an IYKYK cable to connect the TV to the old computer."
+      ],
+      "significados_incorretos": [
+        "A mandatory bureaucratic document from the tax authority.",
+        "A biochemical marker measured in blood tests.",
+        "A thick adapter cable for video transmission."
+      ],
+      "impacto_motivo": "Neutral because it's used only as a reference to inside jokes or shared knowledge, with no value judgment."
+    }
+  ]
+}

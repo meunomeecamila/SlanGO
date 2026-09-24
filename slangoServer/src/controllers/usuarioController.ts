@@ -5,13 +5,16 @@ import {
     atualizarUsuario,
     deletarUsuario,
     dataNascimentoValida,
-    alterarSenhaUsuario
+    alterarSenhaUsuario,
+    atualizarIdioma,
+    IDIOMAS_SUPORTADOS,
 } from '../services/usuarioService';
+import { RequisicaoAutenticada } from '../middlewares/authMiddleware';
 import { emailValido, senhaValida } from '../utils/validador';
 
 export const criarUsuarioController = async (req: Request, res: Response) => {
     try {
-        const { nome, email, senha, confirmarSenha, responsavel, dataNascimento, perguntaSeguranca, respostaSeguranca, email_verificado, sexo} = req.body;
+        const { nome, email, senha, confirmarSenha, responsavel, dataNascimento, perguntaSeguranca, respostaSeguranca, email_verificado, sexo, idioma} = req.body;
 
         if (!nome || !email || !senha || !confirmarSenha || !dataNascimento) {
             return res.status(400).json({ erro: 'Nome, email, senha, confirmação de senha e data de nascimento são obrigatórios.' });
@@ -43,7 +46,7 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(400).json({ erro: 'Por favor, selecione uma opção de gênero para continuar.'})
         }
 
-        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento, perguntaSeguranca: perguntaSeguranca, respostaSeguranca: respostaSeguranca, email_verificado: email_verificado, sexo: sexo });
+        const usuarioCriado = await criarUsuario({ Nome: nome, Email: email, Senha: senha, Responsavel: responsavel , Data: dataNascimento, perguntaSeguranca: perguntaSeguranca, respostaSeguranca: respostaSeguranca, email_verificado: email_verificado, sexo: sexo, idioma });
 
         res.status(201).json({
             sucesso: true,
@@ -54,6 +57,35 @@ export const criarUsuarioController = async (req: Request, res: Response) => {
             return res.status(409).json({ erro: 'Erro ao se cadastrar.' });
         }
         res.status(500).json({ erro: error.message });
+    }
+};
+
+export const atualizarIdiomaController = async (
+    req: RequisicaoAutenticada,
+    res: Response,
+) => {
+    try {
+        const idUsuario = req.usuario?.id;
+        const idioma = req.body?.idioma;
+
+        if (!idUsuario) {
+            return res.status(401).json({ erro: 'Autenticação necessária.' });
+        }
+        if (
+            typeof idioma !== 'string' ||
+            !(IDIOMAS_SUPORTADOS as readonly string[]).includes(idioma)
+        ) {
+            return res.status(400).json({
+                erro: `Idioma inválido. Use: ${IDIOMAS_SUPORTADOS.join(', ')}.`,
+            });
+        }
+
+        const usuario = await atualizarIdioma(idUsuario, idioma);
+        if (!usuario) return res.status(404).json({ erro: 'Usuário não encontrado.' });
+
+        return res.status(200).json({ sucesso: true, usuario });
+    } catch (error: any) {
+        return res.status(500).json({ erro: error.message });
     }
 };
 

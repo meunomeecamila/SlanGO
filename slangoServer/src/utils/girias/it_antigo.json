@@ -1,0 +1,1104 @@
+{
+  "girias_antigas": [
+    {
+      "id": 1,
+      "nome": "baraonda",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Confusione o gran trambusto.",
+      "tags": ["quotidiano", "informale"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "È scoppiata una baraonda incredibile alla riunione di condominio ieri sera.",
+      "exemplos_incorretos": [
+        "Ho comprato una deliziosa baraonda al cioccolato in panetteria.",
+        "Devo fare il pieno di dieci litri di baraonda alla macchina.",
+        "Indosserò la mia baraonda blu per andare al matrimonio."
+      ],
+      "significados_incorretos": [
+        "Un tipo di dolce tradizionale a base di arachidi.",
+        "Un combustibile fossile molto usato nei motori antichi.",
+        "Un capo di abbigliamento formale usato alle feste di gala."
+      ],
+      "impacto_motivo": "Si riferisce a situazioni di disordine, litigi, liti o confusione, portando una connotazione indesiderata o spiacevole."
+    },
+    {
+      "id": 3,
+      "nome": "fare anticamera",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Aspettare molto a lungo.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il medico ha fatto due ore di ritardo e ho fatto una lunghissima anticamera in reception.",
+      "exemplos_incorretos": [
+        "Ho messo un'anticamera in salotto per decorare l'ambiente.",
+        "Ho bevuto un'anticamera calda prima di dormire per rilassarmi.",
+        "I pantaloni si sono strappati perché mi sono seduto su un'anticamera affilata."
+      ],
+      "significados_incorretos": [
+        "Un mobile in legno imbottito usato in sala da pranzo.",
+        "Un'infusione di erbe medicinali che aiuta a combattere l'insonnia.",
+        "Uno strumento appuntito usato dai falegnami."
+      ],
+      "impacto_motivo": "Esprime il fastidio, la stanchezza e la perdita di tempo associati a un'attesa lunga e imprevista."
+    },
+    {
+      "id": 4,
+      "nome": "andare a rotoli",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Qualcosa che va storto o è molto brutto.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Se piove il giorno del nostro evento all'aperto, andrà tutto a rotoli.",
+      "exemplos_incorretos": [
+        "Vado a rotoli per riuscire ad appendere questo quadro al muro.",
+        "Mi piace andare a rotoli tutte le mattine al parco per fare esercizio.",
+        "Mi sono dimenticato di andare a rotoli e ho finito per perdere la scadenza dell'iscrizione."
+      ],
+      "significados_incorretos": [
+        "L'azione di fissare oggetti pesanti usando le viti.",
+        "Una pratica sportiva incentrata su camminate a lunga distanza.",
+        "Compilare un modulo ufficiale con dati personali."
+      ],
+      "impacto_motivo": "Indica un fallimento, una complicazione o un danno imminente in una determinata situazione."
+    },
+    {
+      "id": 5,
+      "nome": "perdere il treno",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Perdere un'opportunità per distrazione.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "È rimasto a bocca aperta e i biglietti per il concerto sono finiti proprio al suo turno.",
+      "exemplos_incorretos": [
+        "Vado a perdere il treno sull'agenda per non dimenticare il giorno dell'esame.",
+        "Devo perdere il treno sui fornelli affinché il cibo non si bruci.",
+        "Adora perdere il treno in piscina per allenarsi al nuoto professionale."
+      ],
+      "significados_incorretos": [
+        "Segnare un impegno importante su un calendario.",
+        "Regolare la temperatura interna degli elettrodomestici.",
+        "Usare dispositivi di protezione individuale in acqua."
+      ],
+      "impacto_motivo": "Indica un errore personale dovuto a mancanza di attenzione o distrazione, con la conseguente perdita di qualcosa di vantaggioso."
+    },
+    {
+      "id": 6,
+      "nome": "figo",
+      "variacoes": ["figa"],
+      "classe_gramatical": "locuzione aggettivale",
+      "significado": "Persona bella o di bell'aspetto.",
+      "tags": ["aspetto", "informale"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Il nuovo attore della soap opera è un ragazzo davvero figo.",
+      "exemplos_incorretos": [
+        "Ho comprato un figo per dipingere le pareti della mia stanza.",
+        "Ho un mal di testa terribile, devo prendere un figo.",
+        "Il figo si è rotto quando ho provato ad aprire la porta con forza."
+      ],
+      "significados_incorretos": [
+        "Un pennello a setole morbide usato in edilizia.",
+        "Un antidolorifico venduto senza ricetta in farmacia.",
+        "Un meccanismo di metallo che compone le serrature moderne."
+      ],
+      "impacto_motivo": "Si tratta di un complimento sull'estetica o l'aspetto personale di qualcuno."
+    },
+    {
+      "id": 7,
+      "nome": "carisma",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Fascino o attrattiva speciale di una persona.",
+      "tags": ["aspetto", "comportamento"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Quella cantante ha un carisma che conquista tutti sul palco.",
+      "exemplos_incorretos": [
+        "Metterò un po' di carisma nei fagioli per dargli più sapore.",
+        "La gomma della mia auto si è forata perché sono passato sopra un carisma.",
+        "Ho scritto tutto il testo usando il font carisma al computer."
+      ],
+      "significados_incorretos": [
+        "Una spezia del nordest brasiliano fatta di erbe secche e peperoncino.",
+        "Un pezzo di ferro appuntito trovato nelle strade sterrate.",
+        "Uno stile di formattazione del testo usato nei vecchi giornali."
+      ],
+      "impacto_motivo": "Attribuisce una qualità attraente, incantevole e magnetica a una persona."
+    },
+    {
+      "id": 8,
+      "nome": "bella",
+      "variacoes": ["belloccia"],
+      "classe_gramatical": "sostantivo",
+      "significado": "Ragazza bella o attraente.",
+      "tags": ["aspetto", "informale"],
+      "permissao": "adolescenti",
+      "impacto": "positiva",
+      "exemplo_correto": "Quel ragazzo della classe accanto sta uscendo con una vera bella.",
+      "exemplos_incorretos": [
+        "L'impianto idraulico della cucina è scoppiato e ha causato una bella enorme.",
+        "Metterò la mia bella nuova per andare a camminare al parco.",
+        "Ho comprato una bella a tre piani per festeggiare il mio compleanno."
+      ],
+      "significados_incorretos": [
+        "Una grave perdita d'acqua nelle tubature residenziali.",
+        "Una scarpa sportiva con ammortizzatori nelle suole.",
+        "Una torta festiva decorata con pasta di zucchero."
+      ],
+      "impacto_motivo": "È un modo affettuoso e lusinghiero di riferirsi alla bellezza di una ragazza."
+    },
+    {
+      "id": 9,
+      "nome": "un tubo",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Niente o nessuna cosa.",
+      "tags": ["quotidiano", "informale"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Il professore ha spiegato la materia di fisica tre volte, ma non ho capito un tubo.",
+      "exemplos_incorretos": [
+        "Ho messo i miei vestiti dentro due tubi di plastica.",
+        "L'uccellino ha fatto un tubo molto carino sul ramo dell'albero.",
+        "Accendo i tubi della TV per riuscire a guardare il film."
+      ],
+      "significados_incorretos": [
+        "Una borsa o un contenitore flessibile usato per il trasporto.",
+        "Un nido costruito da piccoli uccelli usando rametti secchi.",
+        "Un componente elettronico responsabile della sintonizzazione dei canali."
+      ],
+      "impacto_motivo": "Indica semplicemente l'assenza di qualcosa o la mancanza di comprensione, senza un giudizio di valore morale o affettivo intrinseco."
+    },
+    {
+      "id": 10,
+      "nome": "fuori moda",
+      "variacoes": ["cafone"],
+      "classe_gramatical": "aggettivo",
+      "significado": "Fuori moda o considerato di cattivo gusto.",
+      "tags": ["aspetto", "moda"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Ho trovato quella combinazione di completo verde con camicia gialla molto fuori moda.",
+      "exemplos_incorretos": [
+        "Ho mangiato un delizioso fuori moda a pranzo domenica.",
+        "Il motore dell'auto sta facendo un rumore fuori moda molto forte.",
+        "Uso il fuori moda per pulire il vetro della finestra che è sporco."
+      ],
+      "significados_incorretos": [
+        "Un piatto tipico fatto con pasta sfoglia e ripieno di carne.",
+        "Un pezzo meccanico installato vicino allo scarico del motore.",
+        "Un panno in microfibra usato per pulire superfici delicate."
+      ],
+      "impacto_motivo": "Esprime una critica sfavorevole riguardo al gusto, allo stile o all'eleganza di qualcuno o qualcosa."
+    },
+    {
+      "id": 11,
+      "nome": "fuori di testa",
+      "variacoes": [],
+      "classe_gramatical": "locuzione aggettivale",
+      "significado": "Persona considerata pazza o molto distratta.",
+      "tags": ["comportamento", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Quel tipo è un po' fuori di testa, è uscito sotto la pioggia senza ombrello e in pantaloncini.",
+      "exemplos_incorretos": [
+        "Ho comprato una scarpa fuori di testa che brilla al buio.",
+        "La cena era fuori di testa, tutti hanno fatto il bis.",
+        "Devo aggiustare il fuori di testa del mio computer perché torni ad accendersi."
+      ],
+      "significados_incorretos": [
+        "Un modello di calzatura per bambini con luci incorporate.",
+        "Un alimento ben condito che soddisfa i palati esigenti.",
+        "Un pulsante di avvio dei sistemi operativi desktop."
+      ],
+      "impacto_motivo": "Indica un comportamento squilibrato, sconsiderato o stravagante di una persona."
+    },
+    {
+      "id": 12,
+      "nome": "darsela a gambe",
+      "variacoes": [],
+      "classe_gramatical": "locuzione interiettiva",
+      "significado": "Espressione usata per incoraggiare qualcuno a correre o sbrigarsi.",
+      "tags": ["azione", "espressione"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "L'autobus sta già arrivando all'angolo, dattela a gambe!",
+      "exemplos_incorretos": [
+        "Ho spalmato darsela a gambe sul pane per la colazione.",
+        "Ho comprato una darsela a gambe nuova per illuminare la mia stanza.",
+        "Il medico mi ha prescritto darsela a gambe per curare l'influenza."
+      ],
+      "significados_incorretos": [
+        "Un dolce cremoso derivato dal grasso del latte di mucca.",
+        "Una lampada da tavolo antica che funziona a cherosene.",
+        "Un composto vitaminico in gocce usato per aumentare l'immunità."
+      ],
+      "impacto_motivo": "Si tratta di un comando colloquiale per sbrigarsi, senza carica dispregiativa o di elogio."
+    },
+    {
+      "id": 13,
+      "nome": "chiacchiere",
+      "variacoes": ["fuffa"],
+      "classe_gramatical": "sostantivo",
+      "significado": "Un discorso senza fondamento o che non porta a nulla.",
+      "tags": ["conversazione", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Questa storia che daranno gadget a tutti è pura fuffa.",
+      "exemplos_incorretos": [
+        "Ho usato della fuffa per cucire il bottone della mia camicia.",
+        "L'idraulico ha cambiato la fuffa che perdeva in bagno.",
+        "Ho messo la fuffa alla parete per appendere il cappotto."
+      ],
+      "significados_incorretos": [
+        "Un ago sottile usato nei lavori manuali di sartoria.",
+        "Un raccordo in PVC usato negli impianti fognari residenziali.",
+        "Un supporto metallico fissato a superfici verticali."
+      ],
+      "impacto_motivo": "Classifica il discorso altrui come bugiardo, inutile o manipolatorio."
+    },
+    {
+      "id": 14,
+      "nome": "malfamato",
+      "variacoes": [],
+      "classe_gramatical": "locuzione aggettivale",
+      "significado": "Situazione difficile o complicata.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Quel quartiere di notte diventa un po' malfamato, meglio evitarlo.",
+      "exemplos_incorretos": [
+        "Ho mangiato una barretta malfamata di cioccolato a merenda.",
+        "Ho comprato un elastico malfamato per legarmi i capelli in palestra.",
+        "Il tecnico ha usato un malfamato per misurare la dimensione del tavolo."
+      ],
+      "significados_incorretos": [
+        "Un dolce industriale ricco di calorie e zuccheri.",
+        "Un accessorio elastico usato nelle acconciature sportive.",
+        "Uno strumento di metallo usato per misurare lunghezze esatte."
+      ],
+      "impacto_motivo": "Descrive un ambiente pericoloso o un momento teso e sfavorevole."
+    },
+    {
+      "id": 15,
+      "nome": "sveglio",
+      "variacoes": [],
+      "classe_gramatical": "aggettivo",
+      "significado": "Persona furba o intelligente.",
+      "tags": ["comportamento", "complimento"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Quel ragazzino è sveglio, ha risolto l'enigma del gioco in due minuti.",
+      "exemplos_incorretos": [
+        "Metterò il mio sveglio per andare a giocare a calcio con gli amici.",
+        "Ho tagliato il pane usando uno sveglio molto affilato in cucina.",
+        "Il cielo è pieno di sveglio oggi, credo che pioverà presto."
+      ],
+      "significados_incorretos": [
+        "Un tipo di scarpa da calcetto con tacchetti di gomma.",
+        "Un utensile domestico seghettato usato per affettare gli alimenti.",
+        "Formazioni gassose scure che precedono i temporali."
+      ],
+      "impacto_motivo": "Esalta l'arguzia, la prontezza mentale e la furbizia di qualcuno."
+    },
+    {
+      "id": 16,
+      "nome": "all'antica",
+      "variacoes": ["bacchettone"],
+      "classe_gramatical": "aggettivo",
+      "significado": "Persona conservatrice o che evita le novità.",
+      "tags": ["comportamento", "informale"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "I miei zii sono molto all'antica, non lasciano che i figli usino i social network.",
+      "exemplos_incorretos": [
+        "Accenderò l'all'antica per illuminare il sentiero buio.",
+        "Ho comprato un all'antica di pelle per riporre i miei documenti.",
+        "Ho bevuto un all'antica ghiacciato dopo aver corso in spiaggia."
+      ],
+      "significados_incorretos": [
+        "Un oggetto cilindrico di cera che produce una fiamma stabile.",
+        "Un accessorio tascabile usato per organizzare le carte di credito.",
+        "Una bevanda gassata rinfrescante a base di agrumi."
+      ],
+      "impacto_motivo": "Usata generalmente come critica alla rigidità di atteggiamento, alla mancanza di apertura alle novità o al profilo antiquato."
+    },
+    {
+      "id": 17,
+      "nome": "tutto ok",
+      "variacoes": ["tutto a posto"],
+      "classe_gramatical": "interiezione",
+      "significado": "Espressione usata per indicare che va tutto bene.",
+      "tags": ["saluto", "espressione"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Stai tranquillo, ho già fatto la spesa ed è tutto ok qua.",
+      "exemplos_incorretos": [
+        "Ho speso un sacco di soldi comprando un tutto ok da corsa.",
+        "Il tutto ok si è rotto in mezzo alla strada e ho dovuto chiamare il carro attrezzi.",
+        "Metterò tutto ok sul viso per idratare la pelle prima di dormire."
+      ],
+      "significados_incorretos": [
+        "Scarpe da corsa ad alte prestazioni usate dai maratoneti.",
+        "Un veicolo utilitario a trazione integrale usato nelle fattorie.",
+        "Una crema cosmetica importata con proprietà antietà."
+      ],
+      "impacto_motivo": "Dimostra soddisfazione e conferma che una determinata situazione sta funzionando perfettamente o è in ordine."
+    },
+    {
+      "id": 18,
+      "nome": "in ansia",
+      "variacoes": [],
+      "classe_gramatical": "aggettivo",
+      "significado": "Diffidente, preoccupato o inquieto.",
+      "tags": ["emozione", "comportamento"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Sono rimasto un po' in ansia per quella storia che mi ha raccontato sulla sparizione dei soldi.",
+      "exemplos_incorretos": [
+        "Il cappotto è rimasto in ansia dopo che l'ho lavato in acqua calda.",
+        "Ho mangiato un panzerotto in ansia alla fiera che era delizioso.",
+        "La gomma dell'auto è in ansia, devo cambiarla urgentemente."
+      ],
+      "significados_incorretos": [
+        "Un tessuto che si è ristretto a causa del calore eccessivo.",
+        "Un alimento fritto in olio bollente con ripieno salato.",
+        "Un oggetto gonfiabile che presenta perdita di pressione interna."
+      ],
+      "impacto_motivo": "Riflette uno stato emotivo di apprensione, diffidenza o disturbo interno."
+    },
+    {
+      "id": 19,
+      "nome": "combriccola",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Gruppo di amici o compagnia.",
+      "tags": ["amicizia", "sociale"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "La mia combriccola si riuniva nel parchetto ogni sabato pomeriggio.",
+      "exemplos_incorretos": [
+        "Ho sbucciato la combriccola per fare una zuppa di verdure.",
+        "Ho scritto il biglietto usando una combriccola di inchiostro blu.",
+        "L'uccellino si è rotto la combriccola quando ha provato a volare contro il vetro."
+      ],
+      "significados_incorretos": [
+        "Un tubero commestibile ricco di amido cotto nei pasti.",
+        "Una penna a sfera ricaricabile usata negli uffici.",
+        "L'arto superiore degli uccelli usato per sostenere il volo."
+      ],
+      "impacto_motivo": "Indica in modo descrittivo un gruppo sociale o un circolo di conoscenze, senza connotazione intrinsecamente buona o cattiva."
+    },
+    {
+      "id": 20,
+      "nome": "grana",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Soldi.",
+      "tags": ["soldi", "quotidiano"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Mi è piaciuta molto quella giacca, ma non ho la grana per comprarla adesso.",
+      "exemplos_incorretos": [
+        "Devo legare la grana della mia scarpa che si è slacciata per strada.",
+        "La grana ha cantato forte sull'albero proprio all'inizio della mattina.",
+        "Userò la grana per cancellare l'errore che ho fatto sul quaderno."
+      ],
+      "significados_incorretos": [
+        "Un laccio di cotone o nylon usato nelle scarpe.",
+        "Un uccello selvatico noto per il suo canto mattutino stridulo.",
+        "Una gomma sintetica malleabile usata per correggere la scrittura a matita."
+      ],
+      "impacto_motivo": "Rappresenta una risorsa finanziaria o potere d'acquisto, generalmente percepita in modo favorevole."
+    },
+    {
+      "id": 21,
+      "nome": "tenere il muso",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Essere di cattivo umore o irritato.",
+      "tags": ["emozione", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Ha tenuto il muso perché non ha potuto andare alla partita di calcio con gli amici.",
+      "exemplos_incorretos": [
+        "Terrò il muso sul divano aspettando che il pranzo sia pronto.",
+        "Adora tenere il muso per risparmiare lo stipendio del mese.",
+        "Abbiamo dovuto tenere il muso per riuscire ad attraversare il fiume impetuoso."
+      ],
+      "significados_incorretos": [
+        "L'atto di riposare su superfici imbottite durante il pomeriggio.",
+        "La pratica di conservare i risparmi in conti bancari.",
+        "Navigare su piccole imbarcazioni usando i remi."
+      ],
+      "impacto_motivo": "Esprime fastidio, insoddisfazione o cattivo umore della persona."
+    },
+    {
+      "id": 22,
+      "nome": "avere la testa fra le nuvole",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Immaginare cose assurde o perdere il contatto con la realtà.",
+      "tags": ["immaginazione", "espressione"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Hai la testa fra le nuvole se pensi di prendere dieci senza aver studiato niente.",
+      "exemplos_incorretos": [
+        "Ho messo le valigie in macchina per avere la testa fra le nuvole con la famiglia.",
+        "Vado ad avere la testa fra le nuvole per condire l'insalata di patate.",
+        "Ha dovuto avere la testa fra le nuvole per rinnovare il passaporto in questura."
+      ],
+      "significados_incorretos": [
+        "Spostarsi verso altre città usando le strade statali.",
+        "Aggiungere salse condite nei piatti freddi della cucina.",
+        "Recarsi negli uffici pubblici per l'emissione dei visti."
+      ],
+      "impacto_motivo": "Indica una fantasticheria, un pensiero fuori contesto o una distrazione senza portare necessariamente un peso offensivo o elogiativo."
+    },
+    {
+      "id": 23,
+      "nome": "rompiscatole",
+      "variacoes": [],
+      "classe_gramatical": "aggettivo",
+      "significado": "Persona molto fastidiosa o inopportuna.",
+      "tags": ["comportamento", "insulto"],
+      "permissao": "adolescenti",
+      "impacto": "negativa",
+      "exemplo_correto": "Quel bambino è un rompiscatole, tira i capelli alla sorella tutto il giorno.",
+      "exemplos_incorretos": [
+        "Ho comprato un rompiscatole nuovo in farmacia.",
+        "Ho usato il rompiscatole per pettinarmi i capelli stamattina.",
+        "Il portachiavi ha un rompiscatole di metallo da agganciare ai pantaloni."
+      ],
+      "significados_incorretos": [
+        "Uno spazzolino di plastica usato per l'igiene orale quotidiana.",
+        "Un oggetto con denti fini usato per allineare i capelli.",
+        "Un anello flessibile usato per raggruppare le chiavi di casa."
+      ],
+      "impacto_motivo": "È una parola dispregiativa e offensiva usata per infastidire o etichettare qualcuno come sgradevole."
+    },
+    {
+      "id": 24,
+      "nome": "sbellicarsi dalle risate",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Ridere molto.",
+      "tags": ["umorismo", "espressione"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Siamo andati a vedere quella commedia al cinema e ci siamo sbellicati dalle risate dall'inizio alla fine.",
+      "exemplos_incorretos": [
+        "L'uccellino ha sbattuto contro il muro e si è davvero sbellicato dalle risate.",
+        "Mi sbellicherò dalle risate del gelato per dividerlo con mio fratello.",
+        "Devo sbellicarmi dalle risate della penna perché torni a scrivere."
+      ],
+      "significados_incorretos": [
+        "Causare una frattura nella struttura cheratinosa degli uccelli selvatici.",
+        "Dividere porzioni di alimenti surgelati usando coltelli.",
+        "Premere la punta a sfera degli strumenti di scrittura."
+      ],
+      "impacto_motivo": "Si associa a un momento di gioia, divertimento intenso e leggerezza."
+    },
+    {
+      "id": 25,
+      "nome": "aggiornato",
+      "variacoes": [],
+      "classe_gramatical": "aggettivo",
+      "significado": "Ben informato o esperto delle cose.",
+      "tags": ["conoscenza", "comportamento"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Lei è super aggiornata in tecnologia, sa tutto sui nuovi lanci.",
+      "exemplos_incorretos": [
+        "La radio è aggiornata al muro del salotto con lo scotch.",
+        "Sono rimasto aggiornato nel traffico a causa di un incidente sulla strada.",
+        "Il cappotto è aggiornato, devo cucire la cerniera che si è rotta."
+      ],
+      "significados_incorretos": [
+        "Un oggetto fissato a superfici verticali mediante incollaggio.",
+        "Rimanere bloccati negli ingorghi di veicoli a motore.",
+        "Un capo di abbigliamento che presenta danni alle chiusure."
+      ],
+      "impacto_motivo": "Elogia l'attenzione, l'aggiornamento e la capacità di qualcuno di essere ben informato su determinati temi."
+    },
+    {
+      "id": 26,
+      "nome": "rimorchiare",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Flirtare o corteggiare qualcuno.",
+      "tags": ["relazioni", "sociale"],
+      "permissao": "adolescenti",
+      "impacto": "positiva",
+      "exemplo_correto": "Un tempo i giovani andavano alla festa di paese solo per rimorchiare.",
+      "exemplos_incorretos": [
+        "È andato a rimorchiare il gioco tirando i dadi sul tavolo rotondo.",
+        "Vado a rimorchiare tutta la casa usando scopa e piumino.",
+        "Il meccanico ha provato a rimorchiare il motore per scoprire il difetto elettrico."
+      ],
+      "significados_incorretos": [
+        "Partecipare ad attività ludiche che coinvolgono scommesse finanziarie.",
+        "Fare le pulizie pesanti negli ambienti residenziali interni.",
+        "Fare manutenzione preventiva su componenti elettromeccanici."
+      ],
+      "impacto_motivo": "Si riferisce al gioco dell'attrazione, del corteggiamento e dell'interazione affettiva divertente tra persone."
+    },
+    {
+      "id": 27,
+      "nome": "cesso",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Persona considerata brutta o volgare nello stile.",
+      "tags": ["aspetto", "insulto"],
+      "permissao": "adolescenti",
+      "impacto": "negativa",
+      "exemplo_correto": "Quei vestiti vecchi nella foto la facevano sembrare un cesso completo.",
+      "exemplos_incorretos": [
+        "Ho mangiato un cesso arrosto con le patate al ristorante dell'angolo.",
+        "La barca è affondata perché è finita contro un cesso di ghiaccio.",
+        "Appenderò il cesso al muro per decorare la mia stanza."
+      ],
+      "significados_incorretos": [
+        "Una specie di pesce d'acqua profonda molto consumato sulla costa.",
+        "Un blocco solido d'acqua congelata galleggiante nelle regioni polari.",
+        "Un oggetto artistico incorniciato che funge da ornamento residenziale."
+      ],
+      "impacto_motivo": "È un'espressione offensiva usata per denigrare l'estetica o lo stile di qualcuno."
+    },
+    {
+      "id": 28,
+      "nome": "incavolato",
+      "variacoes": [],
+      "classe_gramatical": "aggettivo",
+      "significado": "Arrabbiato, seccato o infastidito.",
+      "tags": ["emozione", "comportamento"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Sono rimasto incavolato perché il mio migliore amico non mi ha invitato alla sua festa.",
+      "exemplos_incorretos": [
+        "Ho mangiato un dolce incavolato fatto con latte condensato e cocco.",
+        "La gomma incavolata del camion è scoppiata in mezzo all'autostrada principale.",
+        "Ho scritto il biglietto su un foglio incavolato che ho trovato nel cassetto."
+      ],
+      "significados_incorretos": [
+        "Un alimento sferico confezionato molto servito alle feste per bambini.",
+        "Un oggetto pneumatico che presenta deformazioni strutturali nella gomma.",
+        "Un foglio di carta con texture circolari usato per disegnare."
+      ],
+      "impacto_motivo": "Esprime scontento, seccatura o contrarietà rispetto a qualche fatto."
+    },
+    {
+      "id": 29,
+      "nome": "abbordare",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Corteggiare o provare a conquistare qualcuno.",
+      "tags": ["relazioni", "sociale"],
+      "permissao": "adolescenti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ha provato ad abbordare la ragazza della panetteria, ma è stato respinto.",
+      "exemplos_incorretos": [
+        "Vado ad abbordare la serratura d'ingresso perché ho perso il telecomando.",
+        "Il falegname ha dovuto abbordare il legno per dare una finitura liscia.",
+        "Ha iniziato ad abbordare forte al microfono durante la trasmissione."
+      ],
+      "significados_incorretos": [
+        "L'azione di aprire chiavistelli o serrature usando chiavi fisiche.",
+        "Consumare superfici rustiche tramite levigatura meccanica.",
+        "Emettere suoni vocali acuti che causano distorsione negli apparecchi audio."
+      ],
+      "impacto_motivo": "Riguarda approcci amorosi o corteggiamenti che cercano di dimostrare interesse affettivo per qualcuno."
+    },
+    {
+      "id": 30,
+      "nome": "immancabile",
+      "variacoes": [],
+      "classe_gramatical": "locuzione aggettivale",
+      "significado": "Qualcosa che accade sempre o è garantito.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Quella partita di calcetto del mercoledì sera con i colleghi è immancabile.",
+      "exemplos_incorretos": [
+        "Il giudice ha letto il libro immancabile per arrestare il criminale in flagrante.",
+        "Ho comprato un tavolo fatto di immancabile che durerà molti anni in salotto.",
+        "Ho scritto un immancabile sulla carta da inviare a mio cugino."
+      ],
+      "significados_incorretos": [
+        "Un codice legale o raccolta di articoli costituzionali stampati.",
+        "Un materiale ad alta densità estratto da alberi nativi pregiati.",
+        "Una corrispondenza formale scritta a mano per parenti lontani."
+      ],
+      "impacto_motivo": "Descrive abitudini, routine o tradizioni consuete senza implicare un valore positivo o negativo."
+    },
+    {
+      "id": 31,
+      "nome": "rimediare",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Riuscire a procurarsi qualcosa.",
+      "tags": ["quotidiano", "azione"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Vediamo se riesco a rimediare due biglietti VIP per il festival di questo fine settimana.",
+      "exemplos_incorretos": [
+        "Vado a rimediare l'adesivo dal muro per attaccarlo su un altro quaderno.",
+        "L'aquilone ha iniziato a rimediare nel cielo appena si è fermato il vento forte.",
+        "Devo rimediare l'osso del braccio per ingessarlo in ospedale."
+      ],
+      "significados_incorretos": [
+        "Rimuovere pellicole adesive dalle superfici tramite trazione manuale.",
+        "Perdere quota improvvisamente per mancanza di correnti d'aria.",
+        "Una procedura ortopedica di riallineamento di articolazioni fratturate."
+      ],
+      "impacto_motivo": "Si associa al successo nell'ottenere risorse, opportunità o oggetti desiderati."
+    },
+    {
+      "id": 32,
+      "nome": "paninaro",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Ragazzo curato, per bene o associato a una condizione economica privilegiata.",
+      "tags": ["comportamento", "stereotipo"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Quel ragazzino è un paninaro, indossa solo camicie di marca e ha sempre i capelli perfettamente pettinati.",
+      "exemplos_incorretos": [
+        "Ho mangiato un delizioso paninaro di pollo al bar.",
+        "Il meccanico ha cambiato il paninaro del motore che era rotto.",
+        "Userò il paninaro per pulire lo sporco accumulato sul tappeto."
+      ],
+      "significados_incorretos": [
+        "Uno snack fritto fatto con impasto di patate e ripieno proteico.",
+        "Un componente idraulico fissato vicino al radiatore delle auto.",
+        "Un elettrodomestico che fa l'aspirazione di residui solidi."
+      ],
+      "impacto_motivo": "Nonostante descriva uno stereotipo sociale o uno stile di vita, viene usato principalmente come etichetta descrittiva senza un tono strettamente offensivo o elogiativo."
+    },
+    {
+      "id": 33,
+      "nome": "principessina",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Ragazza considerata molto vanitosa, ricca o viziata.",
+      "tags": ["comportamento", "stereotipo"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Lei fa la principessina, adora andare al centro commerciale e indossa solo vestiti rosa.",
+      "exemplos_incorretos": [
+        "Ho piantato una principessina in giardino che fa fiori gialli.",
+        "Ho comprato una principessina di attrezzi per aggiustare il lavandino.",
+        "La principessina della nave si è rotta quando ha urtato contro la banchina di cemento."
+      ],
+      "significados_incorretos": [
+        "Una specie di arbusto ornamentale originario di regioni subtropicali.",
+        "Una custodia di plastica rigida usata per riporre le chiavi inglesi.",
+        "Una struttura in legno usata per l'ancoraggio di grandi imbarcazioni."
+      ],
+      "impacto_motivo": "Funge da etichetta descrittiva di stile e profilo sociale, potendo avere variazioni contestuali senza essere necessariamente un insulto grave."
+    },
+    {
+      "id": 34,
+      "nome": "bruciarsi la reputazione",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Danneggiare la propria immagine o reputazione.",
+      "tags": ["comportamento", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Non arrivare tardi al colloquio per non bruciarti la reputazione col capo.",
+      "exemplos_incorretos": [
+        "Vado a bruciarmi la reputazione sui fornelli per scaldare la casa.",
+        "Ho dimenticato la reputazione al sole e ha finito per bruciarsi la reputazione della macchina.",
+        "Ha usato un fiammifero per bruciarsi la reputazione che era sul DVD di plastica."
+      ],
+      "significados_incorretos": [
+        "Incenerire rotoli di cellulosa per la produzione di energia termica.",
+        "Causare una sovraesposizione alla luce in pellicole fotografiche analogiche.",
+        "Sciogliere supporti digitali di archiviazione usando calore diretto."
+      ],
+      "impacto_motivo": "Coinvolge danni alla reputazione, perdita di credibilità o giudizio sfavorevole da parte di terzi."
+    },
+    {
+      "id": 35,
+      "nome": "gattabuia",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Prigione o carcere.",
+      "tags": ["sicurezza", "quotidiano"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il ladro è stato beccato mentre rubava nel negozio ed è finito dritto in gattabuia.",
+      "exemplos_incorretos": [
+        "Ho bevuto un bicchiere di gattabuia ben ghiacciato al gusto di fragola.",
+        "Ho suonato la gattabuia di metallo a lezione di musica a scuola.",
+        "Userò la gattabuia per misurare la febbre di mio fratello più piccolo."
+      ],
+      "significados_incorretos": [
+        "Uno sciroppo dolce mescolato con acqua gassata ed essenze artificiali.",
+        "Uno strumento a percussione composto da piccole barre di ferro.",
+        "Un dispositivo clinico di vetro usato per misurare la temperatura corporea."
+      ],
+      "impacto_motivo": "Si riferisce alla carcerazione e alla privazione della libertà a seguito di reati."
+    },
+    {
+      "id": 36,
+      "nome": "sfottere",
+      "variacoes": ["sfottò"],
+      "classe_gramatical": "verbo",
+      "significado": "Scherzare, fare casino o prendere in giro qualcuno.",
+      "tags": ["umorismo", "sociale"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Adoriamo sfottere il nostro amico quando la sua squadra perde il derby.",
+      "exemplos_incorretos": [
+        "Vado a sfottere la torta di compleanno usando candeline colorate.",
+        "L'aereo ha iniziato a sfottere forte in cielo prima di atterrare sulla pista.",
+        "Devo sfottere le piante del giardino perché non si secchino d'estate."
+      ],
+      "significados_incorretos": [
+        "Decorare dolci festivi usando glasse commestibili.",
+        "Produrre onde sonore gravi causate da propulsori.",
+        "Innaffiare specie vegetali per il mantenimento idrico."
+      ],
+      "impacto_motivo": "Può rappresentare uno scherzo salutare tra amici o una provocazione, variando secondo il contesto senza avere un impatto strettamente positivo o negativo di default."
+    },
+    {
+      "id": 37,
+      "nome": "falso amico",
+      "variacoes": [],
+      "classe_gramatical": "locuzione sostantiva",
+      "significado": "Persona che finge di essere amica ma in realtà danneggia o tradisce.",
+      "tags": ["amicizia", "insulto"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Ho scoperto che ha raccontato a tutti il mio segreto, è un falso amico.",
+      "exemplos_incorretos": [
+        "Sono andato allo zoo e ho visto un falso amico che dormiva all'ombra.",
+        "Ho comprato una stampa di falso amico per la maglietta di mio figlio.",
+        "Il documentario mostrava un falso amico che cacciava di notte nella savana."
+      ],
+      "significados_incorretos": [
+        "Un felino selvatico di grande taglia trovato nelle foreste tropicali.",
+        "Un motivo tessile che imita il pelo di animali selvatici.",
+        "Una registrazione fotografica di vita selvatica fatta da ricercatori."
+      ],
+      "impacto_motivo": "Denuncia la falsità e il tradimento da parte di qualcuno che si presenta come amico, ma agisce contro gli interessi dell'altro."
+    },
+    {
+      "id": 38,
+      "nome": "leccare il culo",
+      "variacoes": ["leccaculo"],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Elogiare o adulare qualcuno in modo eccessivo e interessato.",
+      "tags": ["comportamento", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Vive a leccare il culo al capo solo per ottenere una promozione.",
+      "exemplos_incorretos": [
+        "Vado a leccare il culo per fare una frittata a colazione.",
+        "Il bebè si è messo a leccare il culo dopo aver mangiato la pappa.",
+        "Devo leccare il culo nella ricetta della torta di compleanno."
+      ],
+      "significados_incorretos": [
+        "Il processo culinario di sbattere le uova per preparare ricette.",
+        "Salivare eccessivamente durante l'alimentazione infantile.",
+        "Mescolare ingredienti liquidi in una ciotola da cucina."
+      ],
+      "impacto_motivo": "Critica l'adulazione esagerata e falsa, di solito motivata da interesse personale."
+    },
+    {
+      "id": 39,
+      "nome": "bello",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Modo affettuoso e informale di riferirsi a un amico.",
+      "tags": ["amicizia", "saluto"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ehi bello, usciamo a bere una birra stasera?",
+      "exemplos_incorretos": [
+        "Ho visto un bello strano che girava per il cortile all'alba.",
+        "Ho comprato il cibo per il bello domestico della mia vicina.",
+        "Il veterinario ha visitato il bello che si era fatto male alla zampa."
+      ],
+      "significados_incorretos": [
+        "Un animale domestico o selvatico di qualsiasi specie.",
+        "Una creatura sconosciuta avvistata in ambienti rurali.",
+        "Un essere vivente non umano che necessita di cure veterinarie."
+      ],
+      "impacto_motivo": "Usata in modo affettuoso tra amici stretti, rafforzando il legame e il cameratismo."
+    },
+    {
+      "id": 40,
+      "nome": "tirare le cuoia",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Morire.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Mio nonno ha tirato le cuoia l'anno scorso, a novantadue anni.",
+      "exemplos_incorretos": [
+        "Vado a tirare le cuoia alla porta per togliere il fango prima di entrare.",
+        "Ho comprato un paio di scarpe nuove per tirare le cuoia nella neve.",
+        "Gli piace tirare le cuoia a ritmo di musica durante il concerto."
+      ],
+      "significados_incorretos": [
+        "Pulire la suola delle scarpe battendole a terra.",
+        "Ballare battendo il ritmo con i piedi calzati.",
+        "Acquistare un nuovo paio di scarpe per l'uso invernale."
+      ],
+      "impacto_motivo": "Si riferisce alla scomparsa di qualcuno, un tema associato alla perdita e al lutto."
+    },
+    {
+      "id": 41,
+      "nome": "essere fuori",
+      "variacoes": ["non capirci un tubo"],
+      "classe_gramatical": "verbo",
+      "significado": "Non capire niente di quello che sta succedendo o venendo detto.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Il professore ha spiegato la materia così in fretta che sono rimasto fuori dall'inizio alla fine.",
+      "exemplos_incorretos": [
+        "La barchetta è rimasta fuori tranquillamente in mezzo al lago.",
+        "Vado a stare fuori in piscina per rilassarmi dopo il lavoro.",
+        "La boa gialla era fuori vicino alla spiaggia per segnalare il pericolo."
+      ],
+      "significados_incorretos": [
+        "Galleggiare sulla superficie dell'acqua senza affondare.",
+        "Rimanere alla deriva su un corpo liquido.",
+        "Un'attività ricreativa di galleggiamento in piscine o al mare."
+      ],
+      "impacto_motivo": "Indica confusione, mancanza di comprensione o non essere aggiornati su un argomento, generando disagio per chi è fuori."
+    },
+    {
+      "id": 42,
+      "nome": "soldi",
+      "variacoes": ["quattrini"],
+      "classe_gramatical": "sostantivo",
+      "significado": "Denaro.",
+      "tags": ["soldi", "quotidiano"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Ho messo da parte dei soldi questo mese per comprare un bel regalo di compleanno.",
+      "exemplos_incorretos": [
+        "Metterò soldi tra i capelli per renderli più lucenti.",
+        "Ho mangiato dei deliziosi soldi al ristorante giapponese ieri.",
+        "L'auto ha fatto uno strano rumore di soldi quando ho acceso il motore."
+      ],
+      "significados_incorretos": [
+        "Un prodotto cosmetico usato per il trattamento dei capelli.",
+        "Un piatto tipico della cucina asiatica servito con salsa speciale.",
+        "Un rumore meccanico associato a guasti nel motore dei veicoli."
+      ],
+      "impacto_motivo": "Rappresenta una risorsa finanziaria, generalmente percepita in modo favorevole quando la si possiede."
+    },
+    {
+      "id": 43,
+      "nome": "fandonia",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Bugia o chiacchiera vuota usata per ingannare qualcuno.",
+      "tags": ["conversazione", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Non credere a quella fandonia che ti ha raccontato sulla macchina nuova, è tutta una bugia.",
+      "exemplos_incorretos": [
+        "Vado a fandonia la porta che è bloccata da giorni.",
+        "Ho comprato una fandonia nuova per decorare la libreria del salotto.",
+        "La fandonia della radio era accesa a tutto volume durante il viaggio."
+      ],
+      "significados_incorretos": [
+        "Un oggetto decorativo usato negli ambienti residenziali.",
+        "Un apparecchio elettronico responsabile della riproduzione audio.",
+        "Un meccanismo di fissaggio usato in porte e finestre bloccate."
+      ],
+      "impacto_motivo": "Classifica un discorso come ingannevole, falso o manipolatorio, generando sfiducia in chi ascolta."
+    },
+    {
+      "id": 44,
+      "nome": "essere al verde",
+      "variacoes": [],
+      "classe_gramatical": "locuzione verbale",
+      "significado": "Essere senza soldi o attraversare difficoltà finanziarie.",
+      "tags": ["soldi", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Non posso uscire questo mese, sono al verde dopo aver pagato tutte le bollette.",
+      "exemplos_incorretos": [
+        "Vado a piantare al verde in giardino per fare una siepe.",
+        "Ho mangiato un delizioso al verde al mercato comunale ieri.",
+        "Il fiume era pieno di al verde dopo la forte pioggia estiva."
+      ],
+      "significados_incorretos": [
+        "Una pianta arbustiva usata per recinzioni e delimitazioni di terreni.",
+        "Un frutto regionale consumato nelle fiere e nei mercati popolari.",
+        "Vegetazione caratteristica delle rive dei fiumi dopo le alluvioni."
+      ],
+      "impacto_motivo": "Descrive una situazione economica difficile, associata alla mancanza di risorse e alla preoccupazione."
+    },
+    {
+      "id": 45,
+      "nome": "prendersi una cotta",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Innamorarsi o rimanere incantati da qualcuno o qualcosa.",
+      "tags": ["relazioni", "emozione"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Appena l'ha vista alla festa, si è preso una cotta ed è andato ad attaccare bottone.",
+      "exemplos_incorretos": [
+        "Vado a prendermi una cotta per il motore dell'auto che fa un rumore strano.",
+        "Devo prendermi una cotta per questa parete prima di dipingere la stanza nuova.",
+        "L'elettricista è stato chiamato per prendersi una cotta sull'impianto elettrico della cucina."
+      ],
+      "significados_incorretos": [
+        "Aggiustare o regolare pezzi meccanici difettosi.",
+        "Preparare superfici per ricevere vernice o rivestimento.",
+        "Riparare impianti elettrici residenziali con problemi."
+      ],
+      "impacto_motivo": "Esprime incanto, passione o fascino intenso per qualcuno o qualcosa, essendo un sentimento generalmente ben accetto."
+    },
+    {
+      "id": 46,
+      "nome": "sbirro",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Poliziotto.",
+      "tags": ["sicurezza", "quotidiano"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Scappa che sta arrivando lo sbirro, qualcuno deve aver chiamato per via del rumore.",
+      "exemplos_incorretos": [
+        "Ho comprato uno sbirro di peluche per mio nipote come regalo.",
+        "Lo sbirro dello zoo stava dormendo dentro il recinto.",
+        "Ho visto uno sbirro attraversare la strada durante il viaggio di notte."
+      ],
+      "significados_incorretos": [
+        "Un piccolo mammifero marsupiale notturno trovato nelle zone rurali.",
+        "Un animale domestico impagliato usato come ornamento.",
+        "Una specie selvatica comune nelle regioni di foresta e savana."
+      ],
+      "impacto_motivo": "Usata in tono dispregiativo o di allerta per riferirsi ai poliziotti, di solito in contesti di fuga o diffidenza verso l'autorità."
+    },
+    {
+      "id": 47,
+      "nome": "prendere in giro",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Deridere o prendersi gioco di qualcuno.",
+      "tags": ["comportamento", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Smettila di prenderlo in giro per come parla, non fa affatto ridere.",
+      "exemplos_incorretos": [
+        "Vado a prendere in giro la frutta che è caduta dall'albero in giardino.",
+        "Ho comprato un prendere in giro maturo per fare il succo a colazione.",
+        "Il frutteto era pieno di prendere in giro pronti per la raccolta."
+      ],
+      "significados_incorretos": [
+        "Un frutto tropicale dalla polpa dolce molto consumato d'estate.",
+        "Un albero da frutto comune nelle regioni di clima caldo.",
+        "Un alimento ricco di vitamine raccolto nei frutteti domestici."
+      ],
+      "impacto_motivo": "Indica scherno o presa in giro nei confronti di qualcuno, il che può causare imbarazzo o dispiacere."
+    },
+    {
+      "id": 48,
+      "nome": "prendere polvere",
+      "variacoes": [],
+      "classe_gramatical": "verbo",
+      "significado": "Aspettare a lungo o essere lasciato da parte senza uso.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Sono rimasto a prendere polvere in fila alla banca per più di un'ora stamattina.",
+      "exemplos_incorretos": [
+        "Il pane ha iniziato a prendere polvere dopo una settimana fuori dal frigo.",
+        "Vado a prendere polvere del formaggio per fare quella ricetta speciale.",
+        "Il frutto ha preso polvere in fretta perché è stato esposto al caldo."
+      ],
+      "significados_incorretos": [
+        "Sviluppare funghi negli alimenti per esposizione all'umidità.",
+        "Il processo di deterioramento dei prodotti deperibili.",
+        "Un'alterazione chimica che avviene negli alimenti mal conservati."
+      ],
+      "impacto_motivo": "Esprime il fastidio di rimanere fermi, dimenticati o in attesa a lungo senza necessità."
+    },
+    {
+      "id": 49,
+      "nome": "casino",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Confusione, guaio o problema.",
+      "tags": ["quotidiano", "espressione"],
+      "permissao": "tutti",
+      "impacto": "negativa",
+      "exemplo_correto": "Meglio non andare a quella festa, dicono che finisce sempre in un casino a fine serata.",
+      "exemplos_incorretos": [
+        "Ho comprato un casino nuovo per riporre i miei documenti importanti.",
+        "Metterò il casino sul tavolo per decorare la cena di oggi.",
+        "Il casino si è rotto appena ho provato ad accendere il computer stamattina."
+      ],
+      "significados_incorretos": [
+        "Un oggetto di archiviazione usato per organizzare le carte.",
+        "Un oggetto decorativo usato su tavoli da pranzo formali.",
+        "Un componente elettronico responsabile dell'avvio degli apparecchi."
+      ],
+      "impacto_motivo": "Si riferisce a situazioni problematiche o confuse, generalmente indesiderate da chi ci finisce coinvolto."
+    },
+    {
+      "id": 50,
+      "nome": "quel non so che",
+      "variacoes": [],
+      "classe_gramatical": "sostantivo",
+      "significado": "Fascino, sensualità o un tocco speciale che attira l'attenzione.",
+      "tags": ["aspetto", "complimento"],
+      "permissao": "tutti",
+      "impacto": "positiva",
+      "exemplo_correto": "Questo vestito nuovo ti dona quel non so che tutto speciale.",
+      "exemplos_incorretos": [
+        "Metterò quel non so che nel motore perché funzioni meglio.",
+        "Ho comprato quel non so che di viti per aggiustare la sedia.",
+        "L'elettricista ha cambiato quel non so che della presa che era bruciato."
+      ],
+      "significados_incorretos": [
+        "Un pezzo meccanico usato nelle riparazioni automobilistiche.",
+        "Uno strumento di fissaggio usato in falegnameria e montaggio.",
+        "Un componente elettrico responsabile della conduzione di energia."
+      ],
+      "impacto_motivo": "Elogia la presenza marcante, il carisma o il tocco speciale di una persona o cosa che si distingue."
+    },
+    {
+      "id": 51,
+      "nome": "vecchio",
+      "variacoes": ["vecchia"],
+      "classe_gramatical": "sostantivo",
+      "significado": "Persona più anziana, generalmente usata per riferirsi ai genitori o ad adulti di mezza età.",
+      "tags": ["famiglia", "quotidiano"],
+      "permissao": "tutti",
+      "impacto": "neutra",
+      "exemplo_correto": "Chiederò dei soldi in prestito al mio vecchio per comprare il biglietto del concerto.",
+      "exemplos_incorretos": [
+        "Il re indossava un vecchio d'oro tempestato di pietre preziose.",
+        "Ho comprato un vecchio di fiori per decorare il tavolo del matrimonio.",
+        "Il dentista mi ha messo un vecchio nuovo sul dente rotto."
+      ],
+      "significados_incorretos": [
+        "Un ornamento reale indossato dai monarchi nelle cerimonie ufficiali.",
+        "Una composizione floreale circolare usata nelle decorazioni festive.",
+        "Una protesi dentale usata per restaurare denti danneggiati."
+      ],
+      "impacto_motivo": "Termine informale e generalmente affettuoso per riferirsi a persone più anziane, senza carica emotiva fissa positiva o negativa."
+    }
+  ]
+}

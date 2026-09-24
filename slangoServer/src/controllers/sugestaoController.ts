@@ -27,6 +27,7 @@ const CAMPOS_OBRIGATORIOS: Array<keyof NovaSugestao> = [
     'impacto',
     'impacto_motivo',
     'classe_gramatical',
+    'pais',
 ];
 
 function validarCamposSugestao(body: any): { ok: true; dados: NovaSugestao } | { ok: false; erro: string } {
@@ -38,6 +39,9 @@ function validarCamposSugestao(body: any): { ok: true; dados: NovaSugestao } | {
     if (faltantes.length > 0) {
         return { ok: false, erro: `Campos obrigatórios ausentes: ${faltantes.join(', ')}` };
     }
+    if (body.pais.trim().length > 100) {
+        return { ok: false, erro: 'O país / região deve ter no máximo 100 caracteres.' };
+    }
     return {
         ok: true,
         dados: {
@@ -47,6 +51,7 @@ function validarCamposSugestao(body: any): { ok: true; dados: NovaSugestao } | {
             impacto: body.impacto,
             impacto_motivo: body.impacto_motivo,
             classe_gramatical: body.classe_gramatical,
+            pais: body.pais.trim().slice(0, 100),
         },
     };
 }

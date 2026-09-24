@@ -7,6 +7,7 @@ import 'texto.dart';
 import '../final/Particulas.dart';
 import '../l10n/l10n.dart';
 import '../l10n/locale_controller.dart';
+import '../service/MundoService.dart';
 
 class ConfiguracoesScreen extends StatefulWidget {
   const ConfiguracoesScreen({super.key});
@@ -289,8 +290,8 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
               dropdownColor: AppColors.card,
               style: AppText.cardTitulo(0.95),
               iconEnabledColor: AppColors.cyan,
-              onChanged: (locale) {
-                if (locale != null) localeController.setLocale(locale);
+               onChanged: (locale) async {
+                 if (locale != null) await _alterarIdioma(locale, localeController);
               },
               items: [
                 DropdownMenuItem(
@@ -315,6 +316,29 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
         ],
       ),
     );
+  }
+
+  Future<void> _alterarIdioma(
+    Locale locale,
+    LocaleController localeController,
+  ) async {
+    await localeController.setLocale(locale);
+
+    try {
+      if (!await UsuarioService.estaConvidado()) {
+        await UsuarioService.atualizarIdioma(locale.languageCode);
+      }
+      // Busca o progresso do idioma novo imediatamente. A tela do mapa
+      // também refaz esta chamada ao observar a mudança de locale.
+      await MundoService.obterProgressoMundos(idioma: locale.languageCode);
+    } catch (error) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error.toString().replaceFirst('Exception: ', '')),
+        ),
+      );
+    }
   }
 
   Widget _campoEditavel({

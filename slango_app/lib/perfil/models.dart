@@ -78,13 +78,28 @@ class ProgressoMundo {
   final int girasAprendidas;
   final int totalGirias;
 
+  /// Melhor progresso já atingido neste mundo em qualquer idioma (0 a 1).
+  final double progressoMaximo;
+
+  /// Certificado do mundo já conquistado — permanece mesmo ao trocar de idioma.
+  final bool diplomaDesbloqueado;
+
   const ProgressoMundo({
     required this.id,
     required this.nome,
     required this.girasAprendidas,
     required this.totalGirias,
+    this.progressoMaximo = 0.0,
+    this.diplomaDesbloqueado = false,
   });
 
   double get progresso =>
       totalGirias == 0 ? 0 : girasAprendidas / totalGirias;
+
+  /// Progresso usado pelo certificado: nunca regride ao trocar de idioma.
+  double get progressoCertificado {
+    final atual = progresso;
+    final maximo = diplomaDesbloqueado ? 1.0 : progressoMaximo;
+    return (maximo > atual ? maximo : atual).clamp(0.0, 1.0);
+  }
 }

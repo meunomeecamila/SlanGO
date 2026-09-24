@@ -14,6 +14,7 @@ import 'cores.dart';
 import 'texto.dart';
 import '../final/Particulas.dart';
 import '../l10n/l10n.dart';
+import '../l10n/locale_controller.dart';
 
 enum _AbaPerfil { itens, certificados }
 
@@ -55,17 +56,27 @@ class _PerfilScreenState extends State<PerfilScreen> {
   /// Usada para decidir qual moldura de Top 3 exibir no avatar.
   int? _posicaoRank;
 
+  String _idioma = 'pt';
+  bool _dependenciasInicializadas = false;
+
   @override
-  void initState() {
-    super.initState();
-    _carregarPerfilFut = _carregarPerfil();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final idioma = LocaleControllerScope.of(context).locale.languageCode;
+    final normalizado =
+        const {'pt', 'en', 'es', 'it'}.contains(idioma) ? idioma : 'pt';
+    if (!_dependenciasInicializadas || normalizado != _idioma) {
+      _dependenciasInicializadas = true;
+      _idioma = normalizado;
+      _carregarPerfilFut = _carregarPerfil();
+    }
   }
 
   Future<void> _carregarPerfil() async {
     try {
       final resultados = await Future.wait([
         UsuarioService.buscarUsuarioLogado(),
-        MundoService.obterProgressoMundos(),
+        MundoService.obterProgressoMundos(idioma: _idioma),
         PerfilService.listarAstronautas(),
         PerfilService.listarItens(),
       ]);
@@ -80,11 +91,16 @@ class _PerfilScreenState extends State<PerfilScreen> {
         final id = item['id']?.toString() ?? '';
         final quantidadeAprendida = item['quantidadeAprendida'] as int? ?? 0;
         final totalGirias = item['totalGirias'] as int? ?? 30;
+        final progressoMaximo =
+            (item['progressoMaximo'] as num?)?.toDouble() ?? 0.0;
         return ProgressoMundo(
           id: id,
           nome: _nomeDoMundo(context, id),
           girasAprendidas: quantidadeAprendida,
           totalGirias: totalGirias,
+          progressoMaximo: progressoMaximo,
+          diplomaDesbloqueado:
+              item['diplomaDesbloqueado'] as bool? ?? progressoMaximo >= 1.0,
         );
       }).toList();
 
@@ -100,7 +116,9 @@ class _PerfilScreenState extends State<PerfilScreen> {
       // deve quebrar o perfil, então tratamos o erro silenciosamente.
       int? posicaoRank;
       try {
-        final ranking = await RankingService.buscarRankingGlobal();
+        final ranking = await RankingService.buscarRankingGlobal(
+          idioma: usuario.idioma,
+        );
         for (final item in ranking) {
           if (item.idUsuario == usuario.id) {
             posicaoRank = item.posicao;

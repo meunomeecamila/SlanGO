@@ -1,11 +1,14 @@
 import bcrypt from 'bcrypt';
 import { Usuario, UsuarioPublico } from '../types/Jogo';
 import { supabase } from '../dbConnection';
+import { IDIOMAS_SUPORTADOS, idiomaValido } from '../utils/girias/dicionarioGirias';
 
 const SALT_ROUNDS = 10;
 const IDADE_MINIMA = 13;
 
-type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca' | 'email_verificado'| 'sexo' >;
+type DadosCriacaoUsuario = Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca' | 'email_verificado'| 'sexo' > & {
+    idioma?: string;
+};
 type DadosAtualizacaoUsuario = Partial<Pick<Usuario, 'Nome' | 'Email' | 'Senha' | 'Responsavel' | 'Data' | 'perguntaSeguranca' | 'respostaSeguranca'>>;
 
 function removerSenha(usuario: Usuario): UsuarioPublico {
@@ -72,7 +75,8 @@ export async function criarUsuario(dados: DadosCriacaoUsuario): Promise<UsuarioP
                 perguntaSeguranca: dados.perguntaSeguranca,
                 respostaSeguranca: dados.respostaSeguranca,
                 email_verificado: dados.email_verificado,
-                Sexo: dados.sexo
+                Sexo: dados.sexo,
+                idioma: idiomaValido(dados.idioma ?? '') ? dados.idioma : 'pt',
             }
         ])
         .select()
@@ -114,6 +118,38 @@ export async function buscarUsuarioPorId(id: number): Promise<UsuarioPublico | n
     if (error) throw new Error(error.message);
     return data ? removerSenha(data as Usuario) : null;
 }
+
+export async function atualizarIdioma(
+    id: number,
+    idioma: string,
+): Promise<UsuarioPublico | null> {
+    if (!idiomaValido(idioma)) {
+        throw new Error('IDIOMA_NAO_SUPORTADO');
+    }
+
+    const { data, error } = await supabase
+        .from('User')
+        .update({ idioma })
+        .eq('id', id)
+        .select()
+        .maybeSingle();
+
+    if (error) throw new Error(error.message);
+    return data ? removerSenha(data as Usuario) : null;
+}
+
+export async function obterIdiomaDoUsuario(idUsuario: number): Promise<string> {
+    const { data, error } = await supabase
+        .from('User')
+        .select('idioma')
+        .eq('id', idUsuario)
+        .maybeSingle();
+
+    if (error || !data || !idiomaValido(data.idioma ?? '')) return 'pt';
+    return data.idioma;
+}
+
+export { IDIOMAS_SUPORTADOS };
 
 export async function atualizarUsuario(id: number, dados: DadosAtualizacaoUsuario): Promise<UsuarioPublico | null> {
     const usuarioExistente = await supabase

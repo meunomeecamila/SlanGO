@@ -100,6 +100,7 @@ class RankingService {
     required String nomeDoMundo,
     required int tempoMs,
     required int pontuacaoFinal, // número de acertos (0–9)
+    String idioma = 'pt',
   }) async {
     final response = await http.post(
       Uri.parse('$_baseUrl/ranking'),
@@ -108,6 +109,7 @@ class RankingService {
         'nomeDoMundo': nomeDoMundo,
         'tempoMs': tempoMs,
         'pontuacaoFinal': pontuacaoFinal,
+        'idioma': idioma,
       }),
     );
 
@@ -118,9 +120,14 @@ class RankingService {
     return ResultadoRanking.fromJson(corpo);
   }
 
-  static Future<List<ItemRanking>> buscarRankingGlobal({int limite = 500}) async {
+  static Future<List<ItemRanking>> buscarRankingGlobal({
+    int limite = 500,
+    String idioma = 'pt',
+  }) async {
     final response = await http.get(
-      Uri.parse('$_baseUrl/ranking?limite=$limite'),
+      Uri.parse('$_baseUrl/ranking').replace(
+        queryParameters: {'limite': '$limite', 'idioma': idioma},
+      ),
       headers: await _headers(),
     );
 
@@ -131,9 +138,11 @@ class RankingService {
     return (corpo['ranking'] as List).map((e) => ItemRanking.fromJson(e)).toList();
   }
 
-  static Future<PosicaoUsuario> buscarMinhaPosicao() async {
+  static Future<PosicaoUsuario> buscarMinhaPosicao({String idioma = 'pt'}) async {
     final response = await http.get(
-      Uri.parse('$_baseUrl/ranking/minha-posicao'),
+      Uri.parse('$_baseUrl/ranking/minha-posicao').replace(
+        queryParameters: {'idioma': idioma},
+      ),
       headers: await _headers(),
     );
 

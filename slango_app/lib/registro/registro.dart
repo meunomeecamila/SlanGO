@@ -38,6 +38,15 @@ class _RegistroScreenState extends State<RegistroScreen> {
   String? perguntaSeguranca;
   Sexo? sexo;
 
+  /// País escolhido -> código de idioma enviado ao backend.
+  static const Map<String, String> _paises = {
+    'pt': 'Brasil',
+    'es': 'Espanha',
+    'en': 'Estados Unidos',
+    'it': 'Itália',
+  };
+  String? idiomaPais;
+
   @override
   void dispose() {
     nomeController.dispose();
@@ -195,6 +204,11 @@ class _RegistroScreenState extends State<RegistroScreen> {
       return;
     }
 
+    if (idiomaPais == null) {
+      _mostrarErro('Selecione seu país.');
+      return;
+    }
+
     if (perguntaSeguranca == null) {
       _mostrarErro(context.l10n.selectSecurityQuestionError);
       return;
@@ -218,7 +232,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
         sexo: sexo?.valor,
         perguntaSeguranca: perguntaSeguranca?.trim(),
         respostaSeguranca: respostaSegurancaController.text.trim(),
-        emailVerificado: termosAceitos, 
+        emailVerificado: termosAceitos,
+        idioma: idiomaPais!,
       );
 
       if (!mounted) return;
@@ -341,6 +356,34 @@ class _RegistroScreenState extends State<RegistroScreen> {
                             sexo = valor;
                           });
                         },
+                      ),
+                      const SizedBox(height: 24),
+
+                      DropdownButtonFormField<String>(
+                        value: idiomaPais,
+                        dropdownColor: const Color(0xFF241A3D),
+                        style: const TextStyle(color: Colors.white),
+                        iconEnabledColor: Colors.white70,
+                        decoration: InputDecoration(
+                          labelText: 'País',
+                          labelStyle: const TextStyle(color: Colors.white70),
+                          prefixIcon: const Icon(Icons.public, color: Colors.white70),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(14),
+                            borderSide: const BorderSide(color: Colors.white24),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(14),
+                            borderSide: const BorderSide(color: Color(0xFF57E6D8)),
+                          ),
+                        ),
+                        items: _paises.entries
+                            .map((e) => DropdownMenuItem(
+                                  value: e.key,
+                                  child: Text(e.value),
+                                ))
+                            .toList(),
+                        onChanged: (valor) => setState(() => idiomaPais = valor),
                       ),
                       const SizedBox(height: 24),
 

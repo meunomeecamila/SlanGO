@@ -56,6 +56,7 @@ export interface Usuario {
   id_Astronauta: number | null; // avatar escolhido livremente pelo usuário
   email_verificado: boolean;
   sexo: string;
+  idioma: string;
 }
 
 /** Versão segura para respostas da API — nunca inclui a senha */
@@ -68,6 +69,7 @@ export interface UsuarioMundo {
   giriasAprendidas: string; // "text" no banco — pode ser JSON stringificado ou lista separada por vírgula
   progresso: number; // float4
   quantidadeAprendida: number; // int8
+  idioma: string;
 }
 
 export interface Personagem {
@@ -157,11 +159,12 @@ export interface SugestaoGiria {
   classe_gramatical?: string;
   status: StatusSugestao;
   criado_em: string;
+  pais: string | null;
 }
 
 export type DadosCriacaoSugestao = Pick<
   SugestaoGiria,
-  'nome' | 'significado' | 'exemplo' | 'impacto' | 'impacto_motivo' | 'tags' | 'classe_gramatical'
+  'nome' | 'significado' | 'exemplo' | 'impacto' | 'impacto_motivo' | 'tags' | 'classe_gramatical' | 'pais'
 >;
 
 // Body opcional de edição no momento da aprovação

@@ -1,5 +1,6 @@
 import { supabase } from '../dbConnection';
 import { verificarEDesbloquearItens } from './itemService';
+import { obterGiriasDoMundo } from '../utils/girias/dicionarioGirias';
 
 const TABELA_PROGRESSO = 'user_mundo';
 const TABELA_MUNDO = 'Mundo';
@@ -17,7 +18,15 @@ interface ProgressoUsuario {
  * ex: 'kpop', 'esportes'. Comparação case-insensitive (ILIKE) pra não depender de
  * capitalização exata no banco.
  */
+// Ids dos mundos não mudam: guardamos em memória para não consultar o banco
+// a cada requisição (antes eram ~11 consultas só para listar o progresso).
+const cacheIdMundo = new Map<string, number>();
+
 export async function buscarIdMundoPorNome(nomeDoMundo: string): Promise<number | null> {
+    const chave = (nomeDoMundo ?? '').trim().toLowerCase();
+    const emCache = cacheIdMundo.get(chave);
+    if (emCache !== undefined) return emCache;
+
     const { data, error } = await supabase
         .from(TABELA_MUNDO)
         .select('id')
@@ -29,6 +38,7 @@ export async function buscarIdMundoPorNome(nomeDoMundo: string): Promise<number 
         return null;
     }
 
+    if (data) cacheIdMundo.set(chave, data.id);
     return data ? data.id : null;
 }
 
@@ -36,12 +46,17 @@ export async function buscarIdMundoPorNome(nomeDoMundo: string): Promise<number 
  * Busca as gírias que o usuário já aprendeu (rodadas com ≥80% de acerto)
  * num mundo específico. Retorna array vazio se ele nunca "passou" nesse mundo.
  */
-export async function buscarGiriasAprendidas(idMundo: number, idUser: number): Promise<string[]> {
+export async function buscarGiriasAprendidas(
+    idMundo: number,
+    idUser: number,
+    idioma = 'pt',
+): Promise<string[]> {
     const { data, error } = await supabase
         .from(TABELA_PROGRESSO)
         .select('Girias_Aprendidas')
         .eq('id_Mundo', idMundo)
         .eq('id_User', idUser)
+        .eq('idioma', idioma)
         .maybeSingle(); 
 
     if (error) {
@@ -60,13 +75,15 @@ export async function buscarGiriasAprendidas(idMundo: number, idUser: number): P
 
 export async function buscarProgressoDoUsuario(
     idMundo: number,
-    idUser: number
+    idUser: number,
+    idioma = 'pt',
 ): Promise<{ progresso: number; quantidadeAprendida: number }> {
     const { data, error } = await supabase
         .from(TABELA_PROGRESSO)
         .select('Progresso, Quantidade_Aprendida')
         .eq('id_Mundo', idMundo)
         .eq('id_User', idUser)
+        .eq('idioma', idioma)
         .maybeSingle();
 
     if (error || !data) {
@@ -77,12 +94,40 @@ export async function buscarProgressoDoUsuario(
 }
 
 
+/**
+ * Melhor progresso que o usuário já atingiu em cada mundo, considerando TODOS
+ * os idiomas. É essa métrica que decide o diploma: quem fechou 100% de um mundo
+ * em qualquer idioma mantém o diploma para sempre, mesmo trocando de idioma.
+ */
+export async function buscarProgressoMaximoPorMundo(
+    idUser: number,
+): Promise<Record<number, number>> {
+    const { data, error } = await supabase
+        .from(TABELA_PROGRESSO)
+        .select('id_Mundo, Progresso')
+        .eq('id_User', idUser);
+
+    if (error || !data) {
+        if (error) console.error('Erro ao buscar progresso máximo:', error);
+        return {};
+    }
+
+    const maximos: Record<number, number> = {};
+    for (const linha of data) {
+        const atual = maximos[linha.id_Mundo] ?? 0;
+        const progresso = linha.Progresso ?? 0;
+        if (progresso > atual) maximos[linha.id_Mundo] = progresso;
+    }
+
+    return maximos;
+}
+
 export async function salvarProgressoUsuario(
     nomeDoMundo: string,
     idUser: number,
     giriasDaRodada: any[], // Recebe os IDs da rodada
     pontuacaoObtida: number,
-    totalGiriasMundo: number, // Total de gírias cadastradas nesse mundo (ex: 45) — vem de contarGiriasPorMundos()
+    idioma = 'pt',
     pontuacaoMaxima: number = 9 // Nota máxima do QUIZ em si (sempre 9: 3 gírias x 3 fases). Não confundir com totalGiriasMundo.
 ): Promise<{ salvou: boolean; percentualAcerto: number; progressoMundo: number | null }> {
     
@@ -97,13 +142,14 @@ export async function salvarProgressoUsuario(
         return { salvou: false, percentualAcerto, progressoMundo: null };
     }
 
-    const giriasJaAprendidas = await buscarGiriasAprendidas(idMundo, idUser);
+    const giriasJaAprendidas = await buscarGiriasAprendidas(idMundo, idUser, idioma);
 
 
     const rodadaStrings = giriasDaRodada.map(String);
 
     const novaListaGirias = Array.from(new Set([...giriasJaAprendidas, ...rodadaStrings]));
 
+    const totalGiriasMundo = obterGiriasDoMundo(nomeDoMundo, idioma).length;
     const progressoMundo = totalGiriasMundo > 0
         ? novaListaGirias.length / totalGiriasMundo
         : 0;
@@ -111,6 +157,7 @@ export async function salvarProgressoUsuario(
     const payload = {
         id_Mundo: idMundo,
         id_User: idUser,
+        idioma,
         Girias_Aprendidas: novaListaGirias.join(', '), // Salva "1, 2, 3, 4"
         Progresso: progressoMundo,
         Quantidade_Aprendida: novaListaGirias.length,  // Soma o total acumulado
@@ -118,7 +165,7 @@ export async function salvarProgressoUsuario(
 
     const { error } = await supabase
         .from('user_mundo') // Substitua pela sua TABELA_PROGRESSO
-        .upsert([payload], { onConflict: 'id_Mundo,id_User' });
+        .upsert([payload], { onConflict: 'id_User,id_Mundo,idioma' });
 
     if (error) {
         console.error('Erro ao salvar progresso:', error);

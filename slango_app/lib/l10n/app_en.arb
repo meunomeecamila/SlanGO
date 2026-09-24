@@ -80,7 +80,7 @@
   "guestLogin": "Continue as guest",
   "loggingIn": "Signing in...",
   "welcomeMessage": "Learn slang from different communities and get closer to the people you love!",
-  "questionProgress": "Question $current of $total",
+  "questionProgress": "Question {current} of {total}",
   "@questionProgress": {
     "placeholders": {
       "current": {
@@ -92,7 +92,7 @@
     }
   },
   "noQuestionsFound": "No questions found.",
-  "errorLoadingQuiz": "Error loading quiz:\\n$error",
+  "errorLoadingQuiz": "Error loading quiz:\\n{error}",
   "@errorLoadingQuiz": {
     "placeholders": {
       "error": {
@@ -101,7 +101,7 @@
     }
   },
   "noPhasesFound": "No phases found.",
-  "errorLoadingPhases": "Error loading phases: $error",
+  "errorLoadingPhases": "Error loading phases: {error}",
   "@errorLoadingPhases": {
     "placeholders": {
       "error": {
@@ -113,7 +113,7 @@
   "correctFeedback": "Correct! 🎉",
   "incorrectFeedback": "Incorrect!",
   "keepGoingFeedback": "Nice! Keep it up.",
-  "correctAnswerWas": "Answer: $answer",
+  "correctAnswerWas": "Answer: {answer}",
   "@correctAnswerWas": {
     "placeholders": {
       "answer": {
@@ -129,7 +129,7 @@
   "resultGreatMessage": "You did really well on this journey!",
   "resultGoodEffortMessage": "Good effort! Review the slang you missed and try again.",
   "resultTryAgainMessage": "Every journey starts with a single step. How about reviewing the lesson and trying again?",
-  "worldName": "World $world",
+  "worldName": "World {world}",
   "@worldName": {
     "placeholders": {
       "world": {
@@ -140,7 +140,7 @@
   "correctAnswersLabel": "Correct",
   "wrongAnswersLabel": "Wrong",
   "timeLabel": "Time",
-  "performancePercentage": "$percent% performance",
+  "performancePercentage": "{percent}% performance",
   "@performancePercentage": {
     "placeholders": {
       "percent": {
@@ -198,7 +198,7 @@
   "worldRelationshipsDescription": "How people talk about crushes, friendships, and breakups in today's conversations.",
   "worldCommunityName": "Community World",
   "worldCommunityDescription": "The community's universe: terms, expressions, and conversations that bring members together.",
-  "slangsLearnedProgress": "$learned/$total slang words learned",
+  "slangsLearnedProgress": "{learned}/{total} slang words learned",
   "@slangsLearnedProgress": {
     "placeholders": {
       "learned": {
@@ -209,7 +209,7 @@
       }
     }
   },
-  "slangsToLearn": "$total slang words to learn",
+  "slangsToLearn": "{total} slang words to learn",
   "@slangsToLearn": {
     "placeholders": {
       "total": {
@@ -217,7 +217,7 @@
       }
     }
   },
-  "learnedOfTotal": "$learned/$total learned",
+  "learnedOfTotal": "{learned}/{total} learned",
   "@learnedOfTotal": {
     "placeholders": {
       "learned": {

@@ -79,7 +79,7 @@ class _AbaCertificadosState extends State<AbaCertificados> {
 
   Future<void> _salvarDesbloqueadosAtuais(SharedPreferences prefs) async {
     final desbloqueadosAgora = widget.mundos
-        .where((m) => m.progresso >= 1.0)
+        .where((m) => m.progressoCertificado >= 1.0)
         .map(_idDoMundo)
         .toSet();
 
@@ -94,7 +94,7 @@ class _AbaCertificadosState extends State<AbaCertificados> {
 
     for (final mundo in widget.mundos) {
       final id = _idDoMundo(mundo);
-      final desbloqueado = mundo.progresso >= 1.0;
+      final desbloqueado = mundo.progressoCertificado >= 1.0;
       final jaEraVistoAntes = _idsJaVistosDesbloqueados.contains(id);
 
       if (desbloqueado && !jaEraVistoAntes) {
@@ -139,7 +139,7 @@ class _AbaCertificadosState extends State<AbaCertificados> {
 
         return CardCertificadoMundo(
           certificado: certificado,
-          progresso: mundo.progresso,
+          progresso: mundo.progressoCertificado,
           onAbrir: () {
             // Efeito empolgante ao liberar o certificado.
             EfeitoConfete.disparar(

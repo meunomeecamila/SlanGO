@@ -255,7 +255,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String questionProgress(int current, int total) {
-    return 'Question \$current of \$total';
+    return 'Question $current of $total';
   }
 
   @override
@@ -263,7 +263,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String errorLoadingQuiz(String error) {
-    return 'Error loading quiz:\\n\$error';
+    return 'Error loading quiz:\\n$error';
   }
 
   @override
@@ -271,7 +271,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String errorLoadingPhases(String error) {
-    return 'Error loading phases: \$error';
+    return 'Error loading phases: $error';
   }
 
   @override
@@ -288,7 +288,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String correctAnswerWas(String answer) {
-    return 'Answer: \$answer';
+    return 'Answer: $answer';
   }
 
   @override
@@ -319,7 +319,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String worldName(String world) {
-    return 'World \$world';
+    return 'World $world';
   }
 
   @override
@@ -333,7 +333,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String performancePercentage(int percent) {
-    return '\$percent% performance';
+    return '$percent% performance';
   }
 
   @override
@@ -505,17 +505,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String slangsLearnedProgress(int learned, int total) {
-    return '\$learned/\$total slang words learned';
+    return '$learned/$total slang words learned';
   }
 
   @override
   String slangsToLearn(int total) {
-    return '\$total slang words to learn';
+    return '$total slang words to learn';
   }
 
   @override
   String learnedOfTotal(int learned, int total) {
-    return '\$learned/\$total learned';
+    return '$learned/$total learned';
   }
 
   @override

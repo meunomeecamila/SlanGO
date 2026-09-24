@@ -7,6 +7,7 @@ import '../widgets/moldura_rank.dart';
 import '../../final/Particulas.dart';
 import '../../service/rankService.dart';
 import '../../l10n/l10n.dart';
+import '../../l10n/locale_controller.dart';
 
 String formatarTempo(int ms) {
   final minutos = ms ~/ 60000;
@@ -32,17 +33,29 @@ class RankingScreen extends StatefulWidget {
 class _RankingScreenState extends State<RankingScreen> {
   late Future<List<ItemRanking>> _rankingFuture;
   late Future<PosicaoUsuario> _minhaPosicaoFuture;
+  String _idioma = 'pt';
+  bool _localeInicializado = false;
 
   @override
   void initState() {
     super.initState();
-    _carregarRanking();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final idioma = LocaleControllerScope.of(context).locale.languageCode;
+    if (!_localeInicializado || idioma != _idioma) {
+      _localeInicializado = true;
+      _idioma = const {'pt', 'en', 'es', 'it'}.contains(idioma) ? idioma : 'pt';
+      _carregarRanking();
+    }
   }
 
   void _carregarRanking() {
     setState(() {
-      _rankingFuture = RankingService.buscarRankingGlobal();
-      _minhaPosicaoFuture = RankingService.buscarMinhaPosicao();
+      _rankingFuture = RankingService.buscarRankingGlobal(idioma: _idioma);
+      _minhaPosicaoFuture = RankingService.buscarMinhaPosicao(idioma: _idioma);
     });
   }
 

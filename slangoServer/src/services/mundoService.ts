@@ -1,31 +1,16 @@
-import antigoData from '../utils/girias/antigo.json';
-import cotidianoData from '../utils/girias/cotidiano.json';
-import esportesData from '../utils/girias/esportes.json';
-import geekData from '../utils/girias/geek.json';
-import jogosData from '../utils/girias/jogos.json';
-import kpopData from '../utils/girias/kpop.json';
-import maquiagemData from '../utils/girias/maquiagem.json';
-import popData from '../utils/girias/pop.json';
-import redesSociaisData from '../utils/girias/redessociais.json';
-import relacionamentosData from '../utils/girias/relacionamentos.json';
-import comunidadeData from '../utils/girias/comunidade.json'
-
 import { Girias, FaseMundo } from '../types/Jogo';
-import { buscarGiriasAprendidas, buscarIdMundoPorNome, buscarProgressoDoUsuario } from './preogressoService'; 
-
-const mundos = {
-    antigo: antigoData,
-    cotidiano: cotidianoData,
-    esportes: esportesData,
-    geek: geekData,
-    jogos: jogosData,
-    kpop: kpopData,
-    maquiagem: maquiagemData,
-    pop: popData,
-    redessociais: redesSociaisData,
-    relacionamentos: relacionamentosData,
-    comunidade : comunidadeData
-};
+import {
+    buscarGiriasAprendidas,
+    buscarIdMundoPorNome,
+    buscarProgressoDoUsuario,
+    buscarProgressoMaximoPorMundo,
+} from './preogressoService';
+import {
+    contarGiriasPorMundos as contarGiriasDoDicionario,
+    idiomaValido,
+    NOMES_MUNDOS,
+    obterGiriasDoMundo,
+} from '../utils/girias/dicionarioGirias';
 
 interface EstadoMundo {
     listaEmbaralhada: Girias[];
@@ -33,20 +18,6 @@ interface EstadoMundo {
 }
 
 const estadoDosMundos: Record<string, EstadoMundo> = {};
-
-function extrairGiriasDoMundo(mundoData: any): Girias[] {
-    if (Array.isArray(mundoData)) {
-        return mundoData as Girias[];
-    }
-    if (mundoData && typeof mundoData === 'object') {
-        for (const valor of Object.values(mundoData)) {
-            if (Array.isArray(valor)) {
-                return valor as Girias[];
-            }
-        }
-    }
-    return [];
-}
 
 // ──────────────────────────────────────────────────────────────
 // 1. FUNÇÕES AUXILIARES DE EMBARALHAMENTO
@@ -139,8 +110,27 @@ function gerarFase1(giriasSorteadas: Girias[]) {
     });
 }
 
-function gerarFase2(giriasSorteadas: Girias[]) {
-    const opcoesDeImpacto = ['positiva', 'negativa', 'neutra', 'depende de contexto'];
+type CategoriaImpacto = 'positiva' | 'negativa' | 'neutra' | 'depende';
+
+const ROTULOS_IMPACTO: Record<string, Record<CategoriaImpacto, string>> = {
+    pt: { positiva: 'positiva', negativa: 'negativa', neutra: 'neutra', depende: 'depende de contexto' },
+    en: { positiva: 'positive', negativa: 'negative', neutra: 'neutral', depende: 'depends on context' },
+    es: { positiva: 'positiva', negativa: 'negativa', neutra: 'neutra', depende: 'depende del contexto' },
+    it: { positiva: 'positiva', negativa: 'negativa', neutra: 'neutra', depende: 'dipende dal contesto' },
+};
+
+/** Converte "positive", "positivo", "depende del contexto", etc. para uma categoria única. */
+function categoriaDoImpacto(impacto: string): CategoriaImpacto {
+    const v = (impacto ?? '').trim().toLowerCase();
+    if (v.startsWith('posit')) return 'positiva';
+    if (v.startsWith('negat')) return 'negativa';
+    if (v.startsWith('neut')) return 'neutra';
+    return 'depende';
+}
+
+function gerarFase2(giriasSorteadas: Girias[], idioma = 'pt') {
+    const rotulos = ROTULOS_IMPACTO[idioma] ?? ROTULOS_IMPACTO.pt;
+    const opcoesDeImpacto = [rotulos.positiva, rotulos.negativa, rotulos.neutra, rotulos.depende];
     return giriasSorteadas.map((giria) => {
         return {
             giriaId: giria.id, 
@@ -148,7 +138,8 @@ function gerarFase2(giriasSorteadas: Girias[]) {
             giria: giria.nome,
             textoDaPergunta: `Qual é o impacto/sentimento que a gíria "${giria.nome}" passa?`,
             opcoes: opcoesDeImpacto,
-            respostaCorreta: giria.impacto,
+            // Sempre um dos rótulos das opções — garante uma alternativa correta.
+            respostaCorreta: rotulos[categoriaDoImpacto(giria.impacto)],
             explicacao: giria.significado,
             exemplo: giria.exemplo_correto,
             // Justificativa exibida na caixinha logo abaixo da alternativa correta
@@ -224,14 +215,18 @@ function converterParaFaseMundo(
 // ──────────────────────────────────────────────────────────────
 // 4. FUNÇÃO PRINCIPAL: prepararRodadaAleatoria
 // ──────────────────────────────────────────────────────────────
-export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: number) => {
-    const mundo = mundos[nomeDoMundo as keyof typeof mundos];
+export const prepararRodadaAleatoria = async (
+    nomeDoMundo: string,
+    idUsuario: number | null,
+    idioma = 'pt',
+) => {
+    const mundo = nomeDoMundo.trim().toLowerCase();
 
-    if (!mundo) {
+    if (!NOMES_MUNDOS.includes(mundo as (typeof NOMES_MUNDOS)[number])) {
         throw new Error('Mundo não encontrado!');
     }
 
-    const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
+    const todasAsGiriasDoMundo = obterGiriasDoMundo(mundo, idioma);
 
     const tituloDoMundo =
         `Mundo ${nomeDoMundo.charAt(0).toUpperCase()}${nomeDoMundo.slice(1)}`;
@@ -241,8 +236,8 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
 
     // Busca no banco quais gírias (IDs) esse usuário já aprendeu.
     const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
-    const giriasJaAprendidas = idMundoNumerico !== null
-        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
+    const giriasJaAprendidas = idMundoNumerico !== null && idUsuario !== null
+        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario, idioma)
         : [];
 
     // A partir de 10% de gírias aprendidas nesse mundo, elas voltam a
@@ -257,7 +252,7 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
     const giriasParaExcluir = percentualAprendido >= 0.10 ? [] : giriasJaAprendidas;
 
     // Sorteia 3 gírias únicas
-    const chaveEstado = `${idUsuario}_${nomeDoMundo}`;
+    const chaveEstado = `${idUsuario ?? 'convidado'}_${mundo}_${idioma}`;
     const tresPalavras = puxarProximasGiriasUnicas(
         chaveEstado,
         todasAsGiriasDoMundo,
@@ -267,7 +262,7 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
 
     // Gera as perguntas das 3 fases sobre as mesmas 3 gírias
     const fase1 = gerarFase1(tresPalavras);
-    const fase2 = gerarFase2(tresPalavras);
+    const fase2 = gerarFase2(tresPalavras, idioma);
     const fase3 = gerarFase3(tresPalavras);
 
     const variacoesPorGiria: Record<string, string[]> = {};
@@ -300,7 +295,7 @@ export const prepararRodadaAleatoria = async (nomeDoMundo: string, idUsuario: nu
     });
 
     return {
-        id: nomeDoMundo,
+        id: mundo,
         nome: tituloDoMundo,
         descricao: descricaoDoMundo,
         fases,            
@@ -316,7 +311,7 @@ export function verificarPremioCustomizavel(pontuacaoFinal: number): boolean {
 }
 
 export function listarMundos() {
-    return Object.keys(mundos).map((nome) => {
+    return [...NOMES_MUNDOS].map((nome) => {
         return nome.charAt(0).toUpperCase() + nome.slice(1);
     });
 }
@@ -328,23 +323,53 @@ export function listarMundos() {
  * hardcoded de `progresso` na lista estática do Flutter.
  */
 export async function listarMundosComProgresso(
-    idUsuario: number
-): Promise<Array<{ id: string; progresso: number; quantidadeAprendida: number; totalGirias: number }>> {
-    const nomesDosMundos = Object.keys(mundos);
-    const contagemMundos = contarGiriasPorMundos();
+    idUsuario: number | null,
+    idioma = 'pt',
+): Promise<Array<{
+    id: string;
+    progresso: number;
+    quantidadeAprendida: number;
+    totalGirias: number;
+    progressoMaximo: number;
+    diplomaDesbloqueado: boolean;
+}>> {
+    const nomesDosMundos = [...NOMES_MUNDOS];
+    const contagemMundos = contarGiriasPorMundos(idioma);
+
+    // Diploma é conquista permanente: vale o melhor progresso já feito em
+    // qualquer idioma, então trocar o idioma nunca remove um diploma.
+    const progressoMaximoPorMundo = idUsuario !== null
+        ? await buscarProgressoMaximoPorMundo(idUsuario)
+        : {};
 
     const resultados = await Promise.all(
         nomesDosMundos.map(async (nome) => {
             const idMundo = await buscarIdMundoPorNome(nome);
             const totalGirias = contagemMundos[nome] ?? 0;
 
-            if (idMundo === null) {
+            if (idMundo === null || idUsuario === null) {
                 // Mundo existe no código mas ainda não foi cadastrado na tabela `Mundo`
-                return { id: nome, progresso: 0, quantidadeAprendida: 0, totalGirias };
+                return {
+                    id: nome,
+                    progresso: 0,
+                    quantidadeAprendida: 0,
+                    totalGirias,
+                    progressoMaximo: 0,
+                    diplomaDesbloqueado: false,
+                };
             }
 
-            const { progresso, quantidadeAprendida } = await buscarProgressoDoUsuario(idMundo, idUsuario);
-            return { id: nome, progresso, quantidadeAprendida, totalGirias };
+            const { progresso, quantidadeAprendida } = await buscarProgressoDoUsuario(idMundo, idUsuario, idioma);
+            const progressoMaximo = Math.max(progresso, progressoMaximoPorMundo[idMundo] ?? 0);
+
+            return {
+                id: nome,
+                progresso,
+                quantidadeAprendida,
+                totalGirias,
+                progressoMaximo,
+                diplomaDesbloqueado: progressoMaximo >= 1,
+            };
         })
     );
 
@@ -359,11 +384,12 @@ export async function listarMundosComProgresso(
  */
 async function buscarIdsAprendidosSet(
     nomeDoMundo: string,
-    idUsuario: number
+    idUsuario: number,
+    idioma = 'pt',
 ): Promise<Set<string>> {
     const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
     const idsAprendidos = idMundoNumerico !== null
-        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario)
+        ? await buscarGiriasAprendidas(idMundoNumerico, idUsuario, idioma)
         : [];
     return new Set(idsAprendidos.map(String));
 }
@@ -375,7 +401,8 @@ async function buscarIdsAprendidosSet(
  */
 export async function listarGiriasAprendidasDoMundo(
     nomeDoMundo: string,
-    idUsuario: number
+    idUsuario: number,
+    idioma = 'pt',
 ): Promise<Array<{
     id: number | string;
     nome: string;
@@ -384,13 +411,13 @@ export async function listarGiriasAprendidasDoMundo(
     classe?: string;
     impacto?: string;
 }>> {
-    const mundo = mundos[nomeDoMundo as keyof typeof mundos];
-    if (!mundo) {
+    const mundo = nomeDoMundo.trim().toLowerCase();
+    if (!NOMES_MUNDOS.includes(mundo as (typeof NOMES_MUNDOS)[number])) {
         throw new Error('Mundo não encontrado!');
     }
 
-    const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
-    const idsAprendidosSet = await buscarIdsAprendidosSet(nomeDoMundo, idUsuario);
+    const todasAsGiriasDoMundo = obterGiriasDoMundo(mundo, idioma);
+    const idsAprendidosSet = await buscarIdsAprendidosSet(mundo, idUsuario, idioma);
 
     return todasAsGiriasDoMundo
         .filter((giria) => idsAprendidosSet.has(String(giria.id)))
@@ -412,7 +439,8 @@ export async function listarGiriasAprendidasDoMundo(
  */
 export async function listarTodasGiriasComStatusDoMundo(
     nomeDoMundo: string,
-    idUsuario: number
+    idUsuario: number,
+    idioma = 'pt',
 ): Promise<Array<{
     id: number | string;
     nome: string;
@@ -422,13 +450,13 @@ export async function listarTodasGiriasComStatusDoMundo(
     impacto?: string;
     aprendida: boolean;
 }>> {
-    const mundo = mundos[nomeDoMundo as keyof typeof mundos];
-    if (!mundo) {
+    const mundo = nomeDoMundo.trim().toLowerCase();
+    if (!NOMES_MUNDOS.includes(mundo as (typeof NOMES_MUNDOS)[number])) {
         throw new Error('Mundo não encontrado!');
     }
 
-    const todasAsGiriasDoMundo = extrairGiriasDoMundo(mundo);
-    const idsAprendidosSet = await buscarIdsAprendidosSet(nomeDoMundo, idUsuario);
+    const todasAsGiriasDoMundo = obterGiriasDoMundo(mundo, idioma);
+    const idsAprendidosSet = await buscarIdsAprendidosSet(mundo, idUsuario, idioma);
 
     return todasAsGiriasDoMundo.map((giria) => ({
         id: giria.id,
@@ -447,7 +475,8 @@ export async function listarTodasGiriasComStatusDoMundo(
  * uma chamada por mundo no front.
  */
 export async function listarGiriasAprendidasPorTodosMundos(
-    idUsuario: number
+    idUsuario: number,
+    idioma = 'pt',
 ): Promise<Array<{
     mundo: string;
     girias: Array<{
@@ -459,19 +488,16 @@ export async function listarGiriasAprendidasPorTodosMundos(
         impacto?: string;
     }>;
 }>> {
-    const nomesDosMundos = Object.keys(mundos);
+    const nomesDosMundos = [...NOMES_MUNDOS];
 
     return Promise.all(
         nomesDosMundos.map(async (nome) => ({
             mundo: nome,
-            girias: await listarGiriasAprendidasDoMundo(nome, idUsuario),
+            girias: await listarGiriasAprendidasDoMundo(nome, idUsuario, idioma),
         }))
     );
 }
 
-export function contarGiriasPorMundos(): Record<string, number> {
-    return Object.entries(mundos).reduce((acumulador, [nome, mundoData]) => {
-        acumulador[nome] = extrairGiriasDoMundo(mundoData).length;
-        return acumulador;
-    }, {} as Record<string, number>);
+export function contarGiriasPorMundos(idioma = 'pt'): Record<string, number> {
+    return contarGiriasDoDicionario(idiomaValido(idioma) ? idioma : 'pt');
 }

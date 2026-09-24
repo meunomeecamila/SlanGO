@@ -8,6 +8,7 @@ import '../shared/widgets/background_espaco.dart';
 import '../shared/widgets/fundo_espacial.dart';
 import '../service/usuarioService.dart';
 import '../l10n/l10n.dart';
+import '../l10n/locale_controller.dart';
 
 import 'widgets/botao_login.dart';
 import 'widgets/campo_login.dart';
@@ -246,12 +247,15 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() => carregando = true);
 
     try {
-      await UsuarioService.login(
+      final usuario = await UsuarioService.login(
         emailController.text.trim(),
         senhaController.text,
       );
 
       if (!mounted) return;
+      if (const {'pt', 'en', 'es', 'it'}.contains(usuario.idioma)) {
+        await LocaleControllerScope.of(context).setLocale(Locale(usuario.idioma));
+      }
 
       Navigator.pushReplacement(
         context,

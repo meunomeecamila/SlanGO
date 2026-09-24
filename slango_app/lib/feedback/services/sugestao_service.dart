@@ -50,6 +50,7 @@ class SugestaoService {
     required String impacto,
     required String impactoMotivo,
     required String classeGramatical,
+    required String pais,
   }) async {
     final resp = await http.post(
       Uri.parse('$_baseUrl/sugestoes'),
@@ -61,6 +62,7 @@ class SugestaoService {
         'impacto': impacto,
         'impacto_motivo': impactoMotivo,
         'classe_gramatical': classeGramatical,
+        'pais': pais,
       }),
     );
 

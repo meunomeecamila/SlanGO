@@ -10,7 +10,7 @@ class FalasService {
   static const String _localeFallback = 'pt';
 
   /// Locales suportados pelas falas.
-  static const List<String> _localesSuportados = ['pt', 'en', 'es'];
+  static const List<String> _localesSuportados = ['pt', 'en', 'es', 'it'];
 
   /// Falas exibidas quando o mundo não existe em lugar nenhum, por locale.
   static const Map<String, List<String>> falasPadrao = {
@@ -26,6 +26,10 @@ class FalasService {
       '¡Bienvenido a SlanGO, {nome}!',
       '¡Prepárate para una nueva misión!',
     ],
+    'it': [
+      'Benvenuto su SlanGO, {nome}!',
+      'Preparati per una nuova missione!',
+    ],
   };
 
   /// Tratamento usado quando o usuário não tem nome definido, por locale.
@@ -33,6 +37,7 @@ class FalasService {
     'pt': 'astronauta',
     'en': 'astronaut',
     'es': 'astronauta',
+    'it': 'astronauta',
   };
 
   /// Normaliza o locale recebido (ex: 'pt_BR', 'pt-BR', 'PT') para uma das
@@ -78,7 +83,8 @@ class FalasService {
     String locale,
   ) {
     if (falasDoMundo == null) return null;
-    return falasDoMundo[locale] ?? falasDoMundo[_localeFallback];
+    return falasDoMundo[locale] ??
+        (locale == 'it' ? falasPadrao['it'] : falasDoMundo[_localeFallback]);
   }
 
   /// Substitui `{nome}` pelo nome do usuário (ou pelo tratamento padrão do
@@ -119,6 +125,7 @@ class FalasService {
         if (lista is List && lista.isNotEmpty) {
           return lista.map((f) => f.toString()).toList();
         }
+        if (locale == 'it') return falasPadrao['it'];
         return null;
       }
       // Compatibilidade com o formato antigo (lista simples, só em pt).

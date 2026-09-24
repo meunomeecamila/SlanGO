@@ -5,6 +5,7 @@ import '../service/MundoService.dart';
 import '../mapa/models/mundo.dart';
 import 'data/mundos_mock.dart';
 import 'widgets/tela_mapa.dart';
+import '../l10n/locale_controller.dart';
 
 /// Tela do mapa de mundos: monta a TelaMapa com a lista de mundos
 /// e trata a navegação para a missão do mundo selecionado.
@@ -17,15 +18,28 @@ class MapaScreen extends StatefulWidget {
 
 class _MapaScreenState extends State<MapaScreen> {
   late Future<List<Mundo>> _mundosFut;
+  String _idioma = 'pt';
+  bool _dependenciasInicializadas = false;
 
   @override
   void initState() {
     super.initState();
-    _mundosFut = _carregarMundos();
+    _mundosFut = Future.value(mundos);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final idioma = LocaleControllerScope.of(context).locale.languageCode;
+    if (!_dependenciasInicializadas || idioma != _idioma) {
+      _dependenciasInicializadas = true;
+      _idioma = const {'pt', 'en', 'es', 'it'}.contains(idioma) ? idioma : 'pt';
+      _mundosFut = _carregarMundos();
+    }
   }
 
   Future<List<Mundo>> _carregarMundos() async {
-    final progresso = await MundoService.obterProgressoMundos();
+    final progresso = await MundoService.obterProgressoMundos(idioma: _idioma);
 
     return mundos.map((m) {
       final progressItem = progresso.firstWhere(
@@ -41,6 +55,13 @@ class _MapaScreenState extends State<MapaScreen> {
           (progressItem['progresso'] as num?)?.toDouble() ??
           (totalGirias > 0 ? giriasAprendidas / totalGirias : 0.0);
 
+      final progressoMaximo =
+          (progressItem['progressoMaximo'] as num?)?.toDouble() ??
+          progressoValor;
+
+      final diplomaDesbloqueado =
+          progressItem['diplomaDesbloqueado'] as bool? ?? progressoMaximo >= 1.0;
+
       return Mundo(
         id: m.id,
         nome: m.nome,
@@ -51,6 +72,8 @@ class _MapaScreenState extends State<MapaScreen> {
         giriasAprendidas: giriasAprendidas,
         progresso: progressoValor.clamp(0.0, 1.0),
         desbloqueado: m.desbloqueado,
+        progressoMaximo: progressoMaximo.clamp(0.0, 1.0),
+        diplomaDesbloqueado: diplomaDesbloqueado,
       );
     }).toList();
   }

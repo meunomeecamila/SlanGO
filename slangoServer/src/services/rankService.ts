@@ -27,7 +27,8 @@ export async function registrarTempoRankeado(
   idMundo: number,
   nomeUsuario: string,
   tempoMs: number,
-  acertos: number
+  acertos: number,
+  idioma = 'pt'
 ): Promise<ResultadoRegistro> {
   const percentualAcerto = acertos / TOTAL_PERGUNTAS_QUIZ;
   const segundosGastos = Math.floor(tempoMs / 1000);
@@ -49,6 +50,7 @@ export async function registrarTempoRankeado(
     .from('ranking_rodadas')
     .select('Tempo_Ms')
     .eq('id_User', idUsuario)
+    .eq('idioma', idioma)
     .maybeSingle();
 
   if (erroSelect) throw new Error(erroSelect.message);
@@ -63,13 +65,14 @@ export async function registrarTempoRankeado(
           {
             id_User: idUsuario,
             id_Mundo: idMundo,
+            idioma,
             nomeUsuario,
             Tempo_Ms: tempoMs,
             Pontuacao: pontuacao,
             Percentual_Acerto: percentualAcerto,
           },
         ],
-        { onConflict: 'id_User' }
+        { onConflict: 'id_User,idioma' }
       );
 
     if (erroUpsert) throw new Error(erroUpsert.message);
@@ -87,10 +90,14 @@ export async function registrarTempoRankeado(
 // Leaderboard GLOBAL, ordenado só por tempo (menor tempo = melhor posição).
 // Como cada usuário tem no máximo UMA linha na tabela (graças ao upsert
 // acima), não precisa de agregação nenhuma — só ordenar e paginar.
-export async function buscarRankingGlobal(limite = 500): Promise<ItemRanking[]> {
+export async function buscarRankingGlobal(
+  idioma = 'pt',
+  limite = 500,
+): Promise<ItemRanking[]> {
   const { data, error } = await supabase
     .from('ranking_rodadas')
     .select('id_User, nomeUsuario, Tempo_Ms, Pontuacao')
+    .eq('idioma', idioma)
     .order('Tempo_Ms', { ascending: true })
     .limit(limite);
 
@@ -157,10 +164,14 @@ async function preencherFotosDoPodio(ranking: ItemRanking[]): Promise<void> {
   }
 }
 
-export async function buscarPosicaoGlobalDoUsuario(idUsuario: number): Promise<PosicaoUsuario> {
+export async function buscarPosicaoGlobalDoUsuario(
+  idUsuario: number,
+  idioma = 'pt',
+): Promise<PosicaoUsuario> {
   const { data, error } = await supabase
     .from('ranking_rodadas')
     .select('id_User, Tempo_Ms')
+    .eq('idioma', idioma)
     .order('Tempo_Ms', { ascending: true });
 
   if (error) throw new Error(error.message);
