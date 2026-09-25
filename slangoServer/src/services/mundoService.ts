@@ -8,6 +8,7 @@ import {
 import {
     contarGiriasPorMundos as contarGiriasDoDicionario,
     idiomaValido,
+    normalizarIdioma,
     NOMES_MUNDOS,
     obterGiriasDoMundo,
 } from '../utils/girias/dicionarioGirias';
@@ -86,21 +87,68 @@ function puxarProximasGiriasUnicas(
 }
 
 // ──────────────────────────────────────────────────────────────
-// 2. GERADORES DE FASES
+// 2. TEXTOS TRADUZÍVEIS (perguntas, título e descrição do mundo)
+// ──────────────────────────────────────────────────────────────
+
+const TEXTOS: Record<string, {
+    perguntaSignificado: (giria: string) => string;
+    perguntaImpacto: (giria: string) => string;
+    perguntaAplicacao: (giria: string) => string;
+    tituloMundo: (nome: string) => string;
+    descricaoMundo: (nome: string) => string;
+}> = {
+    pt: {
+        perguntaSignificado: (g) => `Qual é o significado correto da gíria "${g}"?`,
+        perguntaImpacto: (g) => `Qual é o impacto/sentimento que a gíria "${g}" passa?`,
+        perguntaAplicacao: (g) => `Qual é a aplicação correta da gíria "${g}" em uma frase?`,
+        tituloMundo: (n) => `Mundo ${n.charAt(0).toUpperCase()}${n.slice(1)}`,
+        descricaoMundo: (n) => `Aprenda as gírias de ${n}`,
+    },
+    en: {
+        perguntaSignificado: (g) => `What is the correct meaning of the slang "${g}"?`,
+        perguntaImpacto: (g) => `What impact/feeling does the slang "${g}" convey?`,
+        perguntaAplicacao: (g) => `Which is the correct use of the slang "${g}" in a sentence?`,
+        tituloMundo: (n) => `${n.charAt(0).toUpperCase()}${n.slice(1)} World`,
+        descricaoMundo: (n) => `Learn the slang from ${n}`,
+    },
+    es: {
+        perguntaSignificado: (g) => `¿Cuál es el significado correcto de la jerga "${g}"?`,
+        perguntaImpacto: (g) => `¿Qué impacto/sentimiento transmite la jerga "${g}"?`,
+        perguntaAplicacao: (g) => `¿Cuál es el uso correcto de la jerga "${g}" en una frase?`,
+        tituloMundo: (n) => `Mundo ${n.charAt(0).toUpperCase()}${n.slice(1)}`,
+        descricaoMundo: (n) => `Aprende la jerga de ${n}`,
+    },
+    it: {
+        perguntaSignificado: (g) => `Qual è il significato corretto dello slang "${g}"?`,
+        perguntaImpacto: (g) => `Che impatto/sentimento trasmette lo slang "${g}"?`,
+        perguntaAplicacao: (g) => `Qual è l'uso corretto dello slang "${g}" in una frase?`,
+        tituloMundo: (n) => `Mondo ${n.charAt(0).toUpperCase()}${n.slice(1)}`,
+        descricaoMundo: (n) => `Impara lo slang di ${n}`,
+    },
+};
+
+/** Usa `normalizarIdioma` do dicionarioGirias para tratar 'pt_BR', 'EN', 'es-ES' etc. */
+function textosDoIdioma(idioma: string) {
+    return TEXTOS[normalizarIdioma(idioma)] ?? TEXTOS.pt;
+}
+
+// ──────────────────────────────────────────────────────────────
+// 3. GERADORES DE FASES
 // Cada fase testa um aspecto diferente das mesmas 3 gírias:
 //   Fase 1 → Significado  (o que a gíria quer dizer?)
 //   Fase 2 → Impacto      (qual sentimento ela passa?)
 //   Fase 3 → Uso correto  (qual frase usa a gíria certo?)
 // ──────────────────────────────────────────────────────────────
 
-function gerarFase1(giriasSorteadas: Girias[]) {
+function gerarFase1(giriasSorteadas: Girias[], idioma = 'pt') {
+    const t = textosDoIdioma(idioma);
     return giriasSorteadas.map((giria) => {
         const todasAsOpcoes = [giria.significado, ...giria.significados_incorretos];
         return {
-            giriaId: giria.id, // 🔥 MUDANÇA: Adicionado o ID da gíria
+            giriaId: giria.id,
             tipo: 'significado' as const,
             giria: giria.nome,
-            textoDaPergunta: `Qual é o significado correto da gíria "${giria.nome}"?`,
+            textoDaPergunta: t.perguntaSignificado(giria.nome),
             opcoes: embaralharOpcoes(todasAsOpcoes),
             respostaCorreta: giria.significado,
             explicacao: giria.significado,
@@ -129,14 +177,15 @@ function categoriaDoImpacto(impacto: string): CategoriaImpacto {
 }
 
 function gerarFase2(giriasSorteadas: Girias[], idioma = 'pt') {
-    const rotulos = ROTULOS_IMPACTO[idioma] ?? ROTULOS_IMPACTO.pt;
+    const t = textosDoIdioma(idioma);
+    const rotulos = ROTULOS_IMPACTO[normalizarIdioma(idioma)] ?? ROTULOS_IMPACTO.pt;
     const opcoesDeImpacto = [rotulos.positiva, rotulos.negativa, rotulos.neutra, rotulos.depende];
     return giriasSorteadas.map((giria) => {
         return {
-            giriaId: giria.id, 
+            giriaId: giria.id,
             tipo: 'impacto' as const,
             giria: giria.nome,
-            textoDaPergunta: `Qual é o impacto/sentimento que a gíria "${giria.nome}" passa?`,
+            textoDaPergunta: t.perguntaImpacto(giria.nome),
             opcoes: opcoesDeImpacto,
             // Sempre um dos rótulos das opções — garante uma alternativa correta.
             respostaCorreta: rotulos[categoriaDoImpacto(giria.impacto)],
@@ -148,14 +197,15 @@ function gerarFase2(giriasSorteadas: Girias[], idioma = 'pt') {
     });
 }
 
-function gerarFase3(giriasSorteadas: Girias[]) {
+function gerarFase3(giriasSorteadas: Girias[], idioma = 'pt') {
+    const t = textosDoIdioma(idioma);
     return giriasSorteadas.map((giria) => {
         const todasAsFrases = [giria.exemplo_correto, ...giria.exemplos_incorretos];
         return {
-            giriaId: giria.id, 
+            giriaId: giria.id,
             tipo: 'aplicacao' as const,
             giria: giria.nome,
-            textoDaPergunta: `Qual é a aplicação correta da gíria "${giria.nome}" em uma frase?`,
+            textoDaPergunta: t.perguntaAplicacao(giria.nome),
             opcoes: embaralharOpcoes(todasAsFrases),
             respostaCorreta: giria.exemplo_correto,
             explicacao: giria.significado,
@@ -166,10 +216,10 @@ function gerarFase3(giriasSorteadas: Girias[]) {
 }
 
 // ──────────────────────────────────────────────────────────────
-// 3. HELPER: converter pergunta interna → FaseMundo
+// 4. HELPER: converter pergunta interna → FaseMundo
 // ──────────────────────────────────────────────────────────────
 interface PerguntaInterna {
-    giriaId: number | string; 
+    giriaId: number | string;
     tipo?: string;
     giria: string;
     textoDaPergunta: string;
@@ -195,7 +245,7 @@ function converterParaFaseMundo(
 } {
     return {
         id, // Este é o ID da pergunta no quiz (1 a 9)
-        giriaId: pergunta.giriaId, 
+        giriaId: pergunta.giriaId,
         tipo: pergunta.tipo ?? 'significado',
         giria: pergunta.giria,
         variacoes,
@@ -213,7 +263,7 @@ function converterParaFaseMundo(
 }
 
 // ──────────────────────────────────────────────────────────────
-// 4. FUNÇÃO PRINCIPAL: prepararRodadaAleatoria
+// 5. FUNÇÃO PRINCIPAL: prepararRodadaAleatoria
 // ──────────────────────────────────────────────────────────────
 export const prepararRodadaAleatoria = async (
     nomeDoMundo: string,
@@ -228,11 +278,9 @@ export const prepararRodadaAleatoria = async (
 
     const todasAsGiriasDoMundo = obterGiriasDoMundo(mundo, idioma);
 
-    const tituloDoMundo =
-        `Mundo ${nomeDoMundo.charAt(0).toUpperCase()}${nomeDoMundo.slice(1)}`;
-
-    const descricaoDoMundo =
-        `Aprenda as gírias de ${nomeDoMundo}`;
+    const t = textosDoIdioma(idioma);
+    const tituloDoMundo = t.tituloMundo(nomeDoMundo);
+    const descricaoDoMundo = t.descricaoMundo(nomeDoMundo);
 
     // Busca no banco quais gírias (IDs) esse usuário já aprendeu.
     const idMundoNumerico = await buscarIdMundoPorNome(nomeDoMundo);
@@ -261,9 +309,9 @@ export const prepararRodadaAleatoria = async (
     );
 
     // Gera as perguntas das 3 fases sobre as mesmas 3 gírias
-    const fase1 = gerarFase1(tresPalavras);
+    const fase1 = gerarFase1(tresPalavras, idioma);
     const fase2 = gerarFase2(tresPalavras, idioma);
-    const fase3 = gerarFase3(tresPalavras);
+    const fase3 = gerarFase3(tresPalavras, idioma);
 
     const variacoesPorGiria: Record<string, string[]> = {};
     tresPalavras.forEach((g) => { variacoesPorGiria[g.nome] = g.variacoes || []; });
@@ -298,8 +346,8 @@ export const prepararRodadaAleatoria = async (
         id: mundo,
         nome: tituloDoMundo,
         descricao: descricaoDoMundo,
-        fases,            
-        todasAsPerguntas, 
+        fases,
+        todasAsPerguntas,
         quiz: { fase1, fase2, fase3 },
     };
 };
